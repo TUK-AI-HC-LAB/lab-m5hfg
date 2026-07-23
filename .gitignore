@@ -1,0 +1,43 @@
+# Obsidian workspace-specific state
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/cache/
+
+# Python and notebook artifacts
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+env/
+
+# Large artifacts, datasets, and experiment runtime files
+*.pth
+*.pt
+*.ckpt
+*.safetensors
+*.bin
+data/
+datasets/
+*.h5
+*.npy
+*.npz
+*.zip
+*.tar
+*.tar.gz
+*.7z
+*.log
+logs/
+runs/
+wandb/
+outputs/
+checkpoints/
+node_modules/
+
+# Secrets
+*.env
+.env.*
+
+# OS-generated files
+.DS_Store
+Thumbs.db
