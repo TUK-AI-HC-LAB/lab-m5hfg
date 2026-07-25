@@ -12,6 +12,7 @@ GitHub/Official code: github.com/amazon-research/patchcore-inspection (논문 �
 ## 정상 이미지로 이상 이미지 찾기
 
 - Roth et al., CVPR 2022
+- 원문 PDF: [CVPR 2022 공식 PDF](https://openaccess.thecvf.com/content/CVPR2022/papers/Roth_Towards_Total_Recall_in_Industrial_Anomaly_Detection_CVPR_2022_paper.pdf)
 
 ---
 
