@@ -4,6 +4,13 @@
 
 PatchCore 논문 [1]의 공개 구현체를 MVTec AD 15개 category에서 실행하고, 논문 예시 baseline과 비교함.
 
+## 결과 바로 열기
+
+- [15개 category baseline 표 (CSV)](../source/results/PatchCore_MVTecAD_IM224_WR50_baseline.csv)
+- [10% 대 1% coreset 비교 표 (CSV)](../source/results/PatchCore_MVTecAD_IM224_WR50_coreset_comparison.csv)
+- [W31 미팅 brief](../../meetings/2026-W31_brief.md)
+- [실행 스크립트](../source/run_patchcore_mvtec.ps1)
+
 ## 재현 조건
 
 - upstream: `amazon-science/patchcore-inspection`
