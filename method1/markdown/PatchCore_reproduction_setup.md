@@ -4,9 +4,9 @@
 
 - upstream: https://github.com/amazon-science/patchcore-inspection
 - revision: `fcaa92f124fb1ad74a7acf56726decd4b27cbcad`
-- local source: `method1/source/patchcore-inspection/`
+- local source: [공식 PatchCore 구현체](https://github.com/amazon-science/patchcore-inspection)
 
-공식 구현체를 새로 받은 뒤 Windows에서 같은 결과를 재현하려면 `method1/source/patchcore_windows_compat.patch`를 적용함. 이 patch는 FAISS CPU 검색의 peak memory를 낮추고, Windows에서 히트맵 파일을 저장할 수 있게 함.
+공식 구현체를 새로 받은 뒤 Windows에서 같은 결과를 재현하려면 [Windows 호환 patch](../source/patchcore_windows_compat.patch)를 적용함. 이 patch는 FAISS CPU 검색의 peak memory를 낮추고, Windows에서 히트맵 파일을 저장할 수 있게 함.
 
 ## 확인 완료
 
