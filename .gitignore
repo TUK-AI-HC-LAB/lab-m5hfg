@@ -34,6 +34,10 @@ outputs/
 checkpoints/
 node_modules/
 
+# Local copy of the upstream PatchCore repository, dataset, models, and raw runs.
+method1/source/patchcore-inspection/
+method1/source/results/patchcore_visualizations/
+
 # Secrets
 *.env
 .env.*
