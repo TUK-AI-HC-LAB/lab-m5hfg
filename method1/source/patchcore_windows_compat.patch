@@ -1,0 +1,52 @@
+diff --git a/bin/load_and_evaluate_patchcore.py b/bin/load_and_evaluate_patchcore.py
+--- a/bin/load_and_evaluate_patchcore.py
++++ b/bin/load_and_evaluate_patchcore.py
+@@ -120,12 +120,9 @@ def run(methods, results_path, gpu, seed, save_segmentation_images):
+                 ]
+ 
+                 def image_transform(image):
+-                    in_std = np.array(dataloaders["testing"].dataset.transform_std).reshape(-1, 1, 1)
+-                    in_mean = np.array(dataloaders["testing"].dataset.transform_mean).reshape(-1, 1, 1)
++                    normalize = dataloaders["testing"].dataset.transform_img.transforms[-1]
++                    in_std = np.array(normalize.std).reshape(-1, 1, 1)
++                    in_mean = np.array(normalize.mean).reshape(-1, 1, 1)
+diff --git a/bin/run_patchcore.py b/bin/run_patchcore.py
+--- a/bin/run_patchcore.py
++++ b/bin/run_patchcore.py
+@@ -145,12 +145,9 @@ def run(
+                 ]
+ 
+                 def image_transform(image):
+-                    in_std = np.array(dataloaders["testing"].dataset.transform_std).reshape(-1, 1, 1)
+-                    in_mean = np.array(dataloaders["testing"].dataset.transform_mean).reshape(-1, 1, 1)
++                    normalize = dataloaders["testing"].dataset.transform_img.transforms[-1]
++                    in_std = np.array(normalize.std).reshape(-1, 1, 1)
++                    in_mean = np.array(normalize.mean).reshape(-1, 1, 1)
+diff --git a/src/patchcore/common.py b/src/patchcore/common.py
+--- a/src/patchcore/common.py
++++ b/src/patchcore/common.py
+@@ -76,14 +76,29 @@ class FaissNN(object):
++        def _batched_search(search_index, features, batch_size=128):
++            """Search in small query batches to limit FAISS CPU peak memory."""
++            distances, indices = [], []
++            for start_idx in range(0, len(features), batch_size):
++                batch = np.ascontiguousarray(features[start_idx : start_idx + batch_size])
++                batch_distances, batch_indices = search_index.search(batch, n_nearest_neighbours)
++                distances.append(batch_distances)
++                indices.append(batch_indices)
++            return np.concatenate(distances, axis=0), np.concatenate(indices, axis=0)
++
+         if index_features is None:
+-            return self.search_index.search(query_features, n_nearest_neighbours)
++            return _batched_search(self.search_index, query_features)
+@@ -94,7 +109,7 @@ class FaissNN(object):
+         self._train(search_index, index_features)
+         search_index.add(index_features)
+-        return search_index.search(query_features, n_nearest_neighbours)
++        return _batched_search(search_index, query_features)
+diff --git a/src/patchcore/utils.py b/src/patchcore/utils.py
+--- a/src/patchcore/utils.py
++++ b/src/patchcore/utils.py
+@@ -61,7 +61,7 @@ def plot_segmentation_images(
+-        savename = image_path.split("/")
++        savename = image_path.replace("\\", "/").split("/")
