@@ -38,5 +38,4 @@ powershell -NoProfile -ExecutionPolicy Bypass -File .\run_patchcore_mvtec.ps1 -C
 
 ## 현재 제한
 
-- MVTec AD 공식 다운로드는 라이선스 동의 양식을 요구함.
 - Windows용 공식 `faiss-gpu` 배포본이 없어, 특징 추출은 GPU에서 수행하고 FAISS 최근접 탐색만 CPU에서 수행함. metric 결과에는 영향을 주지 않지만 실행 시간은 더 길어질 수 있음.
