@@ -1,192 +1,146 @@
-# SimpleNet: A Simple Network for Image Anomaly Detection and Localization
+## Paper Metadata
 
-> **한 줄 요약:** SimpleNet은 정상 이미지의 특징 주변에 작은 Gaussian noise를 더해 가짜 이상 특징을 만들고, 정상과 가짜 이상을 구분하는 판별기를 학습하는 비지도 산업 이상 탐지 방법이다.
-
-| 항목 | 내용 |
+| Item | Content |
 |---|---|
-| 논문 | *SimpleNet: A Simple Network for Image Anomaly Detection and Localization* |
-| 저자 | Zhikang Liu, Yiming Zhou, Yuansheng Xu, Zilei Wang |
-| 학회 | CVPR 2023 |
-| 문제 | 정상 이미지로만 학습해 이미지 이상 탐지와 결함 위치 추정을 수행 |
-| 핵심 | 특징 공간의 synthetic anomaly + 단순 discriminator |
+| Title | *SimpleNet: A Simple Network for Image Anomaly Detection and Localization* |
+| Authors | Zhikang Liu, Yiming Zhou, Yuansheng Xu, Zilei Wang |
+| Conference / Journal | Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) |
+| Year | 2023 |
+| Paper link | https://openaccess.thecvf.com/content/CVPR2023/papers/Liu_SimpleNet_A_Simple_Network_for_Image_Anomaly_Detection_and_Localization_CVPR_2023_paper.pdf |
+| GitHub / Official code | https://github.com/DonaldRR/SimpleNet |
+| Reason for investigation | PatchCore와 비교 가능한 industrial anomaly detection 접근으로, normal memory 최근접 검색 대신 feature-space synthetic anomaly와 discriminator를 사용하는 방법을 확인하기 위함. |
 
 ---
 
-## 1. 왜 산업 이상 탐지가 어려운가
+# SimpleNet
 
-산업 검사에서 불량 예시는 적고, 실제 결함의 형태도 미리 모두 알 수 없다. 따라서 학습에는 보통 정상 이미지뿐이며, 모델은 정상과 다른 입력을 이상으로 찾아야 한다.
+## 1. 이 논문이 다루는 문제
 
-이 문제에는 두 가지 목표가 있다.
+SimpleNet은 **정상 이미지만으로 학습**해 산업 이미지의 이상 여부와 이상 위치를 찾는 unsupervised anomaly detection 방법이다 [1].
 
-1. **Image-level anomaly detection**: 제품 이미지 전체가 정상인지 불량인지 판단한다.
-2. **Pixel-level anomaly localization**: 이미지 안에서 이상이 있는 위치를 표시한다.
+| 구분 | 입력 | 출력 | 제약 | 평가 |
+|---|---|---|---|---|
+| Image-level detection | 테스트 이미지 1장 | 이미지 이상 점수 | 학습에는 정상 이미지만 사용 | I-AUROC |
+| Pixel-level localization | 테스트 이미지 1장 | pixel별 anomaly map | 실제 결함 예시 없이 학습 | P-AUROC |
 
-| 지표 | 단위 | 높을수록 의미하는 것 |
-|---|---|---|
-| I-AUROC | 이미지 | 이상 이미지가 정상 이미지보다 높은 점수를 받음 |
-| P-AUROC | 픽셀 | 실제 결함 pixel이 정상 pixel보다 높은 점수를 받음 |
-
----
-
-## 2. 기존 접근과 SimpleNet의 관점
-
-| 접근 | 핵심 아이디어 | 어려움 |
-|---|---|---|
-| 복원 기반 | 정상 이미지를 복원하고 입력과 복원의 차이로 이상 탐지 | 모델이 이상도 잘 복원하면 놓칠 수 있음 |
-| 이미지 합성 기반 | 정상 이미지에 가짜 결함을 합성해 분류 학습 | 합성 결함이 실제 결함과 다를 수 있음 |
-| 임베딩 기반 | 정상 특징 분포 또는 normal memory와 테스트 특징을 비교 | memory 저장·최근접 검색 또는 통계 계산 필요 |
-
-SimpleNet은 **이미지 공간이 아닌 특징 공간(feature space)** 에서 가짜 이상을 만든다. 사전학습 모델이 추출한 정상 특징에 작은 noise를 더한 뒤, 정상과 가짜 이상 특징의 경계를 학습한다.
+이 논문은 정상 특징을 직접 저장해 비교하는 방법과 달리, 정상 특징 주변의 경계를 학습하는 방식을 제안한다.
 
 ---
 
-## 3. 전체 구조
+## 2. 핵심 아이디어
 
-```mermaid
-flowchart LR
-    A[정상 학습 이미지] --> B[사전학습 feature extractor]
-    B --> C[지역 특징]
-    C --> D[feature adapter]
-    D --> E[적응된 정상 특징 q]
-    E --> F[정상 label]
-    E --> G[Gaussian noise 추가]
-    G --> H[가짜 이상 특징 q-]
-    F --> I[discriminator 학습]
-    H --> I
+정상 이미지에서 얻은 지역 특징에 작은 Gaussian noise를 더해 **가짜 이상 특징(synthetic anomaly feature)** 을 만들고, 정상 특징과 가짜 이상 특징을 구분하도록 discriminator를 학습한다 [1].
 
-    J[테스트 이미지] --> B
-    B --> D
-    D --> I
-    I --> K[patch별 이상 점수]
-    K --> L[anomaly map / image score]
+```text
+정상 이미지
+  → 사전학습 backbone의 지역 특징
+  → feature adapter
+  → 적응된 정상 특징 q
+  ├─ 정상 특징 q                 → normal label
+  └─ q + Gaussian noise = q⁻    → anomaly label
+                                  ↓
+                           discriminator 학습
 ```
 
-- 가짜 이상 특징은 **학습 때만** 사용한다.
-- 추론 때는 feature extractor, adapter, discriminator만 사용한다.
-
----
-
-## 4. 단계 1 — 사전학습 특징에서 지역 정보 추출
-
-SimpleNet은 ImageNet으로 사전학습된 **WideResNet-50**을 backbone으로 사용한다.
-
-- 두 번째와 세 번째 중간 계층(`layer2`, `layer3`)의 feature map을 사용한다.
-- 각 위치 주변의 `p × p` 특징을 평균 내어 지역 특징(local feature)을 구성한다.
-- 크기가 다른 feature map의 해상도를 맞춘 뒤 채널 방향으로 결합한다.
-- 기본 설정에서 지역 특징의 차원은 **1,536**이다.
-
-`layer2`는 세밀한 국소 정보에, `layer3`는 더 넓은 문맥 정보에 기여한다. 논문은 두 계층을 함께 사용한 설정을 기본값으로 채택했다.
-
----
-
-## 5. 단계 2 — feature adapter로 산업 도메인에 맞춤
-
-ImageNet 특징은 일반 이미지에 유용하지만 산업 검사 이미지에 완전히 맞지는 않을 수 있다. SimpleNet은 feature adapter로 지역 특징을 현재 도메인에 맞게 조정한다.
-
-`q = Gθ(o)`
-
-| 기호 | 의미 |
-|---|---|
-| `o` | backbone이 추출한 지역 특징 |
-| `Gθ` | feature adapter |
-| `q` | 적응된 정상 특징 |
-
-- 기본 adapter는 **bias 없는 단일 fully-connected layer**다.
-- 입력과 출력 차원은 같다.
-- backbone은 고정하고 adapter와 discriminator만 학습한다.
-
-논문 ablation에서 복잡한 비선형 adapter보다 단일 FC adapter가 더 좋은 성능을 보였다고 보고했다.
-
----
-
-## 6. 단계 3 — 정상 특징으로 가짜 이상 특징 만들기
-
-실제 이상 예시는 학습 데이터에 없으므로, 적응된 정상 특징 `q`에 Gaussian noise를 더해 가짜 이상 특징을 만든다.
-
-`q⁻ = q + ε`, `ε ~ N(0, σ²)`
-
-| 기호 | 의미 |
-|---|---|
-| `q` | 적응된 정상 특징 |
-| `q⁻` | 가짜 이상 특징 |
-| `ε` | Gaussian noise |
-| `σ` | noise의 표준편차 |
-
-기본 설정은 `σ = 0.015`다.
-
-- noise가 너무 크면 가짜 이상이 정상 특징에서 너무 멀어져 경계가 느슨해질 수 있다.
-- noise가 너무 작으면 학습이 불안정해지거나 정상 특징에 대한 일반화가 약해질 수 있다.
-
----
-
-## 7. 단계 4 — discriminator가 정상과 가짜 이상을 구분
-
-discriminator는 각 patch 특징에 대해 정상에 가까운 정도를 점수 하나로 출력한다.
-
-- 적응된 정상 특징 `q`에는 **높은 정상 점수**가 나오도록 학습한다.
-- 가짜 이상 특징 `q⁻`에는 **낮은 정상 점수**가 나오도록 학습한다.
-- 구조는 `Linear → Batch Normalization → Leaky ReLU → Linear`다.
-- 손실은 절단된 L1 loss를 사용한다. 정상과 가짜 이상의 점수가 충분히 분리되면 더 과도하게 밀지 않는다.
-
-기본 학습 설정은 Adam optimizer, adapter learning rate `0.0001`, discriminator learning rate `0.0002`, weight decay `0.00001`, 범주별 160 epoch, batch size 4다.
-
----
-
-## 8. 추론 — discriminator 점수를 anomaly score로 사용
-
-테스트에서는 Gaussian noise를 더하지 않는다.
-
-1. 테스트 이미지를 backbone과 adapter에 넣어 patch별 특징 `q`를 얻는다.
-2. discriminator의 정상 점수에 마이너스를 붙여 patch anomaly score로 사용한다.
-3. patch 점수를 입력 이미지 크기로 보간하고 Gaussian filter(`σ=4`)로 부드럽게 해 anomaly map을 만든다.
-4. anomaly map에서 가장 높은 patch 점수를 image-level anomaly score로 사용한다.
+테스트 때는 가짜 이상을 만들지 않는다. 테스트 patch의 정상 점수를 discriminator가 계산하고, 그 부호를 반전해 anomaly score로 쓴다.
 
 `patch anomaly score = -Dψ(q)`
 
-따라서 discriminator가 “정상이 아니다”라고 보는 patch일수록 anomaly score가 높다.
+---
+
+## 3. 방법 구성
+
+### 3.1 지역 특징 추출
+
+- ImageNet 사전학습 WideResNet-50을 backbone으로 사용함.
+- `layer2`와 `layer3`의 feature map에서 지역 특징을 만듦.
+- 각 위치 주변의 `p × p` 이웃을 평균 내고, 두 계층의 특징을 결합함.
+- 논문의 기본 지역 특징 차원은 1,536임 [1].
+
+### 3.2 Feature adapter
+
+ImageNet 특징을 산업 이미지 도메인에 맞추기 위해 feature adapter `Gθ`를 사용한다.
+
+`q = Gθ(o)`
+
+- `o`: backbone의 지역 특징
+- `q`: adapter가 만든 적응된 정상 특징
+- 기본 adapter: bias 없는 단일 fully-connected layer
+- backbone은 고정하고 adapter와 discriminator를 학습함
+
+### 3.3 Synthetic anomaly 생성
+
+`q⁻ = q + ε`, `ε ~ N(0, σ²)`
+
+- `q⁻`: 가짜 이상 특징
+- 논문의 기본 noise standard deviation: `σ = 0.015`
+- noise가 너무 크면 경계가 느슨해지고, 너무 작으면 학습이 불안정해질 수 있다고 저자들은 설명함 [1].
+
+### 3.4 Discriminator와 추론
+
+- discriminator는 정상 특징에 높은 정상 점수, 가짜 이상 특징에 낮은 정상 점수를 주도록 학습함.
+- 구조: `Linear → Batch Normalization → Leaky ReLU → Linear`.
+- 테스트 patch의 점수를 이미지 크기로 보간하고 Gaussian smoothing을 적용해 anomaly map을 만듦.
+- anomaly map의 최대 patch 점수를 image-level anomaly score로 사용함.
 
 ---
 
-## 9. MVTec AD에서의 논문 결과
+## 4. 논문이 주장하는 결과
 
-논문은 MVTec AD에서 다음 전체 평균을 보고했다.
+MVTec AD 전체 평균에서 논문은 다음 수치를 보고했다 [1, Table 1].
 
-| 방법 | I-AUROC | P-AUROC |
-|---|---:|---:|
-| PatchCore | 99.1% | 98.1% |
-| **SimpleNet** | **99.6%** | **98.1%** |
+| 방법 | I-AUROC (%) | P-AUROC (%) | 표의 의미 |
+|---|---:|---:|---|
+| PatchCore | 99.1 | 98.1 | 비교 baseline |
+| **SimpleNet** | **99.6** | **98.1** | 논문 보고값 |
 
-- SimpleNet은 image-level I-AUROC에서 99.6%를 보고했다.
-- pixel-level P-AUROC는 98.1%를 보고했다.
-- 논문은 동일 하드웨어에서 SimpleNet이 77 FPS이며 PatchCore보다 약 8배 빠르다고 보고한다.
-
-이 수치는 논문 저자 환경에서 보고된 결과다.
+- SimpleNet은 image-level I-AUROC 99.6%, pixel-level P-AUROC 98.1%를 보고함.
+- 저자들은 같은 하드웨어에서 SimpleNet이 77 FPS이고 PatchCore보다 약 8배 빠르다고 보고함 [1].
+- 위 숫자는 **논문 저자 환경의 보고값**이며, 이 note는 재현 결과를 포함하지 않는다.
 
 ---
 
-## 10. PatchCore와의 핵심 차이
+## 5. PatchCore와의 비교
 
-| 항목 | PatchCore | SimpleNet |
-|---|---|---|
-| 정상 정보를 담는 방식 | 대표 정상 patch를 memory bank에 저장 | adapter와 discriminator의 파라미터에 경계를 학습 |
-| 이상 점수 | normal memory와의 최근접 거리 | discriminator 정상 점수의 반대값 |
-| 가짜 이상 | 사용하지 않음 | 정상 특징에 Gaussian noise를 추가 |
-| 테스트 비용 | 최근접 이웃 검색 필요 | 단일 네트워크 흐름으로 점수 계산 |
+| 항목 | PatchCore [2] | SimpleNet [1] | 현재 연구에 주는 비교 관점 |
+|---|---|---|---|
+| 정상 정보를 담는 방식 | 대표 정상 patch를 memory bank에 저장 | adapter·discriminator가 정상/가짜 이상 경계를 학습 | memory 기반 vs. parameter 기반 |
+| 이상 점수 | normal memory와의 최근접 거리 | discriminator 정상 점수의 반대값 | 거리 기반 vs. 판별 점수 기반 |
+| 가짜 이상 사용 | 사용하지 않음 | feature space에서 Gaussian noise로 생성 | 실제 결함 없이 경계를 만드는 방식 |
+| 테스트 연산 | 최근접 이웃 검색 필요 | 한 번의 network forward | 추론 비용 비교 대상 |
 
-두 방법 모두 WideResNet-50의 중간 특징을 활용하고, 정상 학습 이미지만으로 범주별 모델을 만든다는 공통점이 있다.
+공통점은 둘 다 사전학습 CNN의 중간 특징을 사용하고, 정상 train 이미지만으로 범주별 탐지를 수행한다는 점이다.
 
 ---
 
-## 11. 결론
+## 6. 이 논문을 참고 연구로 남기는 이유
 
-- SimpleNet은 정상 특징 주변에 synthetic anomaly를 만들어 **특징 공간의 정상/이상 경계**를 학습한다.
-- feature adapter는 사전학습 특징을 산업 이미지 도메인에 맞게 조정한다.
-- 추론에서는 normal memory의 최근접 검색 대신 discriminator 점수를 사용한다.
-- 논문의 기본 구성은 `WideResNet-50 layer2+layer3`, 단일 FC adapter, `σ=0.015` noise, discriminator다.
+SimpleNet은 현재 PatchCore 중심의 이상 탐지 비교에서 다음 질문을 구체화한다.
 
-핵심 메시지는 다음과 같다.
+1. normal memory의 최근접 검색을 discriminator 점수로 바꾸면 성능과 추론 비용의 trade-off는 어떻게 바뀌는가?
+2. 실제 결함을 만들지 않고 정상 특징 주변에 noise를 더한 synthetic anomaly가 실제 결함 탐지에 충분한 경계를 제공하는가?
+3. image-level 성능과 pixel-level 위치 추정 성능은 같은 선택에서 함께 개선되는가?
 
-> **실제 결함 예시가 없어도, 정상 특징 주변에 만든 가짜 이상을 이용해 이상 탐지와 위치 추정을 함께 학습할 수 있다.**
+이 note가 제공하는 것은 **후보 방법의 원리와 비교 축**이다. 현재 연구에서 SimpleNet을 채택하거나 성능을 주장하는 근거는 아니며, 그런 판단에는 별도 재현·비교 experiment와 raw result가 필요하다.
+
+---
+
+## 7. 제한과 확인할 점
+
+| 항목 | 논문에서 보이는 제한 또는 확인점 |
+|---|---|
+| synthetic anomaly의 현실성 | Gaussian-noise 특징이 실제 결함 특징을 직접 모델링하지는 않음 |
+| noise 민감도 | `σ` 값에 따라 정상/이상 경계의 난이도가 달라질 수 있음 |
+| 사전학습 특징 의존성 | backbone의 표현력이 탐지 성능에 영향을 줄 수 있음 |
+| 비교의 공정성 | memory search 시간, 입력 크기, backbone, 데이터 전처리를 함께 통제해야 함 |
+
+따라서 SimpleNet을 PatchCore의 대안으로 비교하려면 동일 데이터셋, 동일 backbone·입력 protocol, image/pixel metric, 그리고 추론 시간 측정이 필요하다.
+
+---
+
+## 8. 한 줄 결론
+
+SimpleNet은 정상 특징 주변에 Gaussian noise로 만든 synthetic anomaly를 이용해 **feature-space 정상/이상 경계**를 학습하고, normal memory 검색 없이 anomaly score를 계산하는 industrial anomaly detection 방법이다.
 
 ---
 
@@ -194,6 +148,4 @@ discriminator는 각 patch 특징에 대해 정상에 가까운 정도를 점수
 
 [1] Liu, Zhikang, et al. "SimpleNet: A Simple Network for Image Anomaly Detection and Localization." *Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition*, 2023, pp. 20402-20411.
 
-[2] Bergmann, Paul, et al. "MVTec AD: A Comprehensive Real-World Dataset for Unsupervised Anomaly Detection." *Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition*, 2019, pp. 9592-9600.
-
-[3] Roth, Karsten, et al. "Towards Total Recall in Industrial Anomaly Detection." *Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition*, 2022, pp. 14318-14328.
+[2] Roth, Karsten, et al. "Towards Total Recall in Industrial Anomaly Detection." *Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition*, 2022, pp. 14318-14328.
