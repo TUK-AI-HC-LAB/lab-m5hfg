@@ -38,6 +38,9 @@ node_modules/
 method1/source/patchcore-inspection/
 method1/source/results/patchcore_visualizations/
 
+# Local copy of the upstream SimpleNet repository, its data, weights, and runs.
+method2/source/simplenet/
+
 # Secrets
 *.env
 .env.*

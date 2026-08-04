@@ -1,0 +1,17 @@
+category,image_auroc,pixel_auroc,pro_auroc,raw_result
+bottle,1.0,0.9802699272479295,0.9056789047258738,simplenet/results/MVTecAD_Results/simplenet_mvtec/bottle_official_default_workers2/results.csv
+cable,0.9996251874062969,0.9734747942035676,0.9079500566192139,simplenet/results/MVTecAD_Results/simplenet_mvtec/cable_official_default_workers2/results.csv
+capsule,0.9800558436378142,0.9891744170905592,0.9326935488460375,simplenet/results/MVTecAD_Results/simplenet_mvtec/capsule_official_default_workers2/results.csv
+carpet,0.9935794542536115,0.9765210146214839,0.8678810412877869,simplenet/results/MVTecAD_Results/simplenet_mvtec/carpet_official_default_workers2/results.csv
+grid,0.9991645781119465,0.9851953957274127,0.9470494692073259,simplenet/results/MVTecAD_Results/simplenet_mvtec/grid_official_default_workers2/results.csv
+hazelnut,0.9985714285714287,0.9688578600947475,0.8032977558102034,simplenet/results/MVTecAD_Results/simplenet_mvtec/hazelnut_official_default_workers2/results.csv
+leather,1.0,0.9917058616562355,0.9687316886139592,simplenet/results/MVTecAD_Results/simplenet_mvtec/leather_official_default_workers2/results.csv
+metal_nut,1.0,0.9853011153091005,0.8746424015139305,simplenet/results/MVTecAD_Results/simplenet_mvtec/metal_nut_official_default_workers2/results.csv
+pill,0.9836333878887071,0.9829718274960743,0.9392673172783168,simplenet/results/MVTecAD_Results/simplenet_mvtec/pill_official_default_workers2/results.csv
+screw,0.9825783972125436,0.9908764752842826,0.9480040074829148,simplenet/results/MVTecAD_Results/simplenet_mvtec/screw_official_default_workers2/results.csv
+tile,0.9974747474747475,0.9462055200182806,0.8922772650127547,simplenet/results/MVTecAD_Results/simplenet_mvtec/tile_official_default_workers2/results.csv
+toothbrush,1.0,0.9850806177369957,0.9279890274451515,simplenet/results/MVTecAD_Results/simplenet_mvtec/toothbrush_official_default_workers2/results.csv
+transistor,1.0,0.9680201114340363,0.9328703126938883,simplenet/results/MVTecAD_Results/simplenet_mvtec/transistor_official_default_workers2/results.csv
+wood,1.0,0.9373607890002873,0.8298019476331826,simplenet/results/MVTecAD_Results/simplenet_mvtec/wood_official_default_workers2/results.csv
+zipper,0.9994747899159664,0.9802857624821264,0.936833739006619,simplenet/results/MVTecAD_Results/simplenet_mvtec/zipper_official_default_workers2/results.csv
+mean,0.9956105209648708,0.9760867659602079,0.9076645655451439,mean of 15 category rows
