@@ -29,6 +29,9 @@ SimpleNet은 **정상 이미지만으로 학습**해 산업 이미지의 이상 
 
 ## 2. 핵심 아이디어
 
+<img width="686" height="271" alt="image" src="https://github.com/user-attachments/assets/35ac9614-d83f-45c7-9f7a-a0fdc4d59de3" />
+
+
 정상 이미지에서 얻은 지역 특징에 작은 Gaussian noise를 더해 **가짜 이상 특징(synthetic anomaly feature)** 을 만들고, 정상 특징과 가짜 이상 특징을 구분하도록 discriminator를 학습한다 [1].
 
 ```text
