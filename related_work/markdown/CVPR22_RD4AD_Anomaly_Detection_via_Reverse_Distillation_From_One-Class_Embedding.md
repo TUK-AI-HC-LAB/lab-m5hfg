@@ -101,8 +101,6 @@ MVTec AD에서 WideResNet-50 teacher와 256×256 입력을 사용한 논문 보�
 
 논문은 같은 표에서 PaDiM(WideResNet-50)의 I-AUROC / P-AUROC / PRO를 95.5% / 97.5% / 92.1%로, 추론 시간과 메모리를 0.95초 및 3,800 MB로 보고한다. 이 비교는 memory bank 기반 사전학습 특징 방법에 비해 RD4AD가 memory와 추론 시간을 줄일 수 있다는 논문의 근거다 [1, Table 3].
 
-위 수치는 **논문 저자 환경의 보고값**이다. 이 related-work note는 별도 재현 결과를 포함하지 않는다.
-
 ---
 
 ## 5. PatchCore·SimpleNet과의 비교
