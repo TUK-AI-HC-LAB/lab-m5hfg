@@ -1,0 +1,17 @@
+category,image_auroc,pixel_auroc,pro_auroc,raw_result
+carpet,0.986,0.99,0.97,results/rd4ad_runs/carpet.csv
+bottle,1.0,0.987,0.966,results/rd4ad_runs/bottle.csv
+hazelnut,1.0,0.989,0.955,results/rd4ad_runs/hazelnut.csv
+leather,1.0,0.994,0.991,results/rd4ad_runs/leather.csv
+cable,0.96,0.972,0.909,results/rd4ad_runs/cable.csv
+capsule,0.973,0.987,0.958,results/rd4ad_runs/capsule.csv
+grid,1.0,0.993,0.976,results/rd4ad_runs/grid.csv
+pill,0.964,0.981,0.966,results/rd4ad_runs/pill.csv
+transistor,0.962,0.923,0.783,results/rd4ad_runs/transistor.csv
+metal_nut,1.0,0.973,0.924,results/rd4ad_runs/metal_nut.csv
+screw,0.989,0.996,0.985,results/rd4ad_runs/screw.csv
+toothbrush,0.994,0.991,0.943,results/rd4ad_runs/toothbrush.csv
+zipper,0.986,0.982,0.954,results/rd4ad_runs/zipper.csv
+tile,0.997,0.955,0.904,results/rd4ad_runs/tile.csv
+wood,0.993,0.955,0.912,results/rd4ad_runs/wood.csv
+mean,0.9869333333333333,0.9778666666666668,0.9397333333333333,mean of 15 category rows

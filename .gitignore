@@ -41,6 +41,9 @@ method1/source/results/patchcore_visualizations/
 # Local copy of the upstream SimpleNet repository, its data, weights, and runs.
 method2/source/simplenet/
 
+# Local copy of the upstream RD4AD repository. Checkpoints are kept outside the student repository.
+method3/source/rd4ad/
+
 # Secrets
 *.env
 .env.*
