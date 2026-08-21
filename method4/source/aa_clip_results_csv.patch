@@ -1,0 +1,14 @@
+diff --git a/test.py b/test.py
+--- a/test.py
++++ b/test.py
+@@ -120,0 +121,2 @@
++    parser.add_argument("--results_csv", type=str, default=None,
++                        help="Optional path for the per-class and average result table.")
+@@ -249,0 +252,7 @@
++
++        if args.results_csv:
++            results_dir = os.path.dirname(args.results_csv)
++            if results_dir:
++                os.makedirs(results_dir, exist_ok=True)
++            df.to_csv(args.results_csv, index=False)
++            logger.info("results csv: %s", args.results_csv)

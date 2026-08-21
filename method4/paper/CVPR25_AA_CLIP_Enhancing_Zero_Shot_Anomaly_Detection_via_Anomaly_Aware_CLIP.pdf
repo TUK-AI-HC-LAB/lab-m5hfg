@@ -1,0 +1,788 @@
+                  This CVPR paper is the Open Access version, provided by the Computer Vision Foundation.
+                                   Except for this watermark, it is identical to the accepted version;
+
+                            the final published version of the proceedings is available on IEEE Xplore.
+
+AA-CLIP: Enhancing Zero-Shot Anomaly Detection via Anomaly-Aware CLIP
+
+Wenxin Ma1,2 Xu Zhang1,2 Qingsong Yao5 Fenghe Tang1,2 Chenxu Wu1,2
+
+         Yingtai Li1,2        Rui Yan1,2                           Zihang Jiang1,2* S.Kevin Zhou1,2,3,4*
+
+         1 School of Biomedical Engineering, Division of Life Sciences and Medicine, USTC
+
+                  2 MIRACLE Center, Suzhou Institute for Advance Research, USTC
+
+         3 Key Laboratory of Intelligent Information Processing of CAS, ICT, CAS
+
+                  4 State Key Laboratory of Precision and Intelligent Chemistry, USTC
+
+                                                   5 Stanford University
+
+         wxma@mail.ustc.edu.cn jzh0103@ustc.edu.cn s.kevin.zhou@gmail.com
+
+Normal   Class 3                  Anomaly Text                                   Anomaly                                  Unseen Classes
+Anomaly                       Normal Text                                             Patch
+
+                                                                         Normal Patch
+
+Class 1                       Anomaly Text                                       Anomaly Patch
+                                                                       Normal
+                  Class 2                                              Patch                               Anomaly Patch
+                                                                                                Normal
+                                                   Anomaly Text
+                                                                                                  Patch
+
+                              Normal Text                                                                                                             Seen Classes
+
+Text Embeddings               Text Embeddings      Normal Text     Text Embeddings                                                                       Text Embeddings
+Patch Feature Space           Patch Feature Space                  Patch Feature Space                                                                   Patch Feature Space
+
+ Features from Original CLIP  Stage1: Disentangling Anomaly-Aware  Stage2: Aligning Patch Features                        Features from our Anomaly-Aware CLIP
+
+        (Left)                Text Anchors                                According to Text Anchors                                    (Right)
+
+                                                                (Middle)
+
+Figure 1. (Left) CLIP’s anomaly unawareness: Category-level image-text alignment in pre-training leads to CLIP’s vague distinctions
+in anomaly/normal semantics and inaccurate patch-text alignment. (Middle) Our two-stage adaptation strategy: In Stage1, anomaly
+and normal text features are disentangled as anchors in text space; in Stage2, patch-level visual features are trained to align to these an-
+chors, forming Anomaly-Aware CLIP. (Right) Generalizable anomaly awareness: Our method enables CLIP with generalizable anomaly
+awareness for both known and unseen classes.
+
+                        Abstract                                         ner, achieving effective AD while maintaining CLIP’s class
+                                                                         knowledge. Extensive experiments validate AA-CLIP as a
+Anomaly detection (AD) identifies outliers for applications              resource-efficient solution for zero-shot AD tasks, achiev-
+like defect and lesion detection. While CLIP shows promise               ing state-of-the-art results in industrial and medical appli-
+for zero-shot AD tasks due to its strong generalization ca-              cations. The code is available at https://github.
+pabilities, its inherent Anomaly-Unawareness leads to lim-               com/Mwxinnn/AA-CLIP.
+ited discrimination between normal and abnormal features.
+To address this problem, we propose Anomaly-Aware CLIP                   1. Introduction
+(AA-CLIP), which enhances CLIP’s anomaly discrimina-
+tion ability in both text and visual spaces while preserving             Anomaly detection (AD) involves modeling the distribution
+its generalization capability. AA-CLIP is achieved through               of a dataset to identify outliers, such as defects in industrial
+a straightforward yet effective two-stage approach: it first             products [2] or lesions in medical images [13]. Despite that
+creates anomaly-aware text anchors to differentiate normal               previous AD frameworks [10, 11, 15, 23, 31, 58] effectively
+and abnormal semantics clearly, then aligns patch-level vi-              detect anomalies when sufficient labeled data is available
+sual features with these anchors for precise anomaly lo-                 for specific classes, their high resource demands often limit
+calization. This two-stage strategy, with the help of resid-             their generalization ability to novel and rare classes. This
+ual adapters, gradually adapts CLIP in a controlled man-                 limitation is particularly challenging in real-world scenarios
+                                                                         where collecting comprehensive labeled datasets for AD is
+    *Corresponding author.                                               often infeasible, necessitating the exploration of low-shot
+
+                                                                   4744
+learning and transfer learning approaches.                             hancing its capability to handle fine-grained AD tasks with-
+                                                                       out sacrificing its generalization ability.
+   Contrastive Language-Image Pretraining (CLIP) model
+has emerged as a promising solution, demonstrating re-                    Our extensive experiments in both industrial and medi-
+markable generalization capabilities across various zero-              cal domains demonstrate that our straightforward approach
+shot tasks [24–26, 42]. Building upon CLIP’s success,                  equips CLIP with improved zero-shot AD ability, even in
+several recent studies have adapted CLIP for few/zero-shot             data-limited scenarios. By training with a minimal sam-
+AD tasks by utilizing anomaly-related descriptions to guide            ple — such as one normal sample and one anomaly sam-
+the detection of anomalous regions. Specifically, the vi-              ple (2-shot) per class — and testing across unseen datasets,
+sion encoder is trained to map anomaly images to visual                our method achieves zero-shot performance comparable to
+features that align more closely with text features of ab-             other CLIP-based AD techniques. With only 64-shot of
+normal descriptions than with those of normal descrip-                 each class seen in the training set, our method reaches state-
+tions [29, 30, 49, 60]. Further works [6, 7, 17, 41] have              of-the-art (SOTA) results in cross-dataset zero-shot testing,
+focused on enhancing CLIP’s patch-level feature represen-              validating our method’s ability to maximize the CLIP’s po-
+tations to achieve better alignment with text features, result-        tential for AD with a minimal data requirement.
+ing in improved anomaly localization performance.
+                                                                          Our contributions are summarized as follows:
+   These methods depend on text features that need to                  1. Anomaly-Aware CLIP with enhanced and generalizable
+be anomaly-aware to effectively differentiate abnormalities.
+However, recent studies highlight CLIP’s limitations in fine-             anomaly-discriminative ability. We introduce AA-CLIP
+grained semantic perception and reasoning [21, 22, 36, 38,                which is more sensitive to anomalies sequentially in text
+45, 46]. Upon exploring CLIP’s texture features for AD, we                and visual spaces, encoding anomaly-aware information
+observe that while CLIP’s text encoder effectively captures               into the original CLIP.
+object-level information, it struggles to reliably distinguish         2. Efficient adaptation using residual adapters. We im-
+between normal and abnormal semantics. As shown in con-                   plement simple residual adapters to boost zero-shot
+ceptual visualization Fig. 1(left) and sampled examples in                anomaly detection performance without compromising
+Fig. 2, CLIP has the intrinsic Anomaly-Unawareness prob-                  the model’s generalization ability.
+lem: the overlap of normal and abnormal texture features               3. SOTA performance with high training efficiency. Our
+hampers the precision of text-guided anomaly detection.                   method achieves SOTA results across diverse datasets,
+We argue that making CLIP anomaly-aware — by estab-                       showing robust anomaly detection capabilities even with
+lishing clearer distinctions between normal and abnormal                  limited training samples.
+semantics in the text space — is essential for guiding the
+vision encoder to precisely detect and localize anomalies.             2. Related Work
+
+   This observation drives us to improve CLIP-based zero-              Traditional Anomaly Detection in images involves mod-
+shot AD through enhancing anomaly discrimination in text               eling the normal data distribution to detect rare and di-
+space, achieved with our method Anomaly-Aware CLIP                     verse unexpected signals within visual data [44, 52, 53,
+(AA-CLIP) — a CLIP model with anomaly-aware infor-                     61]. Reconstruction-based [11, 16, 32, 33, 54, 56],
+mation encoded. AA-CLIP is implemented through a novel                 augmentation-based [31, 44, 48, 55, 58] and discrimina-
+two-stage adaptation approach. In the first stage, AA-CLIP             tive [10, 15, 23, 31, 43, 61] methods are typically used to fa-
+adapts the text encoder with frozen visual encoder, creat-             cilitate better modeling. Despite the huge progress of tradi-
+ing “anchors” for anomaly-aware semantics within the text              tional anomaly detection methods, their effectiveness relies
+space for each trained class. As illustrated in Fig. 1(mid-            heavily on a well-modeled normal data distribution. With-
+dle), each class’s text features are disentangled to distinct          out sufficient normal data, their ability to accurately detect
+anchors, with clear abnormality discrimination. Notably,               anomalies is significantly reduced.
+this disentanglement also applies to novel, unseen classes,
+supporting effective zero-shot inference in AD tasks (re-              CLIP, trained on a vast amount of image-text data, lever-
+fer to Fig. 1(right)). In the second stage, AA-CLIP aligns             ages contrastive learning alongside powerful language mod-
+patch-level visual features with these specially adapted tex-          els and visual feature encoders to capture robust concepts.
+ture anchors, guiding CLIP’s visual encoder to concentrate             This combination enables CLIP to achieve impressive zero-
+on anomaly-relevant regions. This two-stage approach en-               shot performance on image classification, as it can gener-
+sures a focused and precise anomaly detection framework.               alize well to new categories without requiring task-specific
+                                                                       training [24–27, 42, 51]. More recently, numerous stud-
+   Importantly, as CLIP is extensively trained on mas-                 ies [9, 12, 35, 39] have explored ways to transfer the knowl-
+sive data, to preserve its pre-trained knowledge, we utilize           edge embedded in CLIP models to a variety of downstream
+simple-structured Residual Adapters in both stages. This               tasks, yielding promising results in fields like image cap-
+design enables a controlled adaptation of CLIP while en-               tioning, image-text retrieval, and image generation. These
+                                                                       efforts demonstrate CLIP’s versatility and potential to drive
+
+                                                                 4745
+advancements across diverse applications.                                                       “This is a [ ] carpet.”
+   Despite the rapid advancements achieved by CLIP, nu-
+                                                                                                Semantics     Similarity  Probabilityt=0.01
+merous studies have highlighted persistent limitations in the
+features it extracts. While CLIP demonstrates strong gener-                                      broken         0.18          0.22
+alization across various tasks, it often struggles to capture                                    normal         0.19          0.78
+nuanced details and essential spatial relationships, which
+are crucial for tasks demanding precise boundary delin-                                         “This is a [  ] zipper.”  Probabilityt=0.01
+eation and fine-grained feature extraction. This limitation
+results in suboptimal performance in downstream applica-                                        Semantics     Similarity       0.38
+tions, especially that require high levels of detail, such as                                                                  0.62
+object detection, scene segmentation, or tasks in medical                                         broken        0.20
+imaging [14, 29, 30, 37, 49, 50, 57, 60]. As a result, lever-                                     normal        0.21      After Text Adaptation
+aging CLIP for fine-granular tasks frequently necessitates
+task-specific adaptations to bridge the gap between its gen-                                    Original CLIP
+eralized feature extraction and the precision required for
+specialized applications.                                              Figure 2. (Top) Examples illustrating CLIP’s Anomaly Un-
+                                                                       awareness. Despite the obvious anomalies present in the images,
+CLIP-based Anomaly Detection There have been several                   image features have higher similarities to normal descriptions,
+efforts to leverage CLIP for AD tasks. One of the pioneer-             rather than anomaly descriptions, mistakenly. This problem is en-
+ing approaches, WinCLIP [19], proposes a method for ex-                larged with a low temperature τ . (Bottom) Text Feature Sim-
+tracting and aggregating visual features from multiple lev-            ilarity Heatmap among Normal and Anomaly Descriptions:
+els to align with text features, demonstrating the potential of        Original CLIP vs. After Text Adaptation. Red indicates high
+CLIP in this context. Subsequent research investigates var-            similarity. In original CLIP, normal features exhibit strong simi-
+ious adaptation methods to bridge the gap between natural              larity with anomaly features, whereas text adaptation successfully
+domains and the AD domain, resulting in performance im-                separates them, clarifying the semantic distinctions between nor-
+provements. For instance, [7, 8, 18] focus on refining visual          mal and anomaly descriptions.
+features by employing adapters to enhance patch-level vi-
+sual representations. However, these approaches often rely             both normal and abnormal patterns that are shared across
+on text embeddings from the original CLIP model as soft
+supervision and overlook a critical limitation of CLIP in              different classes given a training set Dtrain with normal
+AD: its unclearness in distinguishing between anomalous
+and normal semantics, particularly within the text encoder,            or anomalous samples, in order to be capable of per-
+resulting in suboptimal performance. Other works have em-
+ployed prompt-learning-based methods[5, 6, 41, 59], intro-             forming AD tasks on a series of different test datasets
+ducing learnable embeddings into the text encoder to better
+represent abnormality. However, the class information in               {Dt1est,  Dt2est,  ...,  Dtnest},  where  each  Di       is  distinct  from
+CLIP can be damaged, potentially degrading generalization,
+especially in data-limited and zero-shot settings.                                                                        test
+
+   Different from previous methods, we are the first to in-            Dtrain. Image-level AD can be formally defined as a bi-
+vestigate CLIP’s inherent limitation in capturing anomaly-
+aware information, specifically in differentiating between             nary classification problem, where the model aims to clas-
+normal and anomalous semantics in text prompts. Rather
+than relying solely on the original anomaly-unaware text               sify samples x ∈ D as either normal (y = 0) or anomalous
+embeddings or unaltered feature spaces, our method is able
+to refine the embeddings to actively incorporate anomaly-              (y = 1). Anomaly segmentation extends this concept to
+discriminative representations.
+                                                                       pixel-level with mask S, aiming to identify anomalous re-
+3. Method
+                                                                       gions by highlighting pixels associated with anomalies.
+3.1. Overview
+                                                                       3.1.2. Current Challenges
+3.1.1. Problem Formulation
+                                                                       Anomaly Unawareness in CLIP: The CLIP-based AD
+Zero-shot AD models are trained to identify anomalous                  method classifies visual features as “anomalies” if they ex-
+samples whose categories may be unseen in the train-                   hibit greater similarities to anomaly prompt embeddings
+ing dataset. Specifically, the model is expected to learn              than to normal prompt embeddings, thus requiring well-
+                                                                       defined boundaries between these two kinds of prompts.
+                                                                       However, in real applications, CLIP’s text embeddings of-
+                                                                       ten lack the clear separability needed to reliably distinguish
+                                                                       between normal and anomaly classes.
+
+                                                                          We observe that, despite the visible defects in exam-
+                                                                       ple images from the MVTec-AD [2], their features exhibit
+                                                                       higher cosine similarity with “normal” prompts than with
+                                                                       correct “anomaly” descriptions (see Fig. 2 (top)), indicating
+                                                                       CLIP’s inaccurate semantic understanding. Without adap-
+
+                                                                 4746
+               Seen Classes  Unseen Classes                                  To address this, a carefully controlled refinement is cru-
+                                                                          cial to preserve CLIP’s generalization capabilities while en-
+                                                                          hancing its sensitivity to anomalies.
+
+Original CLIP                                                             3.1.3. Overview of Our Solution
+
+AA-CLIP                                                                   Motivated by Sec. 3.1.2, we propose Anomaly-Aware
+                                                                          CLIP (AA-CLIP) with improved anomaly awareness. As
+Figure 3. t-SNE Visualization of Text Features from Original              shown in Fig. 4, AA-CLIP is trained through a two-stage
+CLIP vs. AA-CLIP. Each point represents a text feature encoded            training strategy that sequentially adapts the semantic-rich
+from a prompt. Original CLIP’s normal and anomaly text features           text space and detail-focused visual space, with original
+are intertwined, while our method effectively disentangles them.          CLIP parameters remaining frozen. In the first stage (see
+This disentanglement is generalizable to novel classes, validating        Fig. 4 (Top)), we incorporate Residual Adapters into the
+the anomaly-awareness of our model.                                       shallow layers of the text encoder, and the visual features
+                                                                          from the fixed image encoder serve as a stable reference for
+tation, there persists a high similarity between the normal               optimization. A Disentangle Loss is purposed to enforce
+and abnormal text embeddings of a single class, as shown                  effective discrimination by ensuring independence between
+in Fig. 2 (bottom), suggesting a potential entanglement of                normal and anomaly embeddings. In the second stage, we
+normal and anomaly semantics within text space. We term                   integrate Residual Adapters into the shallow layers of the
+this limitation Anomaly Unawareness and attribute it to                   visual encoder to align patch-level features with the fixed,
+the training process of CLIP: it is primarily trained on gen-             specially adapted texture features from the fixed text en-
+eral, non-anomalous datasets and lacks specific guidance                  coder (see in Fig. 4 (Bottom)). Ultimately, our AA-CLIP
+on defect detection. Consequently, it is challenging to rely              succeeds in equipping CLIP with anomaly awareness across
+on original CLIP embeddings to detect subtle or context-                  seen and unseen classes, as shown in Fig. 3 (bottom).
+specific anomalies.
+                                                                          3.2. AA-CLIP with Two-Stage Adaptation Strategy
+   This issue remains evident across different categories in
+our t-SNE analysis: as shown in Fig. 3 (top), only sub-                   3.2.1. Residual Adapter
+tle separations are observed within an object cluster, where
+text embeddings for both normal and abnormal semantics                    To preserve CLIP’s pre-trained knowledge while enabling
+are intermixed. This entangled pattern may potentially                    targeted adaptation, we introduce lightweight Residual
+lead to anomaly-unaware text-image alignment, which re-                   Adapters in the shallow layers (up to layer K) of both text
+inforces the necessity to adapt CLIP’s to enhance its ability             and vision encoders.
+of anomaly-awareness.
+                                                                             The output feature xi ∈ RN×d of CLIP’s i-th (i ≤ K)
+Embedding Adaptation Dilemma: Discussion above                            transformer layer is fed into the i-th adapter, outputting
+renders the adaptation of CLIP essential for effective AD.                adapted feature xiresidual, as shown in Eq. (1),
+However, since CLIP’s embeddings are already optimized
+through extensive pretraining, it could be susceptible to                   \begin {aligned} x_{residual}^i&=Norm(Act(W^ix^i)), \end {aligned} \label {eq:adapter}                              (1)
+overfitting to new dataset during adaptation. Overfitting
+convergence leads to minimized intra-class distinctions in                where W i ∈ Rd×d is the trainable linear weight of i-th
+the training data, often at the expense of the feature separa-            adapter, Act(·) is an activation function, and N orm(·) is
+bility for effective generalization to unseen data.                       a normalizing function. The original feature xi and the
+                                                                          enhanced feature xiresidual are fused in a weighted man-
+                                                                          ner, generating xienhanced, the input to the next transformer
+                                                                          layer, as shown in Eq. (2),
+
+                                                                            \begin {aligned} x^i_{enhanced}=\lambda \ x_{residual}^i + (1-\lambda )\ x^i, \end {aligned} \label {eq:residual}   (2)
+
+                                                                          where λ is a hyper-parameter to control the residual ra-
+                                                                          tio, adjusting the fusing degree of AD-specific knowledge
+                                                                          for preserving the original CLIP’s generalization ability and
+                                                                          improved performance.
+
+                                                                          3.2.2. Two-Stage Training Strategy
+
+                                                                          Disentangling Anomaly-Aware Text Anchors: In the
+                                                                          first stage, our objective is to learn anomaly-discriminative
+                                                                          text anchors by adapting the text encoder while keeping the
+
+                                                                    4747
+Stage1: Disentangling Anomaly-Aware Text Anchors
+
+                                                                                      Adapter Adapter                                                                                                                                                                                                                                                                                                                                Ldisentangle :
+
+Normal Prompt                                             Adapter T’                                                                                                                                                                                              TN                                                                                                                                                                |<TN , TA >| ! → 0
+                                                  Transformer        T+                                                                                                                                                                                           TA
+      A photo of [CLS]                               Layer                                                                                                …                   …                                                                                                                                                                                                                                                                 Lseg
+                                                                                                                                                                                                                                                                Vpatch
+Anomaly Prompt                                                                       Transformer                                                                                                                                                                Vimage                                                                                                                                                               0 - Normal 1 - Anomaly Lcls
+                                                                                         Layer
+ A photo of broken [CLS]
+                                                                                                 Transformer
+                                                                                                     Layer
+
+                                                                                                             Transformer
+                                                                                                                 Layer
+
+                                                                                                                         Transformer
+                                                                                                                            Layer
+
+                                                                                                                                                Projector
+
+         Trainable                                Shallow Layers of Text Encoder      + V3patch                                                                 Deep Layers
+            Freeze
+                                                         V1patch + V2patch            Visual                                                                    + V4patch ⟹
+                                                                                      Block3
+                                                  Visual             Visual                                                                                       Visual
+                                                  Block1             Block2                                                                                       Block4
+
+         Stage2: Aligning Patch Features According to Text Anchors
+
+             A photo of [CLS]                                      Adapted Text Encoder                                                                                          TN TA
+         A photo of broken [CLS]                                                                                                                                                    V4patch
+                                                          V1patch              V2patch                                                                          V3patch                                                                                                                                                                         Vpatch
+                                                                                                                                                                                                                                                                                                                                                                                                                                                Lseg
+                                                                     +                                                                                    +                   +                                                                                 ⟹                                                                                                                                                                   0 - Normal 1 - Anomaly Lcls
+
+                   Trainable
+                      Freeze
+
+                                                          Projector               Projector                                                                        Projector        Projector
+
+                Block1                                    Adapter    Adapter  Block2                                                                            Block3           Block4
+
+                        Adapter  F’
+                   Transformer   F+
+                      Layer                               …          …                                                                                       …                …                                                                                                                                                                 Vimage
+
+                                                            Transformer
+                                                                Layer
+
+                                                                            Transformer
+                                                                                Layer
+
+                                                                                        Transformer
+                                                                                            Layer
+
+                                                                                                          Transformer
+                                                                                                             Layer
+
+                                                                                                                       Transformer
+                                                                                                                           Layer
+
+                                                                                                                                      Transformer
+                                                                                                                                         Layer
+
+                                                                                                                                                   Transformer
+                                                                                                                                                      Layer
+
+                                                                                                                                                                   Projector
+
+                Shallow Layers of Visual Encoder                                      Deep Layers
+
+Figure 4. The Two-Stage Training Pipeline of Anomaly-Aware CLIP. In the first stage, the text encoder of AA-CLIP is trained to
+identify anomaly-related semantics, helped by a disentangle loss. In the second stage, patch features are aligned with these text anchors.
+Both stages are achieved by the integration of Residual Adapters into the shallow layers of CLIP’s backbone. This controlled adaptation
+enables CLIP to effectively distinguish anomalies, which forms our Anomaly-Aware CLIP.
+
+image encoder fixed. We incorporate Residual Adapters                                                                                                           with the height H and width W of segmentation mask S.
+into the first KT layers of the CLIP text encoder, as illus-                                                                                                    Following previous works [6, 7, 18, 59], we compute the
+trated in Fig. 4 (Top), and set the final projector in the text                                                                                                 classification loss Lcls and segmentation loss Lseg to opti-
+encoder to be learnable to facilitate improved alignment.                                                                                                       mize parameters, as specified in Eq. (4). Specifically, the
+                                                                                                                                                                classification loss is a binary cross-entropy that compares
+   Using prompts designed to encapsulate both normal and                                                                                                        classification predictions with ground-truth labels y, and the
+anomalous semantics (as detailed in Appendix), text en-                                                                                                         segmentation loss is a combination of dice loss and focal
+coder generates corresponding high-level embeddings. The                                                                                                        loss applied to segmentation predictions and the anomaly
+average embeddings of the normal and anomaly prompts                                                                                                            segmentation mask S.
+serve as our initial text anchors, denoted as TN and TA ∈
+Rd, respectively. These anchors are refined by being aligned                                                                                                                    \begin {aligned} &\mathcal {L}_{cls} =\text {BCE} (p_{cls}, y), \\ &\mathcal {L}_{seg} =\text {Dice} (p_{seg}, S)+\text {Focal} (p_{seg}, S), \\ &\mathcal {L}                                                                                                                    (4)
+with visual features extracted from an enhanced CLIP vi-
+sual encoder, as [28, 59]. Alignment is conducted at both                                                                                                                                                                                                                                                                                       _{align} =\mathcal {L}_{cls}+\mathcal {L}_{seg}. \end {aligned} \label {eq:align} 
+image and patch levels to incorporate both global and lo-
+cal semantics. By calculating the cosine similarity between                                                                                                        To enhance the separation between normal and anomaly
+these anchors and the image features Vimage ∈ Rd or patch                                                                                                       text embeddings, we introduce a Disentangle Loss encour-
+features Vpatch ∈ RN×d, as shown in Eq. (3),                                                                                                                    aging orthogonality between TN and TA to minimize corre-
+                                                                                                                                                                lation, as in Eq. (5):
+                \begin {aligned} p_{cls}&=CosSim(V_{image}, [T_N,T_A]), \\ p_{seg}^o &=CosSim(V_{patch}, [T_N,T_A]), \end {aligned} \label {eq:cos}  (3)
+                                                                                                                                                                                   \mathcal {L}_{dis}=|<T_N,T_A>|^2. \label {eq:dis}                                                                                                                                                                                                                              (5)
+
+where [·, ·] means concatenate operation, we obtain the clas-                                                                                                   The Disentangle Loss Ldis is incorporated into the align-
+                                                                                                                                                                ment loss Lalign as a regularization term, weighted by a
+sification prediction pcls ∈ R2 and the segmentation pre-                                                                                                       factor γ, which forms the total loss, as in Eq. (6):
+         po        RN ×2 .                                                     po
+diction         ∈           The  segmentation                      prediction         is
+           seg                                                                   seg
+
+then reshaped and upsampled to pseg ∈ RH×W ×2 to align                                                                                                                             \mathcal {L}_{total}=\mathcal {L}_{align}+\gamma \mathcal {L}_{dis}. \label {eq:total}                                                                                                                                                                                         (6)
+
+                                                                                                                                                          4748
+   In this stage, the distinction between normal and                                                                                               the training dataset. To demonstrate adaptation efficiency,
+anomaly semantics is embedded into CLIP’s text encoder                                                                                             we conduct training under various data levels: 2-shot per
+while its original object-recognition capability is preserved.                                                                                     class, 16-shot per class, 64-shot per class, and full-shot. The
+Figure 3 indicates that this ability of anomaly-awareness is                                                                                       corresponding number of samples are randomly selected
+robust and generalizable to novel classes.                                                                                                         from each class, while maintaining a consistent 1:1 ratio
+                                                                                                                                                   between normal and anomaly samples.
+Aligning Patch Features According to Text Anchors:                                                                                                 Metrics Following [6, 7, 10, 11, 18, 19, 43, 55], we use
+Anomaly-aware semantic anchors can facilitate the adapta-                                                                                          the Area Under the Receiver Operating Characteristic Curve
+tion of patch features, thereby improving the effectiveness                                                                                        (AUROC) as the metric. We compute AUROC at both
+and generalizability of anomaly localization. To achieve                                                                                           the image and pixel levels to comprehensively assess the
+alignment between patch features and anchors from the                                                                                              model’s effectiveness in detecting and localizing anomalies.
+previous stage, we introduce trainable Residual Adapters                                                                                           Implementation Details Following [6, 7, 41, 59], we use
+within the initial KI layers of the CLIP visual encoder.                                                                                           OpenCLIP with the ViT-L/14 architecture as the backbone,
+                                                                                                                                                   and input images are resized to 518×518. All parameters
+   Features with multi-granularities are utilized to enhance                                                                                       of CLIP remain frozen. We set λ to 0.1, KT to 3, KI to 6,
+segmentation [7, 19, 59]. Specifically, as shown in Fig. 4                                                                                         and γ to 0.1. For multi-level feature extraction, we utilize
+(bottom), the intermediate output feature F i are extracted                                                                                        outputs from the 6-th, 12-th, 18-th, and 24-th layers of the
+from four distinct granularities. These multi-granularity                                                                                          visual encoder to compose the overall output. For the first
+features are then projected to align with the channel of text                                                                                      stage, we train the model for 5 epochs with a learning rate
+anchors via a trainable projector P roji(·), yielding V ipatch                                                                                     of 1 × 10−5. For the second stage, we continue training for
+at four distinct levels of granularity. The aggregated output                                                                                      20 epochs, adjusting the learning rate to 5 × 10−4. Param-
+Vpatch is computed by summing individual V ipatch outputs,                                                                                         eters are updated by Adam optimizers. All experiments are
+as in Eq. (7):                                                                                                                                     conducted on a single NVIDIA GeForce RTX 3090 GPU.
+                                                                                                                                                   More details are available in Appendix.
+  \begin {aligned} V_{patch}^i&=Proj_i(F^i),\ i\in \{1,2,3,4\} \\ V_{patch}&=\sum ^4_{i=1}V_{patch}^i. \                                (7)
+                                                                                                                                                   4.2. Comparison with SOTA Methods
+                                                                                                        end {aligned} \label {eq:agg} 
+                                                                                                                                                   We compare our method against CLIP and several recent
+The cosine similarity scores between the aggregated Vpatch                                                                                         SOTA models. Among them, WinCLIP [19], VAND [7]
+and the text anchors are calculated to generate patch-level                                                                                        and MVFA-AD [18] use original CLIP text encoder, and
+predictions as Eq. (3), resulting in the prediction maps.                                                                                          AnomalyCLIP [59] and AdaCLIP [6] incorporate learnable
+                                                                                                                                                   prompts. To ensure a fair comparison, we re-train models
+   During training, alignment is guided by the loss func-                                                                                          that are originally trained on different datasets to match the
+tion defined in Eq. (4), facilitating both global and local                                                                                        dataset settings of other approaches (detailed in Appendix).
+alignment. During inference, anomaly prediction maps and
+corresponding anomaly scores are derived by comparing                                                                                                 Quantitative results are presented in Tab. 1 and Tab. 2.
+the similarity scores of visual features against normal and                                                                                        Although adapting only the patch feature with original text
+anomaly text embeddings.                                                                                                                           embeddings has made progress in AD, the superior per-
+                                                                                                                                                   formance of AA-CLIP highlights its effective disentangle-
+4. Experiments                                                                                                                                     ment of anomaly-discriminative semantics, leading to fur-
+                                                                                                                                                   ther progress. Notably, even in data-limited situations, our
+4.1. Experiment Setups                                                                                                                             method consistently demonstrates top performance. At the
+                                                                                                                                                   pixel level, with only 2 shots per class used for training, our
+Datasets We evaluate our model on 11 widely used bench-                                                                                            method achieves improved average zero-shot performance
+marks, as previous AD works [6, 7, 18, 19, 59], with dis-                                                                                          compared to previous methods. With the full dataset, we
+tinct foreground objects spanning a variety of modalities,                                                                                         set a new pixel-level SOTA with an AUROC of 93.4%. At
+including photography, endoscopy, CT, MRI, and OCT. For                                                                                            the image level, our method is competitive with just 2 shots
+the industrial domain, we use MVTec AD [2], VisA [62],                                                                                             for training and establishes a new SOTA of 83.1% with 64
+BTAD [34] and MPDD [20]. For medical domain, we use                                                                                                shots per class.
+brain MRI, liver CT and retina OCT from BMAD [1], and
+four different colon polyp detection datasets with differ-                                                                                            Unlike previous methods, our approach does not rely
+ent views (CVC-ClinicDB [4], CVC-ColonDB [3], Kvasir-                                                                                              heavily on data resources to achieve top-tier performance.
+SEG [40] and CVC-300 [47]). Each dataset has both image-                                                                                           Comparison under different levels of data available, as
+level labels and pixel-level masks for evaluation.                                                                                                 shown in Fig. 5, reveals that our approach consistently out-
+                                                                                                                                                   performs other methods in general. Even with limited data,
+   We train our model on a real-world industrial AD dataset                                                                                        our model reaches competitive results, while other methods
+- VisA [62] - in which objects are different from other
+datasets. Results of VisA are obtained using MVTec-AD as
+
+                                                                                                                                             4749
+Domain      Dataset                    CLIP∗       WinCLIP∗     VAND∗           MVFA-AD AnomalyCLIP∗ AdaCLIP                           Ours
+                                                   CVPR 2023  CVPRw 2023        CVPR 2024 ICLR2024 ECCV2024                               -
+                                      OpenCLIP
+                                                                                                                                     16 64 full
+            Available training shots  -            -                full        full        full  full                      2
+
+            BTAD                      30.6         32.8             91.1        90.1        93.3  90.8 92.8 94.4 96.5 97.0
+            MPDD
+Industrial  MVTec-AD                  62.1         95.2             94.9        94.5        96.2  96.6 96.3 96.5 96.3 96.7
+            VisA
+                                      38.4         85.1             87.6        84.9        91.1  89.9 91.0 91.2 91.6 91.9
+
+                                      46.6         79.6             94.2        93.4        95.4  95.5 93.4 93.8 94.0 95.5
+
+            Brain MRI                 68.3         86.0             94.5        95.6        96.2  93.9 96.3 96.4 96.5 95.5
+            Liver CT
+            Retina OCT                90.5         96.2             95.6        96.8        93.9  94.5 97.3 97.7 97.7 97.8
+            ColonDB
+Medical     ClinicDB                  21.3         80.6             88.5        90.9        92.6  88.5 94.2 95.1 94.4 95.5
+            Kvasir
+            CVC-300                   49.5         51.2             78.2        78.4        82.9  80.0 83.9 83.5 84.7 84.0
+
+                                      47.5         70.3             85.1        83.9        85.0  85.9 89.2 87.6 87.8 89.9
+
+                                      44.6         69.7             80.3        81.9        81.9  86.4 82.1 84.6 85.2 87.2
+
+                                      49.9         -                92.8        82.6        95.4  92.9 96.0 97.4 96.0 96.4
+
+            Average                   49.9         74.7             89.3        88.5        91.3  90.4 92.0 92.6 92.8 93.4
+
+Table 1. Pixel-level AUROC of zero-shot AD methods in Industrial and Medical domains. Method sources and the number of shots used
+for training are noted. Results of methods with ∗ are copied from the papers or inferred from official weight. Best results are highlighted
+
+as first , second and third .
+
+Domain      Dataset                   CLIP&VAND∗ WinCLIP∗ MVFA-AD AnomalyCLIP∗ AdaCLIP                                           Ours
+                                         OpenCLIP CVPR 2023 CVPR 2024 ICLR2024 ECCV2024                                             -
+
+            Available training shots            -             -           full        full        full                   2     16 64 full
+
+            BTAD                            73.6              68.2        94.3        85.3        90.9 88.0 90.9 94.7 94.8
+            MPDD
+Industrial  MVTec-AD                        73.0              63.6        70.9        73.7        72.1 63.6 78.3 75.7 75.1
+            VisA
+                                            86.1              91.8        86.6        90.9        90.0 85.9 89.7 92.0 90.5
+
+                                            66.4              78.0        76.5        82.1        84.3 78.4 84.0 84.1 84.6
+
+            Brain MRI                       58.8              66.5        70.9        83.3        80.2 84.3 80.4 83.4 80.2
+            Liver CT
+Medical     Retina OCT                      54.7              64.2        63.0        61.6        64.2 69.4 68.1 69.2 69.7
+
+                                            65.6              42.5        77.3        75.7        82.7 77.4 81.0 82.9 82.7
+
+            Average                         68.3              67.8        77.1        78.4        80.6 78.1 81.8 83.1 82.5
+
+Table 2. Image-level AUROC of zero-shot AD methods in Industrial and Medical domains. Method sources and the number of shots used
+for training are noted. Results of methods with ∗ are copied from the papers or inferred from official weight. Best results are highlighted
+
+as first , second and third .
+
+display signs of underfitting. As data increases, our method                          Method                                    Avg. AUROC
+maintains its lead, establishing a new SOTA at both pixel                                                                Pixel-Level Image-Level
+and image levels.
+                                                                                            CLIP                               50.3   69.3
+4.3. Visualization
+                                                                                           1. + Linear Proj. (VAND [7])      88.9         69.3
+To illustrate the alignment intuitively, we present visualiza-                  Image 2. + Adapter                       48.9(-40.0)  53.4(-15.9)
+tion examples in Fig. 6 with original configuration for pre-                                                             91.3(+2.4)   80.7(+11.4)
+vious works. Although previous methods with can detect                                     3. + Residual Adapter
+anomalous regions, our AA-CLIP demonstrates fewer false-
+negative predictions in both industrial and medical domains,                    Text 4. + Residual Adapter               92.1(+3.2)   82.6(+13.3)
+accurately highlighting the correct anomaly regions.                                       5. + Disentangle Loss         92.7(+3.8)   83.3(+14.0)
+
+4.4. Ablations Analysis                                                         Table 3. Ablation Study of Our Training Strategy with VisA-
+                                                                                Trained 64-Shot Setup. Our contributions are bold. While
+We conduct thorough ablation experiments of our refine-                         VAND uses linear projectors to improve AD performance, incor-
+ment of both visual and text space, as shown in Tab. 3 and                      porating Residual Adapters further refines patch feature adapta-
+Fig. 7. The second row in Tab. 3, which mirrors the struc-                      tion. Moreover, integrating our Disentangle Loss yields the best
+ture of VAND [7], serves as our baseline.                                       overall results.
+
+Image Space: As shown in Tab. 3 line “2.”, inserting the                        damage of the original generalization ability of CLIP. Incor-
+vallina linear adapter into transformer layers results in a                     porating our Residual Adapters mitigates this issue (shown
+significant decline in zero-shot performance, indicating the                    in line “3.”), enhancing performance while preserving orig-
+                                                                                inal information stored in CLIP.
+
+                                                                                Text Space: The last two rows in Tab. 3 highlight the im-
+                                                                                pact of our approach in equipping CLIP’s encoder with
+
+                                                                          4750
+       Pixel-Level AUROC   Image-Level AUROC                                One-Stage Training (Testing on MVTec-AD):
+                                                                            P-/I-AUROC 90.1(-1.8)/88.6(-1.9)
+
+                                                                            Epoch1  Epoch5  AdaCLIP
+
+                                                                            Figure 7. Visualization of Text Space from One-Stage Training
+                                                                            and from AdaCLIP. During one-stage training, class information
+                                                                            collapses easily, leading to damaged zero-shot performance.
+
+Figure 5. Average Results (Top) and Results on BTAD (Bot-                   in Fig. 7, one-stage model can easily exaggerate anomaly
+tom) of Different methods Trained on 2-, 16-, 64-shot per Class             semantics and forget class information embedded in CLIP,
+and Full Data of VisA. Our method shows high fitting efficiency,            damaging the model’s generalization ability. The two-stage
+achieving strong results across all data scales.                            training strategy allows controlled adaptation, preserving
+                                                                            CLIP’s class-relevant knowledge in one end while adapting
+Image  Ground Truth  CLIP  AnomalyCLIP  VAND  Ours                          the other, as shown in Fig. 3.
+
+Figure 6. Visualization of Anomaly Localization Results of                  5. Conclusion and Discussion
+Original CLIP [42], AnomalyCLIP [59], VAND [7] and our
+AA-CLIP. Compared to previous methods, AA-CLIP demon-                       To our knowledge, this is the first work to explicitly ana-
+strates more reliable prediction capabilities in localizing anomaly.        lyze the intrinsic Anomaly Unawareness problem in CLIP.
+                                                                            To tackle this issue, we propose a simple yet effective two-
+anomaly-aware semantics. Line “4.” validates that, with                     stage training strategy to embed anomaly-aware informa-
+AA-CLIP, the model’s ability to discriminate anomalies                      tion into CLIP, enabling clear disentanglement of anomaly
+further improves, as the AA-CLIP’s text encoder provides                    representations across both seen and novel classes. By
+a more precise semantic foundation. Adding Disentangle                      leveraging residual adapters, our method preserves CLIP’s
+Loss leads to an additional improvement (shown in Line                      strong generalization ability, achieving outstanding zero-
+“5.”), especially at image-level, validating the necessity of               shot performance across multiple datasets.
+independence between normal and anomaly anchors. These
+results underscore the crucial role of text space refinement                   Our adapted AA-CLIP, developed through this two-
+in improved anomaly localization and classification.                        stage adaptation strategy, reveals the potential of refining
+                                                                            CLIP’s feature space for improved performance in down-
+Two-Stage Training: To validate the necessity of two-stage                  stream applications. Beyond addressing anomaly unaware-
+training, we adapt both text and image encoders together                    ness, our work also provides a potential foundation for tack-
+within one stage (also adopted by AdaCLIP). As shown                        ling other “unawareness” issues within CLIP. These may
+                                                                            include limitations in context-awareness or specificity to
+                                                                            domain-relevant nuances, suggesting further applications
+                                                                            of our method in expanding CLIP’s adaptability across di-
+                                                                            verse tasks. Additionally, we observe signs of overfitting
+                                                                            with full-shot training, suggesting potential saturation dur-
+                                                                            ing CLIP adaptation and warranting further investigation.
+
+                                                                            Acknowledgement
+
+                                                                            This work is supported by Natural Science Foundation
+                                                                            of China under Grant 62271465, Suzhou Basic Research
+                                                                            Program under Grant SYG202338, Open Fund Project of
+                                                                            Guangdong Academy of Medical Sciences, China (No.
+                                                                            YKY-KF202206), and Jiangsu Province Science Founda-
+                                                                            tion for Youths (NO. BK20240464).
+
+                                                                      4751
+References                                                                 [14] Peng Gao, Shijie Geng, Renrui Zhang, Teli Ma, Rongyao
+                                                                                 Fang, Yongfeng Zhang, Hongsheng Li, and Yu Qiao.
+ [1] Jinan Bao, Hanshi Sun, Hanqiu Deng, Yinsheng He, Zhaox-                     Clip-adapter: Better vision-language models with feature
+      iang Zhang, and Xingyu Li. Bmad: Benchmarks for medical                    adapters. International Journal of Computer Vision, 132(2):
+      anomaly detection, 2024. 6                                                 581–595, 2024. 3
+
+ [2] Paul Bergmann, Michael Fauser, David Sattlegger, and                  [15] Denis Gudovskiy, Shun Ishizaka, and Kazuki Kozuka.
+      Carsten Steger. Mvtec ad–a comprehensive real-world                        Cflow-ad: Real-time unsupervised anomaly detection with
+      dataset for unsupervised anomaly detection. In Proceedings                 localization via conditional normalizing flows. In Proceed-
+      of the IEEE/CVF conference on computer vision and pattern                  ings of the IEEE/CVF Winter Conference on Applications of
+      recognition, pages 9592–9600, 2019. 1, 3, 6                                Computer Vision, pages 98–107, 2022. 1, 2
+
+ [3] Jorge Bernal, Javier Sa´nchez, and Fernando Vilarino. To-             [16] Haoyang He, Jiangning Zhang, Hongxu Chen, Xuhai Chen,
+      wards automatic polyp detection with a polyp appearance                    Zhishan Li, Xu Chen, Yabiao Wang, Chengjie Wang, and
+      model. Pattern Recognition, 45(9):3166–3182, 2012. 6                       Lei Xie. Diad: A diffusion-based framework for multi-class
+                                                                                 anomaly detection. arXiv preprint arXiv:2312.06607, 2023.
+ [4] Jorge Bernal, F Javier Sa´nchez, Gloria Ferna´ndez-                         2
+      Esparrach, Debora Gil, Cristina Rodr´ıguez, and Fernando
+      Vilarin˜o. Wm-dova maps for accurate polyp highlighting              [17] Chaoqin Huang, Aofan Jiang, Jinghao Feng, Ya Zhang, Xin-
+      in colonoscopy: Validation vs. saliency maps from physi-                   chao Wang, and Yanfeng Wang. Adapting visual-language
+      cians. Computerized medical imaging and graphics, 43:99–                   models for generalizable anomaly detection in medical im-
+      111, 2015. 6                                                               ages. In Proceedings of the IEEE/CVF Conference on Com-
+                                                                                 puter Vision and Pattern Recognition (CVPR), pages 11375–
+ [5] Yunkang Cao, Xiaohao Xu, Yuqi Cheng, Chen Sun, Zongwei                      11385, 2024. 2
+      Du, Liang Gao, and Weiming Shen. Personalizing vision-
+      language models with hybrid prompts for zero-shot anomaly            [18] Chaoqin Huang, Aofan Jiang, Jinghao Feng, Ya Zhang, Xin-
+      detection. IEEE Transactions on Cybernetics, 2025. 3                       chao Wang, and Yanfeng Wang. Adapting visual-language
+                                                                                 models for generalizable anomaly detection in medical im-
+ [6] Yunkang Cao, Jiangning Zhang, Luca Frittoli, Yuqi Cheng,                    ages. In Proceedings of the IEEE/CVF Conference on Com-
+      Weiming Shen, and Giacomo Boracchi. Adaclip: Adapting                      puter Vision and Pattern Recognition, pages 11375–11385,
+      clip with hybrid learnable prompts for zero-shot anomaly de-               2024. 3, 5, 6
+      tection. In European Conference on Computer Vision, pages
+      55–72. Springer, 2025. 2, 3, 5, 6                                    [19] Jongheon Jeong, Yang Zou, Taewan Kim, Dongqing Zhang,
+                                                                                 Avinash Ravichandran, and Onkar Dabeer. Winclip: Zero-
+ [7] Xuhai Chen, Yue Han, and Jiangning Zhang. April-gan:                        /few-shot anomaly classification and segmentation. In Pro-
+      A zero-/few-shot anomaly classification and segmentation                   ceedings of the IEEE/CVF Conference on Computer Vision
+      method for cvpr 2023 vand workshop challenge tracks 1&2:                   and Pattern Recognition, pages 19606–19616, 2023. 3, 6
+      1st place on zero-shot ad and 4th place on few-shot ad. arXiv
+      preprint arXiv:2305.17382, 2023. 2, 3, 5, 6, 7, 8                    [20] Stepan Jezek, Martin Jonak, Radim Burget, Pavel Dvorak,
+                                                                                 and Milos Skotak. Deep learning-based defect detection of
+ [8] Xuhai Chen, Jiangning Zhang, Guanzhong Tian, Haoyang                        metal parts: evaluating current methods in complex condi-
+      He, Wuhao Zhang, Yabiao Wang, Chengjie Wang, and                           tions. In 2021 13th International congress on ultra mod-
+      Yong Liu. Clip-ad: A language-guided staged dual-path                      ern telecommunications and control systems and workshops
+      model for zero-shot anomaly detection. arXiv preprint                      (ICUMT), pages 66–71. IEEE, 2021. 6
+      arXiv:2311.00453, 2023. 3
+                                                                           [21] Ruixiang Jiang, Lingbo Liu, and Changwen Chen. Clip-
+ [9] Jaemin Cho, Seunghyun Yoon, Ajinkya Kale, Franck Der-                       count: Towards text-guided zero-shot object counting. In
+      noncourt, Trung Bui, and Mohit Bansal. Fine-grained                        Proceedings of the 31st ACM International Conference on
+      image captioning with clip reward. arXiv preprint                          Multimedia, pages 4535–4545, 2023. 2
+      arXiv:2205.13115, 2022. 2
+                                                                           [22] Zeeshan Khan, Makarand Tapaswi, et al. Figclip: Fine-
+[10] Thomas Defard, Aleksandr Setkov, Angelique Loesch, and                      grained clip adaptation via densely annotated videos. arXiv
+      Romaric Audigier. Padim: a patch distribution modeling                     preprint arXiv:2401.07669, 2024. 2
+      framework for anomaly detection and localization. In Inter-
+      national Conference on Pattern Recognition, pages 475–489.           [23] Daehyun Kim, Sungyong Baik, and Tae Hyun Kim. Sanflow:
+      Springer, 2021. 1, 2, 6                                                    Semantic-aware normalizing flow for anomaly detection. In
+                                                                                 Thirty-seventh Conference on Neural Information Process-
+[11] Hanqiu Deng and Xingyu Li. Anomaly detection via reverse                    ing Systems, 2023. 1, 2
+      distillation from one-class embedding. In Proceedings of
+      the IEEE/CVF Conference on Computer Vision and Pattern               [24] Junnan Li, Ramprasaath Selvaraju, Akhilesh Gotmare,
+      Recognition, pages 9737–9746, 2022. 1, 2, 6                                Shafiq Joty, Caiming Xiong, and Steven Chu Hong Hoi.
+                                                                                 Align before fuse: Vision and language representation learn-
+[12] Han Fang, Pengfei Xiong, Luhui Xu, and Yu Chen.                             ing with momentum distillation. Advances in neural infor-
+      Clip2video: Mastering video-text retrieval via image clip.                 mation processing systems, 34:9694–9705, 2021. 2
+      arXiv preprint arXiv:2106.11097, 2021. 2
+                                                                           [25] Junnan Li, Dongxu Li, Caiming Xiong, and Steven Hoi.
+[13] Tharindu Fernando, Harshala Gammulle, Simon Denman,                         Blip: Bootstrapping language-image pre-training for unified
+      Sridha Sridharan, and Clinton Fookes. Deep learning for                    vision-language understanding and generation. In Interna-
+      medical anomaly detection–a survey. ACM Computing Sur-
+      veys (CSUR), 54(7):1–37, 2021. 1
+
+                                                                     4752
+      tional conference on machine learning, pages 12888–12900.          [38] Roni Paiss, Ariel Ephrat, Omer Tov, Shiran Zada, Inbar
+      PMLR, 2022.                                                              Mosseri, Michal Irani, and Tali Dekel. Teaching clip to count
+[26] Junnan Li, Dongxu Li, Silvio Savarese, and Steven Hoi.                    to ten. In Proceedings of the IEEE/CVF International Con-
+      Blip-2: Bootstrapping language-image pre-training with                   ference on Computer Vision, pages 3170–3180, 2023. 2
+      frozen image encoders and large language models. In In-
+      ternational conference on machine learning, pages 19730–           [39] Or Patashnik, Zongze Wu, Eli Shechtman, Daniel Cohen-Or,
+      19742. PMLR, 2023. 2                                                     and Dani Lischinski. Styleclip: Text-driven manipulation of
+[27] Xin Li, Dongze Lian, Zhihe Lu, Jiawang Bai, Zhibo Chen,                   stylegan imagery. In Proceedings of the IEEE/CVF inter-
+      and Xinchao Wang. Graphadapter: Tuning vision-language                   national conference on computer vision, pages 2085–2094,
+      models with dual knowledge graph. Advances in Neural In-                 2021. 2
+      formation Processing Systems, 36, 2024. 2
+[28] Yi Li, Hualiang Wang, Yiqun Duan, and Xiaomeng Li. Clip             [40] Konstantin Pogorelov, Kristin Ranheim Randel, Carsten Gri-
+      surgery for better explainability with enhancement in open-              wodz, Sigrun Losada Eskeland, Thomas de Lange, Dag
+      vocabulary tasks. arXiv preprint arXiv:2304.05653, 2023.                 Johansen, Concetto Spampinato, Duc-Tien Dang-Nguyen,
+      5                                                                        Mathias Lux, Peter Thelin Schmidt, Michael Riegler, and
+[29] Yuqi Lin, Minghao Chen, Wenxiao Wang, Boxi Wu, Ke                         Pa˚l Halvorsen. Kvasir: A multi-class image dataset for com-
+      Li, Binbin Lin, Haifeng Liu, and Xiaofei He. Clip is also                puter aided gastrointestinal disease detection. In Proceedings
+      an efficient segmenter: A text-driven approach for weakly                of the 8th ACM on Multimedia Systems Conference, pages
+      supervised semantic segmentation. In Proceedings of the                  164–169, New York, NY, USA, 2017. ACM. 6
+      IEEE/CVF Conference on Computer Vision and Pattern
+      Recognition, pages 15305–15314, 2023. 2, 3                         [41] Zhen Qu, Xian Tao, Mukesh Prasad, Fei Shen, Zhengtao
+[30] Jie Liu, Yixiao Zhang, Jie-Neng Chen, Junfei Xiao, Yongyi                 Zhang, Xinyi Gong, and Guiguang Ding. Vcp-clip: A visual
+      Lu, Bennett A Landman, Yixuan Yuan, Alan Yuille, Yucheng                 context prompting model for zero-shot anomaly segmenta-
+      Tang, and Zongwei Zhou. Clip-driven universal model for                  tion. arXiv preprint arXiv:2407.12276, 2024. 2, 3, 6
+      organ segmentation and tumor detection. In Proceedings
+      of the IEEE/CVF International Conference on Computer Vi-           [42] Alec Radford, Jong Wook Kim, Chris Hallacy, Aditya
+      sion, pages 21152–21164, 2023. 2, 3                                      Ramesh, Gabriel Goh, Sandhini Agarwal, Girish Sastry,
+[31] Zhikang Liu, Yiming Zhou, Yuansheng Xu, and Zilei Wang.                   Amanda Askell, Pamela Mishkin, Jack Clark, et al. Learning
+      Simplenet: A simple network for image anomaly detection                  transferable visual models from natural language supervi-
+      and localization. In Proceedings of the IEEE/CVF Confer-                 sion. In International conference on machine learning, pages
+      ence on Computer Vision and Pattern Recognition, pages                   8748–8763. PMLR, 2021. 2, 8
+      20402–20411, 2023. 1, 2
+[32] Ruiying Lu, YuJie Wu, Long Tian, Dongsheng Wang, Bo                 [43] Karsten Roth, Latha Pemula, Joaquin Zepeda, Bernhard
+      Chen, Xiyang Liu, and Ruimin Hu. Hierarchical vector                     Scho¨lkopf, Thomas Brox, and Peter Gehler. Towards to-
+      quantized transformer for multi-class unsupervised anomaly               tal recall in industrial anomaly detection. In Proceedings of
+      detection. arXiv preprint arXiv:2310.14228, 2023. 2                      the IEEE/CVF Conference on Computer Vision and Pattern
+[33] Wenxin Ma, Qingsong Yao, Xiang Zhang, Zhelong Huang,                      Recognition, pages 14318–14328, 2022. 2, 6
+      Zihang Jiang, and S.Kevin Zhou. Towards accurate unified
+      anomaly segmentation. In Proceedings of the Winter Con-            [44] Thomas Schlegl, Philipp Seebo¨ck, Sebastian M Waldstein,
+      ference on Applications of Computer Vision (WACV), pages                 Ursula Schmidt-Erfurth, and Georg Langs. Unsupervised
+      1342–1352, 2025. 2                                                       anomaly detection with generative adversarial networks to
+[34] Pankaj Mishra, Riccardo Verk, Daniele Fornasier, Claudio                  guide marker discovery. In International conference on in-
+      Piciarelli, and Gian Luca Foresti. Vt-adl: A vision trans-               formation processing in medical imaging, pages 146–157.
+      former network for image anomaly detection and localiza-                 Springer, 2017. 2
+      tion. In 2021 IEEE 30th International Symposium on Indus-
+      trial Electronics (ISIE), pages 01–06. IEEE, 2021. 6               [45] Sanjay Subramanian, William Merrill, Trevor Darrell, Matt
+[35] Ron Mokady, Amir Hertz, and Amit H Bermano. Clip-                         Gardner, Sameer Singh, and Anna Rohrbach. Reclip: A
+      cap: Clip prefix for image captioning. arXiv preprint                    strong zero-shot baseline for referring expression compre-
+      arXiv:2111.09734, 2021. 2                                                hension. arXiv preprint arXiv:2204.05991, 2022. 2
+[36] Liliane Momeni, Mathilde Caron, Arsha Nagrani, Andrew
+      Zisserman, and Cordelia Schmid. Verbs in action: Improving         [46] Yingtian Tang, Yutaro Yamada, Yoyo Zhang, and Ilker
+      verb understanding in video-language models. In Proceed-                 Yildirim. When are lemons purple? the concept association
+      ings of the IEEE/CVF International Conference on Com-                    bias of vision-language models. In Proceedings of the 2023
+      puter Vision, pages 15579–15591, 2023. 2                                 Conference on Empirical Methods in Natural Language Pro-
+[37] Amin Karimi Monsefi, Kishore Prakash Sailaja, Ali                         cessing, pages 14333–14348, 2023. 2
+      Alilooee, Ser-Nam Lim, and Rajiv Ramnath. Detailclip:
+      Detail-oriented clip for fine-grained tasks. arXiv preprint        [47] David Va´zquez, Jorge Bernal, F Javier Sa´nchez, Gloria
+      arXiv:2409.06809, 2024. 3                                                Ferna´ndez-Esparrach, Antonio M Lo´pez, Adriana Romero,
+                                                                               Michal Drozdzal, and Aaron Courville. A benchmark for en-
+                                                                               doluminal scene segmentation of colonoscopy images. Jour-
+                                                                               nal of healthcare engineering, 2017(1):4037190, 2017. 6
+
+                                                                         [48] Guodong Wang, Shumin Han, Errui Ding, and Di Huang.
+                                                                               Student-teacher feature pyramid matching for anomaly de-
+                                                                               tection. arXiv preprint arXiv:2103.04257, 2021. 2
+
+                                                                         [49] Zhaoqing Wang, Yu Lu, Qiang Li, Xunqiang Tao, Yandong
+                                                                               Guo, Mingming Gong, and Tongliang Liu. Cris: Clip-
+                                                                               driven referring image segmentation. In Proceedings of
+
+                                                                   4753
+      the IEEE/CVF conference on computer vision and pattern              [62] Yang Zou, Jongheon Jeong, Latha Pemula, Dongqing Zhang,
+      recognition, pages 11686–11695, 2022. 2, 3                                and Onkar Dabeer. Spot-the-difference self-supervised pre-
+                                                                                training for anomaly detection and segmentation. In Eu-
+[50] Mengde Xu, Zheng Zhang, Fangyun Wei, Han Hu, and Xi-                       ropean Conference on Computer Vision, pages 392–408.
+      ang Bai. Side adapter network for open-vocabulary semantic                Springer, 2022. 6
+      segmentation. In Proceedings of the IEEE/CVF Conference
+      on Computer Vision and Pattern Recognition, pages 2945–
+      2954, 2023. 3
+
+[51] Xingyi Yang and Xinchao Wang. Diffusion model as repre-
+      sentation learner. In Proceedings of the IEEE/CVF Interna-
+      tional Conference on Computer Vision, pages 18938–18949,
+      2023. 2
+
+[52] Qingsong Yao, Li Xiao, Peihang Liu, and S Kevin Zhou.
+      Label-free segmentation of covid-19 lesions in lung ct. IEEE
+      transactions on medical imaging, 40(10):2808–2819, 2021.
+      2
+
+[53] Qingsong Yao, Zecheng He, Yuexiang Li, Yi Lin, Kai Ma,
+      Yefeng Zheng, and S Kevin Zhou. Adversarial medical im-
+      age with hierarchical feature hiding. IEEE Transactions on
+      Medical Imaging, 43(4):1296–1307, 2023. 2
+
+[54] Xincheng Yao, Chongyang Zhang, Ruoqi Li, Jun Sun, and
+      Zhenyu Liu. One-for-all: Proposal masked cross-class
+      anomaly detection. In Proceedings of the AAAI Conference
+      on Artificial Intelligence, pages 4792–4800, 2023. 2
+
+[55] Zhiyuan You, Lei Cui, Yujun Shen, Kai Yang, Xin Lu,
+      Yu Zheng, and Xinyi Le. A unified model for multi-class
+      anomaly detection. Advances in Neural Information Pro-
+      cessing Systems, 35:4571–4584, 2022. 2, 6
+
+[56] Zhiyuan You, Kai Yang, Wenhan Luo, Lei Cui, Yu Zheng,
+      and Xinyi Le. Adtr: Anomaly detection transformer with
+      feature reconstruction. In International Conference on Neu-
+      ral Information Processing, pages 298–310. Springer, 2022.
+      2
+
+[57] Renrui Zhang, Wei Zhang, Rongyao Fang, Peng Gao, Kun-
+      chang Li, Jifeng Dai, Yu Qiao, and Hongsheng Li. Tip-
+      adapter: Training-free adaption of clip for few-shot classi-
+      fication. In European conference on computer vision, pages
+      493–510. Springer, 2022. 3
+
+[58] Xuan Zhang, Shiyu Li, Xi Li, Ping Huang, Jiulong Shan,
+      and Ting Chen. Destseg: Segmentation guided denoising
+      student-teacher for anomaly detection. In Proceedings of
+      the IEEE/CVF Conference on Computer Vision and Pattern
+      Recognition, pages 3914–3923, 2023. 1, 2
+
+[59] Qihang Zhou, Guansong Pang, Yu Tian, Shibo He, and
+      Jiming Chen. Anomalyclip: Object-agnostic prompt learn-
+      ing for zero-shot anomaly detection. arXiv preprint
+      arXiv:2310.18961, 2023. 3, 5, 6, 8
+
+[60] Ziqin Zhou, Yinjie Lei, Bowen Zhang, Lingqiao Liu, and
+      Yifan Liu. Zegclip: Towards adapting clip for zero-shot se-
+      mantic segmentation. In Proceedings of the IEEE/CVF Con-
+      ference on Computer Vision and Pattern Recognition, pages
+      11175–11185, 2023. 2, 3
+
+[61] Bo Zong, Qi Song, Martin Renqiang Min, Wei Cheng, Cris-
+      tian Lumezanu, Daeki Cho, and Haifeng Chen. Deep autoen-
+      coding gaussian mixture model for unsupervised anomaly
+      detection. In International conference on learning represen-
+      tations, 2018. 2
+
+                                                                    4754
+
