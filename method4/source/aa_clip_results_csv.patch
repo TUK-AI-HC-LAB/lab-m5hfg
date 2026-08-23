@@ -1,14 +1,45 @@
 diff --git a/test.py b/test.py
 --- a/test.py
 +++ b/test.py
-@@ -120,0 +121,2 @@
-+    parser.add_argument("--results_csv", type=str, default=None,
-+                        help="Optional path for the per-class and average result table.")
-@@ -249,0 +252,7 @@
-+
+@@ -117,6 +117,8 @@ def main():
+     # exp
+     parser.add_argument("--seed", type=int, default=111)
+     parser.add_argument("--save_path", type=str, default="ckpt/baseline")
++    parser.add_argument("--checkpoint_path", type=str, default=None)
++    parser.add_argument("--results_csv", type=str, default=None)
+     parser.add_argument("--visualize", action="store_true")
+@@ -169,7 +171,9 @@ def main():
+-    files = sorted(glob(args.save_path + "/image_adapter_*.pth"))
++    files = [args.checkpoint_path] if args.checkpoint_path else sorted(
++        glob(args.save_path + "/image_adapter_*.pth")
++    )
+@@ -244,9 +248,20 @@ def main():
+-        df.loc[len(df)] = df.mean()
+-        df.loc[len(df) - 1]["class name"] = "Average"
++        mean_row = {
++            column: df[column].astype(float).mean()
++            for column in df.columns
++            if column != "class name"
++        }
++        mean_row["class name"] = "Average"
++        df.loc[len(df)] = mean_row
+         logger.info("final results:\n%s", df.to_string(index=False, justify="center"))
 +        if args.results_csv:
 +            results_dir = os.path.dirname(args.results_csv)
 +            if results_dir:
 +                os.makedirs(results_dir, exist_ok=True)
 +            df.to_csv(args.results_csv, index=False)
 +            logger.info("results csv: %s", args.results_csv)
+diff --git a/train.py b/train.py
+--- a/train.py
++++ b/train.py
+@@ -250,6 +250,12 @@ def main():
+     )
+     clip_model.eval()
++    # AA-CLIP trains only the adapters. Freeze both CLIP backbones so autograd
++    # does not allocate parameter gradients for their fixed weights.
++    for parameter in clip_surgery.parameters():
++        parameter.requires_grad = False
++    for parameter in clip_model.parameters():
++        parameter.requires_grad = False
+     model = AdaptedCLIP(
