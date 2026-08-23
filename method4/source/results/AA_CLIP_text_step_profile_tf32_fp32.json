@@ -1,0 +1,26 @@
+{
+  "settings": {
+    "tf32": true,
+    "amp": false,
+    "batch_size": 16,
+    "img_size": 518
+  },
+  "timing_ms": {
+    "text_embedding_ms": 1181.312,
+    "clip_surgery_encode_image_ms": 4412.376,
+    "adapted_clip_encode_image_ms": 18238.305,
+    "image_feature_postprocess_ms": 11.342,
+    "similarity_and_loss_ms": 204.703,
+    "backward_and_optimizer_ms": 525.206
+  },
+  "dataloader_ms": {
+    "first_batch_with_worker_startup": 642.643,
+    "second_batch_steady_state": 25.619
+  },
+  "total_profiled_ms": 24573.244,
+  "peak_memory_mib": 15187.8,
+  "clip_parameter_count": 428756225,
+  "clip_parameters_requires_grad": 446,
+  "adapter_parameter_count": 2359296,
+  "loss": 1.3787654638290405
+}
