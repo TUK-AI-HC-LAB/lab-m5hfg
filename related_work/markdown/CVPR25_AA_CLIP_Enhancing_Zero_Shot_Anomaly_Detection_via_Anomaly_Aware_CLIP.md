@@ -18,6 +18,8 @@ AA-CLIP은 원래 CLIP이 잘 구분하지 못하는 **정상/이상 의미**를
 
 ## 문제: 원래 CLIP만으로는 왜 부족한가
 
+![Original CLIP과 AA-CLIP의 text embedding t-SNE 비교. 위쪽 Original CLIP에서는 normal과 abnormal embedding이 섞여 있고, 아래쪽 AA-CLIP에서는 seen/unseen class 모두에서 두 embedding이 더 분리된다.](images/AA_CLIP_text_embedding_tsne.png)
+
 CLIP은 이미지와 문장의 전역 의미를 잘 맞추지만, 산업 결함처럼 작고 미세한 이상을 위해 학습된 모델은 아니다. 논문은 다음 두 문제를 출발점으로 든다 [1].
 
 1. **Anomaly-unawareness**: 결함이 보이는 이미지도 정상 prompt와 더 유사하게 표현될 수 있다. 따라서 “normal”과 “anomalous” text embedding 사이의 경계가 충분히 선명하지 않다.
