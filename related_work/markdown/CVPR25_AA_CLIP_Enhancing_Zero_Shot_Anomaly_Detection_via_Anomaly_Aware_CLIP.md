@@ -57,7 +57,6 @@ x_i^enhanced = λ · adapter(x_i) + (1 - λ) · x_i
 - **학습 대상**: text encoder의 얕은 residual adapter와 final text projector.
 - **고정 대상**: visual encoder.
 - normal prompt와 anomaly prompt를 text encoder에 넣어 각 범주의 normal anchor `T_N`, anomaly anchor `T_A`를 얻는다.
-- source image의 image-level label과 pixel mask를 사용해 classification loss와 segmentation loss로 anchor가 visual feature와 맞도록 학습한다.
 - 추가로 **Disentangle Loss**를 넣어 두 anchor가 서로 직교에 가깝도록 만든다.
 
 ```text
