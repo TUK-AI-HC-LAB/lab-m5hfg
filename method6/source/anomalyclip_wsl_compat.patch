@@ -1,0 +1,12 @@
+diff --git a/AnomalyCLIP_lib/model_load.py b/AnomalyCLIP_lib/model_load.py
+--- a/AnomalyCLIP_lib/model_load.py
++++ b/AnomalyCLIP_lib/model_load.py
+@@ -142,7 +142,7 @@ def load(name: str, device: Union[str, torch.device] = "cuda" if torch.cuda.is_
+     print("name", name)
+     if name in _MODELS:
+         # model_path = _download(_MODELS[name], download_root or os.path.expanduser("~/.cache/clip"))
+-        model_path = _download(_MODELS[name], download_root or os.path.expanduser("/remote-home/iot_zhouqihang/root/.cache/clip"))
++        model_path = _download(_MODELS[name], download_root or os.path.expanduser("~/.cache/clip"))
+     elif os.path.isfile(name):
+         model_path = name
+     else:

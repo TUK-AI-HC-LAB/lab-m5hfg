@@ -44,6 +44,9 @@ method2/source/simplenet/
 # Local copy of the upstream RD4AD repository. Checkpoints are kept outside the student repository.
 method3/source/rd4ad/
 
+# Local copy of the upstream AnomalyCLIP repository, datasets, checkpoints, and runs.
+method6/source/anomalyclip/
+
 # Secrets
 *.env
 .env.*
