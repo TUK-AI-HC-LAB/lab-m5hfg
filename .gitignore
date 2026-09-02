@@ -46,6 +46,7 @@ method3/source/rd4ad/
 
 # Local copy of the upstream AnomalyCLIP repository, datasets, checkpoints, and runs.
 method6/source/anomalyclip/
+method6/source/results/anomalyclip_visa_to_mvtec/log.txt
 
 # Secrets
 *.env
