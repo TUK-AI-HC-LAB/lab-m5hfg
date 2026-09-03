@@ -50,6 +50,8 @@ method6/source/results/anomalyclip_visa_to_mvtec/log.txt
 
 # Local raw logs from the WinCLIP reproduction; the parsed CSV files are tracked.
 method7/source/results/winclip_mvtec/*/log.txt
+method7/source/results/winclip_visa/*/log.txt
+method7/source/results/winclip_*/**/k_shot.txt
 
 # Secrets
 *.env

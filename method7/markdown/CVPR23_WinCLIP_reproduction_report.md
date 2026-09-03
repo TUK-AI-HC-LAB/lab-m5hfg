@@ -31,6 +31,21 @@
 | WinCLIP+ 2-shot | 범주별 2장 | 93.8 | 84.8 | 93.7 | [`results.csv`](../source/results/winclip_mvtec/two_shot/results.csv) |
 | WinCLIP+ 4-shot | 범주별 4장 | 94.2 | 85.4 | 95.3 | [`results.csv`](../source/results/winclip_mvtec/four_shot/results.csv) |
 
+### MVTec AD와 VisA target 비교
+
+같은 모델·입력 크기·prompt ensemble·seed에서 target dataset만 변경함. WinCLIP에는 source-domain 학습이 없고, few-normal-shot에서는 각 target의 정상 reference만 사용함.
+
+| Condition | MVTec Pixel AUROC (%) | VisA Pixel AUROC (%) | MVTec AUPRO (%) | VisA AUPRO (%) | MVTec Image AUROC (%) | VisA Image AUROC (%) |
+|---|---:|---:|---:|---:|---:|---:|
+| 0-shot | 82.3 | 73.2 | 61.9 | 51.0 | 90.4 | 75.5 |
+| 1-shot | 93.6 | 94.7 | 84.1 | 80.5 | 93.7 | 83.8 |
+| 2-shot | 93.8 | 95.1 | 84.8 | 81.2 | 93.7 | 83.4 |
+| 4-shot | 94.2 | 95.2 | 85.4 | 81.4 | 95.3 | 84.1 |
+
+VisA raw CSV: [`0-shot`](../source/results/winclip_visa/zero_shot/results.csv), [`1-shot`](../source/results/winclip_visa/one_shot/results.csv), [`2-shot`](../source/results/winclip_visa/two_shot/results.csv), [`4-shot`](../source/results/winclip_visa/four_shot/results.csv).
+
+VisA와 MVTec AD는 범주·결함·test split이 다르므로, 이 표는 dataset 난이도를 확정하는 비교가 아님. 같은 구현에서 target dataset과 target normal reference가 결과에 주는 변화를 확인하는 표임.
+
 ## 재현 경로와 범위
 
 - 실행 script: [`run_winclip_mvtec_wsl.sh`](../source/run_winclip_mvtec_wsl.sh)
