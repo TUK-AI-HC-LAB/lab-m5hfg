@@ -1,0 +1,13 @@
+condition,target_normal_reference,metric,mvtec_ad,visa,visa_minus_mvtec,unit
+WinCLIP 0-shot,0,Pixel AUROC,82.3,73.2,-9.1,percent
+WinCLIP 0-shot,0,AUPRO,61.9,51.0,-10.9,percent
+WinCLIP 0-shot,0,Image AUROC,90.4,75.5,-14.9,percent
+WinCLIP+ 1-shot,1,Pixel AUROC,93.6,94.7,1.1,percent
+WinCLIP+ 1-shot,1,AUPRO,84.1,80.5,-3.6,percent
+WinCLIP+ 1-shot,1,Image AUROC,93.7,83.8,-9.9,percent
+WinCLIP+ 2-shot,2,Pixel AUROC,93.8,95.1,1.3,percent
+WinCLIP+ 2-shot,2,AUPRO,84.8,81.2,-3.6,percent
+WinCLIP+ 2-shot,2,Image AUROC,93.7,83.4,-10.3,percent
+WinCLIP+ 4-shot,4,Pixel AUROC,94.2,95.2,1.0,percent
+WinCLIP+ 4-shot,4,AUPRO,85.4,81.4,-4.0,percent
+WinCLIP+ 4-shot,4,Image AUROC,95.3,84.1,-11.2,percent

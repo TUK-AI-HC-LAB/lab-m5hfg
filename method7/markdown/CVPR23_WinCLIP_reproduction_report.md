@@ -44,6 +44,8 @@
 
 VisA raw CSV: [`0-shot`](../source/results/winclip_visa/zero_shot/results.csv), [`1-shot`](../source/results/winclip_visa/one_shot/results.csv), [`2-shot`](../source/results/winclip_visa/two_shot/results.csv), [`4-shot`](../source/results/winclip_visa/four_shot/results.csv).
 
+한 파일에서 보는 metric별 비교: [`winclip_target_comparison.csv`](../source/results/winclip_target_comparison.csv).
+
 VisA와 MVTec AD는 범주·결함·test split이 다르므로, 이 표는 dataset 난이도를 확정하는 비교가 아님. 같은 구현에서 target dataset과 target normal reference가 결과에 주는 변화를 확인하는 표임.
 
 ## 재현 경로와 범위

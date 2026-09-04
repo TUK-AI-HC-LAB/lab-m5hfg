@@ -47,6 +47,7 @@ method3/source/rd4ad/
 # Local copy of the upstream AnomalyCLIP repository, datasets, checkpoints, and runs.
 method6/source/anomalyclip/
 method6/source/results/anomalyclip_visa_to_mvtec/log.txt
+method6/source/results/anomalyclip_mvtec_to_visa/log.txt
 
 # Local raw logs from the WinCLIP reproduction; the parsed CSV files are tracked.
 method7/source/results/winclip_mvtec/*/log.txt

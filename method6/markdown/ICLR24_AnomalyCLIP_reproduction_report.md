@@ -29,9 +29,19 @@
 | Image AUROC | 91.6 | [`results.csv`](../source/results/anomalyclip_visa_to_mvtec/results.csv) |
 | Image AP | 96.2 | [`results.csv`](../source/results/anomalyclip_visa_to_mvtec/results.csv) |
 
+### Source/target 방향 비교
+
+| Source dataset | Target dataset | Pixel AUROC (%) | Pixel AUPRO (%) | Image AUROC (%) | Image AP (%) |
+|---|---|---:|---:|---:|---:|
+| VisA | MVTec AD | 91.0 | 81.6 | 91.6 | 96.2 |
+| MVTec AD | VisA | 95.4 | 86.3 | 81.1 | 84.6 |
+
+통합 raw table: [`anomalyclip_cross_target_comparison.csv`](../source/results/anomalyclip_cross_target_comparison.csv). MVTec AD와 VisA는 범주·결함·test split이 다르므로, 이 표로 dataset 난이도나 source dataset의 우열을 확정하지 않음.
+
 ## 재현 경로
 
 - 실행 script: [`run_anomalyclip_visa_to_mvtec_wsl.sh`](../source/run_anomalyclip_visa_to_mvtec_wsl.sh)
+- 반대 방향 script: [`run_anomalyclip_mvtec_to_visa_wsl.sh`](../source/run_anomalyclip_mvtec_to_visa_wsl.sh)
 - VisA metadata helper: [`generate_anomalyclip_metadata.py`](../source/generate_anomalyclip_metadata.py)
 - official log → CSV helper: [`collect_anomalyclip_results.py`](../source/collect_anomalyclip_results.py)
 - WSL cache-path compatibility patch: [`anomalyclip_wsl_compat.patch`](../source/anomalyclip_wsl_compat.patch)
