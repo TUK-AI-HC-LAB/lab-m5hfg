@@ -49,6 +49,10 @@ method6/source/anomalyclip/
 method6/source/results/anomalyclip_visa_to_mvtec/log.txt
 method6/source/results/anomalyclip_mvtec_to_visa/log.txt
 
+# Local copy of the upstream AnomalyVFM repository, synthetic data, checkpoints, and raw runs.
+method8/source/anomalyvfm/
+method8/source/results/anomalyvfm_paper_protocol/log.txt
+
 # Local raw logs from the WinCLIP reproduction; the parsed CSV files are tracked.
 method7/source/results/winclip_mvtec/*/log.txt
 method7/source/results/winclip_visa/*/log.txt
