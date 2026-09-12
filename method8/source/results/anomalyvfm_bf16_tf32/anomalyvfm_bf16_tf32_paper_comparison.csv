@@ -1,0 +1,9 @@
+dataset,metric,paper_table_2_percent,current_percent,delta_percentage_points,comparison_status,source
+MVTec AD,Image AUROC,94.9,95.73920833043936,0.8392083304393634,same dataset and metric; runtime/data release differ,https://maticfuc.github.io/anomaly_vfm/static/pdfs/main.pdf
+MVTec AD,Image max-F1,94.1,94.66765399027639,0.5676539902763882,same dataset and metric; runtime/data release differ,https://maticfuc.github.io/anomaly_vfm/static/pdfs/main.pdf
+MVTec AD,Pixel AUROC,92.7,92.60003359725625,-0.09996640274374624,same dataset and metric; runtime/data release differ,https://maticfuc.github.io/anomaly_vfm/static/pdfs/main.pdf
+MVTec AD,Pixel max-F1,45.2,50.84624258931754,5.646242589317541,same dataset and metric; runtime/data release differ,https://maticfuc.github.io/anomaly_vfm/static/pdfs/main.pdf
+VisA,Image AUROC,93.6,93.28664191419141,-0.31335808580858726,same dataset and metric; runtime/data release differ,https://maticfuc.github.io/anomaly_vfm/static/pdfs/main.pdf
+VisA,Image max-F1,90.1,90.08191101446396,-0.01808898553603468,same dataset and metric; runtime/data release differ,https://maticfuc.github.io/anomaly_vfm/static/pdfs/main.pdf
+VisA,Pixel AUROC,96.2,94.44181949049774,-1.758180509502259,same dataset and metric; runtime/data release differ,https://maticfuc.github.io/anomaly_vfm/static/pdfs/main.pdf
+VisA,Pixel max-F1,31.2,31.09601000866465,-0.10398999133534871,same dataset and metric; runtime/data release differ,https://maticfuc.github.io/anomaly_vfm/static/pdfs/main.pdf

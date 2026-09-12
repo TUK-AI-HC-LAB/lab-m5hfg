@@ -1,0 +1,74 @@
+diff --git a/train.py b/train.py
+index 1a93419..0d2639b 100644
+--- a/train.py
++++ b/train.py
+@@ -31,6 +31,8 @@ def get_args():
+     )
+     parser.add_argument("-as", "--accumulation-steps", default=4, type=int)
+     parser.add_argument("-bs", "--batch-size", default=32, type=int)
++    parser.add_argument("--bf16", action="store_true")
++    parser.add_argument("--tf32", action="store_true")
+     parser.add_argument(
+         "-wd", "--weight-decay", default=1e-2, type=float
+     )  # For MUON it should be 0
+@@ -130,6 +132,12 @@ def InfiniteDataloader(loader):
+ 
+ def main(args):
+     torch_seed(args.seed)
++
++    if args.tf32:
++        torch.backends.cuda.matmul.allow_tf32 = True
++        torch.backends.cudnn.allow_tf32 = True
++        torch.set_float32_matmul_precision("high")
++
+     model = FeatureExtractor(args.model, args.image_size).model
+ 
+     feat_dim = model.feature_dim
+@@ -212,29 +220,28 @@ def main(args):
+             image = sample["image"].cuda()
+             mask_gt = sample["mask"].cuda()
+             score_gt = sample["is_anom"].cuda()
+-            summary, ftrs = model(image)
+-
+-            ftrs = ftrs.permute(0, 2, 1)
+-            ftrs = ftrs.reshape(-1, feat_dim, feat_size, feat_size)
+-
+-            mask, c = decoder(ftrs)
++            with torch.autocast(
++                device_type="cuda", dtype=torch.bfloat16, enabled=args.bf16
++            ):
++                summary, ftrs = model(image)
+ 
+-            score = predictor(summary).squeeze(1)
+-            l_img = img_loss(score, score_gt, reduction="mean")
++                ftrs = ftrs.permute(0, 2, 1)
++                ftrs = ftrs.reshape(-1, feat_dim, feat_size, feat_size)
+ 
+-            # The clipping makes the traning extremely more stable, it should be kept for general use
+-            # It will be detailed in a follow-up extension paper
+-            inner_mask_loss = 5 * mask_foc_loss(
+-                mask, mask_gt, reduction="none"
+-            ) + mask_l1_loss(mask.sigmoid().clip(0.1, 0.9), mask_gt)
++                mask, c = decoder(ftrs)
+ 
+-            c = turn_to_exp(c)
+-            l_mask_1 = c * inner_mask_loss
+-            l_mask_2 = alpha * c.log()
+-            l_mask = l_mask_1 - l_mask_2
++                score = predictor(summary).squeeze(1)
++                l_img = img_loss(score, score_gt, reduction="mean")
+ 
+-            l_mask = l_mask.mean()
++                inner_mask_loss = 5 * mask_foc_loss(
++                    mask, mask_gt, reduction="none"
++                ) + mask_l1_loss(mask.sigmoid().clip(0.1, 0.9), mask_gt)
+ 
+-            loss = l_img + l_mask
++                c = turn_to_exp(c)
++                l_mask_1 = c * inner_mask_loss
++                l_mask_2 = alpha * c.log()
++                l_mask = l_mask_1 - l_mask_2
++                l_mask = l_mask.mean()
++                loss = l_img + l_mask
+             loss /= accumulation_steps
+             loss.backward()
