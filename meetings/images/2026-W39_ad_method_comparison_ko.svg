@@ -1,0 +1,139 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1320" viewBox="0 0 1800 1320" role="img" aria-labelledby="title desc">
+  <title id="title">이미지 이상 탐지 방법별 입력, 학습 상태, 점수 계산 비교</title>
+  <desc id="desc">PatchCore, SimpleNet, RD4AD, AnomalyCLIP, WinCLIP, AA-CLIP, AnomalyVFM의 입력 정보, 학습되는 모듈, 중간 상태, 이상 점수 계산을 비교하는 한글 도식이다.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8.5" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,6 L9,3 z" fill="#26333D"/></marker>
+    <style>
+      .k { font-family:'Malgun Gothic','Noto Sans KR',Arial,sans-serif; fill:#17232D; }
+      .title { font-size:33px; font-weight:700; }
+      .sub { font-size:18px; fill:#52616D; }
+      .lane { font-size:27px; font-weight:700; }
+      .cardtitle { font-size:20px; font-weight:700; }
+      .label { font-size:18px; font-weight:700; text-anchor:middle; }
+      .small { font-size:15px; text-anchor:middle; }
+      .tiny { font-size:14px; }
+      .legend { font-size:15px; }
+      .edge { stroke:#26333D; stroke-width:1.8; }
+      .arrow { stroke:#26333D; stroke-width:1.7; fill:none; marker-end:url(#arrow); }
+      .dashed { stroke:#26333D; stroke-width:1.5; stroke-dasharray:7 5; fill:none; marker-end:url(#arrow); }
+    </style>
+  </defs>
+
+  <rect width="1800" height="1320" fill="#FFFFFF"/>
+  <text x="900" y="54" class="k title" text-anchor="middle">이미지 이상 탐지: 방법별 입력·학습 상태·점수 계산 비교</text>
+  <text x="900" y="84" class="k sub" text-anchor="middle">상자 = 입력 또는 중간 상태 · 가는 화살표 = 모델, 모듈, 계산 함수</text>
+
+  <!-- common inference -->
+  <rect x="55" y="116" width="1690" height="172" rx="16" fill="#F7F9FB" stroke="#C9D3DC" stroke-width="2"/>
+  <text x="85" y="151" class="k lane">공통 추론 흐름</text>
+  <rect x="130" y="184" width="220" height="70" rx="8" fill="#F1F3F5" class="edge"/>
+  <text x="240" y="213" class="k label">테스트 이미지</text><text x="240" y="237" class="k small">판별할 대상 이미지</text>
+  <rect x="540" y="184" width="265" height="70" rx="8" fill="#CDEBFA" class="edge"/>
+  <text x="672" y="213" class="k label">사전학습 시각 백본</text><text x="672" y="237" class="k small">대부분 동결, 일부 방법만 적응</text>
+  <rect x="995" y="184" width="245" height="70" rx="8" fill="#CDEBFA" class="edge"/>
+  <text x="1117" y="213" class="k label">위치별 특징 벡터</text><text x="1117" y="237" class="k small">패치 / 토큰 특징</text>
+  <rect x="1430" y="184" width="210" height="70" rx="8" fill="#173E59" class="edge"/>
+  <text x="1535" y="213" class="label" fill="#FFFFFF">이상 점수 지도</text><text x="1535" y="237" class="small" fill="#FFFFFF">이미지·위치별 출력</text>
+  <path d="M350 219 H540" class="arrow"/><text x="445" y="174" class="k small">특징 추출</text>
+  <path d="M805 219 H995" class="arrow"/><text x="900" y="174" class="k small">공간별 표현</text>
+  <path d="M1240 219 H1430" class="arrow"/><text x="1335" y="174" class="k small">방법별 점수 계산</text>
+
+  <!-- One class -->
+  <rect x="55" y="332" width="825" height="780" rx="18" fill="#F2FBF4" stroke="#75A882" stroke-width="2"/>
+  <text x="85" y="374" class="k lane">정상 데이터 기반 이상 탐지 (One-Class AD)</text>
+  <text x="85" y="402" class="k sub">공통 입력: 대상의 정상 학습 이미지 → 정상 기준 상태를 구성함</text>
+  <rect x="95" y="435" width="210" height="68" rx="8" fill="#D6F0D2" class="edge"/>
+  <text x="200" y="464" class="k label">정상 대상 이미지</text><text x="200" y="487" class="k small">정상 분포의 직접 기준</text>
+
+  <!-- PatchCore card -->
+  <rect x="95" y="544" width="745" height="145" rx="12" fill="#FFFFFF" stroke="#A9CDB0" stroke-width="1.6"/>
+  <text x="120" y="578" class="k cardtitle">PatchCore</text>
+  <rect x="315" y="556" width="185" height="65" rx="7" fill="#D6F0D2" class="edge"/>
+  <text x="407" y="583" class="k label">정상 메모리</text><text x="407" y="607" class="k small">대표 정상 패치</text>
+  <rect x="610" y="556" width="190" height="65" rx="7" fill="#173E59" class="edge"/>
+  <text x="705" y="583" class="label" fill="#FFFFFF">최근접 거리</text><text x="705" y="607" class="small" fill="#FFFFFF">멀수록 이상</text>
+  <path d="M305 588 H315" class="arrow"/><path d="M500 588 H610" class="arrow"/>
+  <text x="120" y="656" class="k tiny">학습되는 모듈: 없음 · 정상 상태: 코어셋으로 줄인 정상 메모리</text>
+
+  <!-- SimpleNet card -->
+  <rect x="95" y="711" width="745" height="160" rx="12" fill="#FFFFFF" stroke="#A9CDB0" stroke-width="1.6"/>
+  <text x="120" y="745" class="k cardtitle">SimpleNet</text>
+  <rect x="275" y="724" width="155" height="68" rx="7" fill="#F9D9C7" class="edge"/>
+  <text x="352" y="751" class="k label">특징 적응기</text><text x="352" y="775" class="k small">학습됨</text>
+  <rect x="490" y="724" width="130" height="68" rx="7" fill="#F9D9C7" class="edge"/>
+  <text x="555" y="751" class="k label">판별기</text><text x="555" y="775" class="k small">학습됨</text>
+  <rect x="675" y="724" width="125" height="68" rx="7" fill="#173E59" class="edge"/>
+  <text x="737" y="751" class="label" fill="#FFFFFF">판별 점수</text><text x="737" y="775" class="small" fill="#FFFFFF">정상/이상</text>
+  <path d="M430 758 H490" class="arrow"/><path d="M620 758 H675" class="arrow"/>
+  <text x="120" y="839" class="k tiny">학습 신호: 정상 특징 + 가우시안 잡음으로 만든 가짜 이상 특징</text>
+
+  <!-- RD4AD card -->
+  <rect x="95" y="893" width="745" height="160" rx="12" fill="#FFFFFF" stroke="#A9CDB0" stroke-width="1.6"/>
+  <text x="120" y="927" class="k cardtitle">RD4AD</text>
+  <rect x="275" y="906" width="135" height="68" rx="7" fill="#F9D9C7" class="edge"/>
+  <text x="342" y="933" class="k label">OCBE</text><text x="342" y="957" class="k small">학습됨</text>
+  <rect x="470" y="906" width="155" height="68" rx="7" fill="#F9D9C7" class="edge"/>
+  <text x="547" y="933" class="k label">학생 복원기</text><text x="547" y="957" class="k small">학습됨</text>
+  <rect x="685" y="906" width="115" height="68" rx="7" fill="#173E59" class="edge"/>
+  <text x="742" y="933" class="label" fill="#FFFFFF">복원 차이</text><text x="742" y="957" class="small" fill="#FFFFFF">클수록 이상</text>
+  <path d="M410 940 H470" class="arrow"/><path d="M625 940 H685" class="arrow"/>
+  <text x="120" y="1021" class="k tiny">정상 상태: 단일 클래스 병목 임베딩 · 점수: 교사–학생 다중 특징 복원 차이</text>
+  <path d="M200 503 V544" class="dashed"/>
+
+  <!-- zero shot -->
+  <rect x="920" y="332" width="825" height="780" rx="18" fill="#FAF7FC" stroke="#9A75AA" stroke-width="2"/>
+  <text x="950" y="374" class="k lane">제로샷 이상 탐지 (Zero-Shot AD)</text>
+  <text x="950" y="402" class="k sub">공통 입력: 출발 데이터, 합성 데이터, 텍스트 등 대상 밖의 보조 지식으로 기준 상태를 구성함</text>
+  <rect x="960" y="435" width="220" height="68" rx="8" fill="#E5C6EF" class="edge"/>
+  <text x="1070" y="464" class="k label">보조 지식</text><text x="1070" y="487" class="k small">출발 데이터 / 텍스트 / 합성 데이터</text>
+
+  <!-- AnomalyCLIP -->
+  <rect x="960" y="544" width="745" height="120" rx="12" fill="#FFFFFF" stroke="#C8A8D4" stroke-width="1.6"/>
+  <text x="985" y="577" class="k cardtitle">AnomalyCLIP</text>
+  <rect x="1190" y="556" width="175" height="65" rx="7" fill="#F9D9C7" class="edge"/>
+  <text x="1277" y="583" class="k label">객체 무관 프롬프트</text><text x="1277" y="607" class="k small">학습 토큰</text>
+  <rect x="1470" y="556" width="190" height="65" rx="7" fill="#173E59" class="edge"/>
+  <text x="1565" y="583" class="label" fill="#FFFFFF">시각-텍스트 유사도</text><text x="1565" y="607" class="small" fill="#FFFFFF">점수 지도</text>
+  <path d="M1365 588 H1470" class="arrow"/><text x="985" y="644" class="k tiny">학습 상태: 물체와 무관한 정상 / 이상 프롬프트 · DPAM은 지역 특징 보존에 사용</text>
+
+  <!-- WinCLIP -->
+  <rect x="960" y="684" width="745" height="120" rx="12" fill="#FFFFFF" stroke="#C8A8D4" stroke-width="1.6"/>
+  <text x="985" y="717" class="k cardtitle">WinCLIP</text>
+  <rect x="1190" y="696" width="175" height="65" rx="7" fill="#E5C6EF" class="edge"/>
+  <text x="1277" y="723" class="k label">프롬프트 앙상블</text><text x="1277" y="747" class="k small">정상/이상 상태 단어</text>
+  <rect x="1470" y="696" width="190" height="65" rx="7" fill="#173E59" class="edge"/>
+  <text x="1565" y="723" class="label" fill="#FFFFFF">다중 크기 유사도</text><text x="1565" y="747" class="small" fill="#FFFFFF">창 / 패치 특징 집계</text>
+  <path d="M1365 728 H1470" class="arrow"/><text x="985" y="784" class="k tiny">학습되는 모듈: 없음 · 정상/이상 상태 prompt와 다중 크기 window 특징을 사용함</text>
+
+  <!-- AA CLIP -->
+  <rect x="960" y="824" width="745" height="120" rx="12" fill="#FFFFFF" stroke="#C8A8D4" stroke-width="1.6"/>
+  <text x="985" y="857" class="k cardtitle">AA-CLIP</text>
+  <rect x="1190" y="836" width="175" height="65" rx="7" fill="#F9D9C7" class="edge"/>
+  <text x="1277" y="863" class="k label">잔차 적응기</text><text x="1277" y="887" class="k small">텍스트 → 시각 순서로 학습</text>
+  <rect x="1470" y="836" width="190" height="65" rx="7" fill="#173E59" class="edge"/>
+  <text x="1565" y="863" class="label" fill="#FFFFFF">앵커 유사도</text><text x="1565" y="887" class="small" fill="#FFFFFF">정상/이상 의미 분리</text>
+  <path d="M1365 868 H1470" class="arrow"/><text x="985" y="924" class="k tiny">중간 상태: 이상 인식 텍스트 앵커 · 패치 특징을 앵커에 정렬함</text>
+
+  <!-- AnomalyVFM -->
+  <rect x="960" y="964" width="745" height="120" rx="12" fill="#FFFFFF" stroke="#C8A8D4" stroke-width="1.6"/>
+  <text x="985" y="997" class="k cardtitle">AnomalyVFM</text>
+  <rect x="1190" y="976" width="175" height="65" rx="7" fill="#F9D9C7" class="edge"/>
+  <text x="1277" y="1003" class="k label">LoRA + 복원기</text><text x="1277" y="1027" class="k small">합성 데이터로 학습</text>
+  <rect x="1470" y="976" width="190" height="65" rx="7" fill="#173E59" class="edge"/>
+  <text x="1565" y="1003" class="label" fill="#FFFFFF">적응된 VFM 점수</text><text x="1565" y="1027" class="small" fill="#FFFFFF">이상 점수 지도</text>
+  <path d="M1365 1008 H1470" class="arrow"/><text x="985" y="1064" class="k tiny">학습 입력: 생성한 정상/이상 이미지와 필터링된 합성 마스크</text>
+  <path d="M1070 503 V544" class="dashed"/>
+
+  <!-- bottom note -->
+  <rect x="55" y="1150" width="1690" height="58" rx="10" fill="#FFF7DB" stroke="#D4B65F" stroke-width="1.5"/>
+  <text x="85" y="1185" class="k tiny"><tspan font-weight="700">읽는 법:</tspan> 같은 진한 파란 상자는 최종 이상 점수이지만, 그 앞의 기준 상태와 점수 함수가 방법마다 다름. 따라서 AUROC만으로 방법을 동일하게 비교하면 안 됨.</text>
+
+  <!-- legend -->
+  <text x="55" y="1260" class="k lane">색상 legend</text>
+  <rect x="260" y="1239" width="28" height="22" fill="#F1F3F5" class="edge"/><text x="299" y="1256" class="k legend">입력 데이터</text>
+  <rect x="430" y="1239" width="28" height="22" fill="#CDEBFA" class="edge"/><text x="469" y="1256" class="k legend">동결된 특징·표현</text>
+  <rect x="650" y="1239" width="28" height="22" fill="#D6F0D2" class="edge"/><text x="689" y="1256" class="k legend">대상 정상 기준</text>
+  <rect x="890" y="1239" width="28" height="22" fill="#E5C6EF" class="edge"/><text x="929" y="1256" class="k legend">출발·합성·텍스트 보조 지식</text>
+  <rect x="1275" y="1239" width="28" height="22" fill="#F9D9C7" class="edge"/><text x="1314" y="1256" class="k legend">학습·적응 상태</text>
+  <rect x="1510" y="1239" width="28" height="22" fill="#173E59" class="edge"/><text x="1549" y="1256" class="k legend">최종 출력</text>
+</svg>
