@@ -67,6 +67,28 @@
 - SimpleNet과 WinCLIP의 큰 Pixel AUROC 차이는 공통 framework의 기본 config가 기존 독립 실행의 논문 조건·공개 재현 코드 설정과 같지 않기 때문이다. 이 차이를 두 방법 중 어느 쪽이 더 좋다는 근거로 사용하면 안 된다.
 - PaDiM·COAD·PromptAD·Dinomaly·UniAD는 저장소에 같은 `bottle` 독립 실행 결과가 없으므로 이 표에 넣지 않았다. GLASS는 이번 공통 framework 실행도 DTD 텍스처 데이터 부재로 미완료다.
 
+### 2.2 SimpleNet의 −10.00%p 차이: 프레임워크에서 달랐던 조건
+
+`SimpleNet`의 Pixel AUROC `97.76% → 87.76%` 차이는 “같은 논문 조건에서 runner만 공통 프레임워크로 바꾼 결과”가 아니다. 두 실행은 정상 학습 이미지 209장, `bottle` test 83장, WideResNet-50 `layer2/layer3`, seed 0은 같지만, 아래의 실제 학습 조건이 달랐다.
+
+| 항목 | 독립 재현: 논문 조건 | 공통 framework 초기 실행 | 결과에 미칠 수 있는 영향 |
+|---|---|---|---|
+| image 전처리 | resize 256 → center crop 224 | resize 288 → 288×288 입력 | feature map과 patch 위치·개수가 달라짐 |
+| batch size | 4 | 8 | BatchNorm을 포함한 discriminator 학습 분포가 달라질 수 있음 |
+| adapter linear bias | 없음 | 있음 (`nn.Linear` 기본값) | 논문에 맞춘 feature 변환과 달라짐 |
+| adapter optimizer | Adam | AdamW | optimizer 규칙이 달라짐 |
+| adapter learning rate | 0.0001 | 0.000001 (`lr=1e-5`의 0.1배) | adapter 갱신 크기가 100배 작음 |
+| adapter weight decay | 0.00001 | AdamW 기본값 0.01 | 정규화 세기가 1,000배 큼 |
+
+공통 framework의 `configs/simple.yaml`은 `resize: 288`, `imagesize: 288`, `batch_size: 8`, `lr: 1e-5`를 사용한다. `Trainer_SimpleNet`은 projection에 `AdamW(..., lr * .1)`를 사용하고, `Projection`은 `nn.Linear`의 기본 bias를 그대로 사용한다. 반면 독립 재현은 논문 설정에 맞춰 `256/224`, batch 4, bias 없는 FC, Adam `1e-4`, weight decay `1e-5`로 수정한 공식 clone을 사용했다.
+
+따라서 현재 −10.00%p는 공통 framework 자체의 오류나 SimpleNet의 일반적 약점을 뜻하지 않는다. **서로 다른 SimpleNet protocol의 결과 차이**다. 공통 framework 포팅이 맞는지 검증하려면 위 여섯 조건을 독립 재현과 같게 맞춰 한 번 더 실행하고, 그때의 Pixel AUROC를 97.76%와 비교해야 한다.
+
+- 독립 재현 설정: [`method2/markdown/SimpleNet_reproduction_setup.md`](../../method2/markdown/SimpleNet_reproduction_setup.md)
+- 독립 재현 raw CSV: [`method2/source/results/SimpleNet_MVTecAD_WR50_paper_protocol_results.csv`](../../method2/source/results/SimpleNet_MVTecAD_WR50_paper_protocol_results.csv)
+- 공통 framework config: [`method9/source/common_framework_validation_patch/framework_snapshot/configs/simple.yaml`](../../method9/source/common_framework_validation_patch/framework_snapshot/configs/simple.yaml)
+- 공통 framework adapter 구현: [`trainer_simplenet.py`](../../method9/source/common_framework_validation_patch/framework_snapshot/trainer/trainer_simplenet.py), [`simplenet.py`](../../method9/source/common_framework_validation_patch/framework_snapshot/simplenet.py)
+
 ## 3. 정상 validation 분할 후 재실행 비교 (2026-09-28)
 
 기존 실행은 정상 train 209장을 전부 학습에 썼다. 이후 loader를 수정해 같은 209장을 **학습 188장 + 정상 validation 21장**으로 seed 0에서 고정 분할했고, test 83장(정상 20 + 결함 63)은 그대로 두었다. 이 표는 method·category·seed·기본 config를 유지한 채 학습 정상 이미지 수만 바꾼 비교다.
@@ -164,3 +186,17 @@ ValueError: 'a' cannot be empty unless no samples are taken
 현재 판단은 "공통 실행 흐름은 GLASS를 제외한 11개 등록 방법을 `bottle`에서 실제 결과 CSV까지 생성할 수 있다"이다. 아직 주장할 수 없는 것은 "12개 방법의 성능 비교가 공정하다" 또는 "전체 MVTec 재현이 끝났다"는 결론이다.
 
 다음 작업은 DTD의 `images` 폴더를 준비하고 GLASS만 다시 실행하는 것이다. 그 결과가 생기면 이 문서의 GLASS 행과 상태를 갱신하면 된다.
+
+## 8. 아직 실행·검증하지 못한 범위
+
+| 항목 | 현재 상태 | 이유 | 다음 확인 |
+|---|---|---|---|
+| GLASS | 미완료 | 학습용 synthetic anomaly에 필요한 DTD texture image가 없음 | DTD `images` 경로를 준비한 뒤 동일 조건으로 재실행 |
+| MVTec 전체 15개 category | 미실행 | 이번 실행은 code path 확인을 위한 `bottle` 1개 category smoke/reproduction 실행임 | category별 CSV 생성과 평균을 별도 실행 |
+| 여러 seed | 미실행 | seed 0에서 먼저 split·runner가 동작하는지 확인함 | 여러 seed 평균·표준편차로 안정성 확인 |
+| validation 기반 best epoch/checkpoint 선택 | 미구현 | VAL DataLoader만 추가됐고 Trainer별 학습 loop·선택 규칙은 아직 다름 | normal validation 또는 synthetic anomaly 기준을 정의한 뒤 Trainer별 연결 |
+| 합성 이상 기반 후보 선택 | 제안 단계 | 합성 방식과 후보 순위가 실제 test 성능과 연결되는지 별도 검증이 필요함 | SWSA 계열 선택 실험 설계·검증 |
+| AnomalyCLIP 새 prompt 학습 | 미실행 | 공식 학습은 normal/abnormal label과 pixel mask가 있는 source-labelled dataset을 요구하며, MVTec `train/good`만으로는 supervised prompt loss를 만들 수 없음 | source dataset으로 새 checkpoint를 학습한 뒤 target 평가 |
+| AnomalyCLIP 공식 `test.py`와 metric 일치 | 미검증 | adapter의 score/map/CSV 생성은 확인했지만 같은 checkpoint·protocol의 수치 일치는 아직 비교하지 않음 | 공식 `test.py`와 framework adapter를 같은 조건에서 비교 |
+
+따라서 이 문서가 보이는 범위는 "`bottle`, seed 0에서 공통 runner가 method별 결과 CSV를 만드는가"이다. 전체 dataset 성능, 여러 seed 안정성, validation 기반 model selection 효과는 아직 결론 내리지 않는다.
