@@ -1,0 +1,25 @@
+# AnomalyCLIP은 공식 구현의 ViT-L/14@336px CLIP과 학습된 prompt checkpoint를 사용합니다.
+# WinCLIP과 같은 공통 입력 정책을 사용해 Dataset의 ImageNet 정규화 tensor를 그대로 전달합니다.
+resize: 518
+imagesize: 518
+masksize: 518
+batch_size: 1
+meta_epochs: 15
+backbone_names:
+  - anomalyclip
+layers_to_extract_from:
+  - layer24
+anomalyclip_source_root: /home/test/anomalyclip
+anomalyclip_model_name: ViT-L/14@336px
+anomalyclip_checkpoint_path: ""
+anomalyclip_features_list:
+  - 24
+anomalyclip_feature_map_start: 0
+anomalyclip_dapm_layer: 20
+anomalyclip_prompt_length: 12
+anomalyclip_prompt_depth: 9
+anomalyclip_text_context_length: 4
+anomalyclip_sigma: 4.0
+anomalyclip_train_prompts: false
+
+
