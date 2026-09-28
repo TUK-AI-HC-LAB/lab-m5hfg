@@ -1,0 +1,2 @@
+dataset_name,seed,auroc_min,auroc_max,auroc_mean,auroc_std,pixel_auroc_min,pixel_auroc_max,pixel_auroc_mean,pixel_auroc_std,pro_min,pro_max,pro_mean,pro_std,sal_f1_min,sal_f1_max,sal_f1_mean,sal_f1_std
+mvtec_bottle,0,0.9150794148445129,0.9150794148445129,0.9150794148445129,0.0,0.6742154359817505,0.6742154359817505,0.6742154359817505,0.0,-1,-1,-1,-1,0.15689238905906677,0.15689238905906677,0.15689238905906677,0.0

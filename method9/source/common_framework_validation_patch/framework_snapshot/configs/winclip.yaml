@@ -1,0 +1,14 @@
+resize: 240
+imagesize: 240
+masksize: 240
+meta_epochs: 1
+k_shot: 1
+batch_size: 1
+features_list:
+  - 3
+  - 6
+  - 9
+few_shot_features:
+  - 3
+  - 6
+  - 9

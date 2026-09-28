@@ -21,5 +21,3 @@ anomalyclip_prompt_depth: 9
 anomalyclip_text_context_length: 4
 anomalyclip_sigma: 4.0
 anomalyclip_train_prompts: false
-
-

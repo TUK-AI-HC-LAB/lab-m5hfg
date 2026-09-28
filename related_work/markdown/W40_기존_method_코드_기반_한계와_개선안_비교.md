@@ -1,5 +1,7 @@
 # W40 기존 method 코드 기반 한계와 개선안 비교
 
+> GitHub 코드 근거: [PatchCore Trainer](../../method9/source/common_framework_validation_patch/framework_snapshot/trainer/trainer_patchcore.py), [RD Trainer](../../method9/source/common_framework_validation_patch/framework_snapshot/trainer/trainer_rd.py), [공통 Dataset](../../method9/source/common_framework_validation_patch/framework_snapshot/datasets/base.py), [전체 snapshot](../../method9/source/common_framework_validation_patch/framework_snapshot/).
+
 ## 1. 목적
 
 공통 프레임워크에서 실행한 기존 method의 코드가 무엇을 정상 기준으로 쓰는지 확인하고, 그 구조에서 생기는 limitation과 기존 논문의 개선 방향을 연결한다.

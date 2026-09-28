@@ -1,5 +1,7 @@
 # W40 AnomalyCLIP `bottle` 실행 검증
 
+> GitHub 근거 파일: [실행 설정](../../method9/source/common_framework_validation_patch/framework_snapshot/experiment_anomalyclip.yaml), [AnomalyCLIP Trainer](../../method9/source/common_framework_validation_patch/framework_snapshot/trainer/trainer_anomalyclip.py), [전용 Dataset](../../method9/source/common_framework_validation_patch/framework_snapshot/datasets/anomalyclip_mvtec.py), [현재 raw CSV](../../method9/source/common_framework_validation_patch/results/anomalyclip_bottle_common_input_20260929/anomalyclip__layer24_/results_anomalyclip.csv). dataset·checkpoint는 용량 때문에 저장소에 포함하지 않는다.
+
 ## 1. 실행 목적
 
 공통 framework에 추가한 AnomalyCLIP adapter가 실제 MVTec `bottle` 전체 test split에서 다음 흐름을 끝까지 수행하는지 확인했다.
@@ -20,11 +22,7 @@
 | Seed | `0` |
 | Batch size | `1` |
 
-실행 설정 파일은 아래에 있다.
-
-```text
-/mnt/c/Users/test/Downloads/dinomaly_share_codebase/dinomaly_share_codebase/experiment_anomalyclip.yaml
-```
+실행 설정 파일: [`experiment_anomalyclip.yaml`](../../method9/source/common_framework_validation_patch/framework_snapshot/experiment_anomalyclip.yaml).
 
 실행 명령:
 
@@ -52,13 +50,13 @@ ComponentContractError: datasets.anomalyclip_mvtec must expose DatasetSplit
 
 | 입력 정책 | Image AUROC | Pixel AUROC | 결과 CSV |
 |---|---:|---:|---|
-| 이전: OpenAI CLIP 재정규화 | `0.8880952381` | `0.9037956841` | `/home/test/anomalyclip_framework_results/w40_bottle_20260926/anomalyclip__layer24_/results_anomalyclip.csv` |
-| 현재: 공통 ImageNet 정규화 그대로 | `0.8896825397` | `0.9027179073` | `/home/test/anomalyclip_framework_results/w40_bottle_common_input_20260929/anomalyclip__layer24_/results_anomalyclip.csv` |
+| 이전: OpenAI CLIP 재정규화 | `0.8880952381` | `0.9037956841` | [raw CSV](../../method9/source/common_framework_validation_patch/results/anomalyclip_bottle_clip_input_20260926/anomalyclip__layer24_/results_anomalyclip.csv) |
+| 현재: 공통 ImageNet 정규화 그대로 | `0.8896825397` | `0.9027179073` | [raw CSV](../../method9/source/common_framework_validation_patch/results/anomalyclip_bottle_common_input_20260929/anomalyclip__layer24_/results_anomalyclip.csv) |
 
 생성 파일:
 
 ```text
-현재 기본 입력 정책의 CSV: `/home/test/anomalyclip_framework_results/w40_bottle_common_input_20260929/anomalyclip__layer24_/results_anomalyclip.csv`
+현재 기본 입력 정책의 [CSV](../../method9/source/common_framework_validation_patch/results/anomalyclip_bottle_common_input_20260929/anomalyclip__layer24_/results_anomalyclip.csv).
 ```
 
 CSV에는 다음 한 행이 저장됐다.
@@ -78,7 +76,7 @@ pixel_auroc_mean=0.9027179073366489
 
 | 확인한 주장 | 근거 |
 |---|---|
-| 실제 framework 전체 실행 성공 | `/home/test/anomalyclip_framework_results/w40_bottle_20260926_run.log` |
-| 이전/현재 입력 정책의 AUROC·CSV 저장 성공 | `/home/test/anomalyclip_framework_results/w40_bottle_20260926/anomalyclip__layer24_/results_anomalyclip.csv`, `/home/test/anomalyclip_framework_results/w40_bottle_common_input_20260929/anomalyclip__layer24_/results_anomalyclip.csv` |
-| 실행 설정 | `experiment_anomalyclip.yaml` |
-| Dataset registry 오류 수정 | `datasets/anomalyclip_mvtec.py` |
+| 실제 framework 전체 실행 성공 | [초기 raw CSV](../../method9/source/common_framework_validation_patch/results/anomalyclip_bottle_clip_input_20260926/anomalyclip__layer24_/results_anomalyclip.csv) |
+| 이전/현재 입력 정책의 AUROC·CSV 저장 성공 | [이전 CSV](../../method9/source/common_framework_validation_patch/results/anomalyclip_bottle_clip_input_20260926/anomalyclip__layer24_/results_anomalyclip.csv), [현재 CSV](../../method9/source/common_framework_validation_patch/results/anomalyclip_bottle_common_input_20260929/anomalyclip__layer24_/results_anomalyclip.csv) |
+| 실행 설정 | [`experiment_anomalyclip.yaml`](../../method9/source/common_framework_validation_patch/framework_snapshot/experiment_anomalyclip.yaml) |
+| Dataset registry 오류 수정 | [`datasets/anomalyclip_mvtec.py`](../../method9/source/common_framework_validation_patch/framework_snapshot/datasets/anomalyclip_mvtec.py) |

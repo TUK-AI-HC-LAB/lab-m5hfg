@@ -1,0 +1,12 @@
+method	status	started_at	finished_at	exit_code	result_root	log
+patchcore	success	2026-09-28T15:29:11+09:00	2026-09-28T15:29:36+09:00	0	/home/test/shared_framework_nearest_mask_w40_20260928/patchcore	/home/test/shared_framework_nearest_mask_w40_20260928/logs/patchcore.log
+padim	success	2026-09-28T15:29:36+09:00	2026-09-28T15:31:14+09:00	0	/home/test/shared_framework_nearest_mask_w40_20260928/padim	/home/test/shared_framework_nearest_mask_w40_20260928/logs/padim.log
+winclip	success	2026-09-28T15:31:14+09:00	2026-09-28T15:33:22+09:00	0	/home/test/shared_framework_nearest_mask_w40_20260928/winclip	/home/test/shared_framework_nearest_mask_w40_20260928/logs/winclip.log
+coad	success	2026-09-28T15:33:22+09:00	2026-09-28T15:34:43+09:00	0	/home/test/shared_framework_nearest_mask_w40_20260928/coad	/home/test/shared_framework_nearest_mask_w40_20260928/logs/coad.log
+simple	success	2026-09-28T15:34:43+09:00	2026-09-28T15:44:34+09:00	0	/home/test/shared_framework_nearest_mask_w40_20260928/simple	/home/test/shared_framework_nearest_mask_w40_20260928/logs/simple.log
+rd	success	2026-09-28T15:44:34+09:00	2026-09-28T16:35:32+09:00	0	/home/test/shared_framework_nearest_mask_w40_20260928/rd	/home/test/shared_framework_nearest_mask_w40_20260928/logs/rd.log
+rd_orig	success	2026-09-28T16:35:32+09:00	2026-09-28T16:37:29+09:00	0	/home/test/shared_framework_nearest_mask_w40_20260928/rd_orig	/home/test/shared_framework_nearest_mask_w40_20260928/logs/rd_orig.log
+promptad	success	2026-09-28T16:37:29+09:00	2026-09-28T16:43:05+09:00	0	/home/test/shared_framework_nearest_mask_w40_20260928/promptad	/home/test/shared_framework_nearest_mask_w40_20260928/logs/promptad.log
+dinomaly	success	2026-09-28T16:43:05+09:00	2026-09-28T17:23:30+09:00	0	/home/test/shared_framework_nearest_mask_w40_20260928/dinomaly	/home/test/shared_framework_nearest_mask_w40_20260928/logs/dinomaly.log
+uniad	success	2026-09-28T17:23:30+09:00	2026-09-28T18:06:38+09:00	0	/home/test/shared_framework_nearest_mask_w40_20260928/uniad	/home/test/shared_framework_nearest_mask_w40_20260928/logs/uniad.log
+anomalyclip	success	2026-09-28T18:06:38+09:00	2026-09-28T18:07:01+09:00	0	/home/test/shared_framework_nearest_mask_w40_20260928/anomalyclip	/home/test/shared_framework_nearest_mask_w40_20260928/logs/anomalyclip.log

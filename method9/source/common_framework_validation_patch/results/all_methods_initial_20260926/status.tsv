@@ -1,0 +1,13 @@
+method	status	started_at	finished_at	exit_code	result_root	log
+patchcore	success	2026-09-26T03:00:10+09:00	2026-09-26T03:00:36+09:00	0	/home/test/shared_framework_all_methods_w40_20260926/patchcore	/home/test/shared_framework_all_methods_w40_20260926/patchcore.log
+padim	success	2026-09-26T03:00:36+09:00	2026-09-26T03:02:19+09:00	0	/home/test/shared_framework_all_methods_w40_20260926/padim	/home/test/shared_framework_all_methods_w40_20260926/padim.log
+winclip	failed	2026-09-26T03:02:19+09:00	2026-09-26T03:02:25+09:00	1	/home/test/shared_framework_all_methods_w40_20260926/winclip	/home/test/shared_framework_all_methods_w40_20260926/winclip.log
+coad	failed	2026-09-26T03:02:25+09:00	2026-09-26T03:02:35+09:00	1	/home/test/shared_framework_all_methods_w40_20260926/coad	/home/test/shared_framework_all_methods_w40_20260926/coad.log
+simple	success	2026-09-26T03:02:35+09:00	2026-09-26T03:12:21+09:00	0	/home/test/shared_framework_all_methods_w40_20260926/simple	/home/test/shared_framework_all_methods_w40_20260926/simple.log
+rd	failed	2026-09-26T03:12:21+09:00	2026-09-26T03:12:25+09:00	1	/home/test/shared_framework_all_methods_w40_20260926/rd	/home/test/shared_framework_all_methods_w40_20260926/rd.log
+rd_orig	failed	2026-09-26T03:12:25+09:00	2026-09-26T03:12:29+09:00	1	/home/test/shared_framework_all_methods_w40_20260926/rd_orig	/home/test/shared_framework_all_methods_w40_20260926/rd_orig.log
+promptad	failed	2026-09-26T03:12:29+09:00	2026-09-26T03:12:33+09:00	1	/home/test/shared_framework_all_methods_w40_20260926/promptad	/home/test/shared_framework_all_methods_w40_20260926/promptad.log
+glass	failed	2026-09-26T03:12:33+09:00	2026-09-26T03:12:36+09:00	1	/home/test/shared_framework_all_methods_w40_20260926/glass	/home/test/shared_framework_all_methods_w40_20260926/glass.log
+dinomaly	failed	2026-09-26T03:12:36+09:00	2026-09-26T03:12:41+09:00	1	/home/test/shared_framework_all_methods_w40_20260926/dinomaly	/home/test/shared_framework_all_methods_w40_20260926/dinomaly.log
+uniad	success	2026-09-26T03:12:41+09:00	2026-09-26T03:55:44+09:00	0	/home/test/shared_framework_all_methods_w40_20260926/uniad	/home/test/shared_framework_all_methods_w40_20260926/uniad.log
+anomalyclip	success	2026-09-26T03:55:44+09:00	2026-09-26T03:56:07+09:00	0	/home/test/shared_framework_all_methods_w40_20260926/anomalyclip	/home/test/shared_framework_all_methods_w40_20260926/anomalyclip.log

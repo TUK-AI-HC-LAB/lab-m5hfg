@@ -1,0 +1,2 @@
+dataset_name,seed,auroc_mean,pixel_auroc_mean
+mvtec_anomalyclip_bottle,0,0.8880952380952382,0.9030625044490328

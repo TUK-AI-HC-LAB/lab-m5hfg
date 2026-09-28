@@ -1,0 +1,13 @@
+method	status	started_at	finished_at	exit_code	result_root	log
+patchcore	success	2026-09-28T20:13:37+09:00	2026-09-28T20:14:02+09:00	0	/home/test/shared_framework_all_methods_w40_validation_20260928/patchcore	/home/test/shared_framework_all_methods_w40_validation_20260928/logs/patchcore.log
+padim	success	2026-09-28T20:14:02+09:00	2026-09-28T20:15:58+09:00	0	/home/test/shared_framework_all_methods_w40_validation_20260928/padim	/home/test/shared_framework_all_methods_w40_validation_20260928/logs/padim.log
+winclip	success	2026-09-28T20:15:58+09:00	2026-09-28T20:18:14+09:00	0	/home/test/shared_framework_all_methods_w40_validation_20260928/winclip	/home/test/shared_framework_all_methods_w40_validation_20260928/logs/winclip.log
+coad	success	2026-09-28T20:18:14+09:00	2026-09-28T20:19:29+09:00	0	/home/test/shared_framework_all_methods_w40_validation_20260928/coad	/home/test/shared_framework_all_methods_w40_validation_20260928/logs/coad.log
+simple	success	2026-09-28T20:19:29+09:00	2026-09-28T20:28:50+09:00	0	/home/test/shared_framework_all_methods_w40_validation_20260928/simple	/home/test/shared_framework_all_methods_w40_validation_20260928/logs/simple.log
+rd	success	2026-09-28T20:28:50+09:00	2026-09-28T21:26:35+09:00	0	/home/test/shared_framework_all_methods_w40_validation_20260928/rd	/home/test/shared_framework_all_methods_w40_validation_20260928/logs/rd.log
+rd_orig	success	2026-09-28T21:26:35+09:00	2026-09-28T21:28:33+09:00	0	/home/test/shared_framework_all_methods_w40_validation_20260928/rd_orig	/home/test/shared_framework_all_methods_w40_validation_20260928/logs/rd_orig.log
+promptad	success	2026-09-28T21:28:33+09:00	2026-09-28T21:33:51+09:00	0	/home/test/shared_framework_all_methods_w40_validation_20260928/promptad	/home/test/shared_framework_all_methods_w40_validation_20260928/logs/promptad.log
+glass	failed	2026-09-28T21:33:51+09:00	2026-09-28T21:33:57+09:00	1	/home/test/shared_framework_all_methods_w40_validation_20260928/glass	/home/test/shared_framework_all_methods_w40_validation_20260928/logs/glass.log
+dinomaly	success	2026-09-28T21:33:57+09:00	2026-09-28T22:27:22+09:00	0	/home/test/shared_framework_all_methods_w40_validation_20260928/dinomaly	/home/test/shared_framework_all_methods_w40_validation_20260928/logs/dinomaly.log
+uniad	success	2026-09-28T22:27:22+09:00	2026-09-28T23:09:19+09:00	0	/home/test/shared_framework_all_methods_w40_validation_20260928/uniad	/home/test/shared_framework_all_methods_w40_validation_20260928/logs/uniad.log
+anomalyclip	success	2026-09-28T23:09:19+09:00	2026-09-28T23:09:52+09:00	0	/home/test/shared_framework_all_methods_w40_validation_20260928/anomalyclip	/home/test/shared_framework_all_methods_w40_validation_20260928/logs/anomalyclip.log

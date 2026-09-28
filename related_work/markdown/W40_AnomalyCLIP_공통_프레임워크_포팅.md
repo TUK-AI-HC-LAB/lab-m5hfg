@@ -1,5 +1,7 @@
 # W40 AnomalyCLIP 공통 프레임워크 포팅
 
+> GitHub 코드 근거: [registry 등록](../../method9/source/common_framework_validation_patch/framework_snapshot/component_registry.py), [AnomalyCLIP adapter](../../method9/source/common_framework_validation_patch/framework_snapshot/trainer/trainer_anomalyclip.py), [전용 Dataset](../../method9/source/common_framework_validation_patch/framework_snapshot/datasets/anomalyclip_mvtec.py), [실행 YAML](../../method9/source/common_framework_validation_patch/framework_snapshot/configs/anomalyclip.yaml), [현재 bottle raw CSV](../../method9/source/common_framework_validation_patch/results/anomalyclip_bottle_common_input_20260929/anomalyclip__layer24_/results_anomalyclip.csv).
+
 ## 1. 목적과 결론
 
 AnomalyCLIP을 DINOMALY shared codebase의 기존 모델 교체 구조에 등록했다. 이제 설정에서 아래처럼 선택할 수 있다.

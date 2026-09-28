@@ -1,0 +1,17 @@
+pretrain_embed_dimension: 1536
+target_embed_dimension: 1536
+patchsize: 3
+resize: 288
+imagesize: 288
+batch_size: 8
+pre_proj: 1
+gan_epochs: 4
+embedding_size: 256
+dsc_layers: 2
+dsc_hidden: 1024
+dsc_margin: 0.5
+dsc_lr: 0.0002
+lr: 0.00001
+mix_noise: 1
+noise_std: 0.015
+skip_ea: 1

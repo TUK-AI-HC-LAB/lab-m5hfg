@@ -245,5 +245,3 @@ class Trainer_AnomalyCLIP:
         # 매개변수: 없음.
         # 반환값: 문자열 key와 숫자 값을 가진 metric dict입니다.
         return self.metrics
-
-

@@ -53,5 +53,3 @@ run_method() {
 for method in "${METHODS[@]}"; do
   run_method "$method"
 done
-
-

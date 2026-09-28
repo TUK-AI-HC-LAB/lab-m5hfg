@@ -1,5 +1,7 @@
 # W40 nearest mask 처리 후 전체 method 재실행 비교
 
+> GitHub 코드·결과 근거: [공통 mask 전처리](../../method9/source/common_framework_validation_patch/framework_snapshot/datasets/base.py), [재실행 script](../../method9/source/common_framework_validation_patch/framework_snapshot/run_all_methods_bottle_nearest_mask_w40.sh), [raw CSV·status](../../method9/source/common_framework_validation_patch/results/all_methods_nearest_mask_20260928/).
+
 ## 목적
 
 공통 framework의 정답 mask Resize 보간을 `bilinear`에서 `nearest`로 변경한 뒤, GLASS를 제외한 모든 등록 method를 MVTec AD `bottle`에서 다시 실행한다.

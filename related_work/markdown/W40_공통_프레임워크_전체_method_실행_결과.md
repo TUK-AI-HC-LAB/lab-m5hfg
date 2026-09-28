@@ -1,5 +1,7 @@
 # W40 공통 프레임워크 전체 method 실행 결과 (MVTec AD `bottle`)
 
+> GitHub 실행 근거: [초기 12-method script](../../method9/source/common_framework_validation_patch/framework_snapshot/run_all_methods_bottle_wsl.sh), [재실행 script](../../method9/source/common_framework_validation_patch/framework_snapshot/rerun_failed_methods_bottle_wsl.sh), [초기 raw 결과](../../method9/source/common_framework_validation_patch/results/all_methods_initial_20260926/), [정상 validation 재실행 결과](../../method9/source/common_framework_validation_patch/results/all_methods_validation_20260928/).
+
 ## 결론
 
 공통 프레임워크에 등록된 12개 방법 중 **11개는 `bottle` 클래스에서 끝까지 실행되어 결과 CSV를 만들었다.** `GLASS`만 실행에 필요한 외부 DTD 텍스처 이미지가 준비되지 않아 학습 시작 단계에서 멈췄다. 이는 모델 코드의 결과가 아니라 데이터 의존성 미충족이다.

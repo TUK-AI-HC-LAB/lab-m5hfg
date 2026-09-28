@@ -1,0 +1,8 @@
+method	status	started_at	finished_at	exit_code	result_root	log
+winclip	success	2026-09-26T12:10:11+09:00	2026-09-26T12:12:24+09:00	0	/home/test/shared_framework_all_methods_w40_20260926/retry_after_dependencies/winclip	/home/test/shared_framework_all_methods_w40_20260926/retry_after_dependencies/winclip.log
+coad	success	2026-09-26T12:12:24+09:00	2026-09-26T12:13:57+09:00	0	/home/test/shared_framework_all_methods_w40_20260926/retry_after_dependencies/coad	/home/test/shared_framework_all_methods_w40_20260926/retry_after_dependencies/coad.log
+rd	failed	2026-09-26T12:13:57+09:00	2026-09-26T12:14:01+09:00	1	/home/test/shared_framework_all_methods_w40_20260926/retry_after_dependencies/rd	/home/test/shared_framework_all_methods_w40_20260926/retry_after_dependencies/rd.log
+rd_orig	failed	2026-09-26T12:14:01+09:00	2026-09-26T12:14:05+09:00	1	/home/test/shared_framework_all_methods_w40_20260926/retry_after_dependencies/rd_orig	/home/test/shared_framework_all_methods_w40_20260926/retry_after_dependencies/rd_orig.log
+promptad	failed	2026-09-26T12:14:05+09:00	2026-09-26T12:14:10+09:00	1	/home/test/shared_framework_all_methods_w40_20260926/retry_after_dependencies/promptad	/home/test/shared_framework_all_methods_w40_20260926/retry_after_dependencies/promptad.log
+glass	failed	2026-09-26T12:14:10+09:00	2026-09-26T12:14:15+09:00	1	/home/test/shared_framework_all_methods_w40_20260926/retry_after_dependencies/glass	/home/test/shared_framework_all_methods_w40_20260926/retry_after_dependencies/glass.log
+dinomaly	success	2026-09-26T12:14:15+09:00	2026-09-26T13:03:19+09:00	0	/home/test/shared_framework_all_methods_w40_20260926/retry_after_dependencies/dinomaly	/home/test/shared_framework_all_methods_w40_20260926/retry_after_dependencies/dinomaly.log

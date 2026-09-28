@@ -1,0 +1,4 @@
+patchsize: 3
+resize: 224
+imagesize: 224
+patchcore_coreset_num: 10000

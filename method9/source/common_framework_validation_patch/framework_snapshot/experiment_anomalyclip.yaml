@@ -1,0 +1,14 @@
+# W40 AnomalyCLIP 공통 framework 전체 실행 설정입니다.
+# 공식 AnomalyCLIP source와 ViSA-to-MVTec prompt checkpoint를 사용해 MVTec bottle을 평가합니다.
+method: anomalyclip
+dataset: mvtec
+category: bottle
+data_path: /home/test/data/mvtec
+results_path: /home/test/anomalyclip_framework_results/w40_bottle_20260926
+seed: 0
+batch_size: 1
+num_workers: 1
+
+# 공식 원본과 학습된 prompt weight 경로입니다.
+anomalyclip_source_root: /home/test/anomalyclip
+anomalyclip_checkpoint_path: /home/test/anomalyclip_checkpoints/visa_to_mvtec/epoch_15.pth
