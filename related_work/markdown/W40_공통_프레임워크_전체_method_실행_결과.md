@@ -64,7 +64,44 @@
 - SimpleNet과 WinCLIP의 큰 Pixel AUROC 차이는 공통 framework의 기본 config가 기존 독립 실행의 논문 조건·공개 재현 코드 설정과 같지 않기 때문이다. 이 차이를 두 방법 중 어느 쪽이 더 좋다는 근거로 사용하면 안 된다.
 - PaDiM·COAD·PromptAD·Dinomaly·UniAD는 저장소에 같은 `bottle` 독립 실행 결과가 없으므로 이 표에 넣지 않았다. GLASS는 이번 공통 framework 실행도 DTD 텍스처 데이터 부재로 미완료다.
 
-## 3. GLASS만 왜 끝나지 않았나
+## 3. 정상 validation 분할 후 재실행 비교 (2026-09-28)
+
+기존 실행은 정상 train 209장을 전부 학습에 썼다. 이후 loader를 수정해 같은 209장을 **학습 188장 + 정상 validation 21장**으로 seed 0에서 고정 분할했고, test 83장(정상 20 + 결함 63)은 그대로 두었다. 이 표는 method·category·seed·기본 config를 유지한 채 학습 정상 이미지 수만 바꾼 비교다.
+
+> validation DataLoader는 생성됐지만, 현재 모든 trainer가 validation metric으로 epoch나 hyperparameter를 선택하는 것은 아니다. 따라서 이 표는 validation 기반 model selection의 성능이 아니라, **정상 학습 이미지 10%를 분리했을 때의 재실행 결과**다.
+
+| Method | 상태 | 기존 Image AUROC | 188/21 Image AUROC | Δ Image | 기존 Pixel AUROC | 188/21 Pixel AUROC | Δ Pixel | 기존 F1 | 188/21 F1 | Δ F1 |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| PatchCore | 완료 | 1.0000 | 1.0000 | +0.0000 | 0.9878 | 0.9871 | -0.0007 | 0.6735 | 0.6730 | -0.0005 |
+| PaDiM | 완료 | 1.0000 | 1.0000 | +0.0000 | 0.9872 | 0.9861 | -0.0011 | 0.7154 | 0.7106 | -0.0048 |
+| WinCLIP | 완료 | 0.9992 | 0.9992 | +0.0000 | 0.9585 | 0.9568 | -0.0017 | 0.7052 | 0.6930 | -0.0122 |
+| COAD | 완료 | 1.0000 | 1.0000 | +0.0000 | 0.9925 | 0.9916 | -0.0009 | 0.6903 | 0.7006 | +0.0103 |
+| SimpleNet | 완료 | 0.9944 | 0.9151 | -0.0793 | 0.8776 | 0.6742 | -0.2034 | 0.5308 | 0.1569 | -0.3739 |
+| RD | 완료 | 1.0000 | 1.0000 | +0.0000 | 0.9882 | 0.9894 | +0.0012 | 0.7533 | 0.7615 | +0.0082 |
+| RD-Orig | 완료 | 1.0000 | 1.0000 | +0.0000 | 0.9885 | 0.9876 | -0.0009 | 0.7595 | 0.7211 | -0.0384 |
+| PromptAD | 완료 | 1.0000 | 1.0000 | +0.0000 | 0.9902 | 0.9897 | -0.0005 | 0.8024 | 0.7968 | -0.0056 |
+| Dinomaly | 완료 | 1.0000 | 1.0000 | +0.0000 | 0.9934 | 0.9925 | -0.0009 | 0.6053 | 0.5526 | -0.0527 |
+| UniAD | 완료 | 1.0000 | 1.0000 | +0.0000 | 0.9848 | 0.9831 | -0.0017 | 0.6863 | 0.6769 | -0.0094 |
+| AnomalyCLIP | 완료 | 0.8881 | 0.8881 | +0.0000 | 0.9038 | 0.9031 | -0.0007 | - | - | - |
+| GLASS | 실패 | - | - | - | - | - | - | - | - | - |
+
+### 해석
+
+- GLASS를 제외한 11개 방법이 새 split에서 실제 결과 CSV를 만들었다.
+- SimpleNet 외 10개 방법은 `bottle`, seed 0에서 Image AUROC 차이가 반올림 네 자리 기준으로 없다. Pixel AUROC와 F1은 방법별로 소폭 달라졌다.
+- SimpleNet의 Image AUROC는 약 7.93%p, Pixel AUROC는 약 20.34%p, F1은 약 37.39%p 낮아졌다. 이는 188장 학습 조건에 민감할 가능성을 보이는 **한 번의 관찰**일 뿐, 원인이나 일반성을 확정하지 않는다.
+- 모든 방법의 설정이 서로 다르고, `bottle` 한 category·seed 하나만 사용했다. 따라서 이 표는 방법 순위나 validation 분할의 일반 효과를 주장하는 근거로 사용할 수 없다.
+
+### 재현 근거
+
+| 역할 | 경로 |
+|---|---|
+| 재실행 스크립트 | `C:\Users\test\Downloads\dinomaly_share_codebase\dinomaly_share_codebase\run_all_methods_bottle_validation_wsl.sh` |
+| 실행 상태·시간 | `/home/test/shared_framework_all_methods_w40_validation_20260928/status.tsv` |
+| 방법별 로그 | `/home/test/shared_framework_all_methods_w40_validation_20260928/logs/` |
+| 방법별 raw CSV | `/home/test/shared_framework_all_methods_w40_validation_20260928/<method>/**/results_<method>.csv` |
+
+## 4. GLASS만 왜 끝나지 않았나
 
 GLASS는 **Generalized Latent Anomaly Synthesis and Segmentation** 방법이다. 정상 MVTec 이미지에 별도 텍스처 이미지(보통 DTD, Describable Textures Dataset)를 섞어 가짜 이상 이미지를 만든 뒤 학습한다. 따라서 MVTec `bottle` 폴더만으로는 학습을 시작할 수 없다.
 
@@ -76,7 +113,7 @@ ValueError: 'a' cannot be empty unless no samples are taken
 
 프레임워크 기본 경로는 `/datasets/dtd/images`이다. DTD 이미지가 있는 실제 경로를 준비한 뒤 `anomaly_source_path`에 그 `images` 폴더를 지정하면 GLASS를 같은 프로토콜로 재실행할 수 있다. 이 데이터는 현재 PC/WSL에서 찾지 못했으므로, 임의 다운로드나 다른 이미지 폴더 대체는 하지 않았다.
 
-## 4. 실행 중 발견한 환경 의존성
+## 5. 실행 중 발견한 환경 의존성
 
 처음에는 일부 방법이 아래 패키지 부재로 멈췄다. 필요한 패키지를 현재 WSL 환경에 설치한 뒤, 실패한 방법만 같은 조건으로 다시 실행했다.
 
@@ -90,7 +127,7 @@ ValueError: 'a' cannot be empty unless no samples are taken
 
 이는 프레임워크의 모든 optional method 의존성을 한 가상환경에 처음부터 설치하지 않았기 때문에 생긴 환경 준비 문제다. 결과 표에는 패키지 설치 후 실제 학습/평가까지 완료된 재실행 결과를 기록했다.
 
-## 5. 재현 근거 (Evidence Map)
+## 6. 재현 근거 (Evidence Map)
 
 ### 실행 스크립트와 상태 파일
 
@@ -119,7 +156,7 @@ ValueError: 'a' cannot be empty unless no samples are taken
 | UniAD | `/home/test/shared_framework_all_methods_w40_20260926/uniad/uniad__layer2_layer3_/results_uniad.csv` |
 | AnomalyCLIP | `/home/test/shared_framework_all_methods_w40_20260926/anomalyclip/anomalyclip__layer24_/results_anomalyclip.csv` |
 
-## 6. 현재 판단과 다음 1개 작업
+## 7. 현재 판단과 다음 1개 작업
 
 현재 판단은 "공통 실행 흐름은 GLASS를 제외한 11개 등록 방법을 `bottle`에서 실제 결과 CSV까지 생성할 수 있다"이다. 아직 주장할 수 없는 것은 "12개 방법의 성능 비교가 공정하다" 또는 "전체 MVTec 재현이 끝났다"는 결론이다.
 
