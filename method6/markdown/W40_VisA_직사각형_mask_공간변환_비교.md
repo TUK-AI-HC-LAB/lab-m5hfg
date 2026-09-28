@@ -48,4 +48,4 @@
 
 - 코드: [`evaluate_anomalyclip_visa_all_categories_mask_geometry.py`](../source/evaluate_anomalyclip_visa_all_categories_mask_geometry.py)
 - raw JSON: `method6/source/results/w40_anomalyclip_visa_all_categories_mask_transform_comparison.json`
-- 공통 코드베이스 설명: [`meetings/W40_공통_전처리_후처리_분석.md`](../../meetings/W40_공통_전처리_후처리_분석.md)
+- 공통 코드베이스 설명: [`related_work/markdown/W40_공통_전처리_후처리_분석.md`](../../related_work/markdown/W40_공통_전처리_후처리_분석.md)
