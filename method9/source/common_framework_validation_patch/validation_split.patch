@@ -1,0 +1,86 @@
+diff --git a/datasets/base.py b/datasets/base.py
+--- a/datasets/base.py
++++ b/datasets/base.py
+@@
+         self.root = self.source = source
+         self.split = split
+         self.train_val_split = train_val_split
++        # train/validation 분할을 실행마다 재현하기 위한 seed입니다.
++        self.seed = kwargs.get("seed", 0)
+         self.transform_std = IMAGENET_STD
+
+diff --git a/datasets/mvtec.py b/datasets/mvtec.py
+--- a/datasets/mvtec.py
++++ b/datasets/mvtec.py
+@@
++import random
+ import os
+@@
+-            classpath = os.path.join(
+-                self.source,
+-                classname,
+-                "train" if self.split == DatasetSplit.TRAIN else "test",
+-            )
++            # TRAIN과 VAL은 train/good을 나눠 쓰고 TEST만 test를 읽습니다.
++            split_folder = "test" if self.split == DatasetSplit.TEST else "train"
++            classpath = os.path.join(self.source, classname, split_folder)
+@@
+             for anomaly in anomaly_types:
++                # validation에는 정상 이미지 이외의 폴더를 넣지 않습니다.
++                if self.split in (DatasetSplit.TRAIN, DatasetSplit.VAL) and anomaly != "good":
++                    continue
+                 anomaly_path = os.path.join(classpath, anomaly)
+                 anomaly_files = sorted(os.listdir(anomaly_path))
++
++                # train/good을 고정 seed로 TRAIN/VAL에 겹치지 않게 나눕니다.
++                if self.split in (DatasetSplit.TRAIN, DatasetSplit.VAL):
++                    if not 0 < self.train_val_split <= 1.0:
++                        raise ValueError("train_val_split must be in (0, 1].")
++                    if self.train_val_split < 1.0 and len(anomaly_files) > 1:
++                        shuffled_files = list(anomaly_files)
++                        split_rng = random.Random(
++                            f"{self.seed}:{classname}:{anomaly}"
++                        )
++                        split_rng.shuffle(shuffled_files)
++                        split_index = int(
++                            len(shuffled_files) * self.train_val_split
++                        )
++                        split_index = max(
++                            1, min(len(shuffled_files) - 1, split_index)
++                        )
++                        if self.split == DatasetSplit.TRAIN:
++                            anomaly_files = sorted(shuffled_files[:split_index])
++                        else:
++                            anomaly_files = sorted(shuffled_files[split_index:])
++                    elif self.split == DatasetSplit.VAL:
++                        # 1.0은 이전 실행과의 호환성을 위해 VAL을 비웁니다.
++                        anomaly_files = []
+                 imgpaths_per_class[classname][anomaly] = [
+                     os.path.join(anomaly_path, x) for x in anomaly_files
+                 ]
+
+diff --git a/main_dataset.py b/main_dataset.py
+--- a/main_dataset.py
++++ b/main_dataset.py
+@@
+     validation_dataset = dataset_class(
+         plan.validation_path,
+         classname=list(plan.validation_categories),
+         split=split.VAL,
+-        subtest=True,
++        # validation은 test 일부가 아니라 train/good에서 분리한 정상 이미지입니다.
++        train_val_split=args.train_val_split,
++        seed=seed,
++        subtest=False,
+         anomaly_source_path=anomaly_source_path,
+         **common,
+     )
+
+diff --git a/main.py b/main.py
+--- a/main.py
++++ b/main.py
+@@
+-    "train_val_split": 1.0,
++    # 정상 train 이미지의 90%는 학습, 10%는 validation에 사용합니다.
++    # 1.0을 지정하면 이전처럼 validation 분할을 사용하지 않습니다.
++    "train_val_split": 0.9,
