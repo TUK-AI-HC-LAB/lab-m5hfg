@@ -6,6 +6,8 @@
 
 이 문서는 "각 방법이 현재 프레임워크에서 한 번 실제로 끝까지 도는가"를 확인한 실행 기록이다. 한 클래스, 한 seed 결과이므로 방법 간 성능 우열이나 논문 재현 성능을 주장하는 표는 아니다.
 
+> 재현 설정 주의: 이 표의 실행은 정상 train 209장을 모두 학습에 썼던 2026-09-26 설정의 결과다. 2026-09-28에 공통 MVTec loader는 정상 train의 90%/10%를 학습/validation으로 나누도록 변경됐다. 따라서 이후 기본 설정 실행은 학습 188장·정상 validation 21장을 사용하며, 이 표의 수치와 직접 섞어 비교하면 안 된다.
+
 ## 1. 무엇을 같은 조건으로 실행했나
 
 | 항목 | 설정 |
@@ -43,6 +45,24 @@
 - seed가 하나뿐이다. 결과의 안정성은 여러 seed 평균과 표준편차로 확인해야 한다.
 - AnomalyCLIP은 ViSA에서 학습된 공식 prompt checkpoint를 불러와 평가했다. 정상 `bottle` 이미지로 해당 방법을 처음부터 학습한 다른 방법들과 출발 조건이 같지 않다. 따라서 이 행을 성능 순위 비교에 쓰면 안 된다.
 - 각 방법은 자체 이미지 크기, backbone, epoch, 샘플링 같은 기본 설정이 다르다. 여기서 말하는 "같은 조건"은 같은 데이터 클래스·seed·실행 환경이지, 알고리즘 내부 하이퍼파라미터까지 동일하다는 뜻이 아니다.
+
+### 2.1 기존 독립 실행 결과와의 비교 (`bottle`)
+
+아래 표는 이전에 각 구현체를 **독립적으로 실행해 저장한 `bottle` 결과**와 이번 공통 framework 실행 결과를 비교한다. 두 열은 모두 Image AUROC와 Pixel AUROC이지만, 같은 알고리즘이라도 upstream revision, image/mask 전처리, backbone, 학습 epoch, seed, prompt checkpoint가 다를 수 있다. 따라서 `차이`는 성능 우열이 아니라 **공통 framework 포팅 결과가 기존 실행과 얼마나 다른지 확인하는 진단값**이다.
+
+| Method | 기존 독립 실행 Image AUROC | 기존 독립 실행 Pixel AUROC | 공통 framework Image AUROC | 공통 framework Pixel AUROC | Image 차이 (공통 - 기존) | Pixel 차이 (공통 - 기존) | 기존 결과 근거 |
+|---|---:|---:|---:|---:|---:|---:|---|
+| PatchCore | 100.00% | 98.49% | 100.00% | 98.78% | +0.00%p | +0.29%p | [`PatchCore baseline CSV`](../../method1/source/results/PatchCore_MVTecAD_IM224_WR50_baseline.csv) |
+| SimpleNet | 100.00% | 97.76% | 99.44% | 87.76% | -0.56%p | -10.00%p | [`논문 조건 CSV`](../../method2/source/results/SimpleNet_MVTecAD_WR50_paper_protocol_results.csv) |
+| RD4AD | 100.00% | 98.70% | 100.00% | 98.82% | +0.00%p | +0.12%p | [`논문 조건 CSV`](../../method3/source/results/RD4AD_MVTecAD_WR50_paper_protocol_results.csv) |
+| WinCLIP 0-shot | 98.60% | 85.70% | 99.92% | 95.85% | +1.32%p | +10.15%p | [`0-shot CSV`](../../method7/source/results/winclip_mvtec/zero_shot/results.csv) |
+| AnomalyCLIP (VisA → MVTec) | 88.80% | 90.30% | 88.81% | 90.38% | +0.01%p | +0.08%p | [`VisA→MVTec CSV`](../../method6/source/results/anomalyclip_visa_to_mvtec/results.csv) |
+
+#### 해석 범위
+
+- PatchCore·RD4AD·AnomalyCLIP은 `bottle`에서 기존 값과 거의 같다. 특히 AnomalyCLIP은 같은 source-trained prompt checkpoint를 사용했으므로 adapter의 score/map 경로가 기존 실행과 연결되는지 확인하는 근거가 된다.
+- SimpleNet과 WinCLIP의 큰 Pixel AUROC 차이는 공통 framework의 기본 config가 기존 독립 실행의 논문 조건·공개 재현 코드 설정과 같지 않기 때문이다. 이 차이를 두 방법 중 어느 쪽이 더 좋다는 근거로 사용하면 안 된다.
+- PaDiM·COAD·PromptAD·Dinomaly·UniAD는 저장소에 같은 `bottle` 독립 실행 결과가 없으므로 이 표에 넣지 않았다. GLASS는 이번 공통 framework 실행도 DTD 텍스처 데이터 부재로 미완료다.
 
 ## 3. GLASS만 왜 끝나지 않았나
 
