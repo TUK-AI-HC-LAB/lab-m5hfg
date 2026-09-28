@@ -1,0 +1,288 @@
+{
+  "dataset": "VisA 1cls test",
+  "categories_requested": [
+    "candle",
+    "capsules",
+    "cashew",
+    "chewinggum",
+    "fryum",
+    "macaroni1",
+    "macaroni2",
+    "pcb1",
+    "pcb2",
+    "pcb3",
+    "pcb4",
+    "pipe_fryum"
+  ],
+  "checkpoint": "/home/test/anomalyclip_checkpoints/mvtec_to_visa/epoch_15.pth",
+  "device": "cuda:0",
+  "image_preprocess": "fixed: shortest-edge Resize(518) -> CenterCrop(518)",
+  "official_mask_preprocess": "Resize(short edge=518, nearest) -> CenterCrop(518) -> ToTensor",
+  "common_mask_preprocess": "Resize((518, 518), nearest) -> ToTensor",
+  "results": {
+    "candle": {
+      "sample_count": 200,
+      "original_image_size": [
+        1284,
+        1168
+      ],
+      "official": {
+        "auroc_mean": 0.8391000000000001,
+        "pixel_auroc_mean": 0.9866819251798464
+      },
+      "common_mask": {
+        "auroc_mean": 0.8391000000000001,
+        "pixel_auroc_mean": 0.9832920320710089
+      },
+      "delta_common_minus_official": {
+        "auroc_mean": 0.0,
+        "pixel_auroc_mean": -0.0033898931088375273
+      },
+      "different_ground_truth_mask_pixels": 75031,
+      "ground_truth_mask_pixel_count": 53664800,
+      "different_mask_pixel_ratio": 0.0013981417987209493
+    },
+    "capsules": {
+      "sample_count": 160,
+      "original_image_size": [
+        1500,
+        1000
+      ],
+      "official": {
+        "auroc_mean": 0.7995,
+        "pixel_auroc_mean": 0.9341331193185368
+      },
+      "common_mask": {
+        "auroc_mean": 0.7995,
+        "pixel_auroc_mean": 0.6595150303385855
+      },
+      "delta_common_minus_official": {
+        "auroc_mean": 0.0,
+        "pixel_auroc_mean": -0.2746180889799513
+      },
+      "different_ground_truth_mask_pixels": 256618,
+      "ground_truth_mask_pixel_count": 42931840,
+      "different_mask_pixel_ratio": 0.0059773352365051205
+    },
+    "cashew": {
+      "sample_count": 150,
+      "original_image_size": [
+        1274,
+        1176
+      ],
+      "official": {
+        "auroc_mean": 0.7396,
+        "pixel_auroc_mean": 0.9251450225518683
+      },
+      "common_mask": {
+        "auroc_mean": 0.7396,
+        "pixel_auroc_mean": 0.9248510784603916
+      },
+      "delta_common_minus_official": {
+        "auroc_mean": 0.0,
+        "pixel_auroc_mean": -0.00029394409147665
+      },
+      "different_ground_truth_mask_pixels": 66930,
+      "ground_truth_mask_pixel_count": 40248600,
+      "different_mask_pixel_ratio": 0.0016629149833783038
+    },
+    "chewinggum": {
+      "sample_count": 150,
+      "original_image_size": [
+        1342,
+        1118
+      ],
+      "official": {
+        "auroc_mean": 0.9640000000000001,
+        "pixel_auroc_mean": 0.9915066673262258
+      },
+      "common_mask": {
+        "auroc_mean": 0.9640000000000001,
+        "pixel_auroc_mean": 0.9902376297233257
+      },
+      "delta_common_minus_official": {
+        "auroc_mean": 0.0,
+        "pixel_auroc_mean": -0.0012690376029000916
+      },
+      "different_ground_truth_mask_pixels": 136188,
+      "ground_truth_mask_pixel_count": 40248600,
+      "different_mask_pixel_ratio": 0.0033836704879175923
+    },
+    "fryum": {
+      "sample_count": 150,
+      "original_image_size": [
+        1500,
+        1000
+      ],
+      "official": {
+        "auroc_mean": 0.9510000000000001,
+        "pixel_auroc_mean": 0.9268435572348694
+      },
+      "common_mask": {
+        "auroc_mean": 0.9510000000000001,
+        "pixel_auroc_mean": 0.9138504760388886
+      },
+      "delta_common_minus_official": {
+        "auroc_mean": 0.0,
+        "pixel_auroc_mean": -0.01299308119598086
+      },
+      "different_ground_truth_mask_pixels": 852413,
+      "ground_truth_mask_pixel_count": 40248600,
+      "different_mask_pixel_ratio": 0.021178699383332587
+    },
+    "macaroni1": {
+      "sample_count": 200,
+      "original_image_size": [
+        1500,
+        1000
+      ],
+      "official": {
+        "auroc_mean": 0.8588,
+        "pixel_auroc_mean": 0.9799513591721882
+      },
+      "common_mask": {
+        "auroc_mean": 0.8588,
+        "pixel_auroc_mean": 0.8751795072344591
+      },
+      "delta_common_minus_official": {
+        "auroc_mean": 0.0,
+        "pixel_auroc_mean": -0.10477185193772909
+      },
+      "different_ground_truth_mask_pixels": 47768,
+      "ground_truth_mask_pixel_count": 53664800,
+      "different_mask_pixel_ratio": 0.0008901179171449441
+    },
+    "macaroni2": {
+      "sample_count": 200,
+      "original_image_size": [
+        1500,
+        1000
+      ],
+      "official": {
+        "auroc_mean": 0.7479,
+        "pixel_auroc_mean": 0.9737184501329474
+      },
+      "common_mask": {
+        "auroc_mean": 0.7479,
+        "pixel_auroc_mean": 0.7346244266386788
+      },
+      "delta_common_minus_official": {
+        "auroc_mean": 0.0,
+        "pixel_auroc_mean": -0.23909402349426867
+      },
+      "different_ground_truth_mask_pixels": 34604,
+      "ground_truth_mask_pixel_count": 53664800,
+      "different_mask_pixel_ratio": 0.0006448174594892742
+    },
+    "pcb1": {
+      "sample_count": 200,
+      "original_image_size": [
+        1404,
+        1070
+      ],
+      "official": {
+        "auroc_mean": 0.7268,
+        "pixel_auroc_mean": 0.8953941924233549
+      },
+      "common_mask": {
+        "auroc_mean": 0.7268,
+        "pixel_auroc_mean": 0.8748826312055584
+      },
+      "delta_common_minus_official": {
+        "auroc_mean": 0.0,
+        "pixel_auroc_mean": -0.020511561217796515
+      },
+      "different_ground_truth_mask_pixels": 204250,
+      "ground_truth_mask_pixel_count": 53664800,
+      "different_mask_pixel_ratio": 0.003806033004874704
+    },
+    "pcb2": {
+      "sample_count": 200,
+      "original_image_size": [
+        1404,
+        1070
+      ],
+      "official": {
+        "auroc_mean": 0.6532,
+        "pixel_auroc_mean": 0.9038254852960226
+      },
+      "common_mask": {
+        "auroc_mean": 0.6532,
+        "pixel_auroc_mean": 0.8715694859891367
+      },
+      "delta_common_minus_official": {
+        "auroc_mean": 0.0,
+        "pixel_auroc_mean": -0.03225599930688583
+      },
+      "different_ground_truth_mask_pixels": 168916,
+      "ground_truth_mask_pixel_count": 53664800,
+      "different_mask_pixel_ratio": 0.003147612587767028
+    },
+    "pcb3": {
+      "sample_count": 201,
+      "original_image_size": [
+        1562,
+        960
+      ],
+      "official": {
+        "auroc_mean": 0.6787128712871288,
+        "pixel_auroc_mean": 0.8801105752150018
+      },
+      "common_mask": {
+        "auroc_mean": 0.6787128712871288,
+        "pixel_auroc_mean": 0.8447839746791239
+      },
+      "delta_common_minus_official": {
+        "auroc_mean": 0.0,
+        "pixel_auroc_mean": -0.03532660053587788
+      },
+      "different_ground_truth_mask_pixels": 271472,
+      "ground_truth_mask_pixel_count": 53933124,
+      "different_mask_pixel_ratio": 0.005033492960652529
+    },
+    "pcb4": {
+      "sample_count": 201,
+      "original_image_size": [
+        1358,
+        1104
+      ],
+      "official": {
+        "auroc_mean": 0.9093069306930693,
+        "pixel_auroc_mean": 0.9449808734517773
+      },
+      "common_mask": {
+        "auroc_mean": 0.9093069306930693,
+        "pixel_auroc_mean": 0.9371551203970355
+      },
+      "delta_common_minus_official": {
+        "auroc_mean": 0.0,
+        "pixel_auroc_mean": -0.007825753054741758
+      },
+      "different_ground_truth_mask_pixels": 377012,
+      "ground_truth_mask_pixel_count": 53933124,
+      "different_mask_pixel_ratio": 0.006990360877296853
+    },
+    "pipe_fryum": {
+      "sample_count": 150,
+      "original_image_size": [
+        1300,
+        1154
+      ],
+      "official": {
+        "auroc_mean": 0.9126,
+        "pixel_auroc_mean": 0.9782075227860885
+      },
+      "common_mask": {
+        "auroc_mean": 0.9126,
+        "pixel_auroc_mean": 0.9769366311468907
+      },
+      "delta_common_minus_official": {
+        "auroc_mean": 0.0,
+        "pixel_auroc_mean": -0.001270891639197802
+      },
+      "different_ground_truth_mask_pixels": 105986,
+      "ground_truth_mask_pixel_count": 40248600,
+      "different_mask_pixel_ratio": 0.0026332841390756447
+    }
+  }
+}

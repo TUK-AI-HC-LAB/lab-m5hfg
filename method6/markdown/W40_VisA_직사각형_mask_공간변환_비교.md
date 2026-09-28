@@ -20,12 +20,32 @@
 
 ## 결과
 
-실행 중. 각 범주의 Image AUROC·Pixel AUROC·mask 차이 비율을 아래 표에 기록한다.
+12개 범주 평가를 완료했다. 모든 조건에서 Image AUROC와 anomaly map은 동일했으며, 아래 값은 mask 공간 변환만 바꿔 Pixel AUROC를 다시 계산한 결과다.
 
 | VisA 범주 | 원본 크기 | 공식 Pixel AUROC | 공통 Pixel AUROC | 차이 | 다른 mask 픽셀 비율 |
 |---|---|---:|---:|---:|---:|
+| candle | 1284×1168 | 98.67% | 98.33% | −0.34%p | 0.14% |
+| capsules | 1500×1000 | 93.41% | 65.95% | −27.46%p | 0.60% |
+| cashew | 1274×1176 | 92.51% | 92.49% | −0.03%p | 0.17% |
+| chewinggum | 1342×1118 | 99.15% | 99.02% | −0.13%p | 0.34% |
+| fryum | 1500×1000 | 92.68% | 91.39% | −1.30%p | 2.12% |
+| macaroni1 | 1500×1000 | 97.99% | 87.52% | −10.48%p | 0.09% |
+| macaroni2 | 1500×1000 | 97.37% | 73.46% | −23.91%p | 0.06% |
+| pcb1 | 1404×1070 | 89.54% | 87.49% | −2.05%p | 0.38% |
+| pcb2 | 1404×1070 | 90.38% | 87.16% | −3.23%p | 0.31% |
+| pcb3 | 1562×960 | 88.01% | 84.48% | −3.53%p | 0.50% |
+| pcb4 | 1358×1104 | 94.50% | 93.72% | −0.78%p | 0.70% |
+| pipe_fryum | 1300×1154 | 97.82% | 97.69% | −0.13%p | 0.26% |
+| **12개 단순 평균** | — | **94.34%** | **88.22%** | **−6.11%p** | **0.39%** |
+
+### 해석
+
+`capsules`, `macaroni1`, `macaroni2`처럼 같은 종횡비의 원본이라도 결함 위치·모양에 따라 mask 좌표 오차가 Pixel AUROC에 크게 반영될 수 있었다. 서로 다른 mask 픽셀의 비율이 작아도, 그 픽셀이 결함 경계 또는 고점 anomaly map 주변에 놓이면 순위 기반 Pixel AUROC가 크게 달라질 수 있다.
+
+따라서 이 비교는 “공통 정사각형 mask가 모델 성능을 낮춘다”는 뜻이 아니다. **같은 model output을 잘못된 좌표의 정답과 비교하면 평가값이 달라진다**는 검증이다. AnomalyCLIP의 image transform이 shortest-edge resize와 center crop이면, 정답 mask도 동일한 순서로 변환해야 한다.
 
 ## 실행 근거
 
 - 코드: [`evaluate_anomalyclip_visa_all_categories_mask_geometry.py`](../source/evaluate_anomalyclip_visa_all_categories_mask_geometry.py)
 - raw JSON: `method6/source/results/w40_anomalyclip_visa_all_categories_mask_transform_comparison.json`
+- 공통 코드베이스 설명: [`meetings/W40_공통_전처리_후처리_분석.md`](../../meetings/W40_공통_전처리_후처리_분석.md)
