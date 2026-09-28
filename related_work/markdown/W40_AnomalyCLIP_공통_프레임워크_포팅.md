@@ -20,7 +20,7 @@ method: anomalyclip
 | 공통 Trainer contract 검사 | 완료 | `MethodSpec.load_class()` 성공 |
 | 공식 CLIP + prompt checkpoint 로드 | 완료 | WSL smoke test 성공 |
 | 공통 batch 형식 한 장의 score/map 생성 | 완료 | score 1개, map `[1,518,518]` 생성 |
-| 전체 `main.py → DataLoader → CSV` 실행 | 완료 (`bottle`) | `bottle` 전체 test 83장에서 score/map/AUROC/CSV 생성 확인. raw CSV: `/home/test/shared_framework_all_methods_w40_validation_20260928/anomalyclip/anomalyclip__layer24_/results_anomalyclip.csv` |
+| 전체 `main.py → DataLoader → CSV` 실행 | 완료 (`bottle`) | `bottle` 전체 test 83장에서 score/map/AUROC/CSV 생성 확인. [raw CSV](../../method9/source/common_framework_validation_patch/results/all_methods_validation_20260928/anomalyclip/anomalyclip__layer24_/results_anomalyclip.csv) |
 | 공통 MVTec train split만으로 prompt 재학습 | 의도적으로 미지원 | 공식 학습은 labelled source anomaly data가 필요 |
 
 ## 2. 포팅 전 구조와 문제
@@ -177,8 +177,8 @@ masks   [B,518,518]  pixel 정답 mask
 
 ```yaml
 method: anomalyclip
-anomalyclip_source_root: /home/test/anomalyclip
-anomalyclip_checkpoint_path: /home/test/anomalyclip_checkpoints/visa_to_mvtec/epoch_15.pth
+anomalyclip_source_root: <official-anomalyclip-root>
+anomalyclip_checkpoint_path: <prompt-checkpoint-path>
 ```
 
 이 제약은 구현 누락이 아니다. AnomalyCLIP 공식 학습은 source의 normal/abnormal label과 pixel mask를 이용해 prompt learner를 최적화한다. 공통 MVTec train split은 `train/good`만 읽으므로, 그 data만으로 공식 supervised prompt loss를 재현하면 이상 class 학습 신호가 없다. 현재 adapter는 검증된 source checkpoint를 target dataset에 평가하는 cross-dataset/zero-shot 경로를 명시적으로 지원한다.
@@ -188,9 +188,9 @@ anomalyclip_checkpoint_path: /home/test/anomalyclip_checkpoints/visa_to_mvtec/ep
 검증 환경:
 
 ```text
-official source: /home/test/anomalyclip
+official source: official AnomalyCLIP source
 upstream revision: 3911738
-prompt checkpoint: /home/test/anomalyclip_checkpoints/visa_to_mvtec/epoch_15.pth
+prompt checkpoint: ViSA-to-MVTec epoch 15
 runtime: Python 3.12, PyTorch 2.11.0+cu128, CUDA
 ```
 
@@ -236,21 +236,21 @@ runtime: Python 3.12, PyTorch 2.11.0+cu128, CUDA
 method: anomalyclip
 dataset: mvtec
 category: bottle
-data_path: /home/test/data/mvtec
-results_path: /home/test/anomalyclip_framework_results
+data_path: <mvtec-root>
+results_path: <results-root>
 seed: 111
 batch_size: 1
 
 # 공식 원본과 source-trained prompt checkpoint를 연결하는 두 경로
-anomalyclip_source_root: /home/test/anomalyclip
-anomalyclip_checkpoint_path: /home/test/anomalyclip_checkpoints/visa_to_mvtec/epoch_15.pth
+anomalyclip_source_root: <official-anomalyclip-root>
+anomalyclip_checkpoint_path: <prompt-checkpoint-path>
 ```
 
 4. 다음 명령으로 공통 runner를 실행한다.
 
 ```bash
-cd /mnt/c/Users/test/Downloads/dinomaly_share_codebase/dinomaly_share_codebase
-/home/test/miniforge3/envs/patchcore-gpu/bin/python main.py \
+cd <framework-root>
+python main.py \
   --config experiment_anomalyclip.yaml
 ```
 

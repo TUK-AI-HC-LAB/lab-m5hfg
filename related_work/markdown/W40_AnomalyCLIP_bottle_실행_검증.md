@@ -27,8 +27,8 @@
 실행 명령:
 
 ```bash
-cd /mnt/c/Users/test/Downloads/dinomaly_share_codebase/dinomaly_share_codebase
-/home/test/miniforge3/envs/patchcore-gpu/bin/python main.py \
+cd <framework-root>
+python main.py \
   --config experiment_anomalyclip.yaml
 ```
 

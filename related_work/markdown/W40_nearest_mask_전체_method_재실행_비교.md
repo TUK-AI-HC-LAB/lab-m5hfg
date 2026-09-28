@@ -30,8 +30,8 @@
 | seed | 0 |
 | 대상 | PatchCore, PaDiM, WinCLIP, COAD, SimpleNet, RD, RD-Orig, PromptAD, Dinomaly, UniAD, AnomalyCLIP |
 | 제외 | GLASS — DTD 텍스처 데이터 의존성이 아직 준비되지 않음 |
-| 실행 script | `C:\\Users\\test\\Downloads\\dinomaly_share_codebase\\dinomaly_share_codebase\\run_all_methods_bottle_nearest_mask_w40.sh` |
-| 결과 root | `/home/test/shared_framework_nearest_mask_w40_20260928` |
+| 실행 script | [`run_all_methods_bottle_nearest_mask_w40.sh`](../../method9/source/common_framework_validation_patch/framework_snapshot/run_all_methods_bottle_nearest_mask_w40.sh) |
+| 결과 | [`results/`](../../method9/source/common_framework_validation_patch/results/all_methods_nearest_mask_20260928/) |
 
 ## 결과 표
 
@@ -80,20 +80,9 @@
 
 `bottle`은 정사각형 원본이라 공간 왜곡 차이는 작다. nearest의 효과를 더 엄밀히 확인하려면 직사각형 원본이 있는 VisA 여러 범주에서 공식 image/mask 변환과 공통 변환을 비교해야 한다. 앞서 VisA `candle`에서는 공통 정사각형 mask 처리만 바꾸었을 때 Pixel AUROC가 -0.36%p 달라진 사례가 있다.
 
-## Raw 결과 경로
+## Raw 결과
 
-| Method | nearest 실행 CSV |
-|---|---|
-| PatchCore | `/home/test/shared_framework_nearest_mask_w40_20260928/patchcore/patchcore__layer2_layer3_/results_patchcore.csv` |
-| PaDiM | `/home/test/shared_framework_nearest_mask_w40_20260928/padim/padim__layer2_layer3_/results_padim.csv` |
-| WinCLIP | `/home/test/shared_framework_nearest_mask_w40_20260928/winclip/winclip__layer2_layer3_/results_winclip.csv` |
-| COAD | `/home/test/shared_framework_nearest_mask_w40_20260928/coad/coad__2_3_5_6_7_8_9_/results_coad.csv` |
-| SimpleNet | `/home/test/shared_framework_nearest_mask_w40_20260928/simple/simple__layer2_layer3_/results_simple.csv` |
-| RD / RD-Orig | `/home/test/shared_framework_nearest_mask_w40_20260928/{rd,rd_orig}/.../results_*.csv` |
-| PromptAD | `/home/test/shared_framework_nearest_mask_w40_20260928/promptad/promptad__layer2_layer3_/results_promptad.csv` |
-| Dinomaly | `/home/test/shared_framework_nearest_mask_w40_20260928/dinomaly/dinomaly__layer2_layer3_/results_dinomaly.csv` |
-| UniAD | `/home/test/shared_framework_nearest_mask_w40_20260928/uniad/uniad__layer2_layer3_/results_uniad.csv` |
-| AnomalyCLIP | `/home/test/shared_framework_nearest_mask_w40_20260928/anomalyclip/anomalyclip__layer24_/results_anomalyclip.csv` |
+각 method의 CSV는 [`results/all_methods_nearest_mask_20260928/`](../../method9/source/common_framework_validation_patch/results/all_methods_nearest_mask_20260928/)에 있다.
 
 ## VisA 직사각형 원본 추가 검증
 

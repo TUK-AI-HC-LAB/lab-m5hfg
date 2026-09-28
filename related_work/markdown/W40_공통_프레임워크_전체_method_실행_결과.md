@@ -20,7 +20,7 @@
 | seed | `0` |
 | 공통 실행 환경 | WSL의 `patchcore-gpu` 가상환경, GPU 사용 |
 | 설정 기준 | 각 방법의 `configs/<method>.yaml` 기본값을 사용하고, 공통으로 `dataset=mvtec`, `category=bottle`, `num_workers=1`만 지정 |
-| 결과 폴더 | `/home/test/shared_framework_all_methods_w40_20260926` |
+| 결과 | [`results/`](../../method9/source/common_framework_validation_patch/results/all_methods_initial_20260926/) |
 
 `image AUROC`은 이미지 한 장이 정상/이상인지 맞히는 능력이고, `pixel AUROC`은 이미지 안의 각 픽셀이 이상 위치인지 맞히는 능력이다. `saliency f1`은 예측한 이상 영역을 임계값으로 이진화했을 때 정답 마스크와 얼마나 겹치는지를 나타낸다. 값은 모두 높을수록 좋다.
 
@@ -100,10 +100,9 @@
 
 | 역할 | 경로 |
 |---|---|
-| 재실행 스크립트 | `C:\Users\test\Downloads\dinomaly_share_codebase\dinomaly_share_codebase\run_all_methods_bottle_validation_wsl.sh` |
-| 실행 상태·시간 | `/home/test/shared_framework_all_methods_w40_validation_20260928/status.tsv` |
-| 방법별 로그 | `/home/test/shared_framework_all_methods_w40_validation_20260928/logs/` |
-| 방법별 raw CSV | `/home/test/shared_framework_all_methods_w40_validation_20260928/<method>/**/results_<method>.csv` |
+| 재실행 스크립트 | [`run_all_methods_bottle_validation_wsl.sh`](../../method9/source/common_framework_validation_patch/framework_snapshot/run_all_methods_bottle_validation_wsl.sh) |
+| 실행 상태·시간 | [`status.tsv`](../../method9/source/common_framework_validation_patch/results/all_methods_validation_20260928/status.tsv) |
+| 방법별 raw CSV | [`results/`](../../method9/source/common_framework_validation_patch/results/all_methods_validation_20260928/) |
 
 ## 4. GLASS만 왜 끝나지 않았나
 
@@ -137,28 +136,28 @@ ValueError: 'a' cannot be empty unless no samples are taken
 
 | 역할 | 경로 |
 |---|---|
-| 최초 12개 순차 실행 스크립트 | `C:\\Users\\test\\Downloads\\dinomaly_share_codebase\\dinomaly_share_codebase\\run_all_methods_bottle_wsl.sh` |
-| 의존성 설치 후 1차 재실행 스크립트 | `C:\\Users\\test\\Downloads\\dinomaly_share_codebase\\dinomaly_share_codebase\\rerun_failed_methods_bottle_wsl.sh` |
-| RD/RD-Orig/PromptAD 2차 재실행 스크립트 | `C:\\Users\\test\\Downloads\\dinomaly_share_codebase\\dinomaly_share_codebase\\rerun_remaining_methods_bottle_wsl.sh` |
-| 최초 상태와 로그 | `/home/test/shared_framework_all_methods_w40_20260926/status.tsv`, `/home/test/shared_framework_all_methods_w40_20260926/logs/` |
-| 1차 재실행 상태와 로그 | `/home/test/shared_framework_all_methods_w40_20260926/retry_after_dependencies/status.tsv`, `/home/test/shared_framework_all_methods_w40_20260926/retry_after_dependencies/logs/` |
-| 2차 재실행 상태와 로그 | `/home/test/shared_framework_all_methods_w40_20260926/retry_after_dependencies_round2/status.tsv`, `/home/test/shared_framework_all_methods_w40_20260926/retry_after_dependencies_round2/logs/` |
+| 최초 12개 순차 실행 스크립트 | [`run_all_methods_bottle_wsl.sh`](../../method9/source/common_framework_validation_patch/framework_snapshot/run_all_methods_bottle_wsl.sh) |
+| 의존성 설치 후 1차 재실행 스크립트 | [`rerun_failed_methods_bottle_wsl.sh`](../../method9/source/common_framework_validation_patch/framework_snapshot/rerun_failed_methods_bottle_wsl.sh) |
+| RD/RD-Orig/PromptAD 2차 재실행 스크립트 | [`rerun_remaining_methods_bottle_wsl.sh`](../../method9/source/common_framework_validation_patch/framework_snapshot/rerun_remaining_methods_bottle_wsl.sh) |
+| 최초 실행 상태 | [`status.tsv`](../../method9/source/common_framework_validation_patch/results/all_methods_initial_20260926/status.tsv) |
+| 1차 재실행 상태 | [`status.tsv`](../../method9/source/common_framework_validation_patch/results/all_methods_initial_20260926/retry_after_dependencies/status.tsv) |
+| 2차 재실행 상태 | [`status.tsv`](../../method9/source/common_framework_validation_patch/results/all_methods_initial_20260926/retry_after_dependencies_round2/status.tsv) |
 
 ### 결과 CSV 위치
 
 | Method | Raw CSV |
 |---|---|
-| PatchCore | `/home/test/shared_framework_all_methods_w40_20260926/patchcore/patchcore__layer2_layer3_/results_patchcore.csv` |
-| PaDiM | `/home/test/shared_framework_all_methods_w40_20260926/padim/padim__layer2_layer3_/results_padim.csv` |
-| WinCLIP | `/home/test/shared_framework_all_methods_w40_20260926/retry_after_dependencies/winclip/winclip__layer2_layer3_/results_winclip.csv` |
-| COAD | `/home/test/shared_framework_all_methods_w40_20260926/retry_after_dependencies/coad/coad__2_3_5_6_7_8_9_/results_coad.csv` |
-| SimpleNet | `/home/test/shared_framework_all_methods_w40_20260926/simple/simple__layer2_layer3_/results_simple.csv` |
-| RD | `/home/test/shared_framework_all_methods_w40_20260926/retry_after_dependencies_round2/rd/rd__layer2_layer3_/results_rd.csv` |
-| RD-Orig | `/home/test/shared_framework_all_methods_w40_20260926/retry_after_dependencies_round2/rd_orig/rd_orig__layer2_layer3_/results_rd_orig.csv` |
-| PromptAD | `/home/test/shared_framework_all_methods_w40_20260926/retry_after_dependencies_round2/promptad/promptad__layer2_layer3_/results_promptad.csv` |
-| Dinomaly | `/home/test/shared_framework_all_methods_w40_20260926/retry_after_dependencies/dinomaly/dinomaly__layer2_layer3_/results_dinomaly.csv` |
-| UniAD | `/home/test/shared_framework_all_methods_w40_20260926/uniad/uniad__layer2_layer3_/results_uniad.csv` |
-| AnomalyCLIP | `/home/test/shared_framework_all_methods_w40_20260926/anomalyclip/anomalyclip__layer24_/results_anomalyclip.csv` |
+| PatchCore | [CSV](../../method9/source/common_framework_validation_patch/results/all_methods_initial_20260926/patchcore/patchcore__layer2_layer3_/results_patchcore.csv) |
+| PaDiM | [CSV](../../method9/source/common_framework_validation_patch/results/all_methods_initial_20260926/padim/padim__layer2_layer3_/results_padim.csv) |
+| WinCLIP | [CSV](../../method9/source/common_framework_validation_patch/results/all_methods_initial_20260926/retry_after_dependencies/winclip/winclip__layer2_layer3_/results_winclip.csv) |
+| COAD | [CSV](../../method9/source/common_framework_validation_patch/results/all_methods_initial_20260926/retry_after_dependencies/coad/coad__2_3_5_6_7_8_9_/results_coad.csv) |
+| SimpleNet | [CSV](../../method9/source/common_framework_validation_patch/results/all_methods_initial_20260926/simple/simple__layer2_layer3_/results_simple.csv) |
+| RD | [CSV](../../method9/source/common_framework_validation_patch/results/all_methods_initial_20260926/retry_after_dependencies_round2/rd/rd__layer2_layer3_/results_rd.csv) |
+| RD-Orig | [CSV](../../method9/source/common_framework_validation_patch/results/all_methods_initial_20260926/retry_after_dependencies_round2/rd_orig/rd_orig__layer2_layer3_/results_rd_orig.csv) |
+| PromptAD | [CSV](../../method9/source/common_framework_validation_patch/results/all_methods_initial_20260926/retry_after_dependencies_round2/promptad/promptad__layer2_layer3_/results_promptad.csv) |
+| Dinomaly | [CSV](../../method9/source/common_framework_validation_patch/results/all_methods_initial_20260926/retry_after_dependencies/dinomaly/dinomaly__layer2_layer3_/results_dinomaly.csv) |
+| UniAD | [CSV](../../method9/source/common_framework_validation_patch/results/all_methods_initial_20260926/uniad/uniad__layer2_layer3_/results_uniad.csv) |
+| AnomalyCLIP | [CSV](../../method9/source/common_framework_validation_patch/results/all_methods_initial_20260926/anomalyclip/anomalyclip__layer24_/results_anomalyclip.csv) |
 
 ## 7. 현재 판단과 다음 1개 작업
 
