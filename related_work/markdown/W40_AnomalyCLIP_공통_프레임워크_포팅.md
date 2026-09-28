@@ -18,7 +18,7 @@ method: anomalyclip
 | 공통 Trainer contract 검사 | 완료 | `MethodSpec.load_class()` 성공 |
 | 공식 CLIP + prompt checkpoint 로드 | 완료 | WSL smoke test 성공 |
 | 공통 batch 형식 한 장의 score/map 생성 | 완료 | score 1개, map `[1,518,518]` 생성 |
-| 전체 `main.py → DataLoader → CSV` 실행 | 미완료 | 전체 test split 및 CSV 생성은 아직 미검증 |
+| 전체 `main.py → DataLoader → CSV` 실행 | 완료 (`bottle`) | `bottle` 전체 test 83장에서 score/map/AUROC/CSV 생성 확인. raw CSV: `/home/test/shared_framework_all_methods_w40_validation_20260928/anomalyclip/anomalyclip__layer24_/results_anomalyclip.csv` |
 | 공통 MVTec train split만으로 prompt 재학습 | 의도적으로 미지원 | 공식 학습은 labelled source anomaly data가 필요 |
 
 ## 2. 포팅 전 구조와 문제
@@ -100,21 +100,21 @@ registry가 요구하는 public API는 아래 다섯 가지다.
 
 따라서 `validate_trainer_class()`는 AnomalyCLIP adapter를 기존 PatchCore/SimpleNet과 같은 방식으로 허용한다. 내부 알고리즘은 달라도 runner가 요청하는 함수 이름과 출력 형태가 같다는 것이 contract 충족의 의미다.
 
-## 6. 입력 정규화 문제와 해결
+## 6. 공통 입력 정규화 정책과 비교
 
-공통 `BaseDataset`은 image를 ImageNet mean/std로 정규화한다. 반면 공식 AnomalyCLIP은 OpenAI CLIP mean/std를 사용한다.
+공통 `BaseDataset`은 모든 method에 ImageNet mean/std 정규화 tensor를 제공한다. 초기 AnomalyCLIP adapter는 이를 OpenAI CLIP mean/std로 다시 변환했지만, WinCLIP은 같은 공통 tensor를 추가 변환 없이 받았다.
 
-```text
-공통 DataLoader image
-  = (pixel - ImageNet mean) / ImageNet std
-       ↓ adapter가 역변환
-pixel
-       ↓ adapter가 재정규화
-AnomalyCLIP input
-  = (pixel - OpenAI CLIP mean) / OpenAI CLIP std
-```
+공통 framework의 method 입력 정책을 통일하기 위해 AnomalyCLIP도 WinCLIP과 같이 **ImageNet 정규화 tensor를 그대로 공식 모델에 전달**하도록 바꿨다. AnomalyCLIP 전용 Trainer는 공식 model·prompt checkpoint·score/map 변환을 위해 계속 필요하지만, 정규화 변환 전용 adapter 단계는 제거했다.
 
-`Trainer_AnomalyCLIP._to_clip_normalized()`가 이 변환을 수행한다. 이 보정이 없으면 같은 이미지라도 공식 AnomalyCLIP이 학습·평가에 사용한 입력 분포와 달라져 score가 신뢰하기 어려워진다.
+`bottle`, seed 0, 전체 test 83장으로 두 입력 조건을 비교했다.
+
+| AnomalyCLIP 입력 | Image AUROC | Pixel AUROC |
+|---|---:|---:|
+| 이전: OpenAI CLIP 재정규화 | 0.8881 | 0.9031 |
+| 현재: 공통 ImageNet 정규화 그대로 | 0.8897 | 0.9027 |
+| 차이 | +0.0016 | -0.0003 |
+
+이 한 category에서는 두 조건이 사실상 비슷했다. 따라서 현재 기본값은 공통 정책을 우선해 ImageNet 정규화를 유지한다. 단, 이는 공식 AnomalyCLIP의 원래 전처리와 동일하다는 뜻은 아니며, 나머지 category에서 성능 영향은 아직 검증하지 않았다.
 
 공간 크기도 별도로 맞췄다. 일반 공통 MVTec Dataset은 image를 바로 정사각형으로 resize하지만, 공식 AnomalyCLIP test transform은 `Resize(short edge) → CenterCrop`이다. 새 `anomalyclip_mvtec` variant가 image와 mask 모두에 같은 공간 변환을 적용한다. 따라서 adapter map과 ground-truth mask가 같은 `518×518` 좌표계에서 비교된다.
 
@@ -213,7 +213,7 @@ runtime: Python 3.12, PyTorch 2.11.0+cu128, CUDA
 
 ### 아직 확인해야 할 항목
 
-1. 공통 DataLoader 전체 test split에서 category별 CSV가 생성되는지.
+1. MVTec 나머지 14개 category의 전체 test split에서도 category별 CSV가 생성되는지.
 2. adapter metric과 공식 `test.py` metric이 같은 checkpoint/target protocol에서 허용 오차 내 일치하는지.
 3. `save_segmentation_images=True`가 base Trainer 전용 helper를 호출하지 않도록 runner 분기 또는 adapter 저장 API가 필요한지.
 4. source-labelled Dataset을 공통 registry에 별도로 등록해 공식 prompt 학습까지 framework lifecycle으로 지원할지.
