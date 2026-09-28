@@ -1,0 +1,28 @@
+{
+  "category": [
+    "bottle"
+  ],
+  "checkpoint": "/home/test/anomalyclip_checkpoints/visa_to_mvtec/epoch_15.pth",
+  "device": "cuda:0",
+  "image_preprocess": "official AnomalyCLIP unchanged: shortest-edge Resize(518) -> CenterCrop(518)",
+  "official_mask_preprocess": "shortest-edge Resize(518) -> CenterCrop(518) -> ToTensor",
+  "common_mask_preprocess": "Resize((518, 518)) -> ToTensor",
+  "official": {
+    "auroc_mean": 0.8880952380952382,
+    "pixel_auroc_mean": 0.9037956840957477
+  },
+  "common_mask": {
+    "auroc_mean": 0.8880952380952382,
+    "pixel_auroc_mean": 0.9037956840957477
+  },
+  "delta_common_minus_official": {
+    "auroc_mean": 0.0,
+    "pixel_auroc_mean": 0.0
+  },
+  "prediction_scores_bitwise_equal": true,
+  "prediction_maps_bitwise_equal": true,
+  "different_ground_truth_mask_pixels": 0,
+  "ground_truth_mask_pixel_count": 22270892,
+  "different_mask_pixel_ratio": 0.0,
+  "interpretation": "Image preprocessing, prompt checkpoint, model prediction scores, and anomaly maps are unchanged. Any Pixel AUROC difference therefore comes only from the ground-truth mask transform."
+}

@@ -1,0 +1,28 @@
+{
+  "dataset": "VisA candle test",
+  "sample_count": 200,
+  "original_image_size": [
+    1284,
+    1168
+  ],
+  "checkpoint": "/home/test/anomalyclip_checkpoints/mvtec_to_visa/epoch_15.pth",
+  "image_preprocess": "unchanged: shortest-edge Resize(518) -> CenterCrop(518)",
+  "official_mask_preprocess": "shortest-edge Resize(518) -> CenterCrop(518) -> ToTensor -> nonzero binarization",
+  "common_mask_preprocess": "Resize((518, 518)) -> ToTensor -> nonzero binarization",
+  "official": {
+    "auroc_mean": 0.8391000000000001,
+    "pixel_auroc_mean": 0.9864901444698507
+  },
+  "common_mask": {
+    "auroc_mean": 0.8391000000000001,
+    "pixel_auroc_mean": 0.9829017002822349
+  },
+  "delta_common_minus_official": {
+    "auroc_mean": 0.0,
+    "pixel_auroc_mean": -0.0035884441876158357
+  },
+  "different_ground_truth_mask_pixels": 82348,
+  "ground_truth_mask_pixel_count": 53664800,
+  "different_mask_pixel_ratio": 0.0015344881561097778,
+  "interpretation": "The model was executed once. Only the evaluation mask was changed, so image scores and anomaly maps are fixed."
+}
