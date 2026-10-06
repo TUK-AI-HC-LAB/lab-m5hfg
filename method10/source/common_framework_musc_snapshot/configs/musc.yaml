@@ -1,0 +1,11 @@
+# MuSc owns its pretrained CLIP; shared input transforms and metrics stay intact.
+resize: 518
+imagesize: 518
+masksize: 518
+batch_size: 1
+meta_epochs: 1
+musc_clip_model: ViT-L/14@336px
+musc_layers: [6, 12, 18, 24]
+musc_radii: [1, 3, 5]
+musc_reference_fraction: 0.3
+musc_score_neighbors: [1, 2, 3]

@@ -1,0 +1,16 @@
+category,n_images,same_paths,same_labels,matched_sha256,same_order
+bottle,83,True,True,83,True
+cable,150,True,True,150,True
+capsule,132,True,True,132,True
+carpet,117,True,True,117,True
+grid,78,True,True,78,True
+hazelnut,110,True,True,110,True
+leather,124,True,True,124,True
+metal_nut,115,True,True,115,True
+pill,167,True,True,167,True
+screw,160,True,True,160,True
+tile,117,True,True,117,True
+toothbrush,42,True,True,42,True
+transistor,100,True,True,100,True
+wood,79,True,True,79,True
+zipper,151,True,True,151,True

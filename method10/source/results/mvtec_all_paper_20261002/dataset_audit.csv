@@ -1,0 +1,16 @@
+category,test_images,normal,abnormal,missing_masks
+bottle,83,20,63,0
+cable,150,58,92,0
+capsule,132,23,109,0
+carpet,117,28,89,0
+grid,78,21,57,0
+hazelnut,110,40,70,0
+leather,124,32,92,0
+metal_nut,115,22,93,0
+pill,167,26,141,0
+screw,160,41,119,0
+tile,117,33,84,0
+toothbrush,42,12,30,0
+transistor,100,60,40,0
+wood,79,19,60,0
+zipper,151,32,119,0
