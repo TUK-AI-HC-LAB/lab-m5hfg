@@ -1,0 +1,9 @@
+category,n_images,metric,official,common,delta_percentage_points,comparison_status
+bottle,83,image_auroc,0.9992063492063492,0.9968254566192627,-0.23808925870865139,different_pipeline_descriptive_only
+bottle,83,pixel_auroc,0.9847734349131185,0.9882952570915222,0.35218221784036885,different_pipeline_descriptive_only
+bottle,83,image_f1_max,0.9921259842519685,,,not_reported_by_common_evaluation
+bottle,83,image_ap,0.999751984126984,,,not_reported_by_common_evaluation
+bottle,83,pixel_f1_max,0.7916729096822929,,,not_reported_by_common_evaluation
+bottle,83,pixel_ap,0.8304157304517362,,,not_reported_by_common_evaluation
+bottle,83,aupro,0.9610271542842977,,,not_reported_by_common_evaluation
+bottle,83,saliency_cr_f1,,0.785498857498169,,different_from_official_f1_max

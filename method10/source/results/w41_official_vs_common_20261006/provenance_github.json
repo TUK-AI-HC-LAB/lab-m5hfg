@@ -1,0 +1,21 @@
+{
+  "created": "2026-10-06",
+  "publication_scope": "GitHub-safe summary; local absolute paths and WSL logs are omitted.",
+  "scope": "bottle only; official 15-category results retained as coverage context",
+  "official_commit": "b76b93da8bd3096a99964a96ae29d46f197a0651",
+  "common_commit": null,
+  "common_commit_note": "The downloaded common framework is not a Git checkout. The three MuSc-related changed files are preserved in method10/source/common_framework_musc_snapshot/.",
+  "official_metrics_artifact": "method10/source/results/bottle_paper_20261002/metrics.csv",
+  "common_metrics_artifact": "method10/source/results/w41_official_vs_common_20261006/common_results_musc.csv",
+  "local_logs_and_raw_predictions": "Repository excluded",
+  "command_template": "<python> main.py --method musc --dataset mvtec --category bottle --data-path <mvtec-root> --results-path <output-root> --seed 42 --num-workers 1",
+  "sha256": {
+    "method10/source/common_framework_musc_snapshot/trainer/trainer_musc.py": "3194aef21d0a7066fb84b5b0df19f25aad947cb7a76655bc96b742b671c10617",
+    "method10/source/common_framework_musc_snapshot/configs/musc.yaml": "3ff0d960fa492953a2ba5bb2e2f941f752ce300c083c0ba948787c203e7ad2cb",
+    "method10/source/common_framework_musc_snapshot/component_registry.py": "3444e26822146b86ca62e991e0ca2aadde1a5fab40201eeaa64806a246ce118d",
+    "external-framework/datasets/base.py": "03a27451a10c3bd873123794d00fc38147a717478769bcdc3f407fc61f07d17c",
+    "external-framework/trainer/trainer.py": "256c7c0728701e4cb1c68180b9443491ff41aa761d7c58e582a615fd0ff2f11a",
+    "external-framework/metrics_gpu.py": "e81ff76f4d19c0d54c06f7140ea118d856101c53d1a1ca778a5cad55ae2b27d4"
+  },
+  "caveat": "Source hashes describe the files at report generation, not an immutable snapshot of the earlier run. No causal attribution or statistical significance test was performed."
+}

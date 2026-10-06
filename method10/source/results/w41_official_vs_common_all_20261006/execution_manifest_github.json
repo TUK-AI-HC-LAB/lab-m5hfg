@@ -1,0 +1,20 @@
+{
+  "started": "2026-10-06",
+  "publication_scope": "GitHub-safe summary; local absolute paths, per-category WSL logs, and repository-excluded raw output locations are omitted.",
+  "framework": "External downloaded framework; not a Git checkout. The three MuSc-related changed files are preserved in method10/source/common_framework_musc_snapshot/.",
+  "runtime": "Python environment used for the run; local path omitted",
+  "seed": 42,
+  "dataset": "MVTec AD root; repository excluded",
+  "command_template": "<python> main.py --method musc --dataset mvtec --category <category> --data-path <mvtec-root> --results-path <output-root> --seed 42 --num-workers 1",
+  "bottle": "Existing bottle result was reused; all other 14 categories were run in separate CLI processes.",
+  "sha256_before_and_after_match": true,
+  "sha256": {
+    "method10/source/common_framework_musc_snapshot/trainer/trainer_musc.py": "3194aef21d0a7066fb84b5b0df19f25aad947cb7a76655bc96b742b671c10617",
+    "method10/source/common_framework_musc_snapshot/configs/musc.yaml": "3ff0d960fa492953a2ba5bb2e2f941f752ce300c083c0ba948787c203e7ad2cb",
+    "method10/source/common_framework_musc_snapshot/component_registry.py": "3444e26822146b86ca62e991e0ca2aadde1a5fab40201eeaa64806a246ce118d",
+    "external-framework/datasets/base.py": "03a27451a10c3bd873123794d00fc38147a717478769bcdc3f407fc61f07d17c",
+    "external-framework/trainer/trainer.py": "256c7c0728701e4cb1c68180b9443491ff41aa761d7c58e582a615fd0ff2f11a",
+    "external-framework/metrics_gpu.py": "e81ff76f4d19c0d54c06f7140ea118d856101c53d1a1ca778a5cad55ae2b27d4"
+  },
+  "category_results": "See status.csv, common_category_metrics.csv, category_comparison.csv, and macro_comparison.csv in this directory."
+}
