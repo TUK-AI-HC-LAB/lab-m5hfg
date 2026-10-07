@@ -1,0 +1,17 @@
+{
+  "verified_on": "2026-10-07",
+  "scope": "Read-only inspection of current loader source and current local pretrained file; not a training run or an execution-time checkpoint snapshot.",
+  "official_model_name": "ViT-L-14-336",
+  "official_pretrained_tag": "openai",
+  "common_model_name": "ViT-L/14@336px",
+  "checkpoint_filename": "ViT-L-14-336px.pt",
+  "checkpoint_url": "https://openaipublic.azureedge.net/clip/models/3035c92b350959924f9f00213499208652fc7ea050643e8b385c2dac08641f02/ViT-L-14-336px.pt",
+  "expected_sha256_from_url": "3035c92b350959924f9f00213499208652fc7ea050643e8b385c2dac08641f02",
+  "current_local_file_sha256": "3035c92b350959924f9f00213499208652fc7ea050643e8b385c2dac08641f02",
+  "current_local_file_size_bytes": 934088680,
+  "current_hash_matches_expected": true,
+  "official_loader_source": "models/backbone/open_clip/pretrained.py at official MuSc checkout",
+  "common_loader_source": "Installed clip/clip.py, called by trainer_musc.py through clip.load",
+  "execution_time_file_hash_recorded": false,
+  "target_finetuned_checkpoint": "None; this MuSc integration does not perform target training."
+}
