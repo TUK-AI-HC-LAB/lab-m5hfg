@@ -1,0 +1,14 @@
+{
+  "dataset": "mvtec",
+  "shot": 4,
+  "category": "cable",
+  "round": 4,
+  "n_images": 150,
+  "image_auroc": 0.6553598200899551,
+  "image_f1_max": 0.7707317073170731,
+  "image_ap": 0.7637246625192298,
+  "pixel_auroc": 0.8229574703819625,
+  "pixel_f1_max": 0.20625198947391227,
+  "pixel_ap": 0.13602287314316777,
+  "aupro": 0.5961328653764644
+}

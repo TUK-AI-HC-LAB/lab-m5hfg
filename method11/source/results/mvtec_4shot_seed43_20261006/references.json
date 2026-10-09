@@ -1,0 +1,422 @@
+[
+  {
+    "img_path": "bottle/train/good/003.png",
+    "mask_path": "",
+    "cls_name": "bottle",
+    "specie_name": "good",
+    "anomaly": 0
+  },
+  {
+    "img_path": "bottle/train/good/058.png",
+    "mask_path": "",
+    "cls_name": "bottle",
+    "specie_name": "good",
+    "anomaly": 0
+  },
+  {
+    "img_path": "bottle/train/good/115.png",
+    "mask_path": "",
+    "cls_name": "bottle",
+    "specie_name": "good",
+    "anomaly": 0
+  },
+  {
+    "img_path": "bottle/train/good/038.png",
+    "mask_path": "",
+    "cls_name": "bottle",
+    "specie_name": "good",
+    "anomaly": 0
+  },
+  {
+    "img_path": "cable/train/good/052.png",
+    "mask_path": "",
+    "cls_name": "cable",
+    "specie_name": "good",
+    "anomaly": 0
+  },
+  {
+    "img_path": "cable/train/good/179.png",
+    "mask_path": "",
+    "cls_name": "cable",
+    "specie_name": "good",
+    "anomaly": 0
+  },
+  {
+    "img_path": "cable/train/good/093.png",
+    "mask_path": "",
+    "cls_name": "cable",
+    "specie_name": "good",
+    "anomaly": 0
+  },
+  {
+    "img_path": "cable/train/good/099.png",
+    "mask_path": "",
+    "cls_name": "cable",
+    "specie_name": "good",
+    "anomaly": 0
+  },
+  {
+    "img_path": "capsule/train/good/035.png",
+    "mask_path": "",
+    "cls_name": "capsule",
+    "specie_name": "good",
+    "anomaly": 0
+  },
+  {
+    "img_path": "capsule/train/good/184.png",
+    "mask_path": "",
+    "cls_name": "capsule",
+    "specie_name": "good",
+    "anomaly": 0
+  },
+  {
+    "img_path": "capsule/train/good/095.png",
+    "mask_path": "",
+    "cls_name": "capsule",
+    "specie_name": "good",
+    "anomaly": 0
+  },
+  {
+    "img_path": "capsule/train/good/155.png",
+    "mask_path": "",
+    "cls_name": "capsule",
+    "specie_name": "good",
+    "anomaly": 0
+  },
+  {
+    "img_path": "carpet/train/good/101.png",
+    "mask_path": "",
+    "cls_name": "carpet",
+    "specie_name": "good",
+    "anomaly": 0
+  },
+  {
+    "img_path": "carpet/train/good/136.png",
+    "mask_path": "",
+    "cls_name": "carpet",
+    "specie_name": "good",
+    "anomaly": 0
+  },
+  {
+    "img_path": "carpet/train/good/133.png",
+    "mask_path": "",
+    "cls_name": "carpet",
+    "specie_name": "good",
+    "anomaly": 0
+  },
+  {
+    "img_path": "carpet/train/good/046.png",
+    "mask_path": "",
+    "cls_name": "carpet",
+    "specie_name": "good",
+    "anomaly": 0
+  },
+  {
+    "img_path": "grid/train/good/201.png",
+    "mask_path": "",
+    "cls_name": "grid",
+    "specie_name": "good",
+    "anomaly": 0
+  },
+  {
+    "img_path": "grid/train/good/103.png",
+    "mask_path": "",
+    "cls_name": "grid",
+    "specie_name": "good",
+    "anomaly": 0
+  },
+  {
+    "img_path": "grid/train/good/119.png",
+    "mask_path": "",
+    "cls_name": "grid",
+    "specie_name": "good",
+    "anomaly": 0
+  },
+  {
+    "img_path": "grid/train/good/177.png",
+    "mask_path": "",
+    "cls_name": "grid",
+    "specie_name": "good",
+    "anomaly": 0
+  },
+  {
+    "img_path": "hazelnut/train/good/299.png",
+    "mask_path": "",
+    "cls_name": "hazelnut",
+    "specie_name": "good",
+    "anomaly": 0
+  },
+  {
+    "img_path": "hazelnut/train/good/240.png",
+    "mask_path": "",
+    "cls_name": "hazelnut",
+    "specie_name": "good",
+    "anomaly": 0
+  },
+  {
+    "img_path": "hazelnut/train/good/317.png",
+    "mask_path": "",
+    "cls_name": "hazelnut",
+    "specie_name": "good",
+    "anomaly": 0
+  },
+  {
+    "img_path": "hazelnut/train/good/346.png",
+    "mask_path": "",
+    "cls_name": "hazelnut",
+    "specie_name": "good",
+    "anomaly": 0
+  },
+  {
+    "img_path": "leather/train/good/244.png",
+    "mask_path": "",
+    "cls_name": "leather",
+    "specie_name": "good",
+    "anomaly": 0
+  },
+  {
+    "img_path": "leather/train/good/116.png",
+    "mask_path": "",
+    "cls_name": "leather",
+    "specie_name": "good",
+    "anomaly": 0
+  },
+  {
+    "img_path": "leather/train/good/000.png",
+    "mask_path": "",
+    "cls_name": "leather",
+    "specie_name": "good",
+    "anomaly": 0
+  },
+  {
+    "img_path": "leather/train/good/190.png",
+    "mask_path": "",
+    "cls_name": "leather",
+    "specie_name": "good",
+    "anomaly": 0
+  },
+  {
+    "img_path": "metal_nut/train/good/100.png",
+    "mask_path": "",
+    "cls_name": "metal_nut",
+    "specie_name": "good",
+    "anomaly": 0
+  },
+  {
+    "img_path": "metal_nut/train/good/210.png",
+    "mask_path": "",
+    "cls_name": "metal_nut",
+    "specie_name": "good",
+    "anomaly": 0
+  },
+  {
+    "img_path": "metal_nut/train/good/035.png",
+    "mask_path": "",
+    "cls_name": "metal_nut",
+    "specie_name": "good",
+    "anomaly": 0
+  },
+  {
+    "img_path": "metal_nut/train/good/090.png",
+    "mask_path": "",
+    "cls_name": "metal_nut",
+    "specie_name": "good",
+    "anomaly": 0
+  },
+  {
+    "img_path": "pill/train/good/064.png",
+    "mask_path": "",
+    "cls_name": "pill",
+    "specie_name": "good",
+    "anomaly": 0
+  },
+  {
+    "img_path": "pill/train/good/090.png",
+    "mask_path": "",
+    "cls_name": "pill",
+    "specie_name": "good",
+    "anomaly": 0
+  },
+  {
+    "img_path": "pill/train/good/080.png",
+    "mask_path": "",
+    "cls_name": "pill",
+    "specie_name": "good",
+    "anomaly": 0
+  },
+  {
+    "img_path": "pill/train/good/204.png",
+    "mask_path": "",
+    "cls_name": "pill",
+    "specie_name": "good",
+    "anomaly": 0
+  },
+  {
+    "img_path": "screw/train/good/232.png",
+    "mask_path": "",
+    "cls_name": "screw",
+    "specie_name": "good",
+    "anomaly": 0
+  },
+  {
+    "img_path": "screw/train/good/209.png",
+    "mask_path": "",
+    "cls_name": "screw",
+    "specie_name": "good",
+    "anomaly": 0
+  },
+  {
+    "img_path": "screw/train/good/115.png",
+    "mask_path": "",
+    "cls_name": "screw",
+    "specie_name": "good",
+    "anomaly": 0
+  },
+  {
+    "img_path": "screw/train/good/199.png",
+    "mask_path": "",
+    "cls_name": "screw",
+    "specie_name": "good",
+    "anomaly": 0
+  },
+  {
+    "img_path": "tile/train/good/031.png",
+    "mask_path": "",
+    "cls_name": "tile",
+    "specie_name": "good",
+    "anomaly": 0
+  },
+  {
+    "img_path": "tile/train/good/198.png",
+    "mask_path": "",
+    "cls_name": "tile",
+    "specie_name": "good",
+    "anomaly": 0
+  },
+  {
+    "img_path": "tile/train/good/125.png",
+    "mask_path": "",
+    "cls_name": "tile",
+    "specie_name": "good",
+    "anomaly": 0
+  },
+  {
+    "img_path": "tile/train/good/163.png",
+    "mask_path": "",
+    "cls_name": "tile",
+    "specie_name": "good",
+    "anomaly": 0
+  },
+  {
+    "img_path": "toothbrush/train/good/013.png",
+    "mask_path": "",
+    "cls_name": "toothbrush",
+    "specie_name": "good",
+    "anomaly": 0
+  },
+  {
+    "img_path": "toothbrush/train/good/008.png",
+    "mask_path": "",
+    "cls_name": "toothbrush",
+    "specie_name": "good",
+    "anomaly": 0
+  },
+  {
+    "img_path": "toothbrush/train/good/021.png",
+    "mask_path": "",
+    "cls_name": "toothbrush",
+    "specie_name": "good",
+    "anomaly": 0
+  },
+  {
+    "img_path": "toothbrush/train/good/046.png",
+    "mask_path": "",
+    "cls_name": "toothbrush",
+    "specie_name": "good",
+    "anomaly": 0
+  },
+  {
+    "img_path": "transistor/train/good/077.png",
+    "mask_path": "",
+    "cls_name": "transistor",
+    "specie_name": "good",
+    "anomaly": 0
+  },
+  {
+    "img_path": "transistor/train/good/037.png",
+    "mask_path": "",
+    "cls_name": "transistor",
+    "specie_name": "good",
+    "anomaly": 0
+  },
+  {
+    "img_path": "transistor/train/good/054.png",
+    "mask_path": "",
+    "cls_name": "transistor",
+    "specie_name": "good",
+    "anomaly": 0
+  },
+  {
+    "img_path": "transistor/train/good/196.png",
+    "mask_path": "",
+    "cls_name": "transistor",
+    "specie_name": "good",
+    "anomaly": 0
+  },
+  {
+    "img_path": "wood/train/good/225.png",
+    "mask_path": "",
+    "cls_name": "wood",
+    "specie_name": "good",
+    "anomaly": 0
+  },
+  {
+    "img_path": "wood/train/good/148.png",
+    "mask_path": "",
+    "cls_name": "wood",
+    "specie_name": "good",
+    "anomaly": 0
+  },
+  {
+    "img_path": "wood/train/good/009.png",
+    "mask_path": "",
+    "cls_name": "wood",
+    "specie_name": "good",
+    "anomaly": 0
+  },
+  {
+    "img_path": "wood/train/good/241.png",
+    "mask_path": "",
+    "cls_name": "wood",
+    "specie_name": "good",
+    "anomaly": 0
+  },
+  {
+    "img_path": "zipper/train/good/221.png",
+    "mask_path": "",
+    "cls_name": "zipper",
+    "specie_name": "good",
+    "anomaly": 0
+  },
+  {
+    "img_path": "zipper/train/good/213.png",
+    "mask_path": "",
+    "cls_name": "zipper",
+    "specie_name": "good",
+    "anomaly": 0
+  },
+  {
+    "img_path": "zipper/train/good/164.png",
+    "mask_path": "",
+    "cls_name": "zipper",
+    "specie_name": "good",
+    "anomaly": 0
+  },
+  {
+    "img_path": "zipper/train/good/218.png",
+    "mask_path": "",
+    "cls_name": "zipper",
+    "specie_name": "good",
+    "anomaly": 0
+  }
+]

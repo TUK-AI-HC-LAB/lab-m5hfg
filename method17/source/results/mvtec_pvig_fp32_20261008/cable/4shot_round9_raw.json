@@ -1,0 +1,6 @@
+{
+  "path": "/home/test/graphcore_results/mvtec_pvig_fp32_20261008/cable/4shot_round9.npz",
+  "sha256": "bc11aedc9a55677a473c1ba8c753cd295ff79d744436900a44f30a4415db69b9",
+  "bank_path": "/home/test/graphcore_results/mvtec_pvig_fp32_20261008/cable/4shot_round9_bank.npy",
+  "bank_sha256": "4f75090e99e4837556109abb0622d5498a9820fc7117fe701d956d3a7b944edf"
+}

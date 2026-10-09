@@ -1,0 +1,64 @@
+{
+  "status": "stopped_failed_cache_comparison",
+  "official_repo": "https://github.com/M-3LAB/open-iad",
+  "commit": "05044fedab142ce4bfd71bb618b3200c0e43f198",
+  "provenance_label": "author benchmark implementation with explicit paper-aligned configuration; not exact MuSc GraphCore implementation",
+  "gpu": "NVIDIA GeForce RTX 5080",
+  "python": "3.12.13 | packaged by conda-forge | (main, Mar  5 2026, 16:50:00) [GCC 14.3.0]",
+  "cuda": "12.8",
+  "packages": {
+    "torch": "2.11.0+cu128",
+    "torchvision": "0.26.0+cu128",
+    "numpy": "2.5.3",
+    "timm": "1.0.28",
+    "faiss-cpu": "1.14.3",
+    "scikit-learn": "1.9.0",
+    "scipy": "1.18.0"
+  },
+  "model": "pvig_ti_224_gelu",
+  "weight": "/home/test/graphcore_assets/pvig_ti_78.5.pth.tar",
+  "weight_sha256": "06c49bda678b26a8cbc69c69e2762c3496eb4d9db8cacb5e88cdd517f56e4d4f",
+  "strict_weight_loading": true,
+  "feature_layers_0based": [
+    4,
+    11
+  ],
+  "feature_definition": "last FFN outputs of pyramid stages 2 and 3; inference choice, paper does not specify these feature taps",
+  "feature_shapes": [
+    [
+      96,
+      28,
+      28
+    ],
+    [
+      240,
+      14,
+      14
+    ]
+  ],
+  "sampler_percentage": 0.01,
+  "n_neighbours": 9,
+  "local_smoothing": false,
+  "seed": 42,
+  "rounds": 10,
+  "shots": [
+    4,
+    8
+  ],
+  "support_selection": "10 local random.sample draws without replacement, same 8-shot draw prefix for4",
+  "precision": "FP32; CUDA graph distances TF32 disabled; cuDNN TF32 enabled",
+  "image_transform": "native Resize224x224 bilinear/CenterCrop224/ToTensor/ImageNet normalization",
+  "mask_transform": "native Resize(shorter edge224) bilinear/CenterCrop224/ToTensor; >=0.5",
+  "graphcore_training": "memory-bank construction only; no gradient training",
+  "backbone_pretraining": "public ImageNet weights",
+  "original_checkout_edits": false,
+  "native_source_sha256": "848422a613f211aca65e45250fabf0aff75a25f27bae2f397554d1b69f27e9c6",
+  "wrapper_sha256": "eb427069e2acdcbed9418d5b0f1085adf2a8d42638cce376ff7355076f078908",
+  "feature_cache": "category CPU features extracted once at native batch1 eval; same features reused across support rounds",
+  "aupro_source_sha256": "6e308ee86c779fce34ee3b9c9c8413772afddb6113be435130f8448d8c50f411",
+  "raw_path": "/home/test/graphcore_results/mvtec_pvig_20261008",
+  "error": "Repeated native GPU vs cached features differed materially on 6 bottle images; excluded from tables. Restarted deterministic FP32 in separate output.",
+  "category": "cable",
+  "shot": 4,
+  "round": 3
+}

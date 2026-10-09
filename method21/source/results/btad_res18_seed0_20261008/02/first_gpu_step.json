@@ -1,0 +1,18 @@
+{
+  "status": "passed",
+  "gpu": "NVIDIA GeForce RTX 5080",
+  "real_BTAD_batch": true,
+  "batch_size": 2,
+  "input_size": 1024,
+  "fp32_loss": 15.494583129882812,
+  "tf32_loss": 15.49522876739502,
+  "loss_relative_difference": 4.166859434917569e-05,
+  "gradient_relative_L2_difference": 0.007946326397359371,
+  "tf32_enabled": true,
+  "thresholds": {
+    "loss": 0.005,
+    "gradient": 0.02
+  },
+  "finite_gradients": true,
+  "allocated_mib": 643.53564453125
+}

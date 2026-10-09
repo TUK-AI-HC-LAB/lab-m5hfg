@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-10-08T21:36:22.727264",
+  "old_pid": 469,
+  "requested": "Enable compatible validated accelerations and restart",
+  "policy": "FP16+TF32 finite/loss gate, compile verified vs eager FP16, FP32 gradients diagnostic; safe fallback",
+  "continuation": true,
+  "preserve_completed": true,
+  "source": "cutpaste_acceleration.py",
+  "helper_sha256": "f8e453fc5029b662996da62d2bc30ed4e7a994c75d73ea805452a0d707db41f3",
+  "new_pid": 860,
+  "resume_step": 58368,
+  "observed_completed_step": 58624,
+  "active_mode": "compiled_fp16",
+  "tf32": true,
+  "proof": "cable/image/acceleration_from_step_58368.json"
+}

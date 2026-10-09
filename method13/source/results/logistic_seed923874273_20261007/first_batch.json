@@ -1,0 +1,13 @@
+{
+  "category": "bottle",
+  "loss": 1.0113636255264282,
+  "batch_size": 64,
+  "device": "cuda:0",
+  "input_shape": [
+    64,
+    3,
+    224,
+    224
+  ],
+  "backward_completed": true
+}

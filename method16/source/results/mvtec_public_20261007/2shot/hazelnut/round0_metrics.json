@@ -1,0 +1,16 @@
+{
+  "dataset": "mvtec",
+  "shot": 2,
+  "category": "hazelnut",
+  "round": 0,
+  "n_images": 110,
+  "image_auroc": 0.9560714285714285,
+  "image_f1_max": 0.9178082191780822,
+  "image_ap": 0.9752523989004236,
+  "pixel_auroc": 0.9829754199291594,
+  "pixel_f1_max": 0.5585304755337265,
+  "pixel_ap": 0.5426916693440014,
+  "aupro": 0.9218048980603651,
+  "evaluation_seconds": 5.266067081000074,
+  "gpu_allocated_mib": 4330.3076171875
+}

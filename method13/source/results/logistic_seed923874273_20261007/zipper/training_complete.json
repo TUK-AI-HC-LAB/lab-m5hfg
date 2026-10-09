@@ -1,0 +1,8 @@
+{
+  "status": "completed",
+  "epochs": 320,
+  "checkpoint": "/home/test/nsa_results/logistic_seed923874273_20261007/weights/shift/zipper/final_zipper_shift_intensity_923874273.pt",
+  "sha256": "662028e820d4f3307db24df8b5c1628c5f7be7e4ab396cc242d8d7cacf281655",
+  "seed": 923874273,
+  "setting": "Shift-Intensity-923874273"
+}

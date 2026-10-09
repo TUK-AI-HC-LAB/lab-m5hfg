@@ -1,0 +1,8 @@
+{
+  "checkpoint": "/home/test/regad_assets/save_checkpoints/4/pill/pill_4_rotation_scale_model.pt",
+  "checkpoint_sha256": "c5eec03f5c5c44dd8bc07fc690d4031c55a689750952999a19bbb24206fb532b",
+  "support": "/home/test/regad_assets/support_set/pill/4_10.pt",
+  "support_sha256": "18128aa09025f44f8941d537db9039df9ba0ea87d90f6975b7274d26130782a0",
+  "rscin_feature_path": "/home/test/aprilgan_results/rscin_shared_musc_features/mvtec/pill/features.npy",
+  "rscin_feature_sha256": "3568c43f1bf4aebb09104a6a0c492a5c0a5fc30cd2a50353146be332a1b47585"
+}

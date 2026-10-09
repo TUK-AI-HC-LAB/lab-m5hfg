@@ -1,0 +1,8 @@
+{
+  "checkpoint": "/home/test/regad_assets/save_checkpoints/8/wood/wood_8_rotation_scale_model.pt",
+  "checkpoint_sha256": "5962dbc3e4d6c42cc9a7574b3dbbd79f2282206f947787fe9d21540f812d8589",
+  "support": "/home/test/regad_assets/support_set/wood/8_10.pt",
+  "support_sha256": "2f1622de0c00156f4485d89ef8621569a1ce2a63ca195ba14104800952cc3e6f",
+  "rscin_feature_path": "/home/test/aprilgan_results/rscin_shared_musc_features/mvtec/wood/features.npy",
+  "rscin_feature_sha256": "ae8bf220a2776fd206439d1f3d9997848905ce87bbd183359d605c7a6cb8dd2c"
+}

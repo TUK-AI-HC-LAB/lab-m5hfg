@@ -1,0 +1,9 @@
+{
+  "path": "/home/test/acr_results/mvtec_seed42_20261007/screw_predictions.npz",
+  "sha256": "27e98b8d26cd5ec14331d42c6a23b7c5cd3498d4913df67aea1793a2779e8884",
+  "shape": [
+    160,
+    224,
+    224
+  ]
+}

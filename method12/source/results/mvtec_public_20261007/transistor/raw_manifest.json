@@ -1,0 +1,12 @@
+{
+  "path": "/home/test/draem_results/mvtec_public_20261007/transistor/raw_predictions.npz",
+  "sha256": "3f3a70f2178b21e7865fb1765df17a3c3c1d7dc67b56db2ca2e2690380dafcda",
+  "n_images": 100,
+  "map_shape": [
+    100,
+    256,
+    256
+  ],
+  "map_dtype": "float64",
+  "mask_dtype": "uint8"
+}

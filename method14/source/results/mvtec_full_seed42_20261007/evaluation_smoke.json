@@ -1,0 +1,16 @@
+{
+  "status": "passed",
+  "local_assembly_shape": [
+    256,
+    256
+  ],
+  "global_map_shape": [
+    1,
+    3,
+    256,
+    256
+  ],
+  "finite": true,
+  "full_trained_checkpoint_used": false,
+  "scope": "local recovery checkpoint + global architecture; validates executable inference path, not final accuracy"
+}

@@ -1,0 +1,22 @@
+[
+  {
+    "shot": 8,
+    "category": "metal_nut",
+    "round": 3,
+    "rscin": "w/o",
+    "n_images": 115,
+    "image_auroc": 0.9755620723362659,
+    "image_f1_max": 0.9617486338797814,
+    "image_ap": 0.9945520656205011
+  },
+  {
+    "shot": 8,
+    "category": "metal_nut",
+    "round": 3,
+    "rscin": "w",
+    "n_images": 115,
+    "image_auroc": 0.9872922776148583,
+    "image_f1_max": 0.9837837837837837,
+    "image_ap": 0.9972698423514452
+  }
+]

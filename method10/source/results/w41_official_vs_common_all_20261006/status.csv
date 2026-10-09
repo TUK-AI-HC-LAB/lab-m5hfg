@@ -1,0 +1,16 @@
+category,n_images,status,seconds,returncode,csv,log
+bottle,83,reused,,0,/home/test/musc_results/common_port_20261006/musc__layer2_layer3_/results_musc.csv,/home/test/musc_results/common_port_20261006.log
+cable,150,completed,181.793217728,0,/home/test/musc_results/common_all_w41_20261006/cable/musc__layer2_layer3_/results_musc.csv,/home/test/musc_results/common_all_w41_20261006/cable.log
+capsule,132,completed,142.61585586099997,0,/home/test/musc_results/common_all_w41_20261006/capsule/musc__layer2_layer3_/results_musc.csv,/home/test/musc_results/common_all_w41_20261006/capsule.log
+carpet,117,completed,113.38155160100001,0,/home/test/musc_results/common_all_w41_20261006/carpet/musc__layer2_layer3_/results_musc.csv,/home/test/musc_results/common_all_w41_20261006/carpet.log
+grid,78,completed,58.87285725800001,0,/home/test/musc_results/common_all_w41_20261006/grid/musc__layer2_layer3_/results_musc.csv,/home/test/musc_results/common_all_w41_20261006/grid.log
+hazelnut,110,completed,102.00789281799996,0,/home/test/musc_results/common_all_w41_20261006/hazelnut/musc__layer2_layer3_/results_musc.csv,/home/test/musc_results/common_all_w41_20261006/hazelnut.log
+leather,124,completed,126.31289895299994,0,/home/test/musc_results/common_all_w41_20261006/leather/musc__layer2_layer3_/results_musc.csv,/home/test/musc_results/common_all_w41_20261006/leather.log
+metal_nut,115,completed,109.233204752,0,/home/test/musc_results/common_all_w41_20261006/metal_nut/musc__layer2_layer3_/results_musc.csv,/home/test/musc_results/common_all_w41_20261006/metal_nut.log
+pill,167,completed,210.86119455099993,0,/home/test/musc_results/common_all_w41_20261006/pill/musc__layer2_layer3_/results_musc.csv,/home/test/musc_results/common_all_w41_20261006/pill.log
+screw,160,completed,199.25253543600002,0,/home/test/musc_results/common_all_w41_20261006/screw/musc__layer2_layer3_/results_musc.csv,/home/test/musc_results/common_all_w41_20261006/screw.log
+tile,117,completed,111.01804029899995,0,/home/test/musc_results/common_all_w41_20261006/tile/musc__layer2_layer3_/results_musc.csv,/home/test/musc_results/common_all_w41_20261006/tile.log
+toothbrush,42,completed,25.963636367999925,0,/home/test/musc_results/common_all_w41_20261006/toothbrush/musc__layer2_layer3_/results_musc.csv,/home/test/musc_results/common_all_w41_20261006/toothbrush.log
+transistor,100,completed,85.10463355800016,0,/home/test/musc_results/common_all_w41_20261006/transistor/musc__layer2_layer3_/results_musc.csv,/home/test/musc_results/common_all_w41_20261006/transistor.log
+wood,79,completed,57.64259469700005,0,/home/test/musc_results/common_all_w41_20261006/wood/musc__layer2_layer3_/results_musc.csv,/home/test/musc_results/common_all_w41_20261006/wood.log
+zipper,151,completed,173.109167309,0,/home/test/musc_results/common_all_w41_20261006/zipper/musc__layer2_layer3_/results_musc.csv,/home/test/musc_results/common_all_w41_20261006/zipper.log

@@ -1,0 +1,22 @@
+[
+  {
+    "shot": 4,
+    "category": "hazelnut",
+    "round": 7,
+    "rscin": "w/o",
+    "n_images": 110,
+    "image_auroc": 0.9475,
+    "image_f1_max": 0.9189189189189189,
+    "image_ap": 0.9677707627061671
+  },
+  {
+    "shot": 4,
+    "category": "hazelnut",
+    "round": 7,
+    "rscin": "w",
+    "n_images": 110,
+    "image_auroc": 0.9625000000000001,
+    "image_f1_max": 0.9370629370629371,
+    "image_ap": 0.9787986591620217
+  }
+]

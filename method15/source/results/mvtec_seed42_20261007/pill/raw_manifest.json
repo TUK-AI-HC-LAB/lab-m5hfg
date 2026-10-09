@@ -1,0 +1,9 @@
+{
+  "path": "/home/test/acr_results/mvtec_seed42_20261007/pill_predictions.npz",
+  "sha256": "46f3ba558674707cda3a239e41709f7265a5bf2dcfd4784f3d155e2e1f71ef95",
+  "shape": [
+    167,
+    224,
+    224
+  ]
+}

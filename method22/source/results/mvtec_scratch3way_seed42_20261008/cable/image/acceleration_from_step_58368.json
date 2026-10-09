@@ -1,0 +1,111 @@
+{
+  "status": "passed",
+  "precision": "fp16",
+  "compiled": true,
+  "tf32_enabled": true,
+  "mode": "compiled_fp16",
+  "bf16_enabled": false,
+  "transition_step": 58368,
+  "thresholds": {
+    "loss": 0.01,
+    "gradient": 0.05
+  },
+  "policy": "FP16 finite/loss gate; FP32 gradient diagnostic; compiled versus eager FP16 gradient/loss gate. User-requested accelerated continuation, no final AUROC equivalence claim.",
+  "trials": [
+    {
+      "mode": "fp32",
+      "finite": true,
+      "loss_relative_difference": 0.0,
+      "gradient_relative_L2": 0.0,
+      "strict_fp32_equivalence_passed": true,
+      "passed": true,
+      "startup_seconds": 13.99432242599869
+    },
+    {
+      "mode": "compiled_fp16",
+      "finite": true,
+      "loss_relative_difference": 0.001168883266545642,
+      "gradient_relative_L2": 0.02328481152653694,
+      "strict_fp32_equivalence_passed": true,
+      "passed": true,
+      "startup_seconds": 6.535286137001094
+    },
+    {
+      "mode": "fp16",
+      "finite": true,
+      "loss_relative_difference": 4.0849344302901797e-05,
+      "gradient_relative_L2": 0.02455185167491436,
+      "strict_fp32_equivalence_passed": true,
+      "passed": true,
+      "startup_seconds": 0.06652708000183338,
+      "compiled_vs_eager_gradient_relative_L2": 0.012473073787987232,
+      "compiled_vs_eager_loss_relative_difference": 0.0012097820296512046,
+      "compile_validation_passed": true
+    }
+  ],
+  "previous_proof": {
+    "status": "passed",
+    "precision": "fp32",
+    "compiled": false,
+    "tf32_enabled": true,
+    "mode": "tf32",
+    "bf16_enabled": false,
+    "transition_step": 57856,
+    "thresholds": {
+      "loss": 0.01,
+      "gradient": 0.05
+    },
+    "trials": [
+      {
+        "mode": "fp32",
+        "finite": true,
+        "loss_relative_difference": 0.0,
+        "gradient_relative_L2": 0.0,
+        "passed": true,
+        "startup_seconds": 15.994638926000334
+      },
+      {
+        "mode": "compiled_fp16",
+        "finite": true,
+        "loss_relative_difference": 0.0014199133058509885,
+        "gradient_relative_L2": 0.12312270700931549,
+        "passed": false,
+        "startup_seconds": 23.327031737000652
+      },
+      {
+        "mode": "fp16",
+        "finite": true,
+        "loss_relative_difference": 0.0017527973829116526,
+        "gradient_relative_L2": 0.1229340210556984,
+        "passed": false,
+        "startup_seconds": 0.06421553600011976
+      },
+      {
+        "mode": "tf32",
+        "finite": true,
+        "loss_relative_difference": 0.00017471512925586804,
+        "gradient_relative_L2": 0.021957848221063614,
+        "passed": true,
+        "startup_seconds": 5.983513546998438
+      }
+    ],
+    "previous_proof": {
+      "status": "passed",
+      "real_MVTec_batch": true,
+      "gpu": "NVIDIA GeForce RTX 5080",
+      "effective_batch": 96,
+      "input_size": 256,
+      "fp32_loss": 1.145419716835022,
+      "bf16_loss": 1.1454061269760132,
+      "bf16_gradient_relative_L2": 0.5321733355522156,
+      "bf16_loss_relative_difference": 1.186452300316887e-05,
+      "bf16_enabled": false,
+      "tf32_enabled": false,
+      "thresholds": {
+        "gradient": 0.05,
+        "loss": 0.01
+      },
+      "finite_gradients": true
+    }
+  }
+}

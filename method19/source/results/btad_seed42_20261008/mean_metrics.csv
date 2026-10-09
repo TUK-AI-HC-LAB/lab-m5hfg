@@ -1,0 +1,2 @@
+dataset,n_categories,n_images,fusion,image_auroc,pixel_auroc
+btad,3,741,mult,0.6975643019112407,0.7807650415991421

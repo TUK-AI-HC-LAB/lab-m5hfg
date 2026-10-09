@@ -1,0 +1,59 @@
+{
+  "category": "cable",
+  "kind": "image",
+  "gpu": "NVIDIA GeForce RTX 5080",
+  "trials": [
+    {
+      "name": "fp32",
+      "status": "passed",
+      "median_step_seconds": 0.12368464550036151,
+      "startup_seconds": 17.25957341799949,
+      "loss_relative_difference": 0.0,
+      "gradient_relative_L2_difference": 0.0,
+      "finite_gradients": true
+    },
+    {
+      "name": "tf32",
+      "status": "passed",
+      "median_step_seconds": 0.07919882300029712,
+      "startup_seconds": 6.649284660999911,
+      "loss_relative_difference": 0.0006049624693016419,
+      "gradient_relative_L2_difference": 0.010860036127269268,
+      "finite_gradients": true
+    },
+    {
+      "name": "bf16",
+      "status": "passed",
+      "median_step_seconds": 0.04284381449906505,
+      "startup_seconds": 6.705061284001204,
+      "loss_relative_difference": 0.018827593817191846,
+      "gradient_relative_L2_difference": 0.04115494713187218,
+      "finite_gradients": true
+    },
+    {
+      "name": "fp16",
+      "status": "passed",
+      "median_step_seconds": 0.03750335300082952,
+      "startup_seconds": 7.808328090000941,
+      "loss_relative_difference": 0.00235736638779986,
+      "gradient_relative_L2_difference": 0.012773082591593266,
+      "finite_gradients": true
+    },
+    {
+      "name": "compiled_bf16",
+      "status": "passed",
+      "median_step_seconds": 0.036041168000338075,
+      "startup_seconds": 25.66720148100103,
+      "loss_relative_difference": 0.015372849204123719,
+      "gradient_relative_L2_difference": 0.03969612345099449,
+      "finite_gradients": true
+    }
+  ],
+  "training_pid": 469,
+  "limit": "GPU training on a fixed actual batch; excludes data loading, checkpoints and full-run accuracy. No restart or precision change of real training.",
+  "checkpoint_sha256": "2544522224da4c35676d295106defaf0707ff979250d1d8d96073da7f87364bc",
+  "checkpoint_step": 55040,
+  "effective_batch": 96,
+  "input_size": 256,
+  "real_training_resumed": true
+}

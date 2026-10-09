@@ -1,0 +1,18 @@
+{
+  "predictions.npz": {
+    "path": "/home/test/pyramidflow_results/btad_res18_seed0_20261008/02/predictions.npz",
+    "sha256": "70c27925129e05265e13c2be1e41f1f12fe5f9b7285a5a6a0d674e22d410277c"
+  },
+  "last.pt": {
+    "path": "/home/test/pyramidflow_results/btad_res18_seed0_20261008/02/last.pt",
+    "sha256": "1796dcda5900c193583be65bf23d9c3cf0a6d672a907a5c6613d827aa7f83364"
+  },
+  "template.pt": {
+    "path": "/home/test/pyramidflow_results/btad_res18_seed0_20261008/02/template.pt",
+    "sha256": "634c87a2fa6c8c2b55c22499fb0d9aad0793914f5b5bf020a3fd0a27f2045fac"
+  },
+  "first_test_latent.pt": {
+    "path": "/home/test/pyramidflow_results/btad_res18_seed0_20261008/02/first_test_latent.pt",
+    "sha256": "450d36da89aeedebb7034a16d88d548c508dcea09f28e0e697fc18e3399075c0"
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "status": "completed",
+  "category": "03",
+  "official_author_implementation": false,
+  "public_repo": "https://github.com/byungjae89/SPADE-pytorch",
+  "commit": "077c67be21d68a38b4442db7311c87e708728286",
+  "dataset": "/home/test/data/btad_original/BTech_Dataset_transformed",
+  "categories": [
+    "01",
+    "02",
+    "03"
+  ],
+  "n_train": [
+    400,
+    399,
+    1000
+  ],
+  "n_test": [
+    70,
+    230,
+    441
+  ],
+  "seed": 42,
+  "training_epochs": 0,
+  "backbone": "torchvision wide_resnet50_2 IMAGENET1K_V1",
+  "weights_url": "https://download.pytorch.org/models/wide_resnet50_2-95faca4d.pth",
+  "weights_path": "/home/test/.cache/torch/hub/checkpoints/wide_resnet50_2-95faca4d.pth",
+  "weights_sha256": "95faca4d11227dddf8633dbb5ff6c8a9003c1aa5b8945c73834b8007b10950b8",
+  "gpu": "NVIDIA GeForce RTX 5080",
+  "torch": "2.11.0+cu128",
+  "python": "3.12.13",
+  "precision": "FP32 no TF32 no AMP",
+  "input": "Resize shorter side256 LANCZOS / CenterCrop224 / ImageNet normalization",
+  "K": 50,
+  "kappa": 1,
+  "global_score": "mean K50 squared Euclidean distance of avgpool2048",
+  "pyramid": "layer1/2/3 256/512/1024 channels; bilinear upsample to56; concatenate1792; exact dense squared L2",
+  "postprocess": "56->224 bilinear align_corners=False ->256 cv2.INTER_AREA -> Gaussian sigma4",
+  "mask": "Resize shorter side256 NEAREST / CenterCrop224 / >128 ->256 INTER_AREA ->>.5",
+  "protocol_ambiguity": "paper does not specify feature alignment interpolation or mapping crop224 to evaluation256; choices recorded",
+  "no_test_tuning": true,
+  "batch_size": 32,
+  "raw_path": "/home/test/spade_results/btad_k50_seed42_20261008",
+  "wrapper_sha256": "fe475efacda20e0c8fff63e201bd0b0745ca2181566254bef1ed185be77c1df8",
+  "common_sha256": "66e25e9885b58794fbd88a63be4dd4d703321cee44f9d5f2a5257dbe402795f3",
+  "source_hashes": {
+    "src/main.py": "3477685a918405bd9982fdba2e8675d69e49ec1c01d4106b17faf70c04f20a4e",
+    "src/datasets/mvtec.py": "605f42903dbd749f4d4379738fa4acbc36986e1839fd0b5c89f2a8b5c720107a"
+  },
+  "error": null
+}

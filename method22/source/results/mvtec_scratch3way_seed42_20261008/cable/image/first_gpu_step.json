@@ -1,0 +1,18 @@
+{
+  "status": "passed",
+  "real_MVTec_batch": true,
+  "gpu": "NVIDIA GeForce RTX 5080",
+  "effective_batch": 96,
+  "input_size": 256,
+  "fp32_loss": 1.145419716835022,
+  "bf16_loss": 1.1454061269760132,
+  "bf16_gradient_relative_L2": 0.5321733355522156,
+  "bf16_loss_relative_difference": 1.186452300316887e-05,
+  "bf16_enabled": false,
+  "tf32_enabled": false,
+  "thresholds": {
+    "gradient": 0.05,
+    "loss": 0.01
+  },
+  "finite_gradients": true
+}

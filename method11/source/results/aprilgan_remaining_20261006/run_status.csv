@@ -1,0 +1,13 @@
+﻿dataset,mode,seed,tag,status,inferred_images,completed_categories
+mvtec,zero_shot,42,mvtec_zero_shot_20261006,completed,1725,15
+mvtec,few_shot,42,mvtec_4shot_seed42_20261006,completed,1725,15
+mvtec,few_shot,43,mvtec_4shot_seed43_20261006,completed,1725,15
+mvtec,few_shot,44,mvtec_4shot_seed44_20261006,completed,1725,15
+visa,zero_shot,42,visa_0shot_seed42_20261006,completed,2162,12
+visa,few_shot,42,visa_4shot_seed42_20261006,completed,2162,12
+visa,few_shot,43,visa_4shot_seed43_20261006,completed,2162,12
+visa,few_shot,44,visa_4shot_seed44_20261006,completed,2162,12
+btad,zero_shot,42,btad_0shot_seed42_20261006,completed,741,3
+btad,few_shot,42,btad_4shot_seed42_20261006,completed,741,3
+btad,few_shot,43,btad_4shot_seed43_20261006,completed,741,3
+btad,few_shot,44,btad_4shot_seed44_20261006,completed,741,3

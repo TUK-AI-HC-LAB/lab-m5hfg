@@ -1,0 +1,9 @@
+{
+  "dataset": "btad",
+  "category": "03",
+  "fusion": "mult",
+  "n_images": 441,
+  "image_auroc": 0.5,
+  "pixel_auroc": 0.5,
+  "checkpoint_epoch": 300
+}

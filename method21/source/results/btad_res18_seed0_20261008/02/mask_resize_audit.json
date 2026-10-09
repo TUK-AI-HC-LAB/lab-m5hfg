@@ -1,0 +1,8 @@
+{
+  "original_image_labels_retained": true,
+  "missing_after_native_resize": [
+    "/home/test/data/btad_original/BTech_Dataset_transformed/02/test/ko/0145.png"
+  ],
+  "n_missing": 1,
+  "rule": "Do not infer image labels from resized masks; preserve native pixel mask transform"
+}

@@ -1,0 +1,7 @@
+{
+  "status": "passed",
+  "root": "/home/test/data/btad_original/BTech_Dataset_transformed",
+  "exact_file_order_labels_masks_verified": true,
+  "metadata_sha256": "949cdedc365d3e2c72e5b8846486cf5650a48645c844425624e8bafa05549702",
+  "test_images": 741
+}

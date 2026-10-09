@@ -1,0 +1,58 @@
+{
+  "status": "passed",
+  "baseline": "interrupted original in-memory Visa attempt",
+  "recovered": "serial exact disk-backed arrays",
+  "categories_verified": 7,
+  "expected_categories": 7,
+  "records": [
+    {
+      "category": "candle",
+      "image_labels_identical": true,
+      "image_scores_identical": true,
+      "masks_identical": true,
+      "anomaly_maps_identical": true
+    },
+    {
+      "category": "capsules",
+      "image_labels_identical": true,
+      "image_scores_identical": true,
+      "masks_identical": true,
+      "anomaly_maps_identical": true
+    },
+    {
+      "category": "cashew",
+      "image_labels_identical": true,
+      "image_scores_identical": true,
+      "masks_identical": true,
+      "anomaly_maps_identical": true
+    },
+    {
+      "category": "chewinggum",
+      "image_labels_identical": true,
+      "image_scores_identical": true,
+      "masks_identical": true,
+      "anomaly_maps_identical": true
+    },
+    {
+      "category": "fryum",
+      "image_labels_identical": true,
+      "image_scores_identical": true,
+      "masks_identical": true,
+      "anomaly_maps_identical": true
+    },
+    {
+      "category": "macaroni1",
+      "image_labels_identical": true,
+      "image_scores_identical": true,
+      "masks_identical": true,
+      "anomaly_maps_identical": true
+    },
+    {
+      "category": "macaroni2",
+      "image_labels_identical": true,
+      "image_scores_identical": true,
+      "masks_identical": true,
+      "anomaly_maps_identical": true
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "checkpoint": "/home/test/regad_assets/save_checkpoints/4/carpet/carpet_4_rotation_scale_model.pt",
+  "checkpoint_sha256": "f6da58176600cc2ff479703011c4777edf743ff2d41c7ac0ebfc8f6e87c28af2",
+  "support": "/home/test/regad_assets/support_set/carpet/4_10.pt",
+  "support_sha256": "67f0fbada357e3b39df461b6ee468e5c556250f761ede71d01ea0ada7ca54995",
+  "rscin_feature_path": "/home/test/aprilgan_results/rscin_shared_musc_features/mvtec/carpet/features.npy",
+  "rscin_feature_sha256": "a2011367780d93662aad18e0de94496c5131e1761ccf06ae7fb60f7775b9445a"
+}

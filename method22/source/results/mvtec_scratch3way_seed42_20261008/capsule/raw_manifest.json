@@ -1,0 +1,46 @@
+[
+  {
+    "path": "/home/test/cutpaste_results/mvtec_scratch3way_seed42_20261008/capsule/predictions.npz",
+    "sha256": "562f9629bbabaff40d6e2490913015e860ce9cb4b2a9b740827406251b9784dc"
+  },
+  {
+    "path": "/home/test/cutpaste_results/mvtec_scratch3way_seed42_20261008/capsule/image/density.npz",
+    "sha256": "353b9397d51d0a7cac2650c92c0625bbcf39e0df300a628030a7717894b1c87f"
+  },
+  {
+    "path": "/home/test/cutpaste_results/mvtec_scratch3way_seed42_20261008/capsule/image/last.pt",
+    "sha256": "6198e5d248d59bc0fb19f7204c09d691d492c08f79009ddc36a44d5833f6c259"
+  },
+  {
+    "path": "/home/test/cutpaste_results/mvtec_scratch3way_seed42_20261008/capsule/image/train_features.npy",
+    "sha256": "169d0295de717b92d10db3512bb6bf20fc5d776e3dc731eb055b3c93b975e5c8"
+  },
+  {
+    "path": "/home/test/cutpaste_results/mvtec_scratch3way_seed42_20261008/capsule/image/test_features.npy",
+    "sha256": "e98cf98c3304045148924ba85445582c657d27bcca65e549599c148591e8b415"
+  },
+  {
+    "path": "/home/test/cutpaste_results/mvtec_scratch3way_seed42_20261008/capsule/patch/last.pt",
+    "sha256": "eaa9a620ab345c74948e724a4825f12b6cf6ec95dd65e803c8c5a39b1f1333ea"
+  },
+  {
+    "path": "/home/test/cutpaste_results/mvtec_scratch3way_seed42_20261008/capsule/patch/train_features.npy",
+    "sha256": "87afacad491bd3c86bf38b0171ba9d8194d629c3258d8847aea379e9531b7e9a"
+  },
+  {
+    "path": "/home/test/cutpaste_results/mvtec_scratch3way_seed42_20261008/capsule/patch/test_features.npy",
+    "sha256": "d419df1c25e2a747a37bcdca9280943860d02f90c38948c729b72dbab888ad1c"
+  },
+  {
+    "path": "/home/test/cutpaste_results/mvtec_scratch3way_seed42_20261008/capsule/patch/density_mean.npy",
+    "sha256": "b3997ef2a9eb215ba9943f4a3a451af59e9079b0843a1a4ead40c220fd8829f1"
+  },
+  {
+    "path": "/home/test/cutpaste_results/mvtec_scratch3way_seed42_20261008/capsule/patch/density_precision.npy",
+    "sha256": "082f4bf15237844fe9fa6ef3b436bd43e793d236a570b971e4e4cf0135bc3e5e"
+  },
+  {
+    "path": "/home/test/cutpaste_results/mvtec_scratch3way_seed42_20261008/capsule/patch/density_shrinkage.npy",
+    "sha256": "f46ac197abb83caea7792235f3450e2ddfa548656ca178583a7adb4d26c486b5"
+  }
+]

@@ -1,0 +1,132 @@
+{
+  "status": "passed",
+  "n_categories": 15,
+  "n_images": 1725,
+  "n_checkpoints": 30,
+  "native_metrics_recomputed": true,
+  "raw_predictions_verified": true,
+  "macro_means_verified": true,
+  "rscin_shared_feature_alignment_verified": true,
+  "categories": [
+    {
+      "category": "capsule",
+      "n_images": 132,
+      "raw_sha256_verified": true,
+      "image_score_pooling_exact": true,
+      "native_metrics_max_absolute_error": 0.0,
+      "current_images_sha256_verified": true
+    },
+    {
+      "category": "bottle",
+      "n_images": 83,
+      "raw_sha256_verified": true,
+      "image_score_pooling_exact": true,
+      "native_metrics_max_absolute_error": 0.0,
+      "current_images_sha256_verified": true
+    },
+    {
+      "category": "carpet",
+      "n_images": 117,
+      "raw_sha256_verified": true,
+      "image_score_pooling_exact": true,
+      "native_metrics_max_absolute_error": 0.0,
+      "current_images_sha256_verified": true
+    },
+    {
+      "category": "leather",
+      "n_images": 124,
+      "raw_sha256_verified": true,
+      "image_score_pooling_exact": true,
+      "native_metrics_max_absolute_error": 0.0,
+      "current_images_sha256_verified": true
+    },
+    {
+      "category": "pill",
+      "n_images": 167,
+      "raw_sha256_verified": true,
+      "image_score_pooling_exact": true,
+      "native_metrics_max_absolute_error": 0.0,
+      "current_images_sha256_verified": true
+    },
+    {
+      "category": "transistor",
+      "n_images": 100,
+      "raw_sha256_verified": true,
+      "image_score_pooling_exact": true,
+      "native_metrics_max_absolute_error": 0.0,
+      "current_images_sha256_verified": true
+    },
+    {
+      "category": "tile",
+      "n_images": 117,
+      "raw_sha256_verified": true,
+      "image_score_pooling_exact": true,
+      "native_metrics_max_absolute_error": 0.0,
+      "current_images_sha256_verified": true
+    },
+    {
+      "category": "cable",
+      "n_images": 150,
+      "raw_sha256_verified": true,
+      "image_score_pooling_exact": true,
+      "native_metrics_max_absolute_error": 0.0,
+      "current_images_sha256_verified": true
+    },
+    {
+      "category": "zipper",
+      "n_images": 151,
+      "raw_sha256_verified": true,
+      "image_score_pooling_exact": true,
+      "native_metrics_max_absolute_error": 0.0,
+      "current_images_sha256_verified": true
+    },
+    {
+      "category": "toothbrush",
+      "n_images": 42,
+      "raw_sha256_verified": true,
+      "image_score_pooling_exact": true,
+      "native_metrics_max_absolute_error": 0.0,
+      "current_images_sha256_verified": true
+    },
+    {
+      "category": "metal_nut",
+      "n_images": 115,
+      "raw_sha256_verified": true,
+      "image_score_pooling_exact": true,
+      "native_metrics_max_absolute_error": 0.0,
+      "current_images_sha256_verified": true
+    },
+    {
+      "category": "hazelnut",
+      "n_images": 110,
+      "raw_sha256_verified": true,
+      "image_score_pooling_exact": true,
+      "native_metrics_max_absolute_error": 0.0,
+      "current_images_sha256_verified": true
+    },
+    {
+      "category": "screw",
+      "n_images": 160,
+      "raw_sha256_verified": true,
+      "image_score_pooling_exact": true,
+      "native_metrics_max_absolute_error": 0.0,
+      "current_images_sha256_verified": true
+    },
+    {
+      "category": "grid",
+      "n_images": 78,
+      "raw_sha256_verified": true,
+      "image_score_pooling_exact": true,
+      "native_metrics_max_absolute_error": 0.0,
+      "current_images_sha256_verified": true
+    },
+    {
+      "category": "wood",
+      "n_images": 79,
+      "raw_sha256_verified": true,
+      "image_score_pooling_exact": true,
+      "native_metrics_max_absolute_error": 0.0,
+      "current_images_sha256_verified": true
+    }
+  ]
+}

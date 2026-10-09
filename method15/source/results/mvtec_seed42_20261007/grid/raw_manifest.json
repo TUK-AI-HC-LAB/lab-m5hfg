@@ -1,0 +1,9 @@
+{
+  "path": "/home/test/acr_results/mvtec_seed42_20261007/grid_predictions.npz",
+  "sha256": "a75168df611eaa4e7fa2b702e219343d0ab5044d1bd560ce279494a7583c255b",
+  "shape": [
+    78,
+    224,
+    224
+  ]
+}

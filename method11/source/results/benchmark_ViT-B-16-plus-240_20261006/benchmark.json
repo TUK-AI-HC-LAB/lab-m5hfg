@@ -1,0 +1,46 @@
+{
+  "status": "completed",
+  "backbone": "ViT-B-16-plus-240",
+  "args": {
+    "data_path": "/home/test/data/mvtec",
+    "save_path": "/home/test/aprilgan_results/benchmark_ViT-B-16-plus-240",
+    "checkpoint_path": "/home/test/aprilgan_results/train_vit_b16_plus_240_20261006/epoch_15.pth",
+    "config_path": "/home/test/VAND-APRIL-GAN/open_clip/model_configs/ViT-B-16-plus-240.json",
+    "dataset": "mvtec",
+    "model": "ViT-B-16-plus-240",
+    "pretrained": "laion400m_e31",
+    "features_list": [
+      3,
+      6,
+      9,
+      12
+    ],
+    "few_shot_features": [
+      3,
+      6,
+      9,
+      12
+    ],
+    "image_size": 518,
+    "mode": "zero_shot",
+    "k_shot": 0,
+    "seed": 42
+  },
+  "n_images": 1725,
+  "mean_ms": 17.40795602549034,
+  "first_image_excluded": true,
+  "mean_ms_all": 17.481834150113055,
+  "gpu_allocated_mib": 1488.13720703125,
+  "gpu_reserved_mib": 1704.0,
+  "inference_only_gpu_allocated_mib": 1169.615234375,
+  "memory_scope": "maximum PyTorch allocated/reserved throughout model/text setup and inference; MiB=bytes/1024^2",
+  "gpu": "NVIDIA GeForce RTX 5080",
+  "torch": "2.11.0+cu128",
+  "cuda": "12.8",
+  "checkpoint_sha256": "48539aecffc926f418933378ddbc6ff02e6b23efe7bdd497b8dfe9c998683cf8",
+  "official_commit": "f13b8a634e04f9fde8fa03db125b25af5695d8e1",
+  "timing_scope": "H2D and official zero-shot scoring; excludes loader, visualization, model/text setup, metrics, evidence writes",
+  "synchronization": "CUDA synchronized per-image boundaries; Python line trace",
+  "resource_condition": "run only after all evaluation lanes complete; no competing task from this study",
+  "small_backbone_training": "own VisA projection training; original small-backbone training details not published"
+}

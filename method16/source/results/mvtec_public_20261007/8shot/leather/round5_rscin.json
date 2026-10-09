@@ -1,0 +1,22 @@
+[
+  {
+    "shot": 8,
+    "category": "leather",
+    "round": 5,
+    "rscin": "w/o",
+    "n_images": 124,
+    "image_auroc": 1.0,
+    "image_f1_max": 1.0,
+    "image_ap": 1.0000000000000002
+  },
+  {
+    "shot": 8,
+    "category": "leather",
+    "round": 5,
+    "rscin": "w",
+    "n_images": 124,
+    "image_auroc": 1.0,
+    "image_f1_max": 1.0,
+    "image_ap": 1.0000000000000002
+  }
+]

@@ -1,0 +1,2 @@
+dataset_name,seed,auroc_min,auroc_max,auroc_mean,auroc_std,pixel_auroc_min,pixel_auroc_max,pixel_auroc_mean,pixel_auroc_std,pro_min,pro_max,pro_mean,pro_std,sal_f1_min,sal_f1_max,sal_f1_mean,sal_f1_std
+mvtec_transistor,42,0.9741666913032532,0.9741666913032532,0.9741666913032532,0.0,0.9220637083053589,0.9220637083053589,0.9220637083053589,0.0,-1,-1,-1,-1,0.647102952003479,0.647102952003479,0.647102952003479,0.0

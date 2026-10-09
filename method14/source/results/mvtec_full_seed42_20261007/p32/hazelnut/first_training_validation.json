@@ -1,0 +1,6 @@
+{
+  "iteration": 0,
+  "training_step_completed": true,
+  "validation_auroc": 0.9124999999999999,
+  "device": "cuda:0"
+}

@@ -1,0 +1,42 @@
+{
+  "training_pid": 860,
+  "base_batch": 32,
+  "effective_batch": 96,
+  "augment_unchanged": true,
+  "trials": [
+    {
+      "workers": 4,
+      "measured_steps": 32,
+      "mean_step_seconds": 0.0886544510940439,
+      "median_step_seconds": 0.08232376250089146,
+      "mean_data_wait_seconds": 0.000808433656516172,
+      "mean_concat_transfer_seconds": 0.04765439518723724,
+      "mean_gpu_seconds": 0.04019162225029049
+    },
+    {
+      "workers": 8,
+      "measured_steps": 32,
+      "mean_step_seconds": 0.11398924249976972,
+      "median_step_seconds": 0.08056523449886299,
+      "mean_data_wait_seconds": 0.0001559870314622458,
+      "mean_concat_transfer_seconds": 0.05224120715593017,
+      "mean_gpu_seconds": 0.0615920483123773
+    },
+    {
+      "workers": 12,
+      "measured_steps": 32,
+      "mean_step_seconds": 0.0967107142189434,
+      "median_step_seconds": 0.08424769749944971,
+      "mean_data_wait_seconds": 8.499000034589699e-05,
+      "mean_concat_transfer_seconds": 0.04890167068788287,
+      "mean_gpu_seconds": 0.04772405353071463
+    }
+  ],
+  "category": "cable",
+  "kind": "image",
+  "checkpoint_step": 63488,
+  "selected_workers": 4,
+  "best_speedup": 1.0,
+  "limit": "Short trained-checkpoint trials; worker RNG streams differ; excludes saving and evaluation.",
+  "real_training_resumed": true
+}

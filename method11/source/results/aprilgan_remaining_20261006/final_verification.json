@@ -1,0 +1,94 @@
+{
+  "status": "passed",
+  "run_count": 13,
+  "records": [
+    {
+      "tag": "mvtec_zero_shot_20261006",
+      "n_categories": 15,
+      "n_images": 1725,
+      "status": "verified"
+    },
+    {
+      "tag": "mvtec_4shot_seed42_20261006",
+      "n_categories": 15,
+      "n_images": 1725,
+      "status": "verified"
+    },
+    {
+      "tag": "mvtec_4shot_seed43_20261006",
+      "n_categories": 15,
+      "n_images": 1725,
+      "status": "verified"
+    },
+    {
+      "tag": "mvtec_4shot_seed44_20261006",
+      "n_categories": 15,
+      "n_images": 1725,
+      "status": "verified"
+    },
+    {
+      "tag": "visa_0shot_seed42_20261006",
+      "n_categories": 12,
+      "n_images": 2162,
+      "status": "verified"
+    },
+    {
+      "tag": "visa_4shot_seed42_20261006",
+      "n_categories": 12,
+      "n_images": 2162,
+      "status": "verified"
+    },
+    {
+      "tag": "visa_4shot_seed43_20261006",
+      "n_categories": 12,
+      "n_images": 2162,
+      "status": "verified"
+    },
+    {
+      "tag": "visa_4shot_seed44_20261006",
+      "n_categories": 12,
+      "n_images": 2162,
+      "status": "verified"
+    },
+    {
+      "tag": "btad_0shot_seed42_20261006",
+      "n_categories": 3,
+      "n_images": 741,
+      "status": "verified"
+    },
+    {
+      "tag": "btad_4shot_seed42_20261006",
+      "n_categories": 3,
+      "n_images": 741,
+      "status": "verified"
+    },
+    {
+      "tag": "btad_4shot_seed43_20261006",
+      "n_categories": 3,
+      "n_images": 741,
+      "status": "verified"
+    },
+    {
+      "tag": "btad_4shot_seed44_20261006",
+      "n_categories": 3,
+      "n_images": 741,
+      "status": "verified"
+    },
+    {
+      "tag": "mvtec_0shot_vit_b16_plus_240_20261006",
+      "n_categories": 15,
+      "n_images": 1725,
+      "status": "verified"
+    }
+  ],
+  "image_sets_identical_across_seeds": true,
+  "all_reference_images_from_normal_train": true,
+  "six_aggregate_rows_verified": true,
+  "metrics_and_std_verified": true,
+  "isolated_benchmarks_verified": true,
+  "small_backbone_training_verified": true,
+  "duplicate_cache_exact_comparisons_verified": true,
+  "paper_protocol_identity_certified": false,
+  "metric_boundary_tolerance": 1e-12,
+  "raw_metrics_clipped": false
+}

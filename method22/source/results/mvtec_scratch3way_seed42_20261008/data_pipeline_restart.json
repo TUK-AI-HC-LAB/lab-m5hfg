@@ -1,0 +1,15 @@
+{
+  "timestamp": "2026-10-08T21:49:28.646542",
+  "old_pid": 860,
+  "workers": 4,
+  "main_threads": 8,
+  "transfer": "gpu_concat",
+  "augmentation_unchanged": true,
+  "batch_unchanged": true,
+  "checkpoint_continuation": true,
+  "benchmark": "data_transfer_benchmark.json",
+  "wrapper_sha256": "7bd906799338d6c4d28366fa525636a1bdaccd0a9809d98c6d876eb925294ff4",
+  "new_pid": 2074,
+  "resume_policy": "Retain model prior validated compiled FP16+TF32 across data-only restart; live finite loss and GradScaler retained",
+  "helper_sha256": "8e2775cc13406fbe151923cc492886457d451d7297249d31e8b827f175b1c205"
+}

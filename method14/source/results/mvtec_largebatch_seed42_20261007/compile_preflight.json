@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "results": [
+    {
+      "mode": "eager",
+      "seconds": 0.004135136666661765
+    },
+    {
+      "mode": "compiled",
+      "seconds": 0.0017282003333226232
+    }
+  ],
+  "enabled": true,
+  "scope": "representative local MS-SSIM forward/backward; compile warm-up excluded; not total ETA"
+}

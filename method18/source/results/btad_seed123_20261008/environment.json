@@ -1,0 +1,61 @@
+{
+  "status": "completed",
+  "official_repo": "https://github.com/pankajmishra000/VT-ADL",
+  "commit": "20b58e2dd810e1d747b9a4132899cc474691377e",
+  "gpu": "NVIDIA GeForce RTX 5080",
+  "cuda": "12.8",
+  "python": "3.12.13 | packaged by conda-forge | (main, Mar  5 2026, 16:50:00) [GCC 14.3.0]",
+  "packages": {
+    "torch": "2.11.0+cu128",
+    "torchvision": "0.26.0+cu128",
+    "numpy": "2.5.3",
+    "einops": "0.7.0",
+    "scipy": "1.18.0",
+    "scikit-learn": "1.9.0"
+  },
+  "dataset": "/home/test/data/btad_original/BTech_Dataset_transformed",
+  "categories": [
+    "01",
+    "02",
+    "03"
+  ],
+  "seed": 123,
+  "epochs": 400,
+  "batch_size": 8,
+  "lr": 0.0001,
+  "weight_decay": 0.0001,
+  "patch_size": 64,
+  "image_size": 512,
+  "gaussian_components": 150,
+  "model_init": "scratch; no pretrained backbone",
+  "train_loss": "5*MSE -0.5*SSIM + native MDN loss",
+  "image_score": "native test.py MSE+SSIM+max(patch MDN loss)",
+  "pixel_score": "native MDN patch loss; UpsamplingBilinear2d512; native Gaussian sigma4",
+  "image_transform": "Resize550x550 bilinear/CenterCrop512/ToTensor RGB, no normalization",
+  "mask_transform": "Resize550x550 bilinear/CenterCrop512/ToTensor L then>0, matching native Process_mask",
+  "checkpoint_selection": "minimum mean training loss; no test-set selection",
+  "precision": "FP32 with TF32 matmul/cuDNN; no AMP; fused Adam",
+  "optimizer_zero_grad": "all optimized parameters reset each step; original train.py resets only AE and accumulates MDN gradients, corrected explicitly",
+  "original_checkout_edits": false,
+  "native_sources": {
+    "VT_AE.py": "05ddf387eee6fc3fbb9611a896c9c166916e64c04f3785d03e312e2c9f544689",
+    "mdn1.py": "f0e0783b1279a80d1381c1661afc51dddd8b4c2be137d1b5d9325fc05bd59e88",
+    "student_transformer.py": "1be72ba8bbd0961fcd9d1aeb55cc90be301bc04e9a6dd7397a3b8b10c000be7a",
+    "spatial.py": "77a9944f7e06c413e3d533db42d92370181d2b6cb30db8feca742d1a51b49d0b",
+    "train.py": "5ad2393ff11d070ab4b89bbded0f57c177ad3663d067b4d4e60998870b9b889a",
+    "test.py": "1a79906751f78aebf6341865220cf174c6c24fc62c4d360af6f6b8209f080fd9",
+    "mvtech.py": "51cf299d312b88ba803a6277da7c276453ffa6f19940fc9fece5bab85bba0fa6"
+  },
+  "paper_code_differences": [
+    "paper Gaussian150 vs native default10; run uses150",
+    "paper five decoder layers vs public six; public architecture retained"
+  ],
+  "raw_path": "/home/test/vtadl_results/btad_seed123_20261008",
+  "wrapper_sha256": "0da132f3b4a92fa4cc3c62ebc4f25f6721912bd8845540293a1e6522c5d77dc1",
+  "error": null,
+  "category": "03",
+  "n_train": 1000,
+  "n_test": 441,
+  "epoch": 400,
+  "best_training_loss": 60.181789428710935
+}

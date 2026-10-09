@@ -1,0 +1,8 @@
+{
+  "status": "completed",
+  "epochs": 320,
+  "checkpoint": "/home/test/nsa_results/logistic_seed923874273_20261007/weights/shift/transistor/final_transistor_shift_intensity_923874273.pt",
+  "sha256": "65d5078f88491daef818022857e96fd945cce82bf1ce50aa78ad4c50d4f37240",
+  "seed": 923874273,
+  "setting": "Shift-Intensity-923874273"
+}

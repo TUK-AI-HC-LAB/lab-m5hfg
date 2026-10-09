@@ -1,0 +1,12 @@
+{
+  "path": "/home/test/draem_results/mvtec_public_20261007/leather/raw_predictions.npz",
+  "sha256": "6a5a116ff37d8c6256f4d4ee25afbd65fdffb9bd043a9ffd492321723507fbaa",
+  "n_images": 124,
+  "map_shape": [
+    124,
+    256,
+    256
+  ],
+  "map_dtype": "float64",
+  "mask_dtype": "uint8"
+}

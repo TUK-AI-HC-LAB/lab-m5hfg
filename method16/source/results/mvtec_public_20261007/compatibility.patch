@@ -1,0 +1,49 @@
+--- datasets/mvtec.py
++++ runtime/datasets/mvtec.py
+@@ -32,7 +32,7 @@
+         self.query_dir, self.support_dir = self.load_dataset_folder()
+         # set transforms
+         self.transform_x = transforms.Compose([
+-            transforms.Resize(resize, Image.ANTIALIAS),
++            transforms.Resize(resize, Image.Resampling.LANCZOS),
+             transforms.ToTensor(),
+             # transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+         ])
+@@ -174,7 +174,7 @@
+         self.query_dir, self.support_dir, self.query_mask = self.load_dataset_folder()
+         # set transforms
+         self.transform_x = transforms.Compose([
+-            transforms.Resize(resize, Image.ANTIALIAS),
++            transforms.Resize(resize, Image.Resampling.LANCZOS),
+             transforms.ToTensor(),
+             # transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+         ])
+@@ -232,7 +232,7 @@
+             for image_dir_one in data_img[img_type]:
+                 support_dir_one = []
+                 query_dir.append(image_dir_one)
+-                query_mask_dir = image_dir_one.replace('test', 'ground_truth')
++                query_mask_dir = image_dir_one.replace('/'+self.class_name+'/test/', '/'+self.class_name+'/ground_truth/')
+                 query_mask_dir = query_mask_dir[:-4] + '_mask.png'
+                 query_mask.append(query_mask_dir)
+                 for k in range(self.shot):
+--- test.py
++++ runtime/test.py
+@@ -194,15 +194,8 @@
+     # calculate distance matrix
+     B, C, H, W = embedding_vectors.size()
+     embedding_vectors = embedding_vectors.view(B, C, H * W)
+-    dist_list = []
+-
+-    for i in range(H * W):
+-        mean = train_outputs[0][:, i]
+-        conv_inv = torch.linalg.inv(train_outputs[1][:, :, i])
+-        dist = [mahalanobis_torch(sample[:, i], mean, conv_inv) for sample in embedding_vectors]
+-        dist_list.append(dist)
+-
+-    dist_list = torch.tensor(dist_list).transpose(1, 0).reshape(B, H, W)
++    from accelerate_regad import mahalanobis_maps
++    dist_list = mahalanobis_maps(embedding_vectors, train_outputs[0], train_outputs[1], B, H, W)
+ 
+     # upsample
+     score_map = F.interpolate(dist_list.unsqueeze(1), size=query_img.size(2), mode='bilinear',

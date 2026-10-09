@@ -1,0 +1,12 @@
+{
+  "path": "/home/test/draem_results/mvtec_public_20261007/cable/raw_predictions.npz",
+  "sha256": "9bdecc4748dc6d92223394549813e8a4d831b6c8e7e18b277b944414e05234cc",
+  "n_images": 150,
+  "map_shape": [
+    150,
+    256,
+    256
+  ],
+  "map_dtype": "float64",
+  "mask_dtype": "uint8"
+}

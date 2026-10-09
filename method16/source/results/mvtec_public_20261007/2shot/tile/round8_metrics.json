@@ -1,0 +1,16 @@
+{
+  "dataset": "mvtec",
+  "shot": 2,
+  "category": "tile",
+  "round": 8,
+  "n_images": 117,
+  "image_auroc": 0.9859307359307359,
+  "image_f1_max": 0.970059880239521,
+  "image_ap": 0.9943266571201694,
+  "pixel_auroc": 0.9506913603191427,
+  "pixel_f1_max": 0.6059540801677821,
+  "pixel_ap": 0.5793507543503473,
+  "aupro": 0.8245851551990555,
+  "evaluation_seconds": 4.771046877000117,
+  "gpu_allocated_mib": 4448.2138671875
+}

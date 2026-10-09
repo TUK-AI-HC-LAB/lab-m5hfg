@@ -1,0 +1,22 @@
+[
+  {
+    "shot": 8,
+    "category": "transistor",
+    "round": 8,
+    "rscin": "w/o",
+    "n_images": 100,
+    "image_auroc": 0.9016666666666666,
+    "image_f1_max": 0.7948717948717949,
+    "image_ap": 0.8755483740473555
+  },
+  {
+    "shot": 8,
+    "category": "transistor",
+    "round": 8,
+    "rscin": "w",
+    "n_images": 100,
+    "image_auroc": 0.8983333333333332,
+    "image_f1_max": 0.7901234567901235,
+    "image_ap": 0.8730735738482088
+  }
+]

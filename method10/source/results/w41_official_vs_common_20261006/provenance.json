@@ -1,0 +1,22 @@
+{
+  "created": "2026-10-06",
+  "scope": "bottle only; official 15-category results retained as coverage context",
+  "official_commit": "b76b93da8bd3096a99964a96ae29d46f197a0651",
+  "common_commit": null,
+  "common_commit_note": "downloaded codebase is not a Git checkout",
+  "official_csv": "/mnt/c/Users/test/Desktop/Codex/lab-m5hfg/method10/source/results/bottle_paper_20261002/metrics.csv",
+  "common_csv": "/home/test/musc_results/common_port_20261006/musc__layer2_layer3_/results_musc.csv",
+  "common_log": "/home/test/musc_results/common_port_20261006.log",
+  "common_raw_predictions": null,
+  "common_command": "python main.py --method musc --dataset mvtec --category bottle --data-path /home/test/data/mvtec --results-path /home/test/musc_results/common_port_20261006 --seed 42 --num-workers 1",
+  "sha256": {
+    "/mnt/c/Users/test/Downloads/dinomaly_share_codebase/dinomaly_share_codebase/trainer/trainer_musc.py": "3194aef21d0a7066fb84b5b0df19f25aad947cb7a76655bc96b742b671c10617",
+    "/mnt/c/Users/test/Downloads/dinomaly_share_codebase/dinomaly_share_codebase/configs/musc.yaml": "3ff0d960fa492953a2ba5bb2e2f941f752ce300c083c0ba948787c203e7ad2cb",
+    "/mnt/c/Users/test/Downloads/dinomaly_share_codebase/dinomaly_share_codebase/component_registry.py": "3444e26822146b86ca62e991e0ca2aadde1a5fab40201eeaa64806a246ce118d",
+    "/mnt/c/Users/test/Downloads/dinomaly_share_codebase/dinomaly_share_codebase/datasets/base.py": "03a27451a10c3bd873123794d00fc38147a717478769bcdc3f407fc61f07d17c",
+    "/mnt/c/Users/test/Downloads/dinomaly_share_codebase/dinomaly_share_codebase/trainer/trainer.py": "256c7c0728701e4cb1c68180b9443491ff41aa761d7c58e582a615fd0ff2f11a",
+    "/mnt/c/Users/test/Downloads/dinomaly_share_codebase/dinomaly_share_codebase/metrics_gpu.py": "e81ff76f4d19c0d54c06f7140ea118d856101c53d1a1ca778a5cad55ae2b27d4",
+    "/home/test/musc_results/common_port_20261006/musc__layer2_layer3_/results_musc.csv": "863e7ec87f5d05c59c360f0ffbf08ba98e5c56a0f2012208e70bbfd7e2bdf23a"
+  },
+  "caveat": "Source hashes describe files at report generation, not an immutable snapshot of the earlier run. No causal attribution or statistical significance test."
+}

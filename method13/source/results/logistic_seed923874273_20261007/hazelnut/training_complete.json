@@ -1,0 +1,8 @@
+{
+  "status": "completed",
+  "epochs": 560,
+  "checkpoint": "/home/test/nsa_results/logistic_seed923874273_20261007/weights/shift/hazelnut/final_hazelnut_shift_intensity_923874273.pt",
+  "sha256": "c9578bd015ecafe2d288d106fd3544c004945f46182f33b6846d8bd4952baf3c",
+  "seed": 923874273,
+  "setting": "Shift-Intensity-923874273"
+}

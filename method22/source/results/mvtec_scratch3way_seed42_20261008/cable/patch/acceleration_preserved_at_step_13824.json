@@ -1,0 +1,66 @@
+{
+  "status": "passed",
+  "precision": "fp16",
+  "compiled": false,
+  "tf32_enabled": true,
+  "mode": "fp16",
+  "bf16_enabled": false,
+  "transition_step": 0,
+  "thresholds": {
+    "loss": 0.01,
+    "gradient": 0.05
+  },
+  "policy": "FP16 finite/loss gate; FP32 gradient diagnostic; compiled versus eager FP16 gradient/loss gate. User-requested accelerated continuation, no final AUROC equivalence claim.",
+  "trials": [
+    {
+      "mode": "fp32",
+      "finite": true,
+      "loss_relative_difference": 0.0,
+      "gradient_relative_L2": 0.0,
+      "strict_fp32_equivalence_passed": true,
+      "passed": true,
+      "startup_seconds": 0.04945868200229597
+    },
+    {
+      "mode": "compiled_fp16",
+      "finite": true,
+      "loss_relative_difference": 0.0003765623114950046,
+      "gradient_relative_L2": 0.1579715758562088,
+      "strict_fp32_equivalence_passed": false,
+      "passed": true,
+      "startup_seconds": 43.287876580001466
+    },
+    {
+      "mode": "fp16",
+      "finite": true,
+      "loss_relative_difference": 0.00019319283807135015,
+      "gradient_relative_L2": 0.16071389615535736,
+      "strict_fp32_equivalence_passed": false,
+      "passed": true,
+      "startup_seconds": 0.03451617999962764,
+      "compiled_vs_eager_gradient_relative_L2": 0.12517964839935303,
+      "compiled_vs_eager_loss_relative_difference": 0.0001833340545973316,
+      "compile_validation_passed": false
+    }
+  ],
+  "previous_proof": {
+    "status": "passed",
+    "real_MVTec_batch": true,
+    "gpu": "NVIDIA GeForce RTX 5080",
+    "effective_batch": 96,
+    "input_size": 64,
+    "fp32_loss": 1.1649869680404663,
+    "bf16_loss": 1.1618856191635132,
+    "bf16_gradient_relative_L2": 0.46326687932014465,
+    "bf16_loss_relative_difference": 0.0026621317956596613,
+    "bf16_enabled": false,
+    "tf32_enabled": false,
+    "thresholds": {
+      "gradient": 0.05,
+      "loss": 0.01
+    },
+    "finite_gradients": true
+  },
+  "resumed_at_step": 13824,
+  "resume_policy": "Preserve this model prior validated FP16 mode; data transfer exact verified. Live finite loss/GradScaler checks remain enabled."
+}

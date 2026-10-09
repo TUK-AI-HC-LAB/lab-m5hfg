@@ -1,0 +1,6 @@
+{
+  "path": "/home/test/graphcore_results/mvtec_pvig_fp32_20261008/toothbrush/8shot_round1.npz",
+  "sha256": "9032d89b69e3647c865937dd3692d739b8622ee936b071293e79432648e3b9cc",
+  "bank_path": "/home/test/graphcore_results/mvtec_pvig_fp32_20261008/toothbrush/8shot_round1_bank.npy",
+  "bank_sha256": "924693d5b885006f8cb13886831410f272c38ae72f5c6fe11396bc9c3e46619e"
+}

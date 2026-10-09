@@ -1,0 +1,66 @@
+{
+  "training_pid": 2074,
+  "base_batch": 32,
+  "effective_batch": 96,
+  "augment_unchanged": true,
+  "trials": [
+    {
+      "sustained_step_seconds": 0.013623313031303041,
+      "workers": 4,
+      "transfer": "gpu_concat",
+      "main_threads": 8,
+      "exact_input_verified": true,
+      "measured_steps": 32,
+      "mean_step_seconds": 0.013609435875082454,
+      "median_step_seconds": 0.014508205498714233,
+      "mean_data_wait_seconds": 0.00025449965596635593,
+      "mean_concat_transfer_seconds": 0.0003068102814722806,
+      "mean_gpu_seconds": 0.013048125937643817
+    },
+    {
+      "sustained_step_seconds": 0.019002011374936956,
+      "workers": 4,
+      "transfer": "prefetch",
+      "main_threads": 8,
+      "exact_input_verified": false,
+      "measured_steps": 32,
+      "mean_step_seconds": 0.01898466499949336,
+      "median_step_seconds": 0.019399830998736434,
+      "mean_data_wait_seconds": 0.0003553476562956348,
+      "mean_concat_transfer_seconds": 0.000133391812823902,
+      "mean_gpu_seconds": 0.018495925530373825
+    },
+    {
+      "sustained_step_seconds": 0.015301926843676483,
+      "workers": 4,
+      "transfer": "prefetch_fused",
+      "main_threads": 8,
+      "exact_input_verified": false,
+      "measured_steps": 32,
+      "mean_step_seconds": 0.015232878781603176,
+      "median_step_seconds": 0.01422420000017155,
+      "mean_data_wait_seconds": 0.0003169947501646675,
+      "mean_concat_transfer_seconds": 0.0001097882185376875,
+      "mean_gpu_seconds": 0.014806095812900821
+    }
+  ],
+  "category": "cable",
+  "kind": "patch",
+  "checkpoint_step": 768,
+  "selected": {
+    "sustained_step_seconds": 0.013623313031303041,
+    "workers": 4,
+    "transfer": "gpu_concat",
+    "main_threads": 8,
+    "exact_input_verified": true,
+    "measured_steps": 32,
+    "mean_step_seconds": 0.013609435875082454,
+    "median_step_seconds": 0.014508205498714233,
+    "mean_data_wait_seconds": 0.00025449965596635593,
+    "mean_concat_transfer_seconds": 0.0003068102814722806,
+    "mean_gpu_seconds": 0.013048125937643817
+  },
+  "best_speedup": 1.0,
+  "limit": "Short trained-checkpoint trials; worker RNG streams differ; excludes saving and evaluation.",
+  "real_training_resumed": true
+}

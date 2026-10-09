@@ -1,0 +1,46 @@
+{
+  "status": "completed",
+  "backbone": "ViT-L-14-336",
+  "args": {
+    "data_path": "/home/test/data/mvtec",
+    "save_path": "/home/test/aprilgan_results/benchmark_ViT-L-14-336",
+    "checkpoint_path": "/home/test/VAND-APRIL-GAN/exps/pretrained/visa_pretrained.pth",
+    "config_path": "/home/test/VAND-APRIL-GAN/open_clip/model_configs/ViT-L-14-336.json",
+    "dataset": "mvtec",
+    "model": "ViT-L-14-336",
+    "pretrained": "openai",
+    "features_list": [
+      6,
+      12,
+      18,
+      24
+    ],
+    "few_shot_features": [
+      6,
+      12,
+      18,
+      24
+    ],
+    "image_size": 518,
+    "mode": "zero_shot",
+    "k_shot": 0,
+    "seed": 42
+  },
+  "n_images": 1725,
+  "mean_ms": 50.82194229352229,
+  "first_image_excluded": true,
+  "mean_ms_all": 50.90059407885997,
+  "gpu_allocated_mib": 2490.3623046875,
+  "gpu_reserved_mib": 2904.0,
+  "inference_only_gpu_allocated_mib": 2464.484375,
+  "memory_scope": "maximum PyTorch allocated/reserved throughout model/text setup and inference; MiB=bytes/1024^2",
+  "gpu": "NVIDIA GeForce RTX 5080",
+  "torch": "2.11.0+cu128",
+  "cuda": "12.8",
+  "checkpoint_sha256": "ef890d2f82e9aba12c838bb90073372f568bc53794a1b6ef88014f733c53f839",
+  "official_commit": "f13b8a634e04f9fde8fa03db125b25af5695d8e1",
+  "timing_scope": "H2D and official zero-shot scoring; excludes loader, visualization, model/text setup, metrics, evidence writes",
+  "synchronization": "CUDA synchronized per-image boundaries; Python line trace",
+  "resource_condition": "run only after all evaluation lanes complete; no competing task from this study",
+  "small_backbone_training": "official public VisA checkpoint"
+}

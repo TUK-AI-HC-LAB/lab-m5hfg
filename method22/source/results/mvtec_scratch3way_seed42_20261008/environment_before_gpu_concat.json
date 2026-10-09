@@ -1,0 +1,172 @@
+{
+  "status": "training",
+  "official_author_implementation": false,
+  "public_repo": "https://github.com/Runinho/pytorch-cutpaste",
+  "commit": "10d8bf71df76d3a97f0106efee1d76f81d983149",
+  "gpu": "NVIDIA GeForce RTX 5080",
+  "torch": "2.11.0+cu128",
+  "python": "3.12.13",
+  "seed": 42,
+  "categories": [
+    "bottle",
+    "cable",
+    "capsule",
+    "carpet",
+    "grid",
+    "hazelnut",
+    "leather",
+    "metal_nut",
+    "pill",
+    "screw",
+    "tile",
+    "toothbrush",
+    "transistor",
+    "wood",
+    "zipper"
+  ],
+  "dataset": "/home/test/data/mvtec",
+  "model": "scratch ResNet18 + public MLP512,128 + 3-way classifier",
+  "models_per_category": [
+    "image256",
+    "patch64"
+  ],
+  "steps_per_model": 65536,
+  "paper_epochs": 256,
+  "updates_per_paper_epoch": 256,
+  "base_batch": 32,
+  "effective_batch": 96,
+  "optimizer": "SGD lr.03 momentum.9 wd3e-5 cosine one cycle, foreach",
+  "no_pretraining": true,
+  "no_test_selection": true,
+  "augment": "translation max10% (paper magnitude unspecified), global/patch ColorJitter.1, public CutPasteNormal/Scar 3way",
+  "density": "LedoitWolf Gaussian raw pooled512; aligned location-wise otherwise pooled all train patches",
+  "localization": "train random64patch; evaluate32patch stride4 57x57 (paper appendix A.5); Gaussian32 RF transposed conv sigma8",
+  "unspecified_choices": "MLP512,128 from public CLI head1; translation10%; Gaussian sigma8. Original TensorFlow preprocessing/init differs.",
+  "repeat": "single seed, not paper5-run mean/SE",
+  "raw_path": "/home/test/cutpaste_results/mvtec_scratch3way_seed42_20261008",
+  "source_hashes": {
+    "model.py": "8a5ca929cb0063cd49ca2a726265d01aa673327a25c20e1adaca1ea02822c28c",
+    "cutpaste.py": "ab784b0409a917c48e2cfe8c0227f4ffc8c387401ec72a61e8a54f8849acce76",
+    "run_training.py": "a24ba8bd04a81498f2d51897c1de07300968b8e1b24c63b7b4e6b37fbfee6296",
+    "density.py": "874541f58a23edd4c730d618a946992f8ae2e8955f7ff30aa55b9eca502a32cf"
+  },
+  "wrapper_sha256": "904165fa2e5fe5a2e05c023860f0c51ff2dd173d38666c157d3217d8794bcbce",
+  "common_sha256": "6a966cc0e33c9f688d336b531b794ca1d857618b2241f39d578f1ba4e0165941",
+  "resume_limit": "model/optimizer/scaler/main RNG restored, workers/sampler stream not exact across restart",
+  "acceleration_policy": "compiled/eager FP16 + GradScaler + TF32, finite/loss gate and FP32 gradient diagnostic, channels_last, cuDNN benchmark, foreach SGD, cached images, pin/prefetch workers; per-model fallback if nonfinite or loss gate fails; compiled/eager FP16 comparison; evaluation FP32/FP64",
+  "error": null,
+  "category": "cable",
+  "model_kind": "image",
+  "step": 64256,
+  "active_acceleration": {
+    "status": "passed",
+    "precision": "fp16",
+    "compiled": true,
+    "tf32_enabled": true,
+    "mode": "compiled_fp16",
+    "bf16_enabled": false,
+    "transition_step": 58368,
+    "thresholds": {
+      "loss": 0.01,
+      "gradient": 0.05
+    },
+    "policy": "FP16 finite/loss gate; FP32 gradient diagnostic; compiled versus eager FP16 gradient/loss gate. User-requested accelerated continuation, no final AUROC equivalence claim.",
+    "trials": [
+      {
+        "mode": "fp32",
+        "finite": true,
+        "loss_relative_difference": 0.0,
+        "gradient_relative_L2": 0.0,
+        "strict_fp32_equivalence_passed": true,
+        "passed": true,
+        "startup_seconds": 13.99432242599869
+      },
+      {
+        "mode": "compiled_fp16",
+        "finite": true,
+        "loss_relative_difference": 0.001168883266545642,
+        "gradient_relative_L2": 0.02328481152653694,
+        "strict_fp32_equivalence_passed": true,
+        "passed": true,
+        "startup_seconds": 6.535286137001094
+      },
+      {
+        "mode": "fp16",
+        "finite": true,
+        "loss_relative_difference": 4.0849344302901797e-05,
+        "gradient_relative_L2": 0.02455185167491436,
+        "strict_fp32_equivalence_passed": true,
+        "passed": true,
+        "startup_seconds": 0.06652708000183338,
+        "compiled_vs_eager_gradient_relative_L2": 0.012473073787987232,
+        "compiled_vs_eager_loss_relative_difference": 0.0012097820296512046,
+        "compile_validation_passed": true
+      }
+    ],
+    "previous_proof": {
+      "status": "passed",
+      "precision": "fp32",
+      "compiled": false,
+      "tf32_enabled": true,
+      "mode": "tf32",
+      "bf16_enabled": false,
+      "transition_step": 57856,
+      "thresholds": {
+        "loss": 0.01,
+        "gradient": 0.05
+      },
+      "trials": [
+        {
+          "mode": "fp32",
+          "finite": true,
+          "loss_relative_difference": 0.0,
+          "gradient_relative_L2": 0.0,
+          "passed": true,
+          "startup_seconds": 15.994638926000334
+        },
+        {
+          "mode": "compiled_fp16",
+          "finite": true,
+          "loss_relative_difference": 0.0014199133058509885,
+          "gradient_relative_L2": 0.12312270700931549,
+          "passed": false,
+          "startup_seconds": 23.327031737000652
+        },
+        {
+          "mode": "fp16",
+          "finite": true,
+          "loss_relative_difference": 0.0017527973829116526,
+          "gradient_relative_L2": 0.1229340210556984,
+          "passed": false,
+          "startup_seconds": 0.06421553600011976
+        },
+        {
+          "mode": "tf32",
+          "finite": true,
+          "loss_relative_difference": 0.00017471512925586804,
+          "gradient_relative_L2": 0.021957848221063614,
+          "passed": true,
+          "startup_seconds": 5.983513546998438
+        }
+      ],
+      "previous_proof": {
+        "status": "passed",
+        "real_MVTec_batch": true,
+        "gpu": "NVIDIA GeForce RTX 5080",
+        "effective_batch": 96,
+        "input_size": 256,
+        "fp32_loss": 1.145419716835022,
+        "bf16_loss": 1.1454061269760132,
+        "bf16_gradient_relative_L2": 0.5321733355522156,
+        "bf16_loss_relative_difference": 1.186452300316887e-05,
+        "bf16_enabled": false,
+        "tf32_enabled": false,
+        "thresholds": {
+          "gradient": 0.05,
+          "loss": 0.01
+        },
+        "finite_gradients": true
+      }
+    }
+  }
+}

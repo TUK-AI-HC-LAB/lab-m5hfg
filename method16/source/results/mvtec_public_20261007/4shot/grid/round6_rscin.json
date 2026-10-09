@@ -1,0 +1,22 @@
+[
+  {
+    "shot": 4,
+    "category": "grid",
+    "round": 6,
+    "rscin": "w/o",
+    "n_images": 78,
+    "image_auroc": 0.8989139515455306,
+    "image_f1_max": 0.9,
+    "image_ap": 0.9662853148909769
+  },
+  {
+    "shot": 4,
+    "category": "grid",
+    "round": 6,
+    "rscin": "w",
+    "n_images": 78,
+    "image_auroc": 0.9206349206349206,
+    "image_f1_max": 0.9166666666666667,
+    "image_ap": 0.9724605875287295
+  }
+]

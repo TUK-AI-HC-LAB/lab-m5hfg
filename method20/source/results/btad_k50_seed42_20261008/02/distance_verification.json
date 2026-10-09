@@ -1,0 +1,27 @@
+{
+  "status": "passed",
+  "category": "02",
+  "real_BTAD_first_test": true,
+  "query_locations": [
+    0,
+    1568,
+    3135
+  ],
+  "gallery_size": 156800,
+  "channels": 1792,
+  "exhaustive_float64_direct_difference": [
+    21.351223371415863,
+    20.225695425694944,
+    7.403689708094655
+  ],
+  "gpu_chunked_squared_l2": [
+    21.351211547851562,
+    20.225692749023438,
+    7.4037017822265625
+  ],
+  "rtol": 0.0001,
+  "atol": 0.002,
+  "max_absolute_difference": 1.2074131907624519e-05,
+  "TF32": false,
+  "AMP": false
+}

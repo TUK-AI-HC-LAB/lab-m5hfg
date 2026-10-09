@@ -1,0 +1,16 @@
+{
+  "dataset": "mvtec",
+  "shot": 2,
+  "category": "carpet",
+  "round": 0,
+  "n_images": 117,
+  "image_auroc": 0.972712680577849,
+  "image_f1_max": 0.9659090909090908,
+  "image_ap": 0.9916901468592372,
+  "pixel_auroc": 0.9889551584412475,
+  "pixel_f1_max": 0.5991319323637881,
+  "pixel_ap": 0.5600480067849731,
+  "aupro": 0.9492236945805208,
+  "evaluation_seconds": 5.604374239000208,
+  "gpu_allocated_mib": 4448.2138671875
+}

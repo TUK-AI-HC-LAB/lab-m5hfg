@@ -1,0 +1,8 @@
+{
+  "status": "completed",
+  "epochs": 320,
+  "checkpoint": "/home/test/nsa_results/logistic_seed923874273_20261007/weights/shift/toothbrush/final_toothbrush_shift_intensity_923874273.pt",
+  "sha256": "33739c6f1ac559fa8fa8a8677ab3d6b2709bb5186a0fdf1a532852375d422b23",
+  "seed": 923874273,
+  "setting": "Shift-Intensity-923874273"
+}

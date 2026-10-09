@@ -1,0 +1,6 @@
+{
+  "device": "cuda",
+  "loss": 21.953792572021484,
+  "finite_gradients": true,
+  "training_executed": true
+}

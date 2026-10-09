@@ -1,0 +1,6 @@
+{
+  "path": "/home/test/graphcore_results/mvtec_pvig_fp32_20261008/tile/4shot_round0.npz",
+  "sha256": "eb26e7774b969f2c28d607f9b54a9666b4df00239f32730117d6b2213fc1896b",
+  "bank_path": "/home/test/graphcore_results/mvtec_pvig_fp32_20261008/tile/4shot_round0_bank.npy",
+  "bank_sha256": "6865fae107c7a9caea7c316d73f66de268cb57cae1a3a31deff3f6decb8dd358"
+}

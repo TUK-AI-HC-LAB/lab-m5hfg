@@ -1,0 +1,84 @@
+{
+  "status": "passed",
+  "n_categories": 15,
+  "n_images": 1725,
+  "checkpoint_hashes_verified": true,
+  "native_metrics_recomputed": true,
+  "categories": [
+    {
+      "category": "bottle",
+      "n_images": 83,
+      "native_metrics_verified": true
+    },
+    {
+      "category": "cable",
+      "n_images": 150,
+      "native_metrics_verified": true
+    },
+    {
+      "category": "capsule",
+      "n_images": 132,
+      "native_metrics_verified": true
+    },
+    {
+      "category": "carpet",
+      "n_images": 117,
+      "native_metrics_verified": true
+    },
+    {
+      "category": "grid",
+      "n_images": 78,
+      "native_metrics_verified": true
+    },
+    {
+      "category": "hazelnut",
+      "n_images": 110,
+      "native_metrics_verified": true
+    },
+    {
+      "category": "leather",
+      "n_images": 124,
+      "native_metrics_verified": true
+    },
+    {
+      "category": "metal_nut",
+      "n_images": 115,
+      "native_metrics_verified": true
+    },
+    {
+      "category": "pill",
+      "n_images": 167,
+      "native_metrics_verified": true
+    },
+    {
+      "category": "screw",
+      "n_images": 160,
+      "native_metrics_verified": true
+    },
+    {
+      "category": "tile",
+      "n_images": 117,
+      "native_metrics_verified": true
+    },
+    {
+      "category": "toothbrush",
+      "n_images": 42,
+      "native_metrics_verified": true
+    },
+    {
+      "category": "transistor",
+      "n_images": 100,
+      "native_metrics_verified": true
+    },
+    {
+      "category": "wood",
+      "n_images": 79,
+      "native_metrics_verified": true
+    },
+    {
+      "category": "zipper",
+      "n_images": 151,
+      "native_metrics_verified": true
+    }
+  ]
+}

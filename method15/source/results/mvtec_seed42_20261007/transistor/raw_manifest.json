@@ -1,0 +1,9 @@
+{
+  "path": "/home/test/acr_results/mvtec_seed42_20261007/transistor_predictions.npz",
+  "sha256": "79b7fd11f262824b0dae45b6d3fa4e4245a33190f9f09603edfb4e015b7cd48f",
+  "shape": [
+    100,
+    224,
+    224
+  ]
+}

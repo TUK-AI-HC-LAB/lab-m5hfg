@@ -1,0 +1,12 @@
+{
+  "path": "/home/test/draem_results/mvtec_public_20261007/toothbrush/raw_predictions.npz",
+  "sha256": "8db3be319db2cdd3ee30f16809042ce7ada5fa54a4f92564774b26a8b504ac63",
+  "n_images": 42,
+  "map_shape": [
+    42,
+    256,
+    256
+  ],
+  "map_dtype": "float64",
+  "mask_dtype": "uint8"
+}

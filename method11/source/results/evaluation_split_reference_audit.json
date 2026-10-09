@@ -1,0 +1,7 @@
+{
+  "visa_csv_metadata_exact": true,
+  "visa_train_test_disjoint": true,
+  "visa_test_images": 2162,
+  "mvtec_reference_count": 60,
+  "mvtec_reference_all_normal_train": true
+}

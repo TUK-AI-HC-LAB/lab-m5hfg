@@ -1,0 +1,6 @@
+{
+  "original_image_labels_retained": true,
+  "missing_after_native_resize": [],
+  "n_missing": 0,
+  "rule": "Do not infer image labels from resized masks; preserve native pixel mask transform"
+}

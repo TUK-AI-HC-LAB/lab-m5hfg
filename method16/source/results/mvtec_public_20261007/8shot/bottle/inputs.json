@@ -1,0 +1,8 @@
+{
+  "checkpoint": "/home/test/regad_assets/save_checkpoints/8/bottle/bottle_8_rotation_scale_model.pt",
+  "checkpoint_sha256": "31bcb4fece348f4a90df843ad38b9dce3ddb632af6fe8e6bfb1a89960834780b",
+  "support": "/home/test/regad_assets/support_set/bottle/8_10.pt",
+  "support_sha256": "71adc10c36ff753a65304db43f27b43aa4df04ce02eeed2f176940dcbe34aefe",
+  "rscin_feature_path": "/home/test/aprilgan_results/rscin_shared_musc_features/mvtec/bottle/features.npy",
+  "rscin_feature_sha256": "5368c983569db473bf3f2ed273c655d16cf88539b15716bf8222fbd1ddb816a0"
+}

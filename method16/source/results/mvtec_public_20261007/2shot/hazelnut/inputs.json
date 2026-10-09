@@ -1,0 +1,8 @@
+{
+  "checkpoint": "/home/test/regad_assets/save_checkpoints/2/hazelnut/hazelnut_2_rotation_scale_model.pt",
+  "checkpoint_sha256": "1795cb61e3ff37b0247b8595d3593510d4f34d28223a854e25f3fd54f0456379",
+  "support": "/home/test/regad_assets/support_set/hazelnut/2_10.pt",
+  "support_sha256": "63a412da8b173085d7ef45cb1d93dece630c61ebbad5879ca96a2e903661dc56",
+  "rscin_feature_path": "/home/test/aprilgan_results/rscin_shared_musc_features/mvtec/hazelnut/features.npy",
+  "rscin_feature_sha256": "27834ab4f6be36d79d0136efdd0ee10b78fe49f8385e2343bfeeeac520afd14c"
+}

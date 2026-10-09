@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "aligned": false,
+  "sklearn_checks": [
+    {
+      "actual_training_subset": 1024,
+      "full_reported_fit_samples": 857736,
+      "precision_max_error": 1.0675648809410632e-08
+    }
+  ],
+  "precision": "FP64",
+  "no_feature_subsampling_for_reported_density": true
+}

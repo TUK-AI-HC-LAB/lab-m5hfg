@@ -1,0 +1,78 @@
+{
+  "commit": "f13b8a634e04f9fde8fa03db125b25af5695d8e1",
+  "thread_environment": {
+    "OMP_NUM_THREADS": "4",
+    "OPENBLAS_NUM_THREADS": "4",
+    "MKL_NUM_THREADS": "4"
+  },
+  "instrumentation": "captures local raw predictions and raw CLIP features; line-traced timing is ancillary, not isolated benchmark",
+  "official_repo": "https://github.com/ByChelsea/VAND-APRIL-GAN",
+  "python": "3.12.13 | packaged by conda-forge | (main, Mar  5 2026, 16:50:00) [GCC 14.3.0]",
+  "platform": "Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.43",
+  "gpu": "NVIDIA GeForce RTX 5080",
+  "cuda": "12.8",
+  "packages": {
+    "torch": "2.11.0+cu128",
+    "torchvision": "0.26.0+cu128",
+    "numpy": "2.5.3",
+    "timm": "1.0.28",
+    "scikit-learn": "1.9.0",
+    "scikit-image": "0.26.0",
+    "Pillow": "12.3.0"
+  },
+  "args": {
+    "data_path": "/home/test/data/btad_original/BTech_Dataset_transformed",
+    "save_path": "/home/test/aprilgan_results/btad_4shot_seed44_20261006/official",
+    "checkpoint_path": "/home/test/VAND-APRIL-GAN/exps/pretrained/visa_pretrained.pth",
+    "config_path": "/home/test/VAND-APRIL-GAN/open_clip/model_configs/ViT-L-14-336.json",
+    "dataset": "visa",
+    "model": "ViT-L-14-336",
+    "pretrained": "openai",
+    "features_list": [
+      6,
+      12,
+      18,
+      24
+    ],
+    "few_shot_features": [
+      6,
+      12,
+      18,
+      24
+    ],
+    "image_size": 518,
+    "mode": "few_shot",
+    "k_shot": 4,
+    "seed": 44
+  },
+  "checkpoint_training_dataset": "VisA",
+  "target_dataset": "btad",
+  "checkpoint_sha256": "ef890d2f82e9aba12c838bb90073372f568bc53794a1b6ef88014f733c53f839",
+  "metadata_sha256": "949cdedc365d3e2c72e5b8846486cf5650a48645c844425624e8bafa05549702",
+  "tf32": false,
+  "target_training": false,
+  "source_edits": false,
+  "status": "completed",
+  "command": [
+    "/mnt/c/Users/test/Desktop/Codex/lab-m5hfg/method11/source/run_aprilgan_experiment.py",
+    "--dataset",
+    "btad",
+    "--mode",
+    "few_shot",
+    "--seed",
+    "44",
+    "--data",
+    "/home/test/data/btad_original/BTech_Dataset_transformed",
+    "--tag",
+    "btad_4shot_seed44_20261006",
+    "--output",
+    "/home/test/aprilgan_results/btad_4shot_seed44_20261006"
+  ],
+  "raw_output": "/home/test/aprilgan_results/btad_4shot_seed44_20261006",
+  "wrapper_sha256": "e538befa2c196f48e0c55311106fca5b2df751fd75036245eaa6026225b663d0",
+  "wrapper_source": "/mnt/c/Users/test/Desktop/Codex/lab-m5hfg/method11/source/run_aprilgan_experiment.py",
+  "projection_checkpoint_source": "official public checkpoint",
+  "wall_seconds": 662.7132676420006,
+  "peak_allocated_bytes": 2897111040,
+  "peak_reserved_bytes": 3137339392
+}

@@ -1,0 +1,12 @@
+{
+  "path": "/home/test/draem_results/mvtec_public_20261007/carpet/raw_predictions.npz",
+  "sha256": "b3206b69c0c6662c3091a0552207e50bd54f0dc737ecaff497a551c1bf59e6a6",
+  "n_images": 117,
+  "map_shape": [
+    117,
+    256,
+    256
+  ],
+  "map_dtype": "float64",
+  "mask_dtype": "uint8"
+}

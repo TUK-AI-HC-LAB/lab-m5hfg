@@ -1,0 +1,29 @@
+{
+  "status": "passed",
+  "conditions": "same random patch batch; warm-up excluded; finite gradients checked; not full-run ETA",
+  "results": [
+    {
+      "accelerated": false,
+      "mean_step_seconds": 0.47311376333334465,
+      "losses": [
+        1.769336223602295,
+        1.7333900928497314,
+        1.6942740678787231,
+        1.6945903301239014
+      ],
+      "finite_gradients": true
+    },
+    {
+      "accelerated": true,
+      "mean_step_seconds": 0.2301213480000115,
+      "losses": [
+        1.7692803144454956,
+        1.7348589897155762,
+        1.6918036937713623,
+        1.6717647314071655
+      ],
+      "finite_gradients": true
+    }
+  ],
+  "speedup": 2.055931652778781
+}

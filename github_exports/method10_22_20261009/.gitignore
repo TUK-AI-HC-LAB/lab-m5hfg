@@ -1,0 +1,7 @@
+upload_chunks/
+upload_status.*
+release_manifest.json
+release_notes_complete.md
+packing_errors.log
+uploader.log
+uploader.pid

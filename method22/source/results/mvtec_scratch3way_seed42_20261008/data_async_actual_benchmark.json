@@ -1,0 +1,54 @@
+{
+  "training_pid": 2074,
+  "base_batch": 32,
+  "effective_batch": 96,
+  "augment_unchanged": true,
+  "trials": [
+    {
+      "sustained_step_seconds": 0.013824535374965308,
+      "workers": 4,
+      "transfer": "gpu_concat_sync",
+      "main_threads": 8,
+      "exact_input_verified": false,
+      "measured_steps": 32,
+      "mean_step_seconds": 0.013822103156257981,
+      "median_step_seconds": 0.01340261950281274,
+      "mean_data_wait_seconds": 0.0002632788438177158,
+      "mean_concat_transfer_seconds": 0.0002441584373400474,
+      "mean_gpu_seconds": 0.013314665875100218
+    },
+    {
+      "sustained_step_seconds": 0.013586431937596899,
+      "workers": 4,
+      "transfer": "gpu_concat",
+      "main_threads": 8,
+      "exact_input_verified": true,
+      "measured_steps": 32,
+      "mean_step_seconds": 0.013577971718973458,
+      "median_step_seconds": 0.013224627000454348,
+      "mean_data_wait_seconds": 0.00022306175014819019,
+      "mean_concat_transfer_seconds": 0.00020867971863935963,
+      "mean_gpu_seconds": 0.013146230250185909
+    }
+  ],
+  "category": "cable",
+  "kind": "patch",
+  "checkpoint_step": 8960,
+  "compiled_model": false,
+  "selected": {
+    "sustained_step_seconds": 0.013824535374965308,
+    "workers": 4,
+    "transfer": "gpu_concat_sync",
+    "main_threads": 8,
+    "exact_input_verified": false,
+    "measured_steps": 32,
+    "mean_step_seconds": 0.013822103156257981,
+    "median_step_seconds": 0.01340261950281274,
+    "mean_data_wait_seconds": 0.0002632788438177158,
+    "mean_concat_transfer_seconds": 0.0002441584373400474,
+    "mean_gpu_seconds": 0.013314665875100218
+  },
+  "best_speedup": 1.0175250896233852,
+  "limit": "Short trained-checkpoint trials; worker RNG streams differ; excludes saving and evaluation.",
+  "real_training_resumed": true
+}

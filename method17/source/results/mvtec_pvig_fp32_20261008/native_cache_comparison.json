@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "n_images": 6,
+  "category": "bottle",
+  "shot": 4,
+  "round": 0,
+  "max_abs_image_score": 0.0,
+  "max_abs_anomaly_map": 0.0,
+  "all_test_images_bitwise_verified": false,
+  "rtol": 1e-05,
+  "atol": 1e-05,
+  "feature_cache_sha256": "6b2ef2dae179c84f1231ca987b3ecdbeb06185246a2d3303ac5f87f2e397ec8d",
+  "bank_sha256": "6e35766fd06361599bd5f821640934664d1aa0fbf72780dca22676d4e9c29b0e"
+}

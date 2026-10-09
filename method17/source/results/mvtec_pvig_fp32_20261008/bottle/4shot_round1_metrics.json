@@ -1,0 +1,14 @@
+{
+  "dataset": "mvtec",
+  "shot": 4,
+  "category": "bottle",
+  "round": 1,
+  "n_images": 83,
+  "image_auroc": 0.9984126984126984,
+  "image_f1_max": 0.9921259842519685,
+  "image_ap": 0.999500031494079,
+  "pixel_auroc": 0.9576339858007916,
+  "pixel_f1_max": 0.6695574558116983,
+  "pixel_ap": 0.6034266763279919,
+  "aupro": 0.8690235590753987
+}

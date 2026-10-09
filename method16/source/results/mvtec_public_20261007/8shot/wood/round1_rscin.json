@@ -1,0 +1,22 @@
+[
+  {
+    "shot": 8,
+    "category": "wood",
+    "round": 1,
+    "rscin": "w/o",
+    "n_images": 79,
+    "image_auroc": 0.9929824561403509,
+    "image_f1_max": 0.975609756097561,
+    "image_ap": 0.9978300553959009
+  },
+  {
+    "shot": 8,
+    "category": "wood",
+    "round": 1,
+    "rscin": "w",
+    "n_images": 79,
+    "image_auroc": 0.9964912280701754,
+    "image_f1_max": 0.9915966386554621,
+    "image_ap": 0.9989583333333335
+  }
+]

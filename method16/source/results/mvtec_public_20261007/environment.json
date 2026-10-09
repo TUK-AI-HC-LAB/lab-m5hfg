@@ -1,0 +1,1546 @@
+{
+  "status": "completed_public_2_4_8shot",
+  "official_repo": "https://github.com/MediaBrain-SJTU/RegAD",
+  "commit": "5e2c1f8c18d302b0354471567846fee3ed2ff063",
+  "gpu": "NVIDIA GeForce RTX 5080",
+  "cuda": "12.8",
+  "python": "3.12.13 | packaged by conda-forge | (main, Mar  5 2026, 16:50:00) [GCC 14.3.0]",
+  "packages": {
+    "torch": "2.11.0+cu128",
+    "torchvision": "0.26.0+cu128",
+    "numpy": "2.5.3",
+    "kornia": "0.6.5",
+    "scipy": "1.18.0",
+    "scikit-learn": "1.9.0",
+    "scikit-image": "0.26.0"
+  },
+  "training_executed": false,
+  "checkpoint_source": "official Google Drive save_checkpoints.tar",
+  "support_source": "official Google Drive support_set.tar",
+  "checkpoint_archive_sha256": "082900cd7ce4fe2d4413a64dc1b985d79a6e4aa7fca8fdc4d86cdbfd781ef9e7",
+  "support_archive_sha256": "19e107122ea4d0bd2c5876eb9c369c4fc7304e49448ae93e5b6f959db1ba3232",
+  "shots": [
+    4,
+    2,
+    8
+  ],
+  "rounds_per_category": 10,
+  "seed": 668,
+  "seed_definition": "official default668; additionally seed CPU/random/numpy for reproducibility",
+  "image_size": 224,
+  "image_resize": "LANCZOS",
+  "normalization": "ToTensor only; original ImageNet normalization commented out",
+  "mask_resize": "NEAREST; binarize>0.5",
+  "stn_mode": "rotation_scale",
+  "precision": "FP32; convolution TF32 enabled; matmul TF32 disabled",
+  "inference_context": "torch.no_grad",
+  "covariance": "original per-position torch.cov +0.01I",
+  "distance": "batched inverse covariance Mahalanobis, native formula; first real-feature subset verified",
+  "native_source_sha256": "cde481197fc658b152b8391bc15a3228dbceead01519ec1212bd03258cee29c2",
+  "wrapper_sha256": "431bedae1b87f732018e0b2c486a374b11c365564fbfbd9266ee8c1120528c7f",
+  "original_checkout_edits": false,
+  "pending_conditions": [
+    "MVTec32-shot requires matching trained model/support",
+    "BTAD4-shot requires explicit transfer/training protocol"
+  ],
+  "raw_output": "/home/test/regad_results/mvtec_public_20261007",
+  "support_overrides": [
+    {
+      "category": "capsule",
+      "shot": 4,
+      "original": "/home/test/regad_assets/support_set/capsule/4_10.pt",
+      "original_bytes": 0,
+      "path": "/home/test/regad_assets/local_support_set/capsule/4_10.pt",
+      "sha256": "db7238efe68e6388e9395d987ab56a31edf539d5d67d8d0e4210b40b71310efd",
+      "seed": 668,
+      "source": "normal training images only; locally sampled without replacement within each round",
+      "rounds": [
+        {
+          "round": 0,
+          "images": [
+            {
+              "path": "/home/test/data/mvtec/capsule/train/good/118.png",
+              "sha256": "52e1c8c2e338f24d2ecb3df2fc93c646fb536258897aded81221d7f2b5e3f483"
+            },
+            {
+              "path": "/home/test/data/mvtec/capsule/train/good/030.png",
+              "sha256": "91e7bbce236577d689887686159525786977e7393b8001958ff49c7324fafcbf"
+            },
+            {
+              "path": "/home/test/data/mvtec/capsule/train/good/004.png",
+              "sha256": "143b7c9b205b415a18ade56dfc50ee3362c82e991fb0ce9ac89ab5afec06758a"
+            },
+            {
+              "path": "/home/test/data/mvtec/capsule/train/good/109.png",
+              "sha256": "a92f9723db29fd611f1efb09a79c73f0c9b662f1bbe8237f956398829c58de51"
+            }
+          ]
+        },
+        {
+          "round": 1,
+          "images": [
+            {
+              "path": "/home/test/data/mvtec/capsule/train/good/042.png",
+              "sha256": "f7f1cb5ee888c3a9632dca3895c5d0b24002a2a625d4bedff6e8ee56c0884b3c"
+            },
+            {
+              "path": "/home/test/data/mvtec/capsule/train/good/008.png",
+              "sha256": "39590b6548e65b650487f8d9ea3416178334642aacd24ddba664db8985fc42de"
+            },
+            {
+              "path": "/home/test/data/mvtec/capsule/train/good/047.png",
+              "sha256": "63f174c4637c8247c9e3a58bf7c6b23fe7b918eaf231e6a8209cded7eb8ed6ba"
+            },
+            {
+              "path": "/home/test/data/mvtec/capsule/train/good/140.png",
+              "sha256": "d495a1e2b011f6198eb2c22f3ff867773dda531a213feebef97f3c05fa5811ad"
+            }
+          ]
+        },
+        {
+          "round": 2,
+          "images": [
+            {
+              "path": "/home/test/data/mvtec/capsule/train/good/006.png",
+              "sha256": "be7b19666c3628ec2e407b1d1c5dd7c12c1054501a3120730f9d6ec322c6a889"
+            },
+            {
+              "path": "/home/test/data/mvtec/capsule/train/good/159.png",
+              "sha256": "c8c8db6d74442af8c524a856898f43db6d733b43d3b1b7a9581aa6c738f9ffc3"
+            },
+            {
+              "path": "/home/test/data/mvtec/capsule/train/good/034.png",
+              "sha256": "52dc1f750e66e9454e58be9bc47f7431fe27dca89924f7cb9f1e33d30c703c24"
+            },
+            {
+              "path": "/home/test/data/mvtec/capsule/train/good/182.png",
+              "sha256": "4aa890f95a0bb6db860e95ac488f47c3d390f7181615f478c31b5be84e5ffdc5"
+            }
+          ]
+        },
+        {
+          "round": 3,
+          "images": [
+            {
+              "path": "/home/test/data/mvtec/capsule/train/good/176.png",
+              "sha256": "db3983ddcdd5b85a954cd318369d9269806811672f67910862841d55ba100055"
+            },
+            {
+              "path": "/home/test/data/mvtec/capsule/train/good/191.png",
+              "sha256": "ceb6443f8a6f347e0d3d0786b2ad37c7116b27bac68555216ed2d8e810429208"
+            },
+            {
+              "path": "/home/test/data/mvtec/capsule/train/good/110.png",
+              "sha256": "bde4baa69410ad8243960afa97e8c51e92cea4c3f42721ff9d84597f89715596"
+            },
+            {
+              "path": "/home/test/data/mvtec/capsule/train/good/170.png",
+              "sha256": "25ebe7f301242721617a65d89555a982375597197f597ad94e1d2ecee546a9b0"
+            }
+          ]
+        },
+        {
+          "round": 4,
+          "images": [
+            {
+              "path": "/home/test/data/mvtec/capsule/train/good/182.png",
+              "sha256": "4aa890f95a0bb6db860e95ac488f47c3d390f7181615f478c31b5be84e5ffdc5"
+            },
+            {
+              "path": "/home/test/data/mvtec/capsule/train/good/215.png",
+              "sha256": "4840e9eeb01ee65a9e501e6bf09ac48f02c0a715aa983af4ca620cae1121e92a"
+            },
+            {
+              "path": "/home/test/data/mvtec/capsule/train/good/092.png",
+              "sha256": "f5afad0de9f3d6528acc6e0577845e7011b1bc38a0c3521d565faf328737fa25"
+            },
+            {
+              "path": "/home/test/data/mvtec/capsule/train/good/039.png",
+              "sha256": "f54500dee0fe89139c1be92f1c3c05b446f32017f8a2cd41cab7cc77a7d18d3a"
+            }
+          ]
+        },
+        {
+          "round": 5,
+          "images": [
+            {
+              "path": "/home/test/data/mvtec/capsule/train/good/104.png",
+              "sha256": "0e98d3e2ebe8b84374d4a5e2432c45d762acc132d29551b2366f072250966426"
+            },
+            {
+              "path": "/home/test/data/mvtec/capsule/train/good/034.png",
+              "sha256": "52dc1f750e66e9454e58be9bc47f7431fe27dca89924f7cb9f1e33d30c703c24"
+            },
+            {
+              "path": "/home/test/data/mvtec/capsule/train/good/168.png",
+              "sha256": "f60f5856d1948bfdc6a75ff1d8a75654bacf5fb9e5112068856cf3bd7a2611d9"
+            },
+            {
+              "path": "/home/test/data/mvtec/capsule/train/good/121.png",
+              "sha256": "33accd42e282063b605f385bb59fd0ced4fdaaa36f89821294b378ee20e5e1c7"
+            }
+          ]
+        },
+        {
+          "round": 6,
+          "images": [
+            {
+              "path": "/home/test/data/mvtec/capsule/train/good/213.png",
+              "sha256": "1000a9fb9fa50ce298db7362120720a0c7ad67353ef210174ab5b021a3a82c0b"
+            },
+            {
+              "path": "/home/test/data/mvtec/capsule/train/good/190.png",
+              "sha256": "5457fac2aa0c7c3b2cd7bdd4d01b8712b0dda5a1dce62b91193fa92c36f7d0f8"
+            },
+            {
+              "path": "/home/test/data/mvtec/capsule/train/good/027.png",
+              "sha256": "3b47fb5010b4ce6a747394c0c6b5e2b518f248bdd1c626961033ee486a9bb0f6"
+            },
+            {
+              "path": "/home/test/data/mvtec/capsule/train/good/162.png",
+              "sha256": "76f9fc7459473647ce27cc7ac360dd805fad79eac47dfe849f3d6a53d063d8c8"
+            }
+          ]
+        },
+        {
+          "round": 7,
+          "images": [
+            {
+              "path": "/home/test/data/mvtec/capsule/train/good/198.png",
+              "sha256": "430f1c5937c3311cfe045c5b43b45b4bce985cbffb990eaab3a1c8e9cb7762af"
+            },
+            {
+              "path": "/home/test/data/mvtec/capsule/train/good/171.png",
+              "sha256": "be03da3cd88237988596c39c69392a8c3fdf0d7604de1a285635fcd0e1e0ad6f"
+            },
+            {
+              "path": "/home/test/data/mvtec/capsule/train/good/208.png",
+              "sha256": "839c163bb1b02f10526437b68e81031ae678ca1eb8dc74ee3734a7cec6067629"
+            },
+            {
+              "path": "/home/test/data/mvtec/capsule/train/good/142.png",
+              "sha256": "dfea837a27a92b468ebb7a27a9fddf12162a5d6a96bb23c0093c507c7416ae58"
+            }
+          ]
+        },
+        {
+          "round": 8,
+          "images": [
+            {
+              "path": "/home/test/data/mvtec/capsule/train/good/053.png",
+              "sha256": "42dd6c5ac379b11f7e2c9b244d9e5f7f89197f87ee27df7db5f28254a4201797"
+            },
+            {
+              "path": "/home/test/data/mvtec/capsule/train/good/171.png",
+              "sha256": "be03da3cd88237988596c39c69392a8c3fdf0d7604de1a285635fcd0e1e0ad6f"
+            },
+            {
+              "path": "/home/test/data/mvtec/capsule/train/good/170.png",
+              "sha256": "25ebe7f301242721617a65d89555a982375597197f597ad94e1d2ecee546a9b0"
+            },
+            {
+              "path": "/home/test/data/mvtec/capsule/train/good/218.png",
+              "sha256": "969d8ca3241cffa6352cfb75f3d53a0a23fd2911aec2867a7afd603287ed6a78"
+            }
+          ]
+        },
+        {
+          "round": 9,
+          "images": [
+            {
+              "path": "/home/test/data/mvtec/capsule/train/good/186.png",
+              "sha256": "3cc370787e9fc9662e141dd478c33fb16ac71d439f0a3b83c299509ee14787c0"
+            },
+            {
+              "path": "/home/test/data/mvtec/capsule/train/good/130.png",
+              "sha256": "72a3505d52d5e8014aa77600f0f342b1e7d086787d36bf28afecb58502550713"
+            },
+            {
+              "path": "/home/test/data/mvtec/capsule/train/good/152.png",
+              "sha256": "fdec08836d84d9fbd0cecb1999a014f985bd0039afb61a5bb432635510e62986"
+            },
+            {
+              "path": "/home/test/data/mvtec/capsule/train/good/119.png",
+              "sha256": "3024b7f944fee6e698c46959f9bba22ec36b64164b609f1e502aa6abced25b3b"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "capsule",
+      "shot": 2,
+      "original": "/home/test/regad_assets/support_set/capsule/2_10.pt",
+      "original_bytes": 0,
+      "path": "/home/test/regad_assets/local_support_set/capsule/2_10.pt",
+      "sha256": "2add7aed641565e0530bc910a5daffbd4215f088fecf09334c4b146e0a01c014",
+      "seed": 668,
+      "source": "normal training images only; locally sampled without replacement within each round",
+      "rounds": [
+        {
+          "round": 0,
+          "images": [
+            {
+              "path": "/home/test/data/mvtec/capsule/train/good/118.png",
+              "sha256": "52e1c8c2e338f24d2ecb3df2fc93c646fb536258897aded81221d7f2b5e3f483"
+            },
+            {
+              "path": "/home/test/data/mvtec/capsule/train/good/030.png",
+              "sha256": "91e7bbce236577d689887686159525786977e7393b8001958ff49c7324fafcbf"
+            }
+          ]
+        },
+        {
+          "round": 1,
+          "images": [
+            {
+              "path": "/home/test/data/mvtec/capsule/train/good/004.png",
+              "sha256": "143b7c9b205b415a18ade56dfc50ee3362c82e991fb0ce9ac89ab5afec06758a"
+            },
+            {
+              "path": "/home/test/data/mvtec/capsule/train/good/109.png",
+              "sha256": "a92f9723db29fd611f1efb09a79c73f0c9b662f1bbe8237f956398829c58de51"
+            }
+          ]
+        },
+        {
+          "round": 2,
+          "images": [
+            {
+              "path": "/home/test/data/mvtec/capsule/train/good/042.png",
+              "sha256": "f7f1cb5ee888c3a9632dca3895c5d0b24002a2a625d4bedff6e8ee56c0884b3c"
+            },
+            {
+              "path": "/home/test/data/mvtec/capsule/train/good/008.png",
+              "sha256": "39590b6548e65b650487f8d9ea3416178334642aacd24ddba664db8985fc42de"
+            }
+          ]
+        },
+        {
+          "round": 3,
+          "images": [
+            {
+              "path": "/home/test/data/mvtec/capsule/train/good/047.png",
+              "sha256": "63f174c4637c8247c9e3a58bf7c6b23fe7b918eaf231e6a8209cded7eb8ed6ba"
+            },
+            {
+              "path": "/home/test/data/mvtec/capsule/train/good/140.png",
+              "sha256": "d495a1e2b011f6198eb2c22f3ff867773dda531a213feebef97f3c05fa5811ad"
+            }
+          ]
+        },
+        {
+          "round": 4,
+          "images": [
+            {
+              "path": "/home/test/data/mvtec/capsule/train/good/006.png",
+              "sha256": "be7b19666c3628ec2e407b1d1c5dd7c12c1054501a3120730f9d6ec322c6a889"
+            },
+            {
+              "path": "/home/test/data/mvtec/capsule/train/good/159.png",
+              "sha256": "c8c8db6d74442af8c524a856898f43db6d733b43d3b1b7a9581aa6c738f9ffc3"
+            }
+          ]
+        },
+        {
+          "round": 5,
+          "images": [
+            {
+              "path": "/home/test/data/mvtec/capsule/train/good/034.png",
+              "sha256": "52dc1f750e66e9454e58be9bc47f7431fe27dca89924f7cb9f1e33d30c703c24"
+            },
+            {
+              "path": "/home/test/data/mvtec/capsule/train/good/182.png",
+              "sha256": "4aa890f95a0bb6db860e95ac488f47c3d390f7181615f478c31b5be84e5ffdc5"
+            }
+          ]
+        },
+        {
+          "round": 6,
+          "images": [
+            {
+              "path": "/home/test/data/mvtec/capsule/train/good/176.png",
+              "sha256": "db3983ddcdd5b85a954cd318369d9269806811672f67910862841d55ba100055"
+            },
+            {
+              "path": "/home/test/data/mvtec/capsule/train/good/191.png",
+              "sha256": "ceb6443f8a6f347e0d3d0786b2ad37c7116b27bac68555216ed2d8e810429208"
+            }
+          ]
+        },
+        {
+          "round": 7,
+          "images": [
+            {
+              "path": "/home/test/data/mvtec/capsule/train/good/110.png",
+              "sha256": "bde4baa69410ad8243960afa97e8c51e92cea4c3f42721ff9d84597f89715596"
+            },
+            {
+              "path": "/home/test/data/mvtec/capsule/train/good/170.png",
+              "sha256": "25ebe7f301242721617a65d89555a982375597197f597ad94e1d2ecee546a9b0"
+            }
+          ]
+        },
+        {
+          "round": 8,
+          "images": [
+            {
+              "path": "/home/test/data/mvtec/capsule/train/good/182.png",
+              "sha256": "4aa890f95a0bb6db860e95ac488f47c3d390f7181615f478c31b5be84e5ffdc5"
+            },
+            {
+              "path": "/home/test/data/mvtec/capsule/train/good/215.png",
+              "sha256": "4840e9eeb01ee65a9e501e6bf09ac48f02c0a715aa983af4ca620cae1121e92a"
+            }
+          ]
+        },
+        {
+          "round": 9,
+          "images": [
+            {
+              "path": "/home/test/data/mvtec/capsule/train/good/092.png",
+              "sha256": "f5afad0de9f3d6528acc6e0577845e7011b1bc38a0c3521d565faf328737fa25"
+            },
+            {
+              "path": "/home/test/data/mvtec/capsule/train/good/039.png",
+              "sha256": "f54500dee0fe89139c1be92f1c3c05b446f32017f8a2cd41cab7cc77a7d18d3a"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "capsule",
+      "shot": 8,
+      "original": "/home/test/regad_assets/support_set/capsule/8_10.pt",
+      "original_bytes": 0,
+      "path": "/home/test/regad_assets/local_support_set/capsule/8_10.pt",
+      "sha256": "0e01e905941929e10944597b6bd1e40277d8a46a558468cce8619748d974540a",
+      "seed": 668,
+      "source": "normal training images only; locally sampled without replacement within each round",
+      "rounds": [
+        {
+          "round": 0,
+          "images": [
+            {
+              "path": "/home/test/data/mvtec/capsule/train/good/118.png",
+              "sha256": "52e1c8c2e338f24d2ecb3df2fc93c646fb536258897aded81221d7f2b5e3f483"
+            },
+            {
+              "path": "/home/test/data/mvtec/capsule/train/good/030.png",
+              "sha256": "91e7bbce236577d689887686159525786977e7393b8001958ff49c7324fafcbf"
+            },
+            {
+              "path": "/home/test/data/mvtec/capsule/train/good/004.png",
+              "sha256": "143b7c9b205b415a18ade56dfc50ee3362c82e991fb0ce9ac89ab5afec06758a"
+            },
+            {
+              "path": "/home/test/data/mvtec/capsule/train/good/109.png",
+              "sha256": "a92f9723db29fd611f1efb09a79c73f0c9b662f1bbe8237f956398829c58de51"
+            },
+            {
+              "path": "/home/test/data/mvtec/capsule/train/good/042.png",
+              "sha256": "f7f1cb5ee888c3a9632dca3895c5d0b24002a2a625d4bedff6e8ee56c0884b3c"
+            },
+            {
+              "path": "/home/test/data/mvtec/capsule/train/good/008.png",
+              "sha256": "39590b6548e65b650487f8d9ea3416178334642aacd24ddba664db8985fc42de"
+            },
+            {
+              "path": "/home/test/data/mvtec/capsule/train/good/047.png",
+              "sha256": "63f174c4637c8247c9e3a58bf7c6b23fe7b918eaf231e6a8209cded7eb8ed6ba"
+            },
+            {
+              "path": "/home/test/data/mvtec/capsule/train/good/140.png",
+              "sha256": "d495a1e2b011f6198eb2c22f3ff867773dda531a213feebef97f3c05fa5811ad"
+            }
+          ]
+        },
+        {
+          "round": 1,
+          "images": [
+            {
+              "path": "/home/test/data/mvtec/capsule/train/good/006.png",
+              "sha256": "be7b19666c3628ec2e407b1d1c5dd7c12c1054501a3120730f9d6ec322c6a889"
+            },
+            {
+              "path": "/home/test/data/mvtec/capsule/train/good/159.png",
+              "sha256": "c8c8db6d74442af8c524a856898f43db6d733b43d3b1b7a9581aa6c738f9ffc3"
+            },
+            {
+              "path": "/home/test/data/mvtec/capsule/train/good/034.png",
+              "sha256": "52dc1f750e66e9454e58be9bc47f7431fe27dca89924f7cb9f1e33d30c703c24"
+            },
+            {
+              "path": "/home/test/data/mvtec/capsule/train/good/182.png",
+              "sha256": "4aa890f95a0bb6db860e95ac488f47c3d390f7181615f478c31b5be84e5ffdc5"
+            },
+            {
+              "path": "/home/test/data/mvtec/capsule/train/good/176.png",
+              "sha256": "db3983ddcdd5b85a954cd318369d9269806811672f67910862841d55ba100055"
+            },
+            {
+              "path": "/home/test/data/mvtec/capsule/train/good/191.png",
+              "sha256": "ceb6443f8a6f347e0d3d0786b2ad37c7116b27bac68555216ed2d8e810429208"
+            },
+            {
+              "path": "/home/test/data/mvtec/capsule/train/good/110.png",
+              "sha256": "bde4baa69410ad8243960afa97e8c51e92cea4c3f42721ff9d84597f89715596"
+            },
+            {
+              "path": "/home/test/data/mvtec/capsule/train/good/170.png",
+              "sha256": "25ebe7f301242721617a65d89555a982375597197f597ad94e1d2ecee546a9b0"
+            }
+          ]
+        },
+        {
+          "round": 2,
+          "images": [
+            {
+              "path": "/home/test/data/mvtec/capsule/train/good/182.png",
+              "sha256": "4aa890f95a0bb6db860e95ac488f47c3d390f7181615f478c31b5be84e5ffdc5"
+            },
+            {
+              "path": "/home/test/data/mvtec/capsule/train/good/215.png",
+              "sha256": "4840e9eeb01ee65a9e501e6bf09ac48f02c0a715aa983af4ca620cae1121e92a"
+            },
+            {
+              "path": "/home/test/data/mvtec/capsule/train/good/092.png",
+              "sha256": "f5afad0de9f3d6528acc6e0577845e7011b1bc38a0c3521d565faf328737fa25"
+            },
+            {
+              "path": "/home/test/data/mvtec/capsule/train/good/039.png",
+              "sha256": "f54500dee0fe89139c1be92f1c3c05b446f32017f8a2cd41cab7cc77a7d18d3a"
+            },
+            {
+              "path": "/home/test/data/mvtec/capsule/train/good/104.png",
+              "sha256": "0e98d3e2ebe8b84374d4a5e2432c45d762acc132d29551b2366f072250966426"
+            },
+            {
+              "path": "/home/test/data/mvtec/capsule/train/good/034.png",
+              "sha256": "52dc1f750e66e9454e58be9bc47f7431fe27dca89924f7cb9f1e33d30c703c24"
+            },
+            {
+              "path": "/home/test/data/mvtec/capsule/train/good/168.png",
+              "sha256": "f60f5856d1948bfdc6a75ff1d8a75654bacf5fb9e5112068856cf3bd7a2611d9"
+            },
+            {
+              "path": "/home/test/data/mvtec/capsule/train/good/121.png",
+              "sha256": "33accd42e282063b605f385bb59fd0ced4fdaaa36f89821294b378ee20e5e1c7"
+            }
+          ]
+        },
+        {
+          "round": 3,
+          "images": [
+            {
+              "path": "/home/test/data/mvtec/capsule/train/good/213.png",
+              "sha256": "1000a9fb9fa50ce298db7362120720a0c7ad67353ef210174ab5b021a3a82c0b"
+            },
+            {
+              "path": "/home/test/data/mvtec/capsule/train/good/190.png",
+              "sha256": "5457fac2aa0c7c3b2cd7bdd4d01b8712b0dda5a1dce62b91193fa92c36f7d0f8"
+            },
+            {
+              "path": "/home/test/data/mvtec/capsule/train/good/027.png",
+              "sha256": "3b47fb5010b4ce6a747394c0c6b5e2b518f248bdd1c626961033ee486a9bb0f6"
+            },
+            {
+              "path": "/home/test/data/mvtec/capsule/train/good/162.png",
+              "sha256": "76f9fc7459473647ce27cc7ac360dd805fad79eac47dfe849f3d6a53d063d8c8"
+            },
+            {
+              "path": "/home/test/data/mvtec/capsule/train/good/198.png",
+              "sha256": "430f1c5937c3311cfe045c5b43b45b4bce985cbffb990eaab3a1c8e9cb7762af"
+            },
+            {
+              "path": "/home/test/data/mvtec/capsule/train/good/171.png",
+              "sha256": "be03da3cd88237988596c39c69392a8c3fdf0d7604de1a285635fcd0e1e0ad6f"
+            },
+            {
+              "path": "/home/test/data/mvtec/capsule/train/good/208.png",
+              "sha256": "839c163bb1b02f10526437b68e81031ae678ca1eb8dc74ee3734a7cec6067629"
+            },
+            {
+              "path": "/home/test/data/mvtec/capsule/train/good/142.png",
+              "sha256": "dfea837a27a92b468ebb7a27a9fddf12162a5d6a96bb23c0093c507c7416ae58"
+            }
+          ]
+        },
+        {
+          "round": 4,
+          "images": [
+            {
+              "path": "/home/test/data/mvtec/capsule/train/good/053.png",
+              "sha256": "42dd6c5ac379b11f7e2c9b244d9e5f7f89197f87ee27df7db5f28254a4201797"
+            },
+            {
+              "path": "/home/test/data/mvtec/capsule/train/good/171.png",
+              "sha256": "be03da3cd88237988596c39c69392a8c3fdf0d7604de1a285635fcd0e1e0ad6f"
+            },
+            {
+              "path": "/home/test/data/mvtec/capsule/train/good/170.png",
+              "sha256": "25ebe7f301242721617a65d89555a982375597197f597ad94e1d2ecee546a9b0"
+            },
+            {
+              "path": "/home/test/data/mvtec/capsule/train/good/218.png",
+              "sha256": "969d8ca3241cffa6352cfb75f3d53a0a23fd2911aec2867a7afd603287ed6a78"
+            },
+            {
+              "path": "/home/test/data/mvtec/capsule/train/good/186.png",
+              "sha256": "3cc370787e9fc9662e141dd478c33fb16ac71d439f0a3b83c299509ee14787c0"
+            },
+            {
+              "path": "/home/test/data/mvtec/capsule/train/good/130.png",
+              "sha256": "72a3505d52d5e8014aa77600f0f342b1e7d086787d36bf28afecb58502550713"
+            },
+            {
+              "path": "/home/test/data/mvtec/capsule/train/good/152.png",
+              "sha256": "fdec08836d84d9fbd0cecb1999a014f985bd0039afb61a5bb432635510e62986"
+            },
+            {
+              "path": "/home/test/data/mvtec/capsule/train/good/119.png",
+              "sha256": "3024b7f944fee6e698c46959f9bba22ec36b64164b609f1e502aa6abced25b3b"
+            }
+          ]
+        },
+        {
+          "round": 5,
+          "images": [
+            {
+              "path": "/home/test/data/mvtec/capsule/train/good/114.png",
+              "sha256": "d840ac66772c92717b10c414284b33e5320c081a65dd2e8b6c719870442b47c4"
+            },
+            {
+              "path": "/home/test/data/mvtec/capsule/train/good/111.png",
+              "sha256": "83f95f6da8600fdb78e8a0570d75490a8af3ff99575193848f1385d7a92afcf8"
+            },
+            {
+              "path": "/home/test/data/mvtec/capsule/train/good/031.png",
+              "sha256": "41a7bc2ec4114f30a359942118584ed5b1f51e61d6b314fa8aa25f67dec84ce9"
+            },
+            {
+              "path": "/home/test/data/mvtec/capsule/train/good/131.png",
+              "sha256": "fcc4ccd7c3b83fcac3e0493b116c41d0038236cbae61efb201a89caf7b010eac"
+            },
+            {
+              "path": "/home/test/data/mvtec/capsule/train/good/099.png",
+              "sha256": "6c354bc23ad0204d350bb10573d0ee471dae5e60c019cfb6181c9e450a12753e"
+            },
+            {
+              "path": "/home/test/data/mvtec/capsule/train/good/159.png",
+              "sha256": "c8c8db6d74442af8c524a856898f43db6d733b43d3b1b7a9581aa6c738f9ffc3"
+            },
+            {
+              "path": "/home/test/data/mvtec/capsule/train/good/176.png",
+              "sha256": "db3983ddcdd5b85a954cd318369d9269806811672f67910862841d55ba100055"
+            },
+            {
+              "path": "/home/test/data/mvtec/capsule/train/good/187.png",
+              "sha256": "392dea3dd5187f95ee2018bedb5471a91c0c9e904e8adcc29d542d87092b0024"
+            }
+          ]
+        },
+        {
+          "round": 6,
+          "images": [
+            {
+              "path": "/home/test/data/mvtec/capsule/train/good/081.png",
+              "sha256": "28530306209e3c7a5e71447b0fcde708e69843a93fa947e928bffc2626a42c3b"
+            },
+            {
+              "path": "/home/test/data/mvtec/capsule/train/good/018.png",
+              "sha256": "9d9b331f91a15c6ff042f5e919209138a5d8438bcb11a29b839fdc9cd1cfe676"
+            },
+            {
+              "path": "/home/test/data/mvtec/capsule/train/good/063.png",
+              "sha256": "be8039d8abb327fc0aabadab65e62aba0443e8c8ca51eeb58a152be280a7bd81"
+            },
+            {
+              "path": "/home/test/data/mvtec/capsule/train/good/182.png",
+              "sha256": "4aa890f95a0bb6db860e95ac488f47c3d390f7181615f478c31b5be84e5ffdc5"
+            },
+            {
+              "path": "/home/test/data/mvtec/capsule/train/good/085.png",
+              "sha256": "9f58c66a92b9e1bf980c3dba93975b8158bce2f8053245e798540e4cea6cb13f"
+            },
+            {
+              "path": "/home/test/data/mvtec/capsule/train/good/077.png",
+              "sha256": "3c14deb6c70ddba40c943ffb86c77e605e8979c002740b2b1dec5e70a3862158"
+            },
+            {
+              "path": "/home/test/data/mvtec/capsule/train/good/076.png",
+              "sha256": "03758f03e6ec8e9c1a3679e0a86cb37178ec3f8f8d5d7e7514fa6ae8d058c4e6"
+            },
+            {
+              "path": "/home/test/data/mvtec/capsule/train/good/054.png",
+              "sha256": "3d05d971b9895f2172134bfab4956cbb5a4f554ec4c66bbfecece0b515953f51"
+            }
+          ]
+        },
+        {
+          "round": 7,
+          "images": [
+            {
+              "path": "/home/test/data/mvtec/capsule/train/good/087.png",
+              "sha256": "ba82041c3e90790adf0f8ce171c97adb1088d999a75e9ffd33412f20f2f52bb3"
+            },
+            {
+              "path": "/home/test/data/mvtec/capsule/train/good/166.png",
+              "sha256": "e4e10eff677a0f2de72e414545de5670197be311a0231704f5abefb3101a4aa8"
+            },
+            {
+              "path": "/home/test/data/mvtec/capsule/train/good/154.png",
+              "sha256": "3bd8dc134dc606fa7c27d0739b70addd32280484de135e15bb021347e2c223b5"
+            },
+            {
+              "path": "/home/test/data/mvtec/capsule/train/good/120.png",
+              "sha256": "46f46be634dfc756753c42f407648695f3cd4e7c0bce3de0032189957642121a"
+            },
+            {
+              "path": "/home/test/data/mvtec/capsule/train/good/125.png",
+              "sha256": "4b6f8df57946689a00718832c7838cadf4e5110ad9b06e481edad0bfddaae35d"
+            },
+            {
+              "path": "/home/test/data/mvtec/capsule/train/good/090.png",
+              "sha256": "c762aac4d56d3ce4bc766cfa75e120795a0fd644a436d0cda04f20c5a224e9d7"
+            },
+            {
+              "path": "/home/test/data/mvtec/capsule/train/good/083.png",
+              "sha256": "f78405838004943ba9059301bad75fb3835004ad30c3c89242144b05c6e65f45"
+            },
+            {
+              "path": "/home/test/data/mvtec/capsule/train/good/193.png",
+              "sha256": "56b2412b1fc9cdbcfa043d3562c98397b61a489c142f0733187e7a6be5ba97c9"
+            }
+          ]
+        },
+        {
+          "round": 8,
+          "images": [
+            {
+              "path": "/home/test/data/mvtec/capsule/train/good/034.png",
+              "sha256": "52dc1f750e66e9454e58be9bc47f7431fe27dca89924f7cb9f1e33d30c703c24"
+            },
+            {
+              "path": "/home/test/data/mvtec/capsule/train/good/131.png",
+              "sha256": "fcc4ccd7c3b83fcac3e0493b116c41d0038236cbae61efb201a89caf7b010eac"
+            },
+            {
+              "path": "/home/test/data/mvtec/capsule/train/good/053.png",
+              "sha256": "42dd6c5ac379b11f7e2c9b244d9e5f7f89197f87ee27df7db5f28254a4201797"
+            },
+            {
+              "path": "/home/test/data/mvtec/capsule/train/good/062.png",
+              "sha256": "51e43fbf2aef8ffe9452bd941ed0207102902fd0e1b1df648fa1ed07671ed090"
+            },
+            {
+              "path": "/home/test/data/mvtec/capsule/train/good/125.png",
+              "sha256": "4b6f8df57946689a00718832c7838cadf4e5110ad9b06e481edad0bfddaae35d"
+            },
+            {
+              "path": "/home/test/data/mvtec/capsule/train/good/191.png",
+              "sha256": "ceb6443f8a6f347e0d3d0786b2ad37c7116b27bac68555216ed2d8e810429208"
+            },
+            {
+              "path": "/home/test/data/mvtec/capsule/train/good/166.png",
+              "sha256": "e4e10eff677a0f2de72e414545de5670197be311a0231704f5abefb3101a4aa8"
+            },
+            {
+              "path": "/home/test/data/mvtec/capsule/train/good/201.png",
+              "sha256": "96c2c473192136fad7e24f2f513877193512d1ec64668a9d0f499f86c3199617"
+            }
+          ]
+        },
+        {
+          "round": 9,
+          "images": [
+            {
+              "path": "/home/test/data/mvtec/capsule/train/good/095.png",
+              "sha256": "bfd953442098cf158e537842bb6ed6340e27554ef75c7286654c3e2ded6af794"
+            },
+            {
+              "path": "/home/test/data/mvtec/capsule/train/good/021.png",
+              "sha256": "f6b47a31b7814a33469f35843a0fbb0c8ad91d5f0e8cb501197ac24b0c30dca5"
+            },
+            {
+              "path": "/home/test/data/mvtec/capsule/train/good/085.png",
+              "sha256": "9f58c66a92b9e1bf980c3dba93975b8158bce2f8053245e798540e4cea6cb13f"
+            },
+            {
+              "path": "/home/test/data/mvtec/capsule/train/good/157.png",
+              "sha256": "258c67835e20b95cfa145629b914f9d22cd9585e62fbb648370dfa8e1fa76bf7"
+            },
+            {
+              "path": "/home/test/data/mvtec/capsule/train/good/186.png",
+              "sha256": "3cc370787e9fc9662e141dd478c33fb16ac71d439f0a3b83c299509ee14787c0"
+            },
+            {
+              "path": "/home/test/data/mvtec/capsule/train/good/031.png",
+              "sha256": "41a7bc2ec4114f30a359942118584ed5b1f51e61d6b314fa8aa25f67dec84ce9"
+            },
+            {
+              "path": "/home/test/data/mvtec/capsule/train/good/042.png",
+              "sha256": "f7f1cb5ee888c3a9632dca3895c5d0b24002a2a625d4bedff6e8ee56c0884b3c"
+            },
+            {
+              "path": "/home/test/data/mvtec/capsule/train/good/142.png",
+              "sha256": "dfea837a27a92b468ebb7a27a9fddf12162a5d6a96bb23c0093c507c7416ae58"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "grid",
+      "shot": 4,
+      "original": "/home/test/regad_assets/support_set/grid/4_10.pt",
+      "original_bytes": 0,
+      "path": "/home/test/regad_assets/local_support_set/grid/4_10.pt",
+      "sha256": "3a150d5f2970781e858a6392daa10b742d361bd50637dab337acb497f6cdb0c2",
+      "seed": 668,
+      "source": "normal training images only; locally sampled without replacement within each round",
+      "rounds": [
+        {
+          "round": 0,
+          "images": [
+            {
+              "path": "/home/test/data/mvtec/grid/train/good/236.png",
+              "sha256": "fb016f88b9f949dba240fb97f6b60cc8860d9bc2c347528311c2e28e8bd1d2ab"
+            },
+            {
+              "path": "/home/test/data/mvtec/grid/train/good/061.png",
+              "sha256": "1deddd0f56de7f4a74e66966db0f7546dce60f3be6e47bd66781700cd1463445"
+            },
+            {
+              "path": "/home/test/data/mvtec/grid/train/good/009.png",
+              "sha256": "844d272046d4066b6e1b1e8fb8f3f8e58488cc518c7c746187ecd902d3191597"
+            },
+            {
+              "path": "/home/test/data/mvtec/grid/train/good/218.png",
+              "sha256": "051eb79540941bfa2740aeefbaef5523ceafaf1e997701d41c9e566af3f76d28"
+            }
+          ]
+        },
+        {
+          "round": 1,
+          "images": [
+            {
+              "path": "/home/test/data/mvtec/grid/train/good/084.png",
+              "sha256": "b48ed820f33443a8da356f36b59520a3a1bb941f1f8b0bdc39294adb90fd87af"
+            },
+            {
+              "path": "/home/test/data/mvtec/grid/train/good/017.png",
+              "sha256": "54294f460af4e4a73f94513e0b1981d2d0d469b83e40e3ad4aa5e07f6d388149"
+            },
+            {
+              "path": "/home/test/data/mvtec/grid/train/good/095.png",
+              "sha256": "9ab169ea5bcda2c918f5289a38e2f4c748de38d20060723aaa36cfc68b47a071"
+            },
+            {
+              "path": "/home/test/data/mvtec/grid/train/good/012.png",
+              "sha256": "59753aa0704ada104748e66ac5c0e2b0cf7a4281afabb097465d590f2ecc436d"
+            }
+          ]
+        },
+        {
+          "round": 2,
+          "images": [
+            {
+              "path": "/home/test/data/mvtec/grid/train/good/068.png",
+              "sha256": "2c5335b0d6a4eca0717547ffab27c79025dd532c3d86225efddb9104ce13d2b4"
+            },
+            {
+              "path": "/home/test/data/mvtec/grid/train/good/220.png",
+              "sha256": "6f07da7875cc843c6d5f266eb16d0283facb18ff9f95fdc7d5d0c3c04d81f816"
+            },
+            {
+              "path": "/home/test/data/mvtec/grid/train/good/185.png",
+              "sha256": "eb7f465ff3ba91b1bf4160d6c2d427c44e8e4eafcb721fa14bff8f742ad1d2e9"
+            },
+            {
+              "path": "/home/test/data/mvtec/grid/train/good/078.png",
+              "sha256": "4d5bf0a037d819f15083bbcc41e493ea292a920850a251b2628c342b95b39ba4"
+            }
+          ]
+        },
+        {
+          "round": 3,
+          "images": [
+            {
+              "path": "/home/test/data/mvtec/grid/train/good/209.png",
+              "sha256": "aacee48b3160c873149403e02082b0b0f15e39a31dfa300472737a2d59aa0b33"
+            },
+            {
+              "path": "/home/test/data/mvtec/grid/train/good/069.png",
+              "sha256": "e7ec3ba2c7ad902cd471ff9dfe091872ff1eb3b2c17e4efadb1dfb681d3d2646"
+            },
+            {
+              "path": "/home/test/data/mvtec/grid/train/good/242.png",
+              "sha256": "35fb9d5394b70da02e959a9a755cdfddaec242b52e2483fdcf7018739573f1ab"
+            },
+            {
+              "path": "/home/test/data/mvtec/grid/train/good/054.png",
+              "sha256": "20c82cf3b68bedef8a895d0af0cb6a632c97740b11473e7766db7d1ea7db2328"
+            }
+          ]
+        },
+        {
+          "round": 4,
+          "images": [
+            {
+              "path": "/home/test/data/mvtec/grid/train/good/107.png",
+              "sha256": "029f292fd09501198d87a9c8bc6e00cb22204e588dc92ded2c4bdd427b91e286"
+            },
+            {
+              "path": "/home/test/data/mvtec/grid/train/good/260.png",
+              "sha256": "e31ead3e64f08bc27fb9ef35db71502e54b3ec1cb7e06176802df90c874e5e94"
+            },
+            {
+              "path": "/home/test/data/mvtec/grid/train/good/238.png",
+              "sha256": "ae541de1bba9f82dc0a87c227ffadad4f7808617f7058b293a17929e0b3b5a7f"
+            },
+            {
+              "path": "/home/test/data/mvtec/grid/train/good/228.png",
+              "sha256": "8bb915b0247ce9f668a4ad4abc08e9ebd3486c3b3ff5ce45db204d2d6969e4a8"
+            }
+          ]
+        },
+        {
+          "round": 5,
+          "images": [
+            {
+              "path": "/home/test/data/mvtec/grid/train/good/223.png",
+              "sha256": "d640e044f59889ef8c62af1bac78000b26a8be4aae25e82ee5eebf45a5693838"
+            },
+            {
+              "path": "/home/test/data/mvtec/grid/train/good/063.png",
+              "sha256": "7c84be52b306d4ae9bcd1f77fd4a29fa4231365d43c80f77476d463bbcdcc786"
+            },
+            {
+              "path": "/home/test/data/mvtec/grid/train/good/263.png",
+              "sha256": "7e4901d85ce08501c8639a79ad239426291d563dc8ef502d9ac8e01c57182c54"
+            },
+            {
+              "path": "/home/test/data/mvtec/grid/train/good/198.png",
+              "sha256": "0b9ab0ec74805d3cbe1c99b0586d1f77fc953cae84869d93e0e79b4847beab2d"
+            }
+          ]
+        },
+        {
+          "round": 6,
+          "images": [
+            {
+              "path": "/home/test/data/mvtec/grid/train/good/163.png",
+              "sha256": "a9f15386df612de315688c464724668fe7a62e6224012c9433dd281cae25c1da"
+            },
+            {
+              "path": "/home/test/data/mvtec/grid/train/good/036.png",
+              "sha256": "0115cb3d38814184268e8e1a15f595afd4054ac2c1f542973e0eea0870137ed2"
+            },
+            {
+              "path": "/home/test/data/mvtec/grid/train/good/126.png",
+              "sha256": "42254e269a65de91e2bf5f82e687499790bef5ab5bcb546199450c3ca150bc8e"
+            },
+            {
+              "path": "/home/test/data/mvtec/grid/train/good/171.png",
+              "sha256": "d9ed1213c6828cdf79a00ad5adcbbecc287091d907dfb8cf17c32535a0eb272b"
+            }
+          ]
+        },
+        {
+          "round": 7,
+          "images": [
+            {
+              "path": "/home/test/data/mvtec/grid/train/good/154.png",
+              "sha256": "690a334b510aef799f190f2565e501f934f5bdc44da96a05230a4fc4d0615e9b"
+            },
+            {
+              "path": "/home/test/data/mvtec/grid/train/good/152.png",
+              "sha256": "f1f553cba91615f092e380e5a266abadd6acabcabc6ab986a7eff35b4546c192"
+            },
+            {
+              "path": "/home/test/data/mvtec/grid/train/good/109.png",
+              "sha256": "683d5afbeecbf01fc2000a7538d7fdea1d436c63a29d91fd2a104d0051c6094e"
+            },
+            {
+              "path": "/home/test/data/mvtec/grid/train/good/175.png",
+              "sha256": "6984148b57ea9ba551475c1a2bd60d9c1548dcf2261bb62448aadfde0ae2a87b"
+            }
+          ]
+        },
+        {
+          "round": 8,
+          "images": [
+            {
+              "path": "/home/test/data/mvtec/grid/train/good/240.png",
+              "sha256": "ce2d276769ceb30a3ecf03c35e59774be2e85fe8dce07dc266b294f3a5c1dd3c"
+            },
+            {
+              "path": "/home/test/data/mvtec/grid/train/good/251.png",
+              "sha256": "aea530f904b84aa3f8e7966bb6a4f809891513475c0eb55ce9c39e329447eb15"
+            },
+            {
+              "path": "/home/test/data/mvtec/grid/train/good/180.png",
+              "sha256": "2aca7c25e4ba4e8fa3c141d5479a9a7c3effb435962452cb8a31b0b2e15d4ea3"
+            },
+            {
+              "path": "/home/test/data/mvtec/grid/train/good/167.png",
+              "sha256": "e84dc08f5c504314938e02c7daddf99d879bc0fec794eac37eeb8aed5f35222d"
+            }
+          ]
+        },
+        {
+          "round": 9,
+          "images": [
+            {
+              "path": "/home/test/data/mvtec/grid/train/good/068.png",
+              "sha256": "2c5335b0d6a4eca0717547ffab27c79025dd532c3d86225efddb9104ce13d2b4"
+            },
+            {
+              "path": "/home/test/data/mvtec/grid/train/good/262.png",
+              "sha256": "bc1cbece66b6b5fec25e29de89707837e77968cd52504d8da0ff7f63369b2cd3"
+            },
+            {
+              "path": "/home/test/data/mvtec/grid/train/good/107.png",
+              "sha256": "029f292fd09501198d87a9c8bc6e00cb22204e588dc92ded2c4bdd427b91e286"
+            },
+            {
+              "path": "/home/test/data/mvtec/grid/train/good/125.png",
+              "sha256": "fb4987a6301c663c3c31772b61cbc141439d6f9dff1e84f9fd7d3b7e2a6ddc58"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "grid",
+      "shot": 2,
+      "original": "/home/test/regad_assets/support_set/grid/2_10.pt",
+      "original_bytes": 0,
+      "path": "/home/test/regad_assets/local_support_set/grid/2_10.pt",
+      "sha256": "9e85efe09a23d2fc29c8f1dbd26b2d01d53e152bdbe6216ceecb1f135ab98a23",
+      "seed": 668,
+      "source": "normal training images only; locally sampled without replacement within each round",
+      "rounds": [
+        {
+          "round": 0,
+          "images": [
+            {
+              "path": "/home/test/data/mvtec/grid/train/good/236.png",
+              "sha256": "fb016f88b9f949dba240fb97f6b60cc8860d9bc2c347528311c2e28e8bd1d2ab"
+            },
+            {
+              "path": "/home/test/data/mvtec/grid/train/good/061.png",
+              "sha256": "1deddd0f56de7f4a74e66966db0f7546dce60f3be6e47bd66781700cd1463445"
+            }
+          ]
+        },
+        {
+          "round": 1,
+          "images": [
+            {
+              "path": "/home/test/data/mvtec/grid/train/good/009.png",
+              "sha256": "844d272046d4066b6e1b1e8fb8f3f8e58488cc518c7c746187ecd902d3191597"
+            },
+            {
+              "path": "/home/test/data/mvtec/grid/train/good/218.png",
+              "sha256": "051eb79540941bfa2740aeefbaef5523ceafaf1e997701d41c9e566af3f76d28"
+            }
+          ]
+        },
+        {
+          "round": 2,
+          "images": [
+            {
+              "path": "/home/test/data/mvtec/grid/train/good/084.png",
+              "sha256": "b48ed820f33443a8da356f36b59520a3a1bb941f1f8b0bdc39294adb90fd87af"
+            },
+            {
+              "path": "/home/test/data/mvtec/grid/train/good/017.png",
+              "sha256": "54294f460af4e4a73f94513e0b1981d2d0d469b83e40e3ad4aa5e07f6d388149"
+            }
+          ]
+        },
+        {
+          "round": 3,
+          "images": [
+            {
+              "path": "/home/test/data/mvtec/grid/train/good/095.png",
+              "sha256": "9ab169ea5bcda2c918f5289a38e2f4c748de38d20060723aaa36cfc68b47a071"
+            },
+            {
+              "path": "/home/test/data/mvtec/grid/train/good/012.png",
+              "sha256": "59753aa0704ada104748e66ac5c0e2b0cf7a4281afabb097465d590f2ecc436d"
+            }
+          ]
+        },
+        {
+          "round": 4,
+          "images": [
+            {
+              "path": "/home/test/data/mvtec/grid/train/good/068.png",
+              "sha256": "2c5335b0d6a4eca0717547ffab27c79025dd532c3d86225efddb9104ce13d2b4"
+            },
+            {
+              "path": "/home/test/data/mvtec/grid/train/good/220.png",
+              "sha256": "6f07da7875cc843c6d5f266eb16d0283facb18ff9f95fdc7d5d0c3c04d81f816"
+            }
+          ]
+        },
+        {
+          "round": 5,
+          "images": [
+            {
+              "path": "/home/test/data/mvtec/grid/train/good/185.png",
+              "sha256": "eb7f465ff3ba91b1bf4160d6c2d427c44e8e4eafcb721fa14bff8f742ad1d2e9"
+            },
+            {
+              "path": "/home/test/data/mvtec/grid/train/good/078.png",
+              "sha256": "4d5bf0a037d819f15083bbcc41e493ea292a920850a251b2628c342b95b39ba4"
+            }
+          ]
+        },
+        {
+          "round": 6,
+          "images": [
+            {
+              "path": "/home/test/data/mvtec/grid/train/good/209.png",
+              "sha256": "aacee48b3160c873149403e02082b0b0f15e39a31dfa300472737a2d59aa0b33"
+            },
+            {
+              "path": "/home/test/data/mvtec/grid/train/good/069.png",
+              "sha256": "e7ec3ba2c7ad902cd471ff9dfe091872ff1eb3b2c17e4efadb1dfb681d3d2646"
+            }
+          ]
+        },
+        {
+          "round": 7,
+          "images": [
+            {
+              "path": "/home/test/data/mvtec/grid/train/good/242.png",
+              "sha256": "35fb9d5394b70da02e959a9a755cdfddaec242b52e2483fdcf7018739573f1ab"
+            },
+            {
+              "path": "/home/test/data/mvtec/grid/train/good/054.png",
+              "sha256": "20c82cf3b68bedef8a895d0af0cb6a632c97740b11473e7766db7d1ea7db2328"
+            }
+          ]
+        },
+        {
+          "round": 8,
+          "images": [
+            {
+              "path": "/home/test/data/mvtec/grid/train/good/107.png",
+              "sha256": "029f292fd09501198d87a9c8bc6e00cb22204e588dc92ded2c4bdd427b91e286"
+            },
+            {
+              "path": "/home/test/data/mvtec/grid/train/good/260.png",
+              "sha256": "e31ead3e64f08bc27fb9ef35db71502e54b3ec1cb7e06176802df90c874e5e94"
+            }
+          ]
+        },
+        {
+          "round": 9,
+          "images": [
+            {
+              "path": "/home/test/data/mvtec/grid/train/good/238.png",
+              "sha256": "ae541de1bba9f82dc0a87c227ffadad4f7808617f7058b293a17929e0b3b5a7f"
+            },
+            {
+              "path": "/home/test/data/mvtec/grid/train/good/228.png",
+              "sha256": "8bb915b0247ce9f668a4ad4abc08e9ebd3486c3b3ff5ce45db204d2d6969e4a8"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "grid",
+      "shot": 8,
+      "original": "/home/test/regad_assets/support_set/grid/8_10.pt",
+      "original_bytes": 0,
+      "path": "/home/test/regad_assets/local_support_set/grid/8_10.pt",
+      "sha256": "2c76f748ad23d0fe1579b25aa3e0178231db41b82abe5593d59d5eb8df3a45ca",
+      "seed": 668,
+      "source": "normal training images only; locally sampled without replacement within each round",
+      "rounds": [
+        {
+          "round": 0,
+          "images": [
+            {
+              "path": "/home/test/data/mvtec/grid/train/good/236.png",
+              "sha256": "fb016f88b9f949dba240fb97f6b60cc8860d9bc2c347528311c2e28e8bd1d2ab"
+            },
+            {
+              "path": "/home/test/data/mvtec/grid/train/good/061.png",
+              "sha256": "1deddd0f56de7f4a74e66966db0f7546dce60f3be6e47bd66781700cd1463445"
+            },
+            {
+              "path": "/home/test/data/mvtec/grid/train/good/009.png",
+              "sha256": "844d272046d4066b6e1b1e8fb8f3f8e58488cc518c7c746187ecd902d3191597"
+            },
+            {
+              "path": "/home/test/data/mvtec/grid/train/good/218.png",
+              "sha256": "051eb79540941bfa2740aeefbaef5523ceafaf1e997701d41c9e566af3f76d28"
+            },
+            {
+              "path": "/home/test/data/mvtec/grid/train/good/084.png",
+              "sha256": "b48ed820f33443a8da356f36b59520a3a1bb941f1f8b0bdc39294adb90fd87af"
+            },
+            {
+              "path": "/home/test/data/mvtec/grid/train/good/017.png",
+              "sha256": "54294f460af4e4a73f94513e0b1981d2d0d469b83e40e3ad4aa5e07f6d388149"
+            },
+            {
+              "path": "/home/test/data/mvtec/grid/train/good/095.png",
+              "sha256": "9ab169ea5bcda2c918f5289a38e2f4c748de38d20060723aaa36cfc68b47a071"
+            },
+            {
+              "path": "/home/test/data/mvtec/grid/train/good/012.png",
+              "sha256": "59753aa0704ada104748e66ac5c0e2b0cf7a4281afabb097465d590f2ecc436d"
+            }
+          ]
+        },
+        {
+          "round": 1,
+          "images": [
+            {
+              "path": "/home/test/data/mvtec/grid/train/good/068.png",
+              "sha256": "2c5335b0d6a4eca0717547ffab27c79025dd532c3d86225efddb9104ce13d2b4"
+            },
+            {
+              "path": "/home/test/data/mvtec/grid/train/good/220.png",
+              "sha256": "6f07da7875cc843c6d5f266eb16d0283facb18ff9f95fdc7d5d0c3c04d81f816"
+            },
+            {
+              "path": "/home/test/data/mvtec/grid/train/good/185.png",
+              "sha256": "eb7f465ff3ba91b1bf4160d6c2d427c44e8e4eafcb721fa14bff8f742ad1d2e9"
+            },
+            {
+              "path": "/home/test/data/mvtec/grid/train/good/078.png",
+              "sha256": "4d5bf0a037d819f15083bbcc41e493ea292a920850a251b2628c342b95b39ba4"
+            },
+            {
+              "path": "/home/test/data/mvtec/grid/train/good/209.png",
+              "sha256": "aacee48b3160c873149403e02082b0b0f15e39a31dfa300472737a2d59aa0b33"
+            },
+            {
+              "path": "/home/test/data/mvtec/grid/train/good/069.png",
+              "sha256": "e7ec3ba2c7ad902cd471ff9dfe091872ff1eb3b2c17e4efadb1dfb681d3d2646"
+            },
+            {
+              "path": "/home/test/data/mvtec/grid/train/good/242.png",
+              "sha256": "35fb9d5394b70da02e959a9a755cdfddaec242b52e2483fdcf7018739573f1ab"
+            },
+            {
+              "path": "/home/test/data/mvtec/grid/train/good/054.png",
+              "sha256": "20c82cf3b68bedef8a895d0af0cb6a632c97740b11473e7766db7d1ea7db2328"
+            }
+          ]
+        },
+        {
+          "round": 2,
+          "images": [
+            {
+              "path": "/home/test/data/mvtec/grid/train/good/107.png",
+              "sha256": "029f292fd09501198d87a9c8bc6e00cb22204e588dc92ded2c4bdd427b91e286"
+            },
+            {
+              "path": "/home/test/data/mvtec/grid/train/good/260.png",
+              "sha256": "e31ead3e64f08bc27fb9ef35db71502e54b3ec1cb7e06176802df90c874e5e94"
+            },
+            {
+              "path": "/home/test/data/mvtec/grid/train/good/238.png",
+              "sha256": "ae541de1bba9f82dc0a87c227ffadad4f7808617f7058b293a17929e0b3b5a7f"
+            },
+            {
+              "path": "/home/test/data/mvtec/grid/train/good/228.png",
+              "sha256": "8bb915b0247ce9f668a4ad4abc08e9ebd3486c3b3ff5ce45db204d2d6969e4a8"
+            },
+            {
+              "path": "/home/test/data/mvtec/grid/train/good/223.png",
+              "sha256": "d640e044f59889ef8c62af1bac78000b26a8be4aae25e82ee5eebf45a5693838"
+            },
+            {
+              "path": "/home/test/data/mvtec/grid/train/good/063.png",
+              "sha256": "7c84be52b306d4ae9bcd1f77fd4a29fa4231365d43c80f77476d463bbcdcc786"
+            },
+            {
+              "path": "/home/test/data/mvtec/grid/train/good/263.png",
+              "sha256": "7e4901d85ce08501c8639a79ad239426291d563dc8ef502d9ac8e01c57182c54"
+            },
+            {
+              "path": "/home/test/data/mvtec/grid/train/good/198.png",
+              "sha256": "0b9ab0ec74805d3cbe1c99b0586d1f77fc953cae84869d93e0e79b4847beab2d"
+            }
+          ]
+        },
+        {
+          "round": 3,
+          "images": [
+            {
+              "path": "/home/test/data/mvtec/grid/train/good/163.png",
+              "sha256": "a9f15386df612de315688c464724668fe7a62e6224012c9433dd281cae25c1da"
+            },
+            {
+              "path": "/home/test/data/mvtec/grid/train/good/036.png",
+              "sha256": "0115cb3d38814184268e8e1a15f595afd4054ac2c1f542973e0eea0870137ed2"
+            },
+            {
+              "path": "/home/test/data/mvtec/grid/train/good/126.png",
+              "sha256": "42254e269a65de91e2bf5f82e687499790bef5ab5bcb546199450c3ca150bc8e"
+            },
+            {
+              "path": "/home/test/data/mvtec/grid/train/good/171.png",
+              "sha256": "d9ed1213c6828cdf79a00ad5adcbbecc287091d907dfb8cf17c32535a0eb272b"
+            },
+            {
+              "path": "/home/test/data/mvtec/grid/train/good/154.png",
+              "sha256": "690a334b510aef799f190f2565e501f934f5bdc44da96a05230a4fc4d0615e9b"
+            },
+            {
+              "path": "/home/test/data/mvtec/grid/train/good/152.png",
+              "sha256": "f1f553cba91615f092e380e5a266abadd6acabcabc6ab986a7eff35b4546c192"
+            },
+            {
+              "path": "/home/test/data/mvtec/grid/train/good/109.png",
+              "sha256": "683d5afbeecbf01fc2000a7538d7fdea1d436c63a29d91fd2a104d0051c6094e"
+            },
+            {
+              "path": "/home/test/data/mvtec/grid/train/good/175.png",
+              "sha256": "6984148b57ea9ba551475c1a2bd60d9c1548dcf2261bb62448aadfde0ae2a87b"
+            }
+          ]
+        },
+        {
+          "round": 4,
+          "images": [
+            {
+              "path": "/home/test/data/mvtec/grid/train/good/240.png",
+              "sha256": "ce2d276769ceb30a3ecf03c35e59774be2e85fe8dce07dc266b294f3a5c1dd3c"
+            },
+            {
+              "path": "/home/test/data/mvtec/grid/train/good/251.png",
+              "sha256": "aea530f904b84aa3f8e7966bb6a4f809891513475c0eb55ce9c39e329447eb15"
+            },
+            {
+              "path": "/home/test/data/mvtec/grid/train/good/180.png",
+              "sha256": "2aca7c25e4ba4e8fa3c141d5479a9a7c3effb435962452cb8a31b0b2e15d4ea3"
+            },
+            {
+              "path": "/home/test/data/mvtec/grid/train/good/167.png",
+              "sha256": "e84dc08f5c504314938e02c7daddf99d879bc0fec794eac37eeb8aed5f35222d"
+            },
+            {
+              "path": "/home/test/data/mvtec/grid/train/good/068.png",
+              "sha256": "2c5335b0d6a4eca0717547ffab27c79025dd532c3d86225efddb9104ce13d2b4"
+            },
+            {
+              "path": "/home/test/data/mvtec/grid/train/good/262.png",
+              "sha256": "bc1cbece66b6b5fec25e29de89707837e77968cd52504d8da0ff7f63369b2cd3"
+            },
+            {
+              "path": "/home/test/data/mvtec/grid/train/good/107.png",
+              "sha256": "029f292fd09501198d87a9c8bc6e00cb22204e588dc92ded2c4bdd427b91e286"
+            },
+            {
+              "path": "/home/test/data/mvtec/grid/train/good/125.png",
+              "sha256": "fb4987a6301c663c3c31772b61cbc141439d6f9dff1e84f9fd7d3b7e2a6ddc58"
+            }
+          ]
+        },
+        {
+          "round": 5,
+          "images": [
+            {
+              "path": "/home/test/data/mvtec/grid/train/good/251.png",
+              "sha256": "aea530f904b84aa3f8e7966bb6a4f809891513475c0eb55ce9c39e329447eb15"
+            },
+            {
+              "path": "/home/test/data/mvtec/grid/train/good/190.png",
+              "sha256": "2eab310d1ecadd4f07c6271e8ce50dfd22f8ba0eda14f5835983f997cee91525"
+            },
+            {
+              "path": "/home/test/data/mvtec/grid/train/good/043.png",
+              "sha256": "ecf2a13395d36c36552f5e168f365e90e94eac428ce48e9e3b2969345113441e"
+            },
+            {
+              "path": "/home/test/data/mvtec/grid/train/good/170.png",
+              "sha256": "57e4bd9aedc4290848e6bc2fe31cf3c814739d585fb2112691e88d2204bb82c0"
+            },
+            {
+              "path": "/home/test/data/mvtec/grid/train/good/063.png",
+              "sha256": "7c84be52b306d4ae9bcd1f77fd4a29fa4231365d43c80f77476d463bbcdcc786"
+            },
+            {
+              "path": "/home/test/data/mvtec/grid/train/good/084.png",
+              "sha256": "b48ed820f33443a8da356f36b59520a3a1bb941f1f8b0bdc39294adb90fd87af"
+            },
+            {
+              "path": "/home/test/data/mvtec/grid/train/good/044.png",
+              "sha256": "a31ef176bdee2fdab7f3a5d1ea5eb13a4fdadb6e57307118b4fd729602a1b6e0"
+            },
+            {
+              "path": "/home/test/data/mvtec/grid/train/good/222.png",
+              "sha256": "26db610dbc3cac5d311a310d77907a1f70139e668b4cd610d22c9ac0d0527bd4"
+            }
+          ]
+        },
+        {
+          "round": 6,
+          "images": [
+            {
+              "path": "/home/test/data/mvtec/grid/train/good/236.png",
+              "sha256": "fb016f88b9f949dba240fb97f6b60cc8860d9bc2c347528311c2e28e8bd1d2ab"
+            },
+            {
+              "path": "/home/test/data/mvtec/grid/train/good/138.png",
+              "sha256": "a7f1e380205d1b4195ecfe21f8b9a6705dac8e0972392099140ba1de7d32b3d9"
+            },
+            {
+              "path": "/home/test/data/mvtec/grid/train/good/232.png",
+              "sha256": "592e4f2c296a91051b55daad6f82585d29695e0269a7a8e2659bd55c52e47a9a"
+            },
+            {
+              "path": "/home/test/data/mvtec/grid/train/good/143.png",
+              "sha256": "7742f5643c12650dae06481fed094e58d7a9302652ce79c8b6a4aec6392d06bd"
+            },
+            {
+              "path": "/home/test/data/mvtec/grid/train/good/219.png",
+              "sha256": "7c9334cba6ec78457086e8d24699f6de79e72a3b922c220b832254463ad816c8"
+            },
+            {
+              "path": "/home/test/data/mvtec/grid/train/good/084.png",
+              "sha256": "b48ed820f33443a8da356f36b59520a3a1bb941f1f8b0bdc39294adb90fd87af"
+            },
+            {
+              "path": "/home/test/data/mvtec/grid/train/good/114.png",
+              "sha256": "8f4b61d49dc32acfb141057055c6ccf8779a66e7e9908952ee723fab97d4a7d1"
+            },
+            {
+              "path": "/home/test/data/mvtec/grid/train/good/085.png",
+              "sha256": "2e05789cb1b8f9832ae9aec21adebe04bef5f5952c824a1c4524da80db392fd9"
+            }
+          ]
+        },
+        {
+          "round": 7,
+          "images": [
+            {
+              "path": "/home/test/data/mvtec/grid/train/good/083.png",
+              "sha256": "1412b2f0885642e11747f921e7ab13be9c34593bd517e17b0084c264fc2686f2"
+            },
+            {
+              "path": "/home/test/data/mvtec/grid/train/good/025.png",
+              "sha256": "8fbfa0f624ee8680d9e200577ea2eef4e4fe9542adea566ce1b450e8d9df4375"
+            },
+            {
+              "path": "/home/test/data/mvtec/grid/train/good/140.png",
+              "sha256": "2eda3ac86d8687718e23adeb1140b1f1766aad7a34c676638154f4bb0c0f4fee"
+            },
+            {
+              "path": "/home/test/data/mvtec/grid/train/good/033.png",
+              "sha256": "994176697efee9e53413c0619d057f61e26d542465b6a6ade29f68978a2e8666"
+            },
+            {
+              "path": "/home/test/data/mvtec/grid/train/good/021.png",
+              "sha256": "c49c63361282e88da0a50ed0848e2f97bd1ab6d0a16949bb506fd4b7e5fd2d0d"
+            },
+            {
+              "path": "/home/test/data/mvtec/grid/train/good/094.png",
+              "sha256": "3c26fe8ed1768142baa2cb36b80a0348c4b93dbb6e68d00c34d92c605bc2c6d4"
+            },
+            {
+              "path": "/home/test/data/mvtec/grid/train/good/213.png",
+              "sha256": "1a022860358302c8b30633723d0e713729455888e25c411445ad9f63bdf567f7"
+            },
+            {
+              "path": "/home/test/data/mvtec/grid/train/good/196.png",
+              "sha256": "2055aefcf3ba16235bf22eff07881afa0a6ef3940901765023be3377a3a53b80"
+            }
+          ]
+        },
+        {
+          "round": 8,
+          "images": [
+            {
+              "path": "/home/test/data/mvtec/grid/train/good/022.png",
+              "sha256": "bdf56468c255a3b9f40c2d411590b3650bbd8b884820f7dff53fdd01f643fd62"
+            },
+            {
+              "path": "/home/test/data/mvtec/grid/train/good/177.png",
+              "sha256": "c92a1869ab18087c3ffcec2ee4b6ead5fb3fe5e3d19f9f23124007959af2b2ca"
+            },
+            {
+              "path": "/home/test/data/mvtec/grid/train/good/193.png",
+              "sha256": "9f3a73b5042dce4e4e6e9419a2fe9beec29152bf83d71ee1ac42a99accdcbdd7"
+            },
+            {
+              "path": "/home/test/data/mvtec/grid/train/good/004.png",
+              "sha256": "e3447cddb3e57a12a3a81b72202985af1ad609a95883e93a7a78ccf4cb27c7ea"
+            },
+            {
+              "path": "/home/test/data/mvtec/grid/train/good/233.png",
+              "sha256": "f80a62d8c25b36fab1ad477d705f271833e5b68f164f42650495a4887dd4b61f"
+            },
+            {
+              "path": "/home/test/data/mvtec/grid/train/good/138.png",
+              "sha256": "a7f1e380205d1b4195ecfe21f8b9a6705dac8e0972392099140ba1de7d32b3d9"
+            },
+            {
+              "path": "/home/test/data/mvtec/grid/train/good/083.png",
+              "sha256": "1412b2f0885642e11747f921e7ab13be9c34593bd517e17b0084c264fc2686f2"
+            },
+            {
+              "path": "/home/test/data/mvtec/grid/train/good/154.png",
+              "sha256": "690a334b510aef799f190f2565e501f934f5bdc44da96a05230a4fc4d0615e9b"
+            }
+          ]
+        },
+        {
+          "round": 9,
+          "images": [
+            {
+              "path": "/home/test/data/mvtec/grid/train/good/214.png",
+              "sha256": "edada2acf3c12dfe64ca9beaee1858aa73570adc8cfbadf53c8b550bae9ffc1d"
+            },
+            {
+              "path": "/home/test/data/mvtec/grid/train/good/048.png",
+              "sha256": "6ffff2bce8ee8b22c90184d0e692a7cec80cd494bde784d504d98f5450b5c885"
+            },
+            {
+              "path": "/home/test/data/mvtec/grid/train/good/154.png",
+              "sha256": "690a334b510aef799f190f2565e501f934f5bdc44da96a05230a4fc4d0615e9b"
+            },
+            {
+              "path": "/home/test/data/mvtec/grid/train/good/072.png",
+              "sha256": "540470d08a48720c0a6e8b0e3221c536b3fcf4fe91d41eae22fc274c3878143d"
+            },
+            {
+              "path": "/home/test/data/mvtec/grid/train/good/249.png",
+              "sha256": "f92ed5fdc3103f0a7411322ae51e88a85876477bb2bae6c9c83a0696d122dece"
+            },
+            {
+              "path": "/home/test/data/mvtec/grid/train/good/037.png",
+              "sha256": "37346d15502ed3e531cd4c76bd819140b9007397afe016b32102855be633343e"
+            },
+            {
+              "path": "/home/test/data/mvtec/grid/train/good/158.png",
+              "sha256": "41572c0a7be787ffe79a22926c0b7c23f8e2c91521ee3f6defaf9b0017d24306"
+            },
+            {
+              "path": "/home/test/data/mvtec/grid/train/good/248.png",
+              "sha256": "a74ab8b47d3af0a3dd2d0720519d2bb1df41fa5eb29b61d3491ba41cbbfba764"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "aupro_source_sha256": "6e308ee86c779fce34ee3b9c9c8413772afddb6113be435130f8448d8c50f411",
+  "rscin_source_sha256": "c5df4811b385971a15bb2db4473adba9755a15c8acf1e5c802b4ed955e5081c5",
+  "current_shot": 8,
+  "current_category": "zipper",
+  "current_round": 9
+}

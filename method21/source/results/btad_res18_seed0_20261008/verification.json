@@ -1,0 +1,94 @@
+{
+  "status": "passed",
+  "all_raw_checkpoint_input_hashes_checked": true,
+  "all_masks_and_AUROC_recomputed": true,
+  "all_image_max_scores_recomputed": true,
+  "first_pixel_map_each_category_independent_compose_checked": true,
+  "limitation": "does not independently rerun all test forwards or prove paper numerical equivalence",
+  "audits": [
+    {
+      "category": "01",
+      "n_train": 400,
+      "n_test": 70,
+      "epochs": 15,
+      "image_auroc": 1.0,
+      "pixel_auroc": 0.9529656072686495,
+      "first_map_independent_pyramid_max_error": 2.384185791015625e-07,
+      "first_gpu_check": {
+        "status": "passed",
+        "gpu": "NVIDIA GeForce RTX 5080",
+        "real_BTAD_batch": true,
+        "batch_size": 2,
+        "input_size": 1024,
+        "fp32_loss": 10.246703147888184,
+        "tf32_loss": 10.245893478393555,
+        "loss_relative_difference": 7.90175618021749e-05,
+        "gradient_relative_L2_difference": 0.008167500607669353,
+        "tf32_enabled": true,
+        "thresholds": {
+          "loss": 0.005,
+          "gradient": 0.02
+        },
+        "finite_gradients": true,
+        "allocated_mib": 459.19921875
+      },
+      "raw_sha256": "495a61bfe6fd7793243797b82f7c86e43f2bacd839f333861f9cea03ba1bf513"
+    },
+    {
+      "category": "02",
+      "n_train": 399,
+      "n_test": 230,
+      "epochs": 15,
+      "image_auroc": 0.8261666666666667,
+      "pixel_auroc": 0.9725565013816255,
+      "first_map_independent_pyramid_max_error": 2.086162567138672e-07,
+      "first_gpu_check": {
+        "status": "passed",
+        "gpu": "NVIDIA GeForce RTX 5080",
+        "real_BTAD_batch": true,
+        "batch_size": 2,
+        "input_size": 1024,
+        "fp32_loss": 15.494583129882812,
+        "tf32_loss": 15.49522876739502,
+        "loss_relative_difference": 4.166859434917569e-05,
+        "gradient_relative_L2_difference": 0.007946326397359371,
+        "tf32_enabled": true,
+        "thresholds": {
+          "loss": 0.005,
+          "gradient": 0.02
+        },
+        "finite_gradients": true,
+        "allocated_mib": 643.53564453125
+      },
+      "raw_sha256": "70c27925129e05265e13c2be1e41f1f12fe5f9b7285a5a6a0d674e22d410277c"
+    },
+    {
+      "category": "03",
+      "n_train": 1000,
+      "n_test": 441,
+      "epochs": 15,
+      "image_auroc": 0.9104878048780488,
+      "pixel_auroc": 0.9442700207452501,
+      "first_map_independent_pyramid_max_error": 1.043081283569336e-07,
+      "first_gpu_check": {
+        "status": "passed",
+        "gpu": "NVIDIA GeForce RTX 5080",
+        "real_BTAD_batch": true,
+        "batch_size": 2,
+        "input_size": 1024,
+        "fp32_loss": 10.89453411102295,
+        "tf32_loss": 10.895130157470703,
+        "loss_relative_difference": 5.4710595577489585e-05,
+        "gradient_relative_L2_difference": 0.006870100274682045,
+        "tf32_enabled": true,
+        "thresholds": {
+          "loss": 0.005,
+          "gradient": 0.02
+        },
+        "finite_gradients": true,
+        "allocated_mib": 463.13671875
+      },
+      "raw_sha256": "dd31459d3e49c7c1627b046ecfd67006c9d4d724a6487b9d5ea900bf0aef0598"
+    }
+  ]
+}

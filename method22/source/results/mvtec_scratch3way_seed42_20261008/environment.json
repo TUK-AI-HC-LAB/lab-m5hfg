@@ -1,0 +1,134 @@
+{
+  "status": "training",
+  "official_author_implementation": false,
+  "public_repo": "https://github.com/Runinho/pytorch-cutpaste",
+  "commit": "10d8bf71df76d3a97f0106efee1d76f81d983149",
+  "gpu": "NVIDIA GeForce RTX 5080",
+  "torch": "2.11.0+cu128",
+  "python": "3.12.13",
+  "seed": 42,
+  "categories": [
+    "bottle",
+    "cable",
+    "capsule",
+    "carpet",
+    "grid",
+    "hazelnut",
+    "leather",
+    "metal_nut",
+    "pill",
+    "screw",
+    "tile",
+    "toothbrush",
+    "transistor",
+    "wood",
+    "zipper"
+  ],
+  "dataset": "/home/test/data/mvtec",
+  "model": "scratch ResNet18 + public MLP512,128 + 3-way classifier",
+  "models_per_category": [
+    "image256",
+    "patch64"
+  ],
+  "steps_per_model": 65536,
+  "paper_epochs": 256,
+  "updates_per_paper_epoch": 256,
+  "base_batch": 32,
+  "effective_batch": 96,
+  "optimizer": "SGD lr.03 momentum.9 wd3e-5 cosine one cycle, foreach",
+  "no_pretraining": true,
+  "no_test_selection": true,
+  "augment": "translation max10% (paper magnitude unspecified), global/patch ColorJitter.1, public CutPasteNormal/Scar 3way",
+  "density": "LedoitWolf Gaussian raw pooled512; aligned location-wise otherwise pooled all train patches",
+  "localization": "train random64patch; evaluate32patch stride4 57x57 (paper appendix A.5); Gaussian32 RF transposed conv sigma8",
+  "unspecified_choices": "MLP512,128 from public CLI head1; translation10%; Gaussian sigma8. Original TensorFlow preprocessing/init differs.",
+  "repeat": "single seed, not paper5-run mean/SE",
+  "raw_path": "/home/test/cutpaste_results/mvtec_scratch3way_seed42_20261008",
+  "source_hashes": {
+    "model.py": "8a5ca929cb0063cd49ca2a726265d01aa673327a25c20e1adaca1ea02822c28c",
+    "cutpaste.py": "ab784b0409a917c48e2cfe8c0227f4ffc8c387401ec72a61e8a54f8849acce76",
+    "run_training.py": "a24ba8bd04a81498f2d51897c1de07300968b8e1b24c63b7b4e6b37fbfee6296",
+    "density.py": "874541f58a23edd4c730d618a946992f8ae2e8955f7ff30aa55b9eca502a32cf"
+  },
+  "wrapper_sha256": "f19dd39c7f481539e3e8b06b95785523e771dfed795abc5e6e54d51a20443359",
+  "common_sha256": "6a966cc0e33c9f688d336b531b794ca1d857618b2241f39d578f1ba4e0165941",
+  "acceleration_helper_sha256": "8e2775cc13406fbe151923cc492886457d451d7297249d31e8b827f175b1c205",
+  "data_pipeline": {
+    "workers": 4,
+    "prefetch_factor": 4,
+    "main_threads": 8,
+    "assembly": "separate pinned async H2D then GPU concat; tensor values/order unchanged",
+    "loss_reporting": "GPU finite assert each step; detached loss scalars transferred together every256 updates and averaged in FP64",
+    "benchmark": "/mnt/c/Users/test/Desktop/Codex/lab-m5hfg/method22/source/results/mvtec_scratch3way_seed42_20261008/data_transfer_benchmark.json"
+  },
+  "resume_limit": "model/optimizer/scaler/main RNG restored, workers/sampler stream not exact across restart",
+  "acceleration_policy": "compiled/eager FP16 + GradScaler + TF32, finite/loss gate and FP32 gradient diagnostic, channels_last, cuDNN benchmark, foreach SGD, cached images, pin/prefetch workers; per-model fallback if nonfinite or loss gate fails; compiled/eager FP16 comparison; evaluation FP32/FP64",
+  "error": null,
+  "category": "hazelnut",
+  "model_kind": "image",
+  "step": 17152,
+  "active_acceleration": {
+    "status": "passed",
+    "precision": "fp16",
+    "compiled": false,
+    "tf32_enabled": true,
+    "mode": "fp16",
+    "bf16_enabled": false,
+    "transition_step": 0,
+    "thresholds": {
+      "loss": 0.01,
+      "gradient": 0.05
+    },
+    "policy": "FP16 finite/loss gate; FP32 gradient diagnostic; compiled versus eager FP16 gradient/loss gate. User-requested accelerated continuation, no final AUROC equivalence claim.",
+    "trials": [
+      {
+        "mode": "fp32",
+        "finite": true,
+        "loss_relative_difference": 0.0,
+        "gradient_relative_L2": 0.0,
+        "strict_fp32_equivalence_passed": true,
+        "passed": true,
+        "startup_seconds": 0.10786793199986278
+      },
+      {
+        "mode": "compiled_fp16",
+        "finite": true,
+        "loss_relative_difference": 9.576148109126416e-05,
+        "gradient_relative_L2": 0.19067098200321198,
+        "strict_fp32_equivalence_passed": false,
+        "passed": true,
+        "startup_seconds": 27.8490077739998
+      },
+      {
+        "mode": "fp16",
+        "finite": true,
+        "loss_relative_difference": 0.00015416546131725496,
+        "gradient_relative_L2": 0.2381679117679596,
+        "strict_fp32_equivalence_passed": false,
+        "passed": true,
+        "startup_seconds": 0.03898815300044589,
+        "compiled_vs_eager_gradient_relative_L2": 0.15664537250995636,
+        "compiled_vs_eager_loss_relative_difference": 5.841298549084589e-05,
+        "compile_validation_passed": false
+      }
+    ],
+    "previous_proof": {
+      "status": "passed",
+      "real_MVTec_batch": true,
+      "gpu": "NVIDIA GeForce RTX 5080",
+      "effective_batch": 96,
+      "input_size": 256,
+      "fp32_loss": 1.1328192949295044,
+      "bf16_loss": 1.13330078125,
+      "bf16_gradient_relative_L2": 0.606428325176239,
+      "bf16_loss_relative_difference": 0.00042503364966250956,
+      "bf16_enabled": false,
+      "tf32_enabled": false,
+      "thresholds": {
+        "gradient": 0.05,
+        "loss": 0.01
+      },
+      "finite_gradients": true
+    }
+  }
+}

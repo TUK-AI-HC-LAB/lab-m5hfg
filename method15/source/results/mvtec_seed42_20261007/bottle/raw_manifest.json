@@ -1,0 +1,9 @@
+{
+  "path": "/home/test/acr_results/mvtec_seed42_20261007/bottle_predictions.npz",
+  "sha256": "5e65a5f8e039e637fcbdad0c5e61030e9cbd27758b51e4111b72251334b2d633",
+  "shape": [
+    83,
+    224,
+    224
+  ]
+}

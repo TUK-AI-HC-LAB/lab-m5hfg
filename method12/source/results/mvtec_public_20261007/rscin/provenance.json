@@ -1,0 +1,18 @@
+{
+  "status": "completed",
+  "official_source": "/home/test/MuSc/models/RsCIN_features/RsCIN.py",
+  "official_source_sha256": "c5df4811b385971a15bb2db4473adba9755a15c8acf1e5c802b4ed955e5081c5",
+  "shared_feature_source": "/mnt/c/Users/test/Desktop/Codex/lab-m5hfg/method11/source/results/rscin_shared_features_mvtec_20261006",
+  "shared_feature_environment_sha256": "fd92d6ba4cb771c147edb9e66ed36321c2d0ebe80cca2e94d1b81188aa932692",
+  "windows": [
+    1,
+    2,
+    3
+  ],
+  "feature_dtype": "float16; normalized in official MuSc CUDA AMP",
+  "feature_encoder": "ViT-L-14-336 OpenAI; input 518; official MuSc loader",
+  "paper_features_used": false,
+  "training_executed": false,
+  "n_categories": 15,
+  "n_images": 1725
+}

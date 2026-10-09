@@ -1,0 +1,106 @@
+{
+  "status": "passed",
+  "n_categories": 15,
+  "n_images": 1725,
+  "metrics_recomputed": [
+    "image_auroc",
+    "image_ap",
+    "image_f1_max",
+    "pixel_auroc",
+    "pixel_ap",
+    "pixel_f1_max"
+  ],
+  "aupro_verification": "source hash and finite range; 200-threshold AUPRO is not independently recomputed",
+  "categories": [
+    {
+      "category": "bottle",
+      "n_images": 83,
+      "raw_metrics_recomputed": true,
+      "native_auroc_matched": true
+    },
+    {
+      "category": "cable",
+      "n_images": 150,
+      "raw_metrics_recomputed": true,
+      "native_auroc_matched": true
+    },
+    {
+      "category": "capsule",
+      "n_images": 132,
+      "raw_metrics_recomputed": true,
+      "native_auroc_matched": true
+    },
+    {
+      "category": "carpet",
+      "n_images": 117,
+      "raw_metrics_recomputed": true,
+      "native_auroc_matched": true
+    },
+    {
+      "category": "grid",
+      "n_images": 78,
+      "raw_metrics_recomputed": true,
+      "native_auroc_matched": true
+    },
+    {
+      "category": "hazelnut",
+      "n_images": 110,
+      "raw_metrics_recomputed": true,
+      "native_auroc_matched": true
+    },
+    {
+      "category": "leather",
+      "n_images": 124,
+      "raw_metrics_recomputed": true,
+      "native_auroc_matched": true
+    },
+    {
+      "category": "metal_nut",
+      "n_images": 115,
+      "raw_metrics_recomputed": true,
+      "native_auroc_matched": true
+    },
+    {
+      "category": "pill",
+      "n_images": 167,
+      "raw_metrics_recomputed": true,
+      "native_auroc_matched": true
+    },
+    {
+      "category": "screw",
+      "n_images": 160,
+      "raw_metrics_recomputed": true,
+      "native_auroc_matched": true
+    },
+    {
+      "category": "tile",
+      "n_images": 117,
+      "raw_metrics_recomputed": true,
+      "native_auroc_matched": true
+    },
+    {
+      "category": "toothbrush",
+      "n_images": 42,
+      "raw_metrics_recomputed": true,
+      "native_auroc_matched": true
+    },
+    {
+      "category": "transistor",
+      "n_images": 100,
+      "raw_metrics_recomputed": true,
+      "native_auroc_matched": true
+    },
+    {
+      "category": "wood",
+      "n_images": 79,
+      "raw_metrics_recomputed": true,
+      "native_auroc_matched": true
+    },
+    {
+      "category": "zipper",
+      "n_images": 151,
+      "raw_metrics_recomputed": true,
+      "native_auroc_matched": true
+    }
+  ]
+}

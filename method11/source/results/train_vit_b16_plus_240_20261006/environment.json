@@ -1,0 +1,107 @@
+{
+  "status": "completed",
+  "args": {
+    "dataset": "visa",
+    "train_data_path": "/home/test/data/VisA_20220922",
+    "save_path": "/home/test/aprilgan_results/train_vit_b16_plus_240_20261006",
+    "config_path": "/home/test/VAND-APRIL-GAN/open_clip/model_configs/ViT-B-16-plus-240.json",
+    "model": "ViT-B-16-plus-240",
+    "features_list": [
+      3,
+      6,
+      9,
+      12
+    ],
+    "pretrained": "laion400m_e31",
+    "image_size": 518,
+    "batch_size": 8,
+    "epoch": 15,
+    "learning_rate": 0.001,
+    "aug_rate": 0.2,
+    "print_freq": 1,
+    "save_freq": 1
+  },
+  "seed": 111,
+  "auxiliary_split": "VisA test split with annotations; official trainer default",
+  "auxiliary_images": 2162,
+  "target_dataset": "MVTec AD",
+  "target_images_used_for_training": false,
+  "official_commit": "f13b8a634e04f9fde8fa03db125b25af5695d8e1",
+  "gpu": "NVIDIA GeForce RTX 5080",
+  "torch": "2.11.0+cu128",
+  "cuda": "12.8",
+  "protocol_status": "official trainer and VisA 15-epoch settings extended to small backbone; original Table 13 checkpoint unavailable",
+  "inference_protocol_derived": true,
+  "compatibility_change": {
+    "old": "patch_tokens[layer] /= patch_tokens[layer].norm(dim=-1, keepdim=True)",
+    "new": "patch_tokens[layer] = (patch_tokens[layer] / patch_tokens[layer].norm(dim=-1, keepdim=True)).to(patch_tokens[layer].dtype)",
+    "reason": "modern Torch autograd rejects upstream in-place normalization",
+    "adapted_source_sha256": "5f9b4e19dad04f95170a7fe11063c05150db2f38233b78661d57e66dedf5dabd"
+  },
+  "wall_seconds": 1001.3020318260005,
+  "checkpoint": "/home/test/aprilgan_results/train_vit_b16_plus_240_20261006/epoch_15.pth",
+  "checkpoint_sha256": "48539aecffc926f418933378ddbc6ff02e6b23efe7bdd497b8dfe9c998683cf8",
+  "checkpoint_all_tensors_finite": true,
+  "epoch_losses": [
+    [
+      "1",
+      "2.5857"
+    ],
+    [
+      "2",
+      "2.2870"
+    ],
+    [
+      "3",
+      "2.2496"
+    ],
+    [
+      "4",
+      "2.2135"
+    ],
+    [
+      "5",
+      "2.1908"
+    ],
+    [
+      "6",
+      "2.1631"
+    ],
+    [
+      "7",
+      "2.1187"
+    ],
+    [
+      "8",
+      "2.1163"
+    ],
+    [
+      "9",
+      "2.0626"
+    ],
+    [
+      "10",
+      "2.0540"
+    ],
+    [
+      "11",
+      "2.0191"
+    ],
+    [
+      "12",
+      "2.0142"
+    ],
+    [
+      "13",
+      "2.0131"
+    ],
+    [
+      "14",
+      "1.9902"
+    ],
+    [
+      "15",
+      "1.9796"
+    ]
+  ]
+}

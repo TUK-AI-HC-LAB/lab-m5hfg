@@ -1,0 +1,9 @@
+{
+  "path": "/home/test/acr_results/mvtec_seed42_20261007/toothbrush_predictions.npz",
+  "sha256": "33dd58de2a2a6762d67e1347301437feffe32d3e345467f2217cdbbc269fff0f",
+  "shape": [
+    42,
+    224,
+    224
+  ]
+}

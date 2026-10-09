@@ -1,0 +1,8 @@
+{
+  "status": "passed",
+  "n_images": 741,
+  "exact_dtype_shape_value_comparison": true,
+  "duplicate_files": 2223,
+  "duplicate_bytes": 1593185568,
+  "retained": "category raw_predictions.npz, clip_image_features.npy, images.jsonl; only duplicate .npy cache removed"
+}

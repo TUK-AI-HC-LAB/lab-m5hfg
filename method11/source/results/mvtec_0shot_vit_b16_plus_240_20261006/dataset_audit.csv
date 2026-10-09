@@ -1,0 +1,16 @@
+category,n_images,n_normal,n_anomaly,paths_and_labels_validated
+bottle,83,20,63,True
+cable,150,58,92,True
+capsule,132,23,109,True
+carpet,117,28,89,True
+grid,78,21,57,True
+hazelnut,110,40,70,True
+leather,124,32,92,True
+metal_nut,115,22,93,True
+pill,167,26,141,True
+screw,160,41,119,True
+tile,117,33,84,True
+toothbrush,42,12,30,True
+transistor,100,60,40,True
+wood,79,19,60,True
+zipper,151,32,119,True

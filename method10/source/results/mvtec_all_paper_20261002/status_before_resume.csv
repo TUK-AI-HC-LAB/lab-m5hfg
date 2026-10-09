@@ -1,0 +1,11 @@
+category,status,reused,exit_code,elapsed_this_batch_seconds,raw_output
+bottle,completed,True,0,0.00011288299999989704,/home/test/musc_results/bottle_paper_20261002
+cable,completed,False,0,172.727846063,/home/test/musc_results/mvtec_all_paper_20261002/cable
+capsule,completed,False,0,135.449314,/home/test/musc_results/mvtec_all_paper_20261002/capsule
+carpet,completed,False,0,116.41337551999999,/home/test/musc_results/mvtec_all_paper_20261002/carpet
+grid,completed,False,0,70.51879790599997,/home/test/musc_results/mvtec_all_paper_20261002/grid
+hazelnut,completed,False,0,110.82822167300003,/home/test/musc_results/mvtec_all_paper_20261002/hazelnut
+leather,completed,False,0,126.5752968679999,/home/test/musc_results/mvtec_all_paper_20261002/leather
+metal_nut,completed,False,0,125.84667015799994,/home/test/musc_results/mvtec_all_paper_20261002/metal_nut
+pill,completed,False,0,195.98050400900001,/home/test/musc_results/mvtec_all_paper_20261002/pill
+screw,completed,False,0,197.6105889559999,/home/test/musc_results/mvtec_all_paper_20261002/screw

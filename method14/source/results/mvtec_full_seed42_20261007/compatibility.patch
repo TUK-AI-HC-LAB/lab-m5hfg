@@ -1,0 +1,127 @@
+--- multi_scale/inference_det.py
++++ runtime/multi_scale/inference_det.py
+@@ -111,10 +111,10 @@
+     NORMAL_NUM = category[key]
+     print('Current Item: {}'.format(NORMAL_NUM))
+ 
+-    train_path = '/home/user/Documents/Public_Dataset/MVTec_AD/{}/train/'.format(NORMAL_NUM)
+-    vaild_path = '/home/user/Documents/Public_Dataset/MVTec_AD/{}/train/vaild/'.format(NORMAL_NUM)
+-    test_root = '/home/user/Documents/Public_Dataset/MVTec_AD/{}/test/'.format(NORMAL_NUM)
+-    gt_root = '/home/user/Documents/Public_Dataset/MVTec_AD/{}/ground_truth/'.format(NORMAL_NUM)
++    train_path = '/home/test/data/mvtec/{}/train/'.format(NORMAL_NUM)
++    vaild_path = '/home/test/data/mvtec/{}/train/vaild/'.format(NORMAL_NUM)
++    test_root = '/home/test/data/mvtec/{}/test/'.format(NORMAL_NUM)
++    gt_root = '/home/test/data/mvtec/{}/ground_truth/'.format(NORMAL_NUM)
+ 
+     # recorder = Recorder(Experiment_name, 'CIFAR-10_No.{}'.format(str(NORMAL_NUM)))
+     from p256.mvtec_module import twoin1Generator256 as twoin1Generator256
+@@ -154,8 +154,8 @@
+     score_gsvdd = []
+     normal_mse_loss = []
+     abnormal_mse_loss = []
+-    train_root = '/home/user/Documents/Public_Dataset/MVTec_AD/{}/train/'.format(NORMAL_NUM)
+-    test_root = '/home/user/Documents/Public_Dataset/MVTec_AD/{}/test/'.format(NORMAL_NUM)
++    train_root = '/home/test/data/mvtec/{}/train/'.format(NORMAL_NUM)
++    test_root = '/home/test/data/mvtec/{}/test/'.format(NORMAL_NUM)
+     list_test = os.listdir(test_root)
+ 
+     p_stride = 16
+--- multi_scale/inference_loc.py
++++ runtime/multi_scale/inference_loc.py
+@@ -206,9 +206,9 @@
+     NORMAL_NUM = category[key]
+     print('Current Item: {}'.format(NORMAL_NUM))
+ 
+-    train_root = '/home/user/Documents/Public_Dataset/MVTec_AD/{}/train/'.format(NORMAL_NUM)
+-    test_root = '/home/user/Documents/Public_Dataset/MVTec_AD/{}/test/'.format(NORMAL_NUM)
+-    gt_root = '/home/user/Documents/Public_Dataset/MVTec_AD/{}/ground_truth/'.format(NORMAL_NUM)
++    train_root = '/home/test/data/mvtec/{}/train/'.format(NORMAL_NUM)
++    test_root = '/home/test/data/mvtec/{}/test/'.format(NORMAL_NUM)
++    gt_root = '/home/test/data/mvtec/{}/ground_truth/'.format(NORMAL_NUM)
+ 
+     generator32 = twoin1Generator(64, latent_dimension=latent_dimension)
+ 
+--- p256/ssim_main.py
++++ runtime/p256/ssim_main.py
+@@ -208,7 +208,7 @@
+     generator.c = None
+     generator.sigma = None
+ 
+-    train_path = '/home/user/Documents/Public_Dataset/MVTec_AD/{}/train/good'.format(NORMAL_NUM)
++    train_path = '/home/test/data/mvtec/{}/train/good'.format(NORMAL_NUM)
+     START_ITER = 0
+     # train_size = len(os.listdir(train_path))
+ 
+@@ -238,7 +238,7 @@
+         if batch is None:
+             # train_dataset_loader, _ = load_train(train_path, sample_rate=args.sample_rate)
+             train_data = iter(train_dataset_loader)
+-            batch = train_data.next()
++            batch = next(train_data)
+         batch = batch[0]  # batch[1] contains labels
+         real_data = batch.to(device)
+ 
+@@ -323,7 +323,7 @@
+     abnormal_gsvdd = []
+     normal_recon = []
+     abnormal_recon = []
+-    test_root = '/home/user/Documents/Public_Dataset/MVTec_AD/{}/test/'.format(NORMAL_NUM)
++    test_root = '/home/test/data/mvtec/{}/test/'.format(NORMAL_NUM)
+     list_test = os.listdir(test_root)
+ 
+     with torch.no_grad():
+@@ -395,9 +395,9 @@
+         print('Current Item: {}'.format(NORMAL_NUM))
+ 
+         # Download MVTEC_AD from "ftp://guest:GU.205dldo@ftp.softronics.ch/mvtec_anomaly_detection/mvtec_anomaly_detection.tar.xz" 
+-        train_path = '/home/user/Documents/Public_Dataset/MVTec_AD/{}/train/'.format(NORMAL_NUM)
+-        test_root = '/home/user/Documents/Public_Dataset/MVTec_AD/{}/test/'.format(NORMAL_NUM)
+-        gt_root = '/home/user/Documents/Public_Dataset/MVTec_AD/{}/ground_truth/'.format(NORMAL_NUM)
++        train_path = '/home/test/data/mvtec/{}/train/'.format(NORMAL_NUM)
++        test_root = '/home/test/data/mvtec/{}/test/'.format(NORMAL_NUM)
++        gt_root = '/home/test/data/mvtec/{}/ground_truth/'.format(NORMAL_NUM)
+ 
+         Experiment_name = 'No.{}_p256_IGD'.format(str(NORMAL_NUM))
+         
+--- p32/ssim_main.py
++++ runtime/p32/ssim_main.py
+@@ -230,7 +230,7 @@
+     global test_auc
+     test_auc = 0
+     BEST_AUC = 0
+-    train_path = '/home/user/Documents/Public_Dataset/MVTec_AD/{}/train/good'.format(NORMAL_NUM)
++    train_path = '/home/test/data/mvtec/{}/train/good'.format(NORMAL_NUM)
+     START_ITER = 0
+     train_size = len(os.listdir(train_path))
+     END_ITER = int((train_size / BATCH_SIZE) * MAX_EPOCH)
+@@ -255,7 +255,7 @@
+         if batch is None:
+             # train_dataset_loader = load_train(train_path)
+             train_data = iter(train_dataset_loader)
+-            batch = train_data.next()
++            batch = next(train_data)
+         batch = batch[0]  # batch[1] contains labels
+         batch_data = batch.to(device)
+         data_tmp = batch_data.unfold(2, 32, p_stride).unfold(3, 32, p_stride)
+@@ -339,7 +339,7 @@
+     abnormal_gsvdd = []
+     normal_recon = []
+     abnormal_recon = []
+-    test_root = '/home/user/Documents/Public_Dataset/MVTec_AD/{}/test/'.format(NORMAL_NUM)
++    test_root = '/home/test/data/mvtec/{}/test/'.format(NORMAL_NUM)
+     list_test = os.listdir(test_root)
+ 
+     with torch.no_grad():
+@@ -427,9 +427,9 @@
+         # NORMAL_NUM = category[key] if key.isdigit() else key
+         print('Current Item: {}'.format(NORMAL_NUM))
+ 
+-        train_path = '/home/user/Documents/Public_Dataset/MVTec_AD/{}/train/'.format(NORMAL_NUM)
+-        test_root = '/home/user/Documents/Public_Dataset/MVTec_AD/{}/test/'.format(NORMAL_NUM)
+-        gt_root = '/home/user/Documents/Public_Dataset/MVTec_AD/{}/ground_truth/'.format(NORMAL_NUM)
++        train_path = '/home/test/data/mvtec/{}/train/'.format(NORMAL_NUM)
++        test_root = '/home/test/data/mvtec/{}/test/'.format(NORMAL_NUM)
++        gt_root = '/home/test/data/mvtec/{}/ground_truth/'.format(NORMAL_NUM)
+ 
+         # current_ckpt = "23999"
+         Experiment_name = 'No.{}_p32_IGD'.format(str(NORMAL_NUM), sig_f, rec_f, svd_f)

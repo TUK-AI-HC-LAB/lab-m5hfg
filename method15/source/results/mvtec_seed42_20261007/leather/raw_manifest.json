@@ -1,0 +1,9 @@
+{
+  "path": "/home/test/acr_results/mvtec_seed42_20261007/leather_predictions.npz",
+  "sha256": "abbe13c95694054bdf0e9a4a791fe4dc71dd625f744bcc1f2dde367172a1875f",
+  "shape": [
+    124,
+    224,
+    224
+  ]
+}

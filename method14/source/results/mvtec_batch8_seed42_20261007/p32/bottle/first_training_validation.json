@@ -1,0 +1,8 @@
+{
+  "iteration": 0,
+  "training_step_completed": true,
+  "validation_auroc": 0.7037037037037037,
+  "device": "cuda:0",
+  "accelerated": true,
+  "finite_gradients_checked": true
+}

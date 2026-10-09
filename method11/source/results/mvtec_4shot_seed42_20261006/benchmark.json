@@ -1,0 +1,11 @@
+{
+  "n_images": 1725,
+  "mean_ms": 437.15937145797164,
+  "mean_ms_excluding_first": 437.0752216131097,
+  "peak_allocated_mb": 3788.544921875,
+  "peak_reserved_mb": 4036.0,
+  "timing_scope": "H2D and scoring plus local feature capture and disk-cache writes; ancillary only",
+  "instrumentation": "Python line trace with CUDA synchronization, one-pass no separate warm-up",
+  "previous_description_corrected": "image H2D and official scoring, excludes data loading, visualization, metrics, model/prompt/reference setup",
+  "memory_unit": "MiB"
+}

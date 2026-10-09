@@ -1,0 +1,22 @@
+[
+  {
+    "shot": 8,
+    "category": "carpet",
+    "round": 6,
+    "rscin": "w/o",
+    "n_images": 117,
+    "image_auroc": 0.987158908507223,
+    "image_f1_max": 0.9777777777777779,
+    "image_ap": 0.9960017997671093
+  },
+  {
+    "shot": 8,
+    "category": "carpet",
+    "round": 6,
+    "rscin": "w",
+    "n_images": 117,
+    "image_auroc": 0.9975922953451043,
+    "image_f1_max": 0.9944134078212291,
+    "image_ap": 0.9992292408060273
+  }
+]

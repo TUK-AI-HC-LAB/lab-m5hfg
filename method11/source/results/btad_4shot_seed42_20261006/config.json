@@ -1,0 +1,25 @@
+{
+  "data_path": "/home/test/data/btad_original/BTech_Dataset_transformed",
+  "save_path": "/home/test/aprilgan_results/btad_4shot_seed42_20261006/official",
+  "checkpoint_path": "/home/test/VAND-APRIL-GAN/exps/pretrained/visa_pretrained.pth",
+  "config_path": "/home/test/VAND-APRIL-GAN/open_clip/model_configs/ViT-L-14-336.json",
+  "dataset": "visa",
+  "model": "ViT-L-14-336",
+  "pretrained": "openai",
+  "features_list": [
+    6,
+    12,
+    18,
+    24
+  ],
+  "few_shot_features": [
+    6,
+    12,
+    18,
+    24
+  ],
+  "image_size": 518,
+  "mode": "few_shot",
+  "k_shot": 4,
+  "seed": 42
+}

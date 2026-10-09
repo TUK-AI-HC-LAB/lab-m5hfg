@@ -1,0 +1,22 @@
+[
+  {
+    "shot": 8,
+    "category": "screw",
+    "round": 2,
+    "rscin": "w/o",
+    "n_images": 160,
+    "image_auroc": 0.6659151465464235,
+    "image_f1_max": 0.8624535315985129,
+    "image_ap": 0.8574073695477208
+  },
+  {
+    "shot": 8,
+    "category": "screw",
+    "round": 2,
+    "rscin": "w",
+    "n_images": 160,
+    "image_auroc": 0.667144906743185,
+    "image_f1_max": 0.8656716417910447,
+    "image_ap": 0.8593267365772398
+  }
+]

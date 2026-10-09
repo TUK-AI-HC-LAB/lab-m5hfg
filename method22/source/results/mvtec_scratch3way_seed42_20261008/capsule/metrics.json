@@ -1,0 +1,8 @@
+{
+  "dataset": "mvtec",
+  "category": "capsule",
+  "n_train": 219,
+  "n_images": 132,
+  "image_auroc": 0.9569206222576785,
+  "pixel_auroc": 0.947726515995565
+}

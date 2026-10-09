@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "gpu": "NVIDIA GeForce RTX 5080",
+  "batch_size": 64,
+  "loss": 4.219106674194336,
+  "losses": [
+    2.1349446773529053,
+    2.0829179286956787,
+    0.00024113673134706914,
+    0.0010026679374277592
+  ],
+  "finite_gradients": true,
+  "allocated_mib": 806.0361328125
+}

@@ -1,0 +1,16 @@
+{
+  "dataset": "mvtec",
+  "shot": 2,
+  "category": "wood",
+  "round": 9,
+  "n_images": 79,
+  "image_auroc": 0.999122807017544,
+  "image_f1_max": 0.9917355371900827,
+  "image_ap": 0.9997267759562843,
+  "pixel_auroc": 0.963411041946043,
+  "pixel_f1_max": 0.5435478562666427,
+  "pixel_ap": 0.5589118764715315,
+  "aupro": 0.9061863074711701,
+  "evaluation_seconds": 4.517047517999345,
+  "gpu_allocated_mib": 3808.1513671875
+}

@@ -1,0 +1,2126 @@
+{
+  "status": "passed",
+  "n_conditions": 2,
+  "n_categories": 15,
+  "n_rounds": 300,
+  "native_train_prediction_methods": true,
+  "cache_comparison": {
+    "status": "passed",
+    "n_images": 6,
+    "category": "bottle",
+    "shot": 4,
+    "round": 0,
+    "max_abs_image_score": 0.0,
+    "max_abs_anomaly_map": 0.0,
+    "all_test_images_bitwise_verified": false,
+    "rtol": 1e-05,
+    "atol": 1e-05,
+    "feature_cache_sha256": "6b2ef2dae179c84f1231ca987b3ecdbeb06185246a2d3303ac5f87f2e397ec8d",
+    "bank_sha256": "6e35766fd06361599bd5f821640934664d1aa0fbf72780dca22676d4e9c29b0e"
+  },
+  "image_metrics_recomputed_all_rounds": true,
+  "pixel_metrics_recomputed_round0": true,
+  "aupro_verification": "source SHA and range; not independently recomputed",
+  "audits": [
+    {
+      "shot": 4,
+      "category": "bottle",
+      "round": 0,
+      "n_images": 83,
+      "pixel_recomputed": true
+    },
+    {
+      "shot": 4,
+      "category": "bottle",
+      "round": 1,
+      "n_images": 83,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "bottle",
+      "round": 2,
+      "n_images": 83,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "bottle",
+      "round": 3,
+      "n_images": 83,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "bottle",
+      "round": 4,
+      "n_images": 83,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "bottle",
+      "round": 5,
+      "n_images": 83,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "bottle",
+      "round": 6,
+      "n_images": 83,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "bottle",
+      "round": 7,
+      "n_images": 83,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "bottle",
+      "round": 8,
+      "n_images": 83,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "bottle",
+      "round": 9,
+      "n_images": 83,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "bottle",
+      "round": 0,
+      "n_images": 83,
+      "pixel_recomputed": true
+    },
+    {
+      "shot": 8,
+      "category": "bottle",
+      "round": 1,
+      "n_images": 83,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "bottle",
+      "round": 2,
+      "n_images": 83,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "bottle",
+      "round": 3,
+      "n_images": 83,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "bottle",
+      "round": 4,
+      "n_images": 83,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "bottle",
+      "round": 5,
+      "n_images": 83,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "bottle",
+      "round": 6,
+      "n_images": 83,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "bottle",
+      "round": 7,
+      "n_images": 83,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "bottle",
+      "round": 8,
+      "n_images": 83,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "bottle",
+      "round": 9,
+      "n_images": 83,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "cable",
+      "round": 0,
+      "n_images": 150,
+      "pixel_recomputed": true
+    },
+    {
+      "shot": 4,
+      "category": "cable",
+      "round": 1,
+      "n_images": 150,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "cable",
+      "round": 2,
+      "n_images": 150,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "cable",
+      "round": 3,
+      "n_images": 150,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "cable",
+      "round": 4,
+      "n_images": 150,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "cable",
+      "round": 5,
+      "n_images": 150,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "cable",
+      "round": 6,
+      "n_images": 150,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "cable",
+      "round": 7,
+      "n_images": 150,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "cable",
+      "round": 8,
+      "n_images": 150,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "cable",
+      "round": 9,
+      "n_images": 150,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "cable",
+      "round": 0,
+      "n_images": 150,
+      "pixel_recomputed": true
+    },
+    {
+      "shot": 8,
+      "category": "cable",
+      "round": 1,
+      "n_images": 150,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "cable",
+      "round": 2,
+      "n_images": 150,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "cable",
+      "round": 3,
+      "n_images": 150,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "cable",
+      "round": 4,
+      "n_images": 150,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "cable",
+      "round": 5,
+      "n_images": 150,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "cable",
+      "round": 6,
+      "n_images": 150,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "cable",
+      "round": 7,
+      "n_images": 150,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "cable",
+      "round": 8,
+      "n_images": 150,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "cable",
+      "round": 9,
+      "n_images": 150,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "capsule",
+      "round": 0,
+      "n_images": 132,
+      "pixel_recomputed": true
+    },
+    {
+      "shot": 4,
+      "category": "capsule",
+      "round": 1,
+      "n_images": 132,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "capsule",
+      "round": 2,
+      "n_images": 132,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "capsule",
+      "round": 3,
+      "n_images": 132,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "capsule",
+      "round": 4,
+      "n_images": 132,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "capsule",
+      "round": 5,
+      "n_images": 132,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "capsule",
+      "round": 6,
+      "n_images": 132,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "capsule",
+      "round": 7,
+      "n_images": 132,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "capsule",
+      "round": 8,
+      "n_images": 132,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "capsule",
+      "round": 9,
+      "n_images": 132,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "capsule",
+      "round": 0,
+      "n_images": 132,
+      "pixel_recomputed": true
+    },
+    {
+      "shot": 8,
+      "category": "capsule",
+      "round": 1,
+      "n_images": 132,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "capsule",
+      "round": 2,
+      "n_images": 132,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "capsule",
+      "round": 3,
+      "n_images": 132,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "capsule",
+      "round": 4,
+      "n_images": 132,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "capsule",
+      "round": 5,
+      "n_images": 132,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "capsule",
+      "round": 6,
+      "n_images": 132,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "capsule",
+      "round": 7,
+      "n_images": 132,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "capsule",
+      "round": 8,
+      "n_images": 132,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "capsule",
+      "round": 9,
+      "n_images": 132,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "carpet",
+      "round": 0,
+      "n_images": 117,
+      "pixel_recomputed": true
+    },
+    {
+      "shot": 4,
+      "category": "carpet",
+      "round": 1,
+      "n_images": 117,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "carpet",
+      "round": 2,
+      "n_images": 117,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "carpet",
+      "round": 3,
+      "n_images": 117,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "carpet",
+      "round": 4,
+      "n_images": 117,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "carpet",
+      "round": 5,
+      "n_images": 117,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "carpet",
+      "round": 6,
+      "n_images": 117,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "carpet",
+      "round": 7,
+      "n_images": 117,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "carpet",
+      "round": 8,
+      "n_images": 117,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "carpet",
+      "round": 9,
+      "n_images": 117,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "carpet",
+      "round": 0,
+      "n_images": 117,
+      "pixel_recomputed": true
+    },
+    {
+      "shot": 8,
+      "category": "carpet",
+      "round": 1,
+      "n_images": 117,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "carpet",
+      "round": 2,
+      "n_images": 117,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "carpet",
+      "round": 3,
+      "n_images": 117,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "carpet",
+      "round": 4,
+      "n_images": 117,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "carpet",
+      "round": 5,
+      "n_images": 117,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "carpet",
+      "round": 6,
+      "n_images": 117,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "carpet",
+      "round": 7,
+      "n_images": 117,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "carpet",
+      "round": 8,
+      "n_images": 117,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "carpet",
+      "round": 9,
+      "n_images": 117,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "grid",
+      "round": 0,
+      "n_images": 78,
+      "pixel_recomputed": true
+    },
+    {
+      "shot": 4,
+      "category": "grid",
+      "round": 1,
+      "n_images": 78,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "grid",
+      "round": 2,
+      "n_images": 78,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "grid",
+      "round": 3,
+      "n_images": 78,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "grid",
+      "round": 4,
+      "n_images": 78,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "grid",
+      "round": 5,
+      "n_images": 78,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "grid",
+      "round": 6,
+      "n_images": 78,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "grid",
+      "round": 7,
+      "n_images": 78,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "grid",
+      "round": 8,
+      "n_images": 78,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "grid",
+      "round": 9,
+      "n_images": 78,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "grid",
+      "round": 0,
+      "n_images": 78,
+      "pixel_recomputed": true
+    },
+    {
+      "shot": 8,
+      "category": "grid",
+      "round": 1,
+      "n_images": 78,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "grid",
+      "round": 2,
+      "n_images": 78,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "grid",
+      "round": 3,
+      "n_images": 78,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "grid",
+      "round": 4,
+      "n_images": 78,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "grid",
+      "round": 5,
+      "n_images": 78,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "grid",
+      "round": 6,
+      "n_images": 78,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "grid",
+      "round": 7,
+      "n_images": 78,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "grid",
+      "round": 8,
+      "n_images": 78,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "grid",
+      "round": 9,
+      "n_images": 78,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "hazelnut",
+      "round": 0,
+      "n_images": 110,
+      "pixel_recomputed": true
+    },
+    {
+      "shot": 4,
+      "category": "hazelnut",
+      "round": 1,
+      "n_images": 110,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "hazelnut",
+      "round": 2,
+      "n_images": 110,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "hazelnut",
+      "round": 3,
+      "n_images": 110,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "hazelnut",
+      "round": 4,
+      "n_images": 110,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "hazelnut",
+      "round": 5,
+      "n_images": 110,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "hazelnut",
+      "round": 6,
+      "n_images": 110,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "hazelnut",
+      "round": 7,
+      "n_images": 110,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "hazelnut",
+      "round": 8,
+      "n_images": 110,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "hazelnut",
+      "round": 9,
+      "n_images": 110,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "hazelnut",
+      "round": 0,
+      "n_images": 110,
+      "pixel_recomputed": true
+    },
+    {
+      "shot": 8,
+      "category": "hazelnut",
+      "round": 1,
+      "n_images": 110,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "hazelnut",
+      "round": 2,
+      "n_images": 110,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "hazelnut",
+      "round": 3,
+      "n_images": 110,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "hazelnut",
+      "round": 4,
+      "n_images": 110,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "hazelnut",
+      "round": 5,
+      "n_images": 110,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "hazelnut",
+      "round": 6,
+      "n_images": 110,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "hazelnut",
+      "round": 7,
+      "n_images": 110,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "hazelnut",
+      "round": 8,
+      "n_images": 110,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "hazelnut",
+      "round": 9,
+      "n_images": 110,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "leather",
+      "round": 0,
+      "n_images": 124,
+      "pixel_recomputed": true
+    },
+    {
+      "shot": 4,
+      "category": "leather",
+      "round": 1,
+      "n_images": 124,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "leather",
+      "round": 2,
+      "n_images": 124,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "leather",
+      "round": 3,
+      "n_images": 124,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "leather",
+      "round": 4,
+      "n_images": 124,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "leather",
+      "round": 5,
+      "n_images": 124,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "leather",
+      "round": 6,
+      "n_images": 124,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "leather",
+      "round": 7,
+      "n_images": 124,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "leather",
+      "round": 8,
+      "n_images": 124,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "leather",
+      "round": 9,
+      "n_images": 124,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "leather",
+      "round": 0,
+      "n_images": 124,
+      "pixel_recomputed": true
+    },
+    {
+      "shot": 8,
+      "category": "leather",
+      "round": 1,
+      "n_images": 124,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "leather",
+      "round": 2,
+      "n_images": 124,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "leather",
+      "round": 3,
+      "n_images": 124,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "leather",
+      "round": 4,
+      "n_images": 124,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "leather",
+      "round": 5,
+      "n_images": 124,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "leather",
+      "round": 6,
+      "n_images": 124,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "leather",
+      "round": 7,
+      "n_images": 124,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "leather",
+      "round": 8,
+      "n_images": 124,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "leather",
+      "round": 9,
+      "n_images": 124,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "metal_nut",
+      "round": 0,
+      "n_images": 115,
+      "pixel_recomputed": true
+    },
+    {
+      "shot": 4,
+      "category": "metal_nut",
+      "round": 1,
+      "n_images": 115,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "metal_nut",
+      "round": 2,
+      "n_images": 115,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "metal_nut",
+      "round": 3,
+      "n_images": 115,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "metal_nut",
+      "round": 4,
+      "n_images": 115,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "metal_nut",
+      "round": 5,
+      "n_images": 115,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "metal_nut",
+      "round": 6,
+      "n_images": 115,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "metal_nut",
+      "round": 7,
+      "n_images": 115,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "metal_nut",
+      "round": 8,
+      "n_images": 115,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "metal_nut",
+      "round": 9,
+      "n_images": 115,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "metal_nut",
+      "round": 0,
+      "n_images": 115,
+      "pixel_recomputed": true
+    },
+    {
+      "shot": 8,
+      "category": "metal_nut",
+      "round": 1,
+      "n_images": 115,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "metal_nut",
+      "round": 2,
+      "n_images": 115,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "metal_nut",
+      "round": 3,
+      "n_images": 115,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "metal_nut",
+      "round": 4,
+      "n_images": 115,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "metal_nut",
+      "round": 5,
+      "n_images": 115,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "metal_nut",
+      "round": 6,
+      "n_images": 115,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "metal_nut",
+      "round": 7,
+      "n_images": 115,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "metal_nut",
+      "round": 8,
+      "n_images": 115,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "metal_nut",
+      "round": 9,
+      "n_images": 115,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "pill",
+      "round": 0,
+      "n_images": 167,
+      "pixel_recomputed": true
+    },
+    {
+      "shot": 4,
+      "category": "pill",
+      "round": 1,
+      "n_images": 167,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "pill",
+      "round": 2,
+      "n_images": 167,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "pill",
+      "round": 3,
+      "n_images": 167,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "pill",
+      "round": 4,
+      "n_images": 167,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "pill",
+      "round": 5,
+      "n_images": 167,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "pill",
+      "round": 6,
+      "n_images": 167,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "pill",
+      "round": 7,
+      "n_images": 167,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "pill",
+      "round": 8,
+      "n_images": 167,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "pill",
+      "round": 9,
+      "n_images": 167,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "pill",
+      "round": 0,
+      "n_images": 167,
+      "pixel_recomputed": true
+    },
+    {
+      "shot": 8,
+      "category": "pill",
+      "round": 1,
+      "n_images": 167,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "pill",
+      "round": 2,
+      "n_images": 167,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "pill",
+      "round": 3,
+      "n_images": 167,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "pill",
+      "round": 4,
+      "n_images": 167,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "pill",
+      "round": 5,
+      "n_images": 167,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "pill",
+      "round": 6,
+      "n_images": 167,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "pill",
+      "round": 7,
+      "n_images": 167,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "pill",
+      "round": 8,
+      "n_images": 167,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "pill",
+      "round": 9,
+      "n_images": 167,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "screw",
+      "round": 0,
+      "n_images": 160,
+      "pixel_recomputed": true
+    },
+    {
+      "shot": 4,
+      "category": "screw",
+      "round": 1,
+      "n_images": 160,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "screw",
+      "round": 2,
+      "n_images": 160,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "screw",
+      "round": 3,
+      "n_images": 160,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "screw",
+      "round": 4,
+      "n_images": 160,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "screw",
+      "round": 5,
+      "n_images": 160,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "screw",
+      "round": 6,
+      "n_images": 160,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "screw",
+      "round": 7,
+      "n_images": 160,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "screw",
+      "round": 8,
+      "n_images": 160,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "screw",
+      "round": 9,
+      "n_images": 160,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "screw",
+      "round": 0,
+      "n_images": 160,
+      "pixel_recomputed": true
+    },
+    {
+      "shot": 8,
+      "category": "screw",
+      "round": 1,
+      "n_images": 160,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "screw",
+      "round": 2,
+      "n_images": 160,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "screw",
+      "round": 3,
+      "n_images": 160,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "screw",
+      "round": 4,
+      "n_images": 160,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "screw",
+      "round": 5,
+      "n_images": 160,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "screw",
+      "round": 6,
+      "n_images": 160,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "screw",
+      "round": 7,
+      "n_images": 160,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "screw",
+      "round": 8,
+      "n_images": 160,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "screw",
+      "round": 9,
+      "n_images": 160,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "tile",
+      "round": 0,
+      "n_images": 117,
+      "pixel_recomputed": true
+    },
+    {
+      "shot": 4,
+      "category": "tile",
+      "round": 1,
+      "n_images": 117,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "tile",
+      "round": 2,
+      "n_images": 117,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "tile",
+      "round": 3,
+      "n_images": 117,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "tile",
+      "round": 4,
+      "n_images": 117,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "tile",
+      "round": 5,
+      "n_images": 117,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "tile",
+      "round": 6,
+      "n_images": 117,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "tile",
+      "round": 7,
+      "n_images": 117,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "tile",
+      "round": 8,
+      "n_images": 117,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "tile",
+      "round": 9,
+      "n_images": 117,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "tile",
+      "round": 0,
+      "n_images": 117,
+      "pixel_recomputed": true
+    },
+    {
+      "shot": 8,
+      "category": "tile",
+      "round": 1,
+      "n_images": 117,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "tile",
+      "round": 2,
+      "n_images": 117,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "tile",
+      "round": 3,
+      "n_images": 117,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "tile",
+      "round": 4,
+      "n_images": 117,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "tile",
+      "round": 5,
+      "n_images": 117,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "tile",
+      "round": 6,
+      "n_images": 117,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "tile",
+      "round": 7,
+      "n_images": 117,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "tile",
+      "round": 8,
+      "n_images": 117,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "tile",
+      "round": 9,
+      "n_images": 117,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "toothbrush",
+      "round": 0,
+      "n_images": 42,
+      "pixel_recomputed": true
+    },
+    {
+      "shot": 4,
+      "category": "toothbrush",
+      "round": 1,
+      "n_images": 42,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "toothbrush",
+      "round": 2,
+      "n_images": 42,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "toothbrush",
+      "round": 3,
+      "n_images": 42,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "toothbrush",
+      "round": 4,
+      "n_images": 42,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "toothbrush",
+      "round": 5,
+      "n_images": 42,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "toothbrush",
+      "round": 6,
+      "n_images": 42,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "toothbrush",
+      "round": 7,
+      "n_images": 42,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "toothbrush",
+      "round": 8,
+      "n_images": 42,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "toothbrush",
+      "round": 9,
+      "n_images": 42,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "toothbrush",
+      "round": 0,
+      "n_images": 42,
+      "pixel_recomputed": true
+    },
+    {
+      "shot": 8,
+      "category": "toothbrush",
+      "round": 1,
+      "n_images": 42,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "toothbrush",
+      "round": 2,
+      "n_images": 42,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "toothbrush",
+      "round": 3,
+      "n_images": 42,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "toothbrush",
+      "round": 4,
+      "n_images": 42,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "toothbrush",
+      "round": 5,
+      "n_images": 42,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "toothbrush",
+      "round": 6,
+      "n_images": 42,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "toothbrush",
+      "round": 7,
+      "n_images": 42,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "toothbrush",
+      "round": 8,
+      "n_images": 42,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "toothbrush",
+      "round": 9,
+      "n_images": 42,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "transistor",
+      "round": 0,
+      "n_images": 100,
+      "pixel_recomputed": true
+    },
+    {
+      "shot": 4,
+      "category": "transistor",
+      "round": 1,
+      "n_images": 100,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "transistor",
+      "round": 2,
+      "n_images": 100,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "transistor",
+      "round": 3,
+      "n_images": 100,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "transistor",
+      "round": 4,
+      "n_images": 100,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "transistor",
+      "round": 5,
+      "n_images": 100,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "transistor",
+      "round": 6,
+      "n_images": 100,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "transistor",
+      "round": 7,
+      "n_images": 100,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "transistor",
+      "round": 8,
+      "n_images": 100,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "transistor",
+      "round": 9,
+      "n_images": 100,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "transistor",
+      "round": 0,
+      "n_images": 100,
+      "pixel_recomputed": true
+    },
+    {
+      "shot": 8,
+      "category": "transistor",
+      "round": 1,
+      "n_images": 100,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "transistor",
+      "round": 2,
+      "n_images": 100,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "transistor",
+      "round": 3,
+      "n_images": 100,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "transistor",
+      "round": 4,
+      "n_images": 100,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "transistor",
+      "round": 5,
+      "n_images": 100,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "transistor",
+      "round": 6,
+      "n_images": 100,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "transistor",
+      "round": 7,
+      "n_images": 100,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "transistor",
+      "round": 8,
+      "n_images": 100,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "transistor",
+      "round": 9,
+      "n_images": 100,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "wood",
+      "round": 0,
+      "n_images": 79,
+      "pixel_recomputed": true
+    },
+    {
+      "shot": 4,
+      "category": "wood",
+      "round": 1,
+      "n_images": 79,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "wood",
+      "round": 2,
+      "n_images": 79,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "wood",
+      "round": 3,
+      "n_images": 79,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "wood",
+      "round": 4,
+      "n_images": 79,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "wood",
+      "round": 5,
+      "n_images": 79,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "wood",
+      "round": 6,
+      "n_images": 79,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "wood",
+      "round": 7,
+      "n_images": 79,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "wood",
+      "round": 8,
+      "n_images": 79,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "wood",
+      "round": 9,
+      "n_images": 79,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "wood",
+      "round": 0,
+      "n_images": 79,
+      "pixel_recomputed": true
+    },
+    {
+      "shot": 8,
+      "category": "wood",
+      "round": 1,
+      "n_images": 79,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "wood",
+      "round": 2,
+      "n_images": 79,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "wood",
+      "round": 3,
+      "n_images": 79,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "wood",
+      "round": 4,
+      "n_images": 79,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "wood",
+      "round": 5,
+      "n_images": 79,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "wood",
+      "round": 6,
+      "n_images": 79,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "wood",
+      "round": 7,
+      "n_images": 79,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "wood",
+      "round": 8,
+      "n_images": 79,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "wood",
+      "round": 9,
+      "n_images": 79,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "zipper",
+      "round": 0,
+      "n_images": 151,
+      "pixel_recomputed": true
+    },
+    {
+      "shot": 4,
+      "category": "zipper",
+      "round": 1,
+      "n_images": 151,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "zipper",
+      "round": 2,
+      "n_images": 151,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "zipper",
+      "round": 3,
+      "n_images": 151,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "zipper",
+      "round": 4,
+      "n_images": 151,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "zipper",
+      "round": 5,
+      "n_images": 151,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "zipper",
+      "round": 6,
+      "n_images": 151,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "zipper",
+      "round": 7,
+      "n_images": 151,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "zipper",
+      "round": 8,
+      "n_images": 151,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "zipper",
+      "round": 9,
+      "n_images": 151,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "zipper",
+      "round": 0,
+      "n_images": 151,
+      "pixel_recomputed": true
+    },
+    {
+      "shot": 8,
+      "category": "zipper",
+      "round": 1,
+      "n_images": 151,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "zipper",
+      "round": 2,
+      "n_images": 151,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "zipper",
+      "round": 3,
+      "n_images": 151,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "zipper",
+      "round": 4,
+      "n_images": 151,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "zipper",
+      "round": 5,
+      "n_images": 151,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "zipper",
+      "round": 6,
+      "n_images": 151,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "zipper",
+      "round": 7,
+      "n_images": 151,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "zipper",
+      "round": 8,
+      "n_images": 151,
+      "pixel_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "zipper",
+      "round": 9,
+      "n_images": 151,
+      "pixel_recomputed": false
+    }
+  ]
+}

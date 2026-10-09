@@ -1,0 +1,58 @@
+{
+  "status": "stopped_for_accelerated_restart",
+  "official_repo": "https://github.com/tianyu0207/IGD",
+  "commit": "1ce995214ef8adf09f6c5d3dc01ce6042b472a34",
+  "seed": 42,
+  "seed_definition": "local reproducibility choice; official job has no seed flag",
+  "gpu": "NVIDIA GeForce RTX 5080",
+  "cuda": "12.8",
+  "python": "3.12.13 | packaged by conda-forge | (main, Mar  5 2026, 16:50:00) [GCC 14.3.0]",
+  "packages": {
+    "torch": "2.11.0+cu128",
+    "torchvision": "0.26.0+cu128",
+    "numpy": "2.5.3",
+    "Pillow": "12.3.0",
+    "pytorch-msssim": "0.2.1",
+    "tensorboardX": "2.6.5"
+  },
+  "training_executed": true,
+  "scales": [
+    32,
+    256
+  ],
+  "sample_rate": 1.0,
+  "nominal_epochs": 256,
+  "iterations": "int(train_size/BATCH_SIZE*MAX_EPOCH), official train loops",
+  "batch_size": {
+    "32": 2,
+    "256": 16
+  },
+  "train_patch_stride": 16,
+  "precision": "FP32; no AMP",
+  "tf32": false,
+  "checkpoint_selection": "final iteration; no selection by test AUROC",
+  "pretrained_encoder_sha256": "704b0213d38faa3ee3635749ff90f639d5dd20d6d3ecba97c8f2904d6cac7167",
+  "runtime_source_manifest": "/mnt/c/Users/test/Desktop/Codex/lab-m5hfg/method14/source/results/mvtec_full_seed42_20261007/runtime_sources.json",
+  "compatibility_patch": "/mnt/c/Users/test/Desktop/Codex/lab-m5hfg/method14/source/results/mvtec_full_seed42_20261007/compatibility.patch",
+  "compatibility": [
+    "dataset paths redirected",
+    "iterator next method replaced by next()",
+    "MS-SSIM size guard uses actual scale count; computations unchanged",
+    "Adam beta 0 converted to float 0.0",
+    "recording/tqdm display disabled; full validation preserved"
+  ],
+  "original_checkout_edits": false,
+  "raw_output": "/home/test/igd_results/mvtec_full_seed42_20261007",
+  "eta_calculation": false,
+  "wrapper_sha256": "4b876f56d22a7c515490bdbc73cd5ed138d7a0309feb4e3091220daa80e50891",
+  "current_scale": 32,
+  "current_category": "hazelnut",
+  "interrupted_runs": [
+    {
+      "category": "hazelnut",
+      "scale": 32,
+      "archived_checkpoint": "/home/test/igd_results/mvtec_full_seed42_20261007/checkpoints/p32/hazelnut/recovery_interrupted_5865.pt",
+      "action": "restart category; old checkpoint lacks discriminator state"
+    }
+  ]
+}

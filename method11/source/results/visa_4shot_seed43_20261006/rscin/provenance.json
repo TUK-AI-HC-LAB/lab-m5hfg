@@ -1,0 +1,16 @@
+{
+  "source_tag": "visa_4shot_seed43_20261006",
+  "alignment_tag": "visa_4shot_seed43_20261006",
+  "feature_tag": "rscin_shared_features_visa_20261006",
+  "official_source": "/home/test/MuSc/models/RsCIN_features/RsCIN.py",
+  "official_source_sha256": "c5df4811b385971a15bb2db4473adba9755a15c8acf1e5c802b4ed955e5081c5",
+  "windows": [
+    1,
+    8,
+    9
+  ],
+  "normalized_feature_dtype": "float16; official MuSc in-place CUDA AMP normalization",
+  "shared_feature_source": "/mnt/c/Users/test/Desktop/Codex/lab-m5hfg/method11/source/results/rscin_shared_features_visa_20261006",
+  "paper_features_used": false,
+  "status": "completed"
+}

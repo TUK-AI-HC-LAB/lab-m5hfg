@@ -1,0 +1,338 @@
+[
+  {
+    "img_path": "candle/Data/Images/Normal/0407.JPG",
+    "mask_path": "",
+    "cls_name": "candle",
+    "specie_name": "",
+    "anomaly": 0
+  },
+  {
+    "img_path": "candle/Data/Images/Normal/0226.JPG",
+    "mask_path": "",
+    "cls_name": "candle",
+    "specie_name": "",
+    "anomaly": 0
+  },
+  {
+    "img_path": "candle/Data/Images/Normal/0125.JPG",
+    "mask_path": "",
+    "cls_name": "candle",
+    "specie_name": "",
+    "anomaly": 0
+  },
+  {
+    "img_path": "candle/Data/Images/Normal/0371.JPG",
+    "mask_path": "",
+    "cls_name": "candle",
+    "specie_name": "",
+    "anomaly": 0
+  },
+  {
+    "img_path": "capsules/Data/Images/Normal/199.JPG",
+    "mask_path": "",
+    "cls_name": "capsules",
+    "specie_name": "",
+    "anomaly": 0
+  },
+  {
+    "img_path": "capsules/Data/Images/Normal/550.JPG",
+    "mask_path": "",
+    "cls_name": "capsules",
+    "specie_name": "",
+    "anomaly": 0
+  },
+  {
+    "img_path": "capsules/Data/Images/Normal/289.JPG",
+    "mask_path": "",
+    "cls_name": "capsules",
+    "specie_name": "",
+    "anomaly": 0
+  },
+  {
+    "img_path": "capsules/Data/Images/Normal/185.JPG",
+    "mask_path": "",
+    "cls_name": "capsules",
+    "specie_name": "",
+    "anomaly": 0
+  },
+  {
+    "img_path": "cashew/Data/Images/Normal/349.JPG",
+    "mask_path": "",
+    "cls_name": "cashew",
+    "specie_name": "",
+    "anomaly": 0
+  },
+  {
+    "img_path": "cashew/Data/Images/Normal/464.JPG",
+    "mask_path": "",
+    "cls_name": "cashew",
+    "specie_name": "",
+    "anomaly": 0
+  },
+  {
+    "img_path": "cashew/Data/Images/Normal/476.JPG",
+    "mask_path": "",
+    "cls_name": "cashew",
+    "specie_name": "",
+    "anomaly": 0
+  },
+  {
+    "img_path": "cashew/Data/Images/Normal/445.JPG",
+    "mask_path": "",
+    "cls_name": "cashew",
+    "specie_name": "",
+    "anomaly": 0
+  },
+  {
+    "img_path": "chewinggum/Data/Images/Normal/221.JPG",
+    "mask_path": "",
+    "cls_name": "chewinggum",
+    "specie_name": "",
+    "anomaly": 0
+  },
+  {
+    "img_path": "chewinggum/Data/Images/Normal/095.JPG",
+    "mask_path": "",
+    "cls_name": "chewinggum",
+    "specie_name": "",
+    "anomaly": 0
+  },
+  {
+    "img_path": "chewinggum/Data/Images/Normal/464.JPG",
+    "mask_path": "",
+    "cls_name": "chewinggum",
+    "specie_name": "",
+    "anomaly": 0
+  },
+  {
+    "img_path": "chewinggum/Data/Images/Normal/429.JPG",
+    "mask_path": "",
+    "cls_name": "chewinggum",
+    "specie_name": "",
+    "anomaly": 0
+  },
+  {
+    "img_path": "fryum/Data/Images/Normal/403.JPG",
+    "mask_path": "",
+    "cls_name": "fryum",
+    "specie_name": "",
+    "anomaly": 0
+  },
+  {
+    "img_path": "fryum/Data/Images/Normal/109.JPG",
+    "mask_path": "",
+    "cls_name": "fryum",
+    "specie_name": "",
+    "anomaly": 0
+  },
+  {
+    "img_path": "fryum/Data/Images/Normal/129.JPG",
+    "mask_path": "",
+    "cls_name": "fryum",
+    "specie_name": "",
+    "anomaly": 0
+  },
+  {
+    "img_path": "fryum/Data/Images/Normal/310.JPG",
+    "mask_path": "",
+    "cls_name": "fryum",
+    "specie_name": "",
+    "anomaly": 0
+  },
+  {
+    "img_path": "macaroni1/Data/Images/Normal/0006.JPG",
+    "mask_path": "",
+    "cls_name": "macaroni1",
+    "specie_name": "",
+    "anomaly": 0
+  },
+  {
+    "img_path": "macaroni1/Data/Images/Normal/0324.JPG",
+    "mask_path": "",
+    "cls_name": "macaroni1",
+    "specie_name": "",
+    "anomaly": 0
+  },
+  {
+    "img_path": "macaroni1/Data/Images/Normal/0506.JPG",
+    "mask_path": "",
+    "cls_name": "macaroni1",
+    "specie_name": "",
+    "anomaly": 0
+  },
+  {
+    "img_path": "macaroni1/Data/Images/Normal/0522.JPG",
+    "mask_path": "",
+    "cls_name": "macaroni1",
+    "specie_name": "",
+    "anomaly": 0
+  },
+  {
+    "img_path": "macaroni2/Data/Images/Normal/0167.JPG",
+    "mask_path": "",
+    "cls_name": "macaroni2",
+    "specie_name": "",
+    "anomaly": 0
+  },
+  {
+    "img_path": "macaroni2/Data/Images/Normal/0984.JPG",
+    "mask_path": "",
+    "cls_name": "macaroni2",
+    "specie_name": "",
+    "anomaly": 0
+  },
+  {
+    "img_path": "macaroni2/Data/Images/Normal/0293.JPG",
+    "mask_path": "",
+    "cls_name": "macaroni2",
+    "specie_name": "",
+    "anomaly": 0
+  },
+  {
+    "img_path": "macaroni2/Data/Images/Normal/0045.JPG",
+    "mask_path": "",
+    "cls_name": "macaroni2",
+    "specie_name": "",
+    "anomaly": 0
+  },
+  {
+    "img_path": "pcb1/Data/Images/Normal/0712.JPG",
+    "mask_path": "",
+    "cls_name": "pcb1",
+    "specie_name": "",
+    "anomaly": 0
+  },
+  {
+    "img_path": "pcb1/Data/Images/Normal/0296.JPG",
+    "mask_path": "",
+    "cls_name": "pcb1",
+    "specie_name": "",
+    "anomaly": 0
+  },
+  {
+    "img_path": "pcb1/Data/Images/Normal/0595.JPG",
+    "mask_path": "",
+    "cls_name": "pcb1",
+    "specie_name": "",
+    "anomaly": 0
+  },
+  {
+    "img_path": "pcb1/Data/Images/Normal/0589.JPG",
+    "mask_path": "",
+    "cls_name": "pcb1",
+    "specie_name": "",
+    "anomaly": 0
+  },
+  {
+    "img_path": "pcb2/Data/Images/Normal/0736.JPG",
+    "mask_path": "",
+    "cls_name": "pcb2",
+    "specie_name": "",
+    "anomaly": 0
+  },
+  {
+    "img_path": "pcb2/Data/Images/Normal/0721.JPG",
+    "mask_path": "",
+    "cls_name": "pcb2",
+    "specie_name": "",
+    "anomaly": 0
+  },
+  {
+    "img_path": "pcb2/Data/Images/Normal/0361.JPG",
+    "mask_path": "",
+    "cls_name": "pcb2",
+    "specie_name": "",
+    "anomaly": 0
+  },
+  {
+    "img_path": "pcb2/Data/Images/Normal/0853.JPG",
+    "mask_path": "",
+    "cls_name": "pcb2",
+    "specie_name": "",
+    "anomaly": 0
+  },
+  {
+    "img_path": "pcb3/Data/Images/Normal/0280.JPG",
+    "mask_path": "",
+    "cls_name": "pcb3",
+    "specie_name": "",
+    "anomaly": 0
+  },
+  {
+    "img_path": "pcb3/Data/Images/Normal/0915.JPG",
+    "mask_path": "",
+    "cls_name": "pcb3",
+    "specie_name": "",
+    "anomaly": 0
+  },
+  {
+    "img_path": "pcb3/Data/Images/Normal/0275.JPG",
+    "mask_path": "",
+    "cls_name": "pcb3",
+    "specie_name": "",
+    "anomaly": 0
+  },
+  {
+    "img_path": "pcb3/Data/Images/Normal/0729.JPG",
+    "mask_path": "",
+    "cls_name": "pcb3",
+    "specie_name": "",
+    "anomaly": 0
+  },
+  {
+    "img_path": "pcb4/Data/Images/Normal/0836.JPG",
+    "mask_path": "",
+    "cls_name": "pcb4",
+    "specie_name": "",
+    "anomaly": 0
+  },
+  {
+    "img_path": "pcb4/Data/Images/Normal/0275.JPG",
+    "mask_path": "",
+    "cls_name": "pcb4",
+    "specie_name": "",
+    "anomaly": 0
+  },
+  {
+    "img_path": "pcb4/Data/Images/Normal/0868.JPG",
+    "mask_path": "",
+    "cls_name": "pcb4",
+    "specie_name": "",
+    "anomaly": 0
+  },
+  {
+    "img_path": "pcb4/Data/Images/Normal/0383.JPG",
+    "mask_path": "",
+    "cls_name": "pcb4",
+    "specie_name": "",
+    "anomaly": 0
+  },
+  {
+    "img_path": "pipe_fryum/Data/Images/Normal/056.JPG",
+    "mask_path": "",
+    "cls_name": "pipe_fryum",
+    "specie_name": "",
+    "anomaly": 0
+  },
+  {
+    "img_path": "pipe_fryum/Data/Images/Normal/278.JPG",
+    "mask_path": "",
+    "cls_name": "pipe_fryum",
+    "specie_name": "",
+    "anomaly": 0
+  },
+  {
+    "img_path": "pipe_fryum/Data/Images/Normal/011.JPG",
+    "mask_path": "",
+    "cls_name": "pipe_fryum",
+    "specie_name": "",
+    "anomaly": 0
+  },
+  {
+    "img_path": "pipe_fryum/Data/Images/Normal/053.JPG",
+    "mask_path": "",
+    "cls_name": "pipe_fryum",
+    "specie_name": "",
+    "anomaly": 0
+  }
+]

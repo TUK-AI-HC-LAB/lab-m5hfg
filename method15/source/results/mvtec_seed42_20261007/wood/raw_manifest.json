@@ -1,0 +1,9 @@
+{
+  "path": "/home/test/acr_results/mvtec_seed42_20261007/wood_predictions.npz",
+  "sha256": "4e15638d6fb09424a0cba5fa277796c38a50e469fc54f1674390ea8b2dadfcea",
+  "shape": [
+    79,
+    224,
+    224
+  ]
+}

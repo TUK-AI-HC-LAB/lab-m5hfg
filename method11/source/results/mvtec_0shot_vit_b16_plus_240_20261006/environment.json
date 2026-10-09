@@ -1,0 +1,82 @@
+{
+  "commit": "f13b8a634e04f9fde8fa03db125b25af5695d8e1",
+  "thread_environment": {
+    "OMP_NUM_THREADS": "4",
+    "OPENBLAS_NUM_THREADS": "4",
+    "MKL_NUM_THREADS": "4"
+  },
+  "instrumentation": "captures local raw predictions and raw CLIP features; line-traced timing is ancillary, not isolated benchmark",
+  "official_repo": "https://github.com/ByChelsea/VAND-APRIL-GAN",
+  "python": "3.12.13 | packaged by conda-forge | (main, Mar  5 2026, 16:50:00) [GCC 14.3.0]",
+  "platform": "Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.43",
+  "gpu": "NVIDIA GeForce RTX 5080",
+  "cuda": "12.8",
+  "packages": {
+    "torch": "2.11.0+cu128",
+    "torchvision": "0.26.0+cu128",
+    "numpy": "2.5.3",
+    "timm": "1.0.28",
+    "scikit-learn": "1.9.0",
+    "scikit-image": "0.26.0",
+    "Pillow": "12.3.0"
+  },
+  "args": {
+    "data_path": "/home/test/data/mvtec",
+    "save_path": "/home/test/aprilgan_results/mvtec_0shot_vit_b16_plus_240_20261006/official",
+    "checkpoint_path": "/home/test/aprilgan_results/train_vit_b16_plus_240_20261006/epoch_15.pth",
+    "config_path": "/home/test/VAND-APRIL-GAN/open_clip/model_configs/ViT-B-16-plus-240.json",
+    "dataset": "mvtec",
+    "model": "ViT-B-16-plus-240",
+    "pretrained": "laion400m_e31",
+    "features_list": [
+      3,
+      6,
+      9,
+      12
+    ],
+    "few_shot_features": [
+      3,
+      6,
+      9,
+      12
+    ],
+    "image_size": 518,
+    "mode": "zero_shot",
+    "k_shot": 0,
+    "seed": 42
+  },
+  "checkpoint_training_dataset": "VisA",
+  "target_dataset": "mvtec",
+  "checkpoint_sha256": "48539aecffc926f418933378ddbc6ff02e6b23efe7bdd497b8dfe9c998683cf8",
+  "metadata_sha256": "1716f265af92686fff4f8fdca331d56f301809e87445dd6ce6f643ee5f92e180",
+  "tf32": false,
+  "target_training": false,
+  "source_edits": false,
+  "status": "completed",
+  "command": [
+    "/mnt/c/Users/test/Desktop/Codex/lab-m5hfg/method11/source/run_aprilgan_experiment.py",
+    "--dataset",
+    "mvtec",
+    "--mode",
+    "zero_shot",
+    "--seed",
+    "42",
+    "--data",
+    "/home/test/data/mvtec",
+    "--tag",
+    "mvtec_0shot_vit_b16_plus_240_20261006",
+    "--output",
+    "/home/test/aprilgan_results/mvtec_0shot_vit_b16_plus_240_20261006",
+    "--backbone",
+    "ViT-B-16-plus-240",
+    "--checkpoint",
+    "/home/test/aprilgan_results/train_vit_b16_plus_240_20261006/epoch_15.pth"
+  ],
+  "raw_output": "/home/test/aprilgan_results/mvtec_0shot_vit_b16_plus_240_20261006",
+  "wrapper_sha256": "e538befa2c196f48e0c55311106fca5b2df751fd75036245eaa6026225b663d0",
+  "wrapper_source": "/mnt/c/Users/test/Desktop/Codex/lab-m5hfg/method11/source/run_aprilgan_experiment.py",
+  "projection_checkpoint_source": "own auxiliary VisA training",
+  "wall_seconds": 857.532728696,
+  "peak_allocated_bytes": 1560424960,
+  "peak_reserved_bytes": 1786773504
+}

@@ -1,0 +1,26 @@
+{
+  "category": "macro_mean",
+  "n_categories": 15,
+  "n_images": 1725,
+  "official_image_auroc": 0.9776943881672242,
+  "common_image_auroc": 0.9701754570007324,
+  "image_delta_pp": -0.7518931166491776,
+  "official_pixel_auroc": 0.9711494733193918,
+  "common_pixel_auroc": 0.9718677918116252,
+  "pixel_delta_pp": 0.0718318492233309,
+  "equal_tolerance_pp": 0.0001,
+  "image_higher_count": 4,
+  "image_lower_count": 8,
+  "image_same_count": 3,
+  "image_largest_absolute_change": {
+    "category": "screw",
+    "delta_pp": -3.8737500366262667
+  },
+  "pixel_higher_count": 7,
+  "pixel_lower_count": 8,
+  "pixel_same_count": 0,
+  "pixel_largest_absolute_change": {
+    "category": "cable",
+    "delta_pp": 1.1674858910934338
+  }
+}

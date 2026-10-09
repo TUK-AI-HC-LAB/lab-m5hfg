@@ -1,0 +1,12 @@
+{
+  "path": "/home/test/draem_results/mvtec_public_20261007/hazelnut/raw_predictions.npz",
+  "sha256": "fca497b143cb702a62acc3943382e9872cd2c86d2d4dd2080bc188e6f0d36442",
+  "n_images": 110,
+  "map_shape": [
+    110,
+    256,
+    256
+  ],
+  "map_dtype": "float64",
+  "mask_dtype": "uint8"
+}

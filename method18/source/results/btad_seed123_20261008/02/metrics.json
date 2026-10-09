@@ -1,0 +1,8 @@
+{
+  "dataset": "btad",
+  "category": "02",
+  "n_images": 230,
+  "image_auroc": 0.7633333333333334,
+  "pixel_auroc": 0.9314031140061576,
+  "checkpoint_epoch": 400
+}

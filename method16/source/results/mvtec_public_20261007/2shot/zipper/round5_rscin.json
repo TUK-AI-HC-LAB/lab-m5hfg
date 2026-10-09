@@ -1,0 +1,22 @@
+[
+  {
+    "shot": 2,
+    "category": "zipper",
+    "round": 5,
+    "rscin": "w/o",
+    "n_images": 151,
+    "image_auroc": 0.9164915966386554,
+    "image_f1_max": 0.9495798319327731,
+    "image_ap": 0.9576664474043652
+  },
+  {
+    "shot": 2,
+    "category": "zipper",
+    "round": 5,
+    "rscin": "w",
+    "n_images": 151,
+    "image_auroc": 0.9298844537815126,
+    "image_f1_max": 0.9626556016597511,
+    "image_ap": 0.9687397491568459
+  }
+]

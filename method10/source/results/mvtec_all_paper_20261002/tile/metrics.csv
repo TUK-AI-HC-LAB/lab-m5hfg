@@ -1,0 +1,2 @@
+dataset,category,n_images,image_auroc,image_f1_max,image_ap,pixel_auroc,pixel_f1_max,pixel_ap,aupro
+mvtec_ad,tile,117,1.0,1.0,0.9999999999999998,0.9789828851309781,0.7471240126728438,0.7890289701887624,0.9464504489099075

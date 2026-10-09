@@ -1,0 +1,2 @@
+category,n_images,april_image_auroc,musc_official_image_auroc,image_delta_pp,april_pixel_auroc,musc_official_pixel_auroc,pixel_delta_pp,musc_common_image_auroc,musc_common_pixel_auroc
+macro_mean,1725,0.8612504901454571,0.9776943881672242,-11.64438980217671,0.8762879825960046,0.9711494733193918,-9.486149072338721,0.9701754570007324,0.9718677918116252

@@ -1,0 +1,16 @@
+{
+  "dataset": "mvtec",
+  "shot": 2,
+  "category": "zipper",
+  "round": 5,
+  "n_images": 151,
+  "image_auroc": 0.9164915966386554,
+  "image_f1_max": 0.9495798319327731,
+  "image_ap": 0.9576664474043652,
+  "pixel_auroc": 0.9834509106247551,
+  "pixel_f1_max": 0.5716557463946708,
+  "pixel_ap": 0.541013188949304,
+  "aupro": 0.9326600606305474,
+  "evaluation_seconds": 4.652102355999887,
+  "gpu_allocated_mib": 5020.9013671875
+}

@@ -1,0 +1,6 @@
+{
+  "path": "/home/test/graphcore_results/mvtec_pvig_fp32_20261008/metal_nut/4shot_round2.npz",
+  "sha256": "4160856ac526bcae991770012e5de8ae1e6b3858666cfdbf8a5bab924d9879a1",
+  "bank_path": "/home/test/graphcore_results/mvtec_pvig_fp32_20261008/metal_nut/4shot_round2_bank.npy",
+  "bank_sha256": "605946f47641feec616d833985f73e4768edc6175fa68ea9e25d355c7a4e195f"
+}

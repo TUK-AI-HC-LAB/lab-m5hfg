@@ -1,0 +1,59 @@
+{
+  "status": "passed",
+  "all_raw_and_input_hashes_checked": true,
+  "all_AUROC_recomputed": true,
+  "fusion_recomputed": true,
+  "native_runtime_check": {
+    "status": "passed",
+    "real_BTAD_images": true,
+    "checkpoint": "untrained architecture smoke only, not performance evidence",
+    "checks": [
+      {
+        "patch_size": 64,
+        "stride": 16,
+        "method": "kdt",
+        "n_bank": 338,
+        "n_queries": 13,
+        "finite": true,
+        "retrieved_distance_max_abs": 2.9103830456733704e-11,
+        "exact_nearest_independently_checked": true
+      },
+      {
+        "patch_size": 32,
+        "stride": 4,
+        "method": "ngt",
+        "n_bank": 6498,
+        "n_queries": 16,
+        "finite": true,
+        "retrieved_distance_max_abs": 1.1641532182693481e-10,
+        "exact_nearest_independently_checked": false
+      }
+    ]
+  },
+  "audits": [
+    {
+      "category": "01",
+      "n_train": 400,
+      "n_test": 70,
+      "epoch_slots": 300,
+      "update_epochs": 299,
+      "raw_sha256": "cf2d64bd753debdd9c825be4eebe1683a752f75b2f0230a4a5d0baa8f015b75c"
+    },
+    {
+      "category": "02",
+      "n_train": 399,
+      "n_test": 230,
+      "epoch_slots": 300,
+      "update_epochs": 299,
+      "raw_sha256": "0137fd389d39e11c78a32165e4f778f5993a820510a5ad3259d99ac430935d49"
+    },
+    {
+      "category": "03",
+      "n_train": 1000,
+      "n_test": 441,
+      "epoch_slots": 300,
+      "update_epochs": 299,
+      "raw_sha256": "38faefd7630759d0cac06f27acb965d601e8c184afb477cf41206c8e7812e5c8"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+﻿index,category,image_path,label,sha256
+0,01,/home/test/data/btad_original/BTech_Dataset_transformed/01/train/ok/0082.bmp,0,a55c6d3e7a96579c3575d9031a21dfc966d1adf0858a0dbd9aaed6d362cc616c
+1,01,/home/test/data/btad_original/BTech_Dataset_transformed/01/train/ok/0332.bmp,0,dc7be9ae2104db5710a18303f64c02caa3a45b2fa358220310dd1530765ee51e
+2,01,/home/test/data/btad_original/BTech_Dataset_transformed/01/train/ok/0105.bmp,0,994c5fd7efa7399f370d5a94f4fc683ff838a80afb4bf174e0e8b65dc5446d8f
+3,01,/home/test/data/btad_original/BTech_Dataset_transformed/01/train/ok/0122.bmp,0,2d0c122bda4e6ed3e2beb7698ed775642d211cd05c234f21b008e262a4896cea
+4,02,/home/test/data/btad_original/BTech_Dataset_transformed/02/train/ok/0010.png,0,c644b47033803d4fdc3adbd4676ab95b5ccb0e2c6392b2b41c524651f408904b
+5,02,/home/test/data/btad_original/BTech_Dataset_transformed/02/train/ok/0060.png,0,2c65843fa92c53b1e84818cac3011bc58b1f8c976852e2a8de0c9dc54468d93e
+6,02,/home/test/data/btad_original/BTech_Dataset_transformed/02/train/ok/0353.png,0,9fa7cb5d5c83d5b288d8b373a0f30e75be4a30d31508e6b5fbf9bda99efafb02
+7,02,/home/test/data/btad_original/BTech_Dataset_transformed/02/train/ok/0317.png,0,04df3ffc4aaa3d077691fb211619c993795408a8f8bcfe0862a8fc3e1165369f
+8,03,/home/test/data/btad_original/BTech_Dataset_transformed/03/train/ok/0965.bmp,0,f1256362234fbfdf7130d42f1f109d2f5630acf429bbd48400a65df9803756fb
+9,03,/home/test/data/btad_original/BTech_Dataset_transformed/03/train/ok/0542.bmp,0,5aa1800851a78bf2c86faada3b4b4b9a9abc45383f856b3127d0332086467e6f
+10,03,/home/test/data/btad_original/BTech_Dataset_transformed/03/train/ok/0796.bmp,0,51a5d0b1da860a3a794a3406e4fc789759353c1298966881dc8c14f3eb7d4c9d
+11,03,/home/test/data/btad_original/BTech_Dataset_transformed/03/train/ok/0414.bmp,0,13b3a3ac4ee8e7b7d1e89e06a6c56dcfddf6dd1eecf660a5f339edbc89087914

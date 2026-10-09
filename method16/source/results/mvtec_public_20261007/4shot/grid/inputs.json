@@ -1,0 +1,8 @@
+{
+  "checkpoint": "/home/test/regad_assets/save_checkpoints/4/grid/grid_4_rotation_scale_model.pt",
+  "checkpoint_sha256": "09a7dc0cf13fdb135a511d83e17f48fc0633c0dd35eb5ad3303308211ef88f4b",
+  "support": "/home/test/regad_assets/local_support_set/grid/4_10.pt",
+  "support_sha256": "3a150d5f2970781e858a6392daa10b742d361bd50637dab337acb497f6cdb0c2",
+  "rscin_feature_path": "/home/test/aprilgan_results/rscin_shared_musc_features/mvtec/grid/features.npy",
+  "rscin_feature_sha256": "6f03c5308d450ef11d8913da67d83138caa52937faad04f34c34938b16bc07ab"
+}

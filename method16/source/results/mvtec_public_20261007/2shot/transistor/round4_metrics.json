@@ -1,0 +1,16 @@
+{
+  "dataset": "mvtec",
+  "shot": 2,
+  "category": "transistor",
+  "round": 4,
+  "n_images": 100,
+  "image_auroc": 0.86375,
+  "image_f1_max": 0.7654320987654322,
+  "image_ap": 0.8462724450377347,
+  "pixel_auroc": 0.9568221987459591,
+  "pixel_f1_max": 0.6017292089454085,
+  "pixel_ap": 0.6360249405271555,
+  "aupro": 0.8752163661551864,
+  "evaluation_seconds": 5.1853334540001015,
+  "gpu_allocated_mib": 4161.8701171875
+}

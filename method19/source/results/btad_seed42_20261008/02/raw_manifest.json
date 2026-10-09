@@ -1,0 +1,6 @@
+{
+  "path": "/home/test/psvdd_results/btad_seed42_20261008/02/predictions.npz",
+  "sha256": "0137fd389d39e11c78a32165e4f778f5993a820510a5ad3259d99ac430935d49",
+  "checkpoint": "/home/test/psvdd_results/btad_seed42_20261008/02/last.pt",
+  "checkpoint_sha256": "26f5d80fab99b1531d48e0343aa16499b3658a8ff72ac69bfc2fddeb4c8ce5b6"
+}

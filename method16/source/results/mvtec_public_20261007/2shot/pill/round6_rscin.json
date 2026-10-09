@@ -1,0 +1,22 @@
+[
+  {
+    "shot": 2,
+    "category": "pill",
+    "round": 6,
+    "rscin": "w/o",
+    "n_images": 167,
+    "image_auroc": 0.6306601200218221,
+    "image_f1_max": 0.9185667752442997,
+    "image_ap": 0.9065303516289676
+  },
+  {
+    "shot": 2,
+    "category": "pill",
+    "round": 6,
+    "rscin": "w",
+    "n_images": 167,
+    "image_auroc": 0.6633933442444081,
+    "image_f1_max": 0.9185667752442997,
+    "image_ap": 0.9204493124671175
+  }
+]

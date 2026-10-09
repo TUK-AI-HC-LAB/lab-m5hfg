@@ -1,0 +1,17 @@
+[
+  {
+    "image": "/home/test/data/mvtec/bottle/test/broken_large/000.png",
+    "mask": "/home/test/data/mvtec/bottle/ground_truth/broken_large/000_mask.png",
+    "heatmap": "/home/test/musc_results/bottle_paper_20261002/official/mvtec_ad/ViT-L-14-336/imagesize518/bottle/broken_large/000.png"
+  },
+  {
+    "image": "/home/test/data/mvtec/bottle/test/broken_small/000.png",
+    "mask": "/home/test/data/mvtec/bottle/ground_truth/broken_small/000_mask.png",
+    "heatmap": "/home/test/musc_results/bottle_paper_20261002/official/mvtec_ad/ViT-L-14-336/imagesize518/bottle/broken_small/000.png"
+  },
+  {
+    "image": "/home/test/data/mvtec/bottle/test/contamination/000.png",
+    "mask": "/home/test/data/mvtec/bottle/ground_truth/contamination/000_mask.png",
+    "heatmap": "/home/test/musc_results/bottle_paper_20261002/official/mvtec_ad/ViT-L-14-336/imagesize518/bottle/contamination/000.png"
+  }
+]

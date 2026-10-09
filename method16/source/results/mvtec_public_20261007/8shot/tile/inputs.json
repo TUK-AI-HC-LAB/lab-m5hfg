@@ -1,0 +1,8 @@
+{
+  "checkpoint": "/home/test/regad_assets/save_checkpoints/8/tile/tile_8_rotation_scale_model.pt",
+  "checkpoint_sha256": "3475d2aba42f55d7cac45808aecf7378c6ea6ce322218b694f93b79ecde9b4d8",
+  "support": "/home/test/regad_assets/support_set/tile/8_10.pt",
+  "support_sha256": "03cefa2bd7947b7f68fc763530e64079b8316c12fd22e518bb57d97629c28f28",
+  "rscin_feature_path": "/home/test/aprilgan_results/rscin_shared_musc_features/mvtec/tile/features.npy",
+  "rscin_feature_sha256": "ff1c8d22d7e20efadeff181205082147e848a60d46cc1db90874fa3f9ddadb32"
+}

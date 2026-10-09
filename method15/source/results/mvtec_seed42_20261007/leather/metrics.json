@@ -1,0 +1,11 @@
+{
+  "category": "leather",
+  "n_images": 124,
+  "image_auroc": 1.0,
+  "image_f1_max": 1.0,
+  "image_ap": 1.0000000000000002,
+  "pixel_auroc": 0.9855248096099948,
+  "pixel_f1_max": 0.37403473631499884,
+  "pixel_ap": 0.3094907358385287,
+  "aupro": 0.7992731654146983
+}

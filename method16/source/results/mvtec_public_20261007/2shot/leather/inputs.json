@@ -1,0 +1,8 @@
+{
+  "checkpoint": "/home/test/regad_assets/save_checkpoints/2/leather/leather_2_rotation_scale_model.pt",
+  "checkpoint_sha256": "9e79feee58a156996aea9fd3f516260226ba62d943ab61e91dcb9cb89c8212d1",
+  "support": "/home/test/regad_assets/support_set/leather/2_10.pt",
+  "support_sha256": "d7751efe87838b297b342934e5d48493a029c21f161a2b54cbb26f9dd625532a",
+  "rscin_feature_path": "/home/test/aprilgan_results/rscin_shared_musc_features/mvtec/leather/features.npy",
+  "rscin_feature_sha256": "683eed0b216f4f22e58cbcaff24969a5596f9ffbf0e9cc38d62eec4de910dd2f"
+}

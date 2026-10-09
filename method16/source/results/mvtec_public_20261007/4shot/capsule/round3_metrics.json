@@ -1,0 +1,16 @@
+{
+  "dataset": "mvtec",
+  "shot": 4,
+  "category": "capsule",
+  "round": 3,
+  "n_images": 132,
+  "image_auroc": 0.7546868767451137,
+  "image_f1_max": 0.9380530973451328,
+  "image_ap": 0.9110997045393394,
+  "pixel_auroc": 0.9833426373079684,
+  "pixel_f1_max": 0.3870458135860979,
+  "pixel_ap": 0.305291300199513,
+  "aupro": 0.9122667647805844,
+  "evaluation_seconds": 8.605311281000013,
+  "gpu_allocated_mib": 4700.8701171875
+}

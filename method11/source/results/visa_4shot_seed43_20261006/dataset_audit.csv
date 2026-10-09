@@ -1,0 +1,13 @@
+category,n_images,n_normal,n_anomaly,paths_and_labels_validated
+candle,200,100,100,True
+capsules,160,60,100,True
+cashew,150,50,100,True
+chewinggum,150,50,100,True
+fryum,150,50,100,True
+macaroni1,200,100,100,True
+macaroni2,200,100,100,True
+pcb1,200,100,100,True
+pcb2,200,100,100,True
+pcb3,201,101,100,True
+pcb4,201,101,100,True
+pipe_fryum,150,50,100,True

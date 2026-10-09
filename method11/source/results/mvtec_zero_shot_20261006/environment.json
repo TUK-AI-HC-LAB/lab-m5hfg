@@ -1,0 +1,64 @@
+{
+  "commit": "f13b8a634e04f9fde8fa03db125b25af5695d8e1",
+  "official_repo": "https://github.com/ByChelsea/VAND-APRIL-GAN",
+  "python": "3.12.13 | packaged by conda-forge | (main, Mar  5 2026, 16:50:00) [GCC 14.3.0]",
+  "platform": "Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.43",
+  "gpu": "NVIDIA GeForce RTX 5080",
+  "cuda": "12.8",
+  "packages": {
+    "torch": "2.11.0+cu128",
+    "torchvision": "0.26.0+cu128",
+    "numpy": "2.5.3",
+    "timm": "1.0.28",
+    "scikit-learn": "1.9.0",
+    "scikit-image": "0.26.0",
+    "Pillow": "12.3.0"
+  },
+  "args": {
+    "data_path": "/home/test/data/mvtec",
+    "save_path": "/home/test/aprilgan_results/mvtec_zero_shot_20261006/official",
+    "checkpoint_path": "/home/test/VAND-APRIL-GAN/exps/pretrained/visa_pretrained.pth",
+    "config_path": "/home/test/VAND-APRIL-GAN/open_clip/model_configs/ViT-L-14-336.json",
+    "dataset": "mvtec",
+    "model": "ViT-L-14-336",
+    "pretrained": "openai",
+    "features_list": [
+      6,
+      12,
+      18,
+      24
+    ],
+    "few_shot_features": [
+      3,
+      6,
+      9
+    ],
+    "image_size": 518,
+    "mode": "zero_shot",
+    "k_shot": 0,
+    "seed": 42
+  },
+  "checkpoint_training_dataset": "VisA",
+  "target_dataset": "MVTec AD",
+  "checkpoint_sha256": "ef890d2f82e9aba12c838bb90073372f568bc53794a1b6ef88014f733c53f839",
+  "metadata_sha256": "1716f265af92686fff4f8fdca331d56f301809e87445dd6ce6f643ee5f92e180",
+  "tf32": false,
+  "target_training": false,
+  "source_edits": false,
+  "status": "completed",
+  "command": [
+    "/mnt/c/Users/test/Desktop/Codex/lab-m5hfg/method11/source/run_aprilgan_official.py",
+    "--repo",
+    "/home/test/VAND-APRIL-GAN",
+    "--data",
+    "/home/test/data/mvtec",
+    "--output",
+    "/home/test/aprilgan_results/mvtec_zero_shot_20261006",
+    "--seed",
+    "42"
+  ],
+  "raw_output": "/home/test/aprilgan_results/mvtec_zero_shot_20261006",
+  "wall_seconds": 948.3789460539999,
+  "peak_allocated_bytes": 2611334144,
+  "peak_reserved_bytes": 3045064704
+}

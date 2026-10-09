@@ -1,0 +1,8 @@
+{
+  "checkpoint": "/home/test/regad_assets/save_checkpoints/4/zipper/zipper_4_rotation_scale_model.pt",
+  "checkpoint_sha256": "cdf6955bb6a683eec5238d5de33620c50aed42b65e0ba1eed9bd305d1f5bfc8a",
+  "support": "/home/test/regad_assets/support_set/zipper/4_10.pt",
+  "support_sha256": "2d802a2c757a39201df5ac77cace66fe239d142bb6b82741dc90a3e072bce890",
+  "rscin_feature_path": "/home/test/aprilgan_results/rscin_shared_musc_features/mvtec/zipper/features.npy",
+  "rscin_feature_sha256": "8e38398eb3d74b369cb01c9eeaaf988aa76ecfa81ee540d000cf24b4fc6a9514"
+}

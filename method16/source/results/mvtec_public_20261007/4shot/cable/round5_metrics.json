@@ -1,0 +1,16 @@
+{
+  "dataset": "mvtec",
+  "shot": 4,
+  "category": "cable",
+  "round": 5,
+  "n_images": 150,
+  "image_auroc": 0.8504497751124438,
+  "image_f1_max": 0.8307692307692308,
+  "image_ap": 0.9102684257229647,
+  "pixel_auroc": 0.9570211091512619,
+  "pixel_f1_max": 0.48025510981476244,
+  "pixel_ap": 0.4768451103291545,
+  "aupro": 0.8457928837270704,
+  "evaluation_seconds": 8.535627847,
+  "gpu_allocated_mib": 5004.0576171875
+}

@@ -1,0 +1,14 @@
+{
+  "source_url": "https://avires.dimi.uniud.it/papers/btad/btad.zip",
+  "archive_sha256": "461c9387e515bfed41ecaae07c50cf6b10def647b36c9e31d239ab2736b10d2a",
+  "root": "/home/test/data/btad_original/BTech_Dataset_transformed",
+  "metadata_sha256": "949cdedc365d3e2c72e5b8846486cf5650a48645c844425624e8bafa05549702",
+  "category_names": [
+    "01",
+    "02",
+    "03"
+  ],
+  "test_count": 741,
+  "adapter": "metadata schema consumed by unmodified APRIL-GAN VisaDataset",
+  "checkpoint_condition": "VisA-trained checkpoint selected as cross-dataset baseline; MuSc BTAD checkpoint/prompt details are not published in supplied paper"
+}

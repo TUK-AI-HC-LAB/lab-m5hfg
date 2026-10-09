@@ -1,0 +1,27 @@
+{
+  "status": "passed",
+  "real_BTAD_images": true,
+  "checkpoint": "untrained architecture smoke only, not performance evidence",
+  "checks": [
+    {
+      "patch_size": 64,
+      "stride": 16,
+      "method": "kdt",
+      "n_bank": 338,
+      "n_queries": 13,
+      "finite": true,
+      "retrieved_distance_max_abs": 2.9103830456733704e-11,
+      "exact_nearest_independently_checked": true
+    },
+    {
+      "patch_size": 32,
+      "stride": 4,
+      "method": "ngt",
+      "n_bank": 6498,
+      "n_queries": 16,
+      "finite": true,
+      "retrieved_distance_max_abs": 1.1641532182693481e-10,
+      "exact_nearest_independently_checked": false
+    }
+  ]
+}

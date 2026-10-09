@@ -1,0 +1,321 @@
+{
+  "status": "invalid_support_files",
+  "n_conditions": 3,
+  "n_categories": 15,
+  "files": [
+    {
+      "shot": 4,
+      "category": "bottle",
+      "support_sha256": "4e749f8ed5307615586d81e5a829a5422371c666e60654deace0bcac09ddc1c4",
+      "checkpoint_sha256": "77d10e8f20a7f5b90b2dcff319fb35bd9dd4715f41a7fdbb9a87be57f4802eb8"
+    },
+    {
+      "shot": 4,
+      "category": "cable",
+      "support_sha256": "e0180f00ed5077876a959d169ee0312eeb31190a75d55519572abf5ea917afa7",
+      "checkpoint_sha256": "9417b4261c55f1b87aaefb02009d731a0780318990b8483a217b17eadb07838e"
+    },
+    {
+      "shot": 4,
+      "category": "capsule",
+      "support_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "checkpoint_sha256": "2aefcfab4b3d329d703f822aebed62b64e202b5142f2ab74a4cb53a64c99497d"
+    },
+    {
+      "shot": 4,
+      "category": "carpet",
+      "support_sha256": "67f0fbada357e3b39df461b6ee468e5c556250f761ede71d01ea0ada7ca54995",
+      "checkpoint_sha256": "f6da58176600cc2ff479703011c4777edf743ff2d41c7ac0ebfc8f6e87c28af2"
+    },
+    {
+      "shot": 4,
+      "category": "grid",
+      "support_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "checkpoint_sha256": "09a7dc0cf13fdb135a511d83e17f48fc0633c0dd35eb5ad3303308211ef88f4b"
+    },
+    {
+      "shot": 4,
+      "category": "hazelnut",
+      "support_sha256": "19617104a32fc55931aa9436b563e38bc741d027e47f606c9b9a5c36cfb34c0d",
+      "checkpoint_sha256": "273dedf456b1e3b27663fb1fc41ac2131fefcfef36ef518ec2d559be0f508f34"
+    },
+    {
+      "shot": 4,
+      "category": "leather",
+      "support_sha256": "228e1963d08703aad57e6c3b77c3d16487b0ba6754b1f7e4866a5c6354501f84",
+      "checkpoint_sha256": "c129cedf0417b65de24686e1cae5e53d1cb1a0577968962d8d99a23457124314"
+    },
+    {
+      "shot": 4,
+      "category": "metal_nut",
+      "support_sha256": "bbe023696404e4e6c4f225b3e6dc5983935abb90b996ade7947ef5892cb4433d",
+      "checkpoint_sha256": "b06a9d8bed955c4fb979f977f322c48b591a6c1b7b1682629e8a4dfbaba80169"
+    },
+    {
+      "shot": 4,
+      "category": "pill",
+      "support_sha256": "18128aa09025f44f8941d537db9039df9ba0ea87d90f6975b7274d26130782a0",
+      "checkpoint_sha256": "c5eec03f5c5c44dd8bc07fc690d4031c55a689750952999a19bbb24206fb532b"
+    },
+    {
+      "shot": 4,
+      "category": "screw",
+      "support_sha256": "ff4f9fa77323a3cfb20236463d48d7f1e6e3d66a8da47257dd4706750ccd1bab",
+      "checkpoint_sha256": "b00a34e48939421916ebd60651f116026f9f3deea1ffac30c86853063d9be724"
+    },
+    {
+      "shot": 4,
+      "category": "tile",
+      "support_sha256": "d6eb0dbad36c424b6e06902de70e3c3e95b31bbcabb9dfd00859534cabedbf26",
+      "checkpoint_sha256": "282544c4c5947aa165f30f4a38dd7de9b98e7a8d78ebff6eef0fb83a752f9005"
+    },
+    {
+      "shot": 4,
+      "category": "toothbrush",
+      "support_sha256": "236e7fb7a94e5d7cacddc420d841096a62f4533b50187b5f64d67646d924923c",
+      "checkpoint_sha256": "a4f211c42953efaa8fd86012de4dcd6326c26e222a96985f68e5f829a814d491"
+    },
+    {
+      "shot": 4,
+      "category": "transistor",
+      "support_sha256": "e567dd1b655776a4af703dc458e20aa802475fda0c5217d744d0762fbc45f9c8",
+      "checkpoint_sha256": "2a982a261640131fde05340ef2496e0ae3246211390d7fe1bc40f130447ad2ed"
+    },
+    {
+      "shot": 4,
+      "category": "wood",
+      "support_sha256": "e281deb0b0f11dc6e54ccce0c6557980568c1afd809e722a924f2a80c2c41ec8",
+      "checkpoint_sha256": "d90193c8cdd9a0331f4332d5ae92adaea4854478d9e9e8e4fb9ef5a7b7cd8f22"
+    },
+    {
+      "shot": 4,
+      "category": "zipper",
+      "support_sha256": "2d802a2c757a39201df5ac77cace66fe239d142bb6b82741dc90a3e072bce890",
+      "checkpoint_sha256": "cdf6955bb6a683eec5238d5de33620c50aed42b65e0ba1eed9bd305d1f5bfc8a"
+    },
+    {
+      "shot": 2,
+      "category": "bottle",
+      "support_sha256": "5a9cb0d5750251a665dec21db6473845611afbad60b6d42afb8096e01ee69e9c",
+      "checkpoint_sha256": "ccc0a792083edc1506d53b3cdbdb9a1ede95437d80c30e4204ca9e181fedb152"
+    },
+    {
+      "shot": 2,
+      "category": "cable",
+      "support_sha256": "e205ddf3a7bcb0e81448ccdd117a94be7df9bee0b286a18911ae5fa08025ba06",
+      "checkpoint_sha256": "7222e08a7cfbc51a428e5fede2c8d82b09ec3e1e17c2d906cb56099e5b9d10cb"
+    },
+    {
+      "shot": 2,
+      "category": "capsule",
+      "support_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "checkpoint_sha256": "7ff87f0e8a0edd792aca859729e054f82b8e2b8f23cbaf2621436cb7a26688d0"
+    },
+    {
+      "shot": 2,
+      "category": "carpet",
+      "support_sha256": "ce2098fcba303bf69151bb9f96889022bfd02b8cab375355c403c932d136d8bf",
+      "checkpoint_sha256": "2aca0def6269fafd9d2bb19376c5cd68e77456cf9f946dad0b568d4bf49e447b"
+    },
+    {
+      "shot": 2,
+      "category": "grid",
+      "support_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "checkpoint_sha256": "3f9cc5e44af2810b50dd8ec96baaa383b08c428a1cf9f3ee331bb241acb90c15"
+    },
+    {
+      "shot": 2,
+      "category": "hazelnut",
+      "support_sha256": "63a412da8b173085d7ef45cb1d93dece630c61ebbad5879ca96a2e903661dc56",
+      "checkpoint_sha256": "1795cb61e3ff37b0247b8595d3593510d4f34d28223a854e25f3fd54f0456379"
+    },
+    {
+      "shot": 2,
+      "category": "leather",
+      "support_sha256": "d7751efe87838b297b342934e5d48493a029c21f161a2b54cbb26f9dd625532a",
+      "checkpoint_sha256": "9e79feee58a156996aea9fd3f516260226ba62d943ab61e91dcb9cb89c8212d1"
+    },
+    {
+      "shot": 2,
+      "category": "metal_nut",
+      "support_sha256": "c27c1398b1855a1ee3e034eb6ca2b37c5b6e4f3aa1a9e2a38c97bbf297f41915",
+      "checkpoint_sha256": "3a505463874cfa1da155b07af9e4cf78db0b48c2e91255a3c6cc2b0c99c9cc3f"
+    },
+    {
+      "shot": 2,
+      "category": "pill",
+      "support_sha256": "2c222b9ae4eccf9912344c926754af1f4ed554defedf5335e00f318fb377cfca",
+      "checkpoint_sha256": "8f770f315d0b2e83e37fa8450c0f32fc850f10b19ce17fe839c72e74b9d518c1"
+    },
+    {
+      "shot": 2,
+      "category": "screw",
+      "support_sha256": "be055db90ab0588345ba9f672d02fc8a9edefc461ee0e489e7008f6a584fdabe",
+      "checkpoint_sha256": "f0eedc2d7936a955a86f219bfe1f885efa60a22bfadf41f5feb4c0ae3054b3f4"
+    },
+    {
+      "shot": 2,
+      "category": "tile",
+      "support_sha256": "6695176e97a340ff60177247d98246f62402e759e26cce232f05040b7ee3374f",
+      "checkpoint_sha256": "919e06b0f0a4a4d1f64f2e753f149558c39558b6f0e71891ac86c0412f01bab1"
+    },
+    {
+      "shot": 2,
+      "category": "toothbrush",
+      "support_sha256": "c88ef3e111f056ef4197cf5dc1b13c9be8376ce4e9fb434b53c5c00a78325729",
+      "checkpoint_sha256": "b1c84303b5572e181010deae6bf1b9b245ce28baebd54bc46d97f18850b7f050"
+    },
+    {
+      "shot": 2,
+      "category": "transistor",
+      "support_sha256": "8e25c86a9a0e65b70ae78f2ec4e86b29048a1c1066691e669095c0f347267b0a",
+      "checkpoint_sha256": "c03707996df995fa2644dddddb228e797f3b510ae28aafcc7f254ba1e83f6765"
+    },
+    {
+      "shot": 2,
+      "category": "wood",
+      "support_sha256": "a149241dd62d49d17f3caf993e0fd298197a1eb7e0771f652093281c1dc72627",
+      "checkpoint_sha256": "c6db55bc367948d09bfeea110d75c648d18f5a47582d9ef4111ca2e6be7fc426"
+    },
+    {
+      "shot": 2,
+      "category": "zipper",
+      "support_sha256": "c01286fd1fd6c70604a301c34d0c31cc736327339fd052c2c0575ec6cd074321",
+      "checkpoint_sha256": "00a4d6ec7b968b0a6ea2c3627ae917269cb3dfafa8052cfd887ee9a0c4db7f2e"
+    },
+    {
+      "shot": 8,
+      "category": "bottle",
+      "support_sha256": "71adc10c36ff753a65304db43f27b43aa4df04ce02eeed2f176940dcbe34aefe",
+      "checkpoint_sha256": "31bcb4fece348f4a90df843ad38b9dce3ddb632af6fe8e6bfb1a89960834780b"
+    },
+    {
+      "shot": 8,
+      "category": "cable",
+      "support_sha256": "0fff0cae677b02b05d3660c1630825c6577995b264d2cf65e99833d4e9187d05",
+      "checkpoint_sha256": "e5e9751eebc8aa2cdaafa2ce95daffae591b11ddfccd0d5f453174af3d6e86b7"
+    },
+    {
+      "shot": 8,
+      "category": "capsule",
+      "support_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "checkpoint_sha256": "200b85550609fd27e7697f8c721cf54f971c44a72d1339bea8fd115d2a0f65d3"
+    },
+    {
+      "shot": 8,
+      "category": "carpet",
+      "support_sha256": "73ed4e87245f7923978a3d8351cd8e5bdcc3a9bb9a179a3eb37eb18baa0e269f",
+      "checkpoint_sha256": "a81a04bc9ab93161540afb4ca42dbc4567bab9480e91333cea7973fc0c178234"
+    },
+    {
+      "shot": 8,
+      "category": "grid",
+      "support_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "checkpoint_sha256": "8bb57f3242d7bce367bc1afb663afd297b5482fb275d7784e76b2599c48d41b0"
+    },
+    {
+      "shot": 8,
+      "category": "hazelnut",
+      "support_sha256": "814cfa0a03fde8f88fed72fe83fabd9dc6a6c2cf91c530e34efec31de92c7cfc",
+      "checkpoint_sha256": "2c35f81b7c81e43e4c7ecf079d3e91dfb8e457c058a389336a404eff46a0d47e"
+    },
+    {
+      "shot": 8,
+      "category": "leather",
+      "support_sha256": "28d6e0f6906bf46d5f0e77695bff09a9faa40a2b76dc832fe847976c336767b5",
+      "checkpoint_sha256": "eaa0cbb3e6dd819d6aec264891e2c2679efb08515af3e43cfe7a9adc02f5c8e1"
+    },
+    {
+      "shot": 8,
+      "category": "metal_nut",
+      "support_sha256": "7437c4763f85b523853b1146243d136c4060c7c934e0cb7ce39e11c9d1021e8c",
+      "checkpoint_sha256": "00aa1a75ce86fec843f8503058bc06429ec72647a26f3f9e253607d430a19c21"
+    },
+    {
+      "shot": 8,
+      "category": "pill",
+      "support_sha256": "284ec3f89b029340b2f24261ea177a1ddeefc94ee744792e5732e8ee798f2cfa",
+      "checkpoint_sha256": "1fec7db56c53d60cf9a8d0c21b63a856cebecf47fec65db0d213983e76868701"
+    },
+    {
+      "shot": 8,
+      "category": "screw",
+      "support_sha256": "2b7db38cfbc1f736c5acc7f6aae062e3c843086dcccb8f6824959e902417612c",
+      "checkpoint_sha256": "a7bc99f875819b9c4175706e6d23cf41182eb320d8c91c4cc3257d0eb6ebf786"
+    },
+    {
+      "shot": 8,
+      "category": "tile",
+      "support_sha256": "03cefa2bd7947b7f68fc763530e64079b8316c12fd22e518bb57d97629c28f28",
+      "checkpoint_sha256": "3475d2aba42f55d7cac45808aecf7378c6ea6ce322218b694f93b79ecde9b4d8"
+    },
+    {
+      "shot": 8,
+      "category": "toothbrush",
+      "support_sha256": "7914bd018e2ebdb91769537aa7fdb426ae9e49e0f422c83d76c8304e010f906d",
+      "checkpoint_sha256": "6faa258b1fbf9389ac7007433c9fe7bdfc5f0ab6396a5c725550448836b2ff08"
+    },
+    {
+      "shot": 8,
+      "category": "transistor",
+      "support_sha256": "61a02e17456e498297c3c9fa9ab2c41de9f1a0dba534cf85fd49b4045c2fca13",
+      "checkpoint_sha256": "d8f61fe1a7b8d58740d1573f0b0bcf4102661c59455c54055fdb4d03f5972e70"
+    },
+    {
+      "shot": 8,
+      "category": "wood",
+      "support_sha256": "2f1622de0c00156f4485d89ef8621569a1ce2a63ca195ba14104800952cc3e6f",
+      "checkpoint_sha256": "5962dbc3e4d6c42cc9a7574b3dbbd79f2282206f947787fe9d21540f812d8589"
+    },
+    {
+      "shot": 8,
+      "category": "zipper",
+      "support_sha256": "21515c6f66349b19bf1b69656d426221b5f8e97f437f6a10c72ef62f707dda9c",
+      "checkpoint_sha256": "9997c26d39093b2aad264d9ffbcb2203ca93e0da9330e98c7763134d835f1663"
+    }
+  ],
+  "errors": [
+    {
+      "shot": 4,
+      "category": "capsule",
+      "path": "/home/test/regad_assets/support_set/capsule/4_10.pt",
+      "error": "EOFError()",
+      "bytes": 0
+    },
+    {
+      "shot": 4,
+      "category": "grid",
+      "path": "/home/test/regad_assets/support_set/grid/4_10.pt",
+      "error": "EOFError()",
+      "bytes": 0
+    },
+    {
+      "shot": 2,
+      "category": "capsule",
+      "path": "/home/test/regad_assets/support_set/capsule/2_10.pt",
+      "error": "EOFError()",
+      "bytes": 0
+    },
+    {
+      "shot": 2,
+      "category": "grid",
+      "path": "/home/test/regad_assets/support_set/grid/2_10.pt",
+      "error": "EOFError()",
+      "bytes": 0
+    },
+    {
+      "shot": 8,
+      "category": "capsule",
+      "path": "/home/test/regad_assets/support_set/capsule/8_10.pt",
+      "error": "EOFError()",
+      "bytes": 0
+    },
+    {
+      "shot": 8,
+      "category": "grid",
+      "path": "/home/test/regad_assets/support_set/grid/8_10.pt",
+      "error": "EOFError()",
+      "bytes": 0
+    }
+  ]
+}

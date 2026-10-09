@@ -1,0 +1,33 @@
+{
+  "status": "passed",
+  "all_category_AUROCs_independently_recomputed": true,
+  "raw_hashes_and_all_input_hashes_verified": true,
+  "first_image_each_category_map_recomputed": true,
+  "image_score_formula_recomputed": true,
+  "audits": [
+    {
+      "category": "01",
+      "n_train": 400,
+      "n_test": 70,
+      "epochs": 400,
+      "checkpoint_epoch": 400,
+      "raw_sha256": "4ab890cb30f8720ff51d0c8ee077e8baf40aa5a562f3aa984502091ab2cf97f2"
+    },
+    {
+      "category": "02",
+      "n_train": 399,
+      "n_test": 230,
+      "epochs": 400,
+      "checkpoint_epoch": 400,
+      "raw_sha256": "6d3ba8d7ca35375f655c8094bdea590c8d91c54a8ed55a41785fde53dd416041"
+    },
+    {
+      "category": "03",
+      "n_train": 1000,
+      "n_test": 441,
+      "epochs": 400,
+      "checkpoint_epoch": 382,
+      "raw_sha256": "c83dc2d9b40fc1e3f8e65cb10961270229b1b700e92b7efe2894ce1efb3e40d8"
+    }
+  ]
+}

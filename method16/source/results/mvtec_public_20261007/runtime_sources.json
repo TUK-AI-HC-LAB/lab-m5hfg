@@ -1,0 +1,62 @@
+[
+  {
+    "path": "datasets/__init__.py",
+    "official_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "runtime_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "datasets/mvtec.py",
+    "official_sha256": "d609c6824373fecbb6aed5a297a96ae7a6fff8c738de936f6d6a583dee22affb",
+    "runtime_sha256": "6f90746f2c675e85d592ce2696d4165150adb5fb0a9e9be32dfb6b426b2e272d"
+  },
+  {
+    "path": "losses/__init__.py",
+    "official_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "runtime_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "losses/norm_loss.py",
+    "official_sha256": "fe4451a8d07f51bd1a4ff852caf0709269af859307a6f99df048eb74e495460e",
+    "runtime_sha256": "fe4451a8d07f51bd1a4ff852caf0709269af859307a6f99df048eb74e495460e"
+  },
+  {
+    "path": "models/__init__.py",
+    "official_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "runtime_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "models/siamese.py",
+    "official_sha256": "a63e3d281ad4081567cf46b098e5fc77e8a3bbd5fcc52badfe16b6cdd90ea6c4",
+    "runtime_sha256": "a63e3d281ad4081567cf46b098e5fc77e8a3bbd5fcc52badfe16b6cdd90ea6c4"
+  },
+  {
+    "path": "models/stn.py",
+    "official_sha256": "95647d548db2fd1c82987453e686804ed6d1622612d34a346ea242f0c4ab489b",
+    "runtime_sha256": "95647d548db2fd1c82987453e686804ed6d1622612d34a346ea242f0c4ab489b"
+  },
+  {
+    "path": "test.py",
+    "official_sha256": "cde481197fc658b152b8391bc15a3228dbceead01519ec1212bd03258cee29c2",
+    "runtime_sha256": "d04cd24a88fd7d182b5fb4ab3e81e35906e67c488f43ec2fb99cf8832723de3a"
+  },
+  {
+    "path": "train.py",
+    "official_sha256": "63ac9429fc55cfafd4defb7fea7c802ec96b255c20c5a64262526c41c895d544",
+    "runtime_sha256": "63ac9429fc55cfafd4defb7fea7c802ec96b255c20c5a64262526c41c895d544"
+  },
+  {
+    "path": "utils/__init__.py",
+    "official_sha256": "0348afc1a7ff90d70628f3e3f660f69aee1ed53cbf44bf0e69b7a5ffa2179928",
+    "runtime_sha256": "0348afc1a7ff90d70628f3e3f660f69aee1ed53cbf44bf0e69b7a5ffa2179928"
+  },
+  {
+    "path": "utils/funcs.py",
+    "official_sha256": "b2168b51d9c6342d498e158169938fb2842bf97e10835355401789161b8d1ffc",
+    "runtime_sha256": "b2168b51d9c6342d498e158169938fb2842bf97e10835355401789161b8d1ffc"
+  },
+  {
+    "path": "utils/utils.py",
+    "official_sha256": "f716f0a9b985bac69efdedaa30def7f9617bb14da1169d43c4b4cebc1bfb3664",
+    "runtime_sha256": "f716f0a9b985bac69efdedaa30def7f9617bb14da1169d43c4b4cebc1bfb3664"
+  }
+]

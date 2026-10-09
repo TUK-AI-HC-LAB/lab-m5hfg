@@ -1,0 +1,9 @@
+{
+  "path": "/home/test/acr_results/mvtec_seed42_20261007/hazelnut_predictions.npz",
+  "sha256": "87c2156a490b8c36349d8d4d78f8f92fe5beb4618e99f66686a7f8b9dcb75ef2",
+  "shape": [
+    110,
+    224,
+    224
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "path": "/home/test/acr_results/mvtec_seed42_20261007/carpet_predictions.npz",
+  "sha256": "8f3c3a58c5c314bd0a274359febd22bd3caab5d4f53553efb08b3fe57157b514",
+  "shape": [
+    117,
+    224,
+    224
+  ]
+}

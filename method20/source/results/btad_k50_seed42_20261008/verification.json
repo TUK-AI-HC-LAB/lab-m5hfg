@@ -1,0 +1,118 @@
+{
+  "status": "passed",
+  "all_input_and_raw_SHA_checked": true,
+  "all_AUROC_recomputed": true,
+  "all_K50_image_scores_independently_recomputed": true,
+  "dense_nn_full_gallery_sample_checked": true,
+  "dense_nn_limit": "3 spatial queries per category checked against float64 brute force; all 741 maps postprocessing checked, not all dense minima independently re-searched",
+  "audits": [
+    {
+      "category": "01",
+      "n_train": 400,
+      "n_test": 70,
+      "raw_sha256": "dda403cfe4538c229a45b8ffa56a29823a7b9173efe15d1d200a222092ffe5c5",
+      "independent_float64_image_score_max_error": 1.39440828803572e-05,
+      "all_K50_global_neighbors_verified": true,
+      "all_pixel_postprocessing_recomputed": true,
+      "dense_distance_check": {
+        "status": "passed",
+        "category": "01",
+        "real_BTAD_first_test": true,
+        "query_locations": [
+          0,
+          1568,
+          3135
+        ],
+        "gallery_size": 156800,
+        "channels": 1792,
+        "exhaustive_float64_direct_difference": [
+          0.07626031642632428,
+          20.75259899630276,
+          1.1483115779820003
+        ],
+        "gpu_chunked_squared_l2": [
+          0.0762786865234375,
+          20.752593994140625,
+          1.1483154296875
+        ],
+        "rtol": 0.0001,
+        "atol": 0.002,
+        "max_absolute_difference": 1.8370097113223904e-05,
+        "TF32": false,
+        "AMP": false
+      }
+    },
+    {
+      "category": "02",
+      "n_train": 399,
+      "n_test": 230,
+      "raw_sha256": "eedc5a7f2d36f5a452ea3e5a630a74e5051f84db900bb6cd34f63dbae4703c11",
+      "independent_float64_image_score_max_error": 4.2091533714483376e-05,
+      "all_K50_global_neighbors_verified": true,
+      "all_pixel_postprocessing_recomputed": true,
+      "dense_distance_check": {
+        "status": "passed",
+        "category": "02",
+        "real_BTAD_first_test": true,
+        "query_locations": [
+          0,
+          1568,
+          3135
+        ],
+        "gallery_size": 156800,
+        "channels": 1792,
+        "exhaustive_float64_direct_difference": [
+          21.351223371415863,
+          20.225695425694944,
+          7.403689708094655
+        ],
+        "gpu_chunked_squared_l2": [
+          21.351211547851562,
+          20.225692749023438,
+          7.4037017822265625
+        ],
+        "rtol": 0.0001,
+        "atol": 0.002,
+        "max_absolute_difference": 1.2074131907624519e-05,
+        "TF32": false,
+        "AMP": false
+      }
+    },
+    {
+      "category": "03",
+      "n_train": 1000,
+      "n_test": 441,
+      "raw_sha256": "b710cb6eb7ad73ec282c519b11db00a3a9957ea3a804124b8ce8e442f7206229",
+      "independent_float64_image_score_max_error": 2.3125837202542243e-05,
+      "all_K50_global_neighbors_verified": true,
+      "all_pixel_postprocessing_recomputed": true,
+      "dense_distance_check": {
+        "status": "passed",
+        "category": "03",
+        "real_BTAD_first_test": true,
+        "query_locations": [
+          0,
+          1568,
+          3135
+        ],
+        "gallery_size": 156800,
+        "channels": 1792,
+        "exhaustive_float64_direct_difference": [
+          0.49567933844390616,
+          14.291719970167744,
+          2.7828378781109766
+        ],
+        "gpu_chunked_squared_l2": [
+          0.4956817626953125,
+          14.291725158691406,
+          2.7828369140625
+        ],
+        "rtol": 0.0001,
+        "atol": 0.002,
+        "max_absolute_difference": 5.1885236622695174e-06,
+        "TF32": false,
+        "AMP": false
+      }
+    }
+  ]
+}

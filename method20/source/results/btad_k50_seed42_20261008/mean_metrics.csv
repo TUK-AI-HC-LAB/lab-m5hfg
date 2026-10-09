@@ -1,0 +1,2 @@
+dataset,n_categories,n_images,image_auroc,pixel_auroc
+btad,3,741,0.8714990518855625,0.9767131326440371

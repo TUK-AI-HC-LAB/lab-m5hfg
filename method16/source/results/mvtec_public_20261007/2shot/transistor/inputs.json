@@ -1,0 +1,8 @@
+{
+  "checkpoint": "/home/test/regad_assets/save_checkpoints/2/transistor/transistor_2_rotation_scale_model.pt",
+  "checkpoint_sha256": "c03707996df995fa2644dddddb228e797f3b510ae28aafcc7f254ba1e83f6765",
+  "support": "/home/test/regad_assets/support_set/transistor/2_10.pt",
+  "support_sha256": "8e25c86a9a0e65b70ae78f2ec4e86b29048a1c1066691e669095c0f347267b0a",
+  "rscin_feature_path": "/home/test/aprilgan_results/rscin_shared_musc_features/mvtec/transistor/features.npy",
+  "rscin_feature_sha256": "2e06c410dbad310640bcae02a44d9cd40c64ea63042b6958437598c1d6c826c7"
+}

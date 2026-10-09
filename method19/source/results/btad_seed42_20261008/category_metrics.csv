@@ -1,0 +1,4 @@
+dataset,category,fusion,n_images,image_auroc,pixel_auroc,checkpoint_epoch
+btad,01,mult,70,0.8036929057337221,0.8734811334116324,300
+btad,02,mult,230,0.7889999999999999,0.9688139913857939,300
+btad,03,mult,441,0.5,0.5,300

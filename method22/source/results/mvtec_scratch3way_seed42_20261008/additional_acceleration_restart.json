@@ -1,0 +1,12 @@
+{
+  "timestamp": "2026-10-08T22:00:03.857944",
+  "pid": 3347,
+  "applied": "asynchronous finite assert, batched detached loss readback every256",
+  "excluded": [
+    "background H2D prefetch",
+    "fused SGD"
+  ],
+  "batch_unchanged": true,
+  "optimizer_unchanged": true,
+  "wrapper_sha256": "f19dd39c7f481539e3e8b06b95785523e771dfed795abc5e6e54d51a20443359"
+}

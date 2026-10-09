@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "device": "cuda",
+  "finite_gradients": true,
+  "native_detection_completed": true,
+  "n_images": 83,
+  "loss": 21.06801414489746,
+  "native_auroc": [
+    0.9261904761904761,
+    0.8464192867245828
+  ],
+  "scope": "isolated one-step smoke test on cable train and bottle test; does not replace full14-category,50-update fits"
+}

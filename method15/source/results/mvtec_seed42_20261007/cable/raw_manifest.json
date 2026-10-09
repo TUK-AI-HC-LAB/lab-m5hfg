@@ -1,0 +1,9 @@
+{
+  "path": "/home/test/acr_results/mvtec_seed42_20261007/cable_predictions.npz",
+  "sha256": "c631522aea10fceda01888b493d4fde511845d97dbbaba4e31b344136f1ecee6",
+  "shape": [
+    150,
+    224,
+    224
+  ]
+}

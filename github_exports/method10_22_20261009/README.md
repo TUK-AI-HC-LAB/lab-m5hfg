@@ -1,0 +1,11 @@
+# Method10–22 reproduction snapshot, 2026-10-09
+
+Code, papers, Markdown, CSV/JSON are on the dedicated archive branch. All present inventoried raw data, feature/density arrays, checkpoints, predictions, logs, dependency sources/weights and original MVTec/VisA/BTAD datasets are distributed through the repository Release `method10-22-data-20261009`. Dataset license/README files remain with their data; use is subject to those licenses.
+
+The upload is initially IN PROGRESS. Do not interpret the archive as complete until the release body confirms completion and `release_manifest.json` exists. `upload_status.json` on this PC records current status and GitHub-verified SHA256 for every uploaded part. Local source/experiment files are never removed. Only successfully verified upload temporary chunks are removed. Uploading does not free the original experiment storage.
+
+Every group is one gzip tar stream split into numbered parts of at most 1GiB. Download all parts for a group, concatenate in numeric order, then extract the resulting tar.gz into a NEW empty folder. `ARCHIVE_FILE_SHA256.json` within each tar contains original paths and per-file SHA256. Never extract into the active experiment folders. Archive paths `workspace/methodN/` map to the research repository; `home/test/` map to the WSL research locations. Runtime environments, system files, credentials and unrelated Method1–9 datasets are excluded.
+
+This is a snapshot of present files, including interrupted runs. CutPaste continues running independently. Individual live files are captured from an open file descriptor up to their initial byte size, and changed files/log prefixes are flagged in per-archive manifests. This is not a transactionally frozen complete CutPaste run; future results are not included. Missing/deleted `/home/test/DRAEM`, `/home/test/NSA`, `/home/test/draem_weights`, `/home/test/data/dtd` could not be archived; pinned download scripts in method sources record recovery instructions. Archive release size is approximately144GiB before compression.
+
+Run `upload_archive.py` with the installed Windows GitHub CLI to resume failed uploads. Existing assets are accepted only if size and GitHub SHA256 digest match; conflicting assets are never silently overwritten. A replay of a changing live group may require a new release rather than overwriting the existing snapshot.

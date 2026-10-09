@@ -1,0 +1,14 @@
+{
+  "path": "/home/test/spade_results/btad_k50_seed42_20261008/01/predictions.npz",
+  "sha256": "dda403cfe4538c229a45b8ffa56a29823a7b9173efe15d1d200a222092ffe5c5",
+  "global_features": {
+    "train": {
+      "path": "/home/test/spade_results/btad_k50_seed42_20261008/01/train_avgpool.npy",
+      "sha256": "12dd45a869abdc1ea99ec390456a1f4d23c316b8c72cf6b89a2519c32dcd351f"
+    },
+    "test": {
+      "path": "/home/test/spade_results/btad_k50_seed42_20261008/01/test_avgpool.npy",
+      "sha256": "96f18930914e3c696958d1ec07d754dc2966fa2245811718a315c50ec8f0c1ec"
+    }
+  }
+}

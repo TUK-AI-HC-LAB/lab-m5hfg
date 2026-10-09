@@ -1,0 +1,16 @@
+{
+  "dataset": "mvtec",
+  "shot": 8,
+  "category": "screw",
+  "round": 7,
+  "n_images": 160,
+  "image_auroc": 0.7003484320557491,
+  "image_f1_max": 0.860377358490566,
+  "image_ap": 0.8769573599721822,
+  "pixel_auroc": 0.9747561224217727,
+  "pixel_f1_max": 0.19352556164868212,
+  "pixel_ap": 0.11635521671444429,
+  "aupro": 0.9080081140369284,
+  "evaluation_seconds": 10.215240911000365,
+  "gpu_allocated_mib": 5172.4951171875
+}

@@ -1,0 +1,9 @@
+{
+  "path": "/home/test/acr_results/mvtec_seed42_20261007/zipper_predictions.npz",
+  "sha256": "2a8cb4ef837606e72e35114cf6275cf2170f8221db486db2a6f429e27f07f8f5",
+  "shape": [
+    151,
+    224,
+    224
+  ]
+}

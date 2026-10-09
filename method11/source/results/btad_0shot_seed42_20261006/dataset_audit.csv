@@ -1,0 +1,4 @@
+category,n_images,n_normal,n_anomaly,paths_and_labels_validated
+01,70,21,49,True
+02,230,30,200,True
+03,441,400,41,True

@@ -1,0 +1,10 @@
+{
+  "n_images": 1725,
+  "mean_ms": 337.41164750029395,
+  "mean_ms_excluding_first": 337.3802021896794,
+  "peak_allocated_mb": 3788.544921875,
+  "peak_reserved_mb": 4036.0,
+  "memory_unit": "MiB",
+  "timing_scope": "H2D and official scoring plus local feature capture and disk-cache writes; excludes loader, visualization, metrics, model/text/reference setup",
+  "instrumentation": "ancillary line trace with CUDA synchronization; not an isolated speed benchmark"
+}

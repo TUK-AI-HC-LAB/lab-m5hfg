@@ -1,0 +1,3161 @@
+{
+  "status": "passed",
+  "n_conditions": 3,
+  "n_categories_per_condition": 15,
+  "n_rounds": 450,
+  "image_metrics_recomputed_all_rounds": true,
+  "pixel_metrics_recomputed_first_round_per_category": true,
+  "aupro_verification": "source hash and finite range; not independently recomputed",
+  "audits": [
+    {
+      "shot": 4,
+      "category": "bottle",
+      "round": 0,
+      "n_images": 83,
+      "pixel_metrics_recomputed": true
+    },
+    {
+      "shot": 4,
+      "category": "bottle",
+      "round": 1,
+      "n_images": 83,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "bottle",
+      "round": 2,
+      "n_images": 83,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "bottle",
+      "round": 3,
+      "n_images": 83,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "bottle",
+      "round": 4,
+      "n_images": 83,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "bottle",
+      "round": 5,
+      "n_images": 83,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "bottle",
+      "round": 6,
+      "n_images": 83,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "bottle",
+      "round": 7,
+      "n_images": 83,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "bottle",
+      "round": 8,
+      "n_images": 83,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "bottle",
+      "round": 9,
+      "n_images": 83,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "cable",
+      "round": 0,
+      "n_images": 150,
+      "pixel_metrics_recomputed": true
+    },
+    {
+      "shot": 4,
+      "category": "cable",
+      "round": 1,
+      "n_images": 150,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "cable",
+      "round": 2,
+      "n_images": 150,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "cable",
+      "round": 3,
+      "n_images": 150,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "cable",
+      "round": 4,
+      "n_images": 150,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "cable",
+      "round": 5,
+      "n_images": 150,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "cable",
+      "round": 6,
+      "n_images": 150,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "cable",
+      "round": 7,
+      "n_images": 150,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "cable",
+      "round": 8,
+      "n_images": 150,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "cable",
+      "round": 9,
+      "n_images": 150,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "capsule",
+      "round": 0,
+      "n_images": 132,
+      "pixel_metrics_recomputed": true
+    },
+    {
+      "shot": 4,
+      "category": "capsule",
+      "round": 1,
+      "n_images": 132,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "capsule",
+      "round": 2,
+      "n_images": 132,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "capsule",
+      "round": 3,
+      "n_images": 132,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "capsule",
+      "round": 4,
+      "n_images": 132,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "capsule",
+      "round": 5,
+      "n_images": 132,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "capsule",
+      "round": 6,
+      "n_images": 132,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "capsule",
+      "round": 7,
+      "n_images": 132,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "capsule",
+      "round": 8,
+      "n_images": 132,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "capsule",
+      "round": 9,
+      "n_images": 132,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "carpet",
+      "round": 0,
+      "n_images": 117,
+      "pixel_metrics_recomputed": true
+    },
+    {
+      "shot": 4,
+      "category": "carpet",
+      "round": 1,
+      "n_images": 117,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "carpet",
+      "round": 2,
+      "n_images": 117,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "carpet",
+      "round": 3,
+      "n_images": 117,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "carpet",
+      "round": 4,
+      "n_images": 117,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "carpet",
+      "round": 5,
+      "n_images": 117,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "carpet",
+      "round": 6,
+      "n_images": 117,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "carpet",
+      "round": 7,
+      "n_images": 117,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "carpet",
+      "round": 8,
+      "n_images": 117,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "carpet",
+      "round": 9,
+      "n_images": 117,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "grid",
+      "round": 0,
+      "n_images": 78,
+      "pixel_metrics_recomputed": true
+    },
+    {
+      "shot": 4,
+      "category": "grid",
+      "round": 1,
+      "n_images": 78,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "grid",
+      "round": 2,
+      "n_images": 78,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "grid",
+      "round": 3,
+      "n_images": 78,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "grid",
+      "round": 4,
+      "n_images": 78,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "grid",
+      "round": 5,
+      "n_images": 78,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "grid",
+      "round": 6,
+      "n_images": 78,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "grid",
+      "round": 7,
+      "n_images": 78,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "grid",
+      "round": 8,
+      "n_images": 78,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "grid",
+      "round": 9,
+      "n_images": 78,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "hazelnut",
+      "round": 0,
+      "n_images": 110,
+      "pixel_metrics_recomputed": true
+    },
+    {
+      "shot": 4,
+      "category": "hazelnut",
+      "round": 1,
+      "n_images": 110,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "hazelnut",
+      "round": 2,
+      "n_images": 110,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "hazelnut",
+      "round": 3,
+      "n_images": 110,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "hazelnut",
+      "round": 4,
+      "n_images": 110,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "hazelnut",
+      "round": 5,
+      "n_images": 110,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "hazelnut",
+      "round": 6,
+      "n_images": 110,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "hazelnut",
+      "round": 7,
+      "n_images": 110,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "hazelnut",
+      "round": 8,
+      "n_images": 110,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "hazelnut",
+      "round": 9,
+      "n_images": 110,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "leather",
+      "round": 0,
+      "n_images": 124,
+      "pixel_metrics_recomputed": true
+    },
+    {
+      "shot": 4,
+      "category": "leather",
+      "round": 1,
+      "n_images": 124,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "leather",
+      "round": 2,
+      "n_images": 124,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "leather",
+      "round": 3,
+      "n_images": 124,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "leather",
+      "round": 4,
+      "n_images": 124,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "leather",
+      "round": 5,
+      "n_images": 124,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "leather",
+      "round": 6,
+      "n_images": 124,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "leather",
+      "round": 7,
+      "n_images": 124,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "leather",
+      "round": 8,
+      "n_images": 124,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "leather",
+      "round": 9,
+      "n_images": 124,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "metal_nut",
+      "round": 0,
+      "n_images": 115,
+      "pixel_metrics_recomputed": true
+    },
+    {
+      "shot": 4,
+      "category": "metal_nut",
+      "round": 1,
+      "n_images": 115,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "metal_nut",
+      "round": 2,
+      "n_images": 115,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "metal_nut",
+      "round": 3,
+      "n_images": 115,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "metal_nut",
+      "round": 4,
+      "n_images": 115,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "metal_nut",
+      "round": 5,
+      "n_images": 115,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "metal_nut",
+      "round": 6,
+      "n_images": 115,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "metal_nut",
+      "round": 7,
+      "n_images": 115,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "metal_nut",
+      "round": 8,
+      "n_images": 115,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "metal_nut",
+      "round": 9,
+      "n_images": 115,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "pill",
+      "round": 0,
+      "n_images": 167,
+      "pixel_metrics_recomputed": true
+    },
+    {
+      "shot": 4,
+      "category": "pill",
+      "round": 1,
+      "n_images": 167,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "pill",
+      "round": 2,
+      "n_images": 167,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "pill",
+      "round": 3,
+      "n_images": 167,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "pill",
+      "round": 4,
+      "n_images": 167,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "pill",
+      "round": 5,
+      "n_images": 167,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "pill",
+      "round": 6,
+      "n_images": 167,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "pill",
+      "round": 7,
+      "n_images": 167,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "pill",
+      "round": 8,
+      "n_images": 167,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "pill",
+      "round": 9,
+      "n_images": 167,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "screw",
+      "round": 0,
+      "n_images": 160,
+      "pixel_metrics_recomputed": true
+    },
+    {
+      "shot": 4,
+      "category": "screw",
+      "round": 1,
+      "n_images": 160,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "screw",
+      "round": 2,
+      "n_images": 160,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "screw",
+      "round": 3,
+      "n_images": 160,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "screw",
+      "round": 4,
+      "n_images": 160,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "screw",
+      "round": 5,
+      "n_images": 160,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "screw",
+      "round": 6,
+      "n_images": 160,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "screw",
+      "round": 7,
+      "n_images": 160,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "screw",
+      "round": 8,
+      "n_images": 160,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "screw",
+      "round": 9,
+      "n_images": 160,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "tile",
+      "round": 0,
+      "n_images": 117,
+      "pixel_metrics_recomputed": true
+    },
+    {
+      "shot": 4,
+      "category": "tile",
+      "round": 1,
+      "n_images": 117,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "tile",
+      "round": 2,
+      "n_images": 117,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "tile",
+      "round": 3,
+      "n_images": 117,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "tile",
+      "round": 4,
+      "n_images": 117,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "tile",
+      "round": 5,
+      "n_images": 117,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "tile",
+      "round": 6,
+      "n_images": 117,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "tile",
+      "round": 7,
+      "n_images": 117,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "tile",
+      "round": 8,
+      "n_images": 117,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "tile",
+      "round": 9,
+      "n_images": 117,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "toothbrush",
+      "round": 0,
+      "n_images": 42,
+      "pixel_metrics_recomputed": true
+    },
+    {
+      "shot": 4,
+      "category": "toothbrush",
+      "round": 1,
+      "n_images": 42,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "toothbrush",
+      "round": 2,
+      "n_images": 42,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "toothbrush",
+      "round": 3,
+      "n_images": 42,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "toothbrush",
+      "round": 4,
+      "n_images": 42,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "toothbrush",
+      "round": 5,
+      "n_images": 42,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "toothbrush",
+      "round": 6,
+      "n_images": 42,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "toothbrush",
+      "round": 7,
+      "n_images": 42,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "toothbrush",
+      "round": 8,
+      "n_images": 42,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "toothbrush",
+      "round": 9,
+      "n_images": 42,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "transistor",
+      "round": 0,
+      "n_images": 100,
+      "pixel_metrics_recomputed": true
+    },
+    {
+      "shot": 4,
+      "category": "transistor",
+      "round": 1,
+      "n_images": 100,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "transistor",
+      "round": 2,
+      "n_images": 100,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "transistor",
+      "round": 3,
+      "n_images": 100,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "transistor",
+      "round": 4,
+      "n_images": 100,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "transistor",
+      "round": 5,
+      "n_images": 100,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "transistor",
+      "round": 6,
+      "n_images": 100,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "transistor",
+      "round": 7,
+      "n_images": 100,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "transistor",
+      "round": 8,
+      "n_images": 100,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "transistor",
+      "round": 9,
+      "n_images": 100,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "wood",
+      "round": 0,
+      "n_images": 79,
+      "pixel_metrics_recomputed": true
+    },
+    {
+      "shot": 4,
+      "category": "wood",
+      "round": 1,
+      "n_images": 79,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "wood",
+      "round": 2,
+      "n_images": 79,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "wood",
+      "round": 3,
+      "n_images": 79,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "wood",
+      "round": 4,
+      "n_images": 79,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "wood",
+      "round": 5,
+      "n_images": 79,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "wood",
+      "round": 6,
+      "n_images": 79,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "wood",
+      "round": 7,
+      "n_images": 79,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "wood",
+      "round": 8,
+      "n_images": 79,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "wood",
+      "round": 9,
+      "n_images": 79,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "zipper",
+      "round": 0,
+      "n_images": 151,
+      "pixel_metrics_recomputed": true
+    },
+    {
+      "shot": 4,
+      "category": "zipper",
+      "round": 1,
+      "n_images": 151,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "zipper",
+      "round": 2,
+      "n_images": 151,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "zipper",
+      "round": 3,
+      "n_images": 151,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "zipper",
+      "round": 4,
+      "n_images": 151,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "zipper",
+      "round": 5,
+      "n_images": 151,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "zipper",
+      "round": 6,
+      "n_images": 151,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "zipper",
+      "round": 7,
+      "n_images": 151,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "zipper",
+      "round": 8,
+      "n_images": 151,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 4,
+      "category": "zipper",
+      "round": 9,
+      "n_images": 151,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 2,
+      "category": "bottle",
+      "round": 0,
+      "n_images": 83,
+      "pixel_metrics_recomputed": true
+    },
+    {
+      "shot": 2,
+      "category": "bottle",
+      "round": 1,
+      "n_images": 83,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 2,
+      "category": "bottle",
+      "round": 2,
+      "n_images": 83,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 2,
+      "category": "bottle",
+      "round": 3,
+      "n_images": 83,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 2,
+      "category": "bottle",
+      "round": 4,
+      "n_images": 83,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 2,
+      "category": "bottle",
+      "round": 5,
+      "n_images": 83,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 2,
+      "category": "bottle",
+      "round": 6,
+      "n_images": 83,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 2,
+      "category": "bottle",
+      "round": 7,
+      "n_images": 83,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 2,
+      "category": "bottle",
+      "round": 8,
+      "n_images": 83,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 2,
+      "category": "bottle",
+      "round": 9,
+      "n_images": 83,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 2,
+      "category": "cable",
+      "round": 0,
+      "n_images": 150,
+      "pixel_metrics_recomputed": true
+    },
+    {
+      "shot": 2,
+      "category": "cable",
+      "round": 1,
+      "n_images": 150,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 2,
+      "category": "cable",
+      "round": 2,
+      "n_images": 150,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 2,
+      "category": "cable",
+      "round": 3,
+      "n_images": 150,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 2,
+      "category": "cable",
+      "round": 4,
+      "n_images": 150,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 2,
+      "category": "cable",
+      "round": 5,
+      "n_images": 150,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 2,
+      "category": "cable",
+      "round": 6,
+      "n_images": 150,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 2,
+      "category": "cable",
+      "round": 7,
+      "n_images": 150,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 2,
+      "category": "cable",
+      "round": 8,
+      "n_images": 150,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 2,
+      "category": "cable",
+      "round": 9,
+      "n_images": 150,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 2,
+      "category": "capsule",
+      "round": 0,
+      "n_images": 132,
+      "pixel_metrics_recomputed": true
+    },
+    {
+      "shot": 2,
+      "category": "capsule",
+      "round": 1,
+      "n_images": 132,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 2,
+      "category": "capsule",
+      "round": 2,
+      "n_images": 132,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 2,
+      "category": "capsule",
+      "round": 3,
+      "n_images": 132,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 2,
+      "category": "capsule",
+      "round": 4,
+      "n_images": 132,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 2,
+      "category": "capsule",
+      "round": 5,
+      "n_images": 132,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 2,
+      "category": "capsule",
+      "round": 6,
+      "n_images": 132,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 2,
+      "category": "capsule",
+      "round": 7,
+      "n_images": 132,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 2,
+      "category": "capsule",
+      "round": 8,
+      "n_images": 132,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 2,
+      "category": "capsule",
+      "round": 9,
+      "n_images": 132,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 2,
+      "category": "carpet",
+      "round": 0,
+      "n_images": 117,
+      "pixel_metrics_recomputed": true
+    },
+    {
+      "shot": 2,
+      "category": "carpet",
+      "round": 1,
+      "n_images": 117,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 2,
+      "category": "carpet",
+      "round": 2,
+      "n_images": 117,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 2,
+      "category": "carpet",
+      "round": 3,
+      "n_images": 117,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 2,
+      "category": "carpet",
+      "round": 4,
+      "n_images": 117,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 2,
+      "category": "carpet",
+      "round": 5,
+      "n_images": 117,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 2,
+      "category": "carpet",
+      "round": 6,
+      "n_images": 117,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 2,
+      "category": "carpet",
+      "round": 7,
+      "n_images": 117,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 2,
+      "category": "carpet",
+      "round": 8,
+      "n_images": 117,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 2,
+      "category": "carpet",
+      "round": 9,
+      "n_images": 117,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 2,
+      "category": "grid",
+      "round": 0,
+      "n_images": 78,
+      "pixel_metrics_recomputed": true
+    },
+    {
+      "shot": 2,
+      "category": "grid",
+      "round": 1,
+      "n_images": 78,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 2,
+      "category": "grid",
+      "round": 2,
+      "n_images": 78,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 2,
+      "category": "grid",
+      "round": 3,
+      "n_images": 78,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 2,
+      "category": "grid",
+      "round": 4,
+      "n_images": 78,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 2,
+      "category": "grid",
+      "round": 5,
+      "n_images": 78,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 2,
+      "category": "grid",
+      "round": 6,
+      "n_images": 78,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 2,
+      "category": "grid",
+      "round": 7,
+      "n_images": 78,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 2,
+      "category": "grid",
+      "round": 8,
+      "n_images": 78,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 2,
+      "category": "grid",
+      "round": 9,
+      "n_images": 78,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 2,
+      "category": "hazelnut",
+      "round": 0,
+      "n_images": 110,
+      "pixel_metrics_recomputed": true
+    },
+    {
+      "shot": 2,
+      "category": "hazelnut",
+      "round": 1,
+      "n_images": 110,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 2,
+      "category": "hazelnut",
+      "round": 2,
+      "n_images": 110,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 2,
+      "category": "hazelnut",
+      "round": 3,
+      "n_images": 110,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 2,
+      "category": "hazelnut",
+      "round": 4,
+      "n_images": 110,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 2,
+      "category": "hazelnut",
+      "round": 5,
+      "n_images": 110,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 2,
+      "category": "hazelnut",
+      "round": 6,
+      "n_images": 110,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 2,
+      "category": "hazelnut",
+      "round": 7,
+      "n_images": 110,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 2,
+      "category": "hazelnut",
+      "round": 8,
+      "n_images": 110,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 2,
+      "category": "hazelnut",
+      "round": 9,
+      "n_images": 110,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 2,
+      "category": "leather",
+      "round": 0,
+      "n_images": 124,
+      "pixel_metrics_recomputed": true
+    },
+    {
+      "shot": 2,
+      "category": "leather",
+      "round": 1,
+      "n_images": 124,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 2,
+      "category": "leather",
+      "round": 2,
+      "n_images": 124,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 2,
+      "category": "leather",
+      "round": 3,
+      "n_images": 124,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 2,
+      "category": "leather",
+      "round": 4,
+      "n_images": 124,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 2,
+      "category": "leather",
+      "round": 5,
+      "n_images": 124,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 2,
+      "category": "leather",
+      "round": 6,
+      "n_images": 124,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 2,
+      "category": "leather",
+      "round": 7,
+      "n_images": 124,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 2,
+      "category": "leather",
+      "round": 8,
+      "n_images": 124,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 2,
+      "category": "leather",
+      "round": 9,
+      "n_images": 124,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 2,
+      "category": "metal_nut",
+      "round": 0,
+      "n_images": 115,
+      "pixel_metrics_recomputed": true
+    },
+    {
+      "shot": 2,
+      "category": "metal_nut",
+      "round": 1,
+      "n_images": 115,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 2,
+      "category": "metal_nut",
+      "round": 2,
+      "n_images": 115,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 2,
+      "category": "metal_nut",
+      "round": 3,
+      "n_images": 115,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 2,
+      "category": "metal_nut",
+      "round": 4,
+      "n_images": 115,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 2,
+      "category": "metal_nut",
+      "round": 5,
+      "n_images": 115,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 2,
+      "category": "metal_nut",
+      "round": 6,
+      "n_images": 115,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 2,
+      "category": "metal_nut",
+      "round": 7,
+      "n_images": 115,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 2,
+      "category": "metal_nut",
+      "round": 8,
+      "n_images": 115,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 2,
+      "category": "metal_nut",
+      "round": 9,
+      "n_images": 115,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 2,
+      "category": "pill",
+      "round": 0,
+      "n_images": 167,
+      "pixel_metrics_recomputed": true
+    },
+    {
+      "shot": 2,
+      "category": "pill",
+      "round": 1,
+      "n_images": 167,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 2,
+      "category": "pill",
+      "round": 2,
+      "n_images": 167,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 2,
+      "category": "pill",
+      "round": 3,
+      "n_images": 167,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 2,
+      "category": "pill",
+      "round": 4,
+      "n_images": 167,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 2,
+      "category": "pill",
+      "round": 5,
+      "n_images": 167,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 2,
+      "category": "pill",
+      "round": 6,
+      "n_images": 167,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 2,
+      "category": "pill",
+      "round": 7,
+      "n_images": 167,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 2,
+      "category": "pill",
+      "round": 8,
+      "n_images": 167,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 2,
+      "category": "pill",
+      "round": 9,
+      "n_images": 167,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 2,
+      "category": "screw",
+      "round": 0,
+      "n_images": 160,
+      "pixel_metrics_recomputed": true
+    },
+    {
+      "shot": 2,
+      "category": "screw",
+      "round": 1,
+      "n_images": 160,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 2,
+      "category": "screw",
+      "round": 2,
+      "n_images": 160,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 2,
+      "category": "screw",
+      "round": 3,
+      "n_images": 160,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 2,
+      "category": "screw",
+      "round": 4,
+      "n_images": 160,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 2,
+      "category": "screw",
+      "round": 5,
+      "n_images": 160,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 2,
+      "category": "screw",
+      "round": 6,
+      "n_images": 160,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 2,
+      "category": "screw",
+      "round": 7,
+      "n_images": 160,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 2,
+      "category": "screw",
+      "round": 8,
+      "n_images": 160,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 2,
+      "category": "screw",
+      "round": 9,
+      "n_images": 160,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 2,
+      "category": "tile",
+      "round": 0,
+      "n_images": 117,
+      "pixel_metrics_recomputed": true
+    },
+    {
+      "shot": 2,
+      "category": "tile",
+      "round": 1,
+      "n_images": 117,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 2,
+      "category": "tile",
+      "round": 2,
+      "n_images": 117,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 2,
+      "category": "tile",
+      "round": 3,
+      "n_images": 117,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 2,
+      "category": "tile",
+      "round": 4,
+      "n_images": 117,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 2,
+      "category": "tile",
+      "round": 5,
+      "n_images": 117,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 2,
+      "category": "tile",
+      "round": 6,
+      "n_images": 117,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 2,
+      "category": "tile",
+      "round": 7,
+      "n_images": 117,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 2,
+      "category": "tile",
+      "round": 8,
+      "n_images": 117,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 2,
+      "category": "tile",
+      "round": 9,
+      "n_images": 117,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 2,
+      "category": "toothbrush",
+      "round": 0,
+      "n_images": 42,
+      "pixel_metrics_recomputed": true
+    },
+    {
+      "shot": 2,
+      "category": "toothbrush",
+      "round": 1,
+      "n_images": 42,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 2,
+      "category": "toothbrush",
+      "round": 2,
+      "n_images": 42,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 2,
+      "category": "toothbrush",
+      "round": 3,
+      "n_images": 42,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 2,
+      "category": "toothbrush",
+      "round": 4,
+      "n_images": 42,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 2,
+      "category": "toothbrush",
+      "round": 5,
+      "n_images": 42,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 2,
+      "category": "toothbrush",
+      "round": 6,
+      "n_images": 42,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 2,
+      "category": "toothbrush",
+      "round": 7,
+      "n_images": 42,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 2,
+      "category": "toothbrush",
+      "round": 8,
+      "n_images": 42,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 2,
+      "category": "toothbrush",
+      "round": 9,
+      "n_images": 42,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 2,
+      "category": "transistor",
+      "round": 0,
+      "n_images": 100,
+      "pixel_metrics_recomputed": true
+    },
+    {
+      "shot": 2,
+      "category": "transistor",
+      "round": 1,
+      "n_images": 100,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 2,
+      "category": "transistor",
+      "round": 2,
+      "n_images": 100,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 2,
+      "category": "transistor",
+      "round": 3,
+      "n_images": 100,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 2,
+      "category": "transistor",
+      "round": 4,
+      "n_images": 100,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 2,
+      "category": "transistor",
+      "round": 5,
+      "n_images": 100,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 2,
+      "category": "transistor",
+      "round": 6,
+      "n_images": 100,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 2,
+      "category": "transistor",
+      "round": 7,
+      "n_images": 100,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 2,
+      "category": "transistor",
+      "round": 8,
+      "n_images": 100,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 2,
+      "category": "transistor",
+      "round": 9,
+      "n_images": 100,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 2,
+      "category": "wood",
+      "round": 0,
+      "n_images": 79,
+      "pixel_metrics_recomputed": true
+    },
+    {
+      "shot": 2,
+      "category": "wood",
+      "round": 1,
+      "n_images": 79,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 2,
+      "category": "wood",
+      "round": 2,
+      "n_images": 79,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 2,
+      "category": "wood",
+      "round": 3,
+      "n_images": 79,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 2,
+      "category": "wood",
+      "round": 4,
+      "n_images": 79,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 2,
+      "category": "wood",
+      "round": 5,
+      "n_images": 79,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 2,
+      "category": "wood",
+      "round": 6,
+      "n_images": 79,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 2,
+      "category": "wood",
+      "round": 7,
+      "n_images": 79,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 2,
+      "category": "wood",
+      "round": 8,
+      "n_images": 79,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 2,
+      "category": "wood",
+      "round": 9,
+      "n_images": 79,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 2,
+      "category": "zipper",
+      "round": 0,
+      "n_images": 151,
+      "pixel_metrics_recomputed": true
+    },
+    {
+      "shot": 2,
+      "category": "zipper",
+      "round": 1,
+      "n_images": 151,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 2,
+      "category": "zipper",
+      "round": 2,
+      "n_images": 151,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 2,
+      "category": "zipper",
+      "round": 3,
+      "n_images": 151,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 2,
+      "category": "zipper",
+      "round": 4,
+      "n_images": 151,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 2,
+      "category": "zipper",
+      "round": 5,
+      "n_images": 151,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 2,
+      "category": "zipper",
+      "round": 6,
+      "n_images": 151,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 2,
+      "category": "zipper",
+      "round": 7,
+      "n_images": 151,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 2,
+      "category": "zipper",
+      "round": 8,
+      "n_images": 151,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 2,
+      "category": "zipper",
+      "round": 9,
+      "n_images": 151,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "bottle",
+      "round": 0,
+      "n_images": 83,
+      "pixel_metrics_recomputed": true
+    },
+    {
+      "shot": 8,
+      "category": "bottle",
+      "round": 1,
+      "n_images": 83,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "bottle",
+      "round": 2,
+      "n_images": 83,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "bottle",
+      "round": 3,
+      "n_images": 83,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "bottle",
+      "round": 4,
+      "n_images": 83,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "bottle",
+      "round": 5,
+      "n_images": 83,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "bottle",
+      "round": 6,
+      "n_images": 83,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "bottle",
+      "round": 7,
+      "n_images": 83,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "bottle",
+      "round": 8,
+      "n_images": 83,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "bottle",
+      "round": 9,
+      "n_images": 83,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "cable",
+      "round": 0,
+      "n_images": 150,
+      "pixel_metrics_recomputed": true
+    },
+    {
+      "shot": 8,
+      "category": "cable",
+      "round": 1,
+      "n_images": 150,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "cable",
+      "round": 2,
+      "n_images": 150,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "cable",
+      "round": 3,
+      "n_images": 150,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "cable",
+      "round": 4,
+      "n_images": 150,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "cable",
+      "round": 5,
+      "n_images": 150,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "cable",
+      "round": 6,
+      "n_images": 150,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "cable",
+      "round": 7,
+      "n_images": 150,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "cable",
+      "round": 8,
+      "n_images": 150,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "cable",
+      "round": 9,
+      "n_images": 150,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "capsule",
+      "round": 0,
+      "n_images": 132,
+      "pixel_metrics_recomputed": true
+    },
+    {
+      "shot": 8,
+      "category": "capsule",
+      "round": 1,
+      "n_images": 132,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "capsule",
+      "round": 2,
+      "n_images": 132,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "capsule",
+      "round": 3,
+      "n_images": 132,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "capsule",
+      "round": 4,
+      "n_images": 132,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "capsule",
+      "round": 5,
+      "n_images": 132,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "capsule",
+      "round": 6,
+      "n_images": 132,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "capsule",
+      "round": 7,
+      "n_images": 132,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "capsule",
+      "round": 8,
+      "n_images": 132,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "capsule",
+      "round": 9,
+      "n_images": 132,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "carpet",
+      "round": 0,
+      "n_images": 117,
+      "pixel_metrics_recomputed": true
+    },
+    {
+      "shot": 8,
+      "category": "carpet",
+      "round": 1,
+      "n_images": 117,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "carpet",
+      "round": 2,
+      "n_images": 117,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "carpet",
+      "round": 3,
+      "n_images": 117,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "carpet",
+      "round": 4,
+      "n_images": 117,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "carpet",
+      "round": 5,
+      "n_images": 117,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "carpet",
+      "round": 6,
+      "n_images": 117,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "carpet",
+      "round": 7,
+      "n_images": 117,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "carpet",
+      "round": 8,
+      "n_images": 117,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "carpet",
+      "round": 9,
+      "n_images": 117,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "grid",
+      "round": 0,
+      "n_images": 78,
+      "pixel_metrics_recomputed": true
+    },
+    {
+      "shot": 8,
+      "category": "grid",
+      "round": 1,
+      "n_images": 78,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "grid",
+      "round": 2,
+      "n_images": 78,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "grid",
+      "round": 3,
+      "n_images": 78,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "grid",
+      "round": 4,
+      "n_images": 78,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "grid",
+      "round": 5,
+      "n_images": 78,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "grid",
+      "round": 6,
+      "n_images": 78,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "grid",
+      "round": 7,
+      "n_images": 78,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "grid",
+      "round": 8,
+      "n_images": 78,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "grid",
+      "round": 9,
+      "n_images": 78,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "hazelnut",
+      "round": 0,
+      "n_images": 110,
+      "pixel_metrics_recomputed": true
+    },
+    {
+      "shot": 8,
+      "category": "hazelnut",
+      "round": 1,
+      "n_images": 110,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "hazelnut",
+      "round": 2,
+      "n_images": 110,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "hazelnut",
+      "round": 3,
+      "n_images": 110,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "hazelnut",
+      "round": 4,
+      "n_images": 110,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "hazelnut",
+      "round": 5,
+      "n_images": 110,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "hazelnut",
+      "round": 6,
+      "n_images": 110,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "hazelnut",
+      "round": 7,
+      "n_images": 110,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "hazelnut",
+      "round": 8,
+      "n_images": 110,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "hazelnut",
+      "round": 9,
+      "n_images": 110,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "leather",
+      "round": 0,
+      "n_images": 124,
+      "pixel_metrics_recomputed": true
+    },
+    {
+      "shot": 8,
+      "category": "leather",
+      "round": 1,
+      "n_images": 124,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "leather",
+      "round": 2,
+      "n_images": 124,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "leather",
+      "round": 3,
+      "n_images": 124,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "leather",
+      "round": 4,
+      "n_images": 124,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "leather",
+      "round": 5,
+      "n_images": 124,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "leather",
+      "round": 6,
+      "n_images": 124,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "leather",
+      "round": 7,
+      "n_images": 124,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "leather",
+      "round": 8,
+      "n_images": 124,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "leather",
+      "round": 9,
+      "n_images": 124,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "metal_nut",
+      "round": 0,
+      "n_images": 115,
+      "pixel_metrics_recomputed": true
+    },
+    {
+      "shot": 8,
+      "category": "metal_nut",
+      "round": 1,
+      "n_images": 115,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "metal_nut",
+      "round": 2,
+      "n_images": 115,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "metal_nut",
+      "round": 3,
+      "n_images": 115,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "metal_nut",
+      "round": 4,
+      "n_images": 115,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "metal_nut",
+      "round": 5,
+      "n_images": 115,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "metal_nut",
+      "round": 6,
+      "n_images": 115,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "metal_nut",
+      "round": 7,
+      "n_images": 115,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "metal_nut",
+      "round": 8,
+      "n_images": 115,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "metal_nut",
+      "round": 9,
+      "n_images": 115,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "pill",
+      "round": 0,
+      "n_images": 167,
+      "pixel_metrics_recomputed": true
+    },
+    {
+      "shot": 8,
+      "category": "pill",
+      "round": 1,
+      "n_images": 167,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "pill",
+      "round": 2,
+      "n_images": 167,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "pill",
+      "round": 3,
+      "n_images": 167,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "pill",
+      "round": 4,
+      "n_images": 167,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "pill",
+      "round": 5,
+      "n_images": 167,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "pill",
+      "round": 6,
+      "n_images": 167,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "pill",
+      "round": 7,
+      "n_images": 167,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "pill",
+      "round": 8,
+      "n_images": 167,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "pill",
+      "round": 9,
+      "n_images": 167,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "screw",
+      "round": 0,
+      "n_images": 160,
+      "pixel_metrics_recomputed": true
+    },
+    {
+      "shot": 8,
+      "category": "screw",
+      "round": 1,
+      "n_images": 160,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "screw",
+      "round": 2,
+      "n_images": 160,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "screw",
+      "round": 3,
+      "n_images": 160,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "screw",
+      "round": 4,
+      "n_images": 160,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "screw",
+      "round": 5,
+      "n_images": 160,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "screw",
+      "round": 6,
+      "n_images": 160,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "screw",
+      "round": 7,
+      "n_images": 160,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "screw",
+      "round": 8,
+      "n_images": 160,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "screw",
+      "round": 9,
+      "n_images": 160,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "tile",
+      "round": 0,
+      "n_images": 117,
+      "pixel_metrics_recomputed": true
+    },
+    {
+      "shot": 8,
+      "category": "tile",
+      "round": 1,
+      "n_images": 117,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "tile",
+      "round": 2,
+      "n_images": 117,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "tile",
+      "round": 3,
+      "n_images": 117,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "tile",
+      "round": 4,
+      "n_images": 117,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "tile",
+      "round": 5,
+      "n_images": 117,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "tile",
+      "round": 6,
+      "n_images": 117,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "tile",
+      "round": 7,
+      "n_images": 117,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "tile",
+      "round": 8,
+      "n_images": 117,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "tile",
+      "round": 9,
+      "n_images": 117,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "toothbrush",
+      "round": 0,
+      "n_images": 42,
+      "pixel_metrics_recomputed": true
+    },
+    {
+      "shot": 8,
+      "category": "toothbrush",
+      "round": 1,
+      "n_images": 42,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "toothbrush",
+      "round": 2,
+      "n_images": 42,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "toothbrush",
+      "round": 3,
+      "n_images": 42,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "toothbrush",
+      "round": 4,
+      "n_images": 42,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "toothbrush",
+      "round": 5,
+      "n_images": 42,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "toothbrush",
+      "round": 6,
+      "n_images": 42,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "toothbrush",
+      "round": 7,
+      "n_images": 42,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "toothbrush",
+      "round": 8,
+      "n_images": 42,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "toothbrush",
+      "round": 9,
+      "n_images": 42,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "transistor",
+      "round": 0,
+      "n_images": 100,
+      "pixel_metrics_recomputed": true
+    },
+    {
+      "shot": 8,
+      "category": "transistor",
+      "round": 1,
+      "n_images": 100,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "transistor",
+      "round": 2,
+      "n_images": 100,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "transistor",
+      "round": 3,
+      "n_images": 100,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "transistor",
+      "round": 4,
+      "n_images": 100,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "transistor",
+      "round": 5,
+      "n_images": 100,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "transistor",
+      "round": 6,
+      "n_images": 100,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "transistor",
+      "round": 7,
+      "n_images": 100,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "transistor",
+      "round": 8,
+      "n_images": 100,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "transistor",
+      "round": 9,
+      "n_images": 100,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "wood",
+      "round": 0,
+      "n_images": 79,
+      "pixel_metrics_recomputed": true
+    },
+    {
+      "shot": 8,
+      "category": "wood",
+      "round": 1,
+      "n_images": 79,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "wood",
+      "round": 2,
+      "n_images": 79,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "wood",
+      "round": 3,
+      "n_images": 79,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "wood",
+      "round": 4,
+      "n_images": 79,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "wood",
+      "round": 5,
+      "n_images": 79,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "wood",
+      "round": 6,
+      "n_images": 79,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "wood",
+      "round": 7,
+      "n_images": 79,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "wood",
+      "round": 8,
+      "n_images": 79,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "wood",
+      "round": 9,
+      "n_images": 79,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "zipper",
+      "round": 0,
+      "n_images": 151,
+      "pixel_metrics_recomputed": true
+    },
+    {
+      "shot": 8,
+      "category": "zipper",
+      "round": 1,
+      "n_images": 151,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "zipper",
+      "round": 2,
+      "n_images": 151,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "zipper",
+      "round": 3,
+      "n_images": 151,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "zipper",
+      "round": 4,
+      "n_images": 151,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "zipper",
+      "round": 5,
+      "n_images": 151,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "zipper",
+      "round": 6,
+      "n_images": 151,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "zipper",
+      "round": 7,
+      "n_images": 151,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "zipper",
+      "round": 8,
+      "n_images": 151,
+      "pixel_metrics_recomputed": false
+    },
+    {
+      "shot": 8,
+      "category": "zipper",
+      "round": 9,
+      "n_images": 151,
+      "pixel_metrics_recomputed": false
+    }
+  ]
+}

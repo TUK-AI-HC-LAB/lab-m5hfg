@@ -1,0 +1,16 @@
+category,status,reused,exit_code,elapsed_this_batch_seconds,raw_output
+bottle,completed,True,0,0.00010927199999954951,/home/test/musc_results/bottle_paper_20261002
+cable,completed,True,0,0.00010929200000120431,/home/test/musc_results/mvtec_all_paper_20261002/cable
+capsule,completed,True,0,0.00011106200000199351,/home/test/musc_results/mvtec_all_paper_20261002/capsule
+carpet,completed,True,0,0.00013815200000166783,/home/test/musc_results/mvtec_all_paper_20261002/carpet
+grid,completed,True,0,0.00011619200000012597,/home/test/musc_results/mvtec_all_paper_20261002/grid
+hazelnut,completed,True,0,0.00010762200000158373,/home/test/musc_results/mvtec_all_paper_20261002/hazelnut
+leather,completed,True,0,0.00010938200000154552,/home/test/musc_results/mvtec_all_paper_20261002/leather
+metal_nut,completed,True,0,0.00011077199999931509,/home/test/musc_results/mvtec_all_paper_20261002/metal_nut
+pill,completed,True,0,0.00010927199999954951,/home/test/musc_results/mvtec_all_paper_20261002/pill
+screw,completed,True,0,0.00021927399999910335,/home/test/musc_results/mvtec_all_paper_20261002/screw
+tile,completed,False,0,133.626271082,/home/test/musc_results/mvtec_all_paper_20261002/tile
+toothbrush,completed,False,0,36.705762335,/home/test/musc_results/mvtec_all_paper_20261002/toothbrush
+transistor,completed,False,0,100.45571190700002,/home/test/musc_results/mvtec_all_paper_20261002/transistor
+wood,completed,False,0,74.44743052900003,/home/test/musc_results/mvtec_all_paper_20261002/wood
+zipper,completed,False,0,196.854711608,/home/test/musc_results/mvtec_all_paper_20261002/zipper

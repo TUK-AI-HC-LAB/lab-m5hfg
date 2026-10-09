@@ -1,0 +1,2 @@
+dataset,category,n_images,image_auroc,image_f1_max,image_ap,pixel_auroc,pixel_f1_max,pixel_ap,aupro
+mvtec_ad,leather,124,1.0,1.0,1.0000000000000002,0.9971696588386595,0.6284463986163352,0.6446964799619713,0.9873492824293544

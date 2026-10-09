@@ -1,0 +1,6 @@
+{
+  "status": "passed",
+  "optimizer_steps": 1,
+  "production_epochs_unchanged": 256,
+  "device": "cuda:0"
+}

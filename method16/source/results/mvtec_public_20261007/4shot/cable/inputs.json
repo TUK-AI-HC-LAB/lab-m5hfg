@@ -1,0 +1,8 @@
+{
+  "checkpoint": "/home/test/regad_assets/save_checkpoints/4/cable/cable_4_rotation_scale_model.pt",
+  "checkpoint_sha256": "9417b4261c55f1b87aaefb02009d731a0780318990b8483a217b17eadb07838e",
+  "support": "/home/test/regad_assets/support_set/cable/4_10.pt",
+  "support_sha256": "e0180f00ed5077876a959d169ee0312eeb31190a75d55519572abf5ea917afa7",
+  "rscin_feature_path": "/home/test/aprilgan_results/rscin_shared_musc_features/mvtec/cable/features.npy",
+  "rscin_feature_sha256": "84a970793446a328617755ad976bb01915845f21bb9fbb0b311ca92753af78ee"
+}

@@ -1,0 +1,9 @@
+{
+  "path": "/home/test/acr_results/mvtec_seed42_20261007/metal_nut_predictions.npz",
+  "sha256": "f6baa52fe0cf659683704cfaca46aa7e69580d88eac129ce1fa72d0c73801a0c",
+  "shape": [
+    115,
+    224,
+    224
+  ]
+}

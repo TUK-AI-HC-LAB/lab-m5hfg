@@ -1,0 +1,14 @@
+{
+  "dataset": "mvtec",
+  "shot": 8,
+  "category": "transistor",
+  "round": 7,
+  "n_images": 100,
+  "image_auroc": 0.6895833333333333,
+  "image_f1_max": 0.6262626262626263,
+  "image_ap": 0.6544144812742958,
+  "pixel_auroc": 0.6536439820104318,
+  "pixel_f1_max": 0.18139838561621108,
+  "pixel_ap": 0.10269235165117548,
+  "aupro": 0.4855840578104278
+}

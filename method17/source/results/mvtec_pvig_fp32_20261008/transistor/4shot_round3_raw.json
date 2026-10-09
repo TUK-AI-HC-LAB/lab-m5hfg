@@ -1,0 +1,6 @@
+{
+  "path": "/home/test/graphcore_results/mvtec_pvig_fp32_20261008/transistor/4shot_round3.npz",
+  "sha256": "40482a9130ec35de151db0b5dccac9e980c7e9d8010ce2d364459a1ebb6b2606",
+  "bank_path": "/home/test/graphcore_results/mvtec_pvig_fp32_20261008/transistor/4shot_round3_bank.npy",
+  "bank_sha256": "c613b5a3e8a0fac06ef042fda983f45e8581e32d9f1a1c86b7e2ca2d3ae22a80"
+}

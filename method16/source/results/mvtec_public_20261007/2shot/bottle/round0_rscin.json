@@ -1,0 +1,22 @@
+[
+  {
+    "shot": 2,
+    "category": "bottle",
+    "round": 0,
+    "rscin": "w/o",
+    "n_images": 83,
+    "image_auroc": 0.9857142857142858,
+    "image_f1_max": 0.975609756097561,
+    "image_ap": 0.9958712651727357
+  },
+  {
+    "shot": 2,
+    "category": "bottle",
+    "round": 0,
+    "rscin": "w",
+    "n_images": 83,
+    "image_auroc": 0.9904761904761905,
+    "image_f1_max": 0.9763779527559054,
+    "image_ap": 0.9972638248847925
+  }
+]

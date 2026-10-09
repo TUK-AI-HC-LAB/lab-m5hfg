@@ -1,0 +1,47 @@
+{
+  "results": [
+    {
+      "batch_size": 2,
+      "peak_allocated_bytes": 3840728064,
+      "images_per_second": 9.027327951460924,
+      "accelerated": true,
+      "mean_step_seconds": 0.22154950066662119,
+      "losses": [
+        1.7693463563919067,
+        1.7248543500900269,
+        1.7139079570770264,
+        1.6961313486099243
+      ],
+      "finite_gradients": true
+    },
+    {
+      "batch_size": 4,
+      "peak_allocated_bytes": 7581042176,
+      "images_per_second": 8.737432117688986,
+      "accelerated": true,
+      "mean_step_seconds": 0.45780040933330685,
+      "losses": [
+        1.769888997077942,
+        1.7358999252319336,
+        1.696869134902954,
+        1.6974440813064575
+      ],
+      "finite_gradients": true
+    },
+    {
+      "batch_size": 8,
+      "peak_allocated_bytes": 13544605184,
+      "images_per_second": 8.584935071946692,
+      "accelerated": true,
+      "mean_step_seconds": 0.9318649393333089,
+      "losses": [
+        1.7695486545562744,
+        1.7245759963989258,
+        1.715763807296753,
+        1.6833398342132568
+      ],
+      "finite_gradients": true
+    }
+  ],
+  "conditions": "representative full local optimization step; fixed random input; warmup excluded; finite gradients checked"
+}

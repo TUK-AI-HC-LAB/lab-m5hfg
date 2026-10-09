@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "loss": 315553.03125,
+  "mse": 0.35682058334350586,
+  "negative_ssim": -0.008231321349740028,
+  "mdn_loss": 315551.25,
+  "batch_size": 8,
+  "coefs": 150,
+  "gpu": "NVIDIA GeForce RTX 5080",
+  "allocated_mib": 4257.05078125,
+  "finite_gradients": true
+}

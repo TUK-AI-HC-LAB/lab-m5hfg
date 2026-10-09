@@ -1,0 +1,8 @@
+{
+  "checkpoint": "/home/test/regad_assets/save_checkpoints/4/screw/screw_4_rotation_scale_model.pt",
+  "checkpoint_sha256": "b00a34e48939421916ebd60651f116026f9f3deea1ffac30c86853063d9be724",
+  "support": "/home/test/regad_assets/support_set/screw/4_10.pt",
+  "support_sha256": "ff4f9fa77323a3cfb20236463d48d7f1e6e3d66a8da47257dd4706750ccd1bab",
+  "rscin_feature_path": "/home/test/aprilgan_results/rscin_shared_musc_features/mvtec/screw/features.npy",
+  "rscin_feature_sha256": "c3c94bf0da83bb07da1af7c95dda54236522be0de7ff4c967b00973a9fe6f141"
+}

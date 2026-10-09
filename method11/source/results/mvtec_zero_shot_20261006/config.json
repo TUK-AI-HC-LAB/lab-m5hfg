@@ -1,0 +1,24 @@
+{
+  "data_path": "/home/test/data/mvtec",
+  "save_path": "/home/test/aprilgan_results/mvtec_zero_shot_20261006/official",
+  "checkpoint_path": "/home/test/VAND-APRIL-GAN/exps/pretrained/visa_pretrained.pth",
+  "config_path": "/home/test/VAND-APRIL-GAN/open_clip/model_configs/ViT-L-14-336.json",
+  "dataset": "mvtec",
+  "model": "ViT-L-14-336",
+  "pretrained": "openai",
+  "features_list": [
+    6,
+    12,
+    18,
+    24
+  ],
+  "few_shot_features": [
+    3,
+    6,
+    9
+  ],
+  "image_size": 518,
+  "mode": "zero_shot",
+  "k_shot": 0,
+  "seed": 42
+}

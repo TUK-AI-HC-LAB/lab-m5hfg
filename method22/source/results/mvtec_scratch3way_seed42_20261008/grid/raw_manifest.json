@@ -1,0 +1,46 @@
+[
+  {
+    "path": "/home/test/cutpaste_results/mvtec_scratch3way_seed42_20261008/grid/predictions.npz",
+    "sha256": "7ade9366e858a124205327d9f7539942b0334c4c0fd535bb22aa7d996ad593d2"
+  },
+  {
+    "path": "/home/test/cutpaste_results/mvtec_scratch3way_seed42_20261008/grid/image/density.npz",
+    "sha256": "564b87042fcdef79d39128bc89524ea5d33e8fce1a6552cbcfad97a663d661ec"
+  },
+  {
+    "path": "/home/test/cutpaste_results/mvtec_scratch3way_seed42_20261008/grid/image/last.pt",
+    "sha256": "5b745b762338d2bccbee8644b8e1a749a233b460f3976b15e5f0899de655e600"
+  },
+  {
+    "path": "/home/test/cutpaste_results/mvtec_scratch3way_seed42_20261008/grid/image/train_features.npy",
+    "sha256": "a400eaa53b3e0bb9f671eca05e3c786c45c334fbd46583749a03521896f86fc7"
+  },
+  {
+    "path": "/home/test/cutpaste_results/mvtec_scratch3way_seed42_20261008/grid/image/test_features.npy",
+    "sha256": "2eb54d34fd35c79ea3c78db61c922e15f10d28f9c9dcdb693513f642afb2132f"
+  },
+  {
+    "path": "/home/test/cutpaste_results/mvtec_scratch3way_seed42_20261008/grid/patch/last.pt",
+    "sha256": "9710761d91a70477814888117849e278884ea3797e7ffddd986f94473e212f29"
+  },
+  {
+    "path": "/home/test/cutpaste_results/mvtec_scratch3way_seed42_20261008/grid/patch/train_features.npy",
+    "sha256": "12a4013e142e037289d69e9e7e602fad674262f2b9dd534651b58bd87f09ee1d"
+  },
+  {
+    "path": "/home/test/cutpaste_results/mvtec_scratch3way_seed42_20261008/grid/patch/test_features.npy",
+    "sha256": "d1b5b20a0067c321c5d469df7e4bc033a81ac8157b38b8e12ba3bba61334b0e8"
+  },
+  {
+    "path": "/home/test/cutpaste_results/mvtec_scratch3way_seed42_20261008/grid/patch/density_mean.npy",
+    "sha256": "b0003f259e6af3cb0cbe9be1b75f5f52fd91502b4813997f75fa731eb477dcac"
+  },
+  {
+    "path": "/home/test/cutpaste_results/mvtec_scratch3way_seed42_20261008/grid/patch/density_precision.npy",
+    "sha256": "35fdb9df223c63f0ddba362329272a49b4d01da125c44621c7858922d44bcc97"
+  },
+  {
+    "path": "/home/test/cutpaste_results/mvtec_scratch3way_seed42_20261008/grid/patch/density_shrinkage.npy",
+    "sha256": "3240f8fa69101fb8bbed3dfbbf4d5cd2ec0f131a02b437dc66ec17238da99931"
+  }
+]

@@ -1,0 +1,86 @@
+[
+  {
+    "img_path": "01/train/ok/0082.bmp",
+    "mask_path": "",
+    "cls_name": "01",
+    "specie_name": "ok",
+    "anomaly": 0
+  },
+  {
+    "img_path": "01/train/ok/0332.bmp",
+    "mask_path": "",
+    "cls_name": "01",
+    "specie_name": "ok",
+    "anomaly": 0
+  },
+  {
+    "img_path": "01/train/ok/0105.bmp",
+    "mask_path": "",
+    "cls_name": "01",
+    "specie_name": "ok",
+    "anomaly": 0
+  },
+  {
+    "img_path": "01/train/ok/0122.bmp",
+    "mask_path": "",
+    "cls_name": "01",
+    "specie_name": "ok",
+    "anomaly": 0
+  },
+  {
+    "img_path": "02/train/ok/0010.png",
+    "mask_path": "",
+    "cls_name": "02",
+    "specie_name": "ok",
+    "anomaly": 0
+  },
+  {
+    "img_path": "02/train/ok/0060.png",
+    "mask_path": "",
+    "cls_name": "02",
+    "specie_name": "ok",
+    "anomaly": 0
+  },
+  {
+    "img_path": "02/train/ok/0353.png",
+    "mask_path": "",
+    "cls_name": "02",
+    "specie_name": "ok",
+    "anomaly": 0
+  },
+  {
+    "img_path": "02/train/ok/0317.png",
+    "mask_path": "",
+    "cls_name": "02",
+    "specie_name": "ok",
+    "anomaly": 0
+  },
+  {
+    "img_path": "03/train/ok/0965.bmp",
+    "mask_path": "",
+    "cls_name": "03",
+    "specie_name": "ok",
+    "anomaly": 0
+  },
+  {
+    "img_path": "03/train/ok/0542.bmp",
+    "mask_path": "",
+    "cls_name": "03",
+    "specie_name": "ok",
+    "anomaly": 0
+  },
+  {
+    "img_path": "03/train/ok/0796.bmp",
+    "mask_path": "",
+    "cls_name": "03",
+    "specie_name": "ok",
+    "anomaly": 0
+  },
+  {
+    "img_path": "03/train/ok/0414.bmp",
+    "mask_path": "",
+    "cls_name": "03",
+    "specie_name": "ok",
+    "anomaly": 0
+  }
+]

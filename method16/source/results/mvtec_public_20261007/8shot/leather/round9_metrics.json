@@ -1,0 +1,16 @@
+{
+  "dataset": "mvtec",
+  "shot": 8,
+  "category": "leather",
+  "round": 9,
+  "n_images": 124,
+  "image_auroc": 1.0,
+  "image_f1_max": 1.0,
+  "image_ap": 1.0000000000000002,
+  "pixel_auroc": 0.9934445377747487,
+  "pixel_f1_max": 0.46930910291133965,
+  "pixel_ap": 0.4556336429062856,
+  "aupro": 0.979301416642068,
+  "evaluation_seconds": 11.584861326000464,
+  "gpu_allocated_mib": 4566.1201171875
+}

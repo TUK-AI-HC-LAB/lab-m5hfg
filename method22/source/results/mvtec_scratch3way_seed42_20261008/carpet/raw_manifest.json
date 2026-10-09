@@ -1,0 +1,46 @@
+[
+  {
+    "path": "/home/test/cutpaste_results/mvtec_scratch3way_seed42_20261008/carpet/predictions.npz",
+    "sha256": "74cea4e3ad3db8767993bf461659d06a9f203165d0d1c72a5d2b89280e15e39e"
+  },
+  {
+    "path": "/home/test/cutpaste_results/mvtec_scratch3way_seed42_20261008/carpet/image/density.npz",
+    "sha256": "206f6b43cabc3f653c96bc3f89c650abd74cd2df4f5bcc95fe4b3190d22ed871"
+  },
+  {
+    "path": "/home/test/cutpaste_results/mvtec_scratch3way_seed42_20261008/carpet/image/last.pt",
+    "sha256": "6ed8846497562451abb8534422afab605ec7beb9770f80c327d3b73011311aa2"
+  },
+  {
+    "path": "/home/test/cutpaste_results/mvtec_scratch3way_seed42_20261008/carpet/image/train_features.npy",
+    "sha256": "c89390fdf5cca5dca1cd8f3d6c3a44b097dd6c5f5a1a40c7762fdc5e8d65fb2a"
+  },
+  {
+    "path": "/home/test/cutpaste_results/mvtec_scratch3way_seed42_20261008/carpet/image/test_features.npy",
+    "sha256": "597f90d83454e146fc85e4bf03216efe235ccd70107de2183ab7d1e6c77639c5"
+  },
+  {
+    "path": "/home/test/cutpaste_results/mvtec_scratch3way_seed42_20261008/carpet/patch/last.pt",
+    "sha256": "a0df5b361ee0896f8d7aab5c8ff397b9b32e7d4a71652ead82b1cb4c78279c2e"
+  },
+  {
+    "path": "/home/test/cutpaste_results/mvtec_scratch3way_seed42_20261008/carpet/patch/train_features.npy",
+    "sha256": "32aa02cd168bbf986a5259509d56b645461b46fdc32a6f953d6e117df71ff9c8"
+  },
+  {
+    "path": "/home/test/cutpaste_results/mvtec_scratch3way_seed42_20261008/carpet/patch/test_features.npy",
+    "sha256": "8546b40986b7bec72b81901a261fb61305abdac26868d7f062aa77dbefa9afb4"
+  },
+  {
+    "path": "/home/test/cutpaste_results/mvtec_scratch3way_seed42_20261008/carpet/patch/density_mean.npy",
+    "sha256": "388b4d0bb3211335d42d687e211a8bdca51faf97542840b6dd773b0719803fb5"
+  },
+  {
+    "path": "/home/test/cutpaste_results/mvtec_scratch3way_seed42_20261008/carpet/patch/density_precision.npy",
+    "sha256": "8ceffb7f55976306fc9850bd268c16a81f167f3ee1e72b14a90c2569b90daa0c"
+  },
+  {
+    "path": "/home/test/cutpaste_results/mvtec_scratch3way_seed42_20261008/carpet/patch/density_shrinkage.npy",
+    "sha256": "e3b05f324f1caa2c28debdc116587e0a59617929145faac7068e7762dfdb47cc"
+  }
+]

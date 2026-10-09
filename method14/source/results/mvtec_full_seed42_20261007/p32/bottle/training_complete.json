@@ -1,0 +1,9 @@
+{
+  "status": "completed",
+  "checkpoint": "/home/test/igd_results/mvtec_full_seed42_20261007/checkpoints/p32/bottle/final.pt",
+  "sha256": "e5d99a4ec39f56496e761e77f46e0acabb7bba85594b2c7d6fb51696c67f6e66",
+  "scale": 32,
+  "category": "bottle",
+  "nominal_epochs": 256,
+  "seed": 42
+}

@@ -1,0 +1,8 @@
+{
+  "dataset": "mvtec",
+  "category": "grid",
+  "n_train": 264,
+  "n_images": 78,
+  "image_auroc": 1.0,
+  "pixel_auroc": 0.9637871537155924
+}

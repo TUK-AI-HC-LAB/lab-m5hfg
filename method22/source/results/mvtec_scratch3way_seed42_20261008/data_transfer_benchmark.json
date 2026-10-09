@@ -1,0 +1,74 @@
+{
+  "training_pid": 860,
+  "base_batch": 32,
+  "effective_batch": 96,
+  "augment_unchanged": true,
+  "trials": [
+    {
+      "workers": 4,
+      "transfer": "cpu_concat",
+      "main_threads": 8,
+      "exact_input_verified": false,
+      "measured_steps": 32,
+      "mean_step_seconds": 0.0847684616561537,
+      "median_step_seconds": 0.08003359700160217,
+      "mean_data_wait_seconds": 0.00021651043721249152,
+      "mean_concat_transfer_seconds": 0.044000871406410624,
+      "mean_gpu_seconds": 0.04055107981253059
+    },
+    {
+      "workers": 4,
+      "transfer": "gpu_concat",
+      "main_threads": 8,
+      "exact_input_verified": true,
+      "measured_steps": 32,
+      "mean_step_seconds": 0.05194529553159555,
+      "median_step_seconds": 0.05527405599968915,
+      "mean_data_wait_seconds": 0.0006720363440990695,
+      "mean_concat_transfer_seconds": 0.00438345071859203,
+      "mean_gpu_seconds": 0.04688980846890445
+    },
+    {
+      "workers": 4,
+      "transfer": "gpu_concat",
+      "main_threads": 1,
+      "exact_input_verified": true,
+      "measured_steps": 32,
+      "mean_step_seconds": 0.06543109290657867,
+      "median_step_seconds": 0.05444791600166354,
+      "mean_data_wait_seconds": 0.012405103749756563,
+      "mean_concat_transfer_seconds": 0.0038628096875754636,
+      "mean_gpu_seconds": 0.04916317946924664
+    },
+    {
+      "workers": 8,
+      "transfer": "gpu_concat",
+      "main_threads": 1,
+      "exact_input_verified": true,
+      "measured_steps": 32,
+      "mean_step_seconds": 0.07058180040587558,
+      "median_step_seconds": 0.06089015849829593,
+      "mean_data_wait_seconds": 0.0002788919371141674,
+      "mean_concat_transfer_seconds": 0.00461698343781336,
+      "mean_gpu_seconds": 0.06568592503094806
+    }
+  ],
+  "category": "cable",
+  "kind": "image",
+  "checkpoint_step": 63744,
+  "selected": {
+    "workers": 4,
+    "transfer": "gpu_concat",
+    "main_threads": 8,
+    "exact_input_verified": true,
+    "measured_steps": 32,
+    "mean_step_seconds": 0.05194529553159555,
+    "median_step_seconds": 0.05527405599968915,
+    "mean_data_wait_seconds": 0.0006720363440990695,
+    "mean_concat_transfer_seconds": 0.00438345071859203,
+    "mean_gpu_seconds": 0.04688980846890445
+  },
+  "best_speedup": 1.6318794760652306,
+  "limit": "Short trained-checkpoint trials; worker RNG streams differ; excludes saving and evaluation.",
+  "real_training_resumed": true
+}

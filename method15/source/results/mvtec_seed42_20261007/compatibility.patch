@@ -1,0 +1,107 @@
+--- data_loader/extract_embedding.py
++++ runtime/data_loader/extract_embedding.py
+@@ -79,8 +79,8 @@
+         test_dataset = MVTecDataset(args.data_path, class_name=class_name, is_train=False)
+         test_dataloader = DataLoader(test_dataset, batch_size=32, pin_memory=True, shuffle=False)
+ 
+-        train_outputs = OrderedDict([('layer1', []), ('layer2', []), ('layer3', [])])
+-        test_outputs = OrderedDict([('layer1', []), ('layer2', []), ('layer3', [])])
++        train_outputs = OrderedDict([('layer3', [])])
++        test_outputs = OrderedDict([('layer3', [])])
+ 
+         # extract train set features
+         train_feature_filepath = os.path.join(folder_path, 'train_%s.pt' % class_name)
+@@ -90,7 +90,7 @@
+                 with torch.no_grad():
+                     _ = model(x.to(device))
+                 # get intermediate layer outputs
+-                for k, v in zip(train_outputs.keys(), outputs):
++                for k, v in zip(train_outputs.keys(), outputs[-1:]):
+                     train_outputs[k].append(v.cpu().detach())
+                 # initialize hook outputs
+                 outputs = []
+@@ -132,7 +132,7 @@
+                 with torch.no_grad():
+                     _ = model(x.to(device))
+                 # get intermediate layer outputs
+-                for k, v in zip(test_outputs.keys(), outputs):
++                for k, v in zip(test_outputs.keys(), outputs[-1:]):
+                     test_outputs[k].append(v.cpu().detach())
+                 # initialize hook outputs
+                 outputs = []
+--- data_loader/mvtec.py
++++ runtime/data_loader/mvtec.py
+@@ -37,7 +37,7 @@
+         self.x, self.y, self.mask = self.load_dataset_folder()
+ 
+         # set transforms
+-        self.transform_x = T.Compose([T.Resize(resize, Image.ANTIALIAS),
++        self.transform_x = T.Compose([T.Resize(resize, Image.Resampling.LANCZOS),
+                                       T.CenterCrop(cropsize),
+                                       T.ToTensor(),
+                                       T.Normalize(mean=[0.485, 0.456, 0.406],
+@@ -120,20 +120,20 @@
+         self.x_train = []
+         for i, class_name in enumerate(CLASS_NAMES):
+             if class_name != self.test_class_name:
+-                self.x_train.append(torch.load(os.path.join(root, 'train_%s.pt' % class_name)))
++                self.x_train.append(torch.load(os.path.join(root, 'train_%s.pt' % class_name),weights_only=False,mmap=True))
+         # self.train_all_abnormal_data = torch.cat(self.x_train, 0)
+         # print(self.train_all_abnormal_data.shape)
+ 
+-        self.x_test = torch.load(os.path.join(root, 'test_%s.pt' % self.test_class_name))
++        self.x_test = torch.load(os.path.join(root, 'test_%s.pt' % self.test_class_name),weights_only=False,mmap=True)
+         self.x_test_all_abnormal_data = [] # used as manual outliers
+         for i, class_name in enumerate(CLASS_NAMES):
+             if class_name != self.test_class_name:
+-                self.x_test_all_abnormal_data.append(torch.load(os.path.join(root, 'test_%s.pt' % class_name)))
+-        self.x_test_all_abnormal_data = torch.cat(self.x_test_all_abnormal_data, 0)
++                pass  # unused cross-category test cache
++        self.x_test_all_abnormal_data = []
+         # print(self.x_test_all_abnormal_data.shape)
+ 
+-        self.test_gt_list = torch.load(os.path.join(root, 'test_%s_gt.pt' % self.test_class_name))
+-        self.test_gt_mask_list = torch.load(os.path.join(root, 'test_%s_gt_mask.pt' % self.test_class_name))
++        self.test_gt_list = torch.load(os.path.join(root, 'test_%s_gt.pt' % self.test_class_name),weights_only=False,mmap=True)
++        self.test_gt_mask_list = torch.load(os.path.join(root, 'test_%s_gt_mask.pt' % self.test_class_name),weights_only=False,mmap=True)
+         self.test_image_num = len(self.x_test)
+ 
+         # save pointer of current read batch in total cache
+@@ -142,7 +142,7 @@
+         print("DB: train", len(self.x_train), "test", len(self.x_test))
+ 
+         # # cache abnormal data to speedup
+-        self.train_all_abnormal_data = self.cache_abnormal_data(self.datasets["train"])
++        self.train_all_abnormal_data = None  # unused by Gaussian task sampler
+         # self.test_all_abnormal_data = self.cache_abnormal_data(self.datasets["test"])
+         # self.val_all_abnormal_data = self.cache_abnormal_data(self.datasets["val"])
+ 
+--- trainers/zeroshot_trainer.py
++++ runtime/trainers/zeroshot_trainer.py
+@@ -6,6 +6,8 @@
+ from sklearn.metrics import roc_auc_score, average_precision_score
+ from scipy.ndimage import gaussian_filter
+ import numpy as np
++
++logger = None  # fix undefined optional logger in official detection
+ 
+ class ZeroShotMetaTrainer:
+     def __init__(self, model, loss_function, exp_path, config):
+@@ -120,6 +122,9 @@
+         min_score = score_map.min()
+         scores = (score_map - min_score) / (max_score - min_score)
+ 
++        self.last_scores = scores
++        self.last_masks = loader.test_gt_mask_list
++        self.last_labels = loader.test_gt_list
+         gt_list = loader.test_gt_list
+         gt_mask = loader.test_gt_mask_list
+         
+@@ -161,6 +166,7 @@
+         # print(center)
+ 
+         # return loss/task_num, auc/task_num
++        self.last_native_auroc = (float(img_roc_auc), float(per_pixel_rocauc))
+         return img_roc_auc, per_pixel_rocauc
+ 
+ 

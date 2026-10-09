@@ -1,0 +1,8 @@
+{
+  "checkpoint": "/home/test/regad_assets/save_checkpoints/4/metal_nut/metal_nut_4_rotation_scale_model.pt",
+  "checkpoint_sha256": "b06a9d8bed955c4fb979f977f322c48b591a6c1b7b1682629e8a4dfbaba80169",
+  "support": "/home/test/regad_assets/support_set/metal_nut/4_10.pt",
+  "support_sha256": "bbe023696404e4e6c4f225b3e6dc5983935abb90b996ade7947ef5892cb4433d",
+  "rscin_feature_path": "/home/test/aprilgan_results/rscin_shared_musc_features/mvtec/metal_nut/features.npy",
+  "rscin_feature_sha256": "6fa4d76942f4559647bcde8ff57737fe7adeaeeba2f1dcb8602b012e282bafdc"
+}

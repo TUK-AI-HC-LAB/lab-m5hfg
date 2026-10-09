@@ -1,0 +1,22 @@
+[
+  {
+    "shot": 4,
+    "category": "capsule",
+    "round": 2,
+    "rscin": "w/o",
+    "n_images": 132,
+    "image_auroc": 0.7391304347826088,
+    "image_f1_max": 0.9292035398230087,
+    "image_ap": 0.9153677677721994
+  },
+  {
+    "shot": 4,
+    "category": "capsule",
+    "round": 2,
+    "rscin": "w",
+    "n_images": 132,
+    "image_auroc": 0.7291583566015157,
+    "image_f1_max": 0.9396551724137931,
+    "image_ap": 0.9170756806931172
+  }
+]

@@ -1,0 +1,8 @@
+{
+  "checkpoint": "/home/test/regad_assets/save_checkpoints/2/toothbrush/toothbrush_2_rotation_scale_model.pt",
+  "checkpoint_sha256": "b1c84303b5572e181010deae6bf1b9b245ce28baebd54bc46d97f18850b7f050",
+  "support": "/home/test/regad_assets/support_set/toothbrush/2_10.pt",
+  "support_sha256": "c88ef3e111f056ef4197cf5dc1b13c9be8376ce4e9fb434b53c5c00a78325729",
+  "rscin_feature_path": "/home/test/aprilgan_results/rscin_shared_musc_features/mvtec/toothbrush/features.npy",
+  "rscin_feature_sha256": "5eb3907799e4eedfba52451d2617ba350f2f97ae811aacfee26b8e9c16cfa96e"
+}

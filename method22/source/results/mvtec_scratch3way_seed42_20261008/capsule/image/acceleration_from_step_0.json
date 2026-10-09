@@ -1,0 +1,64 @@
+{
+  "status": "passed",
+  "precision": "fp16",
+  "compiled": false,
+  "tf32_enabled": true,
+  "mode": "fp16",
+  "bf16_enabled": false,
+  "transition_step": 0,
+  "thresholds": {
+    "loss": 0.01,
+    "gradient": 0.05
+  },
+  "policy": "FP16 finite/loss gate; FP32 gradient diagnostic; compiled versus eager FP16 gradient/loss gate. User-requested accelerated continuation, no final AUROC equivalence claim.",
+  "trials": [
+    {
+      "mode": "fp32",
+      "finite": true,
+      "loss_relative_difference": 0.0,
+      "gradient_relative_L2": 0.0,
+      "strict_fp32_equivalence_passed": true,
+      "passed": true,
+      "startup_seconds": 0.15878320400224766
+    },
+    {
+      "mode": "compiled_fp16",
+      "finite": true,
+      "loss_relative_difference": 0.00021256265849139045,
+      "gradient_relative_L2": 0.16478587687015533,
+      "strict_fp32_equivalence_passed": false,
+      "passed": true,
+      "startup_seconds": 6.705391185998451
+    },
+    {
+      "mode": "fp16",
+      "finite": true,
+      "loss_relative_difference": 7.681008142587442e-05,
+      "gradient_relative_L2": 0.15243525803089142,
+      "strict_fp32_equivalence_passed": false,
+      "passed": true,
+      "startup_seconds": 0.07440979199964204,
+      "compiled_vs_eager_gradient_relative_L2": 0.131085604429245,
+      "compiled_vs_eager_loss_relative_difference": 0.00013576300503298722,
+      "compile_validation_passed": false
+    }
+  ],
+  "previous_proof": {
+    "status": "passed",
+    "real_MVTec_batch": true,
+    "gpu": "NVIDIA GeForce RTX 5080",
+    "effective_batch": 96,
+    "input_size": 256,
+    "fp32_loss": 1.1608964204788208,
+    "bf16_loss": 1.1625772714614868,
+    "bf16_gradient_relative_L2": 0.5408320426940918,
+    "bf16_loss_relative_difference": 0.001447890535928309,
+    "bf16_enabled": false,
+    "tf32_enabled": false,
+    "thresholds": {
+      "gradient": 0.05,
+      "loss": 0.01
+    },
+    "finite_gradients": true
+  }
+}

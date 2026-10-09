@@ -1,0 +1,89 @@
+{
+  "status": "passed",
+  "untrained_model_architecture_only": true,
+  "actual_MVTec_train_images": [
+    {
+      "path": "/home/test/data/mvtec/bottle/train/good/000.png",
+      "sha256": "8a25eb07475a5102f4823fefd82662dd65f8f2a0a333bf958124ceeee38f0e38"
+    },
+    {
+      "path": "/home/test/data/mvtec/bottle/train/good/001.png",
+      "sha256": "ba13b82fc8c732a02277816521fe93a0fee00c524f2742bbb3feed0a31cda8df"
+    },
+    {
+      "path": "/home/test/data/mvtec/bottle/train/good/002.png",
+      "sha256": "7de0414f1744aaf5cec488928ee3b761509e4bad4f607dc4f6d41ad7862dab69"
+    },
+    {
+      "path": "/home/test/data/mvtec/bottle/train/good/003.png",
+      "sha256": "83a8754d0215c4512cdba27caa15d478f21e4314ac85efa639d4d31d1a82122d"
+    },
+    {
+      "path": "/home/test/data/mvtec/bottle/train/good/004.png",
+      "sha256": "e322ab1ce2714be77610b25209d5ce91df9ef3f434403cf3dc5041f469d2ade3"
+    },
+    {
+      "path": "/home/test/data/mvtec/bottle/train/good/005.png",
+      "sha256": "ce025f228af389707430c4ff417bb0a4ccf4324b9cef4f60e4ad87ed75c735b6"
+    },
+    {
+      "path": "/home/test/data/mvtec/bottle/train/good/006.png",
+      "sha256": "037acb142ec7494e749da9a46de367df92df345ea3c9c4d0e0e5fe24f8b93461"
+    },
+    {
+      "path": "/home/test/data/mvtec/bottle/train/good/007.png",
+      "sha256": "070d4cbe696071aabc660f9362273d79f0cf36b2b60084f6d545902fa455c254"
+    },
+    {
+      "path": "/home/test/data/mvtec/bottle/train/good/008.png",
+      "sha256": "fbdca6b40932e967780ba859bb752eeed1996e874581c47d29da7d23f33048be"
+    },
+    {
+      "path": "/home/test/data/mvtec/bottle/train/good/009.png",
+      "sha256": "935dd12766cf96bbdeb48ba5801a896cbd7047212f601077d1adef0db9a6ae57"
+    },
+    {
+      "path": "/home/test/data/mvtec/bottle/train/good/010.png",
+      "sha256": "ad500d6c2c625ecc17f8b276a597f76ce5cabfece6326fd39682b5d6b9192db0"
+    },
+    {
+      "path": "/home/test/data/mvtec/bottle/train/good/011.png",
+      "sha256": "8493f6eb590418997ff950e1a2cfbe5f31ebbf49a8d075b838a98abfe851ae26"
+    },
+    {
+      "path": "/home/test/data/mvtec/bottle/train/good/012.png",
+      "sha256": "0c45f021e169dc8b27120c4c70ea09c0a4e3391482ed4dda4a04baf7b2098b85"
+    },
+    {
+      "path": "/home/test/data/mvtec/bottle/train/good/013.png",
+      "sha256": "13d287cd1cc8b7e7e09ecb74594f7a30d94c35fd5e95b9421b2081d9ead6aa36"
+    },
+    {
+      "path": "/home/test/data/mvtec/bottle/train/good/014.png",
+      "sha256": "a8826579631c43c66b2e0d33f00cf6d5beac3dcab0cadf50bec3c8837a329288"
+    },
+    {
+      "path": "/home/test/data/mvtec/bottle/train/good/015.png",
+      "sha256": "8ce929a477e23b50c37913300541f324eaf6073155e4abea524a3fdd9d7c49b2"
+    }
+  ],
+  "gpu_LedoitWolf_vs_sklearn": [
+    {
+      "position": 0,
+      "shrinkage_error": 0.0,
+      "precision_max_error": 0.0
+    },
+    {
+      "position": 1,
+      "shrinkage_error": 0.0,
+      "precision_max_error": 2.9431248549371958e-09
+    },
+    {
+      "position": 2,
+      "shrinkage_error": 0.0,
+      "precision_max_error": 0.0
+    }
+  ],
+  "RF_transposed_convolution_vs_independent_scatter_max_error": 2.5407643988728523e-08,
+  "limitation": "initial-feature numerical/API smoke, not learned performance or full precision equivalence"
+}

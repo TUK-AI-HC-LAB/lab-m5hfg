@@ -1,0 +1,22 @@
+[
+  {
+    "shot": 2,
+    "category": "toothbrush",
+    "round": 3,
+    "rscin": "w/o",
+    "n_images": 42,
+    "image_auroc": 0.8777777777777778,
+    "image_f1_max": 0.888888888888889,
+    "image_ap": 0.9538718264854249
+  },
+  {
+    "shot": 2,
+    "category": "toothbrush",
+    "round": 3,
+    "rscin": "w",
+    "n_images": 42,
+    "image_auroc": 0.8944444444444444,
+    "image_f1_max": 0.9206349206349207,
+    "image_ap": 0.9581502964641637
+  }
+]

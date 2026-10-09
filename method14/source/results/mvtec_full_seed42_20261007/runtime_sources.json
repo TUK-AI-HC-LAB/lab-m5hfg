@@ -1,0 +1,87 @@
+[
+  {
+    "path": "Helper.py",
+    "official_sha256": "62785b18b8a6b1606132f4090326aa726aca5f4d9fc0239d4de9481e308bde23",
+    "runtime_sha256": "62785b18b8a6b1606132f4090326aa726aca5f4d9fc0239d4de9481e308bde23"
+  },
+  {
+    "path": "Recorder.py",
+    "official_sha256": "34b871c9c8010ba842cbc9f0dbaac1ac8d7880b2f47cc0681a30ede5bb7ff17d",
+    "runtime_sha256": "34b871c9c8010ba842cbc9f0dbaac1ac8d7880b2f47cc0681a30ede5bb7ff17d"
+  },
+  {
+    "path": "multi_scale/inference_det.py",
+    "official_sha256": "1367d8a1b6211421c350d9c51e392690f6e102ce01bd365e8bee6e01ef337a8b",
+    "runtime_sha256": "e7685503d5926edb51cfc9f8c90f456c3b70b614112c25ea8296cf57574f85e7"
+  },
+  {
+    "path": "multi_scale/inference_loc.py",
+    "official_sha256": "9546211d892a40f938a5ab217fe4fc0992a39a0cc0da24d908d5849a33f1523f",
+    "runtime_sha256": "da6c9c6d2b474d9fe4668c38e79377413fcfe955f7f43a0fcd8d03296d4632e0"
+  },
+  {
+    "path": "multi_scale/mvtec_data_loader.py",
+    "official_sha256": "b9eff9feea414ac86f67ebf9fd05c9d6e6acc3694b33edf1b9ce4f6e681055d2",
+    "runtime_sha256": "b9eff9feea414ac86f67ebf9fd05c9d6e6acc3694b33edf1b9ce4f6e681055d2"
+  },
+  {
+    "path": "multi_scale/pytorch_msssim_residual_map.py",
+    "official_sha256": "11ccd3c48938659c2c6a1ed1cd8308a0522476f5605d3e804db08c7948776f91",
+    "runtime_sha256": "11ccd3c48938659c2c6a1ed1cd8308a0522476f5605d3e804db08c7948776f91"
+  },
+  {
+    "path": "multi_scale/ssim_module.py",
+    "official_sha256": "c2500b59eb5354c35831073e63232c32141d43152197b5c5c51e29ff784e57c4",
+    "runtime_sha256": "c2500b59eb5354c35831073e63232c32141d43152197b5c5c51e29ff784e57c4"
+  },
+  {
+    "path": "multi_scale/ssim_module_256.py",
+    "official_sha256": "219ece37f89d75ca23783a055a8cd40bc7a25dc9437c3882386acaf1cc3576f9",
+    "runtime_sha256": "219ece37f89d75ca23783a055a8cd40bc7a25dc9437c3882386acaf1cc3576f9"
+  },
+  {
+    "path": "p256/mvtec_module.py",
+    "official_sha256": "ce7b8721e1e59426cc613be03b42535870490afc5e83b6bf8240328ee02bec87",
+    "runtime_sha256": "ce7b8721e1e59426cc613be03b42535870490afc5e83b6bf8240328ee02bec87"
+  },
+  {
+    "path": "p256/mvtex_data_loader.py",
+    "official_sha256": "b9eff9feea414ac86f67ebf9fd05c9d6e6acc3694b33edf1b9ce4f6e681055d2",
+    "runtime_sha256": "b9eff9feea414ac86f67ebf9fd05c9d6e6acc3694b33edf1b9ce4f6e681055d2"
+  },
+  {
+    "path": "p256/ssim_main.py",
+    "official_sha256": "a5358e8eb3fc1952ae2ee2f0b65c4864b3a99e9d7b460569a92b95f215af3c23",
+    "runtime_sha256": "5d5973b4621c3b57e82b7bd636acf607b491b1f848d06282b7decc9f9292ca06"
+  },
+  {
+    "path": "p256/ssim_module.py",
+    "official_sha256": "219ece37f89d75ca23783a055a8cd40bc7a25dc9437c3882386acaf1cc3576f9",
+    "runtime_sha256": "219ece37f89d75ca23783a055a8cd40bc7a25dc9437c3882386acaf1cc3576f9"
+  },
+  {
+    "path": "p32/cifar_data_loader.py",
+    "official_sha256": "6d82f81039c553dbb76ee608f323f954ae2355454856a634252e5032488edbcb",
+    "runtime_sha256": "6d82f81039c553dbb76ee608f323f954ae2355454856a634252e5032488edbcb"
+  },
+  {
+    "path": "p32/mvtec_module.py",
+    "official_sha256": "e1fe04520ca59b21ec2637f89abf83c7a04443d5fa622f1a25760cc9177d630e",
+    "runtime_sha256": "e1fe04520ca59b21ec2637f89abf83c7a04443d5fa622f1a25760cc9177d630e"
+  },
+  {
+    "path": "p32/mvtex_data_loader.py",
+    "official_sha256": "71ecdd82b8fb2031b70b8ad1745f8049675ce836c0a435291b082848fcef2d6d",
+    "runtime_sha256": "71ecdd82b8fb2031b70b8ad1745f8049675ce836c0a435291b082848fcef2d6d"
+  },
+  {
+    "path": "p32/ssim_main.py",
+    "official_sha256": "9492f77480adbdc58bffdf406ff4541806befa0f9cebe23f3a6b18a85f8bc9ac",
+    "runtime_sha256": "c7d659eb2bc958e8409ef89231c4cd9655c1bbad1f9f4c3cb1ec2905aea921e7"
+  },
+  {
+    "path": "p32/ssim_module.py",
+    "official_sha256": "77201bdc2fb635c110ac71b9bca041ddb469ccccacfd85a478062f2f21ee824a",
+    "runtime_sha256": "77201bdc2fb635c110ac71b9bca041ddb469ccccacfd85a478062f2f21ee824a"
+  }
+]

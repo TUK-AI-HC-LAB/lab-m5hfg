@@ -1,0 +1,23 @@
+{
+  "status": "passed",
+  "aligned": true,
+  "sklearn_checks": [
+    {
+      "position": 0,
+      "shrinkage_error": 6.938893903907228e-18,
+      "precision_max_error": 6.352820491883904e-10
+    },
+    {
+      "position": 1624,
+      "shrinkage_error": 0.0,
+      "precision_max_error": 8.071765478234738e-11
+    },
+    {
+      "position": 3248,
+      "shrinkage_error": 4.163336342344337e-17,
+      "precision_max_error": 4.772573447553441e-10
+    }
+  ],
+  "precision": "FP64",
+  "no_feature_subsampling_for_reported_density": true
+}

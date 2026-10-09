@@ -1,0 +1,16 @@
+{
+  "dataset": "mvtec",
+  "shot": 4,
+  "category": "pill",
+  "round": 5,
+  "n_images": 167,
+  "image_auroc": 0.7054009819967266,
+  "image_f1_max": 0.9185667752442997,
+  "image_ap": 0.935296515227828,
+  "pixel_auroc": 0.9691936862794719,
+  "pixel_f1_max": 0.5652754374399411,
+  "pixel_ap": 0.627136682028261,
+  "aupro": 0.9113485468891728,
+  "evaluation_seconds": 7.0712701540001035,
+  "gpu_allocated_mib": 5290.4013671875
+}

@@ -1,0 +1,26 @@
+{
+  "timestamp": "2026-10-09T14:34:41.670300+09:00",
+  "pid": 440,
+  "category": "grid",
+  "model_kind": "image",
+  "checkpoint_step": 3840,
+  "observed_completed_step": 4352,
+  "completed_categories": [
+    "bottle",
+    "cable",
+    "capsule",
+    "carpet"
+  ],
+  "failure": "OSError Errno5 writing Windows-mounted training.csv and accessing environment.json",
+  "cause_limit": "Prior log proves mount I/O failure; underlying Windows sleep/shutdown/device cause is not established.",
+  "mount_read_write_probe": "passed",
+  "gpu": "RTX5080 available",
+  "precision": "prior validated fp16 preserved; optimizer/scaler/RNG restored; sampler/workers not bitwise exact",
+  "disk": {
+    "host": "C:",
+    "available_bytes": 36038475776,
+    "remaining_feature_density_min_GiB": 56.1,
+    "wsl_disk_location": "C: Ubuntu VHD",
+    "need": "approximately30GB extra free space or alternative storage; no deletion performed"
+  }
+}

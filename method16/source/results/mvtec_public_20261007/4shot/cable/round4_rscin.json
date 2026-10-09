@@ -1,0 +1,22 @@
+[
+  {
+    "shot": 4,
+    "category": "cable",
+    "round": 4,
+    "rscin": "w/o",
+    "n_images": 150,
+    "image_auroc": 0.8751874062968515,
+    "image_f1_max": 0.855721393034826,
+    "image_ap": 0.9179582912691133
+  },
+  {
+    "shot": 4,
+    "category": "cable",
+    "round": 4,
+    "rscin": "w",
+    "n_images": 150,
+    "image_auroc": 0.9130434782608696,
+    "image_f1_max": 0.8823529411764706,
+    "image_ap": 0.9452785005162995
+  }
+]

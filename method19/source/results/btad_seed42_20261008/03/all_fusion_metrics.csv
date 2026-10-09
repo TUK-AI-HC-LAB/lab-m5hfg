@@ -1,0 +1,5 @@
+dataset,category,fusion,n_images,image_auroc,pixel_auroc
+btad,03,64,441,0.5,0.5
+btad,03,32,441,0.5,0.5
+btad,03,sum,441,0.5,0.5
+btad,03,mult,441,0.5,0.5

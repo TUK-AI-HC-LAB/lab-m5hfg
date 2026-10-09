@@ -1,0 +1,32 @@
+{
+  "commit": "b76b93da8bd3096a99964a96ae29d46f197a0651",
+  "python": "3.12.13 | packaged by conda-forge | (main, Mar  5 2026, 16:50:00) [GCC 14.3.0]",
+  "platform": "Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.43",
+  "packages": {
+    "torch": "2.11.0+cu128",
+    "torchvision": "0.26.0+cu128",
+    "timm": "1.0.28",
+    "numpy": "2.5.3",
+    "scikit-learn": "1.9.0",
+    "scikit-image": "0.26.0",
+    "ftfy": "6.2.0",
+    "opencv-python": "5.0.0.93",
+    "openpyxl": "3.1.2"
+  },
+  "gpu": "NVIDIA GeForce RTX 5080",
+  "cuda": "12.8",
+  "seed": 42,
+  "tf32": false,
+  "command": [
+    "/mnt/c/Users/test/Desktop/Codex/lab-m5hfg/method10/source/run_musc_local.py",
+    "--category",
+    "capsule",
+    "--output",
+    "/home/test/musc_results/mvtec_all_paper_20261002/capsule"
+  ],
+  "scope": "one complete category test pool",
+  "wall_seconds_including_model_loading_and_metrics": 130.44704287,
+  "peak_allocated_bytes": 7035149312,
+  "peak_reserved_bytes": 9732882432,
+  "status": "completed"
+}

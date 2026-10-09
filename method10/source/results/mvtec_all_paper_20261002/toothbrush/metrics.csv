@@ -1,0 +1,2 @@
+dataset,category,n_images,image_auroc,image_f1_max,image_ap,pixel_auroc,pixel_f1_max,pixel_ap,aupro
+mvtec_ad,toothbrush,42,1.0,1.0,0.9999999999999999,0.9953463479465305,0.7019534344076666,0.6778930992060448,0.9547864353786475

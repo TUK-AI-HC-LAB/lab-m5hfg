@@ -1,0 +1,17 @@
+{
+  "original_image_labels_retained": true,
+  "missing_after_native_resize": [
+    "/home/test/data/btad_original/BTech_Dataset_transformed/03/test/ko/0028.bmp",
+    "/home/test/data/btad_original/BTech_Dataset_transformed/03/test/ko/0029.bmp",
+    "/home/test/data/btad_original/BTech_Dataset_transformed/03/test/ko/0030.bmp",
+    "/home/test/data/btad_original/BTech_Dataset_transformed/03/test/ko/0031.bmp",
+    "/home/test/data/btad_original/BTech_Dataset_transformed/03/test/ko/0032.bmp",
+    "/home/test/data/btad_original/BTech_Dataset_transformed/03/test/ko/0033.bmp",
+    "/home/test/data/btad_original/BTech_Dataset_transformed/03/test/ko/0034.bmp",
+    "/home/test/data/btad_original/BTech_Dataset_transformed/03/test/ko/0035.bmp",
+    "/home/test/data/btad_original/BTech_Dataset_transformed/03/test/ko/0036.bmp",
+    "/home/test/data/btad_original/BTech_Dataset_transformed/03/test/ko/0037.bmp"
+  ],
+  "n_missing": 10,
+  "rule": "Do not infer image labels from resized masks; preserve native pixel mask transform"
+}

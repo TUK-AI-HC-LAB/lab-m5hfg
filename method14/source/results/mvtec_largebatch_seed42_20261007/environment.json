@@ -1,0 +1,58 @@
+{
+  "status": "stopped_for_user_batch8_restart",
+  "official_repo": "https://github.com/tianyu0207/IGD",
+  "commit": "1ce995214ef8adf09f6c5d3dc01ce6042b472a34",
+  "seed": 42,
+  "seed_definition": "local reproducibility choice; official job has no seed flag",
+  "gpu": "NVIDIA GeForce RTX 5080",
+  "cuda": "12.8",
+  "python": "3.12.13 | packaged by conda-forge | (main, Mar  5 2026, 16:50:00) [GCC 14.3.0]",
+  "packages": {
+    "torch": "2.11.0+cu128",
+    "torchvision": "0.26.0+cu128",
+    "numpy": "2.5.3",
+    "Pillow": "12.3.0",
+    "pytorch-msssim": "0.2.1",
+    "tensorboardX": "2.6.5"
+  },
+  "training_executed": true,
+  "scales": [
+    32,
+    256
+  ],
+  "sample_rate": 1.0,
+  "nominal_epochs": 256,
+  "iterations": "int(train_size/BATCH_SIZE*MAX_EPOCH), official train loops",
+  "batch_size": {
+    "32": 4,
+    "256": 16
+  },
+  "batch_protocol": "user-authorized larger batch; reduced optimizer updates",
+  "train_patch_stride": 16,
+  "precision": "BF16 model autocast; FP32 losses and Gaussian statistics",
+  "tf32": true,
+  "cudnn_benchmark": true,
+  "channels_last": true,
+  "persistent_workers": true,
+  "prefetch_factor": 4,
+  "fused_adam": true,
+  "non_blocking_transfer": true,
+  "loss_compile": true,
+  "checkpoint_selection": "final iteration; no selection by test AUROC",
+  "pretrained_encoder_sha256": "704b0213d38faa3ee3635749ff90f639d5dd20d6d3ecba97c8f2904d6cac7167",
+  "runtime_source_manifest": "/mnt/c/Users/test/Desktop/Codex/lab-m5hfg/method14/source/results/mvtec_largebatch_seed42_20261007/runtime_sources.json",
+  "compatibility_patch": "/mnt/c/Users/test/Desktop/Codex/lab-m5hfg/method14/source/results/mvtec_largebatch_seed42_20261007/compatibility.patch",
+  "compatibility": [
+    "dataset paths redirected",
+    "iterator next method replaced by next()",
+    "MS-SSIM size guard uses actual scale count; computations unchanged",
+    "Adam beta 0 converted to float 0.0",
+    "recording/tqdm display disabled; full validation preserved"
+  ],
+  "original_checkout_edits": false,
+  "raw_output": "/home/test/igd_results/mvtec_largebatch_seed42_20261007",
+  "eta_calculation": false,
+  "wrapper_sha256": "0931757cde29d2f6978f0280a4f1397759f567250cec950695f3e5fb45dfff0a",
+  "current_scale": 32,
+  "current_category": "bottle"
+}

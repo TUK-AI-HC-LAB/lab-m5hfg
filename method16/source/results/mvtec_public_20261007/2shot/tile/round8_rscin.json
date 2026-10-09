@@ -1,0 +1,22 @@
+[
+  {
+    "shot": 2,
+    "category": "tile",
+    "round": 8,
+    "rscin": "w/o",
+    "n_images": 117,
+    "image_auroc": 0.9859307359307359,
+    "image_f1_max": 0.970059880239521,
+    "image_ap": 0.9943266571201694
+  },
+  {
+    "shot": 2,
+    "category": "tile",
+    "round": 8,
+    "rscin": "w",
+    "n_images": 117,
+    "image_auroc": 0.9985569985569985,
+    "image_f1_max": 0.9940828402366864,
+    "image_ap": 0.9994296097320305
+  }
+]
