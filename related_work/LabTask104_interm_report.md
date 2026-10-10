@@ -32,18 +32,31 @@
 
 ## 2. 남은 작업
 
-### MuSc 비교표를 위해 남은 실험
+### 새 결과 확보 필요
 
-| 방법 | 남은 실험 | 현재 상태 |
+| 방법 | 실험 조건 | 필요한 결과 |
 |---|---|---|
-| IGD | MVTec 전체 학습·평가 |
-| STPM | MVTec 실행, RsCIN 적용 전후 비교 | 결과값 추가 확보 필요 |
-| WinCLIP | MVTec·VisA 0/4-shot, 속도·메모리 측정 | 기존 결과와 별도로 해당 조건 및 측정값 확보 필요 |
-| PatchCore | MVTec full/4-shot, VisA·BTAD 4-shot, RsCIN 비교 | 기존 결과와 별도로 해당 조건의 결과값 확보 필요 |
-| PaDiM | BTAD full-shot | 해당 조건의 결과값 확보 필요 |
-| RegAD | MVTec 32-shot, BTAD 4-shot, 속도·메모리 측정 | 기존 결과와 별도로 해당 조건 및 측정값 확보 필요 |
-| SPADE | MVTec 실행 및 RsCIN 적용 전후 비교 | BTAD는 완료. MVTec 및 RsCIN 비교 결과 추가 확보 필요 |
-| DSR | RsCIN 적용 전·후 Image AUROC, F1-max, AP 측정·비교 | 적용 전후 지표 추가 확보 필요 |
+| STPM | MVTec full-shot | 학습·평가 결과, RsCIN 적용 전·후 지표 |
+| DSR | MVTec full-shot | 학습·평가 결과, RsCIN 적용 전·후 Image AUROC, F1-max, AP |
+| SPADE | MVTec full-shot | 평가 결과, RsCIN 적용 전·후 지표. BTAD는 완료 |
+| PaDiM | BTAD full-shot | 해당 조건의 평가 결과 |
+| RegAD | MVTec 32-shot·BTAD 4-shot | 해당 조건의 학습·평가 결과 |
+| IGD | MVTec 전체 학습·평가 | 신규 결과 확보 필요 |
+
+### 기존 결과 보완 필요
+
+| 방법 | 보완 내용 |
+|---|---|
+| WinCLIP | MVTec·VisA 4-shot 반복 실험의 평균·표준편차, 속도 측정 |
+| RegAD | 속도 측정 |
+
+### 기존 목록에서 유지하는 실험
+
+| 방법 | 남은 실험 |
+|---|---|
+| PatchCore | MVTec full/4-shot, VisA·BTAD 4-shot, RsCIN 비교 |
+
+기존 목록의 WinCLIP·RegAD 메모리 측정도 함께 유지한다.
 
 ## 3. 10월 12일까지의 작업 계획
 
@@ -51,4 +64,3 @@
 |---|---|---|
 | 10월 8일–12일 | 남은 기법들을 실행하고 결과를 확보한다. 결과가 전부 확보되면 LaTeX 최종본을 PDF로 만들어 제출한다. | 남은 기법들의 결과값, 전체 결과 확보 후 제출용 최종 PDF |
 | 10월 10일–11일 | QueCo를 공통 프레임워크에 포팅한 후, QueCo 코드를 분석한다. | 공통 프레임워크에 포팅한 QueCo 코드 및 코드 분석 내용 |
-
