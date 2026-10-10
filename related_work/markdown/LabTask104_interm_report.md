@@ -19,7 +19,7 @@
 | 3 | APRIL-GAN | 결과값 확보 완료 |
 | 4 | ACR | 결과값 확보 완료 |
 | 5 | RegAD | 결과값 확보 완료 |
-| 6 | PatchCore | 결과값 확보 완료 |
+| 6 | PatchCore | MuSc 비교용 추가 실험 완료: MVTec full/4-shot, VisA·BTAD 4-shot, RsCIN 비교 |
 | 7 | GraphCore | 결과값 확보 완료 |
 | 8 | NSA | 결과값 확보 완료 |
 | 9 | VT-ADL | 결과값 확보 완료 |
@@ -48,7 +48,7 @@
 | 방법 | 보완 내용 |
 |---|---|
 | WinCLIP | MVTec·VisA 4-shot 반복 실험의 평균·표준편차, 속도 측정 |
-| RegAD | 속도 측정 |.
+| RegAD | 속도 측정 |
 
 ## 3. 10월 12일까지의 작업 계획
 
