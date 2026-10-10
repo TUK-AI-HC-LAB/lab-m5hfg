@@ -27,8 +27,8 @@
 | 11 | SPADE | 결과값 확보 완료 |
 | 12 | PaDiM | 결과값 확보 완료 |
 | 13 | DRAEM | 결과값 확보 완료 |
-| 14 | CutPaste | MVTec 15개 카테고리 학습·평가·최종 검증 완료. Image AUROC 92.4055%, Pixel AUROC 93.7767% |
-| 15 | PyramidFlow | BTAD full-shot 학습·평가·검증 완료 |
+| 14 | CutPaste | 결과값 확보 완료 |
+| 15 | PyramidFlow | 결과값 확보 완료 |
 
 ## 2. 남은 작업
 
@@ -48,15 +48,7 @@
 | 방법 | 보완 내용 |
 |---|---|
 | WinCLIP | MVTec·VisA 4-shot 반복 실험의 평균·표준편차, 속도 측정 |
-| RegAD | 속도 측정 |
-
-### 기존 목록에서 유지하는 실험
-
-| 방법 | 남은 실험 |
-|---|---|
-| PatchCore | MVTec full/4-shot, VisA·BTAD 4-shot, RsCIN 비교 |
-
-기존 목록의 WinCLIP·RegAD 메모리 측정도 함께 유지한다.
+| RegAD | 속도 측정 |.
 
 ## 3. 10월 12일까지의 작업 계획
 
