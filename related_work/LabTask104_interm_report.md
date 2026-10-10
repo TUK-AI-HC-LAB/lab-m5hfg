@@ -36,7 +36,7 @@
 
 | 방법 | 남은 실험 | 현재 상태 |
 |---|---|---|
-| IGD | MVTec 전체 학습·평가 | 사용자 요청으로 중단한 상태. 재개 지시 전에는 실행하지 않음 |
+| IGD | MVTec 전체 학습·평가 |
 | STPM | MVTec 실행, RsCIN 적용 전후 비교 | 결과값 추가 확보 필요 |
 | WinCLIP | MVTec·VisA 0/4-shot, 속도·메모리 측정 | 기존 결과와 별도로 해당 조건 및 측정값 확보 필요 |
 | PatchCore | MVTec full/4-shot, VisA·BTAD 4-shot, RsCIN 비교 | 기존 결과와 별도로 해당 조건의 결과값 확보 필요 |
@@ -44,10 +44,6 @@
 | RegAD | MVTec 32-shot, BTAD 4-shot, 속도·메모리 측정 | 기존 결과와 별도로 해당 조건 및 측정값 확보 필요 |
 | SPADE | MVTec 실행 및 RsCIN 적용 전후 비교 | BTAD는 완료. MVTec 및 RsCIN 비교 결과 추가 확보 필요 |
 | DSR | RsCIN 적용 전·후 Image AUROC, F1-max, AP 측정·비교 | 적용 전후 지표 추가 확보 필요 |
-
-완료 기준은 실행 설정·데이터셋·shot 조건과 결과 파일을 보존하고, 해당 비교표의 지표를 검증하는 것이다. RsCIN 비교는 같은 예측 결과에 적용 전후 지표를 기록하고, 속도·메모리 측정은 측정 구간과 환경을 함께 기록한다.
-
-CutPaste는 남은 실험 목록에서 제외했다. PyramidFlow는 BTAD 결과 확보 완료로 반영했다. DSR은 RsCIN 적용 전후의 Image AUROC, F1-max, AP 비교를 남은 실험에 포함했다.
 
 ## 3. 10월 12일까지의 작업 계획
 
