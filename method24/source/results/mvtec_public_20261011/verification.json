@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "n_categories": 15,
+  "n_images": 1725,
+  "training_executed": false,
+  "native_query_and_independent_selected_feature_formula_verified": true,
+  "all_inputs_and_RsCIN_alignment_verified": true,
+  "all_raw_maps_image_scores_and_metrics_recomputed": true,
+  "all_category_verifications_passed": true
+}

@@ -1,0 +1,77 @@
+# Single-stage optimized Dockerfile
+FROM nvidia/cuda:11.8.0-cudnn8-devel-ubuntu22.04
+
+# Set environment variables
+ENV PYTHONDONTWRITEBYTECODE=1 \
+    PYTHONUNBUFFERED=1 \
+    DEBIAN_FRONTEND=noninteractive
+
+# Install Python 3.11 and system dependencies
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    software-properties-common && \
+    add-apt-repository ppa:deadsnakes/ppa && \
+    apt-get update && apt-get install -y --no-install-recommends \
+    python3.11 \
+    python3.11-dev \
+    python3.11-distutils \
+    python3-pip \
+    build-essential \
+    gcc \
+    g++ \
+    git \
+    cmake \
+    libglib2.0-0 \
+    libsm6 \
+    libxext6 \
+    libxrender-dev \
+    libgomp1 \
+    libgeos-c1v5 && \
+    rm -rf /var/lib/apt/lists/*
+
+# Make python3.11 the default python
+RUN update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.11 1 && \
+    update-alternatives --set python3 /usr/bin/python3.11 && \
+    ln -s /usr/bin/python3 /usr/bin/python && \
+    python -m pip install --upgrade pip
+
+# Arguments for user and group IDs
+ARG UID=1000
+ARG GID=1000
+
+# Create user
+RUN groupadd -g $GID -o mygroup && \
+    useradd -m -u $UID -g $GID -o -s /bin/bash myuser
+
+WORKDIR /app
+
+# Copy requirements first for better caching
+COPY --chown=myuser:mygroup requirements.txt .
+
+# Install PyTorch 2.0.1 with CUDA 11.8 support (supports sm_61 for GTX 1080 Ti)
+RUN pip install --no-cache-dir torch==2.0.1+cu118 torchvision==0.15.2+cu118 torchaudio==2.0.2+cu118 --index-url https://download.pytorch.org/whl/cu118 && \
+    pip install --no-cache-dir "numpy<2"
+
+# Install remaining requirements (pin torch and numpy to prevent upgrades)
+RUN echo 'torch==2.0.1+cu118' > /tmp/constraints.txt && \
+    echo 'torchvision==0.15.2+cu118' >> /tmp/constraints.txt && \
+    echo 'numpy<2' >> /tmp/constraints.txt && \
+    grep -v -E '^(torch|torchvision|torchaudio|mmcv|pytorch_ood|horovod|xformers)' requirements.txt > /tmp/filtered-reqs.txt && \
+    PIP_CONSTRAINT=/tmp/constraints.txt pip install --no-cache-dir -r /tmp/filtered-reqs.txt && \
+    pip install --no-cache-dir torchmetrics einops
+
+# Install apex from source
+#RUN git clone https://github.com/NVIDIA/apex /tmp/apex && \
+#    cd /tmp/apex && \
+#    pip install -v --disable-pip-version-check --no-cache-dir --no-build-isolation \
+#        --config-settings "--build-option=--cpp_ext" --config-settings "--build-option=--cuda_ext" . && \
+#    rm -rf /tmp/apex
+
+# Skip horovod (not needed for patchcore)
+
+# Copy application code
+COPY --chown=myuser:mygroup . .
+
+# Switch to non-root user
+USER myuser
+
+CMD ["tail", "-f", "/dev/null"]

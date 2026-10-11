@@ -1,0 +1,10 @@
+resize: 448
+imagesize: 392
+total_iter: 5000
+batch_size: 16
+lr: 0.002
+betas:
+  - 0.9
+  - 0.999
+weight_decay: 0.0001
+uni: false

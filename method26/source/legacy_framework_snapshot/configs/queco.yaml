@@ -1,0 +1,47 @@
+# QueCo: 학습 없이 같은 category의 test 이미지 전체를 서로 비교하는 방법입니다.
+# test label이나 defect mask는 추론에 사용하지 않고, 최종 metric 계산에서만 사용합니다.
+resize: 518
+imagesize: 518
+masksize: 518
+batch_size: 1
+meta_epochs: 1
+backbone_names:
+  - queco
+layers_to_extract_from:
+  - layer24
+
+# QueCo 고정 model / prompt 설정
+depth: 9
+n_ctx: 12
+t_n_ctx: 4
+features_list:
+  - 6
+  - 12
+  - 18
+  - 24
+dino_model: dinov2
+attn_type: vv
+both_eattn_dattn: true
+
+# 전체 test bank를 만든 뒤 각 query가 참고할 이웃 이미지 수
+ref_topR: 10
+neighbor_chunk: 8
+mutual_tau: 0.85
+mutual_topk: 5
+support_m: 5
+agg_percentile_q: 0.85
+ablation_mode: all
+fusion_mode: entropy
+use_text_branch: true
+use_objectness_gate: true
+obj_tau: 0.5
+sigma: 4.0
+
+# 결과 이미지는 필요할 때만 켭니다. 기본 실행은 metric/CSV만 생성합니다.
+save_vis: false
+fusion_diagnostics: false
+enable_pose_aux: false
+# DINOv3를 사용하지 않아도 원본 모델 생성 API가 이 속성을 조회합니다.
+repo_dir: ""
+dino_ckpt: ""
+queco_clip_cache: /home/test/.cache/clip

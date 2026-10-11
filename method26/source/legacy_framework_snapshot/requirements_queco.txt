@@ -1,0 +1,16 @@
+# GPU용 torch/torchvision은 기존 framework 환경을 사용합니다.
+numpy
+scipy
+scikit-learn
+scikit-image
+torchmetrics
+pandas
+matplotlib
+Pillow
+tqdm
+loguru
+ftfy
+regex
+packaging
+setuptools<81
+PyYAML

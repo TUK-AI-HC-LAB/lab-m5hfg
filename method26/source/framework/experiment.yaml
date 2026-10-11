@@ -1,0 +1,5 @@
+# Change these four values to select an experiment.
+method: simple
+dataset: mvtec
+category: screw
+data_path: /datasets/mvtec

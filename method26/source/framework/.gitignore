@@ -1,0 +1,91 @@
+dataset/*
+!dataset/.gitkeep
+ref_repository/
+tmp_clone/
+trainer_backup/
+codex_updates/
+trainer/add/
+other_methods/
+output_*/
+lg_results/
+results/_remote/
+*wandb*/
+image_samples/
+saved_models/
+decoded_files/
+encoded_files.json
+duplicated.json
+runs.csv
+fid.csv
+runs_sh.log
+*.onnx
+*wandb*
+*.pyc
+__pycache__/
+.cache/
+*.nbc
+*.nbi
+*.tiff
+*.pth
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.bmp
+*.JPG
+*.JPEG
+*.PNG
+*.GIF
+*.BMP
+*.zip
+*.onnx
+*.csv
+results/*
+!results/share_smoke/
+!results/share_smoke/*.json
+!results/share_smoke/*.csv
+*.ann
+*.faiss
+*.onnx
+
+# Added by Claude Task Master
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+dev-debug.log
+
+# Dependency directories
+node_modules/
+
+# Environment variables
+.env
+
+# Editor directories and files
+.idea
+.vscode
+.cursor/
+.roo/
+.agents/
+.codex/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# OS specific
+.DS_Store
+
+# Task files
+tasks.json
+tasks/ 
+
+# Local agent / probe files
+.roomodes
+.taskmasterconfig
+.windsurfrules
+codex_*.txt
+tmp.txt

@@ -1,0 +1,26 @@
+{
+  "weights": {
+    "ViT-L-14-336px.pt": {
+      "bytes": 934088680,
+      "sha256": "3035c92b350959924f9f00213499208652fc7ea050643e8b385c2dac08641f02"
+    },
+    "dinov2_vitb14_reg4_pretrain.pth": {
+      "bytes": 346393545,
+      "sha256": "73182a088cf94833c94b1666d1c99e02fe87e2007bff57b564fb6206e25dba71"
+    }
+  },
+  "packages": {
+    "torch": "2.11.0+cu128",
+    "torchvision": "0.26.0+cu128",
+    "numpy": "2.5.3",
+    "scipy": "1.18.0",
+    "scikit-learn": "1.9.0",
+    "scikit-image": "0.26.0",
+    "torchmetrics": "1.9.0",
+    "pandas": "3.0.5",
+    "matplotlib": "3.11.1",
+    "ftfy": "6.2.0",
+    "regex": "2026.7.19",
+    "setuptools": "78.1.0"
+  }
+}

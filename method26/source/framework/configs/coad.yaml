@@ -1,0 +1,21 @@
+backbone_names:
+  - dino_vit_small_8
+layers_to_extract_from:
+  - "2"
+  - "3"
+  - "5"
+  - "6"
+  - "7"
+  - "8"
+  - "9"
+patchsize: 8
+thres: 0.1
+anomaly_scorer_num_nn: 5
+topk: 0.05
+agg_type: layer
+faiss_on_gpu: true
+faiss_num_workers: 8
+batch_size: 1
+resize: 224
+imagesize: 224
+batch_size_tr: 5000

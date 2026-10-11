@@ -1,0 +1,2 @@
+dataset_name,seed,image_auroc_mean,image_ap_mean,image_f1_mean,pixel_auroc_mean,pixel_ap_mean,pixel_f1_mean,pixel_aupro_mean,auroc_mean
+mvtec_bottle,0,0.9904761904761905,0.9968822713307322,0.9843749999999999,0.978996992111206,0.8130009770393372,0.7508040293977554,0.9536999024713134,0.9904761904761905

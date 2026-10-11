@@ -1,0 +1,2 @@
+﻿dataset,fusion_mode,num_images,entropy_misselection_rate,spearman_visual_entropy_bce,spearman_visual_p,spearman_text_entropy_bce,spearman_text_p
+mvtec_hazelnut_single_default,entropy,110,0.9818181818181818,-0.02494421026531118,0.7958908325290759,0.6097288280774519,1.5526911919395605e-12

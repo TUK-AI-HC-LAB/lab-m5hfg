@@ -1,0 +1,4 @@
+imagesize: 256
+resize: 256
+masksize: 256
+batch_size: 16

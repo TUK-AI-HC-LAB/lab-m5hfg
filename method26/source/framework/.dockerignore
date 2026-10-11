@@ -1,0 +1,57 @@
+# Git
+.git
+.gitignore
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# IDEs and editors
+.vscode/
+.cursor/
+.claude/
+.roo/
+
+# Docker files
+Dockerfile
+docker-compose.yaml
+.dockerignore
+Makefile
+.env
+
+# Documentation and temporary files
+*.md
+
+*.tmp
+tmp.txt
+mds/
+
+# Local assistant and editor state
+.agents/
+.codex/
+.ruff_cache/
+.roomodes
+.taskmasterconfig
+.windsurfrules
+
+# Large data, results, and backup directories
+# Review this list to ensure no required data is excluded.
+COAD_results/
+lg_results/
+paper_ijcai_results/
+paper_ret_backup/
+results/
+results_intra_class_variance/
+wandb/
+trainer_backup/
+other_methods/
+tmp_clone/
+backbones/weights/
+COAD/backbones/weights/
+ref_repository/
+trainer/add/
+tasks/
+*.pth
+*.zip
+*.onnx

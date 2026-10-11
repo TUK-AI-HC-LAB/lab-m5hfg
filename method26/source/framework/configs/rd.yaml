@@ -1,0 +1,11 @@
+imagesize: 256
+resize: 256
+masksize: 256
+meta_epochs: 300
+batch_size: 9999
+bs: 16
+proj_lr: 0.001
+distill_lr: 0.005
+weight_proj: 0.2
+checkpoint: false
+checkpoint_path: ./RD_lib/checkpoints

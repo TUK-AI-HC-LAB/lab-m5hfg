@@ -1,0 +1,2 @@
+﻿dataset,fusion_mode,num_images,entropy_misselection_rate,spearman_visual_entropy_bce,spearman_visual_p,spearman_text_entropy_bce,spearman_text_p
+mvtec_transistor_single_default,entropy,100,0.12,0.8953855385538553,3.306103109196622e-36,0.6944974497449744,1.1161841320744357e-15
