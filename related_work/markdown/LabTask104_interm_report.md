@@ -10,45 +10,35 @@
 
 ### Experiments 작성을 위한 로컬 빌드 결과
 
-다음 15개 기법에서 내 PC로 측정한 결과값을 확보했다. 일부 기법은 특정 데이터셋·shot 조건의 결과만 확보한 상태이며, MuSc 비교표에 필요한 모든 실험 조건을 완료했다는 의미는 아니다. 남은 조건은 2절에 정리한다.
+2026년 10월 11일 사용자 확인 기준, P-SVDD·IGD를 제외한 다음 16개 기법의 MuSc 비교용 실험을 완료했다.
 
 | 번호 | 기법 | 상태 |
 |---|---|---|
 | 1 | MuSc | 결과값 확보 완료 |
-| 2 | WinCLIP | 결과값 확보 완료 |
+| 2 | WinCLIP | 4-shot 반복 평균·표준편차 및 속도 측정 등 기존 결과 보완 완료 |
 | 3 | APRIL-GAN | 결과값 확보 완료 |
 | 4 | ACR | 결과값 확보 완료 |
-| 5 | RegAD | 결과값 확보 완료 |
-| 6 | PatchCore | MuSc 비교용 추가 실험 완료: MVTec full/4-shot, VisA·BTAD 4-shot, RsCIN 비교 |
+| 5 | RegAD | MVTec 32-shot·BTAD 4-shot 및 속도 측정 등 추가 실험 완료 |
+| 6 | PatchCore | MVTec full/4-shot, VisA·BTAD 4-shot, RsCIN 비교 완료 |
 | 7 | GraphCore | 결과값 확보 완료 |
 | 8 | NSA | 결과값 확보 완료 |
 | 9 | VT-ADL | 결과값 확보 완료 |
-| 10 | P-SVDD | 결과값 확보 완료 |
-| 11 | SPADE | 결과값 확보 완료 |
-| 12 | PaDiM | 결과값 확보 완료 |
-| 13 | DRAEM | 결과값 확보 완료 |
-| 14 | CutPaste | 결과값 확보 완료 |
-| 15 | PyramidFlow | 결과값 확보 완료 |
+| 10 | SPADE | MVTec full-shot 및 RsCIN 전후 비교 완료. BTAD도 완료 |
+| 11 | PaDiM | BTAD full-shot 추가 실험 완료 |
+| 12 | DRAEM | 결과값 확보 완료 |
+| 13 | CutPaste | 결과값 확보 완료 |
+| 14 | PyramidFlow | 결과값 확보 완료 |
+| 15 | STPM | MVTec full-shot 및 RsCIN 전후 비교 완료 |
+| 16 | DSR | MVTec full-shot 및 RsCIN 전후 Image AUROC, F1-max, AP 비교 완료 |
 
 ## 2. 남은 작업
 
-### 새 결과 확보 필요
-
-| 방법 | 실험 조건 | 필요한 결과 |
+| 방법 | 남은 작업 | 현재 상태 |
 |---|---|---|
-| STPM | MVTec full-shot | 학습·평가 결과, RsCIN 적용 전·후 지표 |
-| DSR | MVTec full-shot | 학습·평가 결과, RsCIN 적용 전·후 Image AUROC, F1-max, AP |
-| SPADE | MVTec full-shot | 평가 결과, RsCIN 적용 전·후 지표. BTAD는 완료 |
-| PaDiM | BTAD full-shot | 해당 조건의 평가 결과 |
-| RegAD | MVTec 32-shot·BTAD 4-shot | 해당 조건의 학습·평가 결과 |
-| IGD | MVTec 전체 학습·평가 | 신규 결과 확보 필요 |
+| P-SVDD | MuSc 비교용 미완료 실험 및 결과 보완 | 기존 BTAD 결과는 보유하지만 전체 실험은 미완료. 남은 세부 조건은 추가 확인 필요 |
+| IGD | MVTec 전체 학습·평가 및 결과 확보 | 미완료 |
 
-### 기존 결과 보완 필요
-
-| 방법 | 보완 내용 |
-|---|---|
-| WinCLIP | MVTec·VisA 4-shot 반복 실험의 평균·표준편차, 속도 측정 |
-| RegAD | 속도 측정 |
+기존의 STPM·DSR·SPADE·PaDiM·RegAD 신규 실험과 WinCLIP·RegAD 결과 보완 항목은 완료 처리했다.
 
 ## 3. 10월 12일까지의 작업 계획
 
