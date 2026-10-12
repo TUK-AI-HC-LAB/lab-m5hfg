@@ -10,7 +10,7 @@
 - [ZIP에 포함된 같은 실행 CSV](source/framework/results/queco_check_20261011_01/queco__layer24_/results_queco.csv), [실행 로그](source/framework/results/queco_check_20261011_01/run.log).
 - [재실행 스크립트](source/run_queco_screw_w42.sh), [W42 실행·포팅 기록](../meetings/2026-W42_brief.md).
 
-최근 결과는 2026-10-11 MVTec AD screw 전체 test 160장(정상 41장·결함 119장), batch=1, runner seed=0, Trainer 내부 seed=42의 단일 실행이다. 추가 학습은 없고 fusion diagnostics는 켜져 있다. 이미지·mask 크기는 518×518이다.
+최근 결과는 MVTec AD screw 전체 test 160장(정상 41장·결함 119장), batch=1, runner seed=0, Trainer 내부 seed=42의 단일 실행이다. 추가 학습은 없고 fusion diagnostics는 켜져 있다. 이미지·mask 크기는 518×518이다.
 
 | 평가 단위 | AUROC (%) | AP (%) | F1 (%) | AUPRO (%) |
 |---|---:|---:|---:|---:|
