@@ -1,0 +1,6 @@
+{
+  "path": "/home/test/musc_results/sweeps_seed42_20261012/visa/macaroni2/interval_patch_predictions.npz",
+  "sha256": "b16cd1ca6fa8deb0ff792b4d12b575fd75c5bf9d4578831712b4e6ff8dcf3d76",
+  "baseline_manifest": "/mnt/c/Users/test/Desktop/Codex/lab-m5hfg/method10/source/results/tables3_7_seed42_20261012/visa/macaroni2/raw_manifest.json",
+  "baseline_raw_sha256": "675b0f7e5824bf24ff73046d1dd42fa43886a882fcbe25f6637618d7b92fec14"
+}

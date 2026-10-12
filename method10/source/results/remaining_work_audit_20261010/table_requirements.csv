@@ -1,0 +1,19 @@
+﻿table,existing,remaining
+1,WinCLIP 4행 7지표·APRIL-GAN 4행·ACR·RegAD4·GraphCore4·MuSc MVTec 있음 · PatchCore 해당 조건 검증 완료,MuSc VisA 기본; WinCLIP4 반복 분산 보완
+2,CutPaste·NSA·GraphCore8·MuSc MVTec 있음; 구 PatchCore full AUROC CSV도 있음 · PatchCore 해당 조건 검증 완료 · RegAD확장 검증 완료,IGD 중단
+3,"MuSc MVTec r={1,3,5} 기본 있음",양 dataset의 6개 r조합 중 기본 중복 제외 나머지
+4,MuSc MVTec 30%+mean 기본 있음,양 dataset 6개 전략 중 기본 중복 제외 나머지; min과30%+min은 수학적/코드 동등성 검증 후만 재사용
+5,MuSc MVTec RsCIN 전후 모두 기존 점수로 재계산·검증 완료,VisA 기본 점수와 RsCIN 전후
+6,기존 실행 wall time은 loading/metric 포함이므로 직접 대입 불가,"최대200장 pool 조건, s=1/2/3, 추론시간과최대메모리"
+7,MVTec s=1 성능/크기 있음,MVTec s=2/3; VisA s=1/2/3; 부분집합 예측 합쳐 지표 계산
+8,ViT-L-14-336 MVTec 기본 있음,다른 backbone10개×MVTec/VisA + 기본 backbone VisA; B16+ MVTec는 Table13과 공유
+9,"MVTec r={1,3,5} 기본 있음","{1},{1,3}은Table3과공유; 추가큰r 3조합×2dataset; VisA기본공유"
+10,MVTec 0%–30% 기본 있음,하한2/4/6/8/10%×2dataset; VisA기본공유
+11,APRIL-GAN MVTec/VisA0/4·DRAEM·RegAD2/4/8 RsCIN 전후 있음; STPM 공개학생 모델 자체 RsCIN 전후 검증 완료; DSR 공개 모델 자체 RsCIN 전후 검증 완료 · PatchCore 해당 조건 검증 완료 · SPADE MVTec RsCIN검증 완료,DSR 신규 실행 불필요; STPM 완료
+12,WinCLIP5category+평균+MVTec전체 연결 완료; APRIL-GAN5category 있음,APRIL-GAN5category평균은 이번 연결수정으로 채움; MuSc VisA2category 필요
+13,APRIL-GAN 두 backbone benchmark 있음; WinCLIP성능 연결; 네조건 자체 benchmark 검증됨; RegAD4성능 있음,RegAD4속도/메모리; WinCLIP 타방법과 측정범위 대조; MuSc 두backbone×s1/2/3 속도/메모리 및AC/AUPRO
+14,VT-ADL·P-SVDD·SPADE·PyramidFlow·APRIL-GAN0/4 BTAD 있음 · PatchCore 해당 조건 검증 완료 · PaDiM 검증 완료 · RegAD확장 검증 완료,MuSc0 BTAD 없음
+15,MuSc MVTec0 기본 있음,MuSc 1/2/4/8/16/32/full 정상reference추가 7조건
+16,0-shot(MuSc)는Table15기본과공유,MuSc+ 1/2/4/8/16/32/full reference전용score 7조건
+17,MuSc MVTec15category 7지표 모두 있음,신규실행 없음; 원문/공식코드 설정차이 명시
+18,MuSc VisA category 지표 없음,VisA12category 7지표; Table1/5/7/8/12 기본결과와공유

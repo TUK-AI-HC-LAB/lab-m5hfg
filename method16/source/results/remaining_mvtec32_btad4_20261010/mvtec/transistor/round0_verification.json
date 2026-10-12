@@ -1,0 +1,70 @@
+{
+  "status": "passed",
+  "raw_path": "/home/test/regad_results/remaining_mvtec32_btad4_20261010/mvtec/transistor/round0_predictions.npz",
+  "raw_sha256": "85fc19c3d46e42a1f5aee8db8f2f727f6d520c219d6c2094a57362604990548e",
+  "checkpoint_path": "/home/test/regad_assets/save_checkpoints/4/transistor/transistor_4_rotation_scale_model.pt",
+  "checkpoint_sha256": "2a982a261640131fde05340ef2496e0ae3246211390d7fe1bc40f130447ad2ed",
+  "full_postprocessing_and_metrics_recomputed": true,
+  "input_and_support_SHA_checked": true,
+  "mahalanobis_samples": [
+    {
+      "position": 0,
+      "image": 0,
+      "batch": 12.803406715393066,
+      "native": 12.803403854370117
+    },
+    {
+      "position": 0,
+      "image": 50,
+      "batch": 11.8729887008667,
+      "native": 11.872994422912598
+    },
+    {
+      "position": 0,
+      "image": 99,
+      "batch": 14.404934883117676,
+      "native": 14.404932975769043
+    },
+    {
+      "position": 1568,
+      "image": 0,
+      "batch": 9.03537654876709,
+      "native": 9.03537654876709
+    },
+    {
+      "position": 1568,
+      "image": 50,
+      "batch": 10.794462203979492,
+      "native": 10.794462203979492
+    },
+    {
+      "position": 1568,
+      "image": 99,
+      "batch": 12.40291690826416,
+      "native": 12.40291690826416
+    },
+    {
+      "position": 3120,
+      "image": 0,
+      "batch": 17.75208282470703,
+      "native": 17.752077102661133
+    },
+    {
+      "position": 3120,
+      "image": 50,
+      "batch": 15.94546127319336,
+      "native": 15.94545841217041
+    },
+    {
+      "position": 3120,
+      "image": 99,
+      "batch": 12.597723960876465,
+      "native": 12.5977201461792
+    }
+  ],
+  "embedding_concat_exact": true,
+  "support_augmentation_count": 704,
+  "support_forward_chunk": 16,
+  "query_forward_batch": 1,
+  "limitation": "Sample covariance/distance checks; chunked eval support forward not bitwise equal to one huge forward"
+}

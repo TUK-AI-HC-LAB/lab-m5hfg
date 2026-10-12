@@ -1,0 +1,5 @@
+image_path,label,sha256,mask_path,mask_sha256
+/home/test/data/mvtec/tile/train/good/009.png,0,733f911be0d800ad3a0312496fee4940fc3912a3c117712bcadf77a619659011,,
+/home/test/data/mvtec/tile/train/good/073.png,0,4b181c96b5202736378d298bc4f496426257e94cb25600c4be5b878960518468,,
+/home/test/data/mvtec/tile/train/good/178.png,0,28bc93ced9542e15e5ccfd4c54f77ede102875924446fee0e2ba189de776bc15,,
+/home/test/data/mvtec/tile/train/good/195.png,0,8cb4e71916fc8d9433fc3ffc09a8f2405098579fbc7dd6858e7c0478494c4bfc,,

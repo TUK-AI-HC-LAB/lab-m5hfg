@@ -1,0 +1,54 @@
+{
+  "status": "completed",
+  "commit": "b76b93da8bd3096a99964a96ae29d46f197a0651",
+  "gpu": "NVIDIA GeForce RTX 5080",
+  "cuda": "12.8",
+  "python": "3.12.13 | packaged by conda-forge | (main, Mar  5 2026, 16:50:00) [GCC 14.3.0]",
+  "seed": 42,
+  "tf32": false,
+  "precision": "native CUDA FP16 autocast; FP64 score aggregation; native RsCIN FP32",
+  "backbone": "ViT-L-14-336",
+  "pretrained": "openai",
+  "input_size": 518,
+  "batch_size": 4,
+  "feature_layers_0based": [
+    5,
+    11,
+    17,
+    23
+  ],
+  "checkpoint_sha256": "3035c92b350959924f9f00213499208652fc7ea050643e8b385c2dac08641f02",
+  "datasets": {
+    "mvtec_ad": "/home/test/data/mvtec",
+    "visa": "/home/test/data/VisA_20220922"
+  },
+  "tables": [
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "training_executed": false,
+  "raw_path": "/home/test/musc_results/tables3_7_seed42_20261012",
+  "source_sha256": "72d9f76452a4197cd6727c8159a90d953d96c0005bf0bb83b2085791e0a74e7a",
+  "native_sources": {
+    "models/musc.py": "7656744b0c6a63e2e8c89898084501110257fd41b1fa627fe90a2237e720695a",
+    "models/modules/_LNAMD.py": "7ba78869a406bd1dfcdede7ed746c6951cc3af36a95f287a4c14ce1d24e92594",
+    "models/modules/_MSM.py": "efb09b68b300e6741438080b63fb1f405069d0cffe07cc8fe872bc78bf3fb467",
+    "models/modules/_RsCIN.py": "40be4217769d7b07ecfec4ceca005b30893c0b18a2660deb3e89f2aaf0b7bcac",
+    "datasets/mvtec.py": "e76b91641ead4a1aa466f0e75acead6c16de723f1796ebe842ba5ebe4a0c62e0",
+    "datasets/visa.py": "c27c90d54a94b486632502f18f1f0b78cdea01500c15e4f1ef88f57289ad1ff1"
+  },
+  "efficiency": "native full pipeline on VisA candle 200 images, warmup1/repeats3 per s, synchronized; report core/excluding RsCIN and total/including RsCIN separately; dataloading included, loading/metrics/saving excluded",
+  "sharing": "extract full category once; share native fast cdist between six reductions; shared LNAMD embeddings across official stratified subsets; feature equivalence checked on first subset batch",
+  "packages": {
+    "torch": "2.11.0+cu128",
+    "torchvision": "0.26.0+cu128",
+    "numpy": "2.5.3",
+    "scikit-learn": "1.9.0",
+    "Pillow": "12.3.0"
+  },
+  "dataset": "visa",
+  "category": "pipe_fryum"
+}

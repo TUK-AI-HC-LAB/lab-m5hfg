@@ -1,0 +1,3 @@
+dataset,category,rscin,n_train,n_images,image_auroc,image_f1_max,image_ap
+mvtec,transistor,w/o,213,100,0.8725,0.7532467532467533,0.8477258029568138
+mvtec,transistor,w,213,100,0.8845833333333334,0.8043478260869567,0.8525995427288023

@@ -1,0 +1,32 @@
+{
+  "status": "completed",
+  "gpu": "NVIDIA GeForce RTX 5080",
+  "commit": "fcaa92f124fb1ad74a7acf56726decd4b27cbcad",
+  "official_repo": "https://github.com/amazon-science/patchcore-inspection",
+  "backbone": "ImageNetV1 WideResNet50 layer2/3",
+  "input": 224,
+  "resize": 256,
+  "coreset": 0.1,
+  "pretrain_dimension": 1024,
+  "target_dimension": 1024,
+  "patchsize": 3,
+  "nn": 1,
+  "FAISS": "GPU exact flat squaredL2 FP32; CPU/float64 verified",
+  "TF32": false,
+  "AMP": false,
+  "normal_training": "full normal set or4 support images; no backbone training",
+  "fewshot_seeds": [
+    42,
+    43,
+    44
+  ],
+  "std_ddof": 0,
+  "wrapper_sha256": "2fc19111f186cf6e0876d17e60b0bf6f14c60ade582211df98fc48a0e20f3195",
+  "raw_root": "/home/test/patchcore_results/musc_comparison_20261010",
+  "condition_limit": "Official baseline; MuSc exact PatchCore config/ensemble/fewshot sampling undisclosed, not paper-number equivalence.",
+  "error": null,
+  "dataset": "btad",
+  "shot": "4shot",
+  "seed": 44,
+  "category": "03"
+}

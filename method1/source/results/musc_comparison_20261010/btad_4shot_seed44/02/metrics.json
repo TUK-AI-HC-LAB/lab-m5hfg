@@ -1,0 +1,16 @@
+{
+  "dataset": "btad",
+  "shot": "4shot",
+  "seed": 44,
+  "category": "02",
+  "n_train": 399,
+  "n_support": 4,
+  "n_images": 230,
+  "image_auroc": 0.8170000000000001,
+  "image_f1_max": 0.9302325581395349,
+  "image_ap": 0.9696726549903482,
+  "pixel_auroc": 0.9521380595943723,
+  "pixel_f1_max": 0.581956628079709,
+  "pixel_ap": 0.5661927953969967,
+  "aupro": 0.5066893974830139
+}

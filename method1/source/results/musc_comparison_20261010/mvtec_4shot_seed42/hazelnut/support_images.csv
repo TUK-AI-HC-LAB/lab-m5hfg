@@ -1,0 +1,5 @@
+image_path,label,sha256,mask_path,mask_sha256
+/home/test/data/mvtec/hazelnut/train/good/327.png,0,edd221feb28d3c90fceb74a16debd89484e00c1c7b84bdbd596677b5c79c7450,,
+/home/test/data/mvtec/hazelnut/train/good/057.png,0,0f00cfb28fe427a614d4e0efc531e32dbb1f7c69c00547f1d113efc546f80e26,,
+/home/test/data/mvtec/hazelnut/train/good/012.png,0,ac46f6aa2cc8618d5d04b468390a5c9cd2f331dd3cbbfd80f69b9013f05eef0d,,
+/home/test/data/mvtec/hazelnut/train/good/379.png,0,86063b84fd91d7866e1173fa062d7b43e903c133108936e83ee3978af2c9960c,,

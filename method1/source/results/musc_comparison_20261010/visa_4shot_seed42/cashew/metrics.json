@@ -1,0 +1,16 @@
+{
+  "dataset": "visa",
+  "shot": "4shot",
+  "seed": 42,
+  "category": "cashew",
+  "n_train": 450,
+  "n_support": 4,
+  "n_images": 150,
+  "image_auroc": 0.9315999999999999,
+  "image_f1_max": 0.9223300970873787,
+  "image_ap": 0.9650896294593643,
+  "pixel_auroc": 0.9793446403744774,
+  "pixel_f1_max": 0.6041107140478991,
+  "pixel_ap": 0.5680534559094399,
+  "aupro": 0.9143583013484629
+}

@@ -1,0 +1,16 @@
+{
+  "dataset": "visa",
+  "shot": "4shot",
+  "seed": 42,
+  "category": "candle",
+  "n_train": 900,
+  "n_support": 4,
+  "n_images": 200,
+  "image_auroc": 0.9459000000000001,
+  "image_f1_max": 0.8820512820512821,
+  "image_ap": 0.9478267461306413,
+  "pixel_auroc": 0.9846949378679257,
+  "pixel_f1_max": 0.31879497265662476,
+  "pixel_ap": 0.2234985496852749,
+  "aupro": 0.9475219994772646
+}

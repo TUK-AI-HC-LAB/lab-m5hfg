@@ -1,0 +1,6 @@
+{
+  "path": "/home/test/musc_results/sweeps_seed42_20261012/mvtec_ad/transistor/interval_patch_predictions.npz",
+  "sha256": "ece86e340508ac2007642b9b141fdcae369ad573913f23a79326473e002b5317",
+  "baseline_manifest": "/mnt/c/Users/test/Desktop/Codex/lab-m5hfg/method10/source/results/tables3_7_seed42_20261012/mvtec_ad/transistor/raw_manifest.json",
+  "baseline_raw_sha256": "32d6bd89d54329b40f42450254607a8177664ead5d0208c012f86cb88bd3dc13"
+}

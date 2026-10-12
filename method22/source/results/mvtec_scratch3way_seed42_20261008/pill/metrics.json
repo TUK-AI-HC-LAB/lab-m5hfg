@@ -1,0 +1,8 @@
+{
+  "dataset": "mvtec",
+  "category": "pill",
+  "n_train": 267,
+  "n_images": 167,
+  "image_auroc": 0.9375340971085653,
+  "pixel_auroc": 0.9307508639510808
+}

@@ -1,0 +1,8 @@
+{
+  "dataset": "mvtec",
+  "category": "metal_nut",
+  "n_train": 220,
+  "n_images": 115,
+  "image_auroc": 0.8729227761485826,
+  "pixel_auroc": 0.861270427513551
+}

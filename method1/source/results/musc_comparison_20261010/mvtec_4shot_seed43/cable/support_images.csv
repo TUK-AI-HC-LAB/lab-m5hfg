@@ -1,0 +1,5 @@
+image_path,label,sha256,mask_path,mask_sha256
+/home/test/data/mvtec/cable/train/good/009.png,0,4948f5662ee3592627e8478b1a3222d70f19d84fbb30794574c5b1a452ac9346,,
+/home/test/data/mvtec/cable/train/good/073.png,0,dce031b566b63dfe5160c590cae2b2c2d5378c0acabd3f0656a65b8827ca144b,,
+/home/test/data/mvtec/cable/train/good/178.png,0,66145410a3712248a9e34060bf6e6641f07f71266b54ef920e568407e761e251,,
+/home/test/data/mvtec/cable/train/good/195.png,0,8acafe5ff5ef34f8fb994fd9968b8a3944ef0271577e787560f43915584ebf61,,

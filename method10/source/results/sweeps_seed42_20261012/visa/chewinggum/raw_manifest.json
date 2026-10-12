@@ -1,0 +1,6 @@
+{
+  "path": "/home/test/musc_results/sweeps_seed42_20261012/visa/chewinggum/interval_patch_predictions.npz",
+  "sha256": "53b502e39e98adc6b8214004f77c538eedf298416153820fffb1817acff72c43",
+  "baseline_manifest": "/mnt/c/Users/test/Desktop/Codex/lab-m5hfg/method10/source/results/tables3_7_seed42_20261012/visa/chewinggum/raw_manifest.json",
+  "baseline_raw_sha256": "f8c809c499f35ae420a063d9db747ba673f97fce33a4cb3ade28a1228d6c0759"
+}

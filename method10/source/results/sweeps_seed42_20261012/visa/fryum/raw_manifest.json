@@ -1,0 +1,6 @@
+{
+  "path": "/home/test/musc_results/sweeps_seed42_20261012/visa/fryum/interval_patch_predictions.npz",
+  "sha256": "424408d5f5d9d236ea084fb8d9117cb6dee329d1ee39e10f58577fe739c744f3",
+  "baseline_manifest": "/mnt/c/Users/test/Desktop/Codex/lab-m5hfg/method10/source/results/tables3_7_seed42_20261012/visa/fryum/raw_manifest.json",
+  "baseline_raw_sha256": "c5e760ff3f61a76abe6af17ffca1fbc400b9013b886f2a0ca8a3f30a3a60e8f9"
+}

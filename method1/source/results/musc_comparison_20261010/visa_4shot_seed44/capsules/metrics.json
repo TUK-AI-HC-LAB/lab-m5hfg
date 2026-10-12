@@ -1,0 +1,16 @@
+{
+  "dataset": "visa",
+  "shot": "4shot",
+  "seed": 44,
+  "category": "capsules",
+  "n_train": 542,
+  "n_support": 4,
+  "n_images": 160,
+  "image_auroc": 0.6041666666666666,
+  "image_f1_max": 0.7729083665338645,
+  "image_ap": 0.7359640446835034,
+  "pixel_auroc": 0.9493222901291798,
+  "pixel_f1_max": 0.41111003814398145,
+  "pixel_ap": 0.2957255480680249,
+  "aupro": 0.6450717179985918
+}

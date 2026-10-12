@@ -1,0 +1,16 @@
+{
+  "dataset": "mvtec",
+  "shot": "full",
+  "seed": 42,
+  "category": "carpet",
+  "n_train": 280,
+  "n_support": 280,
+  "n_images": 117,
+  "image_auroc": 0.9839486356340288,
+  "image_f1_max": 0.9714285714285714,
+  "image_ap": 0.9953306675418596,
+  "pixel_auroc": 0.9898136817736743,
+  "pixel_f1_max": 0.6553884894180664,
+  "pixel_ap": 0.6774680665976947,
+  "aupro": 0.94875914580459
+}

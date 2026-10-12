@@ -1,0 +1,5 @@
+image_path,label,sha256,mask_path,mask_sha256
+/home/test/data/VisA_20220922/chewinggum/Data/Images/Normal/132.JPG,0,cccf7777926a5cf2c22319aa81ceb8a41a3675d98de481734571e27b8fa8c212,,
+/home/test/data/VisA_20220922/chewinggum/Data/Images/Normal/490.JPG,0,fb4924b680a4d808db6fd1abf4a5a0ba01da0c5d7757ce3e8edce254c0b3bb87,,
+/home/test/data/VisA_20220922/chewinggum/Data/Images/Normal/263.JPG,0,b340b2b40376e1736c7fa13ef74bac8c88ed4627c967b1c33cbffa772b9af6a3,,
+/home/test/data/VisA_20220922/chewinggum/Data/Images/Normal/117.JPG,0,6eff4516189943fc7faa18ec23e601b0fc29163b5ff2842e660fc559366c30e1,,

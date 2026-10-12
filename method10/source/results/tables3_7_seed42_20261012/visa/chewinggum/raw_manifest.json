@@ -1,0 +1,6 @@
+{
+  "path": "/home/test/musc_results/tables3_7_seed42_20261012/visa/chewinggum/patch_predictions.npz",
+  "sha256": "f8c809c499f35ae420a063d9db747ba673f97fce33a4cb3ade28a1228d6c0759",
+  "map_reconstruction": "FP64 patch scores -> torch bilinear 518 align_corners=True; masks native dataset cast int32 then uint8",
+  "config_sha256": "2b60ecea091a87c9fc182449d0b03ea6b95c7faa6f9051e14535ea761da776ba"
+}

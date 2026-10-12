@@ -1,0 +1,16 @@
+{
+  "dataset": "mvtec",
+  "shot": "full",
+  "seed": 42,
+  "category": "toothbrush",
+  "n_train": 60,
+  "n_support": 60,
+  "n_images": 42,
+  "image_auroc": 1.0,
+  "image_f1_max": 1.0,
+  "image_ap": 0.9999999999999999,
+  "pixel_auroc": 0.9869117946165838,
+  "pixel_f1_max": 0.5915803785184383,
+  "pixel_ap": 0.52164671004968,
+  "aupro": 0.8915299496379344
+}

@@ -1,0 +1,46 @@
+{
+  "status": "passed",
+  "dataset_categories": {
+    "MVTec AD": 15,
+    "VisA": 12
+  },
+  "dataset_images": {
+    "MVTec AD": 1725,
+    "VisA": 2162
+  },
+  "figure7_points": 24,
+  "figure8_single_window_points": 18,
+  "units": "percent; original sweep CSVs are 0–1",
+  "aggregation": "unweighted category macro mean; no pooled dataset metric or error bars",
+  "figure7_ylim": "panel-specific truncated AUROC axes to match the paper comparison style",
+  "figure8_references": {
+    "mvtec_ad_multi_k": [
+      1,
+      2,
+      3
+    ],
+    "visa_multi_k": [
+      1,
+      8,
+      9
+    ],
+    "infinity": "full category window"
+  },
+  "data_sources": {
+    "results/sweeps_seed42_20261012/msm_interval_ratio_mean_metrics.csv": "93de9df793fa5c990b0b7c09c0aef450d32dba6e0ba47c1a41c71e6ccb47394b",
+    "results/sweeps_seed42_20261012/rscin_single_window_mean_metrics.csv": "6b9a476906995cba07f5197e83eab09843e19f6cac21ac868afcfc4b7e9914d6",
+    "results/sweeps_seed42_20261012/verification.json": "e9c3dad0d3388c49c495c475e18242ff9edef286a746d8d53b24d149a90f7a0a"
+  },
+  "plot_source_sha256": "bbd5ac3070cee0a2dea05e42980e58c0480ac2144493796a0996678219a1d628",
+  "outputs": {
+    "figure7_data.csv": "8c40467840e7a9b345f9acf703102b41321c498d3e65c027376e662e04e77525",
+    "figure7_local.pdf": "bbda1348ca7c02d447bfc1026b25e3f17d9007cde540dd0e7bf24063ec239a37",
+    "figure7_local.png": "9a1b1396f094dd612a63777094cd2610e87bb5c92366c4af381bb7afb7be9f96",
+    "figure7_local.svg": "2af7490681161b9fbd4175d73100b2cf94db898c4ba576f903ca23863606e0bf",
+    "figure8_data.csv": "9c0b1d2c3a410ada0bfb3de5fc7b37969770ec47cfd45ac02a8d582e222c5858",
+    "figure8_local.pdf": "47b81be3318b2403de8a610e6f0c17d97a3e9e0a476655b173343b8be96885d7",
+    "figure8_local.png": "3e9162259435fb79bdc97010a930a4d9191830cef894087b48ac332537c8fd82",
+    "figure8_local.svg": "1212763daa3180d98df0f65498e59d22bb2017ce42a190916ecaabbb314c615e"
+  },
+  "visual_review": "Both final PNGs reviewed: readable labels, no overlap or clipping, correct axes/legend/baselines; figure7 labels rounded to one decimal."
+}

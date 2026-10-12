@@ -1,0 +1,5 @@
+image_path,label,sha256,mask_path,mask_sha256
+/home/test/data/mvtec/screw/train/good/209.png,0,7a335b25904526ae72b7b73d7b7b3994ea5f2fbaf97ee01a77a60104509e053f,,
+/home/test/data/mvtec/screw/train/good/266.png,0,10b3780c556dfd62e36efcace234bf1c059f25eec6169c72789a994bdb20a0fe,,
+/home/test/data/mvtec/screw/train/good/277.png,0,e5e4e90d308c6325045bef19dfd81a6c3b1816c10fa29d3ec68d6f11dd7635e8,,
+/home/test/data/mvtec/screw/train/good/059.png,0,b5c600baa6c44fb1d7b93643a6385442414a9371e9e4eb97760a2695d2afa310,,

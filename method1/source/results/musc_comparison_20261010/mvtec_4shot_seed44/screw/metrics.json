@@ -1,0 +1,16 @@
+{
+  "dataset": "mvtec",
+  "shot": "4shot",
+  "seed": 44,
+  "category": "screw",
+  "n_train": 320,
+  "n_support": 4,
+  "n_images": 160,
+  "image_auroc": 0.4589055134248821,
+  "image_f1_max": 0.8654545454545455,
+  "image_ap": 0.7300914944671826,
+  "pixel_auroc": 0.9092929572581718,
+  "pixel_f1_max": 0.03938987547828908,
+  "pixel_ap": 0.017636715085654616,
+  "aupro": 0.6858343161107839
+}

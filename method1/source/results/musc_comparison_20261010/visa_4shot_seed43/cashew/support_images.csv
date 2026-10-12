@@ -1,0 +1,5 @@
+image_path,label,sha256,mask_path,mask_sha256
+/home/test/data/VisA_20220922/cashew/Data/Images/Normal/251.JPG,0,d1dd4619c65d123c4d251884d2974615e2896f8c678b52f7e086429f0db5d701,,
+/home/test/data/VisA_20220922/cashew/Data/Images/Normal/240.JPG,0,47d63a6b6296448b5a58527a0340fb3da0679d5ccbb6bc844d17adfdc2a5c366,,
+/home/test/data/VisA_20220922/cashew/Data/Images/Normal/063.JPG,0,ad5ad30515492f780d78b4c49a31150b6b3f00780df1ffe3eed818ec19605f1c,,
+/home/test/data/VisA_20220922/cashew/Data/Images/Normal/040.JPG,0,68517c19e3608f46d9a4416b13f06f4368e854f9d6a5426c1245cbee3f0bd9a4,,

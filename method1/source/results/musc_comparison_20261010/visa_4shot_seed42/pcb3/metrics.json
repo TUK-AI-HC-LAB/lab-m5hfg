@@ -1,0 +1,16 @@
+{
+  "dataset": "visa",
+  "shot": "4shot",
+  "seed": 42,
+  "category": "pcb3",
+  "n_train": 905,
+  "n_support": 4,
+  "n_images": 201,
+  "image_auroc": 0.8195049504950496,
+  "image_f1_max": 0.75,
+  "image_ap": 0.845261447651273,
+  "pixel_auroc": 0.9840652902886982,
+  "pixel_f1_max": 0.4638471368587598,
+  "pixel_ap": 0.45705939667008716,
+  "aupro": 0.7562356677509522
+}

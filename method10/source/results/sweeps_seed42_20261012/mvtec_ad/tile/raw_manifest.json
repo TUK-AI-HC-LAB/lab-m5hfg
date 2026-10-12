@@ -1,0 +1,6 @@
+{
+  "path": "/home/test/musc_results/sweeps_seed42_20261012/mvtec_ad/tile/interval_patch_predictions.npz",
+  "sha256": "cb62f8eff562551d225cebc90d43173e9da6b00586d41f6b8eae5fa3491ff35f",
+  "baseline_manifest": "/mnt/c/Users/test/Desktop/Codex/lab-m5hfg/method10/source/results/tables3_7_seed42_20261012/mvtec_ad/tile/raw_manifest.json",
+  "baseline_raw_sha256": "d68b6c1faa1d536c5e1ec80be21a8dbda4f3b09dc899349bcd29211744baddd5"
+}

@@ -1,0 +1,35 @@
+{
+  "status": "passed",
+  "n_train": 391,
+  "n_images": 110,
+  "all_global_K50_scores_and_neighbors_FP64_checked": true,
+  "max_absolute_score_error": 4.9243047556046804e-05,
+  "metrics_recomputed_from_saved_predictions": true,
+  "rscin_recomputed_exactly": true,
+  "rscin_image_label_SHA_alignment_passed": true,
+  "feature_path": "/home/test/patchcore_results/musc_comparison_20261010/rscin_features/hazelnut/features.npy",
+  "feature_sha256": "27834ab4f6be36d79d0136efdd0ee10b78fe49f8385e2343bfeeeac520afd14c",
+  "module_sha256": "c5df4811b385971a15bb2db4473adba9755a15c8acf1e5c802b4ed955e5081c5",
+  "windows": [
+    1,
+    2,
+    3
+  ],
+  "all_input_SHA_rechecked": true,
+  "raw_artifacts": [
+    {
+      "path": "/home/test/spade_results/mvtec_k50_seed42_20261010/hazelnut/predictions.npz",
+      "sha256": "ed94e87d394de1c8b4d757ffcc05ba1601450e52ef50c084c0b090c78fc85c8b"
+    },
+    {
+      "path": "/home/test/spade_results/mvtec_k50_seed42_20261010/hazelnut/train_avgpool.npy",
+      "sha256": "8cd3f239c5be3fe8685f92c99a98bb97d4a20fd687dc9ee8ff1cd94e1c7f94cd"
+    },
+    {
+      "path": "/home/test/spade_results/mvtec_k50_seed42_20261010/hazelnut/test_avgpool.npy",
+      "sha256": "b0b76ead062809e64e6f39c83083597c5b9d9d04a06a20cb2bb3d37373c81177"
+    }
+  ],
+  "seconds": 5.0861223980000005,
+  "scope": "Table11 image classification only; pixel maps not required or computed"
+}

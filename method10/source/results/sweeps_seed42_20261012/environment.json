@@ -1,0 +1,54 @@
+{
+  "status": "completed",
+  "commit": "b76b93da8bd3096a99964a96ae29d46f197a0651",
+  "seed": 42,
+  "baseline": "/mnt/c/Users/test/Desktop/Codex/lab-m5hfg/method10/source/results/tables3_7_seed42_20261012",
+  "baseline_verification_sha256": "cd6884d672100e6089bccd55cb1d629df703a9e760f78ffdb9126410171591fe",
+  "dataset_categories": {
+    "mvtec_ad": 15,
+    "visa": 12
+  },
+  "training_executed": false,
+  "MSM": "Fig7 intervals 0%\u2013p%, p=10/30/50/70/90/100; shared native fast cdist; not Table10 lower-bound sweep",
+  "RsCIN": "Fig8 k=2..9 and full-window, plus w/o and native multi-window reference",
+  "precision": "native FP16 autocast, FP64 layer/r aggregation, FP32 RsCIN; TF32 disabled",
+  "raw_path": "/home/test/musc_results/sweeps_seed42_20261012",
+  "source_sha256": "6d9603a2b7346ed36cde4facc0a4b32176608629ff8ca0f2f212839158fe000b",
+  "no_eta_or_progress_poll": true,
+  "gpu": "NVIDIA GeForce RTX 5080",
+  "cuda": "12.8",
+  "config": {
+    "datasets": {
+      "dataset_name": "mvtec_ad",
+      "data_path": "/home/test/data/mvtec",
+      "class_name": "ALL",
+      "img_resize": 518,
+      "divide_num": 1
+    },
+    "models": {
+      "backbone_name": "ViT-L-14-336",
+      "pretrained": "openai",
+      "batch_size": 4,
+      "feature_layers": [
+        5,
+        11,
+        17,
+        23
+      ],
+      "r_list": [
+        1,
+        3,
+        5
+      ]
+    },
+    "device": "0",
+    "testing": {
+      "output_dir": "/home/test/musc_results/sweeps_seed42_20261012/official",
+      "vis": false,
+      "vis_type": "single_norm",
+      "save_excel": false
+    }
+  },
+  "dataset": "visa",
+  "category": "pipe_fryum"
+}

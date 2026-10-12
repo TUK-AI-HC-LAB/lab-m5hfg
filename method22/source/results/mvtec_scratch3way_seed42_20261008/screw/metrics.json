@@ -1,0 +1,8 @@
+{
+  "dataset": "mvtec",
+  "category": "screw",
+  "n_train": 320,
+  "n_images": 160,
+  "image_auroc": 0.8190202910432466,
+  "pixel_auroc": 0.9566236475612756
+}

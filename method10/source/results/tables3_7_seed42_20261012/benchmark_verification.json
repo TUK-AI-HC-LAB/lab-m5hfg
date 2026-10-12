@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "native_make_category_data": true,
+  "pool": "VisA/candle",
+  "n_images": 200,
+  "warmup": 1,
+  "repeats": 3,
+  "synchronized": true,
+  "peak_reset_each_repeat": true,
+  "MB_definition": "allocated_bytes/1e6; reserved and MiB also stored",
+  "scope": "core includes data loading/encoder/LNAMD/MSM/interpolation; excludes model load/RsCIN/metrics/saving; total also includes RsCIN",
+  "timing_samples_sha256": "b5bdfd13e4ab0106953d58f429ceaf5013b6cdce615ea72e48ac6911f929b383"
+}

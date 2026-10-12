@@ -47,6 +47,9 @@ igd_largebatch=LAB/'method14/source/results/mvtec_largebatch_seed42_20261007'
 if (igd_largebatch/'verification.json').exists() and json.loads((igd_largebatch/'verification.json').read_text())['status']=='passed':
     igd_root=igd_largebatch
 igd_batch8=LAB/'method14/source/results/mvtec_batch8_seed42_20261007'
+igd_restart=LAB/'method14/source/results/mvtec_batch8_seed42_20261011'
+if (igd_restart/'environment.json').exists():
+    igd_batch8=igd_restart
 if (igd_batch8/'verification.json').exists() and json.loads((igd_batch8/'verification.json').read_text())['status']=='passed':
     igd_root=igd_batch8
 igd_mean=igd_root/'mean_metrics.csv'
@@ -68,6 +71,10 @@ regad_root=LAB/'method16/source/results/mvtec_public_20261007'
 regad_verified=regad_root/'verification.json'
 regad_means={int(r['shot']):r for r in read(regad_root/'mean_metrics.csv')} if regad_verified.exists() and json.loads(regad_verified.read_text())['status']=='passed' else {}
 regad_rscin={(int(r['shot']),r['rscin']):r for r in read(regad_root/'rscin_mean_metrics.csv')} if regad_means else {}
+regad_remaining_root=LAB/'method16/source/results/remaining_mvtec32_btad4_20261010'
+regad_remaining_verified=regad_remaining_root/'verification.json'
+regad_remaining_means={(r['dataset'],int(r['shot'])):r for r in read(regad_remaining_root/'mean_metrics.csv')} if regad_remaining_verified.exists() and json.loads(regad_remaining_verified.read_text())['status']=='passed' else {}
+regad_remaining_link='[RegAD32/BTAD4 확장](../../method16/markdown/RegAD_mvtec32_btad4_execution.md)'
 graphcore_root=LAB/'method17/source/results/mvtec_pvig_fp32_20261008'
 graphcore_verified=graphcore_root/'verification.json'
 graphcore_means={int(r['shot']):r for r in read(graphcore_root/'mean_metrics.csv')} if graphcore_verified.exists() and json.loads(graphcore_verified.read_text())['status']=='passed' else {}
@@ -84,6 +91,9 @@ spade_root=LAB/'method20/source/results/btad_k50_seed42_20261008'
 spade_verified=spade_root/'verification.json'
 spade_result=read(spade_root/'mean_metrics.csv')[0] if spade_verified.exists() and json.loads(spade_verified.read_text())['status']=='passed' else None
 spade_started=(spade_root/'environment.json').exists()
+spade_mvtec_root=LAB/'method20/source/results/mvtec_k50_seed42_20261010'
+spade_mvtec_verified=spade_mvtec_root/'verification.json'
+spade_mvtec_means={r['rscin']:r for r in read(spade_mvtec_root/'rscin_mean_metrics.csv')} if spade_mvtec_verified.exists() and json.loads(spade_mvtec_verified.read_text())['status']=='passed' else {}
 pyramidflow_root=LAB/'method21/source/results/btad_res18_seed0_20261008'
 pyramidflow_verified=pyramidflow_root/'verification.json'
 pyramidflow_result=read(pyramidflow_root/'mean_metrics.csv')[0] if pyramidflow_verified.exists() and json.loads(pyramidflow_verified.read_text())['status']=='passed' else None
@@ -92,6 +102,31 @@ cutpaste_root=LAB/'method22/source/results/mvtec_scratch3way_seed42_20261008'
 cutpaste_verified=cutpaste_root/'verification.json'
 cutpaste_result=read(cutpaste_root/'mean_metrics.csv')[0] if cutpaste_verified.exists() and json.loads(cutpaste_verified.read_text())['status']=='passed' else None
 cutpaste_started=(cutpaste_root/'environment.json').exists()
+patchcore_root=LAB/'method1/source/results/musc_comparison_20261010'
+patchcore_verified=patchcore_root/'verification.json'
+patchcore_passed=patchcore_verified.exists() and json.loads(patchcore_verified.read_text())['status']=='passed'
+patchcore_results={(r['dataset'],r['shot']):r for r in read(patchcore_root/'aggregates.csv')} if patchcore_passed else {}
+patchcore_rscin={r['rscin']:r for r in read(patchcore_root/'rscin_mean_metrics.csv')} if patchcore_passed else {}
+patchcore_started=(patchcore_root/'environment.json').exists()
+padim_root=LAB/'method23/source/results/btad_wr50_d550_seed1024_20261010'
+padim_verified=padim_root/'verification.json'
+padim_result=read(padim_root/'mean_metrics.csv')[0] if padim_verified.exists() and json.loads(padim_verified.read_text())['status']=='passed' else None
+patchcore_link='[PatchCore 비교 실행](../../method1/markdown/PatchCore_MuSc_comparison_execution.md)'
+winclip_root=LAB/'method7/source/results'
+winclip_keys=dict(zip(KEYS,['auroc_sp','f1_sp','ap_sp','auroc_px','f1_px','ap_px','aupro']))
+winclip_data={}
+for ds, expected in [('mvtec',15),('visa',12)]:
+    for mode in ['zero_shot','four_shot']:
+        p=winclip_root/f'winclip_{ds}'/mode/'results.csv'
+        if p.exists():
+            data=read(p)
+            cats={r['objects']:r for r in data if r['objects']!='mean'}
+            assert len(cats)==expected and all(all(r[k] not in ('','-') for k in winclip_keys.values()) for r in cats.values())
+            winclip_data[ds,mode]=(cats,next(r for r in data if r['objects']=='mean'))
+winclip_link='[WinCLIP 기존 실행](../../method7/markdown/CVPR23_WinCLIP_reproduction_report.md)'
+musc_rscin_root=ROOT/'results/musc_rscin_existing_20261010'
+musc_rscin={r['rscin']:r for r in read(musc_rscin_root/'mean_metrics.csv')} if (musc_rscin_root/'verification.json').exists() and json.loads((musc_rscin_root/'verification.json').read_text())['status']=='passed' else {}
+
 evidence = {
     'MuSc': '../source/results/mvtec_all_paper_20261002/category_metrics.csv',
     'APRIL-GAN': '../../method11/source/results/mvtec_zero_shot_20261006/category_metrics.csv',
@@ -110,6 +145,13 @@ def rendered_live(row,keys):
     return [f'{100*float(row[k]):.4f}'+(f' ± {100*float(row[k+"_std"]):.4f}' if row.get(k+'_std') else '') for k in keys]
 
 def macro(method, dataset='MVTec AD', keys=KEYS, mode='zero_shot'):
+    if method=='WinCLIP':
+        ds={'MVTec AD':'mvtec','VisA':'visa'}[dataset]
+        entry=winclip_data.get((ds,'four_shot' if mode=='few_shot' else 'zero_shot'))
+        return [f'{float(entry[1][winclip_keys[k]]):.1f}' for k in keys] if entry else [pending]*len(keys)
+    if method=='PatchCore':
+        row=patchcore_results.get(({'MVTec AD':'mvtec','VisA':'visa','BTAD':'btad'}[dataset],'4shot'))
+        return rendered_live(row,keys) if row else [pending]*len(keys)
     if method=='GraphCore' and dataset=='MVTec AD' and 4 in graphcore_means:
         return rendered_live(graphcore_means[4],keys)
     if method=='RegAD' and dataset=='MVTec AD' and 4 in regad_means:
@@ -151,9 +193,11 @@ for ds, group, methods in blocks:
             available=True
         if m=='GraphCore' and ds=='MVTec AD' and shot=='4-shot' and 4 in graphcore_means:
             available=True
+        if m=='PatchCore' and ('mvtec' if ds=='MVTec AD' else 'visa','4shot') in patchcore_results:available=True
         mode='few_shot' if shot=='4-shot' else 'zero_shot'
         case=live.get(('mvtec' if ds=='MVTec AD' else 'visa',mode)) if m=='APRIL-GAN' else None
         available=available or case is not None
+        if m=='WinCLIP':available=('mvtec' if ds=='MVTec AD' else 'visa','four_shot' if shot=='4-shot' else 'zero_shot') in winclip_data
         status=(f"{case['n_runs']}회·{case['status']}·조건 대조 필요" if case else local) if available else pending
         if m=='RegAD' and available:status='공개 가중치·support10round(capsule/grid 자체 생성)·재학습 없음'
         if m=='GraphCore' and available:status='저자 benchmark·공개 PyramidViG·support10round·feature층 선택/구조 차이 있음'
@@ -161,6 +205,9 @@ for ds, group, methods in blocks:
         if m=='GraphCore' and graphcore_started and not available:
             status='평가 시작·최종 검증/집계 미완료'
             link='[GraphCore 조건·진행](../../method17/markdown/GraphCore_mvtec_execution.md)'
+        if m=='PatchCore' and available:status='공식 baseline·3support seeds·WR50/224/coreset10%·조건 차이 명시';link=patchcore_link
+        elif m=='PatchCore' and patchcore_started:status='메모리 생성/평가 시작·최종 검증 미완료';link=patchcore_link
+        if m=='WinCLIP' and available:status='기존 단일 seed10·7지표 있음·CSV 소수1자리·4shot 반복 미보유·비공식 재현';link=winclip_link
         rows.append([ds,group,m,shot] + (macro(m,ds,mode=mode) if available else [pending]*7) + [status,link])
 table(1,'MVTec AD·VisA의 zero/few-shot 비교',7,
       ['Dataset','비교 블록','Method','Setting']+HEAD+['상태','근거'],rows,
@@ -170,6 +217,10 @@ rows = []
 for m, shot in [('CutPaste','full-shot'),('NSA','full-shot'),('IGD','full-shot'),('PatchCore','full-shot'),('RegAD','32-shot'),('GraphCore','8-shot'),('MuSc','0-shot')]:
     ok = m == 'MuSc'
     rows.append([m,shot]+(macro(m,keys=['image_auroc','pixel_auroc']) if ok else [pending]*2)+[local if ok else pending,ref(m) if ok else '—'])
+    if m=='PatchCore' and ('mvtec','full') in patchcore_results:
+        rows[-1]=[m,shot]+values(patchcore_results['mvtec','full'],['image_auroc','pixel_auroc'])+['공식 WR50/224 baseline·full-shot·1seed·조건 차이 명시',patchcore_link]
+    elif m=='PatchCore' and patchcore_started:
+        rows[-1]=[m,shot]+[pending]*2+['메모리 생성/평가 시작·최종 검증 미완료',patchcore_link]
     if m=='CutPaste' and cutpaste_result:
         rows[-1]=[m,shot]+values(cutpaste_result,['image_auroc','pixel_auroc'])+['자체 학습·15category·scratch3way·단일 seed·조건 차이 명시',
             '[CutPaste 실행](../../method22/markdown/CutPaste_mvtec_execution.md)']
@@ -179,6 +230,10 @@ for m, shot in [('CutPaste','full-shot'),('NSA','full-shot'),('IGD','full-shot')
     if m=='NSA' and nsa_result:
         rows[-1]=[m,shot]+values(nsa_result,['image_auroc','pixel_auroc'])+['자체 학습·15개 category·단일 seed',
             '[NSA 실행](../../method13/markdown/NSA_mvtec_execution.md)']
+    if m=='RegAD' and ('mvtec',32) in regad_remaining_means:
+        rows[-1]=[m,shot]+rendered_live(regad_remaining_means['mvtec',32],['image_auroc','pixel_auroc'])+['공식4shot모델·32reference 확장·10round·추가학습없음·조건차이 명시',regad_remaining_link]
+    elif m=='RegAD' and (regad_remaining_root/'environment.json').exists():
+        rows[-1]=[m,shot]+[pending]*2+['32reference 확장평가 시작·최종검증 미완료',regad_remaining_link]
     if m=='GraphCore' and 8 in graphcore_means:
         rows[-1]=[m,shot]+rendered_live(graphcore_means[8],['image_auroc','pixel_auroc'])+['저자 benchmark·PyramidViG·10support round·구현 조건 차이 있음',
             '[GraphCore 실행·조건 대조](../../method17/markdown/GraphCore_mvtec_execution.md)']
@@ -194,20 +249,34 @@ def dual_rows(settings, baseline):
             ['MVTec 기본 측정값 있음·조건 대조 필요' if s == baseline else pending] for s in settings]
 
 dual_head = ['조건','MVTec AC','MVTec AS','VisA AC','VisA AS','상태']
+ablation_root=LAB/'method10/source/results/tables3_7_seed42_20261012'
+ablation_verified=(ablation_root/'verification.json').exists() and json.loads((ablation_root/'verification.json').read_text())['status']=='passed'
+ablation_rows={(int(r['table']),r['dataset'],r['condition']):r for r in read(ablation_root/'mean_metrics.csv')} if ablation_verified else {}
+ablation_bench={int(r['s']):r for r in read(ablation_root/'benchmark_summary.csv')} if ablation_verified else {}
+ablation_link='[공식 모듈 제거실험·공유 계산 및 측정범위](MuSc_tables3_7_execution.md)'
+def ablation_dual(t,conditions,labels,baseline):
+    fallback=dual_rows(labels,baseline)
+    if not ablation_verified:return fallback
+    return [[label]+values(ablation_rows[t,'mvtec_ad',condition],['image_auroc','pixel_auroc'])+
+        values(ablation_rows[t,'visa',condition],['image_auroc','pixel_auroc'])+['27category·자체 측정·raw 재검증·'+ablation_link] for label,condition in zip(labels,conditions)]
 table(3,'LNAMD aggregation degree 제거 실험',8,dual_head,
-      dual_rows(['{1}','{3}','{5}','{1,3}','{3,5}','{1,3,5}'],'{1,3,5}'),
-      'AC=Image AUROC, AS=Pixel AUROC. 기본 행에만 기존 측정값을 연결했다. 다른 r 조합은 별도 실행한다.')
+      ablation_dual(3,['1','3','5','1,3','3,5','1,3,5'],['{1}','{3}','{5}','{1,3}','{3,5}','{1,3,5}'],'{1,3,5}'),
+      ('AC=Image AUROC, AS=Pixel AUROC. 양 dataset 모든 r 조합을 자체 실행·검증했다. '+ablation_link if ablation_verified else 'AC=Image AUROC, AS=Pixel AUROC. 기본 행에만 기존 측정값을 연결했다. 다른 r 조합은 별도 실행한다.'))
 table(4,'MSM sample strategy 제거 실험',8,dual_head,
-      dual_rows(['(a) min','(b) max','(c) mean','(d) 30% + min','(e) 30% + max','(f) 30% + mean'],'(f) 30% + mean'))
+      ablation_dual(4,['min','max','mean','30_min','30_max','30_mean'],['(a) min','(b) max','(c) mean','(d) 30% + min','(e) 30% + max','(f) 30% + mean'],'(f) 30% + mean'))
 rows=[]
 for ds in ['MVTec AD','VisA']:
     for flag in ['w/o','w']:
         ok=ds=='MVTec AD' and flag=='w'
         rows.append([ds,flag]+(macro('MuSc',keys=KEYS[:3]) if ok else [pending]*3)+[local if ok else pending])
+        if ds=='MVTec AD' and flag in musc_rscin:
+            rows[-1]=[ds,flag]+values(musc_rscin[flag],KEYS[:3])+['기존 image score 재계산·후처리 후 지표 일치 검증·창 설정 대조 필요']
+        if ablation_verified:
+            rows[-1]=[ds,flag]+values(ablation_rows[5,'mvtec_ad' if ds=='MVTec AD' else 'visa',flag],KEYS[:3])+['같은 기본 raw 점수 RsCIN 전/후·자체 검증·'+ablation_link]
 table(5,'MuSc의 RsCIN 적용 전후',8,['Dataset','RsCIN','AUROC','F1-max','AP','상태'],rows,
-      'w/o는 동일 raw image score에서 RsCIN만 제거한 평가가 필요하다. 현재 w 행은 기존 공식 MuSc 실행값이다.')
+      ('양 dataset 새 기본 실행의 동일 raw 점수에 공식 RsCIN을 적용하고 CPU 독립 대조했다. '+ablation_link if ablation_verified else 'MVTec w/o·w는 동일한 보존 image_scores.csv에서 재계산했다. 신규 추론 없음. 근거: [재계산 검증](../source/results/musc_rscin_existing_20261010/verification.json). VisA는 미측정.'))
 table(6,'MuSc의 이미지당 추론 시간·최대 GPU 메모리',9,
-      ['s','Time (ms/image)','GPU cost (MB)','상태'],[[str(s),pending,pending,pending] for s in [1,2,3]],
+      ['s','Time (ms/image)','GPU cost (MB)','상태'],[[str(s),f"{float(ablation_bench[s]['core_ms_per_image']):.4f}",f"{float(ablation_bench[s]['gpu_cost_MB']):.4f}",'RTX5080·VisA candle200·warmup1/repeat3·native core·allocated decimal MB·'+ablation_link] if s in ablation_bench else [str(s),pending,pending,pending] for s in [1,2,3]],
       '논문은 RTX 3090에서 측정했다. 재현 표는 내 RTX 5080에서 측정한다. 모델 로딩·시각화·metric·raw 저장을 포함한 wall time을 이 칸에 넣지 않는다. 원문은 최대 200장인 pool의 메모리를 측정하므로 같은 pool 조건부터 맞춘다.')
 rows=[]
 for ds in ['MVTec AD','VisA']:
@@ -216,6 +285,9 @@ for ds in ['MVTec AD','VisA']:
         sizes=[int(r['n_images']) for r in mc.values()]
         rows.append([ds,str(s)]+(macro('MuSc',keys=['image_auroc','pixel_auroc']) if ok else [pending]*2)+
                     [f'{min(sizes)}–{max(sizes)}' if ok else pending,local if ok else pending])
+        if ablation_verified:
+            result=ablation_rows[7,'mvtec_ad' if ds=='MVTec AD' else 'visa',f's{s}']
+            rows[-1]=[ds,str(s)]+values(result,['image_auroc','pixel_auroc'])+[f"{result['subset_min']}–{result['subset_max']}",'공식loader 분할·category 예측 합친 후 평가·특징 공유 차이 명시·'+ablation_link]
 table(7,'test pool 분할 수에 따른 성능·부분집합 크기',9,
       ['Dataset','s','AC','AS','Size of subsets','상태'],rows,
       '분할 후 모든 test 이미지의 예측을 합쳐 category metric을 계산한다. subset별 AUROC의 평균으로 대체하지 않는다.')
@@ -244,6 +316,10 @@ methods=[('SPADE','full-shot','MVTec AD'),('DRAEM','full-shot','MVTec AD'),('STP
  ('APRIL-GAN','0-shot','MVTec AD'),('APRIL-GAN','4-shot','MVTec AD'),('APRIL-GAN','0-shot','VisA'),
  ('PatchCore','full-shot','MVTec AD'),('DSR','full-shot','MVTec AD'),('RegAD','2-shot','MVTec AD'),
  ('RegAD','4-shot','MVTec AD'),('RegAD','8-shot','MVTec AD'),('APRIL-GAN','4-shot','VisA')]
+stpm_root=LAB/'method24/source/results/mvtec_public_20261011'
+stpm_means={r['rscin']:r for r in read(stpm_root/'rscin_mean_metrics.csv')} if (stpm_root/'verification.json').exists() and json.loads((stpm_root/'verification.json').read_text())['status']=='passed' else {}
+dsr_root=LAB/'method25/source/results/mvtec_public_20261011'
+dsr_means={r['rscin']:r for r in read(dsr_root/'rscin_mean_metrics.csv')} if (dsr_root/'verification.json').exists() and json.loads((dsr_root/'verification.json').read_text())['status']=='passed' else {}
 for m,shot,ds in methods:
     for flag in ['w/o','w']:
         ok=m=='APRIL-GAN' and shot=='0-shot' and ds=='MVTec AD' and flag=='w/o'
@@ -260,6 +336,21 @@ for m,shot,ds in methods:
             measured=rendered_live(regad_rscin[(int(shot.split('-')[0]),flag)],KEYS[:3])
             status='공개 가중치·15개 category·support10round(capsule/grid 자체 생성)·자체 RsCIN'
             link='[RegAD 실행](../../method16/markdown/RegAD_mvtec_execution.md)'
+        if m=='PatchCore' and flag in patchcore_rscin:
+            measured=values(patchcore_rscin[flag],KEYS[:3]);status='공식 baseline·자체 RsCIN 비교·CLIP feature SHA 정렬 검증';link=patchcore_link
+        elif m=='PatchCore' and patchcore_started:status='공식 baseline·실행 중·최종 검증 미완료';link=patchcore_link
+        if m=='SPADE' and flag in spade_mvtec_means:
+            measured=values(spade_mvtec_means[flag],KEYS[:3]);status='full 정상gallery·K50·image score FP64검증·자체RsCIN·비공식 구현';link='[SPADE MVTec RsCIN](../../method20/markdown/SPADE_mvtec_rscin_execution.md)'
+        elif m=='SPADE' and (spade_mvtec_root/'environment.json').exists():
+            status='MVTec full-shot 평가 시작·최종 검증 미완료';link='[SPADE MVTec RsCIN](../../method20/markdown/SPADE_mvtec_rscin_execution.md)'
+        if m=='STPM' and flag in stpm_means:
+            measured=values(stpm_means[flag],KEYS[:3]);status='저자 공개 student·15category 자체 평가·재학습 없음·RsCIN 검증';link='[STPM 실행](../../method24/markdown/STPM_mvtec_rscin_execution.md)'
+        elif m=='STPM' and (stpm_root/'environment.json').exists():
+            status='MVTec 공식 공개 가중치 평가 시작·최종 검증 미완료';link='[STPM 실행](../../method24/markdown/STPM_mvtec_rscin_execution.md)'
+        if m=='DSR' and flag in dsr_means:
+            measured=values(dsr_means[flag],KEYS[:3]);status='저자 공개 DSR 가중치·15category 자체 평가·재학습 없음·RsCIN 검증';link='[DSR 실행](../../method25/markdown/DSR_mvtec_rscin_execution.md)'
+        elif m=='DSR' and (dsr_root/'environment.json').exists():
+            status='MVTec 공식 공개 DSR 평가 시작·최종 검증 미완료';link='[DSR 실행](../../method25/markdown/DSR_mvtec_rscin_execution.md)'
         rows.append([ds,m,shot,flag]+measured+[status,link])
 table(11,'비교군에 RsCIN을 적용한 classification 결과',17,
       ['Dataset','Method','Setting','RsCIN','AUROC','F1-max','AP','상태','근거'],rows,
@@ -268,14 +359,18 @@ table(11,'비교군에 RsCIN을 적용한 classification 결과',17,
 rows=[]
 for category,ds in [('screw','MVTec AD'),('hazelnut','MVTec AD'),('metal_nut','MVTec AD'),('capsules','VisA'),('macaroni2','VisA')]:
     vals=[pending]*2
+    wc=winclip_data.get(('mvtec' if ds=='MVTec AD' else 'visa','zero_shot'))
+    if wc:vals=[wc[0][category][winclip_keys[k]] for k in ['image_auroc','pixel_auroc']]
     for cats in [ac if ds=='MVTec AD' else vc,mc if ds=='MVTec AD' else {}]:
         vals+=values(cats[category],['image_auroc','pixel_auroc']) if category in cats else [pending]*2
     rows.append([category,ds]+vals)
 rows.append(['mean','선택된 5개 category']+[pending]*6)
-rows.append(['mean-ALL','MVTec AD']+[pending]*2+macro('APRIL-GAN',keys=['image_auroc','pixel_auroc'])+macro('MuSc',keys=['image_auroc','pixel_auroc']))
+if all(r[2]!=pending for r in rows[:5]):rows[-1][2:4]=[f'{sum(float(r[j]) for r in rows[:5])/5:.2f}' for j in [2,3]]
+if all(r[4]!=pending for r in rows[:5]):rows[-1][4:6]=[f'{sum(float(r[j]) for r in rows[:5])/5:.4f}' for j in [4,5]]
+rows.append(['mean-ALL','MVTec AD']+macro('WinCLIP',keys=['image_auroc','pixel_auroc'])+macro('APRIL-GAN',keys=['image_auroc','pixel_auroc'])+macro('MuSc',keys=['image_auroc','pixel_auroc']))
 table(12,'방향·크기가 일정하지 않은 category 비교',17,
       ['Category','Dataset','WinCLIP AC','WinCLIP AS','APRIL-GAN AC','APRIL-GAN AS','MuSc AC','MuSc AS'],rows,
-      'metal nut은 파일 category metal_nut으로 썼다. capsules는 VisA이며 MVTec의 capsule과 다르다. mean은 5개 category가 모두 측정된 뒤 계산한다. mean-ALL은 원문의 값이 MVTec 전체 평균을 가리키므로 MVTec AD로 표시했다. 모든 채운 값은 조건 대조가 남아 있다.')
+      'metal nut은 파일 category metal_nut으로 썼다. capsules는 VisA이며 MVTec의 capsule과 다르다. mean은 해당 방법의 5개 category가 모두 측정된 뒤 계산한다. WinCLIP 평균은 소수1자리 category CSV로 재계산했으므로 0.01%p 표시는 계산 결과의 표시이며 원시 측정 정밀도를 뜻하지 않는다. mean-ALL은 MVTec 전체 평균이다. WinCLIP 근거: '+winclip_link+' 모든 채운 값은 조건 대조가 남아 있다.')
 
 rows=[]
 speed=([('RegAD','ResNet-18','4-shot','yes',None),('APRIL-GAN','ViT-L-14-336','0-shot','yes',None)]+
@@ -286,7 +381,12 @@ for m,arch,shot,train,s in speed:
     ok=arch=='ViT-L-14-336' and ((m=='MuSc' and s==1) or m=='APRIL-GAN')
     bench=LAB/'method11/source/results'/('benchmark_'+arch+'_20261006')/'benchmark.json'
     bm=json.loads(bench.read_text()) if m=='APRIL-GAN' and bench.exists() else None
+    win_bench=LAB/'method7/source/results/benchmark_20261011'
+    if m=='WinCLIP' and (win_bench/'verification.json').exists() and json.loads((win_bench/'verification.json').read_text())['status']=='passed':
+        bm=next(r for r in read(win_bench/'summary.csv') if r['dataset']=='mvtec' and r['shot']=='0' and r['batch_size']=='1')
+        bm={k:float(v) if k in ['mean_ms','gpu_allocated_mib'] else v for k,v in bm.items()}
     perf=macro(m,keys=['image_auroc','aupro']) if ok else [pending]*2
+    if m=='WinCLIP' and ('mvtec','zero_shot') in winclip_data:perf=macro(m,keys=['image_auroc','aupro']);ok=True
     if m=='RegAD' and 4 in regad_means:
         perf=rendered_live(regad_means[4],['image_auroc','aupro']);ok=True
     small_path=LAB/'method11/source/results/mvtec_0shot_vit_b16_plus_240_20261006'
@@ -296,7 +396,7 @@ for m,arch,shot,train,s in speed:
     rows.append([m,arch,shot,str(s) if s else '—',train,f"{bm['mean_ms']:.4f}" if bm else pending,
                  f"{bm['gpu_allocated_mib']:.4f}" if bm else pending]+
                 perf+
-                ['단독 속도 측정·조건 대조 필요'+('·자체 학습 checkpoint' if arch=='ViT-B-16-plus-240' else '') if bm else local+'·속도 미측정' if ok else pending])
+                ['[batch1 자체 측정·전체category/선택입력·setup 포함 peak MiB·측정범위 차이](../../method7/markdown/WinCLIP_speed_memory_20261011.md)' if m=='WinCLIP' and bm else '단독 속도 측정·조건 대조 필요'+('·자체 학습 checkpoint' if arch=='ViT-B-16-plus-240' else '') if bm else local+'·속도 미측정' if ok else pending])
 table(13,'비교군의 추론 시간·GPU 메모리·성능',18,
       ['Method','Backbone','Setting','s','Training','Time (ms/image)','GPU allocated (MiB)','AC','AS=AUPRO','상태'],rows,
       '**이 표의 AS는 Pixel AUROC가 아니라 AUPRO다.** Training=yes는 방법에 학습된 모듈이 있다는 뜻이며 이번 실행에서 추가 학습했는지와 구분한다. 원문에서 미보고한 셀은 재현에서도 직접 측정하기 전에는 채우지 않는다.')
@@ -307,12 +407,15 @@ for m,shot in [('VT-ADL','full-shot'),('P-SVDD','full-shot'),('SPADE','full-shot
     result=live.get(('btad',mode)) if m=='APRIL-GAN' else None
     rows.append([m,shot]+(rendered_live(result,['image_auroc','pixel_auroc']) if result else [pending]*2)+
                 [f"{result['n_runs']}회·측정값 있음·BTAD 세부 조건 잠정" if result else pending])
+    if m=='PatchCore' and ('btad','4shot') in patchcore_results:
+        rows[-1]=[m,shot]+rendered_live(patchcore_results['btad','4shot'],['image_auroc','pixel_auroc'])+['공식 baseline·제품3개·3support seeds·조건 차이 명시']
+    elif m=='PatchCore' and patchcore_started:rows[-1]=[m,shot]+[pending]*2+['메모리 생성/평가 시작·최종 검증 미완료']
     if m=='VT-ADL' and vtadl_result:
         rows[-1]=[m,shot]+values(vtadl_result,['image_auroc','pixel_auroc'])+['자체 학습·제품3개·400epoch·Gaussian150·공개코드 수정 명시']
     elif m=='VT-ADL' and vtadl_started:
         rows[-1]=[m,shot]+[pending]*2+['자체 학습 시작·최종 검증 미완료']
     if m=='P-SVDD' and psvdd_result:
-        rows[-1]=[m,shot]+values(psvdd_result,['image_auroc','pixel_auroc'])+['자체 학습·제품3개·299학습epoch·공식 기본λ1·설정 차이 명시']
+        rows[-1]=[m,shot]+values(psvdd_result,['image_auroc','pixel_auroc'])+['자체 학습·제품3개·299학습epoch·λ1·제품03 점수 전부0/AUROC50% 퇴화 확인·원인 미확정·당시 raw/checkpoint 삭제']
     elif m=='P-SVDD' and psvdd_started:
         rows[-1]=[m,shot]+[pending]*2+['자체 학습 시작·최종 검증 미완료']
     if m=='SPADE' and spade_result:
@@ -323,6 +426,14 @@ for m,shot in [('VT-ADL','full-shot'),('P-SVDD','full-shot'),('SPADE','full-shot
         rows[-1]=[m,shot]+values(pyramidflow_result,['image_auroc','pixel_auroc'])+['제품3개·Res18·15epoch·최종모델·설정 차이 명시']
     elif m=='PyramidFlow' and pyramidflow_started:
         rows[-1]=[m,shot]+[pending]*2+['자체 학습 시작·최종 검증 미완료']
+    if m=='PaDiM' and padim_result:
+        rows[-1]=[m,shot]+values(padim_result,['image_auroc','pixel_auroc'])+['제품3개·WR50Rd550·전체정상train·Gaussian모델·설정차이 명시']
+    elif m=='PaDiM' and (padim_root/'environment.json').exists():
+        rows[-1]=[m,shot]+[pending]*2+['전체정상train·Gaussian추정/평가 시작·최종검증 미완료']
+    if m=='RegAD' and ('btad',4) in regad_remaining_means:
+        rows[-1]=[m,shot]+rendered_live(regad_remaining_means['btad',4],['image_auroc','pixel_auroc'])+['MVTec bottle4 고정checkpoint 전이·10round·BTAD학습없음·source조건차이']
+    elif m=='RegAD' and (regad_remaining_root/'environment.json').exists():
+        rows[-1]=[m,shot]+[pending]*2+['고정 MVTec checkpoint→BTAD4 전이 평가 계획·최종검증 미완료']
 table(14,'BTAD의 zero/few/full-shot 비교',18,['Method','Setting','AC','AS','상태'],rows,
       'MVTec AD 조건을 BTAD에 적용하는 원문 protocol을 따르고 BTAD test 데이터로 hyperparameter를 조정하지 않는다. VT-ADL: [실행·설정 차이](../../method18/markdown/VT_ADL_btad_execution.md). P-SVDD: [실행·설정 차이](../../method19/markdown/P_SVDD_btad_execution.md). SPADE: [실행·설정 차이](../../method20/markdown/SPADE_btad_execution.md). PyramidFlow: [실행·설정 차이](../../method21/markdown/PyramidFlow_btad_execution.md).')
 for n,name in [(15,'MuSc'),(16,'MuSc+')]:
@@ -349,7 +460,8 @@ intro='''# MuSc 논문 전체 표 — 내 PC 재현 결과와 실행 목록
 
 - `미실행`: 해당 표 조건으로 채울 직접 측정값이 아직 이 집계에 없다. 다른 실험 결과가 없다는 뜻은 아니다.
 - `측정값 있음·조건 대조 필요`: 자체 실행 근거가 있으나 논문 조건과 모든 항목이 같다고 확정하지 않았다. 완료 인증이 아니다.
-- 기존 WinCLIP·PatchCore·PaDiM 결과는 보유해도 dataset·shot·backbone·reference·seed 조건의 일치가 검증되기 전에는 해당 행에 넣지 않는다.
+- WinCLIP 기존 MVTec·VisA 0/4shot 7지표를 연결했다. 단일 seed·비공식 구현·CSV 소수1자리이며 논문 조건 동등성을 인증하지 않는다. 다른 조건의 PatchCore·PaDiM 결과는 자동 대입하지 않는다.
+- [전체 필요 작업 재감사](MuSc_remaining_work_audit_20261010.md): 표의 빈칸과 신규 실행 필요를 구분한 최신 목록.
 - 단위: 성능은 %, 차이는 %p, 추론 시간은 ms/image, GPU 메모리는 MiB(bytes/1024²). 기본 AC는 Image AUROC, AS는 Pixel AUROC이며 Table 13만 AS=AUPRO다.
 - 각 방법의 원래 정보 조건을 유지한다. 모든 비교군의 backbone·resize를 MuSc와 강제로 맞추지 않는다. 학습이 필요한 방법은 보조 데이터/target train 사용 조건을 기록한다.
 - 공개 checkpoint 평가는 학습부터 재현한 결과와 구분한다. 4-shot 반복 횟수·reference 선택·표준편차 정의는 원문·공식 코드에서 확정한 뒤 실행한다. 단일 seed에 원문의 ±를 붙이지 않는다.
@@ -391,18 +503,24 @@ source_paths += [p for p in [draem_root/'category_metrics.csv',draem_root/'envir
                             draem_mean,draem_root/'rscin/provenance.json',draem_root/'verification.json'] if p.exists()]
 source_paths += [p for p in [nsa_mean,nsa_verified,nsa_root/'environment.json',nsa_root/'category_metrics.csv'] if p.exists()]
 source_paths += [p for p in [igd_mean,igd_verified,igd_root/'environment.json',igd_root/'category_metrics.csv',igd_root/'evaluation_provenance.json'] if p.exists()]
+source_paths += [p for p in [ablation_root/'verification.json',ablation_root/'environment.json',ablation_root/'config.json',ablation_root/'category_metrics.csv',ablation_root/'mean_metrics.csv',ablation_root/'benchmark_summary.csv',ablation_root/'timing_samples.csv',ablation_root/'benchmark_verification.json'] if p.exists()]
 source_paths += [p for p in [acr_verified,acr_root/'mean_metrics.csv',acr_root/'category_metrics.csv',acr_root/'environment.json'] if p.exists()]
 source_paths += [p for p in [regad_verified,regad_root/'mean_metrics.csv',regad_root/'category_metrics.csv',regad_root/'rscin_mean_metrics.csv',regad_root/'environment.json'] if p.exists()]
+source_paths += [p for p in [regad_remaining_verified,regad_remaining_root/'mean_metrics.csv',regad_remaining_root/'round_metrics.csv',regad_remaining_root/'environment.json'] if p.exists()]
 source_paths += [p for p in [graphcore_verified,graphcore_root/'mean_metrics.csv',graphcore_root/'category_metrics.csv',graphcore_root/'environment.json'] if p.exists()]
 source_paths += [p for p in [vtadl_verified,vtadl_root/'mean_metrics.csv',vtadl_root/'category_metrics.csv',vtadl_root/'environment.json'] if p.exists()]
 source_paths += [p for p in [psvdd_verified,psvdd_root/'mean_metrics.csv',psvdd_root/'category_metrics.csv',psvdd_root/'environment.json'] if p.exists()]
 source_paths += [p for p in [spade_verified,spade_root/'mean_metrics.csv',spade_root/'category_metrics.csv',spade_root/'environment.json'] if p.exists()]
+source_paths += [p for p in [spade_mvtec_verified,spade_mvtec_root/'rscin_mean_metrics.csv',spade_mvtec_root/'rscin_category_metrics.csv',spade_mvtec_root/'environment.json'] if p.exists()]
 source_paths += [p for p in [pyramidflow_verified,pyramidflow_root/'mean_metrics.csv',pyramidflow_root/'category_metrics.csv',pyramidflow_root/'environment.json'] if p.exists()]
 source_paths += [p for p in [cutpaste_verified,cutpaste_root/'mean_metrics.csv',cutpaste_root/'category_metrics.csv',cutpaste_root/'environment.json'] if p.exists()]
+source_paths += [p for p in [padim_verified,padim_root/'mean_metrics.csv',padim_root/'category_metrics.csv',padim_root/'environment.json'] if p.exists()]
+source_paths += [winclip_root/f'winclip_{ds}'/mode/'results.csv' for ds,mode in winclip_data]
+source_paths += [p for p in [musc_rscin_root/'mean_metrics.csv',musc_rscin_root/'verification.json',patchcore_verified,patchcore_root/'aggregates.csv',patchcore_root/'rscin_mean_metrics.csv',patchcore_root/'environment.json'] if p.exists()]
 provenance=dict(table_count=18,row_count=len(manifest),paper_sha256=hashlib.sha256(PAPER.read_bytes()).hexdigest(),
                 paper_performance_numbers_copied=False,
                 sources=[dict(path=str(p),sha256=hashlib.sha256(p.read_bytes()).hexdigest()) for p in source_paths],
-                conditions_verified=False,aggregation='unweighted category mean: MVTec 15, VisA 12, BTAD 3; 4-shot mean and sample std across seeds 42,43,44; multiply performance by 100')
+                conditions_verified=False,aggregation='unweighted category mean: MVTec 15, VisA 12, BTAD 3; repeated few-shot std definition follows each source (PatchCore ddof0); WinCLIP original percent CSV rounded to 1 decimal, single seed10; other performance fractions multiply by100')
 (OUT/'provenance.json').write_text(json.dumps(provenance,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
 MD.write_text(intro+'\n'.join(sections),encoding='utf-8')
 print(MD)

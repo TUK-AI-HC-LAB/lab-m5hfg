@@ -1,0 +1,36 @@
+{
+  "status": "targeted_audit_completed",
+  "input_pdf": "C:\\Users\\test\\Downloads\\MuSc.pdf",
+  "input_sha256": "245b703e0959fd92a6e2f3e4233d873f44d86f6a948816b966ca6b2d767c1e25",
+  "n_pages": 12,
+  "source_pdf_unchanged": true,
+  "local_pdf_latex_source": "not provided or located in referenced research workspace/Downloads MuSc files",
+  "scope": "26 selected cells of Tables2/3/5/6/7, manually transcribed from inspected PDF pages8/9; not full paper numerical validation",
+  "latest_local_config": {
+    "backbone": "ViT-L-14-336",
+    "input": 518,
+    "seed": 42,
+    "mvtec_rscin": [
+      1,
+      2,
+      3
+    ],
+    "visa_rscin": [
+      1,
+      8,
+      9
+    ]
+  },
+  "counts": {
+    "does_not_match_latest_local_rounded": 6,
+    "local_not_completed": 2,
+    "matches_latest_local_rounded": 18
+  },
+  "evidence_hashes": {
+    "C:\\Users\\test\\Desktop\\Codex\\lab-m5hfg\\method10\\source\\results\\tables3_7_seed42_20261012\\mean_metrics.csv": "53564699fe121ece804b4312db5c1a11af1de284ea6b6dd3965291f0aa16b80d",
+    "C:\\Users\\test\\Desktop\\Codex\\lab-m5hfg\\method10\\source\\results\\tables3_7_seed42_20261012\\benchmark_summary.csv": "b50bb1173575798912b8ea5d9d99c9a7e92a89093a27c5da848428e7bfbc921e",
+    "C:\\Users\\test\\Desktop\\Codex\\lab-m5hfg\\method10\\source\\results\\tables3_7_seed42_20261012\\verification.json": "cd6884d672100e6089bccd55cb1d629df703a9e760f78ffdb9126410171591fe"
+  },
+  "audit_csv_sha256": "b683c41afefeeaf8360c5738112e9f1dcd6fc8bd56ad399726ed1b38f60a8a49",
+  "source_sha256": "8de7fabcd4420a6bcc5c5b16e997a3973d7321ecb8688cdf686c2ee854f9a172"
+}

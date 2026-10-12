@@ -106,3 +106,51 @@ C: 여유 약36GB(33.6GiB), Ubuntu VHD도 C:에 있다. 미완료11 category의 
 - 재개 기록: [resume_20261009.json](../source/results/mvtec_scratch3way_seed42_20261008/resume_20261009.json)
 - 실행: [run_cutpaste.sh](../source/run_cutpaste.sh)
 - 실제 log: `/home/test/cutpaste_results/run_20261008.log`
+
+
+## 중단 후 재개 (2026-10-10)
+
+15 category 중14개는 양쪽 model65,536update 및 평가 결과가 존재한다. zipper/image checkpoint19,456update에서 이전 process가 종료돼 있음을 확인했다. 마지막 log는 진행 출력 뒤 NUL bytes로 끝나며 이 중단의 원인은 확정하지 않는다. 저번의 I/O 오류와 같은 원인이라고 단정하지 않는다. GPU와 checkpoint를 확인하고 기존 실행 script로 PID502에서 재개했다. 완료 category는 raw hash를 확인하고 보존하며 zipper/image 완료 후 patch 학습·평가·전체 검증·MuSc table 갱신을 이어간다. 최종 전체 검증은 아직 미완료다.
+
+현재 C: 여유 약46.4GB이고 남은 zipper feature/density 예상8.77GiB에 checkpoint·prediction을 추가해도 현재 공간으로 수행 가능하다. 저장 축소나 raw 삭제는 요청되지 않아 기존 보존 정책을 유지한다.
+
+- 재개 기록: [resume_20261010.json](../source/results/mvtec_scratch3way_seed42_20261008/resume_20261010.json)
+- 실행: [run_cutpaste.sh](../source/run_cutpaste.sh)
+- 실제 log: `/home/test/cutpaste_results/run_20261008.log`
+
+## 자체 측정 결과
+
+15개 카테고리 비가중 평균, 단위 %. 단일 seed이며 논문의 5회 평균·SE와 구분한다.
+
+| Category | Test images | Image AUROC | Pixel AUROC |
+|---|---|---|---|
+| bottle | 83 | 98.3333 | 95.5480 |
+| cable | 150 | 79.2166 | 85.1789 |
+| capsule | 132 | 95.6921 | 94.7727 |
+| carpet | 117 | 87.1990 | 95.2576 |
+| grid | 78 | 100.0000 | 96.3787 |
+| hazelnut | 110 | 91.6429 | 96.1809 |
+| leather | 124 | 100.0000 | 99.0252 |
+| metal_nut | 115 | 87.2923 | 86.1270 |
+| pill | 167 | 93.7534 | 93.0751 |
+| screw | 160 | 81.9020 | 95.6624 |
+| tile | 117 | 93.0736 | 89.2560 |
+| toothbrush | 42 | 87.7778 | 94.5307 |
+| transistor | 100 | 90.7083 | 91.3600 |
+| wood | 79 | 99.6491 | 95.2157 |
+| zipper | 151 | 99.8424 | 99.0823 |
+| Mean | 1725 | 92.4055 | 93.7767 |
+
+[검증](../source/results/mvtec_scratch3way_seed42_20261008/verification.json) · [CSV](../source/results/mvtec_scratch3way_seed42_20261008/category_metrics.csv)
+
+
+## 사용자 요청에 따른 저장 자료 정리 (2026-10-10)
+
+사용자가 CutPaste 논문 재현에 필요한 결과값을 제외한 자료 삭제를 요청했다. 진행 중인 CutPaste process가 없고15category 최종 검증 완료 상태임을 확인했다. 삭제 전에 보존할15개의 predictions.npz SHA를 원래 raw_manifest와 대조하고 Image/Pixel AUROC를 모두 재계산하여 CSV와1e-12 이내 일치함을 확인했다.
+
+CutPaste raw experiment 폴더 안의 train/test feature 배열, global/patch density 행렬·통계,30개 학습 checkpoint만 삭제했다. 삭제 합계93,062,208,954bytes(약93.06GB), 보존 raw predictions 합계448,899,663bytes(약449MB)다. CSV·MD·입력 이미지/mask 라벨·SHA manifest·설정·학습 기록·원래 검증 JSON·코드·논문·로그는 보존했다. 다른 method·dataset·공통 환경은 변경하거나 삭제하지 않았다.
+
+원래 raw_manifest.json와 verification.json는 삭제 전 검증의 역사적 기록으로 보존한다. 현재 남은 predictions.npz에서 Image/Pixel AUROC 재계산과 anomaly map 그림 작성은 가능하다. 삭제된 checkpoint가 없으므로 모델 재추론은 재학습이 필요하고, 원래 finish_cutpaste.py 전체 재검증은 모델 재학습 및 feature/density 재생성이 필요하다. WSL 중지나 VHD 압축은 메인 작업에 영향을 줄 수 있어 수행하지 않았다. Linux 파일 삭제량과 Windows C:가 즉시 회수하는 공간은 다를 수 있다.
+
+- 삭제·보존 목록 및 재검증 결과: [storage_cleanup_20261010.json](../source/results/mvtec_scratch3way_seed42_20261008/storage_cleanup_20261010.json)
+- 정리 script: [cleanup_completed_results.py](../source/cleanup_completed_results.py)

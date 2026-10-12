@@ -1,6 +1,30 @@
 # IGD MVTec AD 자체 학습·평가
 
-## 현재 실행: local batch8
+## 현재 실행: 2026-10-11 local batch8 재시작
+
+**현재 상태: 사용자 요청으로 실행 취소.** 2026-10-11 IGD 학습 프로세스 그룹을 종료했고 남은 학습 프로세스가 없음을 확인했다. 새 실행의 bottle local recovery 모델·optimizer와 로그는 보존한다. 전체 학습·평가 결과는 없으며 자동 재개하지 않는다. 아래 시작·설정 설명은 이번 취소된 실행의 기록이다.
+
+사용자가 MVTec 전체 학습·평가를 다시 요청했다. 이전 중단 요청은 이번 재개 요청으로 변경되었다. 이전 recovery/final 학습 가중치는 2026-10-09 inactive raw 정리 과정에서 삭제되어 이어 학습하지 못하며, 새 tag `mvtec_batch8_seed42_20261011`에서 처음부터 학습한다. 제공된 사전학습 `Encoder_KD_ckpt`는 남아 있으며 그대로 사용한다. 이전 결과·환경·중단 기록은 보존한다.
+
+MVTec 정상 train 전체, 15개 category × local/global 두 모델, 양쪽 MAX_EPOCH256, seed42, local batch8/global batch16을 유지한다. BF16 모델 연산·FP32 loss/Gaussian 통계·TF32·channels-last·fused Adam·prefetch·compile loss 설정을 유지한다. batch/compile 사전 검증은 2026-10-07의 역사적 기록을 새 폴더에 출처와 함께 참조하며 이번 실행에서 새로 측정한 benchmark로 취급하지 않는다. 이번 실제 학습·검증은 새 경로에 기록한다.
+
+마지막 iteration 모델로 MVTec test 1,725장을 평가하고 category별 Image/Pixel AUROC 및 부가 지표를 저장한다. 전체 raw 지표·입력 hash·30개 checkpoint를 검증한 뒤에만 비교표에 반영한다. 이번 모델·원본 예측·로그는 보존하며 반복적인 ETA 계산·상태 폴링은 하지 않는다. 중간 재개가 필요할 경우 기존 shuffle/RNG 재시작 한계는 유지한다.
+
+- sh: [run_igd_restart_20261011.sh](../source/run_igd_restart_20261011.sh)
+- state: [environment.json](../source/results/mvtec_batch8_seed42_20261011/environment.json)
+- provenance: [restart_provenance.json](../source/results/mvtec_batch8_seed42_20261011/restart_provenance.json)
+- raw/model: `/home/test/igd_results/mvtec_batch8_seed42_20261011`
+- log: `/home/test/igd_results/restart_batch8_20261011.log`
+
+## 평가만 실행할 수 있는지 확인 — 2026-10-11
+
+사용자가 다른 비교군처럼 공개 가중치 평가만 가능한지 문의하여 학습 프로세스 그룹을 SIGSTOP으로 잠시 멈추고 확인한 뒤 SIGCONT로 이어 실행했다. 모델·optimizer·메모리는 유지했으며 재시작하지 않았다.
+
+공식 GitHub README, 전체 main tree, releases 및 checkpoint 관련 issue/PR을 확인했다. 공개 main tree의 모델 파일은 `Encoder_KD_ckpt` 하나이고 releases는 비어 있었다. [저자 설명](https://github.com/tianyu0207/IGD/issues/2#issuecomment-1150614664)과 [checkpoint 추가 PR](https://github.com/tianyu0207/IGD/pull/4/files)은 이 파일이 ImageNet KD 사전학습 encoder임을 보여준다. 실제 `p32/ssim_module.py`도 이를 `generator.pretrain`에만 불러온다. 이는 category별 IGD generator/decoder 및 Gaussian c/sigma를 포함한 최종 학습 모델과 다르다.
+
+확인한 공식 공개 경로에서는 MVTec15 category의 학습 완료 local/global 가중치를 찾지 못했다. 따라서 현 보유 자산으로 완성된 IGD 평가만 수행할 수 없다. 추후 호환되는 학습 완료 모델을 확보하면 학습을 생략할 수 있다. 기존의 미완료 bottle recovery를 전체 학습 완료 결과로 사용하지 않는다. 이 확인을 모든 외부 배포 경로에 가중치가 없다는 주장으로 확대하지 않는다.
+
+## 이전 실행: 2026-10-07 local batch8 (중단 기록)
 
 현재 상태: 사용자가 나중에 진행하기로 요청해 2026-10-07 학습 프로세스를 중단했다. 마지막 저장 recovery checkpoint와 optimizer 상태를 보존하며 자동 재실행은 하지 않는다. 재개 명령은 `bash /mnt/c/Users/test/Desktop/Codex/lab-m5hfg/method14/source/run_igd_accelerated.sh`다. 저장 시점 이후의 미저장 단계는 다시 계산하고, 기존 wrapper의 shuffle/RNG 재시작 한계는 유지한다.
 

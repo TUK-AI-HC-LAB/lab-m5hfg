@@ -1,0 +1,8 @@
+{
+  "dataset": "mvtec",
+  "category": "zipper",
+  "n_train": 240,
+  "n_images": 151,
+  "image_auroc": 0.9984243697478992,
+  "pixel_auroc": 0.9908234318444546
+}

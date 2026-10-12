@@ -1,0 +1,11 @@
+{
+  "dataset": "mvtec",
+  "shot": 32,
+  "category": "zipper",
+  "round": 2,
+  "support_seed": 670,
+  "n_images": 151,
+  "image_auroc": 0.959296218487395,
+  "pixel_auroc": 0.9891432312000565,
+  "seconds": 32.4077602819998
+}

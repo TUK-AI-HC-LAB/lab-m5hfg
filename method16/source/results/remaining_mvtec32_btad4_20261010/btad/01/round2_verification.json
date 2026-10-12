@@ -1,0 +1,70 @@
+{
+  "status": "passed",
+  "raw_path": "/home/test/regad_results/remaining_mvtec32_btad4_20261010/btad/01/round2_predictions.npz",
+  "raw_sha256": "f2eeeee9e0f0c389dac33afe57d69e37dbf73f89c368633ccbb5fec3a46d38d1",
+  "checkpoint_path": "/home/test/regad_assets/save_checkpoints/4/bottle/bottle_4_rotation_scale_model.pt",
+  "checkpoint_sha256": "77d10e8f20a7f5b90b2dcff319fb35bd9dd4715f41a7fdbb9a87be57f4802eb8",
+  "full_postprocessing_and_metrics_recomputed": true,
+  "input_and_support_SHA_checked": true,
+  "mahalanobis_samples": [
+    {
+      "position": 0,
+      "image": 0,
+      "batch": 33.148555755615234,
+      "native": 33.148502349853516
+    },
+    {
+      "position": 0,
+      "image": 35,
+      "batch": 25.829259872436523,
+      "native": 25.829256057739258
+    },
+    {
+      "position": 0,
+      "image": 69,
+      "batch": 19.191837310791016,
+      "native": 19.19185447692871
+    },
+    {
+      "position": 1568,
+      "image": 0,
+      "batch": 27.800003051757812,
+      "native": 27.79998779296875
+    },
+    {
+      "position": 1568,
+      "image": 35,
+      "batch": 26.482275009155273,
+      "native": 26.482280731201172
+    },
+    {
+      "position": 1568,
+      "image": 69,
+      "batch": 14.849306106567383,
+      "native": 14.849296569824219
+    },
+    {
+      "position": 3120,
+      "image": 0,
+      "batch": 20.925783157348633,
+      "native": 20.92578887939453
+    },
+    {
+      "position": 3120,
+      "image": 35,
+      "batch": 18.999446868896484,
+      "native": 18.999460220336914
+    },
+    {
+      "position": 3120,
+      "image": 69,
+      "batch": 23.536663055419922,
+      "native": 23.53668212890625
+    }
+  ],
+  "embedding_concat_exact": true,
+  "support_augmentation_count": 88,
+  "support_forward_chunk": 16,
+  "query_forward_batch": 1,
+  "limitation": "Sample covariance/distance checks; chunked eval support forward not bitwise equal to one huge forward"
+}

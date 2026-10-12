@@ -1,0 +1,32 @@
+[
+  {
+    "path": "/home/test/patchcore_results/musc_comparison_20261010/mvtec_full_seed42/wood/patchcore_params.pkl",
+    "sha256": "7c2728899e9e4aeca619d5c6f24ad47456c1603cc16e4c846a80f002c6ddc8b4",
+    "bytes": 230
+  },
+  {
+    "path": "/home/test/patchcore_results/musc_comparison_20261010/mvtec_full_seed42/wood/nnscorer_search_index.faiss",
+    "sha256": "b845c6b9ca9b1227775104f1bd1ce53942b6064954eb636d26213ca815ef4a7a",
+    "bytes": 79314989
+  },
+  {
+    "path": "/home/test/patchcore_results/musc_comparison_20261010/mvtec_full_seed42/wood/memory_bank.npy",
+    "sha256": "7c59501932eca2d0a722a57d14321ba96c8386d82cc6e4946d9460b887cb1b2e",
+    "bytes": 79315072
+  },
+  {
+    "path": "/home/test/patchcore_results/musc_comparison_20261010/mvtec_full_seed42/wood/sample_queries.npy",
+    "sha256": "2e015b7daec693709aa7d937c82175a5ec4c08ceb5962805422464b6e07977cb",
+    "bytes": 262272
+  },
+  {
+    "path": "/home/test/patchcore_results/musc_comparison_20261010/mvtec_full_seed42/wood/sample_distances.npy",
+    "sha256": "3327bf1627d6a6d288cd2b00049415404f06bc879a4aa40dbf9bceb3d1c23795",
+    "bytes": 384
+  },
+  {
+    "path": "/home/test/patchcore_results/musc_comparison_20261010/mvtec_full_seed42/wood/predictions.npz",
+    "sha256": "c89c5b7b1885b2a48b15b7a558fddb1aa44ab538b48665f03ad7cdd6c2ad9693",
+    "bytes": 13509417
+  }
+]

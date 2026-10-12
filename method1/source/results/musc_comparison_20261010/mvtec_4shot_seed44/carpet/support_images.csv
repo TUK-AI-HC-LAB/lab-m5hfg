@@ -1,0 +1,5 @@
+image_path,label,sha256,mask_path,mask_sha256
+/home/test/data/mvtec/carpet/train/good/209.png,0,faef1ca9512fe016a827537cb366ea5514a690ee56a8465782ad9efeaee4c4b2,,
+/home/test/data/mvtec/carpet/train/good/266.png,0,d763e3e9f7189d24f9bd33190b592638612314358d67fb28da26987977781c9f,,
+/home/test/data/mvtec/carpet/train/good/277.png,0,a9843c52a0e9b8361ae701b0cb5786f4fc7c009c6c86de2371f1c0584da0c3b5,,
+/home/test/data/mvtec/carpet/train/good/059.png,0,cca8bf0ef5173b3068284b3578653a921306591cddd4756e657d59dfba103de2,,

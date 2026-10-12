@@ -1,0 +1,6 @@
+{
+  "path": "/home/test/musc_results/sweeps_seed42_20261012/mvtec_ad/toothbrush/interval_patch_predictions.npz",
+  "sha256": "3f05cecdd7e68102e7887b83c3978202166c42cfe011b219e7b5b0512af16e1a",
+  "baseline_manifest": "/mnt/c/Users/test/Desktop/Codex/lab-m5hfg/method10/source/results/tables3_7_seed42_20261012/mvtec_ad/toothbrush/raw_manifest.json",
+  "baseline_raw_sha256": "e66da2926e3726b772634613176c9032e97c9f7144b2f06481c75694b5c19815"
+}

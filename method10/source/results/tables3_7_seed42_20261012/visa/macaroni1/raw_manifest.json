@@ -1,0 +1,6 @@
+{
+  "path": "/home/test/musc_results/tables3_7_seed42_20261012/visa/macaroni1/patch_predictions.npz",
+  "sha256": "f46395b38276279dd1027a9c557b8acc1317fc9e5c01269591d96a6b94f7a2f8",
+  "map_reconstruction": "FP64 patch scores -> torch bilinear 518 align_corners=True; masks native dataset cast int32 then uint8",
+  "config_sha256": "2b60ecea091a87c9fc182449d0b03ea6b95c7faa6f9051e14535ea761da776ba"
+}

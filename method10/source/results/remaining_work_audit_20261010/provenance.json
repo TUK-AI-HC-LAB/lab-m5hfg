@@ -1,0 +1,39 @@
+{
+  "date": "2026-10-10",
+  "unique_comparator_methods": 17,
+  "unique_comparator_conditions": 34,
+  "condition_counts": {
+    "existing": 33,
+    "paused": 1
+  },
+  "sources": {
+    "method1/source/results/musc_comparison_20261010/verification.json": "5d47f775663a3c520413c4b8013fa70902b058eb622cedc72c8cf97421ca590f",
+    "method20/source/results/mvtec_k50_seed42_20261010/verification.json": "6adaa5e973d7034e3ea2f22fb6db043562c9f5ebd6c180b8d7ad4b8abb20cbd8",
+    "method13/source/results/logistic_seed923874273_20261007/verification.json": "830cb30ff01f84aa6bcec58374ee78ece81b27300103a49756e94a9e703a995f",
+    "method16/source/results/mvtec_public_20261007/verification.json": "7fb85d55e69bdfd8c0ef9bc66505a88c50834a61b1da007bb548cb8e58225dd3",
+    "method25/source/results/mvtec_public_20261011/verification.json": "760ddf8e321578a30ebc454c452c9afc95a2085c92513731ceea7bae7462edf4",
+    "method14/source/results/mvtec_batch8_seed42_20261011/environment.json": "c90be1ca50dcdaecd5f332382afe0d054768030aa298da0830ccae7f4a92629a",
+    "method7/source/results/winclip_mvtec/four_shot/results.csv": "acc76e2ecfff75461146018914441bd0d4b6eaa918121f7c3a89ffd475828a3d",
+    "method10/source/results/musc_rscin_existing_20261010/verification.json": "646bf3d50e884b507c4a19d23ef4dbb76d8ef45f720299c2f4ce1a08c8083553",
+    "method15/source/results/mvtec_seed42_20261007/verification.json": "c245810d1158792de970b503aa7cc4fd5d252bef1f61a1c3c0fb6282f1ccdd7a",
+    "method16/source/results/remaining_mvtec32_btad4_20261010/verification.json": "6d032b2dda5957b7d5110b895b623435420b902ab47c9cc07dfc2834be831818",
+    "method23/source/results/btad_wr50_d550_seed1024_20261010/verification.json": "4004ea4d456ce4b9fad3c666200b8231456ec1c9e0e890333a85eabb7d5290b7",
+    "method17/source/results/mvtec_pvig_fp32_20261008/verification.json": "0a081be7c6f7bfb4168f3e0f14abf45d38e9e16c953f0e23b6cf965d2c706cf4",
+    "method10/source/build_musc_reproduction_tables.py": "3c4190e5d99ebefe9902217a5bdfa34cdaa3072dbd8f3f1e236e4f10edffb3a8",
+    "method7/source/results/winclip_visa/zero_shot/results.csv": "c7b462867f09e662618dc5f426b80f27c7b30ecc78918a5e733d3bb6814d482a",
+    "method12/source/results/mvtec_public_20261007/verification.json": "a765473cbab0afdf41927755234c5bf3c54e7baad8e285451d3d9d73f994ac7f",
+    "method18/source/results/btad_seed123_20261008/verification.json": "093cf065a1c25ab50f4c368ed71ef29be203c245cf9724030b05863379c6faaf",
+    "method7/source/results/winclip_visa/four_shot/results.csv": "6f2bfd80816fcb81b328f7196b7df442e38118f170a029caabe05e5db8259f1f",
+    "method11/source/results/aprilgan_remaining_20261006/aggregates.csv": "78864b15aac394634c89dd14174f72f2b47002bd9217298d653dc78e16aa7aaa",
+    "method19/source/results/btad_seed42_20261008/verification.json": "b72b5cd47f08699b85ba891ffe75a3715a13daaebdd074e7ad06ce32d73d545b",
+    "method21/source/results/btad_res18_seed0_20261008/verification.json": "d4bd06c209e4d15ebfcb0c0fcf498f253f8342cf16af750dd02829a216b3f315",
+    "method20/source/results/btad_k50_seed42_20261008/verification.json": "0d076697af1ca64ef44f2435cf7e0e6bd7536b73ac817e9d260619ceff5dd9fa",
+    "method7/source/results/winclip_mvtec/zero_shot/results.csv": "8bbc56ba20e950cc2a0236df0c7c14357a0c3dd16b852936c04923e5b567669f",
+    "method24/source/results/mvtec_public_20261011/verification.json": "7f5f393c1d72e11bd21f11633cd70e01e23e43d5a4e3f9d6f0b949378b336902",
+    "method10/paper/ICLR24_MuSc_Zero_Shot_Industrial_Anomaly_Classification_and_Segmentation_with_Mutual_Scoring_of_the_Unlabeled_Images.pdf": "24d9566848213b4197e061c1f910aa673c9dc31d2f4efc692fbadc269a65e67b",
+    "method22/source/results/mvtec_scratch3way_seed42_20261008/verification.json": "ec81077b5addb9a5eef4f7f3c85085f68e398358a8ddffcc3b7cbbfb65459d4a"
+  },
+  "scope": "lab-m5hfg saved artifacts; bounded WSL repo/result inventory; not every historical disk file",
+  "paper_numbers_copied": false,
+  "missing_condition_is_not_never_implemented": true
+}

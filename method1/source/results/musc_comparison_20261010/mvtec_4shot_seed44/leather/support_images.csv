@@ -1,0 +1,5 @@
+image_path,label,sha256,mask_path,mask_sha256
+/home/test/data/mvtec/leather/train/good/104.png,0,9a4404f82b7199c1c0d12419154dd79a9219313ebc5acad3e133d55bb2213812,,
+/home/test/data/mvtec/leather/train/good/133.png,0,c63a5dd81acf4bbad07b3069c751e16dc23ea4a66c779803361b004e1917bcf2,,
+/home/test/data/mvtec/leather/train/good/138.png,0,f075ba3d1af5ea2f580a06001fc20d5b4810c699f41304ddfe315552c2200f4a,,
+/home/test/data/mvtec/leather/train/good/179.png,0,db824260e81cdb765cd22f4cf760ab65461a89611cbe491e120ae6a89d948c5e,,

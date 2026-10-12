@@ -1,0 +1,16 @@
+{
+  "dataset": "mvtec",
+  "shot": "full",
+  "seed": 42,
+  "category": "metal_nut",
+  "n_train": 220,
+  "n_support": 220,
+  "n_images": 115,
+  "image_auroc": 0.9975562072336266,
+  "image_f1_max": 0.9893617021276596,
+  "image_ap": 0.9994229688606732,
+  "pixel_auroc": 0.9833134322709511,
+  "pixel_f1_max": 0.858353723907078,
+  "pixel_ap": 0.8866726964526226,
+  "aupro": 0.9386587739008698
+}

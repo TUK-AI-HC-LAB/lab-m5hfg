@@ -1,0 +1,5 @@
+image_path,label,sha256,mask_path,mask_sha256
+/home/test/data/mvtec/transistor/train/good/009.png,0,6e011216160fa4e0635645848b5d2fdb1c9430264973b939b769567b7378ae40,,
+/home/test/data/mvtec/transistor/train/good/073.png,0,33a3cf0657c5418e8d2ef90bdc840b669697c35f28ab6f3b75c6ea2bc81a7db1,,
+/home/test/data/mvtec/transistor/train/good/178.png,0,836012f0879840e3197f8a6282d41e09603b8362b24b9a5d0e23857bbc7f2a7a,,
+/home/test/data/mvtec/transistor/train/good/195.png,0,b064fd9d3009218888206f218372e9b723af8c4337a0e97998dda6d6c76b5c04,,

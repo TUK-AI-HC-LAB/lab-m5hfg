@@ -1,0 +1,32 @@
+[
+  {
+    "path": "/home/test/patchcore_results/musc_comparison_20261010/mvtec_4shot_seed43/transistor/patchcore_params.pkl",
+    "sha256": "7c2728899e9e4aeca619d5c6f24ad47456c1603cc16e4c846a80f002c6ddc8b4",
+    "bytes": 230
+  },
+  {
+    "path": "/home/test/patchcore_results/musc_comparison_20261010/mvtec_4shot_seed43/transistor/nnscorer_search_index.faiss",
+    "sha256": "363a6286acdafc7d9bdd5825205cc91dd1e1ff791608109f3fe744d83f90a848",
+    "bytes": 1282093
+  },
+  {
+    "path": "/home/test/patchcore_results/musc_comparison_20261010/mvtec_4shot_seed43/transistor/memory_bank.npy",
+    "sha256": "c0b07a898e727fb0aa43e5a55d53aba1a9b5aaf3ca6de4f74caa1155a073b9a0",
+    "bytes": 1282176
+  },
+  {
+    "path": "/home/test/patchcore_results/musc_comparison_20261010/mvtec_4shot_seed43/transistor/sample_queries.npy",
+    "sha256": "302daf6c3f32045bf905ad29a68c5f6508dc7182c0178909f7871351b3055285",
+    "bytes": 262272
+  },
+  {
+    "path": "/home/test/patchcore_results/musc_comparison_20261010/mvtec_4shot_seed43/transistor/sample_distances.npy",
+    "sha256": "d01ba0f649e88c1609a0f7c73a29818d9c19bf50ab7d450026ce202d7d55a1ab",
+    "bytes": 384
+  },
+  {
+    "path": "/home/test/patchcore_results/musc_comparison_20261010/mvtec_4shot_seed43/transistor/predictions.npz",
+    "sha256": "eb44106138bea0550d32d3f7cb93c6d237404d4b2c8d15f1aacaef5bc600b0a1",
+    "bytes": 17515571
+  }
+]

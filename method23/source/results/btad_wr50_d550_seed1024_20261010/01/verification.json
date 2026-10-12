@@ -1,0 +1,98 @@
+{
+  "status": "passed",
+  "embedding_concat_equals_pinned_public_function": true,
+  "fit_proof": [
+    {
+      "position": 0,
+      "covariance_max_error": 1.2197274440461925e-19,
+      "precision_max_error": 2.947425623744948e-05
+    },
+    {
+      "position": 1568,
+      "covariance_max_error": 4.163336342344337e-17,
+      "precision_max_error": 0.00035744684402960747
+    },
+    {
+      "position": 3104,
+      "covariance_max_error": 1.734723475976807e-17,
+      "precision_max_error": 0.00011302425265546923
+    }
+  ],
+  "mahalanobis_proof": [
+    {
+      "image": 0,
+      "position": 0,
+      "gpu": 1.802486777305603,
+      "independent_fp64": 1.8024867466790875
+    },
+    {
+      "image": 35,
+      "position": 0,
+      "gpu": 3.3884437084198,
+      "independent_fp64": 3.3884434129229377
+    },
+    {
+      "image": 69,
+      "position": 0,
+      "gpu": 0.5790902972221375,
+      "independent_fp64": 0.5790903264498675
+    },
+    {
+      "image": 0,
+      "position": 1568,
+      "gpu": 20.708402633666992,
+      "independent_fp64": 20.708403212385022
+    },
+    {
+      "image": 35,
+      "position": 1568,
+      "gpu": 24.52808952331543,
+      "independent_fp64": 24.528087312828557
+    },
+    {
+      "image": 69,
+      "position": 1568,
+      "gpu": 9.049001693725586,
+      "independent_fp64": 9.049006046205593
+    },
+    {
+      "image": 0,
+      "position": 3104,
+      "gpu": 26.620981216430664,
+      "independent_fp64": 26.62098130064581
+    },
+    {
+      "image": 35,
+      "position": 3104,
+      "gpu": 22.879552841186523,
+      "independent_fp64": 22.87955610934159
+    },
+    {
+      "image": 69,
+      "position": 3104,
+      "gpu": 7.306525230407715,
+      "independent_fp64": 7.306524506025732
+    }
+  ],
+  "all_input_mask_SHA_verified": true,
+  "all_maps_postprocess_and_metrics_recomputed": true,
+  "raw_artifacts": [
+    {
+      "path": "/home/test/padim_results/btad_wr50_d550_seed1024_20261010/01/predictions.npz",
+      "sha256": "21c32d905ec8f5dc73b8b2e4c69342b8c971da8b42e538125d7e13fca0526d58"
+    },
+    {
+      "path": "/home/test/padim_results/btad_wr50_d550_seed1024_20261010/01/mean.npy",
+      "sha256": "713321898c6c9191aa9e714d4887a128080ecf9b60a44d7f9765e0fa07608e65"
+    },
+    {
+      "path": "/home/test/padim_results/btad_wr50_d550_seed1024_20261010/01/precision.npy",
+      "sha256": "c33b9e306e7bc513452137865620d51d349775cc653c76b5f1c09a05351da301"
+    },
+    {
+      "path": "/home/test/padim_results/btad_wr50_d550_seed1024_20261010/01/channel_indices.npy",
+      "sha256": "217dc5ed9055a53ec752df10b79e80eaa9e8e3ac9df45f1154d2faebbcf1bbe7"
+    }
+  ],
+  "limits": "3 spatial covariance positions and9 actual image/patch distances independently verified; not every covariance or forward double-executed"
+}

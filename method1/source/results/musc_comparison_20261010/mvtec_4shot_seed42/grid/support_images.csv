@@ -1,0 +1,5 @@
+image_path,label,sha256,mask_path,mask_sha256
+/home/test/data/mvtec/grid/train/good/057.png,0,2ba4eea003a91135fff4a2c7b0e427164aa5961524e2601ad77b492e6c320e6b,,
+/home/test/data/mvtec/grid/train/good/012.png,0,59753aa0704ada104748e66ac5c0e2b0cf7a4281afabb097465d590f2ecc436d,,
+/home/test/data/mvtec/grid/train/good/140.png,0,2eda3ac86d8687718e23adeb1140b1f1766aad7a34c676638154f4bb0c0f4fee,,
+/home/test/data/mvtec/grid/train/good/125.png,0,fb4987a6301c663c3c31772b61cbc141439d6f9dff1e84f9fd7d3b7e2a6ddc58,,

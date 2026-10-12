@@ -1,0 +1,16 @@
+{
+  "dataset": "visa",
+  "shot": "4shot",
+  "seed": 42,
+  "category": "chewinggum",
+  "n_train": 453,
+  "n_support": 4,
+  "n_images": 150,
+  "image_auroc": 0.9836,
+  "image_f1_max": 0.9693877551020408,
+  "image_ap": 0.9929035843696639,
+  "pixel_auroc": 0.9865158581566446,
+  "pixel_f1_max": 0.5393677158210622,
+  "pixel_ap": 0.5804383334107147,
+  "aupro": 0.7726220743350676
+}

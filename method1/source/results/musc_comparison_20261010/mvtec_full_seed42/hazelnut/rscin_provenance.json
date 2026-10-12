@@ -1,0 +1,11 @@
+{
+  "feature_path": "/home/test/patchcore_results/musc_comparison_20261010/rscin_features/hazelnut/features.npy",
+  "feature_sha256": "27834ab4f6be36d79d0136efdd0ee10b78fe49f8385e2343bfeeeac520afd14c",
+  "module_sha256": "c5df4811b385971a15bb2db4473adba9755a15c8acf1e5c802b4ed955e5081c5",
+  "windows": [
+    1,
+    2,
+    3
+  ],
+  "image_label_SHA_alignment_passed": true
+}

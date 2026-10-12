@@ -1,0 +1,46 @@
+[
+  {
+    "path": "/home/test/cutpaste_results/mvtec_scratch3way_seed42_20261008/transistor/predictions.npz",
+    "sha256": "a2039908a6fc518319dd82a5eabcdeacd1e978c6909a06748a0bfaa6e430920c"
+  },
+  {
+    "path": "/home/test/cutpaste_results/mvtec_scratch3way_seed42_20261008/transistor/image/density.npz",
+    "sha256": "052cbbc4397b17297dedeeb2b3758c0e21fec38af5500f89bd671bd67a455569"
+  },
+  {
+    "path": "/home/test/cutpaste_results/mvtec_scratch3way_seed42_20261008/transistor/image/last.pt",
+    "sha256": "f8692c4c3da59cbacd5161e3453d4d77640b705f8d6559d22d270eaa32842ec1"
+  },
+  {
+    "path": "/home/test/cutpaste_results/mvtec_scratch3way_seed42_20261008/transistor/image/train_features.npy",
+    "sha256": "50bc26466053c7084c66ca5be87da031c9dfdf3848ebddb94dd010b3b90edf91"
+  },
+  {
+    "path": "/home/test/cutpaste_results/mvtec_scratch3way_seed42_20261008/transistor/image/test_features.npy",
+    "sha256": "bc4b4d6b8dd56d5549414fc3d10193ba6cba13fa58a8af258fab5e9fcfdafb62"
+  },
+  {
+    "path": "/home/test/cutpaste_results/mvtec_scratch3way_seed42_20261008/transistor/patch/last.pt",
+    "sha256": "03193417746d31993e62bb7031f048eb8c8f1d168f0b2e2a70307aef08497b51"
+  },
+  {
+    "path": "/home/test/cutpaste_results/mvtec_scratch3way_seed42_20261008/transistor/patch/train_features.npy",
+    "sha256": "740c1e4c9e861c2428f5b83cf2ff03ae6303b84aa1ea9a614f3ce79280db9423"
+  },
+  {
+    "path": "/home/test/cutpaste_results/mvtec_scratch3way_seed42_20261008/transistor/patch/test_features.npy",
+    "sha256": "80fe1d92b2de6ac939be87c8b9a9630127eac1746aa7b6b221313de1c4ae4b06"
+  },
+  {
+    "path": "/home/test/cutpaste_results/mvtec_scratch3way_seed42_20261008/transistor/patch/density_mean.npy",
+    "sha256": "5b91c03fc8db58cba07c92f4fc2933f257b234236c152ca661c13cb82da45068"
+  },
+  {
+    "path": "/home/test/cutpaste_results/mvtec_scratch3way_seed42_20261008/transistor/patch/density_precision.npy",
+    "sha256": "258a914525f25fdb89b26c13d199d2e80b74895929a9ef53b9f08af71725aceb"
+  },
+  {
+    "path": "/home/test/cutpaste_results/mvtec_scratch3way_seed42_20261008/transistor/patch/density_shrinkage.npy",
+    "sha256": "5194282aaeed703e28138a0dd9cb11af94092ffd0487efa0e41311bf04943206"
+  }
+]

@@ -1,0 +1,32 @@
+[
+  {
+    "path": "/home/test/patchcore_results/musc_comparison_20261010/visa_4shot_seed42/fryum/patchcore_params.pkl",
+    "sha256": "7c2728899e9e4aeca619d5c6f24ad47456c1603cc16e4c846a80f002c6ddc8b4",
+    "bytes": 230
+  },
+  {
+    "path": "/home/test/patchcore_results/musc_comparison_20261010/visa_4shot_seed42/fryum/nnscorer_search_index.faiss",
+    "sha256": "8536efa08b20f28c87eda20361eee147f6390447354602d896f1c22e54d5564d",
+    "bytes": 1282093
+  },
+  {
+    "path": "/home/test/patchcore_results/musc_comparison_20261010/visa_4shot_seed42/fryum/memory_bank.npy",
+    "sha256": "c618e9fd067c867876fd11f626357fbd4d1bd7bb980914b3f572b63bb0708ea5",
+    "bytes": 1282176
+  },
+  {
+    "path": "/home/test/patchcore_results/musc_comparison_20261010/visa_4shot_seed42/fryum/sample_queries.npy",
+    "sha256": "5bf79febd55639ce14c67725a365d8a66ad8b8d825411024dfceeab10af74247",
+    "bytes": 262272
+  },
+  {
+    "path": "/home/test/patchcore_results/musc_comparison_20261010/visa_4shot_seed42/fryum/sample_distances.npy",
+    "sha256": "6f3a55e4c5439263829291afc9750eed3acf25dbb31fce7fdc9b4d27d961f764",
+    "bytes": 384
+  },
+  {
+    "path": "/home/test/patchcore_results/musc_comparison_20261010/visa_4shot_seed42/fryum/predictions.npz",
+    "sha256": "954051d4b49d9fd8ca2526bf1414d2b39bbc3e379a569407ac641a1be29d3de4",
+    "bytes": 26116210
+  }
+]

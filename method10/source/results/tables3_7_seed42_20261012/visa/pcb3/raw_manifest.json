@@ -1,0 +1,6 @@
+{
+  "path": "/home/test/musc_results/tables3_7_seed42_20261012/visa/pcb3/patch_predictions.npz",
+  "sha256": "bdec742f8f1e8857b2e5485399f151c95aabe5240e2e1757158eeeb89c90697e",
+  "map_reconstruction": "FP64 patch scores -> torch bilinear 518 align_corners=True; masks native dataset cast int32 then uint8",
+  "config_sha256": "2b60ecea091a87c9fc182449d0b03ea6b95c7faa6f9051e14535ea761da776ba"
+}

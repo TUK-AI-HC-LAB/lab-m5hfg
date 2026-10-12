@@ -1,0 +1,5 @@
+image_path,label,sha256,mask_path,mask_sha256
+/home/test/data/mvtec/metal_nut/train/good/009.png,0,4598a73a719ed71c4a6de76b5039dbd010cf1d2c5c850aa95ce8b3976741654d,,
+/home/test/data/mvtec/metal_nut/train/good/073.png,0,3246fee8595fd176d873f448254f48e58fd0f6c41cf5a2f8e48cda51e755f2bd,,
+/home/test/data/mvtec/metal_nut/train/good/178.png,0,c602ec146be198eb0dce9cdd855b36904c49ccd9a3f3e97adefbbb5bc1b4cd9d,,
+/home/test/data/mvtec/metal_nut/train/good/195.png,0,79e274efa825f5b897a25a3cce9241254f585c0813d4b1d6f17f642d1ff93c4a,,

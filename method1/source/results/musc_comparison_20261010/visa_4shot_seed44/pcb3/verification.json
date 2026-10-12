@@ -1,0 +1,16 @@
+{
+  "status": "passed",
+  "input_SHA_and_labels": true,
+  "all_seven_metrics_recomputed": true,
+  "distance": {
+    "status": "passed",
+    "GPU_FAISS_vs_CPU_all_memory_64_queries_max_error": 4.410743713378906e-06,
+    "float64_brute_force_all_memory_4_queries_max_error": 5.067546078318941e-07,
+    "n_memory": 313,
+    "dimension": 1024
+  },
+  "PRO_algorithm_vs_native_passed": true,
+  "fit_seconds": 0.8662142520001908,
+  "evaluation_seconds": 8.50404724000009,
+  "limits": "Distance checked on64 queries/4 float64 queries; all forward passes not independently rerun. Condition differences documented."
+}

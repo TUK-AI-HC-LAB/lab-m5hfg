@@ -1,5 +1,5 @@
 {
-  "status": "training",
+  "status": "completed",
   "official_author_implementation": false,
   "public_repo": "https://github.com/Runinho/pytorch-cutpaste",
   "commit": "10d8bf71df76d3a97f0106efee1d76f81d983149",
@@ -64,9 +64,9 @@
   "resume_limit": "model/optimizer/scaler/main RNG restored, workers/sampler stream not exact across restart",
   "acceleration_policy": "compiled/eager FP16 + GradScaler + TF32, finite/loss gate and FP32 gradient diagnostic, channels_last, cuDNN benchmark, foreach SGD, cached images, pin/prefetch workers; per-model fallback if nonfinite or loss gate fails; compiled/eager FP16 comparison; evaluation FP32/FP64",
   "error": null,
-  "category": "hazelnut",
-  "model_kind": "image",
-  "step": 17152,
+  "category": "zipper",
+  "model_kind": "patch",
+  "step": 65536,
   "active_acceleration": {
     "status": "passed",
     "precision": "fp16",
@@ -88,27 +88,27 @@
         "gradient_relative_L2": 0.0,
         "strict_fp32_equivalence_passed": true,
         "passed": true,
-        "startup_seconds": 0.10786793199986278
+        "startup_seconds": 0.02737049500001376
       },
       {
         "mode": "compiled_fp16",
         "finite": true,
-        "loss_relative_difference": 9.576148109126416e-05,
-        "gradient_relative_L2": 0.19067098200321198,
+        "loss_relative_difference": 0.00028357090991675183,
+        "gradient_relative_L2": 0.15361933410167694,
         "strict_fp32_equivalence_passed": false,
         "passed": true,
-        "startup_seconds": 27.8490077739998
+        "startup_seconds": 19.085117437000008
       },
       {
         "mode": "fp16",
         "finite": true,
-        "loss_relative_difference": 0.00015416546131725496,
-        "gradient_relative_L2": 0.2381679117679596,
+        "loss_relative_difference": 7.907065416121038e-05,
+        "gradient_relative_L2": 0.14859944581985474,
         "strict_fp32_equivalence_passed": false,
         "passed": true,
-        "startup_seconds": 0.03898815300044589,
-        "compiled_vs_eager_gradient_relative_L2": 0.15664537250995636,
-        "compiled_vs_eager_loss_relative_difference": 5.841298549084589e-05,
+        "startup_seconds": 0.019689794999976584,
+        "compiled_vs_eager_gradient_relative_L2": 0.11827564239501953,
+        "compiled_vs_eager_loss_relative_difference": 0.00020451642700321132,
         "compile_validation_passed": false
       }
     ],
@@ -117,11 +117,11 @@
       "real_MVTec_batch": true,
       "gpu": "NVIDIA GeForce RTX 5080",
       "effective_batch": 96,
-      "input_size": 256,
-      "fp32_loss": 1.1328192949295044,
-      "bf16_loss": 1.13330078125,
-      "bf16_gradient_relative_L2": 0.606428325176239,
-      "bf16_loss_relative_difference": 0.00042503364966250956,
+      "input_size": 64,
+      "fp32_loss": 1.1442911624908447,
+      "bf16_loss": 1.1429849863052368,
+      "bf16_gradient_relative_L2": 0.3959372937679291,
+      "bf16_loss_relative_difference": 0.0011414719047024846,
       "bf16_enabled": false,
       "tf32_enabled": false,
       "thresholds": {

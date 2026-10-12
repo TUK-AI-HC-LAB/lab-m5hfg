@@ -1,0 +1,16 @@
+{
+  "dataset": "visa",
+  "shot": "4shot",
+  "seed": 44,
+  "category": "fryum",
+  "n_train": 450,
+  "n_support": 4,
+  "n_images": 150,
+  "image_auroc": 0.7954,
+  "image_f1_max": 0.8214285714285714,
+  "image_ap": 0.903046766043067,
+  "pixel_auroc": 0.8808887621038841,
+  "pixel_f1_max": 0.3310963035367322,
+  "pixel_ap": 0.2977491076200933,
+  "aupro": 0.6124089298959671
+}

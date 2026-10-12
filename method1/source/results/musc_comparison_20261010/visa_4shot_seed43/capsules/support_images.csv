@@ -1,0 +1,5 @@
+image_path,label,sha256,mask_path,mask_sha256
+/home/test/data/VisA_20220922/capsules/Data/Images/Normal/095.JPG,0,a33ea1ba6b1dcea1883190faba794ebf1e329ee5b7dba9c13b699c8b5af1792b,,
+/home/test/data/VisA_20220922/capsules/Data/Images/Normal/140.JPG,0,e3972fcecef8eec96ea71d89e9b5d664c9c7e29d8a76ea0f88c91715e6b9dbeb,,
+/home/test/data/VisA_20220922/capsules/Data/Images/Normal/003.JPG,0,dee36cdfe7e1474a85fe036dba49b8eecf748b9f00057237d49356420156e31b,,
+/home/test/data/VisA_20220922/capsules/Data/Images/Normal/141.JPG,0,9c2294d0aadc3ccb165ac1c1620ce52c2497b06f4395bc0753e4407d4001742e,,

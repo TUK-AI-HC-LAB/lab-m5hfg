@@ -1,0 +1,206 @@
+{
+  "status": "passed",
+  "figures": [
+    7,
+    8
+  ],
+  "n_categories": 27,
+  "n_images": 3887,
+  "MSM_category_conditions": 162,
+  "RsCIN_category_conditions": 297,
+  "all_MSM_metrics_recomputed": true,
+  "raw_input_hashes_checked": true,
+  "rscin_cpu_independent_smoothing_verified": true,
+  "macro_means_unweighted": true,
+  "categories": [
+    {
+      "dataset": "mvtec_ad",
+      "category": "bottle",
+      "n_images": 83,
+      "raw_sha256": "699829ce026066e0b3786e834b6f2aa358c4cbaa9b8ff35fa4a48d2ae4e06aa6",
+      "metric_conditions_verified": 6
+    },
+    {
+      "dataset": "mvtec_ad",
+      "category": "cable",
+      "n_images": 150,
+      "raw_sha256": "6ebcc28715f410cf4e7d05576b9a8e38893ec0915ff1a4163c240165b4b45684",
+      "metric_conditions_verified": 6
+    },
+    {
+      "dataset": "mvtec_ad",
+      "category": "capsule",
+      "n_images": 132,
+      "raw_sha256": "fb6ffb45c81b557f1d19bf655fc585e68ba2b70e3ecc483747ef6f2ae66d747c",
+      "metric_conditions_verified": 6
+    },
+    {
+      "dataset": "mvtec_ad",
+      "category": "carpet",
+      "n_images": 117,
+      "raw_sha256": "214049b60775294af942b35fa7d49a010da0624d2d888f1df9d54d018eacb253",
+      "metric_conditions_verified": 6
+    },
+    {
+      "dataset": "mvtec_ad",
+      "category": "grid",
+      "n_images": 78,
+      "raw_sha256": "ea8d45a25dcdfa270708ae2a23c90dc4df01bca3844bd4619d9cb0afefe755e4",
+      "metric_conditions_verified": 6
+    },
+    {
+      "dataset": "mvtec_ad",
+      "category": "hazelnut",
+      "n_images": 110,
+      "raw_sha256": "e57ecc7ec43d7b2c5b59381b4163b2d4f52bd3f72f1eddb65c2a9caf3751bf96",
+      "metric_conditions_verified": 6
+    },
+    {
+      "dataset": "mvtec_ad",
+      "category": "leather",
+      "n_images": 124,
+      "raw_sha256": "f6eeae354831c19f0fc8dffacf8e8022bfa4a1b8f61e9769a21d66266c60efcf",
+      "metric_conditions_verified": 6
+    },
+    {
+      "dataset": "mvtec_ad",
+      "category": "metal_nut",
+      "n_images": 115,
+      "raw_sha256": "dfdd1e2c876f0f70534d7eb9be2ff5c6a55bc14adfaf8e3f5d6cd59d711cab9e",
+      "metric_conditions_verified": 6
+    },
+    {
+      "dataset": "mvtec_ad",
+      "category": "pill",
+      "n_images": 167,
+      "raw_sha256": "71cb7bc52e6df23a526d7fc9003f18e254088362c109ce7984221f0062744f1d",
+      "metric_conditions_verified": 6
+    },
+    {
+      "dataset": "mvtec_ad",
+      "category": "screw",
+      "n_images": 160,
+      "raw_sha256": "5f10d81e901471ff30569af4b29efe5fc1c24d49aa4bd8a6113bf4c98b94e7d9",
+      "metric_conditions_verified": 6
+    },
+    {
+      "dataset": "mvtec_ad",
+      "category": "tile",
+      "n_images": 117,
+      "raw_sha256": "cb62f8eff562551d225cebc90d43173e9da6b00586d41f6b8eae5fa3491ff35f",
+      "metric_conditions_verified": 6
+    },
+    {
+      "dataset": "mvtec_ad",
+      "category": "toothbrush",
+      "n_images": 42,
+      "raw_sha256": "3f05cecdd7e68102e7887b83c3978202166c42cfe011b219e7b5b0512af16e1a",
+      "metric_conditions_verified": 6
+    },
+    {
+      "dataset": "mvtec_ad",
+      "category": "transistor",
+      "n_images": 100,
+      "raw_sha256": "ece86e340508ac2007642b9b141fdcae369ad573913f23a79326473e002b5317",
+      "metric_conditions_verified": 6
+    },
+    {
+      "dataset": "mvtec_ad",
+      "category": "wood",
+      "n_images": 79,
+      "raw_sha256": "25e8b88b4cd37dea8dcf743a40d1ad75f09a7a085b2531f0987f647e931b4fec",
+      "metric_conditions_verified": 6
+    },
+    {
+      "dataset": "mvtec_ad",
+      "category": "zipper",
+      "n_images": 151,
+      "raw_sha256": "8f5a3615a90b4c38bd0a02d998d619c8b36470958c2b27fd25e44a0ef1ebda30",
+      "metric_conditions_verified": 6
+    },
+    {
+      "dataset": "visa",
+      "category": "candle",
+      "n_images": 200,
+      "raw_sha256": "28ee778c1f50ba0e0c75c352edc9e29143a936717e24c16c142f17db9b13e7a5",
+      "metric_conditions_verified": 6
+    },
+    {
+      "dataset": "visa",
+      "category": "capsules",
+      "n_images": 160,
+      "raw_sha256": "5d0e198871d657d27ca516bc9fe06258435938e83decd2b222d108dac3cf261f",
+      "metric_conditions_verified": 6
+    },
+    {
+      "dataset": "visa",
+      "category": "cashew",
+      "n_images": 150,
+      "raw_sha256": "9cb29a1518259ae1a07b1095978a917222782d3dcc5f58e9b083c967d4a31652",
+      "metric_conditions_verified": 6
+    },
+    {
+      "dataset": "visa",
+      "category": "chewinggum",
+      "n_images": 150,
+      "raw_sha256": "53b502e39e98adc6b8214004f77c538eedf298416153820fffb1817acff72c43",
+      "metric_conditions_verified": 6
+    },
+    {
+      "dataset": "visa",
+      "category": "fryum",
+      "n_images": 150,
+      "raw_sha256": "424408d5f5d9d236ea084fb8d9117cb6dee329d1ee39e10f58577fe739c744f3",
+      "metric_conditions_verified": 6
+    },
+    {
+      "dataset": "visa",
+      "category": "macaroni1",
+      "n_images": 200,
+      "raw_sha256": "500b1179a78547a241aa43693c25d7c297a917271115fb9c50229f161d5373f7",
+      "metric_conditions_verified": 6
+    },
+    {
+      "dataset": "visa",
+      "category": "macaroni2",
+      "n_images": 200,
+      "raw_sha256": "b16cd1ca6fa8deb0ff792b4d12b575fd75c5bf9d4578831712b4e6ff8dcf3d76",
+      "metric_conditions_verified": 6
+    },
+    {
+      "dataset": "visa",
+      "category": "pcb1",
+      "n_images": 200,
+      "raw_sha256": "233a44f752516d51a7569bc867175ec297a873f7f5a64dbce293640baa71b2eb",
+      "metric_conditions_verified": 6
+    },
+    {
+      "dataset": "visa",
+      "category": "pcb2",
+      "n_images": 200,
+      "raw_sha256": "a27b4ad60688c758188b1763d5a39003ea90dab386b61696b1e1a24e367a915a",
+      "metric_conditions_verified": 6
+    },
+    {
+      "dataset": "visa",
+      "category": "pcb3",
+      "n_images": 201,
+      "raw_sha256": "790e6038115d9c31e02319a6a9709c138593688daa34cfd6166017886f359231",
+      "metric_conditions_verified": 6
+    },
+    {
+      "dataset": "visa",
+      "category": "pcb4",
+      "n_images": 201,
+      "raw_sha256": "d173c1b847e54e5f2e0327cce6f4a4c09eea5ab527939d227cb9f60c8b4de06e",
+      "metric_conditions_verified": 6
+    },
+    {
+      "dataset": "visa",
+      "category": "pipe_fryum",
+      "n_images": 150,
+      "raw_sha256": "46f6b3137e8cbcd2c1e4f0b2eeb2c52926cf3b6e8193d61a991b81f587be9603",
+      "metric_conditions_verified": 6
+    }
+  ]
+}

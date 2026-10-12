@@ -1,0 +1,7 @@
+{
+  "status": "passed",
+  "GPU_FAISS_vs_CPU_all_memory_64_queries_max_error": 4.76837158203125e-06,
+  "float64_brute_force_all_memory_4_queries_max_error": 8.036886984807978e-07,
+  "n_memory": 313,
+  "dimension": 1024
+}

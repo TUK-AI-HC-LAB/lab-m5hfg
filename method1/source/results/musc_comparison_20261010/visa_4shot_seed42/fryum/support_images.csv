@@ -1,0 +1,5 @@
+image_path,label,sha256,mask_path,mask_sha256
+/home/test/data/VisA_20220922/fryum/Data/Images/Normal/161.JPG,0,75653dc496a7eebb08a745322cde2ffef685eb34e12270d5047489d26d5bc0bb,,
+/home/test/data/VisA_20220922/fryum/Data/Images/Normal/335.JPG,0,f1a5014711551ee165934b89318d164b1e29d129a0306ca1ea3076dd4e7656b9,,
+/home/test/data/VisA_20220922/fryum/Data/Images/Normal/255.JPG,0,a2237b88d26f013eb622170ef156d247039cfa8a9829e47978e5dd45a8ade8fe,,
+/home/test/data/VisA_20220922/fryum/Data/Images/Normal/361.JPG,0,2da544d176eedfa580b60ae67dd35b763f071f34527d6c52424f657cf34218e0,,

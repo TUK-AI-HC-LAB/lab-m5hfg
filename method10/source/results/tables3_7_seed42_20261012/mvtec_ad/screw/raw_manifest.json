@@ -1,0 +1,6 @@
+{
+  "path": "/home/test/musc_results/tables3_7_seed42_20261012/mvtec_ad/screw/patch_predictions.npz",
+  "sha256": "39cb935d9698a9fbb8fd5e2b9dbbd41c82edab33200c35a635b9fd8ed2a6c56b",
+  "map_reconstruction": "FP64 patch scores -> torch bilinear 518 align_corners=True; masks native dataset cast int32 then uint8",
+  "config_sha256": "2b60ecea091a87c9fc182449d0b03ea6b95c7faa6f9051e14535ea761da776ba"
+}

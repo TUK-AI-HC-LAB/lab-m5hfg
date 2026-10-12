@@ -1,0 +1,5 @@
+image_path,label,sha256,mask_path,mask_sha256
+/home/test/data/mvtec/zipper/train/good/104.png,0,d0b7740f92d90f0a1da95b87ed4e31fb0ea1fed7b9f36bca280f1b57a6db9116,,
+/home/test/data/mvtec/zipper/train/good/133.png,0,ddd28f9d50150ca6fede190358211b8587f92e3a095ceba260ac13f4a4488ccf,,
+/home/test/data/mvtec/zipper/train/good/138.png,0,f0418aae47f7bd70d7e355f501659afdb88bffb57030fdb35df4721165e9c524,,
+/home/test/data/mvtec/zipper/train/good/179.png,0,e2489d2be823a3ab6da5d0e671b2706b1ef080bf1aaee7dbb739befac10b1d52,,

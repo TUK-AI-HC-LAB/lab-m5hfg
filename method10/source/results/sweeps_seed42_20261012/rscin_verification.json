@@ -1,0 +1,1792 @@
+{
+  "status": "passed",
+  "n_categories": 27,
+  "n_images": 3887,
+  "n_category_conditions": 297,
+  "baseline_raw_hashes_checked": true,
+  "native_RsCIN_numpy_smoothing_checked": true,
+  "checks": [
+    {
+      "dataset": "mvtec_ad",
+      "category": "bottle",
+      "window": "w/o",
+      "numpy_smoothing_max_abs": 0.0
+    },
+    {
+      "dataset": "mvtec_ad",
+      "category": "bottle",
+      "window": "multi",
+      "numpy_smoothing_max_abs": 1.1920928955078125e-07
+    },
+    {
+      "dataset": "mvtec_ad",
+      "category": "bottle",
+      "window": "2",
+      "numpy_smoothing_max_abs": 1.1920928955078125e-07
+    },
+    {
+      "dataset": "mvtec_ad",
+      "category": "bottle",
+      "window": "3",
+      "numpy_smoothing_max_abs": 5.960464477539063e-08
+    },
+    {
+      "dataset": "mvtec_ad",
+      "category": "bottle",
+      "window": "4",
+      "numpy_smoothing_max_abs": 5.960464477539063e-08
+    },
+    {
+      "dataset": "mvtec_ad",
+      "category": "bottle",
+      "window": "5",
+      "numpy_smoothing_max_abs": 5.960464477539063e-08
+    },
+    {
+      "dataset": "mvtec_ad",
+      "category": "bottle",
+      "window": "6",
+      "numpy_smoothing_max_abs": 5.960464477539063e-08
+    },
+    {
+      "dataset": "mvtec_ad",
+      "category": "bottle",
+      "window": "7",
+      "numpy_smoothing_max_abs": 5.960464477539063e-08
+    },
+    {
+      "dataset": "mvtec_ad",
+      "category": "bottle",
+      "window": "8",
+      "numpy_smoothing_max_abs": 5.960464477539063e-08
+    },
+    {
+      "dataset": "mvtec_ad",
+      "category": "bottle",
+      "window": "9",
+      "numpy_smoothing_max_abs": 2.9802322387695312e-08
+    },
+    {
+      "dataset": "mvtec_ad",
+      "category": "bottle",
+      "window": "full",
+      "numpy_smoothing_max_abs": 5.960464477539063e-08
+    },
+    {
+      "dataset": "mvtec_ad",
+      "category": "cable",
+      "window": "w/o",
+      "numpy_smoothing_max_abs": 0.0
+    },
+    {
+      "dataset": "mvtec_ad",
+      "category": "cable",
+      "window": "multi",
+      "numpy_smoothing_max_abs": 1.1920928955078125e-07
+    },
+    {
+      "dataset": "mvtec_ad",
+      "category": "cable",
+      "window": "2",
+      "numpy_smoothing_max_abs": 5.960464477539063e-08
+    },
+    {
+      "dataset": "mvtec_ad",
+      "category": "cable",
+      "window": "3",
+      "numpy_smoothing_max_abs": 1.1920928955078125e-07
+    },
+    {
+      "dataset": "mvtec_ad",
+      "category": "cable",
+      "window": "4",
+      "numpy_smoothing_max_abs": 1.1920928955078125e-07
+    },
+    {
+      "dataset": "mvtec_ad",
+      "category": "cable",
+      "window": "5",
+      "numpy_smoothing_max_abs": 1.1920928955078125e-07
+    },
+    {
+      "dataset": "mvtec_ad",
+      "category": "cable",
+      "window": "6",
+      "numpy_smoothing_max_abs": 1.1920928955078125e-07
+    },
+    {
+      "dataset": "mvtec_ad",
+      "category": "cable",
+      "window": "7",
+      "numpy_smoothing_max_abs": 5.960464477539063e-08
+    },
+    {
+      "dataset": "mvtec_ad",
+      "category": "cable",
+      "window": "8",
+      "numpy_smoothing_max_abs": 1.1920928955078125e-07
+    },
+    {
+      "dataset": "mvtec_ad",
+      "category": "cable",
+      "window": "9",
+      "numpy_smoothing_max_abs": 5.960464477539063e-08
+    },
+    {
+      "dataset": "mvtec_ad",
+      "category": "cable",
+      "window": "full",
+      "numpy_smoothing_max_abs": 1.1920928955078125e-07
+    },
+    {
+      "dataset": "mvtec_ad",
+      "category": "capsule",
+      "window": "w/o",
+      "numpy_smoothing_max_abs": 0.0
+    },
+    {
+      "dataset": "mvtec_ad",
+      "category": "capsule",
+      "window": "multi",
+      "numpy_smoothing_max_abs": 5.960464477539063e-08
+    },
+    {
+      "dataset": "mvtec_ad",
+      "category": "capsule",
+      "window": "2",
+      "numpy_smoothing_max_abs": 5.960464477539063e-08
+    },
+    {
+      "dataset": "mvtec_ad",
+      "category": "capsule",
+      "window": "3",
+      "numpy_smoothing_max_abs": 5.960464477539063e-08
+    },
+    {
+      "dataset": "mvtec_ad",
+      "category": "capsule",
+      "window": "4",
+      "numpy_smoothing_max_abs": 5.960464477539063e-08
+    },
+    {
+      "dataset": "mvtec_ad",
+      "category": "capsule",
+      "window": "5",
+      "numpy_smoothing_max_abs": 5.960464477539063e-08
+    },
+    {
+      "dataset": "mvtec_ad",
+      "category": "capsule",
+      "window": "6",
+      "numpy_smoothing_max_abs": 5.960464477539063e-08
+    },
+    {
+      "dataset": "mvtec_ad",
+      "category": "capsule",
+      "window": "7",
+      "numpy_smoothing_max_abs": 5.960464477539063e-08
+    },
+    {
+      "dataset": "mvtec_ad",
+      "category": "capsule",
+      "window": "8",
+      "numpy_smoothing_max_abs": 1.1920928955078125e-07
+    },
+    {
+      "dataset": "mvtec_ad",
+      "category": "capsule",
+      "window": "9",
+      "numpy_smoothing_max_abs": 5.960464477539063e-08
+    },
+    {
+      "dataset": "mvtec_ad",
+      "category": "capsule",
+      "window": "full",
+      "numpy_smoothing_max_abs": 5.960464477539063e-08
+    },
+    {
+      "dataset": "mvtec_ad",
+      "category": "carpet",
+      "window": "w/o",
+      "numpy_smoothing_max_abs": 0.0
+    },
+    {
+      "dataset": "mvtec_ad",
+      "category": "carpet",
+      "window": "multi",
+      "numpy_smoothing_max_abs": 5.960464477539063e-08
+    },
+    {
+      "dataset": "mvtec_ad",
+      "category": "carpet",
+      "window": "2",
+      "numpy_smoothing_max_abs": 5.960464477539063e-08
+    },
+    {
+      "dataset": "mvtec_ad",
+      "category": "carpet",
+      "window": "3",
+      "numpy_smoothing_max_abs": 1.1920928955078125e-07
+    },
+    {
+      "dataset": "mvtec_ad",
+      "category": "carpet",
+      "window": "4",
+      "numpy_smoothing_max_abs": 5.960464477539063e-08
+    },
+    {
+      "dataset": "mvtec_ad",
+      "category": "carpet",
+      "window": "5",
+      "numpy_smoothing_max_abs": 1.1920928955078125e-07
+    },
+    {
+      "dataset": "mvtec_ad",
+      "category": "carpet",
+      "window": "6",
+      "numpy_smoothing_max_abs": 1.1920928955078125e-07
+    },
+    {
+      "dataset": "mvtec_ad",
+      "category": "carpet",
+      "window": "7",
+      "numpy_smoothing_max_abs": 1.1920928955078125e-07
+    },
+    {
+      "dataset": "mvtec_ad",
+      "category": "carpet",
+      "window": "8",
+      "numpy_smoothing_max_abs": 1.1920928955078125e-07
+    },
+    {
+      "dataset": "mvtec_ad",
+      "category": "carpet",
+      "window": "9",
+      "numpy_smoothing_max_abs": 1.1920928955078125e-07
+    },
+    {
+      "dataset": "mvtec_ad",
+      "category": "carpet",
+      "window": "full",
+      "numpy_smoothing_max_abs": 8.940696716308594e-08
+    },
+    {
+      "dataset": "mvtec_ad",
+      "category": "grid",
+      "window": "w/o",
+      "numpy_smoothing_max_abs": 0.0
+    },
+    {
+      "dataset": "mvtec_ad",
+      "category": "grid",
+      "window": "multi",
+      "numpy_smoothing_max_abs": 5.960464477539063e-08
+    },
+    {
+      "dataset": "mvtec_ad",
+      "category": "grid",
+      "window": "2",
+      "numpy_smoothing_max_abs": 5.960464477539063e-08
+    },
+    {
+      "dataset": "mvtec_ad",
+      "category": "grid",
+      "window": "3",
+      "numpy_smoothing_max_abs": 5.960464477539063e-08
+    },
+    {
+      "dataset": "mvtec_ad",
+      "category": "grid",
+      "window": "4",
+      "numpy_smoothing_max_abs": 5.960464477539063e-08
+    },
+    {
+      "dataset": "mvtec_ad",
+      "category": "grid",
+      "window": "5",
+      "numpy_smoothing_max_abs": 5.960464477539063e-08
+    },
+    {
+      "dataset": "mvtec_ad",
+      "category": "grid",
+      "window": "6",
+      "numpy_smoothing_max_abs": 5.960464477539063e-08
+    },
+    {
+      "dataset": "mvtec_ad",
+      "category": "grid",
+      "window": "7",
+      "numpy_smoothing_max_abs": 5.960464477539063e-08
+    },
+    {
+      "dataset": "mvtec_ad",
+      "category": "grid",
+      "window": "8",
+      "numpy_smoothing_max_abs": 1.1920928955078125e-07
+    },
+    {
+      "dataset": "mvtec_ad",
+      "category": "grid",
+      "window": "9",
+      "numpy_smoothing_max_abs": 5.960464477539063e-08
+    },
+    {
+      "dataset": "mvtec_ad",
+      "category": "grid",
+      "window": "full",
+      "numpy_smoothing_max_abs": 5.960464477539063e-08
+    },
+    {
+      "dataset": "mvtec_ad",
+      "category": "hazelnut",
+      "window": "w/o",
+      "numpy_smoothing_max_abs": 0.0
+    },
+    {
+      "dataset": "mvtec_ad",
+      "category": "hazelnut",
+      "window": "multi",
+      "numpy_smoothing_max_abs": 2.9802322387695312e-08
+    },
+    {
+      "dataset": "mvtec_ad",
+      "category": "hazelnut",
+      "window": "2",
+      "numpy_smoothing_max_abs": 5.960464477539063e-08
+    },
+    {
+      "dataset": "mvtec_ad",
+      "category": "hazelnut",
+      "window": "3",
+      "numpy_smoothing_max_abs": 5.960464477539063e-08
+    },
+    {
+      "dataset": "mvtec_ad",
+      "category": "hazelnut",
+      "window": "4",
+      "numpy_smoothing_max_abs": 5.960464477539063e-08
+    },
+    {
+      "dataset": "mvtec_ad",
+      "category": "hazelnut",
+      "window": "5",
+      "numpy_smoothing_max_abs": 5.960464477539063e-08
+    },
+    {
+      "dataset": "mvtec_ad",
+      "category": "hazelnut",
+      "window": "6",
+      "numpy_smoothing_max_abs": 5.960464477539063e-08
+    },
+    {
+      "dataset": "mvtec_ad",
+      "category": "hazelnut",
+      "window": "7",
+      "numpy_smoothing_max_abs": 5.960464477539063e-08
+    },
+    {
+      "dataset": "mvtec_ad",
+      "category": "hazelnut",
+      "window": "8",
+      "numpy_smoothing_max_abs": 5.960464477539063e-08
+    },
+    {
+      "dataset": "mvtec_ad",
+      "category": "hazelnut",
+      "window": "9",
+      "numpy_smoothing_max_abs": 5.960464477539063e-08
+    },
+    {
+      "dataset": "mvtec_ad",
+      "category": "hazelnut",
+      "window": "full",
+      "numpy_smoothing_max_abs": 5.960464477539063e-08
+    },
+    {
+      "dataset": "mvtec_ad",
+      "category": "leather",
+      "window": "w/o",
+      "numpy_smoothing_max_abs": 0.0
+    },
+    {
+      "dataset": "mvtec_ad",
+      "category": "leather",
+      "window": "multi",
+      "numpy_smoothing_max_abs": 1.1920928955078125e-07
+    },
+    {
+      "dataset": "mvtec_ad",
+      "category": "leather",
+      "window": "2",
+      "numpy_smoothing_max_abs": 5.960464477539063e-08
+    },
+    {
+      "dataset": "mvtec_ad",
+      "category": "leather",
+      "window": "3",
+      "numpy_smoothing_max_abs": 5.960464477539063e-08
+    },
+    {
+      "dataset": "mvtec_ad",
+      "category": "leather",
+      "window": "4",
+      "numpy_smoothing_max_abs": 1.1920928955078125e-07
+    },
+    {
+      "dataset": "mvtec_ad",
+      "category": "leather",
+      "window": "5",
+      "numpy_smoothing_max_abs": 1.1920928955078125e-07
+    },
+    {
+      "dataset": "mvtec_ad",
+      "category": "leather",
+      "window": "6",
+      "numpy_smoothing_max_abs": 1.1920928955078125e-07
+    },
+    {
+      "dataset": "mvtec_ad",
+      "category": "leather",
+      "window": "7",
+      "numpy_smoothing_max_abs": 1.1920928955078125e-07
+    },
+    {
+      "dataset": "mvtec_ad",
+      "category": "leather",
+      "window": "8",
+      "numpy_smoothing_max_abs": 1.1920928955078125e-07
+    },
+    {
+      "dataset": "mvtec_ad",
+      "category": "leather",
+      "window": "9",
+      "numpy_smoothing_max_abs": 1.1920928955078125e-07
+    },
+    {
+      "dataset": "mvtec_ad",
+      "category": "leather",
+      "window": "full",
+      "numpy_smoothing_max_abs": 1.1920928955078125e-07
+    },
+    {
+      "dataset": "mvtec_ad",
+      "category": "metal_nut",
+      "window": "w/o",
+      "numpy_smoothing_max_abs": 0.0
+    },
+    {
+      "dataset": "mvtec_ad",
+      "category": "metal_nut",
+      "window": "multi",
+      "numpy_smoothing_max_abs": 1.1920928955078125e-07
+    },
+    {
+      "dataset": "mvtec_ad",
+      "category": "metal_nut",
+      "window": "2",
+      "numpy_smoothing_max_abs": 5.960464477539063e-08
+    },
+    {
+      "dataset": "mvtec_ad",
+      "category": "metal_nut",
+      "window": "3",
+      "numpy_smoothing_max_abs": 5.960464477539063e-08
+    },
+    {
+      "dataset": "mvtec_ad",
+      "category": "metal_nut",
+      "window": "4",
+      "numpy_smoothing_max_abs": 1.1920928955078125e-07
+    },
+    {
+      "dataset": "mvtec_ad",
+      "category": "metal_nut",
+      "window": "5",
+      "numpy_smoothing_max_abs": 5.960464477539063e-08
+    },
+    {
+      "dataset": "mvtec_ad",
+      "category": "metal_nut",
+      "window": "6",
+      "numpy_smoothing_max_abs": 1.1920928955078125e-07
+    },
+    {
+      "dataset": "mvtec_ad",
+      "category": "metal_nut",
+      "window": "7",
+      "numpy_smoothing_max_abs": 1.1920928955078125e-07
+    },
+    {
+      "dataset": "mvtec_ad",
+      "category": "metal_nut",
+      "window": "8",
+      "numpy_smoothing_max_abs": 1.1920928955078125e-07
+    },
+    {
+      "dataset": "mvtec_ad",
+      "category": "metal_nut",
+      "window": "9",
+      "numpy_smoothing_max_abs": 5.960464477539063e-08
+    },
+    {
+      "dataset": "mvtec_ad",
+      "category": "metal_nut",
+      "window": "full",
+      "numpy_smoothing_max_abs": 8.940696716308594e-08
+    },
+    {
+      "dataset": "mvtec_ad",
+      "category": "pill",
+      "window": "w/o",
+      "numpy_smoothing_max_abs": 0.0
+    },
+    {
+      "dataset": "mvtec_ad",
+      "category": "pill",
+      "window": "multi",
+      "numpy_smoothing_max_abs": 1.1920928955078125e-07
+    },
+    {
+      "dataset": "mvtec_ad",
+      "category": "pill",
+      "window": "2",
+      "numpy_smoothing_max_abs": 5.960464477539063e-08
+    },
+    {
+      "dataset": "mvtec_ad",
+      "category": "pill",
+      "window": "3",
+      "numpy_smoothing_max_abs": 1.1920928955078125e-07
+    },
+    {
+      "dataset": "mvtec_ad",
+      "category": "pill",
+      "window": "4",
+      "numpy_smoothing_max_abs": 5.960464477539063e-08
+    },
+    {
+      "dataset": "mvtec_ad",
+      "category": "pill",
+      "window": "5",
+      "numpy_smoothing_max_abs": 5.960464477539063e-08
+    },
+    {
+      "dataset": "mvtec_ad",
+      "category": "pill",
+      "window": "6",
+      "numpy_smoothing_max_abs": 5.960464477539063e-08
+    },
+    {
+      "dataset": "mvtec_ad",
+      "category": "pill",
+      "window": "7",
+      "numpy_smoothing_max_abs": 1.1920928955078125e-07
+    },
+    {
+      "dataset": "mvtec_ad",
+      "category": "pill",
+      "window": "8",
+      "numpy_smoothing_max_abs": 5.960464477539063e-08
+    },
+    {
+      "dataset": "mvtec_ad",
+      "category": "pill",
+      "window": "9",
+      "numpy_smoothing_max_abs": 1.1920928955078125e-07
+    },
+    {
+      "dataset": "mvtec_ad",
+      "category": "pill",
+      "window": "full",
+      "numpy_smoothing_max_abs": 8.940696716308594e-08
+    },
+    {
+      "dataset": "mvtec_ad",
+      "category": "screw",
+      "window": "w/o",
+      "numpy_smoothing_max_abs": 0.0
+    },
+    {
+      "dataset": "mvtec_ad",
+      "category": "screw",
+      "window": "multi",
+      "numpy_smoothing_max_abs": 5.960464477539063e-08
+    },
+    {
+      "dataset": "mvtec_ad",
+      "category": "screw",
+      "window": "2",
+      "numpy_smoothing_max_abs": 5.960464477539063e-08
+    },
+    {
+      "dataset": "mvtec_ad",
+      "category": "screw",
+      "window": "3",
+      "numpy_smoothing_max_abs": 5.960464477539063e-08
+    },
+    {
+      "dataset": "mvtec_ad",
+      "category": "screw",
+      "window": "4",
+      "numpy_smoothing_max_abs": 5.960464477539063e-08
+    },
+    {
+      "dataset": "mvtec_ad",
+      "category": "screw",
+      "window": "5",
+      "numpy_smoothing_max_abs": 5.960464477539063e-08
+    },
+    {
+      "dataset": "mvtec_ad",
+      "category": "screw",
+      "window": "6",
+      "numpy_smoothing_max_abs": 1.1920928955078125e-07
+    },
+    {
+      "dataset": "mvtec_ad",
+      "category": "screw",
+      "window": "7",
+      "numpy_smoothing_max_abs": 5.960464477539063e-08
+    },
+    {
+      "dataset": "mvtec_ad",
+      "category": "screw",
+      "window": "8",
+      "numpy_smoothing_max_abs": 5.960464477539063e-08
+    },
+    {
+      "dataset": "mvtec_ad",
+      "category": "screw",
+      "window": "9",
+      "numpy_smoothing_max_abs": 5.960464477539063e-08
+    },
+    {
+      "dataset": "mvtec_ad",
+      "category": "screw",
+      "window": "full",
+      "numpy_smoothing_max_abs": 5.960464477539063e-08
+    },
+    {
+      "dataset": "mvtec_ad",
+      "category": "tile",
+      "window": "w/o",
+      "numpy_smoothing_max_abs": 0.0
+    },
+    {
+      "dataset": "mvtec_ad",
+      "category": "tile",
+      "window": "multi",
+      "numpy_smoothing_max_abs": 1.1920928955078125e-07
+    },
+    {
+      "dataset": "mvtec_ad",
+      "category": "tile",
+      "window": "2",
+      "numpy_smoothing_max_abs": 5.960464477539063e-08
+    },
+    {
+      "dataset": "mvtec_ad",
+      "category": "tile",
+      "window": "3",
+      "numpy_smoothing_max_abs": 1.1920928955078125e-07
+    },
+    {
+      "dataset": "mvtec_ad",
+      "category": "tile",
+      "window": "4",
+      "numpy_smoothing_max_abs": 1.1920928955078125e-07
+    },
+    {
+      "dataset": "mvtec_ad",
+      "category": "tile",
+      "window": "5",
+      "numpy_smoothing_max_abs": 1.1920928955078125e-07
+    },
+    {
+      "dataset": "mvtec_ad",
+      "category": "tile",
+      "window": "6",
+      "numpy_smoothing_max_abs": 1.1920928955078125e-07
+    },
+    {
+      "dataset": "mvtec_ad",
+      "category": "tile",
+      "window": "7",
+      "numpy_smoothing_max_abs": 1.1920928955078125e-07
+    },
+    {
+      "dataset": "mvtec_ad",
+      "category": "tile",
+      "window": "8",
+      "numpy_smoothing_max_abs": 1.1920928955078125e-07
+    },
+    {
+      "dataset": "mvtec_ad",
+      "category": "tile",
+      "window": "9",
+      "numpy_smoothing_max_abs": 1.1920928955078125e-07
+    },
+    {
+      "dataset": "mvtec_ad",
+      "category": "tile",
+      "window": "full",
+      "numpy_smoothing_max_abs": 1.1920928955078125e-07
+    },
+    {
+      "dataset": "mvtec_ad",
+      "category": "toothbrush",
+      "window": "w/o",
+      "numpy_smoothing_max_abs": 0.0
+    },
+    {
+      "dataset": "mvtec_ad",
+      "category": "toothbrush",
+      "window": "multi",
+      "numpy_smoothing_max_abs": 5.960464477539063e-08
+    },
+    {
+      "dataset": "mvtec_ad",
+      "category": "toothbrush",
+      "window": "2",
+      "numpy_smoothing_max_abs": 5.960464477539063e-08
+    },
+    {
+      "dataset": "mvtec_ad",
+      "category": "toothbrush",
+      "window": "3",
+      "numpy_smoothing_max_abs": 1.1920928955078125e-07
+    },
+    {
+      "dataset": "mvtec_ad",
+      "category": "toothbrush",
+      "window": "4",
+      "numpy_smoothing_max_abs": 1.1920928955078125e-07
+    },
+    {
+      "dataset": "mvtec_ad",
+      "category": "toothbrush",
+      "window": "5",
+      "numpy_smoothing_max_abs": 5.960464477539063e-08
+    },
+    {
+      "dataset": "mvtec_ad",
+      "category": "toothbrush",
+      "window": "6",
+      "numpy_smoothing_max_abs": 5.960464477539063e-08
+    },
+    {
+      "dataset": "mvtec_ad",
+      "category": "toothbrush",
+      "window": "7",
+      "numpy_smoothing_max_abs": 5.960464477539063e-08
+    },
+    {
+      "dataset": "mvtec_ad",
+      "category": "toothbrush",
+      "window": "8",
+      "numpy_smoothing_max_abs": 5.960464477539063e-08
+    },
+    {
+      "dataset": "mvtec_ad",
+      "category": "toothbrush",
+      "window": "9",
+      "numpy_smoothing_max_abs": 1.1920928955078125e-07
+    },
+    {
+      "dataset": "mvtec_ad",
+      "category": "toothbrush",
+      "window": "full",
+      "numpy_smoothing_max_abs": 5.960464477539063e-08
+    },
+    {
+      "dataset": "mvtec_ad",
+      "category": "transistor",
+      "window": "w/o",
+      "numpy_smoothing_max_abs": 0.0
+    },
+    {
+      "dataset": "mvtec_ad",
+      "category": "transistor",
+      "window": "multi",
+      "numpy_smoothing_max_abs": 5.960464477539063e-08
+    },
+    {
+      "dataset": "mvtec_ad",
+      "category": "transistor",
+      "window": "2",
+      "numpy_smoothing_max_abs": 5.960464477539063e-08
+    },
+    {
+      "dataset": "mvtec_ad",
+      "category": "transistor",
+      "window": "3",
+      "numpy_smoothing_max_abs": 5.960464477539063e-08
+    },
+    {
+      "dataset": "mvtec_ad",
+      "category": "transistor",
+      "window": "4",
+      "numpy_smoothing_max_abs": 5.960464477539063e-08
+    },
+    {
+      "dataset": "mvtec_ad",
+      "category": "transistor",
+      "window": "5",
+      "numpy_smoothing_max_abs": 5.960464477539063e-08
+    },
+    {
+      "dataset": "mvtec_ad",
+      "category": "transistor",
+      "window": "6",
+      "numpy_smoothing_max_abs": 5.960464477539063e-08
+    },
+    {
+      "dataset": "mvtec_ad",
+      "category": "transistor",
+      "window": "7",
+      "numpy_smoothing_max_abs": 5.960464477539063e-08
+    },
+    {
+      "dataset": "mvtec_ad",
+      "category": "transistor",
+      "window": "8",
+      "numpy_smoothing_max_abs": 5.960464477539063e-08
+    },
+    {
+      "dataset": "mvtec_ad",
+      "category": "transistor",
+      "window": "9",
+      "numpy_smoothing_max_abs": 5.960464477539063e-08
+    },
+    {
+      "dataset": "mvtec_ad",
+      "category": "transistor",
+      "window": "full",
+      "numpy_smoothing_max_abs": 5.960464477539063e-08
+    },
+    {
+      "dataset": "mvtec_ad",
+      "category": "wood",
+      "window": "w/o",
+      "numpy_smoothing_max_abs": 0.0
+    },
+    {
+      "dataset": "mvtec_ad",
+      "category": "wood",
+      "window": "multi",
+      "numpy_smoothing_max_abs": 1.1920928955078125e-07
+    },
+    {
+      "dataset": "mvtec_ad",
+      "category": "wood",
+      "window": "2",
+      "numpy_smoothing_max_abs": 5.960464477539063e-08
+    },
+    {
+      "dataset": "mvtec_ad",
+      "category": "wood",
+      "window": "3",
+      "numpy_smoothing_max_abs": 1.1920928955078125e-07
+    },
+    {
+      "dataset": "mvtec_ad",
+      "category": "wood",
+      "window": "4",
+      "numpy_smoothing_max_abs": 5.960464477539063e-08
+    },
+    {
+      "dataset": "mvtec_ad",
+      "category": "wood",
+      "window": "5",
+      "numpy_smoothing_max_abs": 5.960464477539063e-08
+    },
+    {
+      "dataset": "mvtec_ad",
+      "category": "wood",
+      "window": "6",
+      "numpy_smoothing_max_abs": 1.1920928955078125e-07
+    },
+    {
+      "dataset": "mvtec_ad",
+      "category": "wood",
+      "window": "7",
+      "numpy_smoothing_max_abs": 1.1920928955078125e-07
+    },
+    {
+      "dataset": "mvtec_ad",
+      "category": "wood",
+      "window": "8",
+      "numpy_smoothing_max_abs": 1.1920928955078125e-07
+    },
+    {
+      "dataset": "mvtec_ad",
+      "category": "wood",
+      "window": "9",
+      "numpy_smoothing_max_abs": 1.1920928955078125e-07
+    },
+    {
+      "dataset": "mvtec_ad",
+      "category": "wood",
+      "window": "full",
+      "numpy_smoothing_max_abs": 1.1920928955078125e-07
+    },
+    {
+      "dataset": "mvtec_ad",
+      "category": "zipper",
+      "window": "w/o",
+      "numpy_smoothing_max_abs": 0.0
+    },
+    {
+      "dataset": "mvtec_ad",
+      "category": "zipper",
+      "window": "multi",
+      "numpy_smoothing_max_abs": 5.960464477539063e-08
+    },
+    {
+      "dataset": "mvtec_ad",
+      "category": "zipper",
+      "window": "2",
+      "numpy_smoothing_max_abs": 5.960464477539063e-08
+    },
+    {
+      "dataset": "mvtec_ad",
+      "category": "zipper",
+      "window": "3",
+      "numpy_smoothing_max_abs": 1.1920928955078125e-07
+    },
+    {
+      "dataset": "mvtec_ad",
+      "category": "zipper",
+      "window": "4",
+      "numpy_smoothing_max_abs": 5.960464477539063e-08
+    },
+    {
+      "dataset": "mvtec_ad",
+      "category": "zipper",
+      "window": "5",
+      "numpy_smoothing_max_abs": 5.960464477539063e-08
+    },
+    {
+      "dataset": "mvtec_ad",
+      "category": "zipper",
+      "window": "6",
+      "numpy_smoothing_max_abs": 1.1920928955078125e-07
+    },
+    {
+      "dataset": "mvtec_ad",
+      "category": "zipper",
+      "window": "7",
+      "numpy_smoothing_max_abs": 5.960464477539063e-08
+    },
+    {
+      "dataset": "mvtec_ad",
+      "category": "zipper",
+      "window": "8",
+      "numpy_smoothing_max_abs": 1.1920928955078125e-07
+    },
+    {
+      "dataset": "mvtec_ad",
+      "category": "zipper",
+      "window": "9",
+      "numpy_smoothing_max_abs": 5.960464477539063e-08
+    },
+    {
+      "dataset": "mvtec_ad",
+      "category": "zipper",
+      "window": "full",
+      "numpy_smoothing_max_abs": 8.940696716308594e-08
+    },
+    {
+      "dataset": "visa",
+      "category": "candle",
+      "window": "w/o",
+      "numpy_smoothing_max_abs": 0.0
+    },
+    {
+      "dataset": "visa",
+      "category": "candle",
+      "window": "multi",
+      "numpy_smoothing_max_abs": 5.960464477539063e-08
+    },
+    {
+      "dataset": "visa",
+      "category": "candle",
+      "window": "2",
+      "numpy_smoothing_max_abs": 5.960464477539063e-08
+    },
+    {
+      "dataset": "visa",
+      "category": "candle",
+      "window": "3",
+      "numpy_smoothing_max_abs": 5.960464477539063e-08
+    },
+    {
+      "dataset": "visa",
+      "category": "candle",
+      "window": "4",
+      "numpy_smoothing_max_abs": 5.960464477539063e-08
+    },
+    {
+      "dataset": "visa",
+      "category": "candle",
+      "window": "5",
+      "numpy_smoothing_max_abs": 5.960464477539063e-08
+    },
+    {
+      "dataset": "visa",
+      "category": "candle",
+      "window": "6",
+      "numpy_smoothing_max_abs": 5.960464477539063e-08
+    },
+    {
+      "dataset": "visa",
+      "category": "candle",
+      "window": "7",
+      "numpy_smoothing_max_abs": 5.960464477539063e-08
+    },
+    {
+      "dataset": "visa",
+      "category": "candle",
+      "window": "8",
+      "numpy_smoothing_max_abs": 1.1920928955078125e-07
+    },
+    {
+      "dataset": "visa",
+      "category": "candle",
+      "window": "9",
+      "numpy_smoothing_max_abs": 5.960464477539063e-08
+    },
+    {
+      "dataset": "visa",
+      "category": "candle",
+      "window": "full",
+      "numpy_smoothing_max_abs": 5.960464477539063e-08
+    },
+    {
+      "dataset": "visa",
+      "category": "capsules",
+      "window": "w/o",
+      "numpy_smoothing_max_abs": 0.0
+    },
+    {
+      "dataset": "visa",
+      "category": "capsules",
+      "window": "multi",
+      "numpy_smoothing_max_abs": 5.960464477539063e-08
+    },
+    {
+      "dataset": "visa",
+      "category": "capsules",
+      "window": "2",
+      "numpy_smoothing_max_abs": 5.960464477539063e-08
+    },
+    {
+      "dataset": "visa",
+      "category": "capsules",
+      "window": "3",
+      "numpy_smoothing_max_abs": 5.960464477539063e-08
+    },
+    {
+      "dataset": "visa",
+      "category": "capsules",
+      "window": "4",
+      "numpy_smoothing_max_abs": 5.960464477539063e-08
+    },
+    {
+      "dataset": "visa",
+      "category": "capsules",
+      "window": "5",
+      "numpy_smoothing_max_abs": 5.960464477539063e-08
+    },
+    {
+      "dataset": "visa",
+      "category": "capsules",
+      "window": "6",
+      "numpy_smoothing_max_abs": 5.960464477539063e-08
+    },
+    {
+      "dataset": "visa",
+      "category": "capsules",
+      "window": "7",
+      "numpy_smoothing_max_abs": 1.1920928955078125e-07
+    },
+    {
+      "dataset": "visa",
+      "category": "capsules",
+      "window": "8",
+      "numpy_smoothing_max_abs": 5.960464477539063e-08
+    },
+    {
+      "dataset": "visa",
+      "category": "capsules",
+      "window": "9",
+      "numpy_smoothing_max_abs": 5.960464477539063e-08
+    },
+    {
+      "dataset": "visa",
+      "category": "capsules",
+      "window": "full",
+      "numpy_smoothing_max_abs": 4.470348358154297e-08
+    },
+    {
+      "dataset": "visa",
+      "category": "cashew",
+      "window": "w/o",
+      "numpy_smoothing_max_abs": 0.0
+    },
+    {
+      "dataset": "visa",
+      "category": "cashew",
+      "window": "multi",
+      "numpy_smoothing_max_abs": 5.960464477539063e-08
+    },
+    {
+      "dataset": "visa",
+      "category": "cashew",
+      "window": "2",
+      "numpy_smoothing_max_abs": 5.960464477539063e-08
+    },
+    {
+      "dataset": "visa",
+      "category": "cashew",
+      "window": "3",
+      "numpy_smoothing_max_abs": 1.1920928955078125e-07
+    },
+    {
+      "dataset": "visa",
+      "category": "cashew",
+      "window": "4",
+      "numpy_smoothing_max_abs": 1.1920928955078125e-07
+    },
+    {
+      "dataset": "visa",
+      "category": "cashew",
+      "window": "5",
+      "numpy_smoothing_max_abs": 5.960464477539063e-08
+    },
+    {
+      "dataset": "visa",
+      "category": "cashew",
+      "window": "6",
+      "numpy_smoothing_max_abs": 1.1920928955078125e-07
+    },
+    {
+      "dataset": "visa",
+      "category": "cashew",
+      "window": "7",
+      "numpy_smoothing_max_abs": 5.960464477539063e-08
+    },
+    {
+      "dataset": "visa",
+      "category": "cashew",
+      "window": "8",
+      "numpy_smoothing_max_abs": 1.1920928955078125e-07
+    },
+    {
+      "dataset": "visa",
+      "category": "cashew",
+      "window": "9",
+      "numpy_smoothing_max_abs": 5.960464477539063e-08
+    },
+    {
+      "dataset": "visa",
+      "category": "cashew",
+      "window": "full",
+      "numpy_smoothing_max_abs": 8.940696716308594e-08
+    },
+    {
+      "dataset": "visa",
+      "category": "chewinggum",
+      "window": "w/o",
+      "numpy_smoothing_max_abs": 0.0
+    },
+    {
+      "dataset": "visa",
+      "category": "chewinggum",
+      "window": "multi",
+      "numpy_smoothing_max_abs": 1.1920928955078125e-07
+    },
+    {
+      "dataset": "visa",
+      "category": "chewinggum",
+      "window": "2",
+      "numpy_smoothing_max_abs": 5.960464477539063e-08
+    },
+    {
+      "dataset": "visa",
+      "category": "chewinggum",
+      "window": "3",
+      "numpy_smoothing_max_abs": 1.1920928955078125e-07
+    },
+    {
+      "dataset": "visa",
+      "category": "chewinggum",
+      "window": "4",
+      "numpy_smoothing_max_abs": 5.960464477539063e-08
+    },
+    {
+      "dataset": "visa",
+      "category": "chewinggum",
+      "window": "5",
+      "numpy_smoothing_max_abs": 5.960464477539063e-08
+    },
+    {
+      "dataset": "visa",
+      "category": "chewinggum",
+      "window": "6",
+      "numpy_smoothing_max_abs": 1.1920928955078125e-07
+    },
+    {
+      "dataset": "visa",
+      "category": "chewinggum",
+      "window": "7",
+      "numpy_smoothing_max_abs": 1.1920928955078125e-07
+    },
+    {
+      "dataset": "visa",
+      "category": "chewinggum",
+      "window": "8",
+      "numpy_smoothing_max_abs": 1.1920928955078125e-07
+    },
+    {
+      "dataset": "visa",
+      "category": "chewinggum",
+      "window": "9",
+      "numpy_smoothing_max_abs": 5.960464477539063e-08
+    },
+    {
+      "dataset": "visa",
+      "category": "chewinggum",
+      "window": "full",
+      "numpy_smoothing_max_abs": 8.940696716308594e-08
+    },
+    {
+      "dataset": "visa",
+      "category": "fryum",
+      "window": "w/o",
+      "numpy_smoothing_max_abs": 0.0
+    },
+    {
+      "dataset": "visa",
+      "category": "fryum",
+      "window": "multi",
+      "numpy_smoothing_max_abs": 1.1920928955078125e-07
+    },
+    {
+      "dataset": "visa",
+      "category": "fryum",
+      "window": "2",
+      "numpy_smoothing_max_abs": 5.960464477539063e-08
+    },
+    {
+      "dataset": "visa",
+      "category": "fryum",
+      "window": "3",
+      "numpy_smoothing_max_abs": 5.960464477539063e-08
+    },
+    {
+      "dataset": "visa",
+      "category": "fryum",
+      "window": "4",
+      "numpy_smoothing_max_abs": 5.960464477539063e-08
+    },
+    {
+      "dataset": "visa",
+      "category": "fryum",
+      "window": "5",
+      "numpy_smoothing_max_abs": 5.960464477539063e-08
+    },
+    {
+      "dataset": "visa",
+      "category": "fryum",
+      "window": "6",
+      "numpy_smoothing_max_abs": 5.960464477539063e-08
+    },
+    {
+      "dataset": "visa",
+      "category": "fryum",
+      "window": "7",
+      "numpy_smoothing_max_abs": 1.1920928955078125e-07
+    },
+    {
+      "dataset": "visa",
+      "category": "fryum",
+      "window": "8",
+      "numpy_smoothing_max_abs": 5.960464477539063e-08
+    },
+    {
+      "dataset": "visa",
+      "category": "fryum",
+      "window": "9",
+      "numpy_smoothing_max_abs": 5.960464477539063e-08
+    },
+    {
+      "dataset": "visa",
+      "category": "fryum",
+      "window": "full",
+      "numpy_smoothing_max_abs": 5.960464477539063e-08
+    },
+    {
+      "dataset": "visa",
+      "category": "macaroni1",
+      "window": "w/o",
+      "numpy_smoothing_max_abs": 0.0
+    },
+    {
+      "dataset": "visa",
+      "category": "macaroni1",
+      "window": "multi",
+      "numpy_smoothing_max_abs": 1.1920928955078125e-07
+    },
+    {
+      "dataset": "visa",
+      "category": "macaroni1",
+      "window": "2",
+      "numpy_smoothing_max_abs": 5.960464477539063e-08
+    },
+    {
+      "dataset": "visa",
+      "category": "macaroni1",
+      "window": "3",
+      "numpy_smoothing_max_abs": 5.960464477539063e-08
+    },
+    {
+      "dataset": "visa",
+      "category": "macaroni1",
+      "window": "4",
+      "numpy_smoothing_max_abs": 5.960464477539063e-08
+    },
+    {
+      "dataset": "visa",
+      "category": "macaroni1",
+      "window": "5",
+      "numpy_smoothing_max_abs": 5.960464477539063e-08
+    },
+    {
+      "dataset": "visa",
+      "category": "macaroni1",
+      "window": "6",
+      "numpy_smoothing_max_abs": 5.960464477539063e-08
+    },
+    {
+      "dataset": "visa",
+      "category": "macaroni1",
+      "window": "7",
+      "numpy_smoothing_max_abs": 1.1920928955078125e-07
+    },
+    {
+      "dataset": "visa",
+      "category": "macaroni1",
+      "window": "8",
+      "numpy_smoothing_max_abs": 5.960464477539063e-08
+    },
+    {
+      "dataset": "visa",
+      "category": "macaroni1",
+      "window": "9",
+      "numpy_smoothing_max_abs": 5.960464477539063e-08
+    },
+    {
+      "dataset": "visa",
+      "category": "macaroni1",
+      "window": "full",
+      "numpy_smoothing_max_abs": 8.940696716308594e-08
+    },
+    {
+      "dataset": "visa",
+      "category": "macaroni2",
+      "window": "w/o",
+      "numpy_smoothing_max_abs": 0.0
+    },
+    {
+      "dataset": "visa",
+      "category": "macaroni2",
+      "window": "multi",
+      "numpy_smoothing_max_abs": 8.940696716308594e-08
+    },
+    {
+      "dataset": "visa",
+      "category": "macaroni2",
+      "window": "2",
+      "numpy_smoothing_max_abs": 2.9802322387695312e-08
+    },
+    {
+      "dataset": "visa",
+      "category": "macaroni2",
+      "window": "3",
+      "numpy_smoothing_max_abs": 5.960464477539063e-08
+    },
+    {
+      "dataset": "visa",
+      "category": "macaroni2",
+      "window": "4",
+      "numpy_smoothing_max_abs": 5.960464477539063e-08
+    },
+    {
+      "dataset": "visa",
+      "category": "macaroni2",
+      "window": "5",
+      "numpy_smoothing_max_abs": 5.960464477539063e-08
+    },
+    {
+      "dataset": "visa",
+      "category": "macaroni2",
+      "window": "6",
+      "numpy_smoothing_max_abs": 5.960464477539063e-08
+    },
+    {
+      "dataset": "visa",
+      "category": "macaroni2",
+      "window": "7",
+      "numpy_smoothing_max_abs": 5.960464477539063e-08
+    },
+    {
+      "dataset": "visa",
+      "category": "macaroni2",
+      "window": "8",
+      "numpy_smoothing_max_abs": 5.960464477539063e-08
+    },
+    {
+      "dataset": "visa",
+      "category": "macaroni2",
+      "window": "9",
+      "numpy_smoothing_max_abs": 5.960464477539063e-08
+    },
+    {
+      "dataset": "visa",
+      "category": "macaroni2",
+      "window": "full",
+      "numpy_smoothing_max_abs": 8.940696716308594e-08
+    },
+    {
+      "dataset": "visa",
+      "category": "pcb1",
+      "window": "w/o",
+      "numpy_smoothing_max_abs": 0.0
+    },
+    {
+      "dataset": "visa",
+      "category": "pcb1",
+      "window": "multi",
+      "numpy_smoothing_max_abs": 1.1920928955078125e-07
+    },
+    {
+      "dataset": "visa",
+      "category": "pcb1",
+      "window": "2",
+      "numpy_smoothing_max_abs": 5.960464477539063e-08
+    },
+    {
+      "dataset": "visa",
+      "category": "pcb1",
+      "window": "3",
+      "numpy_smoothing_max_abs": 5.960464477539063e-08
+    },
+    {
+      "dataset": "visa",
+      "category": "pcb1",
+      "window": "4",
+      "numpy_smoothing_max_abs": 5.960464477539063e-08
+    },
+    {
+      "dataset": "visa",
+      "category": "pcb1",
+      "window": "5",
+      "numpy_smoothing_max_abs": 5.960464477539063e-08
+    },
+    {
+      "dataset": "visa",
+      "category": "pcb1",
+      "window": "6",
+      "numpy_smoothing_max_abs": 5.960464477539063e-08
+    },
+    {
+      "dataset": "visa",
+      "category": "pcb1",
+      "window": "7",
+      "numpy_smoothing_max_abs": 1.1920928955078125e-07
+    },
+    {
+      "dataset": "visa",
+      "category": "pcb1",
+      "window": "8",
+      "numpy_smoothing_max_abs": 5.960464477539063e-08
+    },
+    {
+      "dataset": "visa",
+      "category": "pcb1",
+      "window": "9",
+      "numpy_smoothing_max_abs": 5.960464477539063e-08
+    },
+    {
+      "dataset": "visa",
+      "category": "pcb1",
+      "window": "full",
+      "numpy_smoothing_max_abs": 5.960464477539063e-08
+    },
+    {
+      "dataset": "visa",
+      "category": "pcb2",
+      "window": "w/o",
+      "numpy_smoothing_max_abs": 0.0
+    },
+    {
+      "dataset": "visa",
+      "category": "pcb2",
+      "window": "multi",
+      "numpy_smoothing_max_abs": 5.960464477539063e-08
+    },
+    {
+      "dataset": "visa",
+      "category": "pcb2",
+      "window": "2",
+      "numpy_smoothing_max_abs": 5.960464477539063e-08
+    },
+    {
+      "dataset": "visa",
+      "category": "pcb2",
+      "window": "3",
+      "numpy_smoothing_max_abs": 5.960464477539063e-08
+    },
+    {
+      "dataset": "visa",
+      "category": "pcb2",
+      "window": "4",
+      "numpy_smoothing_max_abs": 5.960464477539063e-08
+    },
+    {
+      "dataset": "visa",
+      "category": "pcb2",
+      "window": "5",
+      "numpy_smoothing_max_abs": 5.960464477539063e-08
+    },
+    {
+      "dataset": "visa",
+      "category": "pcb2",
+      "window": "6",
+      "numpy_smoothing_max_abs": 5.960464477539063e-08
+    },
+    {
+      "dataset": "visa",
+      "category": "pcb2",
+      "window": "7",
+      "numpy_smoothing_max_abs": 5.960464477539063e-08
+    },
+    {
+      "dataset": "visa",
+      "category": "pcb2",
+      "window": "8",
+      "numpy_smoothing_max_abs": 1.1920928955078125e-07
+    },
+    {
+      "dataset": "visa",
+      "category": "pcb2",
+      "window": "9",
+      "numpy_smoothing_max_abs": 5.960464477539063e-08
+    },
+    {
+      "dataset": "visa",
+      "category": "pcb2",
+      "window": "full",
+      "numpy_smoothing_max_abs": 5.960464477539063e-08
+    },
+    {
+      "dataset": "visa",
+      "category": "pcb3",
+      "window": "w/o",
+      "numpy_smoothing_max_abs": 0.0
+    },
+    {
+      "dataset": "visa",
+      "category": "pcb3",
+      "window": "multi",
+      "numpy_smoothing_max_abs": 5.960464477539063e-08
+    },
+    {
+      "dataset": "visa",
+      "category": "pcb3",
+      "window": "2",
+      "numpy_smoothing_max_abs": 5.960464477539063e-08
+    },
+    {
+      "dataset": "visa",
+      "category": "pcb3",
+      "window": "3",
+      "numpy_smoothing_max_abs": 5.960464477539063e-08
+    },
+    {
+      "dataset": "visa",
+      "category": "pcb3",
+      "window": "4",
+      "numpy_smoothing_max_abs": 5.960464477539063e-08
+    },
+    {
+      "dataset": "visa",
+      "category": "pcb3",
+      "window": "5",
+      "numpy_smoothing_max_abs": 5.960464477539063e-08
+    },
+    {
+      "dataset": "visa",
+      "category": "pcb3",
+      "window": "6",
+      "numpy_smoothing_max_abs": 5.960464477539063e-08
+    },
+    {
+      "dataset": "visa",
+      "category": "pcb3",
+      "window": "7",
+      "numpy_smoothing_max_abs": 5.960464477539063e-08
+    },
+    {
+      "dataset": "visa",
+      "category": "pcb3",
+      "window": "8",
+      "numpy_smoothing_max_abs": 5.960464477539063e-08
+    },
+    {
+      "dataset": "visa",
+      "category": "pcb3",
+      "window": "9",
+      "numpy_smoothing_max_abs": 5.960464477539063e-08
+    },
+    {
+      "dataset": "visa",
+      "category": "pcb3",
+      "window": "full",
+      "numpy_smoothing_max_abs": 5.960464477539063e-08
+    },
+    {
+      "dataset": "visa",
+      "category": "pcb4",
+      "window": "w/o",
+      "numpy_smoothing_max_abs": 0.0
+    },
+    {
+      "dataset": "visa",
+      "category": "pcb4",
+      "window": "multi",
+      "numpy_smoothing_max_abs": 5.960464477539063e-08
+    },
+    {
+      "dataset": "visa",
+      "category": "pcb4",
+      "window": "2",
+      "numpy_smoothing_max_abs": 5.960464477539063e-08
+    },
+    {
+      "dataset": "visa",
+      "category": "pcb4",
+      "window": "3",
+      "numpy_smoothing_max_abs": 5.960464477539063e-08
+    },
+    {
+      "dataset": "visa",
+      "category": "pcb4",
+      "window": "4",
+      "numpy_smoothing_max_abs": 5.960464477539063e-08
+    },
+    {
+      "dataset": "visa",
+      "category": "pcb4",
+      "window": "5",
+      "numpy_smoothing_max_abs": 5.960464477539063e-08
+    },
+    {
+      "dataset": "visa",
+      "category": "pcb4",
+      "window": "6",
+      "numpy_smoothing_max_abs": 5.960464477539063e-08
+    },
+    {
+      "dataset": "visa",
+      "category": "pcb4",
+      "window": "7",
+      "numpy_smoothing_max_abs": 5.960464477539063e-08
+    },
+    {
+      "dataset": "visa",
+      "category": "pcb4",
+      "window": "8",
+      "numpy_smoothing_max_abs": 5.960464477539063e-08
+    },
+    {
+      "dataset": "visa",
+      "category": "pcb4",
+      "window": "9",
+      "numpy_smoothing_max_abs": 5.960464477539063e-08
+    },
+    {
+      "dataset": "visa",
+      "category": "pcb4",
+      "window": "full",
+      "numpy_smoothing_max_abs": 5.960464477539063e-08
+    },
+    {
+      "dataset": "visa",
+      "category": "pipe_fryum",
+      "window": "w/o",
+      "numpy_smoothing_max_abs": 0.0
+    },
+    {
+      "dataset": "visa",
+      "category": "pipe_fryum",
+      "window": "multi",
+      "numpy_smoothing_max_abs": 1.1920928955078125e-07
+    },
+    {
+      "dataset": "visa",
+      "category": "pipe_fryum",
+      "window": "2",
+      "numpy_smoothing_max_abs": 5.960464477539063e-08
+    },
+    {
+      "dataset": "visa",
+      "category": "pipe_fryum",
+      "window": "3",
+      "numpy_smoothing_max_abs": 1.1920928955078125e-07
+    },
+    {
+      "dataset": "visa",
+      "category": "pipe_fryum",
+      "window": "4",
+      "numpy_smoothing_max_abs": 1.1920928955078125e-07
+    },
+    {
+      "dataset": "visa",
+      "category": "pipe_fryum",
+      "window": "5",
+      "numpy_smoothing_max_abs": 1.1920928955078125e-07
+    },
+    {
+      "dataset": "visa",
+      "category": "pipe_fryum",
+      "window": "6",
+      "numpy_smoothing_max_abs": 1.1920928955078125e-07
+    },
+    {
+      "dataset": "visa",
+      "category": "pipe_fryum",
+      "window": "7",
+      "numpy_smoothing_max_abs": 1.1920928955078125e-07
+    },
+    {
+      "dataset": "visa",
+      "category": "pipe_fryum",
+      "window": "8",
+      "numpy_smoothing_max_abs": 1.1920928955078125e-07
+    },
+    {
+      "dataset": "visa",
+      "category": "pipe_fryum",
+      "window": "9",
+      "numpy_smoothing_max_abs": 1.1920928955078125e-07
+    },
+    {
+      "dataset": "visa",
+      "category": "pipe_fryum",
+      "window": "full",
+      "numpy_smoothing_max_abs": 5.960464477539063e-08
+    }
+  ]
+}

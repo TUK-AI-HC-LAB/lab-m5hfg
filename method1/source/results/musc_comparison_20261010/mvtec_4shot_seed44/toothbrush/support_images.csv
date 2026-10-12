@@ -1,0 +1,5 @@
+image_path,label,sha256,mask_path,mask_sha256
+/home/test/data/mvtec/toothbrush/train/good/026.png,0,a37d9881bfd8d580d3c940aab828e5d538b0f6e10a5fe581f78d178c87899cf2,,
+/home/test/data/mvtec/toothbrush/train/good/033.png,0,4b2167c641a5140b6c60cde2274257844448abd83cf6c6a173ce221bd2c893ce,,
+/home/test/data/mvtec/toothbrush/train/good/034.png,0,5a2b1785d6ffca5bb97d613b56c57183734bd011ad8ec09de75043f9d6610cb5,,
+/home/test/data/mvtec/toothbrush/train/good/044.png,0,57abd2064ad0449144cd00c302120466b6af574913a5be81c10e83ced3a1ee11,,

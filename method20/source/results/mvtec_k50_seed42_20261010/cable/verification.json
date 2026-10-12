@@ -1,0 +1,35 @@
+{
+  "status": "passed",
+  "n_train": 224,
+  "n_images": 150,
+  "all_global_K50_scores_and_neighbors_FP64_checked": true,
+  "max_absolute_score_error": 3.4039993010992475e-05,
+  "metrics_recomputed_from_saved_predictions": true,
+  "rscin_recomputed_exactly": true,
+  "rscin_image_label_SHA_alignment_passed": true,
+  "feature_path": "/home/test/patchcore_results/musc_comparison_20261010/rscin_features/cable/features.npy",
+  "feature_sha256": "84a970793446a328617755ad976bb01915845f21bb9fbb0b311ca92753af78ee",
+  "module_sha256": "c5df4811b385971a15bb2db4473adba9755a15c8acf1e5c802b4ed955e5081c5",
+  "windows": [
+    1,
+    2,
+    3
+  ],
+  "all_input_SHA_rechecked": true,
+  "raw_artifacts": [
+    {
+      "path": "/home/test/spade_results/mvtec_k50_seed42_20261010/cable/predictions.npz",
+      "sha256": "834fd756a617c07ad1bf21d14d8a77eec29c2c63cd8bbff2fd103b0c9649248e"
+    },
+    {
+      "path": "/home/test/spade_results/mvtec_k50_seed42_20261010/cable/train_avgpool.npy",
+      "sha256": "9ba6872e9a5bb23e25d59105cd4cc56e68a0a8474eae67d1917dbc79a1825773"
+    },
+    {
+      "path": "/home/test/spade_results/mvtec_k50_seed42_20261010/cable/test_avgpool.npy",
+      "sha256": "657120589d3cf973b8221d4857ce600568321e67be5eefb72b2cb323656361c0"
+    }
+  ],
+  "seconds": 5.349092746999997,
+  "scope": "Table11 image classification only; pixel maps not required or computed"
+}

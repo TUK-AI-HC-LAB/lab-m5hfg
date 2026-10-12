@@ -1,0 +1,39 @@
+{
+  "status": "completed",
+  "n_images": 100,
+  "config": {
+    "device": "0",
+    "datasets": {
+      "data_path": "/home/test/data/mvtec",
+      "dataset_name": "mvtec_ad",
+      "class_name": "transistor",
+      "img_resize": 518,
+      "divide_num": 1
+    },
+    "models": {
+      "backbone_name": "ViT-L-14-336",
+      "pretrained": "openai",
+      "batch_size": 1,
+      "feature_layers": [
+        5,
+        11,
+        17,
+        23
+      ],
+      "r_list": [
+        1,
+        3,
+        5
+      ]
+    },
+    "testing": {
+      "vis": false,
+      "vis_type": "single_norm",
+      "save_excel": false,
+      "output_dir": "/home/test/patchcore_results/musc_comparison_20261010/rscin_features/transistor"
+    }
+  },
+  "commit": "b76b93da8bd3096a99964a96ae29d46f197a0651",
+  "feature_path": "/home/test/patchcore_results/musc_comparison_20261010/rscin_features/transistor/features.npy",
+  "sha256": "2e06c410dbad310640bcae02a44d9cd40c64ea63042b6958437598c1d6c826c7"
+}

@@ -1,0 +1,5 @@
+image_path,label,sha256,mask_path,mask_sha256
+/home/test/data/VisA_20220922/macaroni2/Data/Images/Normal/0969.JPG,0,7ba161f28ab3fdc417cf5ec35827a513d94adb509c456684b2a567ff4b07a6a1,,
+/home/test/data/VisA_20220922/macaroni2/Data/Images/Normal/0058.JPG,0,cfc7e8571ad3a3f44758a72e66612d5271a66de4d787e234c664aba9f3133093,,
+/home/test/data/VisA_20220922/macaroni2/Data/Images/Normal/0458.JPG,0,5e557636bc0d9f5e2924549a809b1e82b5e38a7caa6d627503e7bdbbf8fda58a,,
+/home/test/data/VisA_20220922/macaroni2/Data/Images/Normal/0250.JPG,0,2079bbeacfb2e90e96705d04d4bc67a5c7b0ffbad8fe33f068a27e90cca99607,,

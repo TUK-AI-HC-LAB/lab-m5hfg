@@ -1,0 +1,3 @@
+dataset,category,rscin,n_train,n_images,image_auroc,image_f1_max,image_ap
+mvtec,toothbrush,w/o,60,42,0.7694444444444445,0.8787878787878789,0.880599450129502
+mvtec,toothbrush,w,60,42,0.763888888888889,0.9032258064516129,0.8769268203346439

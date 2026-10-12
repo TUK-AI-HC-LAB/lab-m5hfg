@@ -1,0 +1,16 @@
+{
+  "dataset": "visa",
+  "shot": "4shot",
+  "seed": 42,
+  "category": "macaroni1",
+  "n_train": 900,
+  "n_support": 4,
+  "n_images": 200,
+  "image_auroc": 0.7602000000000001,
+  "image_f1_max": 0.7360000000000001,
+  "image_ap": 0.7829917964929402,
+  "pixel_auroc": 0.9840552573813228,
+  "pixel_f1_max": 0.24795620956849365,
+  "pixel_ap": 0.15073068887615895,
+  "aupro": 0.8703192156092673
+}

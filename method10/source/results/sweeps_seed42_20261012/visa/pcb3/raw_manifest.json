@@ -1,0 +1,6 @@
+{
+  "path": "/home/test/musc_results/sweeps_seed42_20261012/visa/pcb3/interval_patch_predictions.npz",
+  "sha256": "790e6038115d9c31e02319a6a9709c138593688daa34cfd6166017886f359231",
+  "baseline_manifest": "/mnt/c/Users/test/Desktop/Codex/lab-m5hfg/method10/source/results/tables3_7_seed42_20261012/visa/pcb3/raw_manifest.json",
+  "baseline_raw_sha256": "bdec742f8f1e8857b2e5485399f151c95aabe5240e2e1757158eeeb89c90697e"
+}

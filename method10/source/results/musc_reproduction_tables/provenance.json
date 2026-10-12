@@ -77,6 +77,38 @@
       "sha256": "efa897e723e86710b710def81e002f58768c0690e6e948f6c09d3031d5070751"
     },
     {
+      "path": "/mnt/c/Users/test/Desktop/Codex/lab-m5hfg/method10/source/results/tables3_7_seed42_20261012/verification.json",
+      "sha256": "cd6884d672100e6089bccd55cb1d629df703a9e760f78ffdb9126410171591fe"
+    },
+    {
+      "path": "/mnt/c/Users/test/Desktop/Codex/lab-m5hfg/method10/source/results/tables3_7_seed42_20261012/environment.json",
+      "sha256": "c18f9ab84269cc2d5e1c8849abca624fc132c4dbc8299c651b7a5e61fe49b036"
+    },
+    {
+      "path": "/mnt/c/Users/test/Desktop/Codex/lab-m5hfg/method10/source/results/tables3_7_seed42_20261012/config.json",
+      "sha256": "2b60ecea091a87c9fc182449d0b03ea6b95c7faa6f9051e14535ea761da776ba"
+    },
+    {
+      "path": "/mnt/c/Users/test/Desktop/Codex/lab-m5hfg/method10/source/results/tables3_7_seed42_20261012/category_metrics.csv",
+      "sha256": "bb864c019b71b5a09cff341a2b94a7534710d6416b9040c426428f8b3a432bfd"
+    },
+    {
+      "path": "/mnt/c/Users/test/Desktop/Codex/lab-m5hfg/method10/source/results/tables3_7_seed42_20261012/mean_metrics.csv",
+      "sha256": "53564699fe121ece804b4312db5c1a11af1de284ea6b6dd3965291f0aa16b80d"
+    },
+    {
+      "path": "/mnt/c/Users/test/Desktop/Codex/lab-m5hfg/method10/source/results/tables3_7_seed42_20261012/benchmark_summary.csv",
+      "sha256": "b50bb1173575798912b8ea5d9d99c9a7e92a89093a27c5da848428e7bfbc921e"
+    },
+    {
+      "path": "/mnt/c/Users/test/Desktop/Codex/lab-m5hfg/method10/source/results/tables3_7_seed42_20261012/timing_samples.csv",
+      "sha256": "b5bdfd13e4ab0106953d58f429ceaf5013b6cdce615ea72e48ac6911f929b383"
+    },
+    {
+      "path": "/mnt/c/Users/test/Desktop/Codex/lab-m5hfg/method10/source/results/tables3_7_seed42_20261012/benchmark_verification.json",
+      "sha256": "5537f4f9dacf54e288cfa5c845e8937f2a34ae7f40274569deebf565c25225ed"
+    },
+    {
       "path": "/mnt/c/Users/test/Desktop/Codex/lab-m5hfg/method15/source/results/mvtec_seed42_20261007/verification.json",
       "sha256": "c245810d1158792de970b503aa7cc4fd5d252bef1f61a1c3c0fb6282f1ccdd7a"
     },
@@ -111,6 +143,22 @@
     {
       "path": "/mnt/c/Users/test/Desktop/Codex/lab-m5hfg/method16/source/results/mvtec_public_20261007/environment.json",
       "sha256": "394e00ec61c95a7750f8acb979974a6b71e2e9d81ce3ed7341f26c9b6d54f22a"
+    },
+    {
+      "path": "/mnt/c/Users/test/Desktop/Codex/lab-m5hfg/method16/source/results/remaining_mvtec32_btad4_20261010/verification.json",
+      "sha256": "6d032b2dda5957b7d5110b895b623435420b902ab47c9cc07dfc2834be831818"
+    },
+    {
+      "path": "/mnt/c/Users/test/Desktop/Codex/lab-m5hfg/method16/source/results/remaining_mvtec32_btad4_20261010/mean_metrics.csv",
+      "sha256": "46ad57c38f7c114d57fea7cdcf910452bc4ab0958bc166cb6a9c5d26cc9e8bf4"
+    },
+    {
+      "path": "/mnt/c/Users/test/Desktop/Codex/lab-m5hfg/method16/source/results/remaining_mvtec32_btad4_20261010/round_metrics.csv",
+      "sha256": "42d5501d0cca5236c0f0481ac45f6a9869f975885552effeca541e96c3b3355c"
+    },
+    {
+      "path": "/mnt/c/Users/test/Desktop/Codex/lab-m5hfg/method16/source/results/remaining_mvtec32_btad4_20261010/environment.json",
+      "sha256": "cdfbd5b4d07305ebfc2b8245b713f36623cd55a446d36bbf12bd45dfb88d67c1"
     },
     {
       "path": "/mnt/c/Users/test/Desktop/Codex/lab-m5hfg/method17/source/results/mvtec_pvig_fp32_20261008/verification.json",
@@ -177,6 +225,22 @@
       "sha256": "a79dc0920c41448cebd0504b7673b3a2efbcbf1e4d37cbb2ae43f1f46d5ce65c"
     },
     {
+      "path": "/mnt/c/Users/test/Desktop/Codex/lab-m5hfg/method20/source/results/mvtec_k50_seed42_20261010/verification.json",
+      "sha256": "6adaa5e973d7034e3ea2f22fb6db043562c9f5ebd6c180b8d7ad4b8abb20cbd8"
+    },
+    {
+      "path": "/mnt/c/Users/test/Desktop/Codex/lab-m5hfg/method20/source/results/mvtec_k50_seed42_20261010/rscin_mean_metrics.csv",
+      "sha256": "e205ff49ae77368c380c6b9c4d4ea811b049dcf62c2df901df0a4e407b93a42f"
+    },
+    {
+      "path": "/mnt/c/Users/test/Desktop/Codex/lab-m5hfg/method20/source/results/mvtec_k50_seed42_20261010/rscin_category_metrics.csv",
+      "sha256": "a6b708445836b8badf8284bb24852f77f6d5cfc3900da006fac32b4cf6f4537d"
+    },
+    {
+      "path": "/mnt/c/Users/test/Desktop/Codex/lab-m5hfg/method20/source/results/mvtec_k50_seed42_20261010/environment.json",
+      "sha256": "396c0ad2dd35fdabd169511ed656b2f59f76f18b05a41710910e2fc5daf8adba"
+    },
+    {
       "path": "/mnt/c/Users/test/Desktop/Codex/lab-m5hfg/method21/source/results/btad_res18_seed0_20261008/verification.json",
       "sha256": "d4bd06c209e4d15ebfcb0c0fcf498f253f8342cf16af750dd02829a216b3f315"
     },
@@ -193,10 +257,78 @@
       "sha256": "d1026b56927bc52b796c4b1519bfe39c7908163d1dbcc052afa00f85c2dfc3c9"
     },
     {
+      "path": "/mnt/c/Users/test/Desktop/Codex/lab-m5hfg/method22/source/results/mvtec_scratch3way_seed42_20261008/verification.json",
+      "sha256": "ec81077b5addb9a5eef4f7f3c85085f68e398358a8ddffcc3b7cbbfb65459d4a"
+    },
+    {
+      "path": "/mnt/c/Users/test/Desktop/Codex/lab-m5hfg/method22/source/results/mvtec_scratch3way_seed42_20261008/mean_metrics.csv",
+      "sha256": "cf3e8829ab6620387fdbfc2fb49eed810ae0ec9e9960286f0d197fc6f3ebb88d"
+    },
+    {
+      "path": "/mnt/c/Users/test/Desktop/Codex/lab-m5hfg/method22/source/results/mvtec_scratch3way_seed42_20261008/category_metrics.csv",
+      "sha256": "353a776c735d046c381c086f26e4c3090566e886e77584ccd2bd0156f2859763"
+    },
+    {
       "path": "/mnt/c/Users/test/Desktop/Codex/lab-m5hfg/method22/source/results/mvtec_scratch3way_seed42_20261008/environment.json",
-      "sha256": "67d451b8b77c6249f15d856f0e3818cea3d67ae342168ba73e661c470267a46e"
+      "sha256": "d64f29e836ae3bad44944586c3cbf5cc2a48fc91fe64355fe6c9ab3eda84921f"
+    },
+    {
+      "path": "/mnt/c/Users/test/Desktop/Codex/lab-m5hfg/method23/source/results/btad_wr50_d550_seed1024_20261010/verification.json",
+      "sha256": "4004ea4d456ce4b9fad3c666200b8231456ec1c9e0e890333a85eabb7d5290b7"
+    },
+    {
+      "path": "/mnt/c/Users/test/Desktop/Codex/lab-m5hfg/method23/source/results/btad_wr50_d550_seed1024_20261010/mean_metrics.csv",
+      "sha256": "b6a486b30bb38dc4171a1fb6cb8d1ef7676551445107e0cee33a4bd865a42191"
+    },
+    {
+      "path": "/mnt/c/Users/test/Desktop/Codex/lab-m5hfg/method23/source/results/btad_wr50_d550_seed1024_20261010/category_metrics.csv",
+      "sha256": "570552ea9971d3542fd594db88b5f92f56874c83b94091e1486fd59c4f81c93b"
+    },
+    {
+      "path": "/mnt/c/Users/test/Desktop/Codex/lab-m5hfg/method23/source/results/btad_wr50_d550_seed1024_20261010/environment.json",
+      "sha256": "68aa5ae6e8513a42589c439c379cdff858f242142fe2d3f40f1cb50b5a9d57bd"
+    },
+    {
+      "path": "/mnt/c/Users/test/Desktop/Codex/lab-m5hfg/method7/source/results/winclip_mvtec/zero_shot/results.csv",
+      "sha256": "8bbc56ba20e950cc2a0236df0c7c14357a0c3dd16b852936c04923e5b567669f"
+    },
+    {
+      "path": "/mnt/c/Users/test/Desktop/Codex/lab-m5hfg/method7/source/results/winclip_mvtec/four_shot/results.csv",
+      "sha256": "acc76e2ecfff75461146018914441bd0d4b6eaa918121f7c3a89ffd475828a3d"
+    },
+    {
+      "path": "/mnt/c/Users/test/Desktop/Codex/lab-m5hfg/method7/source/results/winclip_visa/zero_shot/results.csv",
+      "sha256": "c7b462867f09e662618dc5f426b80f27c7b30ecc78918a5e733d3bb6814d482a"
+    },
+    {
+      "path": "/mnt/c/Users/test/Desktop/Codex/lab-m5hfg/method7/source/results/winclip_visa/four_shot/results.csv",
+      "sha256": "6f2bfd80816fcb81b328f7196b7df442e38118f170a029caabe05e5db8259f1f"
+    },
+    {
+      "path": "/mnt/c/Users/test/Desktop/Codex/lab-m5hfg/method10/source/results/musc_rscin_existing_20261010/mean_metrics.csv",
+      "sha256": "434aefa735b43122a3cc373236b63a3293641b1c4792647cfca5bec013a031d6"
+    },
+    {
+      "path": "/mnt/c/Users/test/Desktop/Codex/lab-m5hfg/method10/source/results/musc_rscin_existing_20261010/verification.json",
+      "sha256": "646bf3d50e884b507c4a19d23ef4dbb76d8ef45f720299c2f4ce1a08c8083553"
+    },
+    {
+      "path": "/mnt/c/Users/test/Desktop/Codex/lab-m5hfg/method1/source/results/musc_comparison_20261010/verification.json",
+      "sha256": "5d47f775663a3c520413c4b8013fa70902b058eb622cedc72c8cf97421ca590f"
+    },
+    {
+      "path": "/mnt/c/Users/test/Desktop/Codex/lab-m5hfg/method1/source/results/musc_comparison_20261010/aggregates.csv",
+      "sha256": "1c129a77fa0fe337db9cc1205c6000625dd280d99458d50a80e373496254ea1c"
+    },
+    {
+      "path": "/mnt/c/Users/test/Desktop/Codex/lab-m5hfg/method1/source/results/musc_comparison_20261010/rscin_mean_metrics.csv",
+      "sha256": "1c1bf38eeb9e687e5a9ef37e23d3668f1bf5f15a6fd915c2b761c90f42bde549"
+    },
+    {
+      "path": "/mnt/c/Users/test/Desktop/Codex/lab-m5hfg/method1/source/results/musc_comparison_20261010/environment.json",
+      "sha256": "af580542ec19365281420aefb368abb183303114115674d167bb87ef1998d32f"
     }
   ],
   "conditions_verified": false,
-  "aggregation": "unweighted category mean: MVTec 15, VisA 12, BTAD 3; 4-shot mean and sample std across seeds 42,43,44; multiply performance by 100"
+  "aggregation": "unweighted category mean: MVTec 15, VisA 12, BTAD 3; repeated few-shot std definition follows each source (PatchCore ddof0); WinCLIP original percent CSV rounded to 1 decimal, single seed10; other performance fractions multiply by100"
 }

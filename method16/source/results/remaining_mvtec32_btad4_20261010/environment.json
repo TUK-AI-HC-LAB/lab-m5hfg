@@ -1,0 +1,26 @@
+{
+  "status": "completed",
+  "training_executed": false,
+  "checkpoint_source": "Official MVTec4 trained public checkpoints",
+  "commit": "5e2c1f8c18d302b0354471567846fee3ed2ff063",
+  "conditions": [
+    "MVTec32 normal support extension",
+    "BTAD4 MVTec-to-BTAD transfer"
+  ],
+  "rounds": 10,
+  "gpu": "NVIDIA GeForce RTX 5080",
+  "precision": "FP32 convTF32 enabled, matmulTF32 disabled",
+  "support_chunk": 16,
+  "query_batch": 1,
+  "wrapper_sha256": "cd289dc09d84395c62d6a418821d399d66db774b0b4223717286ea9d262bc132",
+  "input": "Resize224x224 LANCZOS ToTensor only",
+  "mask": "Resize224x224 NEAREST >128; original metadata anomaly label",
+  "btad_checkpoint_selection": "MVTec bottle4 checkpoint fixed a priori, no BTAD model selection/training",
+  "model_training_history": "Official checkpoint training; no additional local gradient training",
+  "protocol_limits": "MuSc did not disclose large-shot checkpoint or BTAD source selection; reference32 extends trained4 model; local random support sets10round",
+  "error": null,
+  "dataset": "btad",
+  "category": "03",
+  "shot": 4,
+  "round": 9
+}

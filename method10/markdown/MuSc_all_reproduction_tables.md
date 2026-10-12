@@ -6,7 +6,8 @@
 
 - `미실행`: 해당 표 조건으로 채울 직접 측정값이 아직 이 집계에 없다. 다른 실험 결과가 없다는 뜻은 아니다.
 - `측정값 있음·조건 대조 필요`: 자체 실행 근거가 있으나 논문 조건과 모든 항목이 같다고 확정하지 않았다. 완료 인증이 아니다.
-- 기존 WinCLIP·PatchCore·PaDiM 결과는 보유해도 dataset·shot·backbone·reference·seed 조건의 일치가 검증되기 전에는 해당 행에 넣지 않는다.
+- WinCLIP 기존 MVTec·VisA 0/4shot 7지표를 연결했다. 단일 seed·비공식 구현·CSV 소수1자리이며 논문 조건 동등성을 인증하지 않는다. 다른 조건의 PatchCore·PaDiM 결과는 자동 대입하지 않는다.
+- [전체 필요 작업 재감사](MuSc_remaining_work_audit_20261010.md): 표의 빈칸과 신규 실행 필요를 구분한 최신 목록.
 - 단위: 성능은 %, 차이는 %p, 추론 시간은 ms/image, GPU 메모리는 MiB(bytes/1024²). 기본 AC는 Image AUROC, AS는 Pixel AUROC이며 Table 13만 AS=AUPRO다.
 - 각 방법의 원래 정보 조건을 유지한다. 모든 비교군의 backbone·resize를 MuSc와 강제로 맞추지 않는다. 학습이 필요한 방법은 보조 데이터/target train 사용 조건을 기록한다.
 - 공개 checkpoint 평가는 학습부터 재현한 결과와 구분한다. 4-shot 반복 횟수·reference 선택·표준편차 정의는 원문·공식 코드에서 확정한 뒤 실행한다. 단일 seed에 원문의 ±를 붙이지 않는다.
@@ -62,21 +63,21 @@ APRIL-GAN은 같은 1,725장에 VisA 학습 공개 checkpoint를 사용한 MVTec
 
 | Dataset | 비교 블록 | Method | Setting | Image AUROC | Image F1-max | Image AP | Pixel AUROC | Pixel F1-max | Pixel AP | AUPRO | 상태 | 근거 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| MVTec AD | 0-shot 비교 | WinCLIP | 0-shot | 미실행 | 미실행 | 미실행 | 미실행 | 미실행 | 미실행 | 미실행 | 미실행 | — |
+| MVTec AD | 0-shot 비교 | WinCLIP | 0-shot | 90.4 | 92.7 | 95.6 | 82.3 | 24.8 | 18.2 | 61.9 | 기존 단일 seed10·7지표 있음·CSV 소수1자리·4shot 반복 미보유·비공식 재현 | [WinCLIP 기존 실행](../../method7/markdown/CVPR23_WinCLIP_reproduction_report.md) |
 | MVTec AD | 0-shot 비교 | APRIL-GAN | 0-shot | 86.1250 | 90.3505 | 93.5605 | 87.6288 | 43.2758 | 40.7849 | 44.0371 | 1회·complete·조건 대조 필요 | [추가 실험 집계](../../method11/markdown/APRIL_GAN_remaining_experiments.md) |
 | MVTec AD | 0-shot 비교 | ACR | 0-shot | 86.5904 | 91.8947 | 93.5808 | 92.5731 | 44.2887 | 38.5545 | 73.9600 | 측정값 있음·조건 대조 필요 | [ACR CSV](../../method15/source/results/mvtec_seed42_20261007/category_metrics.csv) |
 | MVTec AD | 0-shot 비교 | MuSc | 0-shot | 97.7694 | 97.3219 | 99.0706 | 97.1149 | 62.1593 | 62.2587 | 93.4755 | 측정값 있음·조건 대조 필요 | [MuSc CSV](../source/results/mvtec_all_paper_20261002/category_metrics.csv) |
-| VisA | 0-shot 비교 | WinCLIP | 0-shot | 미실행 | 미실행 | 미실행 | 미실행 | 미실행 | 미실행 | 미실행 | 미실행 | — |
+| VisA | 0-shot 비교 | WinCLIP | 0-shot | 75.5 | 78.2 | 78.7 | 73.2 | 9.0 | 5.4 | 51.0 | 기존 단일 seed10·7지표 있음·CSV 소수1자리·4shot 반복 미보유·비공식 재현 | [WinCLIP 기존 실행](../../method7/markdown/CVPR23_WinCLIP_reproduction_report.md) |
 | VisA | 0-shot 비교 | APRIL-GAN | 0-shot | 77.5213 | 78.5613 | 80.9004 | 94.1977 | 32.2806 | 25.7560 | 86.5940 | 1회·complete·조건 대조 필요 | [추가 실험 집계](../../method11/markdown/APRIL_GAN_remaining_experiments.md) |
 | VisA | 0-shot 비교 | MuSc | 0-shot | 미실행 | 미실행 | 미실행 | 미실행 | 미실행 | 미실행 | 미실행 | 미실행 | — |
 | MVTec AD | 4-shot 비교 | RegAD | 4-shot | 88.8213 ± 1.0163 | 92.2460 ± 0.3467 | 94.7066 ± 0.7681 | 96.1330 ± 0.2160 | 51.3182 ± 0.8179 | 47.8845 ± 0.9246 | 87.9181 ± 0.4449 | 공개 가중치·support10round(capsule/grid 자체 생성)·재학습 없음 | [RegAD CSV](../../method16/source/results/mvtec_public_20261007/category_metrics.csv) |
-| MVTec AD | 4-shot 비교 | PatchCore | 4-shot | 미실행 | 미실행 | 미실행 | 미실행 | 미실행 | 미실행 | 미실행 | 미실행 | — |
-| MVTec AD | 4-shot 비교 | WinCLIP | 4-shot | 미실행 | 미실행 | 미실행 | 미실행 | 미실행 | 미실행 | 미실행 | 미실행 | — |
+| MVTec AD | 4-shot 비교 | PatchCore | 4-shot | 89.9459 ± 0.4077 | 93.8944 ± 0.1967 | 95.2352 ± 0.2318 | 94.3415 ± 0.3827 | 53.1693 ± 0.6996 | 52.3060 ± 0.5771 | 82.9791 ± 0.5868 | 공식 baseline·3support seeds·WR50/224/coreset10%·조건 차이 명시 | [PatchCore 비교 실행](../../method1/markdown/PatchCore_MuSc_comparison_execution.md) |
+| MVTec AD | 4-shot 비교 | WinCLIP | 4-shot | 95.3 | 94.9 | 97.6 | 94.2 | 45.9 | 42.2 | 85.4 | 기존 단일 seed10·7지표 있음·CSV 소수1자리·4shot 반복 미보유·비공식 재현 | [WinCLIP 기존 실행](../../method7/markdown/CVPR23_WinCLIP_reproduction_report.md) |
 | MVTec AD | 4-shot 비교 | APRIL-GAN | 4-shot | 92.6505 ± 0.0724 | 92.7513 ± 0.0713 | 96.2305 ± 0.0077 | 95.9100 ± 0.0334 | 56.6658 ± 0.4731 | 54.4308 ± 0.2771 | 91.9175 ± 0.0340 | 3회·complete·조건 대조 필요 | [추가 실험 집계](../../method11/markdown/APRIL_GAN_remaining_experiments.md) |
 | MVTec AD | 4-shot 비교 | GraphCore | 4-shot | 80.9780 ± 1.0801 | 89.4086 ± 0.3108 | 89.7765 ± 0.5897 | 88.7568 ± 0.4668 | 36.5777 ± 0.6149 | 27.6922 ± 0.5830 | 75.3666 ± 0.4896 | 저자 benchmark·공개 PyramidViG·support10round·feature층 선택/구조 차이 있음 | [GraphCore CSV](../../method17/source/results/mvtec_pvig_fp32_20261008/category_metrics.csv) |
 | MVTec AD | 4-shot 비교 | MuSc | 0-shot | 97.7694 | 97.3219 | 99.0706 | 97.1149 | 62.1593 | 62.2587 | 93.4755 | 측정값 있음·조건 대조 필요 | [MuSc CSV](../source/results/mvtec_all_paper_20261002/category_metrics.csv) |
-| VisA | 4-shot 비교 | PatchCore | 4-shot | 미실행 | 미실행 | 미실행 | 미실행 | 미실행 | 미실행 | 미실행 | 미실행 | — |
-| VisA | 4-shot 비교 | WinCLIP | 4-shot | 미실행 | 미실행 | 미실행 | 미실행 | 미실행 | 미실행 | 미실행 | 미실행 | — |
+| VisA | 4-shot 비교 | PatchCore | 4-shot | 83.0513 ± 1.3075 | 83.4222 ± 1.0396 | 85.3013 ± 0.7426 | 96.1162 ± 0.0854 | 39.3107 ± 1.0184 | 35.1523 ± 1.3996 | 76.9172 ± 0.2571 | 공식 baseline·3support seeds·WR50/224/coreset10%·조건 차이 명시 | [PatchCore 비교 실행](../../method1/markdown/PatchCore_MuSc_comparison_execution.md) |
+| VisA | 4-shot 비교 | WinCLIP | 4-shot | 84.1 | 82.4 | 85.8 | 95.2 | 25.3 | 17.7 | 81.4 | 기존 단일 seed10·7지표 있음·CSV 소수1자리·4shot 반복 미보유·비공식 재현 | [WinCLIP 기존 실행](../../method7/markdown/CVPR23_WinCLIP_reproduction_report.md) |
 | VisA | 4-shot 비교 | APRIL-GAN | 4-shot | 92.5687 ± 0.1498 | 88.2393 ± 0.2682 | 94.4684 ± 0.0689 | 96.1837 ± 0.0194 | 39.6256 ± 0.3260 | 32.0048 ± 0.1952 | 90.0917 ± 0.1452 | 3회·complete·조건 대조 필요 | [추가 실험 집계](../../method11/markdown/APRIL_GAN_remaining_experiments.md) |
 | VisA | 4-shot 비교 | MuSc | 0-shot | 미실행 | 미실행 | 미실행 | 미실행 | 미실행 | 미실행 | 미실행 | 미실행 | — |
 
@@ -88,11 +89,11 @@ APRIL-GAN은 같은 1,725장에 VisA 학습 공개 checkpoint를 사용한 MVTec
 
 | Method | Setting | AC | AS | 상태 | 근거 |
 | --- | --- | --- | --- | --- | --- |
-| CutPaste | full-shot | 미실행 | 미실행 | 전체 학습 시작·최종 검증 미완료 | [CutPaste 실행](../../method22/markdown/CutPaste_mvtec_execution.md) |
+| CutPaste | full-shot | 92.4055 | 93.7767 | 자체 학습·15category·scratch3way·단일 seed·조건 차이 명시 | [CutPaste 실행](../../method22/markdown/CutPaste_mvtec_execution.md) |
 | NSA | full-shot | 96.8705 | 95.8661 | 자체 학습·15개 category·단일 seed | [NSA 실행](../../method13/markdown/NSA_mvtec_execution.md) |
 | IGD | full-shot | 미실행 | 미실행 | 미실행 | — |
-| PatchCore | full-shot | 미실행 | 미실행 | 미실행 | — |
-| RegAD | 32-shot | 미실행 | 미실행 | 미실행 | — |
+| PatchCore | full-shot | 98.9607 | 98.1102 | 공식 WR50/224 baseline·full-shot·1seed·조건 차이 명시 | [PatchCore 비교 실행](../../method1/markdown/PatchCore_MuSc_comparison_execution.md) |
+| RegAD | 32-shot | 94.5213 ± 0.2996 | 97.4228 ± 0.0460 | 공식4shot모델·32reference 확장·10round·추가학습없음·조건차이 명시 | [RegAD32/BTAD4 확장](../../method16/markdown/RegAD_mvtec32_btad4_execution.md) |
 | GraphCore | 8-shot | 82.0203 ± 0.4270 | 89.8711 ± 0.3309 | 저자 benchmark·PyramidViG·10support round·구현 조건 차이 있음 | [GraphCore 실행·조건 대조](../../method17/markdown/GraphCore_mvtec_execution.md) |
 | MuSc | 0-shot | 97.7694 | 97.1149 | 측정값 있음·조건 대조 필요 | [MuSc CSV](../source/results/mvtec_all_paper_20261002/category_metrics.csv) |
 
@@ -104,14 +105,14 @@ APRIL-GAN은 같은 1,725장에 VisA 학습 공개 checkpoint를 사용한 MVTec
 
 | 조건 | MVTec AC | MVTec AS | VisA AC | VisA AS | 상태 |
 | --- | --- | --- | --- | --- | --- |
-| {1} | 미실행 | 미실행 | 미실행 | 미실행 | 미실행 |
-| {3} | 미실행 | 미실행 | 미실행 | 미실행 | 미실행 |
-| {5} | 미실행 | 미실행 | 미실행 | 미실행 | 미실행 |
-| {1,3} | 미실행 | 미실행 | 미실행 | 미실행 | 미실행 |
-| {3,5} | 미실행 | 미실행 | 미실행 | 미실행 | 미실행 |
-| {1,3,5} | 97.7694 | 97.1149 | 미실행 | 미실행 | MVTec 기본 측정값 있음·조건 대조 필요 |
+| {1} | 96.7621 | 94.6128 | 92.9681 | 97.9282 | 27category·자체 측정·raw 재검증·[공식 모듈 제거실험·공유 계산 및 측정범위](MuSc_tables3_7_execution.md) |
+| {3} | 97.3226 | 97.1349 | 89.3619 | 98.3511 | 27category·자체 측정·raw 재검증·[공식 모듈 제거실험·공유 계산 및 측정범위](MuSc_tables3_7_execution.md) |
+| {5} | 94.5766 | 97.5929 | 82.1384 | 97.6283 | 27category·자체 측정·raw 재검증·[공식 모듈 제거실험·공유 계산 및 측정범위](MuSc_tables3_7_execution.md) |
+| {1,3} | 98.0459 | 96.2945 | 93.6511 | 98.5688 | 27category·자체 측정·raw 재검증·[공식 모듈 제거실험·공유 계산 및 측정범위](MuSc_tables3_7_execution.md) |
+| {3,5} | 96.5434 | 97.5862 | 87.1393 | 98.2756 | 27category·자체 측정·raw 재검증·[공식 모듈 제거실험·공유 계산 및 측정범위](MuSc_tables3_7_execution.md) |
+| {1,3,5} | 97.7694 | 97.1149 | 92.4921 | 98.7136 | 27category·자체 측정·raw 재검증·[공식 모듈 제거실험·공유 계산 및 측정범위](MuSc_tables3_7_execution.md) |
 
-AC=Image AUROC, AS=Pixel AUROC. 기본 행에만 기존 측정값을 연결했다. 다른 r 조합은 별도 실행한다.
+AC=Image AUROC, AS=Pixel AUROC. 양 dataset 모든 r 조합을 자체 실행·검증했다. [공식 모듈 제거실험·공유 계산 및 측정범위](MuSc_tables3_7_execution.md)
 
 ## Table 4. MSM sample strategy 제거 실험
 
@@ -119,12 +120,12 @@ AC=Image AUROC, AS=Pixel AUROC. 기본 행에만 기존 측정값을 연결했�
 
 | 조건 | MVTec AC | MVTec AS | VisA AC | VisA AS | 상태 |
 | --- | --- | --- | --- | --- | --- |
-| (a) min | 미실행 | 미실행 | 미실행 | 미실행 | 미실행 |
-| (b) max | 미실행 | 미실행 | 미실행 | 미실행 | 미실행 |
-| (c) mean | 미실행 | 미실행 | 미실행 | 미실행 | 미실행 |
-| (d) 30% + min | 미실행 | 미실행 | 미실행 | 미실행 | 미실행 |
-| (e) 30% + max | 미실행 | 미실행 | 미실행 | 미실행 | 미실행 |
-| (f) 30% + mean | 97.7694 | 97.1149 | 미실행 | 미실행 | MVTec 기본 측정값 있음·조건 대조 필요 |
+| (a) min | 96.7492 | 94.0629 | 90.8259 | 98.3919 | 27category·자체 측정·raw 재검증·[공식 모듈 제거실험·공유 계산 및 측정범위](MuSc_tables3_7_execution.md) |
+| (b) max | 79.1117 | 92.2590 | 74.2841 | 95.1683 | 27category·자체 측정·raw 재검증·[공식 모듈 제거실험·공유 계산 및 측정범위](MuSc_tables3_7_execution.md) |
+| (c) mean | 94.8550 | 96.8231 | 89.4912 | 98.4156 | 27category·자체 측정·raw 재검증·[공식 모듈 제거실험·공유 계산 및 측정범위](MuSc_tables3_7_execution.md) |
+| (d) 30% + min | 96.7492 | 94.0629 | 90.8259 | 98.3919 | 27category·자체 측정·raw 재검증·[공식 모듈 제거실험·공유 계산 및 측정범위](MuSc_tables3_7_execution.md) |
+| (e) 30% + max | 95.9983 | 97.5090 | 91.1373 | 98.5722 | 27category·자체 측정·raw 재검증·[공식 모듈 제거실험·공유 계산 및 측정범위](MuSc_tables3_7_execution.md) |
+| (f) 30% + mean | 97.7694 | 97.1149 | 92.4921 | 98.7136 | 27category·자체 측정·raw 재검증·[공식 모듈 제거실험·공유 계산 및 측정범위](MuSc_tables3_7_execution.md) |
 
 
 
@@ -134,12 +135,12 @@ AC=Image AUROC, AS=Pixel AUROC. 기본 행에만 기존 측정값을 연결했�
 
 | Dataset | RsCIN | AUROC | F1-max | AP | 상태 |
 | --- | --- | --- | --- | --- | --- |
-| MVTec AD | w/o | 미실행 | 미실행 | 미실행 | 미실행 |
-| MVTec AD | w | 97.7694 | 97.3219 | 99.0706 | 측정값 있음·조건 대조 필요 |
-| VisA | w/o | 미실행 | 미실행 | 미실행 | 미실행 |
-| VisA | w | 미실행 | 미실행 | 미실행 | 미실행 |
+| MVTec AD | w/o | 97.3878 | 96.7355 | 98.7287 | 같은 기본 raw 점수 RsCIN 전/후·자체 검증·[공식 모듈 제거실험·공유 계산 및 측정범위](MuSc_tables3_7_execution.md) |
+| MVTec AD | w | 97.7694 | 97.3219 | 99.0706 | 같은 기본 raw 점수 RsCIN 전/후·자체 검증·[공식 모듈 제거실험·공유 계산 및 측정범위](MuSc_tables3_7_execution.md) |
+| VisA | w/o | 89.5456 | 86.5398 | 90.7480 | 같은 기본 raw 점수 RsCIN 전/후·자체 검증·[공식 모듈 제거실험·공유 계산 및 측정범위](MuSc_tables3_7_execution.md) |
+| VisA | w | 92.4921 | 88.8657 | 93.2552 | 같은 기본 raw 점수 RsCIN 전/후·자체 검증·[공식 모듈 제거실험·공유 계산 및 측정범위](MuSc_tables3_7_execution.md) |
 
-w/o는 동일 raw image score에서 RsCIN만 제거한 평가가 필요하다. 현재 w 행은 기존 공식 MuSc 실행값이다.
+양 dataset 새 기본 실행의 동일 raw 점수에 공식 RsCIN을 적용하고 CPU 독립 대조했다. [공식 모듈 제거실험·공유 계산 및 측정범위](MuSc_tables3_7_execution.md)
 
 ## Table 6. MuSc의 이미지당 추론 시간·최대 GPU 메모리
 
@@ -147,9 +148,9 @@ w/o는 동일 raw image score에서 RsCIN만 제거한 평가가 필요하다. �
 
 | s | Time (ms/image) | GPU cost (MB) | 상태 |
 | --- | --- | --- | --- |
-| 1 | 미실행 | 미실행 | 미실행 |
-| 2 | 미실행 | 미실행 | 미실행 |
-| 3 | 미실행 | 미실행 | 미실행 |
+| 1 | 726.4711 | 7418.1699 | RTX5080·VisA candle200·warmup1/repeat3·native core·allocated decimal MB·[공식 모듈 제거실험·공유 계산 및 측정범위](MuSc_tables3_7_execution.md) |
+| 2 | 420.1018 | 7070.6990 | RTX5080·VisA candle200·warmup1/repeat3·native core·allocated decimal MB·[공식 모듈 제거실험·공유 계산 및 측정범위](MuSc_tables3_7_execution.md) |
+| 3 | 327.7074 | 6804.2424 | RTX5080·VisA candle200·warmup1/repeat3·native core·allocated decimal MB·[공식 모듈 제거실험·공유 계산 및 측정범위](MuSc_tables3_7_execution.md) |
 
 논문은 RTX 3090에서 측정했다. 재현 표는 내 RTX 5080에서 측정한다. 모델 로딩·시각화·metric·raw 저장을 포함한 wall time을 이 칸에 넣지 않는다. 원문은 최대 200장인 pool의 메모리를 측정하므로 같은 pool 조건부터 맞춘다.
 
@@ -159,12 +160,12 @@ w/o는 동일 raw image score에서 RsCIN만 제거한 평가가 필요하다. �
 
 | Dataset | s | AC | AS | Size of subsets | 상태 |
 | --- | --- | --- | --- | --- | --- |
-| MVTec AD | 1 | 97.7694 | 97.1149 | 42–167 | 측정값 있음·조건 대조 필요 |
-| MVTec AD | 2 | 미실행 | 미실행 | 미실행 | 미실행 |
-| MVTec AD | 3 | 미실행 | 미실행 | 미실행 | 미실행 |
-| VisA | 1 | 미실행 | 미실행 | 미실행 | 미실행 |
-| VisA | 2 | 미실행 | 미실행 | 미실행 | 미실행 |
-| VisA | 3 | 미실행 | 미실행 | 미실행 | 미실행 |
+| MVTec AD | 1 | 97.7694 | 97.1149 | 42–167 | 공식loader 분할·category 예측 합친 후 평가·특징 공유 차이 명시·[공식 모듈 제거실험·공유 계산 및 측정범위](MuSc_tables3_7_execution.md) |
+| MVTec AD | 2 | 97.6453 | 97.1016 | 21–86 | 공식loader 분할·category 예측 합친 후 평가·특징 공유 차이 명시·[공식 모듈 제거실험·공유 계산 및 측정범위](MuSc_tables3_7_execution.md) |
+| MVTec AD | 3 | 97.3767 | 97.1451 | 14–58 | 공식loader 분할·category 예측 합친 후 평가·특징 공유 차이 명시·[공식 모듈 제거실험·공유 계산 및 측정범위](MuSc_tables3_7_execution.md) |
+| VisA | 1 | 92.4921 | 98.7136 | 150–201 | 공식loader 분할·category 예측 합친 후 평가·특징 공유 차이 명시·[공식 모듈 제거실험·공유 계산 및 측정범위](MuSc_tables3_7_execution.md) |
+| VisA | 2 | 92.5284 | 98.7207 | 75–101 | 공식loader 분할·category 예측 합친 후 평가·특징 공유 차이 명시·[공식 모듈 제거실험·공유 계산 및 측정범위](MuSc_tables3_7_execution.md) |
+| VisA | 3 | 92.4121 | 98.6816 | 49–68 | 공식loader 분할·category 예측 합친 후 평가·특징 공유 차이 명시·[공식 모듈 제거실험·공유 계산 및 측정범위](MuSc_tables3_7_execution.md) |
 
 분할 후 모든 test 이미지의 예측을 합쳐 category metric을 계산한다. subset별 AUROC의 평균으로 대체하지 않는다.
 
@@ -224,22 +225,22 @@ w/o는 동일 raw image score에서 RsCIN만 제거한 평가가 필요하다. �
 
 | Dataset | Method | Setting | RsCIN | AUROC | F1-max | AP | 상태 | 근거 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| MVTec AD | SPADE | full-shot | w/o | 미실행 | 미실행 | 미실행 | 미실행 | — |
-| MVTec AD | SPADE | full-shot | w | 미실행 | 미실행 | 미실행 | 미실행 | — |
+| MVTec AD | SPADE | full-shot | w/o | 80.4887 | 88.9839 | 90.6749 | full 정상gallery·K50·image score FP64검증·자체RsCIN·비공식 구현 | [SPADE MVTec RsCIN](../../method20/markdown/SPADE_mvtec_rscin_execution.md) |
+| MVTec AD | SPADE | full-shot | w | 81.8956 | 90.6157 | 91.0754 | full 정상gallery·K50·image score FP64검증·자체RsCIN·비공식 구현 | [SPADE MVTec RsCIN](../../method20/markdown/SPADE_mvtec_rscin_execution.md) |
 | MVTec AD | DRAEM | full-shot | w/o | 98.0541 | 96.9628 | 98.9657 | 공개 가중치 자체 평가·15개 category·재학습 없음·조건 대조 필요 | [DRAEM 실행](../../method12/markdown/DRAEM_mvtec_official_execution.md) |
 | MVTec AD | DRAEM | full-shot | w | 97.8976 | 96.9835 | 99.0759 | 공개 가중치 자체 평가·15개 category·재학습 없음·조건 대조 필요 | [DRAEM 실행](../../method12/markdown/DRAEM_mvtec_official_execution.md) |
-| MVTec AD | STPM | full-shot | w/o | 미실행 | 미실행 | 미실행 | 미실행 | — |
-| MVTec AD | STPM | full-shot | w | 미실행 | 미실행 | 미실행 | 미실행 | — |
+| MVTec AD | STPM | full-shot | w/o | 95.5488 | 95.2830 | 98.1578 | 저자 공개 student·15category 자체 평가·재학습 없음·RsCIN 검증 | [STPM 실행](../../method24/markdown/STPM_mvtec_rscin_execution.md) |
+| MVTec AD | STPM | full-shot | w | 96.2275 | 95.6064 | 98.3426 | 저자 공개 student·15category 자체 평가·재학습 없음·RsCIN 검증 | [STPM 실행](../../method24/markdown/STPM_mvtec_rscin_execution.md) |
 | MVTec AD | APRIL-GAN | 0-shot | w/o | 86.1250 | 90.3505 | 93.5605 | 1회·자체 RsCIN 측정·조건 대조 필요 | [RsCIN 집계](../../method11/markdown/APRIL_GAN_remaining_experiments.md) |
 | MVTec AD | APRIL-GAN | 0-shot | w | 86.1692 | 90.8962 | 93.6730 | 1회·자체 RsCIN 측정·조건 대조 필요 | [RsCIN 집계](../../method11/markdown/APRIL_GAN_remaining_experiments.md) |
 | MVTec AD | APRIL-GAN | 4-shot | w/o | 92.6505 ± 0.0724 | 92.7513 ± 0.0713 | 96.2305 ± 0.0077 | 3회·자체 RsCIN 측정·조건 대조 필요 | [RsCIN 집계](../../method11/markdown/APRIL_GAN_remaining_experiments.md) |
 | MVTec AD | APRIL-GAN | 4-shot | w | 93.3863 ± 0.0492 | 93.3749 ± 0.2192 | 96.7462 ± 0.0207 | 3회·자체 RsCIN 측정·조건 대조 필요 | [RsCIN 집계](../../method11/markdown/APRIL_GAN_remaining_experiments.md) |
 | VisA | APRIL-GAN | 0-shot | w/o | 77.5213 | 78.5613 | 80.9004 | 1회·자체 RsCIN 측정·조건 대조 필요 | [RsCIN 집계](../../method11/markdown/APRIL_GAN_remaining_experiments.md) |
 | VisA | APRIL-GAN | 0-shot | w | 78.9014 | 80.0743 | 82.0228 | 1회·자체 RsCIN 측정·조건 대조 필요 | [RsCIN 집계](../../method11/markdown/APRIL_GAN_remaining_experiments.md) |
-| MVTec AD | PatchCore | full-shot | w/o | 미실행 | 미실행 | 미실행 | 미실행 | — |
-| MVTec AD | PatchCore | full-shot | w | 미실행 | 미실행 | 미실행 | 미실행 | — |
-| MVTec AD | DSR | full-shot | w/o | 미실행 | 미실행 | 미실행 | 미실행 | — |
-| MVTec AD | DSR | full-shot | w | 미실행 | 미실행 | 미실행 | 미실행 | — |
+| MVTec AD | PatchCore | full-shot | w/o | 98.9607 | 98.3581 | 99.7100 | 공식 baseline·자체 RsCIN 비교·CLIP feature SHA 정렬 검증 | [PatchCore 비교 실행](../../method1/markdown/PatchCore_MuSc_comparison_execution.md) |
+| MVTec AD | PatchCore | full-shot | w | 99.0169 | 98.2796 | 99.6754 | 공식 baseline·자체 RsCIN 비교·CLIP feature SHA 정렬 검증 | [PatchCore 비교 실행](../../method1/markdown/PatchCore_MuSc_comparison_execution.md) |
+| MVTec AD | DSR | full-shot | w/o | 98.2495 | 96.6198 | 99.1055 | 저자 공개 DSR 가중치·15category 자체 평가·재학습 없음·RsCIN 검증 | [DSR 실행](../../method25/markdown/DSR_mvtec_rscin_execution.md) |
+| MVTec AD | DSR | full-shot | w | 98.0835 | 96.8560 | 99.2139 | 저자 공개 DSR 가중치·15category 자체 평가·재학습 없음·RsCIN 검증 | [DSR 실행](../../method25/markdown/DSR_mvtec_rscin_execution.md) |
 | MVTec AD | RegAD | 2-shot | w/o | 85.3483 ± 0.9444 | 91.5156 ± 0.4033 | 92.6173 ± 0.5601 | 공개 가중치·15개 category·support10round(capsule/grid 자체 생성)·자체 RsCIN | [RegAD 실행](../../method16/markdown/RegAD_mvtec_execution.md) |
 | MVTec AD | RegAD | 2-shot | w | 86.4475 ± 0.8961 | 92.3205 ± 0.4738 | 93.0947 ± 0.5377 | 공개 가중치·15개 category·support10round(capsule/grid 자체 생성)·자체 RsCIN | [RegAD 실행](../../method16/markdown/RegAD_mvtec_execution.md) |
 | MVTec AD | RegAD | 4-shot | w/o | 88.8213 ± 1.0163 | 92.2460 ± 0.3467 | 94.7066 ± 0.7681 | 공개 가중치·15개 category·support10round(capsule/grid 자체 생성)·자체 RsCIN | [RegAD 실행](../../method16/markdown/RegAD_mvtec_execution.md) |
@@ -257,15 +258,15 @@ w/o는 동일 raw image score에서 RsCIN만 제거한 평가가 필요하다. �
 
 | Category | Dataset | WinCLIP AC | WinCLIP AS | APRIL-GAN AC | APRIL-GAN AS | MuSc AC | MuSc AS |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| screw | MVTec AD | 미실행 | 미실행 | 84.9047 | 97.7630 | 82.5579 | 98.7672 |
-| hazelnut | MVTec AD | 미실행 | 미실행 | 89.3750 | 96.1228 | 99.6071 | 99.3755 |
-| metal_nut | MVTec AD | 미실행 | 미실행 | 68.4751 | 65.4553 | 96.5787 | 86.1210 |
-| capsules | VisA | 미실행 | 미실행 | 62.3417 | 97.4573 | 미실행 | 미실행 |
-| macaroni2 | VisA | 미실행 | 미실행 | 65.5850 | 97.8123 | 미실행 | 미실행 |
-| mean | 선택된 5개 category | 미실행 | 미실행 | 미실행 | 미실행 | 미실행 | 미실행 |
-| mean-ALL | MVTec AD | 미실행 | 미실행 | 86.1250 | 87.6288 | 97.7694 | 97.1149 |
+| screw | MVTec AD | 71.7 | 91.1 | 84.9047 | 97.7630 | 82.5579 | 98.7672 |
+| hazelnut | MVTec AD | 92.3 | 95.7 | 89.3750 | 96.1228 | 99.6071 | 99.3755 |
+| metal_nut | MVTec AD | 96.2 | 49.3 | 68.4751 | 65.4553 | 96.5787 | 86.1210 |
+| capsules | VisA | 79.4 | 80 | 62.3417 | 97.4573 | 미실행 | 미실행 |
+| macaroni2 | VisA | 67.1 | 44.7 | 65.5850 | 97.8123 | 미실행 | 미실행 |
+| mean | 선택된 5개 category | 81.34 | 72.16 | 74.1363 | 90.9221 | 미실행 | 미실행 |
+| mean-ALL | MVTec AD | 90.4 | 82.3 | 86.1250 | 87.6288 | 97.7694 | 97.1149 |
 
-metal nut은 파일 category metal_nut으로 썼다. capsules는 VisA이며 MVTec의 capsule과 다르다. mean은 5개 category가 모두 측정된 뒤 계산한다. mean-ALL은 원문의 값이 MVTec 전체 평균을 가리키므로 MVTec AD로 표시했다. 모든 채운 값은 조건 대조가 남아 있다.
+metal nut은 파일 category metal_nut으로 썼다. capsules는 VisA이며 MVTec의 capsule과 다르다. mean은 해당 방법의 5개 category가 모두 측정된 뒤 계산한다. WinCLIP 평균은 소수1자리 category CSV로 재계산했으므로 0.01%p 표시는 계산 결과의 표시이며 원시 측정 정밀도를 뜻하지 않는다. mean-ALL은 MVTec 전체 평균이다. WinCLIP 근거: [WinCLIP 기존 실행](../../method7/markdown/CVPR23_WinCLIP_reproduction_report.md) 모든 채운 값은 조건 대조가 남아 있다.
 
 ## Table 13. 비교군의 추론 시간·GPU 메모리·성능
 
@@ -279,7 +280,7 @@ metal nut은 파일 category metal_nut으로 썼다. capsules는 VisA이며 MVTe
 | MuSc | ViT-L-14-336 | 0-shot | 2 | no | 미실행 | 미실행 | 미실행 | 미실행 | 미실행 |
 | MuSc | ViT-L-14-336 | 0-shot | 3 | no | 미실행 | 미실행 | 미실행 | 미실행 | 미실행 |
 | APRIL-GAN | ViT-B-16-plus-240 | 0-shot | — | yes | 17.4080 | 1488.1372 | 88.1834 | 37.7854 | 단독 속도 측정·조건 대조 필요·자체 학습 checkpoint |
-| WinCLIP | ViT-B-16-plus-240 | 0-shot | — | no | 미실행 | 미실행 | 미실행 | 미실행 | 미실행 |
+| WinCLIP | ViT-B-16-plus-240 | 0-shot | — | no | 7669.4076 | 1140.0347 | 90.4 | 61.9 | [batch1 자체 측정·전체category/선택입력·setup 포함 peak MiB·측정범위 차이](../../method7/markdown/WinCLIP_speed_memory_20261011.md) |
 | MuSc | ViT-B-16-plus-240 | 0-shot | 1 | no | 미실행 | 미실행 | 미실행 | 미실행 | 미실행 |
 | MuSc | ViT-B-16-plus-240 | 0-shot | 2 | no | 미실행 | 미실행 | 미실행 | 미실행 | 미실행 |
 | MuSc | ViT-B-16-plus-240 | 0-shot | 3 | no | 미실행 | 미실행 | 미실행 | 미실행 | 미실행 |
@@ -293,12 +294,12 @@ metal nut은 파일 category metal_nut으로 썼다. capsules는 VisA이며 MVTe
 | Method | Setting | AC | AS | 상태 |
 | --- | --- | --- | --- | --- |
 | VT-ADL | full-shot | 58.2809 | 79.7399 | 자체 학습·제품3개·400epoch·Gaussian150·공개코드 수정 명시 |
-| P-SVDD | full-shot | 69.7564 | 78.0765 | 자체 학습·제품3개·299학습epoch·공식 기본λ1·설정 차이 명시 |
+| P-SVDD | full-shot | 69.7564 | 78.0765 | 자체 학습·제품3개·299학습epoch·λ1·제품03 점수 전부0/AUROC50% 퇴화 확인·원인 미확정·당시 raw/checkpoint 삭제 |
 | SPADE | full-shot | 87.1499 | 97.6713 | 제품3개·K50·논문 수식 재현·비공식 구현·조건 차이 명시 |
-| PaDiM | full-shot | 미실행 | 미실행 | 미실행 |
+| PaDiM | full-shot | 94.7937 | 97.6004 | 제품3개·WR50Rd550·전체정상train·Gaussian모델·설정차이 명시 |
 | PyramidFlow | full-shot | 91.2218 | 95.6597 | 제품3개·Res18·15epoch·최종모델·설정 차이 명시 |
-| PatchCore | 4-shot | 미실행 | 미실행 | 미실행 |
-| RegAD | 4-shot | 미실행 | 미실행 | 미실행 |
+| PatchCore | 4-shot | 91.0497 ± 0.6635 | 95.9430 ± 0.2308 | 공식 baseline·제품3개·3support seeds·조건 차이 명시 |
+| RegAD | 4-shot | 87.9947 ± 1.1049 | 92.3018 ± 1.5105 | MVTec bottle4 고정checkpoint 전이·10round·BTAD학습없음·source조건차이 |
 | APRIL-GAN | 4-shot | 91.9072 ± 0.1170 | 96.2023 ± 0.0943 | 3회·측정값 있음·BTAD 세부 조건 잠정 |
 | APRIL-GAN | 0-shot | 73.7895 | 91.4034 | 1회·측정값 있음·BTAD 세부 조건 잠정 |
 | MuSc | 0-shot | 미실행 | 미실행 | 미실행 |

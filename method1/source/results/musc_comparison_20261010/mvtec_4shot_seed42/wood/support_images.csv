@@ -1,0 +1,5 @@
+image_path,label,sha256,mask_path,mask_sha256
+/home/test/data/mvtec/wood/train/good/163.png,0,40215e7087804bc001dc7e30b0a1a32f712a40ebe9e5688cf332996573816700,,
+/home/test/data/mvtec/wood/train/good/028.png,0,cb860f416ed8a907d9bc0dd9ccca3bd11075a6e64234ce8a08f4920d8c5763c0,,
+/home/test/data/mvtec/wood/train/good/006.png,0,083eb02afd1d9d55f08f4c0fd77cef66e108d82567a7ee84513c114029ed414a,,
+/home/test/data/mvtec/wood/train/good/189.png,0,69418ed6d4be95f737af4703786db0488184c554c542c296031149f7787b9584,,

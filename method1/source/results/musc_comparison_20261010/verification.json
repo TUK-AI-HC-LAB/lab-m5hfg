@@ -1,0 +1,7 @@
+{
+  "status": "passed",
+  "n_category_runs": 105,
+  "all_category_verifications_passed": true,
+  "expected_runs": 105,
+  "limits": "Single WideResNet50 official baseline and3 local fewshot repeats; all conditions and differences documented."
+}

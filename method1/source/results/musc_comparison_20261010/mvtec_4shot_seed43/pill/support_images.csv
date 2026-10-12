@@ -1,0 +1,5 @@
+image_path,label,sha256,mask_path,mask_sha256
+/home/test/data/mvtec/pill/train/good/019.png,0,6cd041a3f95512f2ce9356306e61d446f42879fedd2eb0bd31bac38e48886d1d,,
+/home/test/data/mvtec/pill/train/good/146.png,0,70cf04411d33de221035339e11ed76c58da507ba13f48dde5057b0505107c96d,,
+/home/test/data/mvtec/pill/train/good/073.png,0,55f9450180a9cc0949e3c9db856866eae9870720866ce8e033b597fe8fd1d3e8,,
+/home/test/data/mvtec/pill/train/good/236.png,0,772029ce5686e22ac3dcb600b1be9d1cfdfe8b7ccce7214c693557b04e34b6e6,,

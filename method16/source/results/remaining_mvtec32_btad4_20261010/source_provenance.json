@@ -1,0 +1,9 @@
+{
+  "primary_paper": "C:\\Users\\test\\Desktop\\Codex\\lab-m5hfg\\method16\\paper\\ECCV22_RegAD_Registration_Based_Few_Shot_Anomaly_Detection.pdf",
+  "primary_sha256": "411a84b9177271e425343a49a7ff7582b7631a6cee24b5e2af84d3fa41e9b77d",
+  "large_support_no_finetuning_source": "https://arxiv.org/html/2207.07361v1#S0.SS2.SSS1",
+  "public_train_loader_excludes_target": true,
+  "checkpoint_actual_training_history_independently_verified": false,
+  "reason": "Official checkpoint source and published protocol retained; no local original training log",
+  "fresh_local_gradient_training": false
+}

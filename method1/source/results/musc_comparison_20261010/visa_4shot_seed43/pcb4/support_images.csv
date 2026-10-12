@@ -1,0 +1,5 @@
+image_path,label,sha256,mask_path,mask_sha256
+/home/test/data/VisA_20220922/pcb4/Data/Images/Normal/0268.JPG,0,debbcc0cba3b9f06e861fda85baac1fa8a0c092532b748a2d40044391262a583,,
+/home/test/data/VisA_20220922/pcb4/Data/Images/Normal/0406.JPG,0,4092bf4e8a105135d82fdd0444b169f3a7f97645395a6b08fab39752da5cb398,,
+/home/test/data/VisA_20220922/pcb4/Data/Images/Normal/0592.JPG,0,dbfff099cca0bf8014b3d66f7b7f2bed90ab4a8b4a84720eebfc39ceb360f4b3,,
+/home/test/data/VisA_20220922/pcb4/Data/Images/Normal/0122.JPG,0,cc560676aeb8f3b9636dd0c5ede615504f4872d08dc589ba8db30e675c326734,,

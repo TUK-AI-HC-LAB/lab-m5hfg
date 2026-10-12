@@ -1,0 +1,39 @@
+{
+  "status": "completed",
+  "n_images": 150,
+  "config": {
+    "device": "0",
+    "datasets": {
+      "data_path": "/home/test/data/mvtec",
+      "dataset_name": "mvtec_ad",
+      "class_name": "cable",
+      "img_resize": 518,
+      "divide_num": 1
+    },
+    "models": {
+      "backbone_name": "ViT-L-14-336",
+      "pretrained": "openai",
+      "batch_size": 1,
+      "feature_layers": [
+        5,
+        11,
+        17,
+        23
+      ],
+      "r_list": [
+        1,
+        3,
+        5
+      ]
+    },
+    "testing": {
+      "vis": false,
+      "vis_type": "single_norm",
+      "save_excel": false,
+      "output_dir": "/home/test/patchcore_results/musc_comparison_20261010/rscin_features/cable"
+    }
+  },
+  "commit": "b76b93da8bd3096a99964a96ae29d46f197a0651",
+  "feature_path": "/home/test/patchcore_results/musc_comparison_20261010/rscin_features/cable/features.npy",
+  "sha256": "84a970793446a328617755ad976bb01915845f21bb9fbb0b311ca92753af78ee"
+}

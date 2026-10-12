@@ -1,0 +1,46 @@
+[
+  {
+    "path": "/home/test/cutpaste_results/mvtec_scratch3way_seed42_20261008/wood/predictions.npz",
+    "sha256": "eb9eb30682e4b9a0c0922ee2557b824311a8510850a0af6cb5d2649110c88775"
+  },
+  {
+    "path": "/home/test/cutpaste_results/mvtec_scratch3way_seed42_20261008/wood/image/density.npz",
+    "sha256": "16012fe041dcba2d69567a4b2aa25c5a4dfb08ecfab351c4cb0e8d47e7378871"
+  },
+  {
+    "path": "/home/test/cutpaste_results/mvtec_scratch3way_seed42_20261008/wood/image/last.pt",
+    "sha256": "985188f1cf632ecc1b11357b89f822c3e023d38b9a769770fcf6491ac09d0868"
+  },
+  {
+    "path": "/home/test/cutpaste_results/mvtec_scratch3way_seed42_20261008/wood/image/train_features.npy",
+    "sha256": "80114bf2aa21cb604e06de61b5a1905daa90dd4d83a415e1865aa0ac95089160"
+  },
+  {
+    "path": "/home/test/cutpaste_results/mvtec_scratch3way_seed42_20261008/wood/image/test_features.npy",
+    "sha256": "bfae77f2fe94c8ae5a4ac4b88adc12e3b74dd1d86a8529677f9010f8222f8852"
+  },
+  {
+    "path": "/home/test/cutpaste_results/mvtec_scratch3way_seed42_20261008/wood/patch/last.pt",
+    "sha256": "fbf33dc0d8d5034ca26ac15fd15d228361c9c61f2d9be8cb17be4768669ae6c9"
+  },
+  {
+    "path": "/home/test/cutpaste_results/mvtec_scratch3way_seed42_20261008/wood/patch/train_features.npy",
+    "sha256": "5ed718ad2c4c0f1fbf4c04dfdf7ab4af7d1cc9692d3ef2c19285c8c6311b9cce"
+  },
+  {
+    "path": "/home/test/cutpaste_results/mvtec_scratch3way_seed42_20261008/wood/patch/test_features.npy",
+    "sha256": "2749e1620aa40ba714d8987425d1b77796d00ac0079fa549dee6992ca8309810"
+  },
+  {
+    "path": "/home/test/cutpaste_results/mvtec_scratch3way_seed42_20261008/wood/patch/density_mean.npy",
+    "sha256": "eed9a9c28d4907076e84c68079406d94592acafd2b394fc4b8fb998e47526901"
+  },
+  {
+    "path": "/home/test/cutpaste_results/mvtec_scratch3way_seed42_20261008/wood/patch/density_precision.npy",
+    "sha256": "797c9bae23d14af5e1c4f3665b5fc9d51c44a630b74caf7802de15026da50ab8"
+  },
+  {
+    "path": "/home/test/cutpaste_results/mvtec_scratch3way_seed42_20261008/wood/patch/density_shrinkage.npy",
+    "sha256": "a50f440989b66ab5129ffb96aa8891cb91e42aa64753f31e6406075bb71993b0"
+  }
+]

@@ -1,0 +1,5 @@
+image_path,label,sha256,mask_path,mask_sha256
+/home/test/data/mvtec/bottle/train/good/104.png,0,e5647ac4f4f8bd8b2a717efabfa810e88760718a3e9e402e130db44b2f0bc58a,,
+/home/test/data/mvtec/bottle/train/good/133.png,0,7406eeb9d09eacdcf9ea6c54637e5586d188a0be44615cba24723bafbd547029,,
+/home/test/data/mvtec/bottle/train/good/138.png,0,be3e7df715fd4d0072670f7058c70c7374475700272b8af7c95846d0eed75766,,
+/home/test/data/mvtec/bottle/train/good/179.png,0,e54b7f1f22c1ed5795b3a09a426c15eac516fd712df3744223a0cd6440321c48,,
