@@ -1,4 +1,6 @@
-# Method26 — QueCo 공통 프레임워크
+# Method11 — QueCo 공통 프레임워크
+
+2026-10-13에 method26에서 method11로 번호를 변경했다. csv 폴더의 기존 method11 결과는 이전 PaDiM 실험 자료이며 이 QueCo 결과와 다르다.
 
 제공된 QueCo 추가 ZIP을 이 method의 기준 소스로 보관한다. 기존 method9의 QueCo 결과·실행 자료는 이곳으로 이동했다. 다른 모델의 method9 자료는 유지한다.
 
