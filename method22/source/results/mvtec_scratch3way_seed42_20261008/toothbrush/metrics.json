@@ -1,8 +1,0 @@
-{
-  "dataset": "mvtec",
-  "category": "toothbrush",
-  "n_train": 60,
-  "n_images": 42,
-  "image_auroc": 0.8777777777777778,
-  "pixel_auroc": 0.9453068341798497
-}

@@ -1,9 +1,0 @@
-{
-  "status": "passed",
-  "n_categories": 15,
-  "n_images": 1725,
-  "all_category_verifications_passed": true,
-  "classification_only": true,
-  "all_global_scores_FP64_checked": true,
-  "all_RsCIN_alignment_and_metrics_checked": true
-}

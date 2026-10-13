@@ -1,5 +1,0 @@
-image_path,label,sha256,mask_path,mask_sha256
-/home/test/data/btad_original/BTech_Dataset_transformed/03/train/ok/0415.bmp,0,5c7cc22594157bf5809cb6bd95034b94f3c353da6df1d68993729ea508cc8e08,,
-/home/test/data/btad_original/BTech_Dataset_transformed/03/train/ok/0085.bmp,0,99f360c3ca56a180e74665b4f983d11b120f91d07450fefa12a415dec2cade4a,,
-/home/test/data/btad_original/BTech_Dataset_transformed/03/train/ok/0083.bmp,0,7a54e2ec06eda5d3caebe531ffbfe0eacdb546d50dfb4de57f24a8450b239531,,
-/home/test/data/btad_original/BTech_Dataset_transformed/03/train/ok/0935.bmp,0,65eb49035ba91513af318fce904d11190cdf245beaa165cc6215bcd5db0dfd9b,,

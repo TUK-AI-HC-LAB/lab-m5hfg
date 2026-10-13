@@ -1,9 +1,0 @@
-{
-  "dataset": "btad",
-  "category": "03",
-  "n_train": 1000,
-  "n_images": 441,
-  "image_auroc": 0.994390243902439,
-  "pixel_auroc": 0.9958375694246031,
-  "seconds": 117.56162916299999
-}

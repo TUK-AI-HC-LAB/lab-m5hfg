@@ -1,8 +1,0 @@
-{
-  "dataset": "mvtec",
-  "category": "leather",
-  "n_train": 245,
-  "n_images": 124,
-  "image_auroc": 1.0,
-  "pixel_auroc": 0.9902522160240936
-}

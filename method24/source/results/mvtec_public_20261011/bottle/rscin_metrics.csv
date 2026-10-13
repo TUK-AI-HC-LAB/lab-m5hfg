@@ -1,3 +1,0 @@
-dataset,category,rscin,n_images,image_auroc,image_f1_max,image_ap
-mvtec,bottle,w/o,83,1.0,1.0,0.9999999999999998
-mvtec,bottle,w,83,1.0,1.0,0.9999999999999998

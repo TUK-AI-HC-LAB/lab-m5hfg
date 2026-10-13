@@ -1,8 +1,0 @@
-{
-  "status": "passed",
-  "n_conditions": 2,
-  "n_category_rounds": 180,
-  "training_executed": false,
-  "public_checkpoint_evaluation": true,
-  "all_round_inputs_raw_and_metrics_verified": true
-}

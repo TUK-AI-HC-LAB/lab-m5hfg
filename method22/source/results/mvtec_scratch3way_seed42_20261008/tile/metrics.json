@@ -1,8 +1,0 @@
-{
-  "dataset": "mvtec",
-  "category": "tile",
-  "n_train": 230,
-  "n_images": 117,
-  "image_auroc": 0.9307359307359307,
-  "pixel_auroc": 0.8925600723423531
-}
