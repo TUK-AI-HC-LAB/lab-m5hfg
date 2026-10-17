@@ -1,0 +1,964 @@
+{
+  "date": "2026-10-17",
+  "operation": "Added missing files only; did not overwrite existing snapshot source files.",
+  "sources": [
+    {
+      "root": "C:\\Users\\test\\Downloads\\dinomaly_share_codebase\\dinomaly_share_codebase",
+      "count": 142
+    },
+    {
+      "root": "\\\\wsl.localhost\\Ubuntu\\home\\test\\anomalyclip",
+      "commit": "3911738c0867544f545a076ad78f3f11d9ecbfdf",
+      "count": 22
+    }
+  ],
+  "snapshot": "C:\\Users\\test\\Desktop\\Codex\\lab-m5hfg\\method9\\source\\common_framework_validation_patch\\framework_snapshot",
+  "copied_file_count": 164,
+  "copied_total_bytes": 6624539,
+  "copied_files": [
+    {
+      "path": "docker-compose.yaml",
+      "bytes": 437,
+      "sha256": "ac1e3beab3ab13513e90346314e165e95c5054432514f84b85ca4f0d722acc2e"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 1065,
+      "sha256": "dee153ec9b16872d105c7d1939e8b7af3646a24795d4adbcc365b338e3cd5b44"
+    },
+    {
+      "path": "metrics.py",
+      "bytes": 8085,
+      "sha256": "e6f640da772b3f808f3601467cb107d0438aa540186e69aa5460fec54c7634f3"
+    },
+    {
+      "path": "requirements.txt",
+      "bytes": 442,
+      "sha256": "89547c6e3e98e755224895a4c86a135dbde50310835fa8ccb17309e8202e7a79"
+    },
+    {
+      "path": "utils.py",
+      "bytes": 57062,
+      "sha256": "7caca8e7ba81a4dc4cc2e0ba11192a6e48c8ac5deec543d28cc0dc981f5b8a5e"
+    },
+    {
+      "path": "COAD/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "COAD/common.py",
+      "bytes": 15749,
+      "sha256": "a54b1dedc92deb34381c5ebcd695fe0944713ad5e9596646601b9704ccd7e418"
+    },
+    {
+      "path": "COAD/encoder.py",
+      "bytes": 4369,
+      "sha256": "caf75953f862a289c855f4536b6686258db942f4e6762845583990b8229f39df"
+    },
+    {
+      "path": "COAD/sampler.py",
+      "bytes": 8110,
+      "sha256": "853660788cf8dc82a301c272ea1211debb9ab95be641de0599cdad8a2b294e59"
+    },
+    {
+      "path": "COAD/backbones/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "COAD/backbones/utils.py",
+      "bytes": 24549,
+      "sha256": "123ef09449090c72f352471937fefaa0b0d678fdc29bf07eb6c7626593eeab09"
+    },
+    {
+      "path": "COAD/backbones/vision_transformer.py",
+      "bytes": 13434,
+      "sha256": "9980ae7fac08da35fe348a6bfaa7f5726c7da3906f43d71c89a82404771eb1b8"
+    },
+    {
+      "path": "configs/queco.yaml",
+      "bytes": 1086,
+      "sha256": "163d5986f8bb91f8aac99294e4cf779c857b1256094a703e5d7d8aeda5119e2f"
+    },
+    {
+      "path": "datasets/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "trainer/classes.py",
+      "bytes": 2647,
+      "sha256": "4976c7ad3a758d8672b1c26c84b6d3552e7091bdacd3b75636ae12a8e7d1f303"
+    },
+    {
+      "path": "trainer/trainer_ourzad.py",
+      "bytes": 17545,
+      "sha256": "54c44e3807bde801d8ea27baa0203a67ea9d4c3df7b7de5bbb21444782efb855"
+    },
+    {
+      "path": "trainer/CLIPAD/__init__.py",
+      "bytes": 963,
+      "sha256": "699a662afa012f3a4eef47ec6eb09e41236b71160da82a531696a7d6b6b2ac9a"
+    },
+    {
+      "path": "trainer/CLIPAD/ad_prompts.py",
+      "bytes": 5072,
+      "sha256": "d8d8caef2104366ac566a9578ddad39b5042e6a12a3337b5e647db8f533e5c79"
+    },
+    {
+      "path": "trainer/CLIPAD/bpe_simple_vocab_16e6.txt.gz",
+      "bytes": 1356917,
+      "sha256": "924691ac288e54409236115652ad4aa250f48203de50a9e4722a6ecd48d6804a"
+    },
+    {
+      "path": "trainer/CLIPAD/coca_model.py",
+      "bytes": 17439,
+      "sha256": "63762d49bd7b67518d9c9fb0a96f69e3bd2f7cc536e514d9372683a61311d07b"
+    },
+    {
+      "path": "trainer/CLIPAD/constants.py",
+      "bytes": 116,
+      "sha256": "4289fac298908e2fb814ff84b4594ff49094a7eab074fed1b2ca6429339e923b"
+    },
+    {
+      "path": "trainer/CLIPAD/factory.py",
+      "bytes": 13402,
+      "sha256": "c44f2446c1112bb1cafdf408452cc12c37731fb1d88259e057b3c3cd8b029565"
+    },
+    {
+      "path": "trainer/CLIPAD/generation_utils.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "trainer/CLIPAD/hf_configs.py",
+      "bytes": 1675,
+      "sha256": "706c17fe0f02298a03a03f21c7ccf19b8d5408e6da4dd517f804090774c02100"
+    },
+    {
+      "path": "trainer/CLIPAD/hf_model.py",
+      "bytes": 6298,
+      "sha256": "a322c444d3fb614d45b2b30ef544290503b531d3b5f6d5d148601a54361c382f"
+    },
+    {
+      "path": "trainer/CLIPAD/loss.py",
+      "bytes": 7943,
+      "sha256": "6257ee1ac8e53178f439387f8e6111ba2d10b362a47475e3b0511405d24e7d82"
+    },
+    {
+      "path": "trainer/CLIPAD/model.py",
+      "bytes": 18397,
+      "sha256": "671bbc62e5e37421eea9550e3df0295cdf0615b00c0ded4c17d845430df7ec10"
+    },
+    {
+      "path": "trainer/CLIPAD/modified_resnet.py",
+      "bytes": 7035,
+      "sha256": "897534d25611fb83520f749cb19e000b7e19bc6d1946072c03e28dc37057d136"
+    },
+    {
+      "path": "trainer/CLIPAD/openai.py",
+      "bytes": 5446,
+      "sha256": "f96a14feff6f6af7625d7ca3ec12f095aeed657b0d7f3953512c1eaadeb999c2"
+    },
+    {
+      "path": "trainer/CLIPAD/pretrained.py",
+      "bytes": 14144,
+      "sha256": "78433ace9a39401b0d94d9cfce75f63e25101f0ab802d266fe9f7bfeda2d93e2"
+    },
+    {
+      "path": "trainer/CLIPAD/push_to_hf_hub.py",
+      "bytes": 7660,
+      "sha256": "b343d65a7b2b1b0d69b14f8ad264966c363f767793b3de85a3d1792b2dc55ba3"
+    },
+    {
+      "path": "trainer/CLIPAD/timm_model.py",
+      "bytes": 5077,
+      "sha256": "a8f57501c7552183a15badd4345c1e4f337a957f72abedbb339dbfcbc5d163f2"
+    },
+    {
+      "path": "trainer/CLIPAD/tokenizer.py",
+      "bytes": 7411,
+      "sha256": "5f55e9e2050feb3168a4fcef881bb13ef142f37a298d288d3da8cbf07f839a14"
+    },
+    {
+      "path": "trainer/CLIPAD/transform.py",
+      "bytes": 4779,
+      "sha256": "41c5cfee01c7e3e2f29c5a3934954298ed3ff3bc73f45a8998427283871c44ba"
+    },
+    {
+      "path": "trainer/CLIPAD/transformer.py",
+      "bytes": 36497,
+      "sha256": "f0ab3aa97f10f2d48f30f747de7f7e40a418c96dc9ca6cfd5a67c6a0b606f19a"
+    },
+    {
+      "path": "trainer/CLIPAD/utils.py",
+      "bytes": 2223,
+      "sha256": "459dd691e95325eb7100ae107f81f05a84d5e4fc50f7ef6044a700390dffdeb5"
+    },
+    {
+      "path": "trainer/CLIPAD/version.py",
+      "bytes": 23,
+      "sha256": "c6ddb2615ac179aa2763e21289583c06f034cc8aa21d0fb405c9b02075ae123b"
+    },
+    {
+      "path": "trainer/CLIPAD/model_configs/ViT-B-16-plus-240.json",
+      "bytes": 295,
+      "sha256": "09b2a65ea7bf757440b89b52e7a09ff85d556635f0e3a4ca76109e42aac6e351"
+    },
+    {
+      "path": "trainer/CLIPAD/prompt_utils/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "trainer/CLIPAD/prompt_utils/csv_utils.py",
+      "bytes": 1098,
+      "sha256": "efa68ee69ab398011b20c2558b6b5652c038b87d3001bd33f4b92b235d88c052"
+    },
+    {
+      "path": "trainer/CLIPAD/prompt_utils/eval_utils.py",
+      "bytes": 2604,
+      "sha256": "d8a09e7081b3046d63a8e2704fa8fcd08b45452db2d0c9ce88c4f850ed2a9ff6"
+    },
+    {
+      "path": "trainer/CLIPAD/prompt_utils/metrics.py",
+      "bytes": 8482,
+      "sha256": "d936c912bbf1e1a07d304702e8ad675a76d8140b04c6cfdacc74561841200e0d"
+    },
+    {
+      "path": "trainer/CLIPAD/prompt_utils/training_utils.py",
+      "bytes": 1425,
+      "sha256": "78e1102139157bd010a281452805effe96be0647df57dd64eca42b6ca0d8c14f"
+    },
+    {
+      "path": "trainer/CLIPAD/prompt_utils/visualization.py",
+      "bytes": 3769,
+      "sha256": "f3cfd0e19d3236dc17878bf3d7d4a1a38bfc4a27ede54b6d04cdf052630027ed"
+    },
+    {
+      "path": "trainer/Dinomaly_lib/decoder.py",
+      "bytes": 7174,
+      "sha256": "87e46117c4de35feecd3d97638b6940fa500aeb75fe5ca151f49dce7208b918a"
+    },
+    {
+      "path": "trainer/Dinomaly_lib/utils.py",
+      "bytes": 30027,
+      "sha256": "168f32ab6d0a969b6eb3ff7bc2bbc1c1f6ee64a2314628283dd52174b437683d"
+    },
+    {
+      "path": "trainer/Dinomaly_lib/beit/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "trainer/Dinomaly_lib/beit/vision_transformer.py",
+      "bytes": 23798,
+      "sha256": "2400bc47750c4e65902ecee9c092f41f5b5fa22406950ead9ba4b9514c804107"
+    },
+    {
+      "path": "trainer/Dinomaly_lib/dinov1/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "trainer/Dinomaly_lib/dinov1/utils.py",
+      "bytes": 24549,
+      "sha256": "123ef09449090c72f352471937fefaa0b0d678fdc29bf07eb6c7626593eeab09"
+    },
+    {
+      "path": "trainer/Dinomaly_lib/dinov1/vision_transformer.py",
+      "bytes": 14245,
+      "sha256": "84066a11b7c40840b6917eaf0d2fd38116eb041212173f586215c142b57e2ef1"
+    },
+    {
+      "path": "trainer/Dinomaly_lib/dinov2/__init__.py",
+      "bytes": 218,
+      "sha256": "0d2b87b7e71c7f7279ccc4b4f8b541d26071425284a0ea01a5a435fac4511cfe"
+    },
+    {
+      "path": "trainer/Dinomaly_lib/dinov2/layers/__init__.py",
+      "bytes": 418,
+      "sha256": "a23f101c4eb31288c20a4dda4bfe64dff23dc73e94dcac42eb3dee7e335ccd2b"
+    },
+    {
+      "path": "trainer/Dinomaly_lib/dinov2/layers/attention.py",
+      "bytes": 2648,
+      "sha256": "e25158047e0ff6b22ba4c029b37d370f9b40b764edab21a7608045dd7a1c5424"
+    },
+    {
+      "path": "trainer/Dinomaly_lib/dinov2/layers/block.py",
+      "bytes": 10022,
+      "sha256": "b3dc871d046ed8f11a68f7a6063691f12ea66fbef1e64b54e9d715ba31fb5269"
+    },
+    {
+      "path": "trainer/Dinomaly_lib/dinov2/layers/dino_head.py",
+      "bytes": 2007,
+      "sha256": "9fdb1fa61c0609dc0876f711f9d0d828c33bf9fd972aab3d9c968d44e16b98d1"
+    },
+    {
+      "path": "trainer/Dinomaly_lib/dinov2/layers/drop_path.py",
+      "bytes": 1157,
+      "sha256": "b9f8236e86054b9d9a71275efcad2a9ecaa1f86b529d4b8d6109ddb5e806f67a"
+    },
+    {
+      "path": "trainer/Dinomaly_lib/dinov2/layers/layer_scale.py",
+      "bytes": 820,
+      "sha256": "abb7bbfae152a9de2e6d0961ab5e75c79428e849281bfe50dd07b66b54b485d1"
+    },
+    {
+      "path": "trainer/Dinomaly_lib/dinov2/layers/mlp.py",
+      "bytes": 1269,
+      "sha256": "255825c73b60a916dd00eb1e38aacbcdbf316e40d6a005efb46e245b7edb43aa"
+    },
+    {
+      "path": "trainer/Dinomaly_lib/dinov2/layers/patch_embed.py",
+      "bytes": 2829,
+      "sha256": "40da6add3d811198ea3e17cb99cdd4e5cda59e369efbbe3d18d89308618cf142"
+    },
+    {
+      "path": "trainer/Dinomaly_lib/dinov2/layers/swiglu_ffn.py",
+      "bytes": 2182,
+      "sha256": "816539ba3958644009cb45fc00f033881574843beedaa41028ca191fcedea271"
+    },
+    {
+      "path": "trainer/Dinomaly_lib/dinov2/models/__init__.py",
+      "bytes": 1486,
+      "sha256": "87b360c71997314f41be1c497cc42326fc32617d3a2840f2f19d3795ca8b85ee"
+    },
+    {
+      "path": "trainer/Dinomaly_lib/dinov2/models/vision_transformer.py",
+      "bytes": 16990,
+      "sha256": "797bc4e2faf68d5c36e1d16e88cd58e4d643757394a05f0acfaf71b936fcfcb0"
+    },
+    {
+      "path": "trainer/Dinomaly_lib/models/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "trainer/Dinomaly_lib/models/uad.py",
+      "bytes": 15582,
+      "sha256": "04de7ae92a672159eab5aabdd38c35652c33ec7f8eca00bf357aa1f580baaf93"
+    },
+    {
+      "path": "trainer/Dinomaly_lib/models/vision_transformer.py",
+      "bytes": 12520,
+      "sha256": "f972c48485e930438ae38962c0fa6289170dfd6088b8b9e5704f33544ca6cd13"
+    },
+    {
+      "path": "trainer/Dinomaly_lib/models/vit_encoder.py",
+      "bytes": 12530,
+      "sha256": "54ffef87ce06371c19201914ff0ab0df5de43ad60ddd6b8402426c707ac77d68"
+    },
+    {
+      "path": "trainer/Dinomaly_lib/optimizers/__init__.py",
+      "bytes": 280,
+      "sha256": "eb506a8fbe2e66d4d79ce5fb9757bb21731206007ff626c38bc160cc8d1ea6c2"
+    },
+    {
+      "path": "trainer/Dinomaly_lib/optimizers/ACProp.py",
+      "bytes": 9984,
+      "sha256": "729b5d1e40e0819713c7909f7c028a2ef3a0201f14c157feae502442f52af613"
+    },
+    {
+      "path": "trainer/Dinomaly_lib/optimizers/AdaBelief.py",
+      "bytes": 9062,
+      "sha256": "d11ebac88674851dcd97c09016cab167b9bf4fb56c5751bce17d5bf04a802aad"
+    },
+    {
+      "path": "trainer/Dinomaly_lib/optimizers/AdaM3.py",
+      "bytes": 9729,
+      "sha256": "d2a7d2121810665cdcb13d0911deb88beb0abc40c307b1c2dd23aadd2fa07606"
+    },
+    {
+      "path": "trainer/Dinomaly_lib/optimizers/AdaMod.py",
+      "bytes": 4215,
+      "sha256": "cb28211b9eb8ba9fecf29a2324dbd12906589201983f51885a38e91dd56b1a7c"
+    },
+    {
+      "path": "trainer/Dinomaly_lib/optimizers/AdamS.py",
+      "bytes": 5430,
+      "sha256": "cf8420b93c079d6c1c33e5763e2201ed053ddb576a0c4b43dc40b5f25347b0a9"
+    },
+    {
+      "path": "trainer/Dinomaly_lib/optimizers/AdamW.py",
+      "bytes": 5274,
+      "sha256": "200c37174603341e6bc8e2615ff95b84f21f95da5222851bcfc19811dd94f230"
+    },
+    {
+      "path": "trainer/Dinomaly_lib/optimizers/AdaShift.py",
+      "bytes": 3730,
+      "sha256": "045e5d13fe64971e86bdb1c92ccd0ed472e8f382a898938a17290590ecffb25b"
+    },
+    {
+      "path": "trainer/Dinomaly_lib/optimizers/EAdam.py",
+      "bytes": 4607,
+      "sha256": "e9434525702be41fddb301c4e4015599a6704ba1f7aedda284d8f2ef509a437f"
+    },
+    {
+      "path": "trainer/Dinomaly_lib/optimizers/RAdam.py",
+      "bytes": 10443,
+      "sha256": "86aae2fbff158991c2d606fc907120bfb3c6a0920913e48d011c8a900fa1ee2d"
+    },
+    {
+      "path": "trainer/Dinomaly_lib/optimizers/StableAdamW.py",
+      "bytes": 5807,
+      "sha256": "d06d25a7c1aa9717fb73283783fd862b73e613a4eaae67c0427fe3e2115aed6e"
+    },
+    {
+      "path": "trainer/Dinomaly_lib/optimizers/Types.py",
+      "bytes": 301,
+      "sha256": "7c7aade64aa138510caacfb63381ecfe2a32b58fa382ff0b97d117c058355ca8"
+    },
+    {
+      "path": "trainer/GLASS_lib/loss.py",
+      "bytes": 3336,
+      "sha256": "e0dd1dc911a5b2917ffdcc7c1111dd5d58b52bb950da09f11519ebeff8d7f02f"
+    },
+    {
+      "path": "trainer/GLASS_lib/model.py",
+      "bytes": 3620,
+      "sha256": "da34f868a595a809cf9ecf9e27daa41e9dee28088207060ef733499642177656"
+    },
+    {
+      "path": "trainer/GLASS_lib/perlin.py",
+      "bytes": 3191,
+      "sha256": "d83d6dbcba4af5d594716fb36583a8816ca2597f43cc83a7c0c52d4e549b5e98"
+    },
+    {
+      "path": "trainer/GLASS_lib/utils.py",
+      "bytes": 5158,
+      "sha256": "19690fc50bbda6db3a55f5ae32e7d4cbac7a3a31a046ea80d9baf438241ead1c"
+    },
+    {
+      "path": "trainer/PaDiM_lib/functions.py",
+      "bytes": 5699,
+      "sha256": "3c212e252f558159a46f0b22c10bc59b19992afc2924965a3e8b174c7671823c"
+    },
+    {
+      "path": "trainer/QueCo_lib/__init__.py",
+      "bytes": 25,
+      "sha256": "1c93310baa1e6f6a39e524e7f30fdb018ba3d21331dc01f05ee7ecafe43f9f5c"
+    },
+    {
+      "path": "trainer/QueCo_lib/analysis.py",
+      "bytes": 10330,
+      "sha256": "1abc6364555b42d27b2f47e38f8667993782ae0a28210b8120e817a5b4f38fc4"
+    },
+    {
+      "path": "trainer/QueCo_lib/bpe_simple_vocab_16e6.txt.gz",
+      "bytes": 1355337,
+      "sha256": "80918f8ac18c61a1c7a9b414ae768606f1f0226c60e4dc1359226a9d6a18e96a"
+    },
+    {
+      "path": "trainer/QueCo_lib/build_model.py",
+      "bytes": 1378,
+      "sha256": "1321d29e1aabf41bab3e12789ce694f3a453276056e6854df5b33e297e23944f"
+    },
+    {
+      "path": "trainer/QueCo_lib/config.py",
+      "bytes": 4835,
+      "sha256": "1fabfc09566f7362818db0770b2115d7bcf10d6e82f7696be1486f4c34f602b5"
+    },
+    {
+      "path": "trainer/QueCo_lib/fusion.py",
+      "bytes": 6316,
+      "sha256": "6d88ea980ec2ce7c3d27b237856a3ad7332aabde95b8537bd34f351c6901aeb4"
+    },
+    {
+      "path": "trainer/QueCo_lib/metrics.py",
+      "bytes": 11329,
+      "sha256": "ede153196f7b5e03f34ee32c56e280e9888687a2b1ccd3d539415e3a7fb97cd2"
+    },
+    {
+      "path": "trainer/QueCo_lib/model_load.py",
+      "bytes": 7460,
+      "sha256": "38ae1309d863c7550a1e713277830f7fea1bf90455d8425b47415f4b6c137dcf"
+    },
+    {
+      "path": "trainer/QueCo_lib/pose_aux.py",
+      "bytes": 5652,
+      "sha256": "6d6d66334cb01d2655b6c64deefa4a035f7555b5b4f8bc6d47ac8b57f147c325"
+    },
+    {
+      "path": "trainer/QueCo_lib/prompt_ensemble.py",
+      "bytes": 19785,
+      "sha256": "a1ec638251d8fc25eb5d2384d4549e6284009d179058aa722b9959d7dfc7aed7"
+    },
+    {
+      "path": "trainer/QueCo_lib/QueCo.py",
+      "bytes": 27153,
+      "sha256": "e190421485a7567e092c2dc9f02dd0866c7509a8fbbc205d8d51219819320036"
+    },
+    {
+      "path": "trainer/QueCo_lib/similarity.py",
+      "bytes": 1036,
+      "sha256": "879484c28c26f7fb83abcf485317a5fd989b37e35456d928496ff8f9fbea2bde"
+    },
+    {
+      "path": "trainer/QueCo_lib/simple_tokenizer.py",
+      "bytes": 4632,
+      "sha256": "d1b09f10ed3d1e2c343619cb98cbfacb92363dd8607526a43aa7fe2d60d15bad"
+    },
+    {
+      "path": "trainer/QueCo_lib/transform.py",
+      "bytes": 1983,
+      "sha256": "df073b4fd204653dac403532e505cad2591e63198c4f1d7afcb1e0fae3ad48fa"
+    },
+    {
+      "path": "trainer/QueCo_lib/utils.py",
+      "bytes": 3044,
+      "sha256": "98271d5b094b079cf3f2d7f5a0e42ea5c084970bbc51d3740b1f1612e28dd521"
+    },
+    {
+      "path": "trainer/QueCo_lib/visual_branch.py",
+      "bytes": 10273,
+      "sha256": "8067a2c19c22d02b533d991f1294c0d79fd9d82ce8300e96f14cf7b9332adbb8"
+    },
+    {
+      "path": "trainer/RD_lib/de_resnet.py",
+      "bytes": 18760,
+      "sha256": "2480c3b37e512c418551375a5abf766c50afdee44a5076eb15e808d1ab4dff07"
+    },
+    {
+      "path": "trainer/RD_lib/noise.py",
+      "bytes": 31943,
+      "sha256": "535168274e0ff6d1efadab1adb5a4afe551f88b849df47a03222f812f9c7e2ca"
+    },
+    {
+      "path": "trainer/RD_lib/resnet.py",
+      "bytes": 22485,
+      "sha256": "a148815362c646f683a98f2a959057c108467e8e8fd8d4b571031d8373d81532"
+    },
+    {
+      "path": "trainer/RD_lib/utils_train.py",
+      "bytes": 6841,
+      "sha256": "ac4854db1f654784efc678883a94227e0850de19af4c90be7987fd2bc4625262"
+    },
+    {
+      "path": "trainer/UniAD_lib/models/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "trainer/UniAD_lib/models/initializer.py",
+      "bytes": 2307,
+      "sha256": "8186739d69bfe76f05421282c72e9569fb7d98220c0b5487c25e67dccc36ff0c"
+    },
+    {
+      "path": "trainer/UniAD_lib/models/model_helper.py",
+      "bytes": 2137,
+      "sha256": "7288583e9a0f2f9ff458e4c2422afb1663fa20ec45ed53b83b5a980e369258ef"
+    },
+    {
+      "path": "trainer/UniAD_lib/models/backbones/__init__.py",
+      "bytes": 2059,
+      "sha256": "c3d5d52e0c4c19b3d40edd4bee97f5fad871cf14b27a7a073a9a62e2979e3734"
+    },
+    {
+      "path": "trainer/UniAD_lib/models/backbones/resnet.py",
+      "bytes": 12603,
+      "sha256": "411a7d474220e80b6ee7fb9a4220f31fa374080acaf95100104f0746e854154a"
+    },
+    {
+      "path": "trainer/UniAD_lib/models/backbones/efficientnet/__init__.py",
+      "bytes": 2913,
+      "sha256": "b57900aa43204800fff6dbe229b279c5ceace8b64dd2a8b7346c346d0159c371"
+    },
+    {
+      "path": "trainer/UniAD_lib/models/backbones/efficientnet/model.py",
+      "bytes": 19850,
+      "sha256": "49add1f2ace8a56cca0ce0e1653e6bb01b4ca22dda07314d0fa672a7ef2e1f38"
+    },
+    {
+      "path": "trainer/UniAD_lib/models/backbones/efficientnet/utils.py",
+      "bytes": 26891,
+      "sha256": "1c6db51f19968894c062bd5f4aab649e5d65a38864ecc1481bb6f48bdbbe7402"
+    },
+    {
+      "path": "trainer/UniAD_lib/models/necks/__init__.py",
+      "bytes": 33,
+      "sha256": "f42db81f5a8f73da4f0cfe30cff3ceee0763f0c246425914114f266a5d02c202"
+    },
+    {
+      "path": "trainer/UniAD_lib/models/necks/mfcn.py",
+      "bytes": 1498,
+      "sha256": "e38d06fe0fe7445f282e3915ee7a164477bb2a95e1e439c1a8ccc0f60758f6d4"
+    },
+    {
+      "path": "trainer/UniAD_lib/models/reconstructions/__init__.py",
+      "bytes": 87,
+      "sha256": "cbd8c7bcabf67bd0aba8a55daa0c1df5349458fd8e7e1e2d977a4a746b18c06f"
+    },
+    {
+      "path": "trainer/UniAD_lib/models/reconstructions/uniad.py",
+      "bytes": 20412,
+      "sha256": "161230419f3087fc89351e38b304bf2565c5b26e5b25532bba2fba3a875eac7a"
+    },
+    {
+      "path": "trainer/UniAD_lib/models/reconstructions/vis_decoder.py",
+      "bytes": 7655,
+      "sha256": "4878bc614947953d43ac1d8b66a796c6504d70406b6867ae7dc937f0ab96bb3d"
+    },
+    {
+      "path": "trainer/UniAD_lib/utils/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "trainer/UniAD_lib/utils/criterion_helper.py",
+      "bytes": 920,
+      "sha256": "a18d26344ce9b3091dce2e308de076f75b0423e4cea3a1de1fe4b3b39c863a7b"
+    },
+    {
+      "path": "trainer/UniAD_lib/utils/misc_helper.py",
+      "bytes": 6944,
+      "sha256": "176e82d604b47c0f6540743aaf76c46331825c0f52e7b2a7a46af298a730ffb0"
+    },
+    {
+      "path": "trainer/WinCLIP_lib/open_clip/__init__.py",
+      "bytes": 1022,
+      "sha256": "7ebf333c9c8c5710ef28397274519a2063cc143fdeefc4224550be8180c0859d"
+    },
+    {
+      "path": "trainer/WinCLIP_lib/open_clip/bpe_simple_vocab_16e6.txt.gz",
+      "bytes": 1356917,
+      "sha256": "924691ac288e54409236115652ad4aa250f48203de50a9e4722a6ecd48d6804a"
+    },
+    {
+      "path": "trainer/WinCLIP_lib/open_clip/coca_model.py",
+      "bytes": 17439,
+      "sha256": "63762d49bd7b67518d9c9fb0a96f69e3bd2f7cc536e514d9372683a61311d07b"
+    },
+    {
+      "path": "trainer/WinCLIP_lib/open_clip/constants.py",
+      "bytes": 116,
+      "sha256": "4289fac298908e2fb814ff84b4594ff49094a7eab074fed1b2ca6429339e923b"
+    },
+    {
+      "path": "trainer/WinCLIP_lib/open_clip/factory.py",
+      "bytes": 21152,
+      "sha256": "34cfe26ef26053a5ba5245bf04e65876020f4acde8d3dbf828a2ed6ba149c7a1"
+    },
+    {
+      "path": "trainer/WinCLIP_lib/open_clip/generation_utils.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "trainer/WinCLIP_lib/open_clip/hf_configs.py",
+      "bytes": 1675,
+      "sha256": "706c17fe0f02298a03a03f21c7ccf19b8d5408e6da4dd517f804090774c02100"
+    },
+    {
+      "path": "trainer/WinCLIP_lib/open_clip/hf_model.py",
+      "bytes": 6298,
+      "sha256": "a322c444d3fb614d45b2b30ef544290503b531d3b5f6d5d148601a54361c382f"
+    },
+    {
+      "path": "trainer/WinCLIP_lib/open_clip/loss.py",
+      "bytes": 7943,
+      "sha256": "6257ee1ac8e53178f439387f8e6111ba2d10b362a47475e3b0511405d24e7d82"
+    },
+    {
+      "path": "trainer/WinCLIP_lib/open_clip/model_revise.py",
+      "bytes": 17647,
+      "sha256": "6e505f00b1d9cd7de5b9ed3fcdc27486a26cef06c659c0c62099ab0cd57f2eea"
+    },
+    {
+      "path": "trainer/WinCLIP_lib/open_clip/model.py",
+      "bytes": 17599,
+      "sha256": "9f2258b231a0295a2ef7b21c9bb18c84f424f2d47a9fc682a934b80fb748a1cf"
+    },
+    {
+      "path": "trainer/WinCLIP_lib/open_clip/modified_resnet.py",
+      "bytes": 7035,
+      "sha256": "897534d25611fb83520f749cb19e000b7e19bc6d1946072c03e28dc37057d136"
+    },
+    {
+      "path": "trainer/WinCLIP_lib/open_clip/openai.py",
+      "bytes": 5446,
+      "sha256": "f96a14feff6f6af7625d7ca3ec12f095aeed657b0d7f3953512c1eaadeb999c2"
+    },
+    {
+      "path": "trainer/WinCLIP_lib/open_clip/pretrained.py",
+      "bytes": 14144,
+      "sha256": "78433ace9a39401b0d94d9cfce75f63e25101f0ab802d266fe9f7bfeda2d93e2"
+    },
+    {
+      "path": "trainer/WinCLIP_lib/open_clip/push_to_hf_hub.py",
+      "bytes": 7660,
+      "sha256": "b343d65a7b2b1b0d69b14f8ad264966c363f767793b3de85a3d1792b2dc55ba3"
+    },
+    {
+      "path": "trainer/WinCLIP_lib/open_clip/timm_model.py",
+      "bytes": 5077,
+      "sha256": "a8f57501c7552183a15badd4345c1e4f337a957f72abedbb339dbfcbc5d163f2"
+    },
+    {
+      "path": "trainer/WinCLIP_lib/open_clip/tokenizer.py",
+      "bytes": 7411,
+      "sha256": "5f55e9e2050feb3168a4fcef881bb13ef142f37a298d288d3da8cbf07f839a14"
+    },
+    {
+      "path": "trainer/WinCLIP_lib/open_clip/transform.py",
+      "bytes": 4779,
+      "sha256": "41c5cfee01c7e3e2f29c5a3934954298ed3ff3bc73f45a8998427283871c44ba"
+    },
+    {
+      "path": "trainer/WinCLIP_lib/open_clip/transformer.py",
+      "bytes": 28316,
+      "sha256": "7fe7cd1d992ec0b2cccf28ac147eb12015433e71a2d36e406b50adf1f88892f9"
+    },
+    {
+      "path": "trainer/WinCLIP_lib/open_clip/utils.py",
+      "bytes": 2223,
+      "sha256": "459dd691e95325eb7100ae107f81f05a84d5e4fc50f7ef6044a700390dffdeb5"
+    },
+    {
+      "path": "trainer/WinCLIP_lib/open_clip/version.py",
+      "bytes": 23,
+      "sha256": "c6ddb2615ac179aa2763e21289583c06f034cc8aa21d0fb405c9b02075ae123b"
+    },
+    {
+      "path": "trainer/WinCLIP_lib/open_clip/model_configs/ViT-B-16-plus-240.json",
+      "bytes": 295,
+      "sha256": "09b2a65ea7bf757440b89b52e7a09ff85d556635f0e3a4ca76109e42aac6e351"
+    },
+    {
+      "path": "external/AnomalyCLIP/dataset.py",
+      "bytes": 3887,
+      "sha256": "a63e265eca5c537fa54a215f8bd95b43bc02751532b6c1e3b4a777e939b725ac"
+    },
+    {
+      "path": "external/AnomalyCLIP/LICENSE",
+      "bytes": 1068,
+      "sha256": "23a15f9f18973b2376cb281cb3bba6fea79c80c1af79982a48920b40f3a25f4f"
+    },
+    {
+      "path": "external/AnomalyCLIP/logger.py",
+      "bytes": 864,
+      "sha256": "8097721effa3c87437a5edf4f08f6f9bb312b734b87b032cf532b2f11e14df14"
+    },
+    {
+      "path": "external/AnomalyCLIP/loss.py",
+      "bytes": 4753,
+      "sha256": "3c7e65c811ddadba2b75810bf570d9ff9b25ff63f2d2d943cb487b0069dd3aef"
+    },
+    {
+      "path": "external/AnomalyCLIP/metrics.py",
+      "bytes": 2237,
+      "sha256": "846c6e6dae3b1b34ebbf50f2814436c125526307ba89cd94bd89ffac0c392497"
+    },
+    {
+      "path": "external/AnomalyCLIP/prompt_ensemble.py",
+      "bytes": 12721,
+      "sha256": "b76f13b29a3145c2e07c83b2adf5eeb6cb9593776b896df7868daad3ef34f87d"
+    },
+    {
+      "path": "external/AnomalyCLIP/README.md",
+      "bytes": 7722,
+      "sha256": "b377c250edbb094da0de6b368e74cef85f5c9427c3fb87300ac5092b67affb42"
+    },
+    {
+      "path": "external/AnomalyCLIP/requirements.txt",
+      "bytes": 167,
+      "sha256": "32b89c1d78cd31154b4b8484b4937445c75657db171efb6c691a480a77105a02"
+    },
+    {
+      "path": "external/AnomalyCLIP/test_one_example.py",
+      "bytes": 5099,
+      "sha256": "ca3e74dc9494b94ab10ad285a26681be62d637c69ac9cd89a553e52272198205"
+    },
+    {
+      "path": "external/AnomalyCLIP/test.py",
+      "bytes": 9529,
+      "sha256": "c770f3dfb5b15b389985251a48923b7beb2d82acb96afd875db4095d83d46c2e"
+    },
+    {
+      "path": "external/AnomalyCLIP/train.py",
+      "bytes": 6644,
+      "sha256": "c5c1f0eb06cd7d139555184fa69a84ce2e05134149d52c0dc692227ecea6cf1f"
+    },
+    {
+      "path": "external/AnomalyCLIP/utils.py",
+      "bytes": 1202,
+      "sha256": "cbeefcfdac6704a2212ccde67eaec094c6aa660009f83f9f750410d3c3ce10a2"
+    },
+    {
+      "path": "external/AnomalyCLIP/visualization.py",
+      "bytes": 1041,
+      "sha256": "46374c81403802abae2beafdbfb27cf569b0fbca40d6d17fd8b62e6b09af93e2"
+    },
+    {
+      "path": "external/AnomalyCLIP/AnomalyCLIP_lib/__init__.py",
+      "bytes": 26,
+      "sha256": "d8861c9c455f8512721c1732103d45e16972318c84c4459b0a85580441de11b7"
+    },
+    {
+      "path": "external/AnomalyCLIP/AnomalyCLIP_lib/AnomalyCLIP.py",
+      "bytes": 21768,
+      "sha256": "7046163f10d9d8f1f5fa1c8efc01af72ba3ee712c1629c58c54511bfa138cc01"
+    },
+    {
+      "path": "external/AnomalyCLIP/AnomalyCLIP_lib/bpe_simple_vocab_16e6.txt.gz",
+      "bytes": 1356917,
+      "sha256": "924691ac288e54409236115652ad4aa250f48203de50a9e4722a6ecd48d6804a"
+    },
+    {
+      "path": "external/AnomalyCLIP/AnomalyCLIP_lib/build_model.py",
+      "bytes": 2377,
+      "sha256": "2a969020df980979ff763e5c4bab5fb01de3b3496e2122043cc8036657ca7695"
+    },
+    {
+      "path": "external/AnomalyCLIP/AnomalyCLIP_lib/CLIP.py",
+      "bytes": 17920,
+      "sha256": "52093aa2891d987de10faa3c67b1012a2ccf496161a9ac014f4f2c9d1102f8d3"
+    },
+    {
+      "path": "external/AnomalyCLIP/AnomalyCLIP_lib/constants.py",
+      "bytes": 116,
+      "sha256": "4289fac298908e2fb814ff84b4594ff49094a7eab074fed1b2ca6429339e923b"
+    },
+    {
+      "path": "external/AnomalyCLIP/AnomalyCLIP_lib/model_load.py",
+      "bytes": 8840,
+      "sha256": "9ad390f32f36d34a252c89d81f622e18073dfd953254d1eecddcf7d9ef89d5a3"
+    },
+    {
+      "path": "external/AnomalyCLIP/AnomalyCLIP_lib/simple_tokenizer.py",
+      "bytes": 4632,
+      "sha256": "d1b09f10ed3d1e2c343619cb98cbfacb92363dd8607526a43aa7fe2d60d15bad"
+    },
+    {
+      "path": "external/AnomalyCLIP/AnomalyCLIP_lib/transform.py",
+      "bytes": 4779,
+      "sha256": "41c5cfee01c7e3e2f29c5a3934954298ed3ff3bc73f45a8998427283871c44ba"
+    }
+  ],
+  "verification": {
+    "syntax_and_reference_import_audit": {
+      "python_files_checked": 180,
+      "syntax_errors": [],
+      "missing_reference_local_imports": [],
+      "external_import_names_not_install_check": [
+        "PIL",
+        "__future__",
+        "abc",
+        "albumentations",
+        "argparse",
+        "bisect",
+        "builtins",
+        "collections",
+        "colorama",
+        "copy",
+        "csv",
+        "ctypes",
+        "cv2",
+        "dataclasses",
+        "datetime",
+        "einops",
+        "enum",
+        "faiss",
+        "ftfy",
+        "functools",
+        "geomloss",
+        "glob",
+        "gzip",
+        "hashlib",
+        "hdbscan",
+        "horovod",
+        "html",
+        "huggingface_hub",
+        "importlib",
+        "itertools",
+        "json",
+        "logging",
+        "loguru",
+        "math",
+        "matplotlib",
+        "numba",
+        "numpy",
+        "open_clip",
+        "os",
+        "pandas",
+        "pathlib",
+        "pickle",
+        "pkg_resources",
+        "psutil",
+        "random",
+        "re",
+        "regex",
+        "scipy",
+        "seaborn",
+        "shutil",
+        "skimage",
+        "sklearn",
+        "statistics",
+        "subprocess",
+        "sys",
+        "tabulate",
+        "tempfile",
+        "thop",
+        "time",
+        "timm",
+        "torch",
+        "torchmetrics",
+        "torchvision",
+        "tqdm",
+        "transformers",
+        "types",
+        "typing",
+        "urllib",
+        "wandb",
+        "warnings",
+        "xformers",
+        "yaml"
+      ],
+      "limitations": "Static inspection only; dynamic imports, data, weights and third-party runtime compatibility are not execution-verified."
+    },
+    "registry_dynamic_module_paths": {
+      "checked": 22,
+      "missing": []
+    },
+    "bpe_assets_readable": 4,
+    "bundled_anomalyclip_config_source_paths_checked": true,
+    "runtime_smoke_test": {
+      "command": "python -B framework_snapshot/main.py --help",
+      "exit_code": 1,
+      "result": "Blocked by missing external package loguru in current Windows Python. torch/torchvision also not installed. No package installation or model execution performed."
+    }
+  },
+  "existing_local_dataset_sources_added_to_github": [
+  {
+    "path": "datasets/anomalyclip_mvtec.py",
+    "bytes": 3121,
+    "sha256": "9d15b8d14cc6cb94e07bcf01509f47162185e58e8d6de9255c2536a02d1b45f8"
+  },
+  {
+    "path": "datasets/explicit_realiad.py",
+    "bytes": 13442,
+    "sha256": "1b11fedbe4f150d42b9b26d5af550ed50275abc8213e137fa25903de47ba19e9"
+  },
+  {
+    "path": "datasets/lgdata.py",
+    "bytes": 3678,
+    "sha256": "934524aff541fb0b1cf8e5d053f33f52b18bc8d2578a70acb81666d58fa8b3e7"
+  }
+],
+  "exclusions": [
+    "datasets (image data)",
+    "model weights/checkpoints",
+    "virtual environments",
+    "caches",
+    "logs",
+    "new experiment results"
+  ],
+  "notes": [
+    "Existing source files were preserved, so this is not a uniform historical checkout.",
+    "Original WSL launch scripts still refer to the original source root.",
+    "Third-party dependencies are not vendored or execution-validated.",
+    "requirements.txt is copied from local source, not a version-locked environment."
+  ]
+}

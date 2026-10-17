@@ -1,0 +1,7 @@
+# Supplement, not a locked CUDA/runtime environment. No packages were installed.
+-r requirements.txt
+torch
+torchvision
+torchmetrics
+einops
+thop

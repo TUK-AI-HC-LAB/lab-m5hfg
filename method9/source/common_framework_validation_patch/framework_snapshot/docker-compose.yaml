@@ -1,0 +1,20 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile.simple
+      args:
+        UID: 1000
+        GID: 1000
+    volumes:
+      - .:/app:cached
+      - ${DINOMALY_DATA_ROOT:-./dataset}:/datasets:cached
+      - ./.cache:/home/myuser/.cache
+    shm_size: '8gb'
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]

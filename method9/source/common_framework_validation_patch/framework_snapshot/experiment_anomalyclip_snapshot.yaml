@@ -1,0 +1,7 @@
+# Run from framework_snapshot/; preserves existing experiment/config files.
+method: anomalyclip
+dataset: mvtec
+category: bottle
+anomalyclip_source_root: external/AnomalyCLIP
+# Set this to a trained prompt checkpoint when reproducing a previous run.
+anomalyclip_checkpoint_path: ""

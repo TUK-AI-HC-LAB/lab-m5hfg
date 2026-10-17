@@ -2,6 +2,8 @@
 
 W40에서 사용한 코드·설정·실행 script·raw 결과를 원래의 상대 경로 구조로 보관한다.
 
+2026-10-17 보완: `framework_snapshot/`에 원본의 누락된 보조 코드·설정·tokenizer 자원과 AnomalyCLIP 공식 소스를 추가함. 기존 파일은 덮어쓰지 않음. 실행 전제와 확인 범위는 [SNAPSHOT_README.md](framework_snapshot/SNAPSHOT_README.md), 파일별 복사 근거는 `snapshot_completion_20261017.json`, 정적 검사는 `verify_snapshot_dependencies.py`에서 확인함. 라이브러리·데이터·모델까지 포함한 실행 환경 복제는 아님.
+
 - `validation_split.patch`: 원본 framework에 적용한 Python 코드 변경이다.
 - `anomalyclip_common_input.patch`: AnomalyCLIP도 WinCLIP과 같이 공통 ImageNet 정규화 입력을 그대로 받게 한 변경이다.
 - `run_all_methods_bottle_validation_wsl.sh`: `bottle`, seed 0에서 12개 등록 method를 순차 실행한 스크립트다.
