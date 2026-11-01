@@ -1,0 +1,45 @@
+{
+  "args": {
+    "dataset": "minishift",
+    "device": "cuda:0",
+    "num_group": 4096,
+    "group_size": 128,
+    "max_nn": 40,
+    "use_LFSA": true,
+    "use_MSND": true,
+    "num_MSND": 2,
+    "feature": "FPFH",
+    "level": "ALL",
+    "vis_save": false
+  },
+  "gpu": "NVIDIA GeForce RTX 5080",
+  "torch": "2.11.0+cu128",
+  "cuda": "12.8",
+  "open3d": "0.20.0",
+  "python": "3.11.17 (main, Oct 13 2026, 16:45:47) [GCC 15.3.0]",
+  "upstream_commit": "5951e097ed5f6c52c1e058490f8c64f9b6323501",
+  "runner_sha256": "0c236c46be30b394e8678802b5efe363e3f66e92662a3f63b8a9e33a54aacbee",
+  "train_count": 54,
+  "test_count": 130,
+  "pid": 408,
+  "smoke": false,
+  "native_fps_module": "/home/test/simple3d-native-env/lib/python3.11/site-packages/pointnet2_ops/pointnet2_utils.py",
+  "native_knn_module": "/home/test/simple3d-native-env/lib/python3.11/site-packages/knn_cuda/__init__.py",
+  "scales_computed": [
+    40,
+    80,
+    120
+  ],
+  "scales_concatenated": [
+    40,
+    80,
+    80,
+    120
+  ],
+  "compatibility": "native CUDA12.8 sm_120 PointNet2 and source-preserving KNN fork; upstream path/device fixes retained",
+  "fresh_fit": true,
+  "reused_test_features": false,
+  "paper_cuda_fpfh": true,
+  "fpfh_device": "CUDA:0",
+  "fpfh_backend_note": "Open3D tensor CUDA, float32, max_nn queries with verified nonbinding radius bounds; not bitwise legacy CPU parity"
+}

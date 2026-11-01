@@ -1,0 +1,2 @@
+object_auroc_pct,point_auroc_pct,fit_wall_s,inference_mean_ms,peak_gpu_allocated_gb,peak_gpu_device_used_gb,storage_total_gb
+91.5,81.02444942845756,1452.620554274,27980.11259438462,8.401996288,11.468865536,20.873865887

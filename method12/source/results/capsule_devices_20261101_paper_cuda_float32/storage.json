@@ -1,0 +1,49 @@
+{
+  "capsule_extracted": {
+    "path": "/home/test/data/MiniShift/capsule",
+    "exists": true,
+    "unique_logical_bytes": 7145839245
+  },
+  "capsule_archive": {
+    "path": "/home/test/data/MiniShift/capsule.zip",
+    "exists": true,
+    "unique_logical_bytes": 2767748831
+  },
+  "base_environment": {
+    "path": "/home/test/simple3d-env",
+    "exists": true,
+    "unique_logical_bytes": 9179353568
+  },
+  "native_environment": {
+    "path": "/home/test/simple3d-native-env",
+    "exists": true,
+    "unique_logical_bytes": 25636998
+  },
+  "native_cuda_toolkit": {
+    "path": "/home/test/simple3d-native-toolkit",
+    "exists": true,
+    "unique_logical_bytes": 1429600280
+  },
+  "native_extension_sources": {
+    "path": "/home/test/simple3d-native-src",
+    "exists": true,
+    "unique_logical_bytes": 2894106
+  },
+  "upstream_checkout": {
+    "path": "/mnt/c/Users/test/Desktop/Codex/Project/MiniShift-Simple3D",
+    "exists": true,
+    "unique_logical_bytes": 114378654
+  },
+  "current_raw_assets": {
+    "path": "/home/test/simple3d-capsule-devices-20261101-paper-cuda-float32",
+    "exists": true,
+    "unique_logical_bytes": 208024756
+  },
+  "current_measurement_files": {
+    "path": "/mnt/c/Users/test/Desktop/Codex/lab-m5hfg/method12/source/results/capsule_devices_20261101_paper_cuda_float32",
+    "exists": true,
+    "unique_logical_bytes": 389449
+  },
+  "total_bytes": 20873865887,
+  "definition": "Logical bytes, hardlinks deduplicated, symlink targets counted at base roots only. Includes capsule ZIP if retained, base/native environments and native toolkit/sources. Excludes other categories, previous results, OS/driver, shared global caches and this inventory itself."
+}

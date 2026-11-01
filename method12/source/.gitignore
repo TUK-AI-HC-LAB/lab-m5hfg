@@ -1,0 +1,5 @@
+__pycache__/
+*.pyc
+results/*/point_scores/
+results/*/memory_bank.pt
+*.log
