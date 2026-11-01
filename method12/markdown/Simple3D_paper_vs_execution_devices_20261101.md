@@ -14,7 +14,23 @@
 
 ## 비교 범위
 
-MiniShift capsule 측정의 장치 배치를 비교함. 논문에 명시된 조건, 공개 코드의 동작, 실제 실행 장치를 구분함. 성능·시간·용량 표는 [별도 측정 결과](Simple3D_capsule_measurement_results_20261101.md)에 보관함.
+MiniShift capsule 측정의 장치 배치를 비교함. 논문에 명시된 조건, 공개 코드의 동작, 실제 실행 장치를 구분함. 이번 실행의 결과표도 아래에 함께 제시함.
+
+## 실제 실행 측정 결과
+
+capsule 정상 점군 54개로 새 메모리뱅크를 구성하고, 테스트 점군 130개 전체를 평가한 결과임. 점군당 500,000포인트를 유지함.
+
+| 물체 AUROC | 포인트 AUROC | 메모리뱅크 구성 | 평균 추론 | 최대 GPU 메모리¹ | 총 저장 용량² |
+|---:|---:|---:|---:|---:|---:|
+| 91.50% | 81.02% | 24.21분 | 27,980ms/샘플 | 11.47GB | 20.87GB |
+
+¹ 화면·드라이버·다른 프로그램을 포함한 GPU 장치 전체 사용량의 최대 관측값임. 모델 전용 메모리가 아니며, PyTorch 최대 allocated는 별도로 8.40GB임.
+
+² capsule 데이터·실행 환경·도구·이번 결과를 포함한 논리 파일 크기임. GB는 10억 바이트 기준이며, 이번 실행으로 추가된 용량만을 뜻하지 않음.
+
+평균 추론은 법선·FPFH·특징 집계·검색·보간·점수 수집을 포함하고 입력 파일 로딩·결과 저장·AUROC 계산은 제외함. 위 표는 논문의 성능값이 아니라 이번 capsule 실행의 실측값임.
+
+[표 원시 CSV](../source/results/capsule_devices_20261101_paper_cuda_float32/comparison.csv) · [요약 JSON](../source/results/capsule_devices_20261101_paper_cuda_float32/summary.json) · [상세 측정 기준](Simple3D_capsule_measurement_results_20261101.md)
 
 ## 논문과 실제 실행 device 비교
 
