@@ -225,9 +225,16 @@ def main():
     parser.add_argument('--smoke', action='store_true')
     parser.add_argument('--paper-cuda-fpfh', action='store_true',
                         help='Use paper-stated CUDA FPFH rather than legacy CPU API')
+    parser.add_argument('--paper-device-policy', action='store_true',
+                        help='Paper-stated CUDA FPFH, official CPU normals and remaining native code devices')
     opts = parser.parse_args()
-    global OUT, ASSETS
-    if opts.paper_cuda_fpfh:
+    global OUT, ASSETS, REPORT
+    if opts.paper_device_policy:
+        opts.paper_cuda_fpfh = True
+        OUT = HERE / 'results/capsule_paper_device_policy_20261102'
+        ASSETS = Path('/home/test/simple3d-capsule-paper-device-policy-20261102')
+        REPORT = HERE.parent / 'markdown/Simple3D_capsule_paper_device_policy_20261102.md'
+    elif opts.paper_cuda_fpfh:
         dtype = os.environ.get('SIMPLE3D_O3D_DTYPE', 'float32')
         OUT = OUT.with_name(OUT.name + '_paper_cuda_' + dtype)
         ASSETS = ASSETS.with_name(ASSETS.name + '-paper-cuda-' + dtype)
@@ -257,11 +264,14 @@ def main():
          python=base.sys.version, upstream_commit=subprocess.check_output(
              ['git', '-C', str(base.REPO), 'rev-parse', 'HEAD'], text=True).strip(),
          runner_sha256=hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
+         fpfh_adapter_sha256=hashlib.sha256((HERE/'simple3d_paper_cuda_fpfh.py').read_bytes()).hexdigest(),
          train_count=len(train), test_count=len(test), pid=os.getpid(), smoke=opts.smoke,
          native_fps_module=native_ops.__file__, native_knn_module=base.sys.modules['knn_cuda'].__file__,
          scales_computed=[40, 80, 120], scales_concatenated=[40, 80, 80, 120],
          compatibility='native CUDA12.8 sm_120 PointNet2 and source-preserving KNN fork; upstream path/device fixes retained',
          fresh_fit=True, reused_test_features=False, paper_cuda_fpfh=opts.paper_cuda_fpfh,
+         paper_device_policy=opts.paper_device_policy,
+         normals_device='CPU:0' if opts.paper_device_policy or not opts.paper_cuda_fpfh else 'CUDA:0',
          fpfh_device='CUDA:0' if opts.paper_cuda_fpfh else 'CPU:0',
          fpfh_backend_note=('Open3D tensor CUDA, ' + os.environ.get('SIMPLE3D_O3D_DTYPE', 'float32') + ', max_nn queries with verified nonbinding radius bounds; not bitwise legacy CPU parity') if opts.paper_cuda_fpfh else 'Open3D legacy CPU'))
     dump('manifest.json', dict(train=train.pcd_paths, test=[dict(path=p, label=int(y), gt=g)
@@ -270,7 +280,7 @@ def main():
     if opts.paper_cuda_fpfh:
         import simple3d_paper_cuda_fpfh
         import sys
-        simple3d_paper_cuda_fpfh.install(sys.modules[__name__])
+        simple3d_paper_cuda_fpfh.install(sys.modules[__name__], cpu_normals=opts.paper_device_policy)
     model = base.FPFHFeatures(args=args)  # official constructor sets seed=0
     proc = psutil.Process()
     stop = threading.Event()
@@ -405,7 +415,10 @@ def main():
         peak_gpu_device_used_bytes=gpu_device_peak_used[0], gpu_device_baseline_used_bytes=baseline_gpu_used,
         gpu_device_peak_scope='100ms sampled whole GPU used memory including Open3D, desktop, driver and other programs. Not model-exclusive or exact unsampled peak.',
         peak_process_rss_bytes=peak_rss[0], metric_s=metric_s, storage_total_bytes=storage['total_bytes'],
-        raw_assets=str(ASSETS), timing_scope='Fresh full fit; warmup excluded; inference includes CPU normals/FPFH, transfers, GPU geometry/NN/interpolation and official CPU score collection; excludes input loading, output persistence and AUROC. Stage CUDA events add small observer overhead.',
+        raw_assets=str(ASSETS), timing_scope=('Fresh full fit; warmup excluded; inference includes '
+            + ('official CPU normals + CUDA FPFH' if opts.paper_device_policy else
+               'CUDA normals/FPFH' if opts.paper_cuda_fpfh else 'CPU normals/FPFH')
+            + ', transfers, GPU geometry/NN/interpolation and official CPU score collection; excludes input loading, output persistence and AUROC. Stage CUDA events add small observer overhead.'),
         memory_scope='PyTorch allocator peaks over complete fresh fit + evaluation, warmup excluded. Does not include desktop/driver/non-PyTorch allocations. Reserved is separately reported.',
         stage_clock_note='CPU wall times and CUDA event durations have different clocks; do not add them as an exact wall-time decomposition.',
         fps_claim='Local native-rebuilt RTX5080 measurement, not the original old CUDA/Torch environment.')
@@ -507,6 +520,18 @@ def main():
         text = text.replace('GPU를 쓰기 위해 CPU FPFH를 다른 알고리즘으로 교체하지 않음.',
                             '논문의 CUDA 가속 FPFH 설명에 맞춰 legacy CPU API를 Open3D tensor CUDA FPFH로 교체함. GPU 법선·FPFH 수치가 legacy CPU 결과와 비트 단위 동일하다고 주장하지 않음.')
         text += '\n논문이 명시하지 않은 세부 장치 배치는 공개 코드로 보완함. Open3D tensor는 모든 점이 기존 반경 안에 있음을 확인한 뒤 max_nn만 사용하여 같은 최근접 이웃 목적을 계산함. GPU 수치·동률 처리 차이가 있을 수 있음. 공식 코드의 중복 스케일과 물체 top-80 집계는 장치 변경 외의 별도 차이로 남겨 두므로 논문 모든 수식과 완전히 동일하다는 주장은 하지 않음.\n'
+    if opts.paper_device_policy:
+        text = text.replace('# Simple3D capsule — 단계별 실행 장치 확인과 새 측정',
+                            '# Simple3D capsule — 논문 명시 장치 우선·미명시 장치는 공식 구현체 유지')
+        text = text.replace('GPU, Open3D tensor CUDA, max_nn=10; 반경이 전체 점군을 포함함을 검증',
+                            'CPU, 공식 Open3D legacy KD-tree, radius=10000, max_nn=10')
+        text = text.replace('GPU 법선·FPFH 수치가 legacy CPU 결과와 비트 단위 동일하다고 주장하지 않음.',
+                            '법선은 공식 CPU 계산을 유지하고 결과만 FPFH 입력으로 GPU 전송함. CUDA FPFH 수치는 legacy CPU 결과와 비트 단위 동일하다고 주장하지 않음.')
+        text = text.replace('CUDA tensor에서 DLPack으로 GPU 직접 공유, 결합 차원 132',
+                            'CPU 법선 → CUDA FPFH 입력 전송; FPFH 결과는 DLPack GPU 공유, 결합 차원 132')
+        text = text.replace('`bash method12/source/run_capsule_devices.sh`',
+                            '`bash method12/source/run_capsule_devices.sh --paper-device-policy`')
+        text += '\n## 장치 선택 기준과 남은 차이\n\n- 논문 명시: FPFH는 CUDA 가속 Open3D. 해당 함수 내부 이웃 탐색도 같은 CUDA 함수에 포함됨.\n- 논문 미명시: 법선은 공식 legacy CPU 계산, FPS·집계용 KNN·보간·메모리뱅크 검색은 공식 GPU 계산 유지.\n- A100 장비는 보유하지 않아 RTX 5080으로 실행. 논문 GPU 모델과 동일하지 않음.\n- 이번 요청은 장치 배치 재측정이며, 공식 FPS·스케일 중복 연결·상위 80점 집계 알고리즘은 변경하지 않음. 전체 알고리즘까지 논문과 동일하다는 뜻은 아님.\n'
     REPORT.write_text(text, encoding='utf-8')
     stop.set()
     dump('progress.json', dict(status='complete', phase='complete', pid=os.getpid(),

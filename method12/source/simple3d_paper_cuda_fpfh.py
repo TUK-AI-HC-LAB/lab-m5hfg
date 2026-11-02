@@ -11,7 +11,7 @@ import open3d as o3d
 import torch
 
 
-def install(run):
+def install(run, cpu_normals=False):
     module = run.fpfh_module
     device = o3d.core.Device('CUDA:0')
     if not o3d.core.cuda.is_available():
@@ -30,13 +30,29 @@ def install(run):
             xyz_cpu.astype(np.float64 if use_double else np.float32),
             dtype=o3d.core.Dtype.Float64 if use_double else o3d.core.Dtype.Float32, device=device))
 
-        def normals():
-            cloud.estimate_normals(max_nn=10)
+        if cpu_normals:
+            # Device unspecified in paper: preserve the official legacy CPU
+            # normal estimator, including its original hybrid-search arguments.
+            legacy = o3d.geometry.PointCloud(o3d.utility.Vector3dVector(xyz_cpu))
+            run.observed('normal_estimation_including_neighbor_search',
+                         lambda: legacy.estimate_normals(
+                             o3d.geometry.KDTreeSearchParamHybrid(radius=10000, max_nn=10)),
+                         'cpu', 'Official Open3D legacy normals; radius=10000; max_nn=10')
+            normals_cpu = np.asarray(legacy.normals).copy()
+            assert normals_cpu.shape == xyz_cpu.shape and np.isfinite(normals_cpu).all()
+            cloud.point.normals = o3d.core.Tensor(
+                normals_cpu.astype(np.float64 if use_double else np.float32),
+                dtype=cloud.point.positions.dtype, device=device)
             o3d.core.cuda.synchronize()
-            assert str(cloud.point.normals.device) == 'CUDA:0'
+            del legacy, normals_cpu
+        else:
+            def normals():
+                cloud.estimate_normals(max_nn=10)
+                o3d.core.cuda.synchronize()
+                assert str(cloud.point.normals.device) == 'CUDA:0'
 
-        run.observed('normal_estimation_including_neighbor_search', normals, 'cuda:0',
-                     'Open3D tensor CUDA; exact max_nn=10; omitted nonbinding radius=10000')
+            run.observed('normal_estimation_including_neighbor_search', normals, 'cuda:0',
+                         'Open3D tensor CUDA; exact max_nn=10; omitted nonbinding radius=10000')
         scales = []
         for k in (self.args.max_nn, 2*self.args.max_nn, 3*self.args.max_nn):
             def compute(k=k):

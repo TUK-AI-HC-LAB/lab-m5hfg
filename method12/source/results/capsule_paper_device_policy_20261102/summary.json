@@ -1,0 +1,48 @@
+{
+  "status": "complete",
+  "category": "capsule",
+  "level": "ALL",
+  "train_count": 54,
+  "test_count": 130,
+  "full_category": true,
+  "metrics": {
+    "object_auroc": 0.915,
+    "point_auroc": 0.8172752266583907,
+    "point_count": 65000000,
+    "anomaly_point_count": 405207
+  },
+  "fit_wall_s": 1378.357432068,
+  "train_load_s": 12.375132794000706,
+  "train_feature_s": 1360.2800033159997,
+  "coreset_s": 5.1810118619998775,
+  "warmup_s": 26.662146585999977,
+  "inference": {
+    "mean_ms": 25729.797102069188,
+    "median_ms": 25735.255150499826,
+    "p95_ms": 26229.20249305016,
+    "min_ms": 25134.57800900005,
+    "max_ms": 26607.835784000144,
+    "throughput_samples_s": 0.03886544445076794
+  },
+  "load_plus_inference": {
+    "mean_ms": 25961.10300196917,
+    "median_ms": 25962.500585999805,
+    "p95_ms": 26460.08190700013,
+    "min_ms": 25367.77710000024,
+    "max_ms": 26824.35636100013,
+    "throughput_samples_s": 0.03851916461038459
+  },
+  "peak_gpu_allocated_bytes": 8401996288,
+  "peak_gpu_reserved_bytes": 8438939648,
+  "peak_gpu_device_used_bytes": 11401756672,
+  "gpu_device_baseline_used_bytes": 1415118848,
+  "gpu_device_peak_scope": "100ms sampled whole GPU used memory including Open3D, desktop, driver and other programs. Not model-exclusive or exact unsampled peak.",
+  "peak_process_rss_bytes": 5789794304,
+  "metric_s": 11.738879739999902,
+  "storage_total_bytes": 20873856627,
+  "raw_assets": "/home/test/simple3d-capsule-paper-device-policy-20261102",
+  "timing_scope": "Fresh full fit; warmup excluded; inference includes official CPU normals + CUDA FPFH, transfers, GPU geometry/NN/interpolation and official CPU score collection; excludes input loading, output persistence and AUROC. Stage CUDA events add small observer overhead.",
+  "memory_scope": "PyTorch allocator peaks over complete fresh fit + evaluation, warmup excluded. Does not include desktop/driver/non-PyTorch allocations. Reserved is separately reported.",
+  "stage_clock_note": "CPU wall times and CUDA event durations have different clocks; do not add them as an exact wall-time decomposition.",
+  "fps_claim": "Local native-rebuilt RTX5080 measurement, not the original old CUDA/Torch environment."
+}

@@ -4,7 +4,7 @@
 - Measured upstream: `5951e097ed5f6c52c1e058490f8c64f9b6323501`
 - Main result: `results/capsule_devices_20261101_paper_cuda_float32/summary.json`
 - Reports: `../markdown/Simple3D_capsule_measurement_results_20261101.md` and
-  `../markdown/Simple3D_paper_vs_execution_devices_20261101.md`.
+  `../../related_work/markdown/W45_Simple3D_paper_vs_execution_devices.md`.
 
 ## Execution on the recorded WSL machine
 

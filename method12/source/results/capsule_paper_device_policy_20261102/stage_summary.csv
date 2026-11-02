@@ -1,0 +1,37 @@
+phase,stage,device,detail,clock,calls,mean_ms,total_s
+coreset,coreset_random_projection_fallback,cpu,"sklearn projection rejected; official no-projection fallback; input=[221184, 132]",cpu_wall,1,129.17006299994682,0.12917006299994682
+fit,coordinate_knn,cuda:0,"native KNN_CUDA; k=128; ref=[1, 500000, 3]; query=[1, 4000, 3]",cuda_event,54,4921.698260271991,265.77170605468757
+fit,coordinate_knn,cuda:0,"native KNN_CUDA; k=128; ref=[1, 500000, 3]; query=[1, 96, 3]",cuda_event,54,1700.1406136971932,91.80759313964845
+fit,fpfh_scale_120,cuda:0,Open3D tensor CUDA; exact max_nn=120; omitted nonbinding radius=1000000,cuda_event,54,5864.141375506364,316.6636342773436
+fit,fpfh_scale_40,cuda:0,Open3D tensor CUDA; exact max_nn=40; omitted nonbinding radius=1000000,cuda_event,54,5793.893220124421,312.87023388671867
+fit,fpfh_scale_80,cuda:0,Open3D tensor CUDA; exact max_nn=80; omitted nonbinding radius=1000000,cuda_event,54,5828.581163194446,314.74338281250004
+fit,fps,cuda:0,"native PointNet2; centers=4096; input=[1, 500000, 3]",cuda_event,54,827.9702871817128,44.71039550781249
+fit,fps_gather,cuda:0,native PointNet2; count=4096,cuda_event,54,0.008535703695896598,0.0004609279995784161
+fit,lfsa_mean,cuda:0,"input=[1, 4096, 128, 132]",cuda_event,54,0.33822400040096695,0.018264096021652212
+fit,normal_estimation_including_neighbor_search,cpu,Official Open3D legacy normals; radius=10000; max_nn=10,cpu_wall,54,98.360649777759,5.311475087998986
+test,coordinate_knn,cuda:0,"native KNN_CUDA; k=128; ref=[1, 500000, 3]; query=[1, 4000, 3]",cuda_event,130,4890.5316105769225,635.7691093750002
+test,coordinate_knn,cuda:0,"native KNN_CUDA; k=128; ref=[1, 500000, 3]; query=[1, 96, 3]",cuda_event,130,1679.9496018629807,218.3934482421875
+test,coordinate_knn,cuda:0,"native KNN_CUDA; k=12; ref=[1, 500000, 3]; query=[1, 1024, 3]",cuda_event,130,207.9248787513146,27.030234237670893
+test,fpfh_scale_120,cuda:0,Open3D tensor CUDA; exact max_nn=120; omitted nonbinding radius=1000000,cuda_event,130,5814.293291766827,755.8581279296877
+test,fpfh_scale_40,cuda:0,Open3D tensor CUDA; exact max_nn=40; omitted nonbinding radius=1000000,cuda_event,130,5758.403654597355,748.5924750976562
+test,fpfh_scale_80,cuda:0,Open3D tensor CUDA; exact max_nn=80; omitted nonbinding radius=1000000,cuda_event,130,5785.250420673077,752.0825546875
+test,fps,cuda:0,"native PointNet2; centers=1024; input=[1, 500000, 3]",cuda_event,130,205.33913116455076,26.69408705139161
+test,fps,cuda:0,"native PointNet2; centers=4096; input=[1, 500000, 3]",cuda_event,130,822.6701204740084,106.94711566162104
+test,fps_gather,cuda:0,native PointNet2; count=1024,cuda_event,130,0.006147938640788197,0.0007992320233024639
+test,fps_gather,cuda:0,native PointNet2; count=4096,cuda_event,130,0.008191261512155717,0.0010648639965802436
+test,lfsa_mean,cuda:0,"input=[1, 4096, 128, 132]",cuda_event,130,0.33684455202176017,0.04378979176282883
+test,memory_bank_cdist,cuda:0,"query=[4096, 132]; bank=[11059, 132]",cuda_event,130,3.5311167827019325,0.45904518175125114
+test,memory_bank_nearest_neighbor_min,cuda:0,"distances=[4096, 11059]",cuda_event,130,0.42748406139703893,0.055572927981615054
+test,normal_estimation_including_neighbor_search,cpu,Official Open3D legacy normals; radius=10000; max_nn=10,cpu_wall,130,99.14850886917836,12.889306152993186
+test,point_score_interpolation,cuda:0,official full-sort; dense=500000; centers=1024; chunk=50000,cuda_event,130,54.01906617971567,7.022478603363035
+test,point_score_interpolation,cuda:0,official full-sort; dense=500000; centers=4096; chunk=50000,cuda_event,130,220.96850808950572,28.72590605163574
+test,score_smoothing_mean,cuda:0,"input=[1, 1024, 12, 1]",cuda_event,130,0.007432861558090035,0.0009662720025517043
+warmup,coordinate_knn,cuda:0,"native KNN_CUDA; k=128; ref=[1, 500000, 3]; query=[1, 4000, 3]",cuda_event,1,5071.14697265625,5.07114697265625
+warmup,coordinate_knn,cuda:0,"native KNN_CUDA; k=128; ref=[1, 500000, 3]; query=[1, 96, 3]",cuda_event,1,1857.8519287109375,1.8578519287109374
+warmup,fpfh_scale_120,cuda:0,Open3D tensor CUDA; exact max_nn=120; omitted nonbinding radius=1000000,cuda_event,1,6044.1953125,6.0441953125
+warmup,fpfh_scale_40,cuda:0,Open3D tensor CUDA; exact max_nn=40; omitted nonbinding radius=1000000,cuda_event,1,6474.72412109375,6.47472412109375
+warmup,fpfh_scale_80,cuda:0,Open3D tensor CUDA; exact max_nn=80; omitted nonbinding radius=1000000,cuda_event,1,6002.24609375,6.00224609375
+warmup,fps,cuda:0,"native PointNet2; centers=4096; input=[1, 500000, 3]",cuda_event,1,848.0560913085938,0.8480560913085937
+warmup,fps_gather,cuda:0,native PointNet2; count=4096,cuda_event,1,0.16451199352741241,0.0001645119935274124
+warmup,lfsa_mean,cuda:0,"input=[1, 4096, 128, 132]",cuda_event,1,20.479711532592773,0.020479711532592773
+warmup,normal_estimation_including_neighbor_search,cpu,Official Open3D legacy normals; radius=10000; max_nn=10,cpu_wall,1,121.4240479999944,0.1214240479999944

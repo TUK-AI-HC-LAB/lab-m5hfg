@@ -1,0 +1,710 @@
+{
+  "train": [
+    "/home/test/data/MiniShift/capsule/train/good/0.txt",
+    "/home/test/data/MiniShift/capsule/train/good/1.txt",
+    "/home/test/data/MiniShift/capsule/train/good/10.txt",
+    "/home/test/data/MiniShift/capsule/train/good/11.txt",
+    "/home/test/data/MiniShift/capsule/train/good/12.txt",
+    "/home/test/data/MiniShift/capsule/train/good/13.txt",
+    "/home/test/data/MiniShift/capsule/train/good/14.txt",
+    "/home/test/data/MiniShift/capsule/train/good/15.txt",
+    "/home/test/data/MiniShift/capsule/train/good/16.txt",
+    "/home/test/data/MiniShift/capsule/train/good/17.txt",
+    "/home/test/data/MiniShift/capsule/train/good/18.txt",
+    "/home/test/data/MiniShift/capsule/train/good/19.txt",
+    "/home/test/data/MiniShift/capsule/train/good/2.txt",
+    "/home/test/data/MiniShift/capsule/train/good/20.txt",
+    "/home/test/data/MiniShift/capsule/train/good/21.txt",
+    "/home/test/data/MiniShift/capsule/train/good/22.txt",
+    "/home/test/data/MiniShift/capsule/train/good/23.txt",
+    "/home/test/data/MiniShift/capsule/train/good/24.txt",
+    "/home/test/data/MiniShift/capsule/train/good/25.txt",
+    "/home/test/data/MiniShift/capsule/train/good/26.txt",
+    "/home/test/data/MiniShift/capsule/train/good/27.txt",
+    "/home/test/data/MiniShift/capsule/train/good/28.txt",
+    "/home/test/data/MiniShift/capsule/train/good/29.txt",
+    "/home/test/data/MiniShift/capsule/train/good/3.txt",
+    "/home/test/data/MiniShift/capsule/train/good/30.txt",
+    "/home/test/data/MiniShift/capsule/train/good/31.txt",
+    "/home/test/data/MiniShift/capsule/train/good/32.txt",
+    "/home/test/data/MiniShift/capsule/train/good/33.txt",
+    "/home/test/data/MiniShift/capsule/train/good/34.txt",
+    "/home/test/data/MiniShift/capsule/train/good/35.txt",
+    "/home/test/data/MiniShift/capsule/train/good/36.txt",
+    "/home/test/data/MiniShift/capsule/train/good/37.txt",
+    "/home/test/data/MiniShift/capsule/train/good/38.txt",
+    "/home/test/data/MiniShift/capsule/train/good/39.txt",
+    "/home/test/data/MiniShift/capsule/train/good/4.txt",
+    "/home/test/data/MiniShift/capsule/train/good/40.txt",
+    "/home/test/data/MiniShift/capsule/train/good/41.txt",
+    "/home/test/data/MiniShift/capsule/train/good/42.txt",
+    "/home/test/data/MiniShift/capsule/train/good/43.txt",
+    "/home/test/data/MiniShift/capsule/train/good/44.txt",
+    "/home/test/data/MiniShift/capsule/train/good/45.txt",
+    "/home/test/data/MiniShift/capsule/train/good/46.txt",
+    "/home/test/data/MiniShift/capsule/train/good/47.txt",
+    "/home/test/data/MiniShift/capsule/train/good/48.txt",
+    "/home/test/data/MiniShift/capsule/train/good/49.txt",
+    "/home/test/data/MiniShift/capsule/train/good/5.txt",
+    "/home/test/data/MiniShift/capsule/train/good/50.txt",
+    "/home/test/data/MiniShift/capsule/train/good/51.txt",
+    "/home/test/data/MiniShift/capsule/train/good/52.txt",
+    "/home/test/data/MiniShift/capsule/train/good/53.txt",
+    "/home/test/data/MiniShift/capsule/train/good/6.txt",
+    "/home/test/data/MiniShift/capsule/train/good/7.txt",
+    "/home/test/data/MiniShift/capsule/train/good/8.txt",
+    "/home/test/data/MiniShift/capsule/train/good/9.txt"
+  ],
+  "test": [
+    {
+      "path": "/home/test/data/MiniShift/capsule/test/good/0.txt",
+      "label": 0,
+      "gt": 0
+    },
+    {
+      "path": "/home/test/data/MiniShift/capsule/test/good/1.txt",
+      "label": 0,
+      "gt": 0
+    },
+    {
+      "path": "/home/test/data/MiniShift/capsule/test/good/2.txt",
+      "label": 0,
+      "gt": 0
+    },
+    {
+      "path": "/home/test/data/MiniShift/capsule/test/good/3.txt",
+      "label": 0,
+      "gt": 0
+    },
+    {
+      "path": "/home/test/data/MiniShift/capsule/test/good/4.txt",
+      "label": 0,
+      "gt": 0
+    },
+    {
+      "path": "/home/test/data/MiniShift/capsule/test/good/5.txt",
+      "label": 0,
+      "gt": 0
+    },
+    {
+      "path": "/home/test/data/MiniShift/capsule/test/good/6.txt",
+      "label": 0,
+      "gt": 0
+    },
+    {
+      "path": "/home/test/data/MiniShift/capsule/test/good/7.txt",
+      "label": 0,
+      "gt": 0
+    },
+    {
+      "path": "/home/test/data/MiniShift/capsule/test/good/8.txt",
+      "label": 0,
+      "gt": 0
+    },
+    {
+      "path": "/home/test/data/MiniShift/capsule/test/good/9.txt",
+      "label": 0,
+      "gt": 0
+    },
+    {
+      "path": "/home/test/data/MiniShift/capsule/test/gradual/easy/54_1_areal.txt",
+      "label": 1,
+      "gt": "/home/test/data/MiniShift/capsule/gt/gradual/easy/54_1_areal.txt"
+    },
+    {
+      "path": "/home/test/data/MiniShift/capsule/test/gradual/easy/54_2_striate.txt",
+      "label": 1,
+      "gt": "/home/test/data/MiniShift/capsule/gt/gradual/easy/54_2_striate.txt"
+    },
+    {
+      "path": "/home/test/data/MiniShift/capsule/test/gradual/easy/55_1_areal.txt",
+      "label": 1,
+      "gt": "/home/test/data/MiniShift/capsule/gt/gradual/easy/55_1_areal.txt"
+    },
+    {
+      "path": "/home/test/data/MiniShift/capsule/test/gradual/easy/55_2_striate.txt",
+      "label": 1,
+      "gt": "/home/test/data/MiniShift/capsule/gt/gradual/easy/55_2_striate.txt"
+    },
+    {
+      "path": "/home/test/data/MiniShift/capsule/test/gradual/easy/56_1_areal.txt",
+      "label": 1,
+      "gt": "/home/test/data/MiniShift/capsule/gt/gradual/easy/56_1_areal.txt"
+    },
+    {
+      "path": "/home/test/data/MiniShift/capsule/test/gradual/easy/56_2_striate.txt",
+      "label": 1,
+      "gt": "/home/test/data/MiniShift/capsule/gt/gradual/easy/56_2_striate.txt"
+    },
+    {
+      "path": "/home/test/data/MiniShift/capsule/test/gradual/easy/57_1_areal.txt",
+      "label": 1,
+      "gt": "/home/test/data/MiniShift/capsule/gt/gradual/easy/57_1_areal.txt"
+    },
+    {
+      "path": "/home/test/data/MiniShift/capsule/test/gradual/easy/57_2_striate.txt",
+      "label": 1,
+      "gt": "/home/test/data/MiniShift/capsule/gt/gradual/easy/57_2_striate.txt"
+    },
+    {
+      "path": "/home/test/data/MiniShift/capsule/test/gradual/easy/58_1_areal.txt",
+      "label": 1,
+      "gt": "/home/test/data/MiniShift/capsule/gt/gradual/easy/58_1_areal.txt"
+    },
+    {
+      "path": "/home/test/data/MiniShift/capsule/test/gradual/easy/58_2_striate.txt",
+      "label": 1,
+      "gt": "/home/test/data/MiniShift/capsule/gt/gradual/easy/58_2_striate.txt"
+    },
+    {
+      "path": "/home/test/data/MiniShift/capsule/test/gradual/easy/59_1_areal.txt",
+      "label": 1,
+      "gt": "/home/test/data/MiniShift/capsule/gt/gradual/easy/59_1_areal.txt"
+    },
+    {
+      "path": "/home/test/data/MiniShift/capsule/test/gradual/easy/59_2_striate.txt",
+      "label": 1,
+      "gt": "/home/test/data/MiniShift/capsule/gt/gradual/easy/59_2_striate.txt"
+    },
+    {
+      "path": "/home/test/data/MiniShift/capsule/test/gradual/easy/60_1_areal.txt",
+      "label": 1,
+      "gt": "/home/test/data/MiniShift/capsule/gt/gradual/easy/60_1_areal.txt"
+    },
+    {
+      "path": "/home/test/data/MiniShift/capsule/test/gradual/easy/60_2_striate.txt",
+      "label": 1,
+      "gt": "/home/test/data/MiniShift/capsule/gt/gradual/easy/60_2_striate.txt"
+    },
+    {
+      "path": "/home/test/data/MiniShift/capsule/test/gradual/easy/61_1_areal.txt",
+      "label": 1,
+      "gt": "/home/test/data/MiniShift/capsule/gt/gradual/easy/61_1_areal.txt"
+    },
+    {
+      "path": "/home/test/data/MiniShift/capsule/test/gradual/easy/61_2_striate.txt",
+      "label": 1,
+      "gt": "/home/test/data/MiniShift/capsule/gt/gradual/easy/61_2_striate.txt"
+    },
+    {
+      "path": "/home/test/data/MiniShift/capsule/test/gradual/easy/62_1_areal.txt",
+      "label": 1,
+      "gt": "/home/test/data/MiniShift/capsule/gt/gradual/easy/62_1_areal.txt"
+    },
+    {
+      "path": "/home/test/data/MiniShift/capsule/test/gradual/easy/62_2_striate.txt",
+      "label": 1,
+      "gt": "/home/test/data/MiniShift/capsule/gt/gradual/easy/62_2_striate.txt"
+    },
+    {
+      "path": "/home/test/data/MiniShift/capsule/test/gradual/easy/63_1_areal.txt",
+      "label": 1,
+      "gt": "/home/test/data/MiniShift/capsule/gt/gradual/easy/63_1_areal.txt"
+    },
+    {
+      "path": "/home/test/data/MiniShift/capsule/test/gradual/easy/63_2_striate.txt",
+      "label": 1,
+      "gt": "/home/test/data/MiniShift/capsule/gt/gradual/easy/63_2_striate.txt"
+    },
+    {
+      "path": "/home/test/data/MiniShift/capsule/test/gradual/medium/54_1_areal.txt",
+      "label": 1,
+      "gt": "/home/test/data/MiniShift/capsule/gt/gradual/medium/54_1_areal.txt"
+    },
+    {
+      "path": "/home/test/data/MiniShift/capsule/test/gradual/medium/54_2_striate.txt",
+      "label": 1,
+      "gt": "/home/test/data/MiniShift/capsule/gt/gradual/medium/54_2_striate.txt"
+    },
+    {
+      "path": "/home/test/data/MiniShift/capsule/test/gradual/medium/55_1_areal.txt",
+      "label": 1,
+      "gt": "/home/test/data/MiniShift/capsule/gt/gradual/medium/55_1_areal.txt"
+    },
+    {
+      "path": "/home/test/data/MiniShift/capsule/test/gradual/medium/55_2_striate.txt",
+      "label": 1,
+      "gt": "/home/test/data/MiniShift/capsule/gt/gradual/medium/55_2_striate.txt"
+    },
+    {
+      "path": "/home/test/data/MiniShift/capsule/test/gradual/medium/56_1_areal.txt",
+      "label": 1,
+      "gt": "/home/test/data/MiniShift/capsule/gt/gradual/medium/56_1_areal.txt"
+    },
+    {
+      "path": "/home/test/data/MiniShift/capsule/test/gradual/medium/56_2_striate.txt",
+      "label": 1,
+      "gt": "/home/test/data/MiniShift/capsule/gt/gradual/medium/56_2_striate.txt"
+    },
+    {
+      "path": "/home/test/data/MiniShift/capsule/test/gradual/medium/57_1_areal.txt",
+      "label": 1,
+      "gt": "/home/test/data/MiniShift/capsule/gt/gradual/medium/57_1_areal.txt"
+    },
+    {
+      "path": "/home/test/data/MiniShift/capsule/test/gradual/medium/57_2_striate.txt",
+      "label": 1,
+      "gt": "/home/test/data/MiniShift/capsule/gt/gradual/medium/57_2_striate.txt"
+    },
+    {
+      "path": "/home/test/data/MiniShift/capsule/test/gradual/medium/58_1_areal.txt",
+      "label": 1,
+      "gt": "/home/test/data/MiniShift/capsule/gt/gradual/medium/58_1_areal.txt"
+    },
+    {
+      "path": "/home/test/data/MiniShift/capsule/test/gradual/medium/58_2_striate.txt",
+      "label": 1,
+      "gt": "/home/test/data/MiniShift/capsule/gt/gradual/medium/58_2_striate.txt"
+    },
+    {
+      "path": "/home/test/data/MiniShift/capsule/test/gradual/medium/59_1_areal.txt",
+      "label": 1,
+      "gt": "/home/test/data/MiniShift/capsule/gt/gradual/medium/59_1_areal.txt"
+    },
+    {
+      "path": "/home/test/data/MiniShift/capsule/test/gradual/medium/59_2_striate.txt",
+      "label": 1,
+      "gt": "/home/test/data/MiniShift/capsule/gt/gradual/medium/59_2_striate.txt"
+    },
+    {
+      "path": "/home/test/data/MiniShift/capsule/test/gradual/medium/60_1_areal.txt",
+      "label": 1,
+      "gt": "/home/test/data/MiniShift/capsule/gt/gradual/medium/60_1_areal.txt"
+    },
+    {
+      "path": "/home/test/data/MiniShift/capsule/test/gradual/medium/60_2_striate.txt",
+      "label": 1,
+      "gt": "/home/test/data/MiniShift/capsule/gt/gradual/medium/60_2_striate.txt"
+    },
+    {
+      "path": "/home/test/data/MiniShift/capsule/test/gradual/medium/61_1_areal.txt",
+      "label": 1,
+      "gt": "/home/test/data/MiniShift/capsule/gt/gradual/medium/61_1_areal.txt"
+    },
+    {
+      "path": "/home/test/data/MiniShift/capsule/test/gradual/medium/61_2_striate.txt",
+      "label": 1,
+      "gt": "/home/test/data/MiniShift/capsule/gt/gradual/medium/61_2_striate.txt"
+    },
+    {
+      "path": "/home/test/data/MiniShift/capsule/test/gradual/medium/62_1_areal.txt",
+      "label": 1,
+      "gt": "/home/test/data/MiniShift/capsule/gt/gradual/medium/62_1_areal.txt"
+    },
+    {
+      "path": "/home/test/data/MiniShift/capsule/test/gradual/medium/62_2_striate.txt",
+      "label": 1,
+      "gt": "/home/test/data/MiniShift/capsule/gt/gradual/medium/62_2_striate.txt"
+    },
+    {
+      "path": "/home/test/data/MiniShift/capsule/test/gradual/medium/63_1_areal.txt",
+      "label": 1,
+      "gt": "/home/test/data/MiniShift/capsule/gt/gradual/medium/63_1_areal.txt"
+    },
+    {
+      "path": "/home/test/data/MiniShift/capsule/test/gradual/medium/63_2_striate.txt",
+      "label": 1,
+      "gt": "/home/test/data/MiniShift/capsule/gt/gradual/medium/63_2_striate.txt"
+    },
+    {
+      "path": "/home/test/data/MiniShift/capsule/test/gradual/hard/54_1_areal.txt",
+      "label": 1,
+      "gt": "/home/test/data/MiniShift/capsule/gt/gradual/hard/54_1_areal.txt"
+    },
+    {
+      "path": "/home/test/data/MiniShift/capsule/test/gradual/hard/54_2_striate.txt",
+      "label": 1,
+      "gt": "/home/test/data/MiniShift/capsule/gt/gradual/hard/54_2_striate.txt"
+    },
+    {
+      "path": "/home/test/data/MiniShift/capsule/test/gradual/hard/55_1_areal.txt",
+      "label": 1,
+      "gt": "/home/test/data/MiniShift/capsule/gt/gradual/hard/55_1_areal.txt"
+    },
+    {
+      "path": "/home/test/data/MiniShift/capsule/test/gradual/hard/55_2_striate.txt",
+      "label": 1,
+      "gt": "/home/test/data/MiniShift/capsule/gt/gradual/hard/55_2_striate.txt"
+    },
+    {
+      "path": "/home/test/data/MiniShift/capsule/test/gradual/hard/56_1_areal.txt",
+      "label": 1,
+      "gt": "/home/test/data/MiniShift/capsule/gt/gradual/hard/56_1_areal.txt"
+    },
+    {
+      "path": "/home/test/data/MiniShift/capsule/test/gradual/hard/56_2_striate.txt",
+      "label": 1,
+      "gt": "/home/test/data/MiniShift/capsule/gt/gradual/hard/56_2_striate.txt"
+    },
+    {
+      "path": "/home/test/data/MiniShift/capsule/test/gradual/hard/57_1_areal.txt",
+      "label": 1,
+      "gt": "/home/test/data/MiniShift/capsule/gt/gradual/hard/57_1_areal.txt"
+    },
+    {
+      "path": "/home/test/data/MiniShift/capsule/test/gradual/hard/57_2_striate.txt",
+      "label": 1,
+      "gt": "/home/test/data/MiniShift/capsule/gt/gradual/hard/57_2_striate.txt"
+    },
+    {
+      "path": "/home/test/data/MiniShift/capsule/test/gradual/hard/58_1_areal.txt",
+      "label": 1,
+      "gt": "/home/test/data/MiniShift/capsule/gt/gradual/hard/58_1_areal.txt"
+    },
+    {
+      "path": "/home/test/data/MiniShift/capsule/test/gradual/hard/58_2_striate.txt",
+      "label": 1,
+      "gt": "/home/test/data/MiniShift/capsule/gt/gradual/hard/58_2_striate.txt"
+    },
+    {
+      "path": "/home/test/data/MiniShift/capsule/test/gradual/hard/59_1_areal.txt",
+      "label": 1,
+      "gt": "/home/test/data/MiniShift/capsule/gt/gradual/hard/59_1_areal.txt"
+    },
+    {
+      "path": "/home/test/data/MiniShift/capsule/test/gradual/hard/59_2_striate.txt",
+      "label": 1,
+      "gt": "/home/test/data/MiniShift/capsule/gt/gradual/hard/59_2_striate.txt"
+    },
+    {
+      "path": "/home/test/data/MiniShift/capsule/test/gradual/hard/60_1_areal.txt",
+      "label": 1,
+      "gt": "/home/test/data/MiniShift/capsule/gt/gradual/hard/60_1_areal.txt"
+    },
+    {
+      "path": "/home/test/data/MiniShift/capsule/test/gradual/hard/60_2_striate.txt",
+      "label": 1,
+      "gt": "/home/test/data/MiniShift/capsule/gt/gradual/hard/60_2_striate.txt"
+    },
+    {
+      "path": "/home/test/data/MiniShift/capsule/test/gradual/hard/61_1_areal.txt",
+      "label": 1,
+      "gt": "/home/test/data/MiniShift/capsule/gt/gradual/hard/61_1_areal.txt"
+    },
+    {
+      "path": "/home/test/data/MiniShift/capsule/test/gradual/hard/61_2_striate.txt",
+      "label": 1,
+      "gt": "/home/test/data/MiniShift/capsule/gt/gradual/hard/61_2_striate.txt"
+    },
+    {
+      "path": "/home/test/data/MiniShift/capsule/test/gradual/hard/62_1_areal.txt",
+      "label": 1,
+      "gt": "/home/test/data/MiniShift/capsule/gt/gradual/hard/62_1_areal.txt"
+    },
+    {
+      "path": "/home/test/data/MiniShift/capsule/test/gradual/hard/62_2_striate.txt",
+      "label": 1,
+      "gt": "/home/test/data/MiniShift/capsule/gt/gradual/hard/62_2_striate.txt"
+    },
+    {
+      "path": "/home/test/data/MiniShift/capsule/test/gradual/hard/63_1_areal.txt",
+      "label": 1,
+      "gt": "/home/test/data/MiniShift/capsule/gt/gradual/hard/63_1_areal.txt"
+    },
+    {
+      "path": "/home/test/data/MiniShift/capsule/test/gradual/hard/63_2_striate.txt",
+      "label": 1,
+      "gt": "/home/test/data/MiniShift/capsule/gt/gradual/hard/63_2_striate.txt"
+    },
+    {
+      "path": "/home/test/data/MiniShift/capsule/test/subtle/easy/54_1_scratch.txt",
+      "label": 1,
+      "gt": "/home/test/data/MiniShift/capsule/gt/subtle/easy/54_1_scratch.txt"
+    },
+    {
+      "path": "/home/test/data/MiniShift/capsule/test/subtle/easy/54_2_sphere.txt",
+      "label": 1,
+      "gt": "/home/test/data/MiniShift/capsule/gt/subtle/easy/54_2_sphere.txt"
+    },
+    {
+      "path": "/home/test/data/MiniShift/capsule/test/subtle/easy/55_1_scratch.txt",
+      "label": 1,
+      "gt": "/home/test/data/MiniShift/capsule/gt/subtle/easy/55_1_scratch.txt"
+    },
+    {
+      "path": "/home/test/data/MiniShift/capsule/test/subtle/easy/55_2_sphere.txt",
+      "label": 1,
+      "gt": "/home/test/data/MiniShift/capsule/gt/subtle/easy/55_2_sphere.txt"
+    },
+    {
+      "path": "/home/test/data/MiniShift/capsule/test/subtle/easy/56_1_scratch.txt",
+      "label": 1,
+      "gt": "/home/test/data/MiniShift/capsule/gt/subtle/easy/56_1_scratch.txt"
+    },
+    {
+      "path": "/home/test/data/MiniShift/capsule/test/subtle/easy/56_2_sphere.txt",
+      "label": 1,
+      "gt": "/home/test/data/MiniShift/capsule/gt/subtle/easy/56_2_sphere.txt"
+    },
+    {
+      "path": "/home/test/data/MiniShift/capsule/test/subtle/easy/57_1_scratch.txt",
+      "label": 1,
+      "gt": "/home/test/data/MiniShift/capsule/gt/subtle/easy/57_1_scratch.txt"
+    },
+    {
+      "path": "/home/test/data/MiniShift/capsule/test/subtle/easy/57_2_sphere.txt",
+      "label": 1,
+      "gt": "/home/test/data/MiniShift/capsule/gt/subtle/easy/57_2_sphere.txt"
+    },
+    {
+      "path": "/home/test/data/MiniShift/capsule/test/subtle/easy/58_1_scratch.txt",
+      "label": 1,
+      "gt": "/home/test/data/MiniShift/capsule/gt/subtle/easy/58_1_scratch.txt"
+    },
+    {
+      "path": "/home/test/data/MiniShift/capsule/test/subtle/easy/58_2_sphere.txt",
+      "label": 1,
+      "gt": "/home/test/data/MiniShift/capsule/gt/subtle/easy/58_2_sphere.txt"
+    },
+    {
+      "path": "/home/test/data/MiniShift/capsule/test/subtle/easy/59_1_scratch.txt",
+      "label": 1,
+      "gt": "/home/test/data/MiniShift/capsule/gt/subtle/easy/59_1_scratch.txt"
+    },
+    {
+      "path": "/home/test/data/MiniShift/capsule/test/subtle/easy/59_2_sphere.txt",
+      "label": 1,
+      "gt": "/home/test/data/MiniShift/capsule/gt/subtle/easy/59_2_sphere.txt"
+    },
+    {
+      "path": "/home/test/data/MiniShift/capsule/test/subtle/easy/60_1_scratch.txt",
+      "label": 1,
+      "gt": "/home/test/data/MiniShift/capsule/gt/subtle/easy/60_1_scratch.txt"
+    },
+    {
+      "path": "/home/test/data/MiniShift/capsule/test/subtle/easy/60_2_sphere.txt",
+      "label": 1,
+      "gt": "/home/test/data/MiniShift/capsule/gt/subtle/easy/60_2_sphere.txt"
+    },
+    {
+      "path": "/home/test/data/MiniShift/capsule/test/subtle/easy/61_1_scratch.txt",
+      "label": 1,
+      "gt": "/home/test/data/MiniShift/capsule/gt/subtle/easy/61_1_scratch.txt"
+    },
+    {
+      "path": "/home/test/data/MiniShift/capsule/test/subtle/easy/61_2_sphere.txt",
+      "label": 1,
+      "gt": "/home/test/data/MiniShift/capsule/gt/subtle/easy/61_2_sphere.txt"
+    },
+    {
+      "path": "/home/test/data/MiniShift/capsule/test/subtle/easy/62_1_scratch.txt",
+      "label": 1,
+      "gt": "/home/test/data/MiniShift/capsule/gt/subtle/easy/62_1_scratch.txt"
+    },
+    {
+      "path": "/home/test/data/MiniShift/capsule/test/subtle/easy/62_2_sphere.txt",
+      "label": 1,
+      "gt": "/home/test/data/MiniShift/capsule/gt/subtle/easy/62_2_sphere.txt"
+    },
+    {
+      "path": "/home/test/data/MiniShift/capsule/test/subtle/easy/63_1_scratch.txt",
+      "label": 1,
+      "gt": "/home/test/data/MiniShift/capsule/gt/subtle/easy/63_1_scratch.txt"
+    },
+    {
+      "path": "/home/test/data/MiniShift/capsule/test/subtle/easy/63_2_sphere.txt",
+      "label": 1,
+      "gt": "/home/test/data/MiniShift/capsule/gt/subtle/easy/63_2_sphere.txt"
+    },
+    {
+      "path": "/home/test/data/MiniShift/capsule/test/subtle/medium/54_1_scratch.txt",
+      "label": 1,
+      "gt": "/home/test/data/MiniShift/capsule/gt/subtle/medium/54_1_scratch.txt"
+    },
+    {
+      "path": "/home/test/data/MiniShift/capsule/test/subtle/medium/54_2_sphere.txt",
+      "label": 1,
+      "gt": "/home/test/data/MiniShift/capsule/gt/subtle/medium/54_2_sphere.txt"
+    },
+    {
+      "path": "/home/test/data/MiniShift/capsule/test/subtle/medium/55_1_scratch.txt",
+      "label": 1,
+      "gt": "/home/test/data/MiniShift/capsule/gt/subtle/medium/55_1_scratch.txt"
+    },
+    {
+      "path": "/home/test/data/MiniShift/capsule/test/subtle/medium/55_2_sphere.txt",
+      "label": 1,
+      "gt": "/home/test/data/MiniShift/capsule/gt/subtle/medium/55_2_sphere.txt"
+    },
+    {
+      "path": "/home/test/data/MiniShift/capsule/test/subtle/medium/56_1_scratch.txt",
+      "label": 1,
+      "gt": "/home/test/data/MiniShift/capsule/gt/subtle/medium/56_1_scratch.txt"
+    },
+    {
+      "path": "/home/test/data/MiniShift/capsule/test/subtle/medium/56_2_sphere.txt",
+      "label": 1,
+      "gt": "/home/test/data/MiniShift/capsule/gt/subtle/medium/56_2_sphere.txt"
+    },
+    {
+      "path": "/home/test/data/MiniShift/capsule/test/subtle/medium/57_1_scratch.txt",
+      "label": 1,
+      "gt": "/home/test/data/MiniShift/capsule/gt/subtle/medium/57_1_scratch.txt"
+    },
+    {
+      "path": "/home/test/data/MiniShift/capsule/test/subtle/medium/57_2_sphere.txt",
+      "label": 1,
+      "gt": "/home/test/data/MiniShift/capsule/gt/subtle/medium/57_2_sphere.txt"
+    },
+    {
+      "path": "/home/test/data/MiniShift/capsule/test/subtle/medium/58_1_scratch.txt",
+      "label": 1,
+      "gt": "/home/test/data/MiniShift/capsule/gt/subtle/medium/58_1_scratch.txt"
+    },
+    {
+      "path": "/home/test/data/MiniShift/capsule/test/subtle/medium/58_2_sphere.txt",
+      "label": 1,
+      "gt": "/home/test/data/MiniShift/capsule/gt/subtle/medium/58_2_sphere.txt"
+    },
+    {
+      "path": "/home/test/data/MiniShift/capsule/test/subtle/medium/59_1_scratch.txt",
+      "label": 1,
+      "gt": "/home/test/data/MiniShift/capsule/gt/subtle/medium/59_1_scratch.txt"
+    },
+    {
+      "path": "/home/test/data/MiniShift/capsule/test/subtle/medium/59_2_sphere.txt",
+      "label": 1,
+      "gt": "/home/test/data/MiniShift/capsule/gt/subtle/medium/59_2_sphere.txt"
+    },
+    {
+      "path": "/home/test/data/MiniShift/capsule/test/subtle/medium/60_1_scratch.txt",
+      "label": 1,
+      "gt": "/home/test/data/MiniShift/capsule/gt/subtle/medium/60_1_scratch.txt"
+    },
+    {
+      "path": "/home/test/data/MiniShift/capsule/test/subtle/medium/60_2_sphere.txt",
+      "label": 1,
+      "gt": "/home/test/data/MiniShift/capsule/gt/subtle/medium/60_2_sphere.txt"
+    },
+    {
+      "path": "/home/test/data/MiniShift/capsule/test/subtle/medium/61_1_scratch.txt",
+      "label": 1,
+      "gt": "/home/test/data/MiniShift/capsule/gt/subtle/medium/61_1_scratch.txt"
+    },
+    {
+      "path": "/home/test/data/MiniShift/capsule/test/subtle/medium/61_2_sphere.txt",
+      "label": 1,
+      "gt": "/home/test/data/MiniShift/capsule/gt/subtle/medium/61_2_sphere.txt"
+    },
+    {
+      "path": "/home/test/data/MiniShift/capsule/test/subtle/medium/62_1_scratch.txt",
+      "label": 1,
+      "gt": "/home/test/data/MiniShift/capsule/gt/subtle/medium/62_1_scratch.txt"
+    },
+    {
+      "path": "/home/test/data/MiniShift/capsule/test/subtle/medium/62_2_sphere.txt",
+      "label": 1,
+      "gt": "/home/test/data/MiniShift/capsule/gt/subtle/medium/62_2_sphere.txt"
+    },
+    {
+      "path": "/home/test/data/MiniShift/capsule/test/subtle/medium/63_1_scratch.txt",
+      "label": 1,
+      "gt": "/home/test/data/MiniShift/capsule/gt/subtle/medium/63_1_scratch.txt"
+    },
+    {
+      "path": "/home/test/data/MiniShift/capsule/test/subtle/medium/63_2_sphere.txt",
+      "label": 1,
+      "gt": "/home/test/data/MiniShift/capsule/gt/subtle/medium/63_2_sphere.txt"
+    },
+    {
+      "path": "/home/test/data/MiniShift/capsule/test/subtle/hard/54_1_scratch.txt",
+      "label": 1,
+      "gt": "/home/test/data/MiniShift/capsule/gt/subtle/hard/54_1_scratch.txt"
+    },
+    {
+      "path": "/home/test/data/MiniShift/capsule/test/subtle/hard/54_2_sphere.txt",
+      "label": 1,
+      "gt": "/home/test/data/MiniShift/capsule/gt/subtle/hard/54_2_sphere.txt"
+    },
+    {
+      "path": "/home/test/data/MiniShift/capsule/test/subtle/hard/55_1_scratch.txt",
+      "label": 1,
+      "gt": "/home/test/data/MiniShift/capsule/gt/subtle/hard/55_1_scratch.txt"
+    },
+    {
+      "path": "/home/test/data/MiniShift/capsule/test/subtle/hard/55_2_sphere.txt",
+      "label": 1,
+      "gt": "/home/test/data/MiniShift/capsule/gt/subtle/hard/55_2_sphere.txt"
+    },
+    {
+      "path": "/home/test/data/MiniShift/capsule/test/subtle/hard/56_1_scratch.txt",
+      "label": 1,
+      "gt": "/home/test/data/MiniShift/capsule/gt/subtle/hard/56_1_scratch.txt"
+    },
+    {
+      "path": "/home/test/data/MiniShift/capsule/test/subtle/hard/56_2_sphere.txt",
+      "label": 1,
+      "gt": "/home/test/data/MiniShift/capsule/gt/subtle/hard/56_2_sphere.txt"
+    },
+    {
+      "path": "/home/test/data/MiniShift/capsule/test/subtle/hard/57_1_scratch.txt",
+      "label": 1,
+      "gt": "/home/test/data/MiniShift/capsule/gt/subtle/hard/57_1_scratch.txt"
+    },
+    {
+      "path": "/home/test/data/MiniShift/capsule/test/subtle/hard/57_2_sphere.txt",
+      "label": 1,
+      "gt": "/home/test/data/MiniShift/capsule/gt/subtle/hard/57_2_sphere.txt"
+    },
+    {
+      "path": "/home/test/data/MiniShift/capsule/test/subtle/hard/58_1_scratch.txt",
+      "label": 1,
+      "gt": "/home/test/data/MiniShift/capsule/gt/subtle/hard/58_1_scratch.txt"
+    },
+    {
+      "path": "/home/test/data/MiniShift/capsule/test/subtle/hard/58_2_sphere.txt",
+      "label": 1,
+      "gt": "/home/test/data/MiniShift/capsule/gt/subtle/hard/58_2_sphere.txt"
+    },
+    {
+      "path": "/home/test/data/MiniShift/capsule/test/subtle/hard/59_1_scratch.txt",
+      "label": 1,
+      "gt": "/home/test/data/MiniShift/capsule/gt/subtle/hard/59_1_scratch.txt"
+    },
+    {
+      "path": "/home/test/data/MiniShift/capsule/test/subtle/hard/59_2_sphere.txt",
+      "label": 1,
+      "gt": "/home/test/data/MiniShift/capsule/gt/subtle/hard/59_2_sphere.txt"
+    },
+    {
+      "path": "/home/test/data/MiniShift/capsule/test/subtle/hard/60_1_scratch.txt",
+      "label": 1,
+      "gt": "/home/test/data/MiniShift/capsule/gt/subtle/hard/60_1_scratch.txt"
+    },
+    {
+      "path": "/home/test/data/MiniShift/capsule/test/subtle/hard/60_2_sphere.txt",
+      "label": 1,
+      "gt": "/home/test/data/MiniShift/capsule/gt/subtle/hard/60_2_sphere.txt"
+    },
+    {
+      "path": "/home/test/data/MiniShift/capsule/test/subtle/hard/61_1_scratch.txt",
+      "label": 1,
+      "gt": "/home/test/data/MiniShift/capsule/gt/subtle/hard/61_1_scratch.txt"
+    },
+    {
+      "path": "/home/test/data/MiniShift/capsule/test/subtle/hard/61_2_sphere.txt",
+      "label": 1,
+      "gt": "/home/test/data/MiniShift/capsule/gt/subtle/hard/61_2_sphere.txt"
+    },
+    {
+      "path": "/home/test/data/MiniShift/capsule/test/subtle/hard/62_1_scratch.txt",
+      "label": 1,
+      "gt": "/home/test/data/MiniShift/capsule/gt/subtle/hard/62_1_scratch.txt"
+    },
+    {
+      "path": "/home/test/data/MiniShift/capsule/test/subtle/hard/62_2_sphere.txt",
+      "label": 1,
+      "gt": "/home/test/data/MiniShift/capsule/gt/subtle/hard/62_2_sphere.txt"
+    },
+    {
+      "path": "/home/test/data/MiniShift/capsule/test/subtle/hard/63_1_scratch.txt",
+      "label": 1,
+      "gt": "/home/test/data/MiniShift/capsule/gt/subtle/hard/63_1_scratch.txt"
+    },
+    {
+      "path": "/home/test/data/MiniShift/capsule/test/subtle/hard/63_2_sphere.txt",
+      "label": 1,
+      "gt": "/home/test/data/MiniShift/capsule/gt/subtle/hard/63_2_sphere.txt"
+    }
+  ]
+}

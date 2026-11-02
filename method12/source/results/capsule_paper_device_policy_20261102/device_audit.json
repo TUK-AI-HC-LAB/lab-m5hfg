@@ -1,0 +1,110 @@
+[
+  {
+    "stage": "normal_estimation_including_neighbor_search",
+    "device": "cpu",
+    "detail": "Official Open3D legacy normals; radius=10000; max_nn=10",
+    "calls": 185
+  },
+  {
+    "stage": "fpfh_scale_40",
+    "device": "cuda:0",
+    "detail": "Open3D tensor CUDA; exact max_nn=40; omitted nonbinding radius=1000000",
+    "calls": 185
+  },
+  {
+    "stage": "fpfh_scale_80",
+    "device": "cuda:0",
+    "detail": "Open3D tensor CUDA; exact max_nn=80; omitted nonbinding radius=1000000",
+    "calls": 185
+  },
+  {
+    "stage": "fpfh_scale_120",
+    "device": "cuda:0",
+    "detail": "Open3D tensor CUDA; exact max_nn=120; omitted nonbinding radius=1000000",
+    "calls": 185
+  },
+  {
+    "stage": "fps",
+    "device": "cuda:0",
+    "detail": "native PointNet2; centers=4096; input=[1, 500000, 3]",
+    "calls": 185
+  },
+  {
+    "stage": "fps_gather",
+    "device": "cuda:0",
+    "detail": "native PointNet2; count=4096",
+    "calls": 185
+  },
+  {
+    "stage": "coordinate_knn",
+    "device": "cuda:0",
+    "detail": "native KNN_CUDA; k=128; ref=[1, 500000, 3]; query=[1, 4000, 3]",
+    "calls": 185
+  },
+  {
+    "stage": "coordinate_knn",
+    "device": "cuda:0",
+    "detail": "native KNN_CUDA; k=128; ref=[1, 500000, 3]; query=[1, 96, 3]",
+    "calls": 185
+  },
+  {
+    "stage": "lfsa_mean",
+    "device": "cuda:0",
+    "detail": "input=[1, 4096, 128, 132]",
+    "calls": 185
+  },
+  {
+    "stage": "coreset_random_projection_fallback",
+    "device": "cpu",
+    "detail": "sklearn projection rejected; official no-projection fallback; input=[221184, 132]",
+    "calls": 1
+  },
+  {
+    "stage": "memory_bank_cdist",
+    "device": "cuda:0",
+    "detail": "query=[4096, 132]; bank=[11059, 132]",
+    "calls": 130
+  },
+  {
+    "stage": "memory_bank_nearest_neighbor_min",
+    "device": "cuda:0",
+    "detail": "distances=[4096, 11059]",
+    "calls": 130
+  },
+  {
+    "stage": "point_score_interpolation",
+    "device": "cuda:0",
+    "detail": "official full-sort; dense=500000; centers=4096; chunk=50000",
+    "calls": 130
+  },
+  {
+    "stage": "fps",
+    "device": "cuda:0",
+    "detail": "native PointNet2; centers=1024; input=[1, 500000, 3]",
+    "calls": 130
+  },
+  {
+    "stage": "fps_gather",
+    "device": "cuda:0",
+    "detail": "native PointNet2; count=1024",
+    "calls": 130
+  },
+  {
+    "stage": "coordinate_knn",
+    "device": "cuda:0",
+    "detail": "native KNN_CUDA; k=12; ref=[1, 500000, 3]; query=[1, 1024, 3]",
+    "calls": 130
+  },
+  {
+    "stage": "score_smoothing_mean",
+    "device": "cuda:0",
+    "detail": "input=[1, 1024, 12, 1]",
+    "calls": 130
+  },
+  {
+    "stage": "point_score_interpolation",
+    "device": "cuda:0",
+    "detail": "official full-sort; dense=500000; centers=1024; chunk=50000",
+    "calls": 130
+  }
+]

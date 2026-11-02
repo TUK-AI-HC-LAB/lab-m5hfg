@@ -1,0 +1,9 @@
+{
+  "status": "passed",
+  "test_samples": 2,
+  "bank_shape": [
+    204,
+    132
+  ],
+  "peak_gpu_allocated_bytes": 8296309248
+}
