@@ -1,0 +1,2532 @@
+{
+  "status": "complete_verified",
+  "expected_categories": 52,
+  "completed_categories": 52,
+  "failures": [],
+  "files": [
+    {
+      "path": "shapenet/ashtray0/active_stage.json",
+      "sha256": "c6b014644dd2c5b9460659175d78fba985fc040a3ff60e0ce1edfed9bc06c94e"
+    },
+    {
+      "path": "shapenet/ashtray0/device_audit.json",
+      "sha256": "2e23732b99bca9172b87f4b7a42c9f3055cf8b4cfded9b9ed72bfd5aafbf05db"
+    },
+    {
+      "path": "shapenet/ashtray0/environment.json",
+      "sha256": "d01303d6a819c1dda7639f6b91709dc39ff51458885b1f717dae1164415124e8"
+    },
+    {
+      "path": "shapenet/ashtray0/fit_state.json",
+      "sha256": "b17c3778120441298bee8271eecbed5dca82dda82118f2696a06b01bd7a359bd"
+    },
+    {
+      "path": "shapenet/ashtray0/manifest.json",
+      "sha256": "ee9e6f3bab65c8e5f6089b147212dc2ae3e2ded21d7f405dfa93c3d3fdd37a56"
+    },
+    {
+      "path": "shapenet/ashtray0/metrics.csv",
+      "sha256": "3f48792af4a9e8c37423330f1d91b25e4b555032a0965efd14111eba2777af8e"
+    },
+    {
+      "path": "shapenet/ashtray0/progress.json",
+      "sha256": "c792f5befd56534779c45ce868d04afdb66d83099bb4498d35592142597cade1"
+    },
+    {
+      "path": "shapenet/ashtray0/stage_summary.csv",
+      "sha256": "ac53655549da2fa41f77834864b63cb2a07411c90f17f80c69abe0b7965030c6"
+    },
+    {
+      "path": "shapenet/ashtray0/stage_timings.csv",
+      "sha256": "4f0a95f332ba90469a306d9f2a245c5fa6dcd1d3b330175a27b8618c8d94a289"
+    },
+    {
+      "path": "shapenet/ashtray0/summary.json",
+      "sha256": "db877c64b3d949f7d6d47b6f6b791e4e4ebbe48a2d872609cd4b0d9978bf1f12"
+    },
+    {
+      "path": "shapenet/ashtray0/test_timings.csv",
+      "sha256": "8652cf71e4c861c3151229240184a1709a64f1799f656d995711fd2940abea09"
+    },
+    {
+      "path": "shapenet/ashtray0/train_timings.csv",
+      "sha256": "8d0d36c8a3ff006c8e35eb9d2d62373a3d0e7a7a62934ace9cae06455a3828b7"
+    },
+    {
+      "path": "shapenet/bag0/active_stage.json",
+      "sha256": "e44644a71639b89c18e303e8c67a87488d06ac8732a79c952db76929859215a7"
+    },
+    {
+      "path": "shapenet/bag0/device_audit.json",
+      "sha256": "9cbdd5946ef533af1a9d9ee5ab4bc759282683a595e0ce01648b45cbb185a8c1"
+    },
+    {
+      "path": "shapenet/bag0/environment.json",
+      "sha256": "d01303d6a819c1dda7639f6b91709dc39ff51458885b1f717dae1164415124e8"
+    },
+    {
+      "path": "shapenet/bag0/fit_state.json",
+      "sha256": "e5df8a17bcb6c5edd6273a00d545c7a1d3c35a4cad034ca6f3cf35427e9bd998"
+    },
+    {
+      "path": "shapenet/bag0/manifest.json",
+      "sha256": "c3000f2ecb8897c5ccd88955d468c1a25f4e0762cfaed62254b706457234468a"
+    },
+    {
+      "path": "shapenet/bag0/metrics.csv",
+      "sha256": "70991f61263739754fe3fa7419d0603287f52f568573af6ca2efdee7157b78e6"
+    },
+    {
+      "path": "shapenet/bag0/progress.json",
+      "sha256": "792f9431684c09f67b2bbe7167cefc7508073e39fe26aa12aab4969580f2c1e0"
+    },
+    {
+      "path": "shapenet/bag0/stage_summary.csv",
+      "sha256": "aeea401ad5b85092c97a73967e2394b59adaf4c354622d664fca8109c554f8dc"
+    },
+    {
+      "path": "shapenet/bag0/stage_timings.csv",
+      "sha256": "83a3e4ab485a0ec442f7d458a03f41d54c673ce840b4db2197e83dff6e7074e9"
+    },
+    {
+      "path": "shapenet/bag0/summary.json",
+      "sha256": "3a52b440388fb59b28320231f80971a5a606f1ba04b0a3457475e5a49b35c02e"
+    },
+    {
+      "path": "shapenet/bag0/test_timings.csv",
+      "sha256": "4258bd76c6ce5b9ef17cbf86b93d4c1baf542ab5b02060c39382736835a43c8d"
+    },
+    {
+      "path": "shapenet/bag0/train_timings.csv",
+      "sha256": "e3228fa79d1ebae5e4adf38821722d5f15fd1c70f4010f1f4786fe79f42c22fd"
+    },
+    {
+      "path": "shapenet/bottle0/active_stage.json",
+      "sha256": "298fc1f562decea9a311e28fea6e0e8edf178ab75dae342b55b4e98dca8ce765"
+    },
+    {
+      "path": "shapenet/bottle0/device_audit.json",
+      "sha256": "4771c1918feb627055009896f9d5b546515de3ead52223e853a9b64a0d0d2bdc"
+    },
+    {
+      "path": "shapenet/bottle0/environment.json",
+      "sha256": "d01303d6a819c1dda7639f6b91709dc39ff51458885b1f717dae1164415124e8"
+    },
+    {
+      "path": "shapenet/bottle0/fit_state.json",
+      "sha256": "8df73f8a656831a5141ceb93806c6256b0e00f739cf1a1c840b38ebbb467ef5c"
+    },
+    {
+      "path": "shapenet/bottle0/manifest.json",
+      "sha256": "c5417f78c324da46ee89cef5a4bfd45ffd6b42ee56ca57a4a1f08848dd113969"
+    },
+    {
+      "path": "shapenet/bottle0/metrics.csv",
+      "sha256": "e61949cfd6aac6dd8dea002c3431f8d6be6c2c85a363448e3f4b8d65b61f7eed"
+    },
+    {
+      "path": "shapenet/bottle0/progress.json",
+      "sha256": "4f60022c088404c0f2f69d205e8537a5f25e8a58549c9017c4f530aa1d5dbca6"
+    },
+    {
+      "path": "shapenet/bottle0/stage_summary.csv",
+      "sha256": "a45ea2cb26cf8d6e7b6fd824f8794e6ad871958c95f7dee8c2e19f1caa9ddc8a"
+    },
+    {
+      "path": "shapenet/bottle0/stage_timings.csv",
+      "sha256": "0182fe3cc29c711461c1d30c919edb7f9764db8725354589a5c02bd95727003a"
+    },
+    {
+      "path": "shapenet/bottle0/summary.json",
+      "sha256": "f45c4a5285f170a793517068943db0cf75f96ea6075f277091ead93497c1e8dc"
+    },
+    {
+      "path": "shapenet/bottle0/test_timings.csv",
+      "sha256": "a731981a51e3198985267dbcb3aac7374933612fffa94928e7178934a2f89441"
+    },
+    {
+      "path": "shapenet/bottle0/train_timings.csv",
+      "sha256": "97c9f93d748b0362a2e79fdc5b52b3ea59c82167a3d4f3670536e972f5d5acf1"
+    },
+    {
+      "path": "shapenet/bottle1/active_stage.json",
+      "sha256": "0a2061735e13f7edbbde6a5ab2362802444ca7d84c5d093f6e667396c1459805"
+    },
+    {
+      "path": "shapenet/bottle1/device_audit.json",
+      "sha256": "fb65e3e30622a1740358ca4469ca51ebabf8e2efaf3b7ddfad0b5b1d6444fe0a"
+    },
+    {
+      "path": "shapenet/bottle1/environment.json",
+      "sha256": "f0711589b511252b51e097431e93ca93439484a51a43279bbd72223990d06849"
+    },
+    {
+      "path": "shapenet/bottle1/fit_state.json",
+      "sha256": "25d271e3d0bdeb339cf64b0571ce25dfe9c5fc0f0f1bf0404dc3d62375bfa5e6"
+    },
+    {
+      "path": "shapenet/bottle1/manifest.json",
+      "sha256": "254b88a52fd66f34ecaa0e92ffae9df246c93325a660f38aff8b08e49c34b079"
+    },
+    {
+      "path": "shapenet/bottle1/metrics.csv",
+      "sha256": "7c03bac270f29dc0ac4e7cc5c268dce3b382e93e847fbc53a00ec098522a11e7"
+    },
+    {
+      "path": "shapenet/bottle1/progress.json",
+      "sha256": "3a82638b4df3b74e29353774397f95a7492e8df3e74119ca618bff545bf298e9"
+    },
+    {
+      "path": "shapenet/bottle1/stage_summary.csv",
+      "sha256": "531e8ea86ff7710ce2322204a0205b8556786ad0cfa764e4696e67cfc84969d5"
+    },
+    {
+      "path": "shapenet/bottle1/stage_timings.csv",
+      "sha256": "8a35827b4cbb90240d908a3d8cc0232f55d7e84b9db1f7b25f0f4dd65a98d307"
+    },
+    {
+      "path": "shapenet/bottle1/summary.json",
+      "sha256": "1e2bf522af29fe0366b5bab78059f87458446fa93ebe29f827786b12f1d2beaf"
+    },
+    {
+      "path": "shapenet/bottle1/test_timings.csv",
+      "sha256": "90d835bd85ce49ae68a5caac39fc4fef77279564ec767fbe2f2220d58117e4c1"
+    },
+    {
+      "path": "shapenet/bottle1/train_timings.csv",
+      "sha256": "a0ed2de186cf84c2e0589e3d829ec4dc48483b9835f98f2dfcd34633a68da561"
+    },
+    {
+      "path": "shapenet/bottle3/active_stage.json",
+      "sha256": "eaa96fe53816520ca1f941d56c317d07ac6462ba1ee8db960793f4187df1afba"
+    },
+    {
+      "path": "shapenet/bottle3/device_audit.json",
+      "sha256": "f0d22a3b225aee64f0aa2676931ff346a6cee91c15522591ec9f3aab8770a785"
+    },
+    {
+      "path": "shapenet/bottle3/environment.json",
+      "sha256": "439787d9d4f4d330d4059e387b4fd8db194b1a57eb93a87b0e4d27e94eabfca4"
+    },
+    {
+      "path": "shapenet/bottle3/fit_state.json",
+      "sha256": "f69f051b7e73bf1246995d26c9f467cb84f8dbf9ba5d57841e21dafcb4bf6aa0"
+    },
+    {
+      "path": "shapenet/bottle3/manifest.json",
+      "sha256": "f33dd1c9b20202f69afe06a392539b10369a344087f1307cc677cb14dc60d285"
+    },
+    {
+      "path": "shapenet/bottle3/metrics.csv",
+      "sha256": "f89e8c4ad693ff329ee04025be5202826f6085bcf2e3b90f969fa488ece16813"
+    },
+    {
+      "path": "shapenet/bottle3/progress.json",
+      "sha256": "19d0da89f001465b52ac02316336eb845a9747876761585b53c5989771f7d927"
+    },
+    {
+      "path": "shapenet/bottle3/stage_summary.csv",
+      "sha256": "188944d30f02c0f8e1877235053fa6796640b0401bffb0b7ffc189621d95ac80"
+    },
+    {
+      "path": "shapenet/bottle3/stage_timings.csv",
+      "sha256": "17eb2e5c3512d114cfc95d86b5bd916c5319f6c6497e9c989f2395f586387837"
+    },
+    {
+      "path": "shapenet/bottle3/summary.json",
+      "sha256": "caa22256b191cd124310ffc47c04bce029ae66cced0a733ed4b6f79ac2a16e40"
+    },
+    {
+      "path": "shapenet/bottle3/test_timings.csv",
+      "sha256": "2d44664981c756e41c80836ddaca38d1785ee34089f0d3d07c1d2561065a51c1"
+    },
+    {
+      "path": "shapenet/bottle3/train_timings.csv",
+      "sha256": "f6fa749c9954ca36d121d6edaa8e3560da6ea96a7229092214480d070945d6c1"
+    },
+    {
+      "path": "shapenet/bowl0/active_stage.json",
+      "sha256": "c87c58395be0a360168c99b8b11eff9e17bf3df42f2c96a6e769ec98fbd4a71a"
+    },
+    {
+      "path": "shapenet/bowl0/device_audit.json",
+      "sha256": "7ebf68fc355e559ec7fcdf03747323055db49a1d4c327501228c3bf6b6c6cf0b"
+    },
+    {
+      "path": "shapenet/bowl0/environment.json",
+      "sha256": "2b36ea7e06f10ea8994258c6a3a807f37f5688eeb79db43bcbcc5d1107ee0a8f"
+    },
+    {
+      "path": "shapenet/bowl0/fit_state.json",
+      "sha256": "06132b6e730c8ed313564be9518261d005b2ac004ea9e042851182c68bdbe1cf"
+    },
+    {
+      "path": "shapenet/bowl0/manifest.json",
+      "sha256": "41d0a7c03e22eff8f15fb67305fb6e9290aab67b55e8aeb004916aff238e9a10"
+    },
+    {
+      "path": "shapenet/bowl0/metrics.csv",
+      "sha256": "bef5e6625617ddf2705c08d14869736c80ea0a90b30a94c85feba97e9e10587d"
+    },
+    {
+      "path": "shapenet/bowl0/progress.json",
+      "sha256": "30f03ec2ac58115f0021d83dfd1693e39703624e3a2f33323c62e415cb2d22fa"
+    },
+    {
+      "path": "shapenet/bowl0/stage_summary.csv",
+      "sha256": "e98cda07a001dd4bdfa88c4328d7122d614c6c68eee8ce8e19508f3217fadfab"
+    },
+    {
+      "path": "shapenet/bowl0/stage_timings.csv",
+      "sha256": "d1a4bba2569d250c4cbf5a986a8281c023b290f8747b85fd682515599fc05695"
+    },
+    {
+      "path": "shapenet/bowl0/summary.json",
+      "sha256": "e4fe591d98831c8c446cc891ee4cad7b9b3eea0f5ed1b3f530c3c0890d4eacd7"
+    },
+    {
+      "path": "shapenet/bowl0/test_timings.csv",
+      "sha256": "3bd32d4486ef22964d3abc8d290b279167ad983534177b5ae9d02b7362f01757"
+    },
+    {
+      "path": "shapenet/bowl0/train_timings.csv",
+      "sha256": "7e5db3744da29add7dd54848d69e7691f1a5aab1d1b2526d190f24e196996bbd"
+    },
+    {
+      "path": "shapenet/bowl1/active_stage.json",
+      "sha256": "16975bab41c7d0e717f255995de6800461cfe385f707e0fb428c8fc04f007e8c"
+    },
+    {
+      "path": "shapenet/bowl1/device_audit.json",
+      "sha256": "d2b462fdcbd6ca06a2d28e848db87f075687e1d65ce5233d11d7bebc677673f6"
+    },
+    {
+      "path": "shapenet/bowl1/environment.json",
+      "sha256": "2b36ea7e06f10ea8994258c6a3a807f37f5688eeb79db43bcbcc5d1107ee0a8f"
+    },
+    {
+      "path": "shapenet/bowl1/fit_state.json",
+      "sha256": "3a3fef493934f9436e8a9802136461416e8300fa4d87e9e9bb83405c8fdecfe2"
+    },
+    {
+      "path": "shapenet/bowl1/manifest.json",
+      "sha256": "16866126c8882a155c6cda145763f6eda5e955f6bcbbef55da65a5416c720d35"
+    },
+    {
+      "path": "shapenet/bowl1/metrics.csv",
+      "sha256": "188de1ba40bd0c6ee7f5f57f9033d226a7f404fc7666ec2012ebab87de582579"
+    },
+    {
+      "path": "shapenet/bowl1/progress.json",
+      "sha256": "f3d3f20a6d52bcdeba7781e55da91bce26a98739316a7b86a1d5e3ab4e8f50a9"
+    },
+    {
+      "path": "shapenet/bowl1/stage_summary.csv",
+      "sha256": "45991c4aac8d9cd9b1a402cb9df4dad813eae528969eb1b414c30f4c9ae75af4"
+    },
+    {
+      "path": "shapenet/bowl1/stage_timings.csv",
+      "sha256": "025b4cec821f552ca25cc2fb14f0cead0c41c12e6b41b72e40a3699cb745c593"
+    },
+    {
+      "path": "shapenet/bowl1/summary.json",
+      "sha256": "903e77d8095b1a7ff86410680a4c123368e7094c2089bad07792316526b3b077"
+    },
+    {
+      "path": "shapenet/bowl1/test_timings.csv",
+      "sha256": "84fd2c78c4a1c01c162903d3e42a3b9ce4d7d23083684e7fbf2304eca77dc4f6"
+    },
+    {
+      "path": "shapenet/bowl1/train_timings.csv",
+      "sha256": "39ff71d62a4d37e89bd6b47c3d80e0f12555a07021bc5b5fec4efb633acf96e5"
+    },
+    {
+      "path": "shapenet/bowl2/active_stage.json",
+      "sha256": "3e1c13c5c3f58a5387564f425d75b9060056e10ca6a04a3485de49a978fe334f"
+    },
+    {
+      "path": "shapenet/bowl2/device_audit.json",
+      "sha256": "277b97e87bbf81f5e53fa8052dbc2583617c0de1a1704d8ec197ed2a2c8f26ec"
+    },
+    {
+      "path": "shapenet/bowl2/environment.json",
+      "sha256": "2b36ea7e06f10ea8994258c6a3a807f37f5688eeb79db43bcbcc5d1107ee0a8f"
+    },
+    {
+      "path": "shapenet/bowl2/fit_state.json",
+      "sha256": "3743a3949fa22027be7ca565507ba2b11249e132c724768cff2153ee2b9939f8"
+    },
+    {
+      "path": "shapenet/bowl2/manifest.json",
+      "sha256": "a946b6f46aa52d8c4e44e3c95199083c20c6d74351aa78773c82587cfed49426"
+    },
+    {
+      "path": "shapenet/bowl2/metrics.csv",
+      "sha256": "ba86dee75b41b2eb8ed8a56ed84ad36ec164fbe53bee3895bbb437ac6747b13b"
+    },
+    {
+      "path": "shapenet/bowl2/progress.json",
+      "sha256": "580001233f4ec91f5bd2a6fe34e986d2c4ead570a0a45281ac819d8112863893"
+    },
+    {
+      "path": "shapenet/bowl2/stage_summary.csv",
+      "sha256": "03bc043a9af5206cd9cd07e1bf5ed31176d9bfc57b740be61874eb1673542eec"
+    },
+    {
+      "path": "shapenet/bowl2/stage_timings.csv",
+      "sha256": "0766b9409331b373addf288b02b17e6d6828f471e52ad40d3741c1d42d58063f"
+    },
+    {
+      "path": "shapenet/bowl2/summary.json",
+      "sha256": "a4c027410a369c888a977ebd693c4f1a1284f06f477ccaa7e819e91916c76d12"
+    },
+    {
+      "path": "shapenet/bowl2/test_timings.csv",
+      "sha256": "145937097c9f7c30aa3b08301c0b5e5052028edc898e953b4d829ee149ebf245"
+    },
+    {
+      "path": "shapenet/bowl2/train_timings.csv",
+      "sha256": "97a945c6e151a734ee4a80ea91e0852dd3ead7e72bcc375a73da622870dafcc6"
+    },
+    {
+      "path": "shapenet/bowl3/active_stage.json",
+      "sha256": "445bfd77df880c129f1d67addeef96df070923193f77de5155a2ecf787c701f5"
+    },
+    {
+      "path": "shapenet/bowl3/device_audit.json",
+      "sha256": "fda128cba3e0dd4b40c0a5dcda9fade279c00cbff70fd786711f2010f29fcc0e"
+    },
+    {
+      "path": "shapenet/bowl3/environment.json",
+      "sha256": "2b36ea7e06f10ea8994258c6a3a807f37f5688eeb79db43bcbcc5d1107ee0a8f"
+    },
+    {
+      "path": "shapenet/bowl3/fit_state.json",
+      "sha256": "707b58b5bd8a18a66af211e5e8a10cf983084ed6bd64f059bf1feb957260f3f6"
+    },
+    {
+      "path": "shapenet/bowl3/manifest.json",
+      "sha256": "27d46c5cf99c57494e04b8240c0ed605df65b060e8a57b93f470b1d26aa8758d"
+    },
+    {
+      "path": "shapenet/bowl3/metrics.csv",
+      "sha256": "c3480b970cbd4263833b22528df98633ae91bddb74b846be443477818df424c8"
+    },
+    {
+      "path": "shapenet/bowl3/progress.json",
+      "sha256": "6055c2eec855b340b4ee89526622a43a47ac40f837e07ba0d8ac0e196e52ca05"
+    },
+    {
+      "path": "shapenet/bowl3/stage_summary.csv",
+      "sha256": "4b7768c2de13ca456653a83c8334b6a99b97afa79f1cb7ae2810b5a7a0701faf"
+    },
+    {
+      "path": "shapenet/bowl3/stage_timings.csv",
+      "sha256": "f73d038d60ba606f779e5fefa393e58ad2ed9b2e30f3529880b211e4acb3cabd"
+    },
+    {
+      "path": "shapenet/bowl3/summary.json",
+      "sha256": "3525ddff6aa40df9adc08c8c4cae7e62086d56a0a996053343c7951a21b6a593"
+    },
+    {
+      "path": "shapenet/bowl3/test_timings.csv",
+      "sha256": "062ab070fd06a1ae8f5f4270c47ea5dc0153be23a221df551beac552a061b3e5"
+    },
+    {
+      "path": "shapenet/bowl3/train_timings.csv",
+      "sha256": "3ccddefd64fecca66065ce14554aad4d2148c0982294500ff119c21be2a32dac"
+    },
+    {
+      "path": "shapenet/bowl4/active_stage.json",
+      "sha256": "60e5978747e591380a8f0433ad7ddf3217c983ca5b99c1deb1c3ed3f118891a5"
+    },
+    {
+      "path": "shapenet/bowl4/device_audit.json",
+      "sha256": "ec0bbf783f9de38bb01f35b7441f6f1a78c8632a8fc68c7bd7dcce53c4144a91"
+    },
+    {
+      "path": "shapenet/bowl4/environment.json",
+      "sha256": "2b36ea7e06f10ea8994258c6a3a807f37f5688eeb79db43bcbcc5d1107ee0a8f"
+    },
+    {
+      "path": "shapenet/bowl4/fit_state.json",
+      "sha256": "52c75b583787401d6c1b693397d3546db930db1cf564ac477295e61f543a4dfd"
+    },
+    {
+      "path": "shapenet/bowl4/manifest.json",
+      "sha256": "ec6078d982b1ef3138718c3997b519cbfcbf0c470cafffd901989593755d4588"
+    },
+    {
+      "path": "shapenet/bowl4/metrics.csv",
+      "sha256": "3f6b0108e33bf476651d0b08710a125131dcb58303eed2994c01cc677656a818"
+    },
+    {
+      "path": "shapenet/bowl4/progress.json",
+      "sha256": "becb0a360f9a3b88adabfaca1f7ccef5962699ac99ea139f37a5a098b1d73c03"
+    },
+    {
+      "path": "shapenet/bowl4/stage_summary.csv",
+      "sha256": "1a8aa0eb28d33738eb7bf689f46e4c61b5a67fe64310126097501a0cc6dc73e1"
+    },
+    {
+      "path": "shapenet/bowl4/stage_timings.csv",
+      "sha256": "b03aa2635db1fb1efb0ddaf3c22edd7f131a84706d4832acccc491939e0e418d"
+    },
+    {
+      "path": "shapenet/bowl4/summary.json",
+      "sha256": "d7f2e0549d5728f6384c4826eeebe964c4e82a33ab60b4e8a7c2791d38737e7a"
+    },
+    {
+      "path": "shapenet/bowl4/test_timings.csv",
+      "sha256": "83c4dd624eeeaf93250b130649d4a83d1759f95434fc6f04cf47dfd5dbf458f0"
+    },
+    {
+      "path": "shapenet/bowl4/train_timings.csv",
+      "sha256": "b90f8b53e42ab69da20f95ad01bff459a691d91adf9870b6adc4c0333efab7f3"
+    },
+    {
+      "path": "shapenet/bowl5/active_stage.json",
+      "sha256": "3910f69055ed65875ada074a2609484e887e90619bf09db14259b7926918209a"
+    },
+    {
+      "path": "shapenet/bowl5/device_audit.json",
+      "sha256": "fc5d26c038f4d86048154de6a97263b6b28a24adc2e310d02ec0f1067e5db267"
+    },
+    {
+      "path": "shapenet/bowl5/environment.json",
+      "sha256": "f0711589b511252b51e097431e93ca93439484a51a43279bbd72223990d06849"
+    },
+    {
+      "path": "shapenet/bowl5/fit_state.json",
+      "sha256": "5f2a5dfd8c8c79cf61edd58064237ed78166dc6e3934c80cfeaea0b9e0623951"
+    },
+    {
+      "path": "shapenet/bowl5/manifest.json",
+      "sha256": "98556120f71ffe20ebfd30d7d2732e6d920f905a942869fa732405adba34cbb9"
+    },
+    {
+      "path": "shapenet/bowl5/metrics.csv",
+      "sha256": "4e3a6662644d8a4d287b58619b3726b9f0120f9137b0ebc3efaed9708b93be85"
+    },
+    {
+      "path": "shapenet/bowl5/progress.json",
+      "sha256": "1b4b20464c44429905f932562f1d82c5dfaa34fedcca64c57a182519ffcf9a1c"
+    },
+    {
+      "path": "shapenet/bowl5/stage_summary.csv",
+      "sha256": "2a2a5bf79d95127e247a1dc5a6abf7de418d7221df4d3448a8169260e610e33d"
+    },
+    {
+      "path": "shapenet/bowl5/stage_timings.csv",
+      "sha256": "28aee02ac0350bb0d206a557d7a73c76202d1f82ff14d17dad79d93528a44a81"
+    },
+    {
+      "path": "shapenet/bowl5/summary.json",
+      "sha256": "523d1f873301c5dff05b076c8e681a055f026296cd3aa1db284358ff3150e358"
+    },
+    {
+      "path": "shapenet/bowl5/test_timings.csv",
+      "sha256": "f5868f6d252d0eb747040a5fd993a1ec344552cd0a869dbe598c8ba922ebe199"
+    },
+    {
+      "path": "shapenet/bowl5/train_timings.csv",
+      "sha256": "584ac29310101634edbfc1c7a420bce7a1eaf08ffa34749910a3659886bc4326"
+    },
+    {
+      "path": "shapenet/bucket0/active_stage.json",
+      "sha256": "585aa864abd1a7eb2c4725a82f27448dc6a0d2834d9c9d60cd4d1ef3b76f0326"
+    },
+    {
+      "path": "shapenet/bucket0/device_audit.json",
+      "sha256": "b687f304782fabb9c7197bee7f0ec1d02e74c6cfe8c1916bb327a5ef9d80227c"
+    },
+    {
+      "path": "shapenet/bucket0/environment.json",
+      "sha256": "439787d9d4f4d330d4059e387b4fd8db194b1a57eb93a87b0e4d27e94eabfca4"
+    },
+    {
+      "path": "shapenet/bucket0/fit_state.json",
+      "sha256": "71c0f1d2ac42c9ca24086f2ef8f4108583d0d7102847c1bc2ca8b99d64b38230"
+    },
+    {
+      "path": "shapenet/bucket0/manifest.json",
+      "sha256": "4c68dd6cf35601ce9b212d0b125f5eed2ea006d8a9e91e6204ee657da34e2fac"
+    },
+    {
+      "path": "shapenet/bucket0/metrics.csv",
+      "sha256": "e25fea60feb4447462423b4f4a0a9eee3b9147fbf9cabb3ac40f21fd04f2a5c0"
+    },
+    {
+      "path": "shapenet/bucket0/progress.json",
+      "sha256": "6b2850951f3c878e561109e67dd744e792e4f72aeabf6411dd001bde938df767"
+    },
+    {
+      "path": "shapenet/bucket0/stage_summary.csv",
+      "sha256": "1097be041db02e746c3807182369c0f4406830b37e05af78874581d8a4498ebb"
+    },
+    {
+      "path": "shapenet/bucket0/stage_timings.csv",
+      "sha256": "255a27c41ea1522efebc1e0ef3c951e3f33e2ef119442ded44f52c19bd77e4b1"
+    },
+    {
+      "path": "shapenet/bucket0/summary.json",
+      "sha256": "b5eac4626530cc3a5b5ea2738fc0c4734fb62e418a60c2aed305d099d35bc558"
+    },
+    {
+      "path": "shapenet/bucket0/test_timings.csv",
+      "sha256": "5ddcb0ed702ea1907951861c5b6f64eb7dbd9a5994a15f0c7e0f331e9352d167"
+    },
+    {
+      "path": "shapenet/bucket0/train_timings.csv",
+      "sha256": "73352257870b51f4db6756ecaf9c5d3148c60bf03536db3c8687c483a3f22587"
+    },
+    {
+      "path": "shapenet/bucket1/active_stage.json",
+      "sha256": "c125c0f76f227ec9ee5e39475a57902c27a8cb22296816b4d8425716e585e7d9"
+    },
+    {
+      "path": "shapenet/bucket1/device_audit.json",
+      "sha256": "65f1b17c94290bc8d11dce93b009e77093928ee4004afe812eb3175c303e3b86"
+    },
+    {
+      "path": "shapenet/bucket1/environment.json",
+      "sha256": "439787d9d4f4d330d4059e387b4fd8db194b1a57eb93a87b0e4d27e94eabfca4"
+    },
+    {
+      "path": "shapenet/bucket1/fit_state.json",
+      "sha256": "42bd7466e0c037bcd6a980d1669d3754631b53dc7335586b7335252865d87eb9"
+    },
+    {
+      "path": "shapenet/bucket1/manifest.json",
+      "sha256": "dc420a02772e5aa993920846e4ea28c63727ea93886fe3dbaef91b5752ddd35f"
+    },
+    {
+      "path": "shapenet/bucket1/metrics.csv",
+      "sha256": "ac77d4e808a87be2eefdc5c35a49f711d281c516293010d30b94f0a679d23701"
+    },
+    {
+      "path": "shapenet/bucket1/progress.json",
+      "sha256": "a1c0cef13908414d6b97d5290c34c26b7383bfa43c37a0fb255a9aa36b0f62fa"
+    },
+    {
+      "path": "shapenet/bucket1/stage_summary.csv",
+      "sha256": "02135fbc295787cc57073c3a2947476a0d47dc65cb1fc52e82c8348b01ce41e9"
+    },
+    {
+      "path": "shapenet/bucket1/stage_timings.csv",
+      "sha256": "cada931125fe2cea5a93f9d2e267c93dbbbbc9e043ad9ffb4ea9edd287f520d5"
+    },
+    {
+      "path": "shapenet/bucket1/summary.json",
+      "sha256": "6c3862f979a80b614488d41dde864efdb0ef28b6215d2ea64fea7bbb01d23894"
+    },
+    {
+      "path": "shapenet/bucket1/test_timings.csv",
+      "sha256": "0cc4cc2cb6a7074ca80e58dd2a5a6663d7ec50d6a0103d3ef9175470ae189fd9"
+    },
+    {
+      "path": "shapenet/bucket1/train_timings.csv",
+      "sha256": "0e832180874df731a45f701eb6e91144d05516d070bd5ab604bb6b68e71039ad"
+    },
+    {
+      "path": "shapenet/cap0/active_stage.json",
+      "sha256": "4065880e61899723bc3ddbd9ba07a28b4ff5f8c7109827f075ca2e709a708be5"
+    },
+    {
+      "path": "shapenet/cap0/device_audit.json",
+      "sha256": "6d5ce2830ea33ad12f5cfeea170b8a4159ae9e944498ec8fc5f795c71158c78a"
+    },
+    {
+      "path": "shapenet/cap0/environment.json",
+      "sha256": "2b36ea7e06f10ea8994258c6a3a807f37f5688eeb79db43bcbcc5d1107ee0a8f"
+    },
+    {
+      "path": "shapenet/cap0/fit_state.json",
+      "sha256": "9215f551bfe428f975e3aebeae2102932eaf977cf3c03459b92f02ad5174e942"
+    },
+    {
+      "path": "shapenet/cap0/manifest.json",
+      "sha256": "c40644428a8a53e8c6612600be7f28159ddb5ad45e35c692c0355084ba6f2855"
+    },
+    {
+      "path": "shapenet/cap0/metrics.csv",
+      "sha256": "00bd26c4260ba0efd1d7b25388724c4398906f313eea01a332e8b3bd453a5785"
+    },
+    {
+      "path": "shapenet/cap0/progress.json",
+      "sha256": "de290f741221638aa57b5837c21c18818f5ae781935a9764d8e3a9e439e67837"
+    },
+    {
+      "path": "shapenet/cap0/stage_summary.csv",
+      "sha256": "1bba8ce01ebe483c78a2e82211c30703930a155d52e0ea4a75d9f99948d3f84e"
+    },
+    {
+      "path": "shapenet/cap0/stage_timings.csv",
+      "sha256": "8827df5fe7e1ce955c629c7e1913119a01b57e4ca8b36e60ef5bbae0148249b9"
+    },
+    {
+      "path": "shapenet/cap0/summary.json",
+      "sha256": "2dd5d864c8d253be46ba066dd4963602f30fcfab6e5f8bce703310f9e6bfb16c"
+    },
+    {
+      "path": "shapenet/cap0/test_timings.csv",
+      "sha256": "cf58d9dab0c365d8742f8c430435a43c0ec3088715c75202dd579524c1109b8c"
+    },
+    {
+      "path": "shapenet/cap0/train_timings.csv",
+      "sha256": "371fafe5a57ad15a9c3568140f3358c44df2111e6317e339a2e1a6cfe3b313c5"
+    },
+    {
+      "path": "shapenet/cap3/active_stage.json",
+      "sha256": "9d555c27df157b3806f9e5a39b907feaf06774a68a5f4dde0fa3899db8683531"
+    },
+    {
+      "path": "shapenet/cap3/device_audit.json",
+      "sha256": "4fedde3ea2c8fab1a96377cb2a8c43d73d0cb54e70a57cc900db7943221b54d6"
+    },
+    {
+      "path": "shapenet/cap3/environment.json",
+      "sha256": "f0711589b511252b51e097431e93ca93439484a51a43279bbd72223990d06849"
+    },
+    {
+      "path": "shapenet/cap3/fit_state.json",
+      "sha256": "68e3e40110affcd9c46bb3af7a5390633825a58833db6a0ef8f933c7f1a99e15"
+    },
+    {
+      "path": "shapenet/cap3/manifest.json",
+      "sha256": "1ffe69e4f15c08e67d8a5ae59f903846e05fec84181018eaa3f621eeb839fe85"
+    },
+    {
+      "path": "shapenet/cap3/metrics.csv",
+      "sha256": "ce80d82986a083668b7b45d7b7dd878a05962fd1f977e678cf4901a7baac3a90"
+    },
+    {
+      "path": "shapenet/cap3/progress.json",
+      "sha256": "b580b52fcf7ee5fe9b0a75ff288a2fed88bebe5d5db4e1da660c4c0c1ae8ea35"
+    },
+    {
+      "path": "shapenet/cap3/stage_summary.csv",
+      "sha256": "f826f72bdac585e17fdf91fb5cc045a35abc8e42fec883d38e0ed02b9839e3f2"
+    },
+    {
+      "path": "shapenet/cap3/stage_timings.csv",
+      "sha256": "bb1744d969a84fc812a9f37198d2830224c860cb22541c783e208a49a387c95d"
+    },
+    {
+      "path": "shapenet/cap3/summary.json",
+      "sha256": "187deb4b2351199898768184e058c51780cc240b350144f6212159be94b1500e"
+    },
+    {
+      "path": "shapenet/cap3/test_timings.csv",
+      "sha256": "a9e60c77e17adb3317692e7fbf5fd2fe0918a68953341dde3334181c2d7876ce"
+    },
+    {
+      "path": "shapenet/cap3/train_timings.csv",
+      "sha256": "76be6e3099295c00a7514d1d7c2abdcb9da1034ca3c591a80d5cef1ce29d06ca"
+    },
+    {
+      "path": "shapenet/cap4/active_stage.json",
+      "sha256": "c765f1f68a4e401eec3dda8d7d9397c867d788f28c98dbf086976ed206507212"
+    },
+    {
+      "path": "shapenet/cap4/device_audit.json",
+      "sha256": "625b4de0649747a1fc1600e5883a3b8e62a7330d6ebe1374c4656ddbbd02e73c"
+    },
+    {
+      "path": "shapenet/cap4/environment.json",
+      "sha256": "f0711589b511252b51e097431e93ca93439484a51a43279bbd72223990d06849"
+    },
+    {
+      "path": "shapenet/cap4/fit_state.json",
+      "sha256": "d95c6cf381d155bd82c4de815e770ab04e42707ed39b1b400a1aae6bfad22f9c"
+    },
+    {
+      "path": "shapenet/cap4/manifest.json",
+      "sha256": "8cddd3e152be1ebe0d90c20c0bbfddc17e631f74822dbc4f6a1e24201552c7cf"
+    },
+    {
+      "path": "shapenet/cap4/metrics.csv",
+      "sha256": "6566a82aab400b3cc61fb9d1bda2839a3911a0427a2af856f0b12442bd9a8da7"
+    },
+    {
+      "path": "shapenet/cap4/progress.json",
+      "sha256": "68c0f765ba0669764a754ec2b197ec0beccf26daf178230468d71575e1688c12"
+    },
+    {
+      "path": "shapenet/cap4/stage_summary.csv",
+      "sha256": "8ed3bce85c46b042bf13ccf890c97c5ab9734084f2d1f75eb6135a2169fc3182"
+    },
+    {
+      "path": "shapenet/cap4/stage_timings.csv",
+      "sha256": "0087954c67a2d4c13c9843198ba3d6d8d49b96a30102af588b23ae7f0e174a59"
+    },
+    {
+      "path": "shapenet/cap4/summary.json",
+      "sha256": "77736ad8996e0ce8f06d2ad81715d0b8605197f7cd6164e2fdf5a65ff044d28e"
+    },
+    {
+      "path": "shapenet/cap4/test_timings.csv",
+      "sha256": "98a7c8673b8863f5ea6c40484977178eef3e953d5d4def7432e532cb36a6fbf2"
+    },
+    {
+      "path": "shapenet/cap4/train_timings.csv",
+      "sha256": "5cc74e5757d6cab29d0aab6000d35203011fd9641694aebcf553e14edfa690b3"
+    },
+    {
+      "path": "shapenet/cap5/active_stage.json",
+      "sha256": "18809fc3732eb9ddd798ab23d44069977f28afd4407e46f136dfe7b287240c0a"
+    },
+    {
+      "path": "shapenet/cap5/device_audit.json",
+      "sha256": "eca5b73fee69ca5df84f324e4b32786d99ace53e81e01fa45c2e3387acb0f37c"
+    },
+    {
+      "path": "shapenet/cap5/environment.json",
+      "sha256": "f0711589b511252b51e097431e93ca93439484a51a43279bbd72223990d06849"
+    },
+    {
+      "path": "shapenet/cap5/fit_state.json",
+      "sha256": "e6933a1699db8472d6d4395f6c092b198504c7322d348d1077244e6fdeef2082"
+    },
+    {
+      "path": "shapenet/cap5/manifest.json",
+      "sha256": "537bb54b3a84b0214d8ba20638e143e4fe940d508dab8c98fe568ad0de9d3d90"
+    },
+    {
+      "path": "shapenet/cap5/metrics.csv",
+      "sha256": "7c82f2c0932d944281cf631328e36e5f60a186c3050665d6e5548b78cb0697c7"
+    },
+    {
+      "path": "shapenet/cap5/progress.json",
+      "sha256": "8310d2cf51e295616543e2aabf3c69c37d6298ad141dbd7667151936208a75c2"
+    },
+    {
+      "path": "shapenet/cap5/stage_summary.csv",
+      "sha256": "b184cef14864b5e3336b9c6b07d7cf4ce690dfb37c655b48325c549a152b30f4"
+    },
+    {
+      "path": "shapenet/cap5/stage_timings.csv",
+      "sha256": "33bf37ab5fe8fb74f4ad3cf52ff3263a78a83624f71f70e3c38d22eebf35c624"
+    },
+    {
+      "path": "shapenet/cap5/summary.json",
+      "sha256": "6a86214d5a0603be8135a0ae8bdbee96e192acd0d36f2014b6d227f9796329b7"
+    },
+    {
+      "path": "shapenet/cap5/test_timings.csv",
+      "sha256": "395b711c043123df6d54e5934d67b083efb8dc75dbeb5c43a3d875f59c520e2a"
+    },
+    {
+      "path": "shapenet/cap5/train_timings.csv",
+      "sha256": "7e75096263f5889e24f5115374f7f4b59fe2a8d33a41dd65df8030752fee478b"
+    },
+    {
+      "path": "shapenet/cup0/active_stage.json",
+      "sha256": "02f6e2ab943d486b26f67a3f2f3ff546032eff627c8251cd32a7f5132037de14"
+    },
+    {
+      "path": "shapenet/cup0/device_audit.json",
+      "sha256": "846e6b96d394e1a30048f8d884cf0d52b47fab2a3f4ddf7f8fa31ad1cef8016a"
+    },
+    {
+      "path": "shapenet/cup0/environment.json",
+      "sha256": "d01303d6a819c1dda7639f6b91709dc39ff51458885b1f717dae1164415124e8"
+    },
+    {
+      "path": "shapenet/cup0/fit_state.json",
+      "sha256": "cb928a399f6db14553cbc5e53545390bec598e0c9e83109c44e1ff3482b5f52c"
+    },
+    {
+      "path": "shapenet/cup0/manifest.json",
+      "sha256": "303130a94d3da57c65367a37d87ae57fd81fdf28ba9aa4aad8241748f3a049f0"
+    },
+    {
+      "path": "shapenet/cup0/metrics.csv",
+      "sha256": "c65b1fe54c915c1ba42a646e078bd54be2a24a275d823f4a76098d1b40c98388"
+    },
+    {
+      "path": "shapenet/cup0/progress.json",
+      "sha256": "ec6bb377809816790ea43f36e999107ead6b906d885fe6ace8b542c36b9d4130"
+    },
+    {
+      "path": "shapenet/cup0/stage_summary.csv",
+      "sha256": "7af4c0d53f13419823d87d5824c47165ab3a20e3a602f6b4d391fb96ffe85e7a"
+    },
+    {
+      "path": "shapenet/cup0/stage_timings.csv",
+      "sha256": "411657c7198ea8df278b224a94b855edc56f16f5ffe67e2fdc5a759789276075"
+    },
+    {
+      "path": "shapenet/cup0/summary.json",
+      "sha256": "9b9160888f56bc16a3fe0482ddf041c40e2ce22d2f417511ecc63057cdbdae56"
+    },
+    {
+      "path": "shapenet/cup0/test_timings.csv",
+      "sha256": "79a30e7145e5933c560384dd73d0e35119338f00a1e46c63bf1afa6b0d248eed"
+    },
+    {
+      "path": "shapenet/cup0/train_timings.csv",
+      "sha256": "1c8a9f7b13450b24d19e3d166adadc1ea225959298a29062770ff8196d817db5"
+    },
+    {
+      "path": "shapenet/cup1/active_stage.json",
+      "sha256": "10c03c448e220640700805d2b91135dddf72f79953dc480d613386f50bf95f16"
+    },
+    {
+      "path": "shapenet/cup1/device_audit.json",
+      "sha256": "bf63a3b136109ddad6ac7bca7c466765a2a3a06670bf4ad74552b658e0fc3b22"
+    },
+    {
+      "path": "shapenet/cup1/environment.json",
+      "sha256": "d01303d6a819c1dda7639f6b91709dc39ff51458885b1f717dae1164415124e8"
+    },
+    {
+      "path": "shapenet/cup1/fit_state.json",
+      "sha256": "f19c12c213fad8cd64e61f5b7803984ad2c1e109cfe5f48bb471b22ec46c22aa"
+    },
+    {
+      "path": "shapenet/cup1/manifest.json",
+      "sha256": "e7e3884d40864d239325398254c68f455848afee7be299672b80dbb85083a373"
+    },
+    {
+      "path": "shapenet/cup1/metrics.csv",
+      "sha256": "1586630893d2df0e284f6a6f1e205b683de8b35de49503de8153977accf97880"
+    },
+    {
+      "path": "shapenet/cup1/progress.json",
+      "sha256": "fa1cb8ec1e8a665882029740ab7f6a07bbc8a7db7e1abf10c66f308c5cfffc1b"
+    },
+    {
+      "path": "shapenet/cup1/stage_summary.csv",
+      "sha256": "648ff05833947b930dacb5251f53caa47292af8d8ecee4a83020ed1afa74a43e"
+    },
+    {
+      "path": "shapenet/cup1/stage_timings.csv",
+      "sha256": "754924354031784938268320b6379aef5427f97a343f2710187b2a168ff0ff08"
+    },
+    {
+      "path": "shapenet/cup1/summary.json",
+      "sha256": "1218b3e2c3fbd88eea65fae7ec73b31141305831e2947a3ebdad8fb419f5c257"
+    },
+    {
+      "path": "shapenet/cup1/test_timings.csv",
+      "sha256": "b2612c6dfd2b93e0c1a1e95f34c38ea94e6e350d0cd06c4ad1f3a55bbe00a50e"
+    },
+    {
+      "path": "shapenet/cup1/train_timings.csv",
+      "sha256": "8fd7a052454bb1d33febad7656be5b03a14c44a75503198a43ff72de6d5a9f13"
+    },
+    {
+      "path": "shapenet/eraser0/active_stage.json",
+      "sha256": "abbfa2c7bd80b44cff6e2adc073a2e1bd669bd8d8fc796c0d069751a133d53ab"
+    },
+    {
+      "path": "shapenet/eraser0/device_audit.json",
+      "sha256": "ae044c3c6cea1cd268ca59efff911b05b62a576661d385d9d77809c02c7c51f9"
+    },
+    {
+      "path": "shapenet/eraser0/environment.json",
+      "sha256": "d01303d6a819c1dda7639f6b91709dc39ff51458885b1f717dae1164415124e8"
+    },
+    {
+      "path": "shapenet/eraser0/fit_state.json",
+      "sha256": "20384bd2616064bda420d8f646c57a146544910a007cad84f51c314b25f773a2"
+    },
+    {
+      "path": "shapenet/eraser0/manifest.json",
+      "sha256": "29d6a509e34894ceb5742864eb6f652f4850b6e23d21818b16cb77f3e0170116"
+    },
+    {
+      "path": "shapenet/eraser0/metrics.csv",
+      "sha256": "3a11ba3003db4de80faee0d6869fca1791d34c1d42334c6814b271eb5a9f4547"
+    },
+    {
+      "path": "shapenet/eraser0/progress.json",
+      "sha256": "a5e9536c31f2338bafd3e3f2c92fa1faba014e556d5372b5ddf5ce2147fa314d"
+    },
+    {
+      "path": "shapenet/eraser0/stage_summary.csv",
+      "sha256": "863a8577e1db8172b096d483a7442c9b709e6e58e24a8ad7dbd1b615153f2f51"
+    },
+    {
+      "path": "shapenet/eraser0/stage_timings.csv",
+      "sha256": "dae06c28b84eb6aaf55bbb00293fb5ef78cd8f45326d6c540c7eb39c9bc5277b"
+    },
+    {
+      "path": "shapenet/eraser0/summary.json",
+      "sha256": "0a7438b41b70e12407f7eaf5a59245bfcc2ea9b40b14ce9e92d36071d3449efc"
+    },
+    {
+      "path": "shapenet/eraser0/test_timings.csv",
+      "sha256": "00d586ce7d084d6ab7fb46ef6079a258519f992c9961e29edd559e040c0fe2e0"
+    },
+    {
+      "path": "shapenet/eraser0/train_timings.csv",
+      "sha256": "e1a8bc327795444604d3650fe485621e6a8b430250116dc76dbdc747a3deef00"
+    },
+    {
+      "path": "shapenet/headset0/active_stage.json",
+      "sha256": "4dcb3c992833c3dcb9e119da50cd2ca7beb1422f810b8dac7b757ab6bbee33f1"
+    },
+    {
+      "path": "shapenet/headset0/device_audit.json",
+      "sha256": "1b6557f2de20aa8f43394e125c7588a296eab4c6a25fc04387c2a915841034fd"
+    },
+    {
+      "path": "shapenet/headset0/environment.json",
+      "sha256": "aaf22b6959a92f7b3d722d7ba8ed2763a94712913a67ade7a252c1f9ac839c5b"
+    },
+    {
+      "path": "shapenet/headset0/fit_state.json",
+      "sha256": "7589c962e7c0e6946d5a6b10829f859a08f8f3e41854cdb831ca9f83a244019e"
+    },
+    {
+      "path": "shapenet/headset0/manifest.json",
+      "sha256": "8904de6d25454debd8d3cd04309a0fd236824ffeb7dfc62b4dbdbf9fe9a58a31"
+    },
+    {
+      "path": "shapenet/headset0/metrics.csv",
+      "sha256": "62ea3f4ebb49013f62fb321f4b277db6eea959edbfec5d3f2b2493d0bc3085ff"
+    },
+    {
+      "path": "shapenet/headset0/progress.json",
+      "sha256": "b212072f1ce9822fad303b32e6acfc78d4dff98976ebbdd37b3f489d5fa0f79d"
+    },
+    {
+      "path": "shapenet/headset0/stage_summary.csv",
+      "sha256": "24ff994d5bb0c8ecf8dfab9b0d0cbca1d90b8e9a96d43dd355afe8fcb689e62d"
+    },
+    {
+      "path": "shapenet/headset0/stage_timings.csv",
+      "sha256": "35edcfea2477eb42d2aa69faf890035a0f00596889cb4f7d0a6179796b773d73"
+    },
+    {
+      "path": "shapenet/headset0/summary.json",
+      "sha256": "c8338ba3e3283f33c99cd5de639ffc1cbc7c3792f6017c985b3f855dba27dccc"
+    },
+    {
+      "path": "shapenet/headset0/test_timings.csv",
+      "sha256": "483b4fd8c3220f64570e7893bc0b3287bb79219e967f4fce7901661aa0a61efa"
+    },
+    {
+      "path": "shapenet/headset0/train_timings.csv",
+      "sha256": "98f1cbf5ba2be7cf3e31cb68b29d31cb024c6f1d53c4c7e490e513cf22461fe0"
+    },
+    {
+      "path": "shapenet/headset1/active_stage.json",
+      "sha256": "16112760b48b499673c5b0d971dc6cabe1a09a732bfe032f4225438203747945"
+    },
+    {
+      "path": "shapenet/headset1/device_audit.json",
+      "sha256": "920e9174a4cfd019dcd7e4e61a6a1f8e84486a2bd0d9898c5fa5549c0a609a18"
+    },
+    {
+      "path": "shapenet/headset1/environment.json",
+      "sha256": "d01303d6a819c1dda7639f6b91709dc39ff51458885b1f717dae1164415124e8"
+    },
+    {
+      "path": "shapenet/headset1/fit_state.json",
+      "sha256": "82de4025998582f348771525c5a2ec82cfad6f235e488b486853109112b863a5"
+    },
+    {
+      "path": "shapenet/headset1/manifest.json",
+      "sha256": "697093f6c9f7e76243b567975acafb88c454ef495eefb2d5e8e8afff999f894c"
+    },
+    {
+      "path": "shapenet/headset1/metrics.csv",
+      "sha256": "4072e465edacc6647119b82b9696b9f32676e290809c1658b90b1fafe56303e6"
+    },
+    {
+      "path": "shapenet/headset1/progress.json",
+      "sha256": "65432070ff0e065db6ce9ae340254b072972ecc2ebf8ae094b282b81a1f20d3f"
+    },
+    {
+      "path": "shapenet/headset1/stage_summary.csv",
+      "sha256": "4b890788885b5afffbe1df3d9d8e707df7c852181f5e8c2e1fa336c5c1b1dcf4"
+    },
+    {
+      "path": "shapenet/headset1/stage_timings.csv",
+      "sha256": "14dce33de1eb23123adbbd55f9131fb3bde4026807f1300fa8563a870d5dc322"
+    },
+    {
+      "path": "shapenet/headset1/summary.json",
+      "sha256": "e99e19228fe9a98a94f32368c6b7928bb92087c77cd5c20634358b34a0cd783c"
+    },
+    {
+      "path": "shapenet/headset1/test_timings.csv",
+      "sha256": "30c1e6f05d328e07442399f0559f3dd616d5666305c6dae9e2d1b30132b66e75"
+    },
+    {
+      "path": "shapenet/headset1/train_timings.csv",
+      "sha256": "fb310b3dbc24daf8f4ac1f588935e5d4c837c3a3955f5873fcc92545afb2cd06"
+    },
+    {
+      "path": "shapenet/helmet0/active_stage.json",
+      "sha256": "ec4211d460ad1cdecb1a34af78fa1bd578c1d98b2f02696bc97f928264093daf"
+    },
+    {
+      "path": "shapenet/helmet0/device_audit.json",
+      "sha256": "649eb7dda933a2c87620599ce6470ce9e3b86026ebfd16436c8d69dc572e3e20"
+    },
+    {
+      "path": "shapenet/helmet0/environment.json",
+      "sha256": "7e24bf36d699786365eae53033b85180b179959a5b1468224524ace44ce879bb"
+    },
+    {
+      "path": "shapenet/helmet0/fit_state.json",
+      "sha256": "d530866375ffd8f55d9881214c1203c6aab831eb3f2f3938b47c6e600d767a8a"
+    },
+    {
+      "path": "shapenet/helmet0/manifest.json",
+      "sha256": "cf3a5819c3304e1167380cc71c595cc44efd2a665443f793fa3fd9ed8b59f283"
+    },
+    {
+      "path": "shapenet/helmet0/metrics.csv",
+      "sha256": "90de4aa1082af2cef9ea9e45fb0c187ab7b30d61a81133638a11606bc862b122"
+    },
+    {
+      "path": "shapenet/helmet0/progress.json",
+      "sha256": "ac2000febd1013a6d75a4d6ce4bdd70689657b700d2b58ef584a108e617f57ce"
+    },
+    {
+      "path": "shapenet/helmet0/stage_summary.csv",
+      "sha256": "9bdbf1d0d455d2a1f363c234b0f07c63bc4cad87a99ab6e985bd73ae607417f3"
+    },
+    {
+      "path": "shapenet/helmet0/stage_timings.csv",
+      "sha256": "8931800b023355cbd360f430f8eacd68c1da07752530cea13b28e470face032d"
+    },
+    {
+      "path": "shapenet/helmet0/summary.json",
+      "sha256": "6e470543f3bbced6b670ebf7efc162b9c35e8d8b0c5756dce1ddc90563622d0b"
+    },
+    {
+      "path": "shapenet/helmet0/test_timings.csv",
+      "sha256": "cefb1880ef8d6724841132a62a4c5eed7de6687553b215575c103a988d9bc626"
+    },
+    {
+      "path": "shapenet/helmet0/train_timings.csv",
+      "sha256": "9daefa08ba4ac760ef50ebb2268fe76e485e219146d9ebe2522e9dd1b315f985"
+    },
+    {
+      "path": "shapenet/helmet1/active_stage.json",
+      "sha256": "70b82d08db3e1fe29b98e37fe7c2975f76f9774e2e9beacb8bd2a1241d92590a"
+    },
+    {
+      "path": "shapenet/helmet1/device_audit.json",
+      "sha256": "071f4364ad78a696e1b3cac8a37b67450d2f5509a30e19b7bc4760e66154166c"
+    },
+    {
+      "path": "shapenet/helmet1/environment.json",
+      "sha256": "d01303d6a819c1dda7639f6b91709dc39ff51458885b1f717dae1164415124e8"
+    },
+    {
+      "path": "shapenet/helmet1/fit_state.json",
+      "sha256": "635db5d8a3209ed170ec70bfd7b39fbea633e4820955a4142a1fabfdbafc28cd"
+    },
+    {
+      "path": "shapenet/helmet1/manifest.json",
+      "sha256": "d9eaa021311a0c869669fea3ecc70e91a5b11a270dc7f48d7636ec9a512d4b68"
+    },
+    {
+      "path": "shapenet/helmet1/metrics.csv",
+      "sha256": "6178b9176fbd9bb5a1365ac691748843efeb722df5265d0f78ce8fb8dff891ba"
+    },
+    {
+      "path": "shapenet/helmet1/progress.json",
+      "sha256": "aff4b00e7bece78c7470d440a45ca515285b02bbf9c3286cc794a3d7a184d38c"
+    },
+    {
+      "path": "shapenet/helmet1/stage_summary.csv",
+      "sha256": "7944e096cf710dbb556df4317fed63607934abe94e6325499b919c120a441a38"
+    },
+    {
+      "path": "shapenet/helmet1/stage_timings.csv",
+      "sha256": "08077c22c9bf48a7776d48860831dac035e43dfcc7b4402deea40f4271e47a81"
+    },
+    {
+      "path": "shapenet/helmet1/summary.json",
+      "sha256": "eaccf4563205b9721762198d5932ef0890d1c3a759776cd3b5080fb29976eaa3"
+    },
+    {
+      "path": "shapenet/helmet1/test_timings.csv",
+      "sha256": "a1f588318b2719210672e8774eb4e7a694c09f2efaf1cfc3f26a2a9abaddcdbb"
+    },
+    {
+      "path": "shapenet/helmet1/train_timings.csv",
+      "sha256": "8ff070e4432b4ee8de1813027a02c344bf23d1da4d6679bc0b94b023fffd6142"
+    },
+    {
+      "path": "shapenet/helmet2/active_stage.json",
+      "sha256": "a948c712ee6705d596d2548298b9bdbea86d6e31b218eff65afe00ce9bafdfae"
+    },
+    {
+      "path": "shapenet/helmet2/device_audit.json",
+      "sha256": "61d1a7bfb4872e608878fa26b813e23884d74e08f4ad1f2a7ee9921f2e230b0a"
+    },
+    {
+      "path": "shapenet/helmet2/environment.json",
+      "sha256": "7e24bf36d699786365eae53033b85180b179959a5b1468224524ace44ce879bb"
+    },
+    {
+      "path": "shapenet/helmet2/fit_state.json",
+      "sha256": "35ffcaf3ac4d661698d4886768a26a317991ee850e1f92e30ce58caf0be7498c"
+    },
+    {
+      "path": "shapenet/helmet2/manifest.json",
+      "sha256": "c5484a8e3a6080f7a6c754130c9e860ed012f9e7c7816eb02bf9054d476deb47"
+    },
+    {
+      "path": "shapenet/helmet2/metrics.csv",
+      "sha256": "433268a61a14e353175741f7844f6cfd554d1be531dcba8cc026cf36e943f7a9"
+    },
+    {
+      "path": "shapenet/helmet2/progress.json",
+      "sha256": "6eb22a2312976d1a8c273afa3531b2e2db081176713eaa335df44504d0fe65b5"
+    },
+    {
+      "path": "shapenet/helmet2/stage_summary.csv",
+      "sha256": "634a4bad050250bf0444112abbaa362683569af597e14f3ac620f1a8f6a4534f"
+    },
+    {
+      "path": "shapenet/helmet2/stage_timings.csv",
+      "sha256": "931554548f7f8c91b2083170407b5cde02246c2196803b322822cd3f4e02a82d"
+    },
+    {
+      "path": "shapenet/helmet2/summary.json",
+      "sha256": "d947827f42161541f932365a9df3559c01c187b57f7238af6b0d88b262a75bec"
+    },
+    {
+      "path": "shapenet/helmet2/test_timings.csv",
+      "sha256": "bd86eab7b8cd600f898fe643e6d3d03b212ab5cd6473cb81f2468ed1967f193b"
+    },
+    {
+      "path": "shapenet/helmet2/train_timings.csv",
+      "sha256": "6e2fda124d47c2930a3fea709ddfe9cfd255c0b2b61bcd3e1668489d0618f9a5"
+    },
+    {
+      "path": "shapenet/helmet3/active_stage.json",
+      "sha256": "182debb7608596ebbc69347389f03dc4f8408c5a283f30c01968be4c37abdd55"
+    },
+    {
+      "path": "shapenet/helmet3/device_audit.json",
+      "sha256": "e0a98b125c390b32eb0842f3edcd36e388727aeb05142e2386528e8b1d6e471d"
+    },
+    {
+      "path": "shapenet/helmet3/environment.json",
+      "sha256": "c52fbf76c59de7c6fa3c7b85a289b1ffe3c162d3289dc4e69f4b35652c70de87"
+    },
+    {
+      "path": "shapenet/helmet3/fit_state.json",
+      "sha256": "8f69aea0e6ce7dc186a166b58b59b23b0430d66a8c73c4409ac8c77c8fae26fe"
+    },
+    {
+      "path": "shapenet/helmet3/manifest.json",
+      "sha256": "1c1792a8cf1d6bf1a778fbaa38454d9640dcb0f699225fa39a3e61a5340c2654"
+    },
+    {
+      "path": "shapenet/helmet3/metrics.csv",
+      "sha256": "463d2121823f6b01ba593bb066552c81d385f13116877a4177943c6f716d525e"
+    },
+    {
+      "path": "shapenet/helmet3/progress.json",
+      "sha256": "e141c7a0c19afceb4eb8adfe4face4b803dc9c950264cca34c3411ef6980e7c8"
+    },
+    {
+      "path": "shapenet/helmet3/stage_summary.csv",
+      "sha256": "08af52f9b0c3fb757162f39cf4d192af72a67bf70c0eb1db3f54aaf19a67615a"
+    },
+    {
+      "path": "shapenet/helmet3/stage_timings.csv",
+      "sha256": "8374887b9432bdd43869a39c96d82dc73ba62cd9099d156c5f0075e64511ebb9"
+    },
+    {
+      "path": "shapenet/helmet3/summary.json",
+      "sha256": "590adbdb499d70f0e016e71ede6e6eb0306cbe91a3cd5d41f27c7be00ebd38df"
+    },
+    {
+      "path": "shapenet/helmet3/test_timings.csv",
+      "sha256": "94f02fd71a8a2ad6412ca2b3aaa5ccf6a8eff38e820aa7599b89cc3542fc216c"
+    },
+    {
+      "path": "shapenet/helmet3/train_timings.csv",
+      "sha256": "892c67fc21036227011e5b868751db0c83999d52871e9d32ddfff7d4ef139fe4"
+    },
+    {
+      "path": "shapenet/jar0/active_stage.json",
+      "sha256": "8dc626cc3321ca3beb0edc73e643877a83a2b2b588c56b9bba6f6fe167e8293d"
+    },
+    {
+      "path": "shapenet/jar0/device_audit.json",
+      "sha256": "e979edf0b0de057ffb30d27d7209f650a8ab745d1dfcf1b16e6ce54cd6ac7187"
+    },
+    {
+      "path": "shapenet/jar0/environment.json",
+      "sha256": "d01303d6a819c1dda7639f6b91709dc39ff51458885b1f717dae1164415124e8"
+    },
+    {
+      "path": "shapenet/jar0/fit_state.json",
+      "sha256": "083d729e3b31ef9c440444d2a2ab4e87d4266741c8372476605d6c14b1d7a582"
+    },
+    {
+      "path": "shapenet/jar0/manifest.json",
+      "sha256": "53fde2f6199848ac30e8e8f384351ef8d840a13257630f3db5e583ed99244e49"
+    },
+    {
+      "path": "shapenet/jar0/metrics.csv",
+      "sha256": "b67226c2b7cc194473553dab51b76ce823062a902e9b4116b680a532c96fb13d"
+    },
+    {
+      "path": "shapenet/jar0/progress.json",
+      "sha256": "b28f293da921b3f92ae9ef89d3abeca064199f23bca626faf8d813712f7f9822"
+    },
+    {
+      "path": "shapenet/jar0/stage_summary.csv",
+      "sha256": "b22ac23160dc37521a0f594ca4c2fe1c884b1da1be1947c16c6eb824f1713dff"
+    },
+    {
+      "path": "shapenet/jar0/stage_timings.csv",
+      "sha256": "f9a8631e33cb5bb6d1c0d7881164a72d6c90248fdf3733efc90a6c7206308b84"
+    },
+    {
+      "path": "shapenet/jar0/summary.json",
+      "sha256": "5c2f9224ff48b13cfdfdfe41697c85cd45f33c3920b3331f1aaf724d062719c1"
+    },
+    {
+      "path": "shapenet/jar0/test_timings.csv",
+      "sha256": "e6d2bf57e5a799df77a4603d7d38e9ffb3403effcea2a3e7a0edbcb1923d4749"
+    },
+    {
+      "path": "shapenet/jar0/train_timings.csv",
+      "sha256": "b2e26a9cbbb830cc05798bb10e832170ac3099a5860aca739c86495350062664"
+    },
+    {
+      "path": "shapenet/microphone0/active_stage.json",
+      "sha256": "673ac500628045983dd612f19c451dcdd52c47bd2b947b3848899d9b724017ff"
+    },
+    {
+      "path": "shapenet/microphone0/device_audit.json",
+      "sha256": "56a1c238fe5d345513a72cf11798319aa4feb2e23bc23ce8a1ab6a4a082dc7e9"
+    },
+    {
+      "path": "shapenet/microphone0/environment.json",
+      "sha256": "d01303d6a819c1dda7639f6b91709dc39ff51458885b1f717dae1164415124e8"
+    },
+    {
+      "path": "shapenet/microphone0/fit_state.json",
+      "sha256": "c2849b6666aed4733981c0921a45be2dbd5cf5894eda090f94002aab2c8ef302"
+    },
+    {
+      "path": "shapenet/microphone0/manifest.json",
+      "sha256": "64415bfe3b4e0a4aeeb06dd59614e45f92d8c2ce481b408a90437a4a1605ac81"
+    },
+    {
+      "path": "shapenet/microphone0/metrics.csv",
+      "sha256": "69598219af7f7fe4cc9a1c0c725718d8e6c7e5e64e313f9517f06c8b36792a04"
+    },
+    {
+      "path": "shapenet/microphone0/progress.json",
+      "sha256": "f71e810752e97e538d2b962849f48b4a0709c6526fe9719181e6eabd65785a8f"
+    },
+    {
+      "path": "shapenet/microphone0/stage_summary.csv",
+      "sha256": "9be4a9366690935e9ce5550c08deb467018a0bade065ca661f9f28707f418a72"
+    },
+    {
+      "path": "shapenet/microphone0/stage_timings.csv",
+      "sha256": "30468f2ea1930d24224ab3f974bc3a2d7a2ce724a232eb9c4b09bb205784b894"
+    },
+    {
+      "path": "shapenet/microphone0/summary.json",
+      "sha256": "9fc9c0f37ea54994ffa4d55d13d6a32a2d5e3991899613485427a939a995562e"
+    },
+    {
+      "path": "shapenet/microphone0/test_timings.csv",
+      "sha256": "f165d82ea022c0524c6a4ce572f72980f4124e339bf988b68a3c57406ed2e64d"
+    },
+    {
+      "path": "shapenet/microphone0/train_timings.csv",
+      "sha256": "389d1910562415048de430d2b86a78ef87b9ffd319f025b62dfb8bd8481828e9"
+    },
+    {
+      "path": "shapenet/shelf0/active_stage.json",
+      "sha256": "88be8556f12185a96a6b100d56f430376c15f318449c610a2e0e82e22458c810"
+    },
+    {
+      "path": "shapenet/shelf0/device_audit.json",
+      "sha256": "5603395f112a79d7e32cfe197015cca93c73fc5293712d3ee77f52c0e072b69c"
+    },
+    {
+      "path": "shapenet/shelf0/environment.json",
+      "sha256": "7e24bf36d699786365eae53033b85180b179959a5b1468224524ace44ce879bb"
+    },
+    {
+      "path": "shapenet/shelf0/fit_state.json",
+      "sha256": "5fb4ba7a0a174e4ee4ff437d8eb518081bf3e126020314c71095325d6cc5e71b"
+    },
+    {
+      "path": "shapenet/shelf0/manifest.json",
+      "sha256": "bf922814a2a814a00c01097c7254241b213988de72e1ec181e4c8d7ed8b271ce"
+    },
+    {
+      "path": "shapenet/shelf0/metrics.csv",
+      "sha256": "b0305b6ef0c69bf05cefd8e69e01fd3411cf7a8e952454af386f95bf0c6a6437"
+    },
+    {
+      "path": "shapenet/shelf0/progress.json",
+      "sha256": "aafb6f79598190768e3bf2a27e7c97f71a96fb28185d0213fbe26010e4bf4410"
+    },
+    {
+      "path": "shapenet/shelf0/stage_summary.csv",
+      "sha256": "bfaf023d409ef9cac28a8d20d6396c970d3659b285b3b5e5ba64c9375c9f0736"
+    },
+    {
+      "path": "shapenet/shelf0/stage_timings.csv",
+      "sha256": "c2844ced551ddc4f35daf72af0f55985c2e747356499da1afe4d8024e4652556"
+    },
+    {
+      "path": "shapenet/shelf0/summary.json",
+      "sha256": "09569da7dd6d5a327f68576fede7ad7fb24d2b6e39d147f3c5d34e2316af13d2"
+    },
+    {
+      "path": "shapenet/shelf0/test_timings.csv",
+      "sha256": "378817f9935a217acf4cf9a6f7c539b0ebac5c8a9c05504b991aa41b96fd9895"
+    },
+    {
+      "path": "shapenet/shelf0/train_timings.csv",
+      "sha256": "f600d735111a801fb965504e115fa81fe80f183cdfb02adc88d717c5ed287a0f"
+    },
+    {
+      "path": "shapenet/tap0/active_stage.json",
+      "sha256": "ab40c7a4eeac6561b24b039ac4c9729bd518e84f0503c7336f579bf56568703b"
+    },
+    {
+      "path": "shapenet/tap0/device_audit.json",
+      "sha256": "e9b3d4bab96b2f97958a13e2a0a1c0542af71a6684a7e742569f26a2383e017e"
+    },
+    {
+      "path": "shapenet/tap0/environment.json",
+      "sha256": "c52fbf76c59de7c6fa3c7b85a289b1ffe3c162d3289dc4e69f4b35652c70de87"
+    },
+    {
+      "path": "shapenet/tap0/fit_state.json",
+      "sha256": "45bbd9a3253456fdd7103b7813418084abe1b40aff59a95f00b2c17844bde99b"
+    },
+    {
+      "path": "shapenet/tap0/manifest.json",
+      "sha256": "259de6c15e7f72529bba5e288ff4d236d663af4fd424d80f6b863b6fe9917834"
+    },
+    {
+      "path": "shapenet/tap0/metrics.csv",
+      "sha256": "3b85d86ea54ecb30d60ebe06b9db2a30e3cb24bc1da9bb00750f422fe4597f65"
+    },
+    {
+      "path": "shapenet/tap0/progress.json",
+      "sha256": "d8332a3c8cb82ce83a3b815c8588769ab8e68e4faaf2dfd11f1e82aefcb2de59"
+    },
+    {
+      "path": "shapenet/tap0/stage_summary.csv",
+      "sha256": "a9491a249fba8173ff145c9baf0755b5cab24c750840e12bbe3c392a6505533c"
+    },
+    {
+      "path": "shapenet/tap0/stage_timings.csv",
+      "sha256": "8e20f0f44364987caf4829ad7d8bffd5acce16c8f9aa857e00381b4507d92c17"
+    },
+    {
+      "path": "shapenet/tap0/summary.json",
+      "sha256": "96688692f202cd3dcdf2e8f595c3cd33d2ac81296bbdb836f9eff84540186e78"
+    },
+    {
+      "path": "shapenet/tap0/test_timings.csv",
+      "sha256": "4e1b4a24015603ca8b644cd485329cd0d64ecbefbe5ca70830595540602f2219"
+    },
+    {
+      "path": "shapenet/tap0/train_timings.csv",
+      "sha256": "57193b9891ca0743d5b7c1886c7d4531dc2ffa488bfb641971af7818f539c729"
+    },
+    {
+      "path": "shapenet/tap1/active_stage.json",
+      "sha256": "6b5dbf3d1c906fd4ad4ea3856e8b09eee85962c5e6010d54e32ffa1b2ad66501"
+    },
+    {
+      "path": "shapenet/tap1/device_audit.json",
+      "sha256": "b280fbc9ea0e8948dabe3b773d5a6dd41e9ee9f26d50d3e7f59827edeef12e68"
+    },
+    {
+      "path": "shapenet/tap1/environment.json",
+      "sha256": "2b36ea7e06f10ea8994258c6a3a807f37f5688eeb79db43bcbcc5d1107ee0a8f"
+    },
+    {
+      "path": "shapenet/tap1/fit_state.json",
+      "sha256": "936c50f396516d3825cb58a775f7a04c714cb57d030f61a328b99463d5bf67ff"
+    },
+    {
+      "path": "shapenet/tap1/manifest.json",
+      "sha256": "e392ee7f74394fc0ba9faac9db84014603d64ba17d89ae416d521febd7fee1ec"
+    },
+    {
+      "path": "shapenet/tap1/metrics.csv",
+      "sha256": "f928da318e4d6610031926150459f60a09ccb604e52003c959122bb292560a9d"
+    },
+    {
+      "path": "shapenet/tap1/progress.json",
+      "sha256": "7317fd862d7b912cc27060e3c6cab23a35f49f9b3cd61384a7704c6cacbb4bb3"
+    },
+    {
+      "path": "shapenet/tap1/stage_summary.csv",
+      "sha256": "29e86dd3a62eae5480c0f9474b9c4b9ce8a9a2c2ee684847e1640f1c96ef7109"
+    },
+    {
+      "path": "shapenet/tap1/stage_timings.csv",
+      "sha256": "bab2f04b44f554702e3258d4df24d55f1536854daf5fb11f1090f5877dbda150"
+    },
+    {
+      "path": "shapenet/tap1/summary.json",
+      "sha256": "8aeefb0efd24cc9c28eed78721c11294b8e075182854ecb7f293fc8544891d34"
+    },
+    {
+      "path": "shapenet/tap1/test_timings.csv",
+      "sha256": "8a80cd4eb15cf8f9727444c5c1b2b2c0447fe51e7816034032175bd391943e1a"
+    },
+    {
+      "path": "shapenet/tap1/train_timings.csv",
+      "sha256": "b0cc6c3a8c722ede3b2c949101e68e0b8a10e958e04828f7cbddea604347e282"
+    },
+    {
+      "path": "shapenet/vase0/active_stage.json",
+      "sha256": "0dff1299fe68e271d10ed040011f7cd283e146ccfb40ca6867ef19323f85da53"
+    },
+    {
+      "path": "shapenet/vase0/device_audit.json",
+      "sha256": "1131f4331e3e5b664078ab887a5dc08b2e67b27548c6d76323c3ffdddc2acc47"
+    },
+    {
+      "path": "shapenet/vase0/environment.json",
+      "sha256": "2821504b6f927f1f74df1846b9f0e374aee797081b249c12c5f565272e05465f"
+    },
+    {
+      "path": "shapenet/vase0/fit_state.json",
+      "sha256": "1a99454d771da8bfa37d25759f25d69d08f5d8600199a860d85e6eed8876959f"
+    },
+    {
+      "path": "shapenet/vase0/manifest.json",
+      "sha256": "b58e3b7a3c9b94db5b8b30e519b02594c21a65ba0d82292bd5d8f88c82038dff"
+    },
+    {
+      "path": "shapenet/vase0/metrics.csv",
+      "sha256": "5392d931a242297caf97c5c050fb9315715807107507cf78632cb4c1d05d3054"
+    },
+    {
+      "path": "shapenet/vase0/progress.json",
+      "sha256": "d240b123f0a3db861cf5bbe55d2be61b955ff0fd96d926e23fedaacd53138b75"
+    },
+    {
+      "path": "shapenet/vase0/stage_summary.csv",
+      "sha256": "9c11c96d4f1d4079af85427e373cb7746df496803929785d8ef5beee055520f0"
+    },
+    {
+      "path": "shapenet/vase0/stage_timings.csv",
+      "sha256": "f178510071c2114f9ebc842484582a0f1ef3d6e35c625f4789d3404f26d69a35"
+    },
+    {
+      "path": "shapenet/vase0/summary.json",
+      "sha256": "a89b277820be2abc5200c4bc407c7884f79b93bec54e7dc886824623b2c8fa5e"
+    },
+    {
+      "path": "shapenet/vase0/test_timings.csv",
+      "sha256": "137e080389cc8d4d46cd1ce3c760fef43c55add0cc5a69cf80b64d35fe546ed0"
+    },
+    {
+      "path": "shapenet/vase0/train_timings.csv",
+      "sha256": "5ae2cad693414755639a08c3250d6a2aa18ebc3123b661565d3dc4e904e52825"
+    },
+    {
+      "path": "shapenet/vase1/active_stage.json",
+      "sha256": "0bc390857b35da10513e4539edb84e17c2f89d13d81131ab0a038c1407a097b0"
+    },
+    {
+      "path": "shapenet/vase1/device_audit.json",
+      "sha256": "5612f3077f4ed7b02bfea60e76c3f2841b863377cbe88c16e36f3144f2c2dd39"
+    },
+    {
+      "path": "shapenet/vase1/environment.json",
+      "sha256": "d01303d6a819c1dda7639f6b91709dc39ff51458885b1f717dae1164415124e8"
+    },
+    {
+      "path": "shapenet/vase1/fit_state.json",
+      "sha256": "1887ee9e2f11549bed77a13ac284d2ece3f67a482990041f2e9ca96e6ef9d945"
+    },
+    {
+      "path": "shapenet/vase1/manifest.json",
+      "sha256": "97a2ccddf2b4ac9c5d40b9cf3a5c76bfb54524fdcf2335617f0371f2381a4e74"
+    },
+    {
+      "path": "shapenet/vase1/metrics.csv",
+      "sha256": "aac0a27a177cd789516e4a933d086960afe2f7e7fa0ed9c0bf5f9254b8bb4f0d"
+    },
+    {
+      "path": "shapenet/vase1/progress.json",
+      "sha256": "c340116eeabb6b442e1bca174ff6ac94f4bbd92b123f0fa33bc79717e4fe2c3d"
+    },
+    {
+      "path": "shapenet/vase1/stage_summary.csv",
+      "sha256": "8dfe62abb0d8a62c4b34d0574a94691286b4c66c89538d2f708cbfbf952ac649"
+    },
+    {
+      "path": "shapenet/vase1/stage_timings.csv",
+      "sha256": "c5520054bc09537e58818e48d3d707402fd0200fb8b11cff529f5eba50b8c2e4"
+    },
+    {
+      "path": "shapenet/vase1/summary.json",
+      "sha256": "1f3420df6d2117506e2cfaf4ae38d33d5cfcdd66939d7fbdec3cce475c0cf63e"
+    },
+    {
+      "path": "shapenet/vase1/test_timings.csv",
+      "sha256": "f974347d8d34f5ceea121d74c8d3ce105dc8be0449ff0d30ab249f7d5a68c291"
+    },
+    {
+      "path": "shapenet/vase1/train_timings.csv",
+      "sha256": "eaff84c21b102ad1c6c667f672889178f093863feebb8fa4ac5b1ccad9bdab85"
+    },
+    {
+      "path": "shapenet/vase2/active_stage.json",
+      "sha256": "26691090c129c72960fb9fd2e6f6b67a6bb0ca61cc2e6682de5ff4b9aa630c2e"
+    },
+    {
+      "path": "shapenet/vase2/device_audit.json",
+      "sha256": "db25cba7dcafda4dab7dc2b6721e2f4b8cc57a5d54eb3a136bbcff709592afac"
+    },
+    {
+      "path": "shapenet/vase2/environment.json",
+      "sha256": "d01303d6a819c1dda7639f6b91709dc39ff51458885b1f717dae1164415124e8"
+    },
+    {
+      "path": "shapenet/vase2/fit_state.json",
+      "sha256": "143cbd7f8c4490478b6e6ea22f4e218b711917046bc77619b1d79d13ce0c4d91"
+    },
+    {
+      "path": "shapenet/vase2/manifest.json",
+      "sha256": "468cad984ca05ad9918bc5f2159d15f90863828592eb560dba0472d4b2ee25e0"
+    },
+    {
+      "path": "shapenet/vase2/metrics.csv",
+      "sha256": "e828b075f2755326facec2939b0d2a0cfbaaf6a5d71aff74503295d83c7c544a"
+    },
+    {
+      "path": "shapenet/vase2/progress.json",
+      "sha256": "35dd6933aaa62fc4edf173ddbab2b140197b1b2c91bc452f22e495e3385ec3d8"
+    },
+    {
+      "path": "shapenet/vase2/stage_summary.csv",
+      "sha256": "842713763c4503274e9826d74766dcefcc0c3c6545d8465eb85bffb8da538074"
+    },
+    {
+      "path": "shapenet/vase2/stage_timings.csv",
+      "sha256": "1ed8ec0047d634afa0e07f453dd5a4800a456583b32274d04ee2356c88caa2fa"
+    },
+    {
+      "path": "shapenet/vase2/summary.json",
+      "sha256": "9b81525d5f1e5e918877457a8ebc97264b0aab249e61ca1fff9bf4430c96ecac"
+    },
+    {
+      "path": "shapenet/vase2/test_timings.csv",
+      "sha256": "bc39f845afa66eba88d999f46f6a044dfcffc7cc2ebae5e60dc5424996c5c6fe"
+    },
+    {
+      "path": "shapenet/vase2/train_timings.csv",
+      "sha256": "3ffec0734b8764a829eb650f871f56e6d17d817613854ea5b0dcffa6d3bc1ae1"
+    },
+    {
+      "path": "shapenet/vase3/active_stage.json",
+      "sha256": "d1badce8dfbb7ca48933ddda00ac102d10e4c5ce48ea7453ea6818207bcc0675"
+    },
+    {
+      "path": "shapenet/vase3/device_audit.json",
+      "sha256": "a16bbe2243afa05460b51c0bc87da3ef15b3527a75e9bb89aeba5c90d42a9b83"
+    },
+    {
+      "path": "shapenet/vase3/environment.json",
+      "sha256": "c52fbf76c59de7c6fa3c7b85a289b1ffe3c162d3289dc4e69f4b35652c70de87"
+    },
+    {
+      "path": "shapenet/vase3/fit_state.json",
+      "sha256": "f55b9350215780f2693c8cc538f4f55dc1dae3e24430b3e2b347818917e7a6e7"
+    },
+    {
+      "path": "shapenet/vase3/manifest.json",
+      "sha256": "06f2228e0bd7b709b80f49a35b914810559bb856b77f4c2d4849399f5f4f9f10"
+    },
+    {
+      "path": "shapenet/vase3/metrics.csv",
+      "sha256": "84e1c29e5d8204346202bba1cf70d01fa053d7c8b1a875d97482101ec77ecc24"
+    },
+    {
+      "path": "shapenet/vase3/progress.json",
+      "sha256": "5058f95897c72099182ad6acbe12fd5436254561338beb3d0b33ddc728697bff"
+    },
+    {
+      "path": "shapenet/vase3/stage_summary.csv",
+      "sha256": "f2f229470831faf1126e629c075f518b3d457c19b572833090e90bdd5334016a"
+    },
+    {
+      "path": "shapenet/vase3/stage_timings.csv",
+      "sha256": "4b832cb0787a919ada0489d279c6476398707f9e78d28bdfa0cc05b6ef19d567"
+    },
+    {
+      "path": "shapenet/vase3/summary.json",
+      "sha256": "a01680387efe67de9bdb15996a1c0b8613141e23964f89e8175fe3f66a5ed919"
+    },
+    {
+      "path": "shapenet/vase3/test_timings.csv",
+      "sha256": "fe6e3a217841fe1a9519d04eea79e9aeab906214eba6f106b1490789e09bd6aa"
+    },
+    {
+      "path": "shapenet/vase3/train_timings.csv",
+      "sha256": "8c39971504cc03420932cef1af57d996f4c5c977f437853b37878221ac72a7fd"
+    },
+    {
+      "path": "shapenet/vase4/active_stage.json",
+      "sha256": "58d236b8e9cbdaa6187a60e90b8459502e303ac8ff97d0269c4e90dee3b88fb7"
+    },
+    {
+      "path": "shapenet/vase4/device_audit.json",
+      "sha256": "94956f2337371cbfde34fd586ad6130f951f290972bdd6996e81b46c2213ea04"
+    },
+    {
+      "path": "shapenet/vase4/environment.json",
+      "sha256": "c52fbf76c59de7c6fa3c7b85a289b1ffe3c162d3289dc4e69f4b35652c70de87"
+    },
+    {
+      "path": "shapenet/vase4/fit_state.json",
+      "sha256": "0e0c4e0866595835d0c4fa6326603a179124f207dab45fbd3acfc520417abc90"
+    },
+    {
+      "path": "shapenet/vase4/manifest.json",
+      "sha256": "49f6264dd1a73d9d22de00f812a5679bf47e315a32833f41557dceee8cb718ce"
+    },
+    {
+      "path": "shapenet/vase4/metrics.csv",
+      "sha256": "7b8e297e86297220d1c9ba883998dbf91a6d963c84f8ec6007c99c1c7d4c245e"
+    },
+    {
+      "path": "shapenet/vase4/progress.json",
+      "sha256": "ee1982445f304e0ffd28ba4ce905c63457347152b44476eeba51cd4518139079"
+    },
+    {
+      "path": "shapenet/vase4/stage_summary.csv",
+      "sha256": "e5620163350a46331482fc19b43a71870ecee15c7a9ad05c9e1246bc875ad7ad"
+    },
+    {
+      "path": "shapenet/vase4/stage_timings.csv",
+      "sha256": "3861eb900844880078c8a5de838ba55b8f3f2dc48877be08a3165c0f5dc1c691"
+    },
+    {
+      "path": "shapenet/vase4/summary.json",
+      "sha256": "dac9b05fd6cd22adc21c21295e7719d793d3373fe7f73977b0342991f9c28717"
+    },
+    {
+      "path": "shapenet/vase4/test_timings.csv",
+      "sha256": "f8841b9c917caaf074ee7390bfa2aa2d17225dc10828f16dd1f0582e4c03d271"
+    },
+    {
+      "path": "shapenet/vase4/train_timings.csv",
+      "sha256": "9258d6847b4e9ef9be2d77cd96389df2db7fe080ca4a9c4bef9c2282a9bc2ad8"
+    },
+    {
+      "path": "shapenet/vase5/active_stage.json",
+      "sha256": "dcfa5db41cce25a84f6f19a23bf3c2a0d950411206b93ba07ebbc8f0fe0a1e85"
+    },
+    {
+      "path": "shapenet/vase5/device_audit.json",
+      "sha256": "552fd0396d871ddc505a0714b909b40eb69080a3dc590e2843ee62eb93becf2b"
+    },
+    {
+      "path": "shapenet/vase5/environment.json",
+      "sha256": "d01303d6a819c1dda7639f6b91709dc39ff51458885b1f717dae1164415124e8"
+    },
+    {
+      "path": "shapenet/vase5/fit_state.json",
+      "sha256": "9d6f1bc01df87bee0cc0f6fd9e48a4614c9547e6a731b4fdee5d0cc14c070ef6"
+    },
+    {
+      "path": "shapenet/vase5/manifest.json",
+      "sha256": "29393f7b4c1e8bf08a32e922da1ced0c3c8cac76fad965a52a1f0232bc0cb90f"
+    },
+    {
+      "path": "shapenet/vase5/metrics.csv",
+      "sha256": "76e4c43cf4fa8ed3984044275cbd35ea22c8482cddf5af3216ff223b390c579c"
+    },
+    {
+      "path": "shapenet/vase5/progress.json",
+      "sha256": "2af5fea3139f185484beee59afe4ef1301f8da3a8cc4aa250695b6b11714847f"
+    },
+    {
+      "path": "shapenet/vase5/stage_summary.csv",
+      "sha256": "c12003de0be010fb52a5edbc820abc66017939d48e6fa35279fedba2b740e064"
+    },
+    {
+      "path": "shapenet/vase5/stage_timings.csv",
+      "sha256": "f6a34038cd3fc56eafeb0335a7c5e05d790af2e4dab3d53f902618cd350751d5"
+    },
+    {
+      "path": "shapenet/vase5/summary.json",
+      "sha256": "10f3703906076a534998859b087554abb39699a40a7dc7a9f790f8018869579e"
+    },
+    {
+      "path": "shapenet/vase5/test_timings.csv",
+      "sha256": "0698652992fa20d638a4d8bfaade9ba417ed996cdffc31600a97f9901a5310e2"
+    },
+    {
+      "path": "shapenet/vase5/train_timings.csv",
+      "sha256": "89852aabe7fde521cbbf4562f0f316ad976d37a308d0dfc172801e51b3f7d8ec"
+    },
+    {
+      "path": "shapenet/vase7/active_stage.json",
+      "sha256": "c235bde804644b1a9bf1d65aca7464a304eb0641bc0da663658e05747c1053eb"
+    },
+    {
+      "path": "shapenet/vase7/device_audit.json",
+      "sha256": "54d33396e77086aa9e9310e5ec0fe5ee22c222e6048e507e694f6771b652792d"
+    },
+    {
+      "path": "shapenet/vase7/environment.json",
+      "sha256": "d01303d6a819c1dda7639f6b91709dc39ff51458885b1f717dae1164415124e8"
+    },
+    {
+      "path": "shapenet/vase7/fit_state.json",
+      "sha256": "497caeb2905d30871be78dbf7c02590f907e0e5822d1c0ed397bcfeca0bd4b82"
+    },
+    {
+      "path": "shapenet/vase7/manifest.json",
+      "sha256": "b91cbd9611ee50cb23f10040317428fbdfb306b59b1eae11f80ffb9a5dd6c620"
+    },
+    {
+      "path": "shapenet/vase7/metrics.csv",
+      "sha256": "dfec8e183f6c0d368cc47ca3e06c4ed298f3eac132a7c140198399928918036a"
+    },
+    {
+      "path": "shapenet/vase7/progress.json",
+      "sha256": "a81698b4c3a016279926f01650f532ac6fa28b2107f37955451c4dba4957fa47"
+    },
+    {
+      "path": "shapenet/vase7/stage_summary.csv",
+      "sha256": "18200d49b764593bf89d1c0e55e3ae38aa18887ba3d4f7aee84a3b01510640bb"
+    },
+    {
+      "path": "shapenet/vase7/stage_timings.csv",
+      "sha256": "2a45d1f37c9d36f09fe54917e02f69c2d5303797bef2f0f81756baa94d321ab8"
+    },
+    {
+      "path": "shapenet/vase7/summary.json",
+      "sha256": "de5a83c24d54ea3fd293e2212caa1ad35c8e20951d01c1119a58c6e68dffa562"
+    },
+    {
+      "path": "shapenet/vase7/test_timings.csv",
+      "sha256": "fa4af550b1c9f3a33d95e9be2adcc4bfce5c2d33717b63d9482c91ac1f950435"
+    },
+    {
+      "path": "shapenet/vase7/train_timings.csv",
+      "sha256": "5201f9c19f3886f70b28f187f752bb572e6983f84608e750152176c1bc247c37"
+    },
+    {
+      "path": "shapenet/vase8/active_stage.json",
+      "sha256": "6e15e37c612ffc2c2165868b8a8358474c0b0db1d2a5efe93d57d77745b53589"
+    },
+    {
+      "path": "shapenet/vase8/device_audit.json",
+      "sha256": "30f53ab54c5d30f6f50eb67e5257979a7f11939d68ad8c99c381ea63e318904d"
+    },
+    {
+      "path": "shapenet/vase8/environment.json",
+      "sha256": "c52fbf76c59de7c6fa3c7b85a289b1ffe3c162d3289dc4e69f4b35652c70de87"
+    },
+    {
+      "path": "shapenet/vase8/fit_state.json",
+      "sha256": "147170265dc2dfdbaf92c1450a63e64828b591fda2ea9ae8f1436d19106021a7"
+    },
+    {
+      "path": "shapenet/vase8/manifest.json",
+      "sha256": "d3caa24eba3245f482311577d5c463a9df1ab2542f760057a9d4ff427cbc1173"
+    },
+    {
+      "path": "shapenet/vase8/metrics.csv",
+      "sha256": "ef27642ea0f000a97cd2654ed5520d9bcf308d11f388e58175449104c7bb9e2b"
+    },
+    {
+      "path": "shapenet/vase8/progress.json",
+      "sha256": "51768420ece8b36070620d8a94365c6315e7c8855c3754e834a6ba11402bcead"
+    },
+    {
+      "path": "shapenet/vase8/stage_summary.csv",
+      "sha256": "d04a40f52ff8ee212296ad80cee379e44f8c024284ad920ffa0acedef44042f6"
+    },
+    {
+      "path": "shapenet/vase8/stage_timings.csv",
+      "sha256": "b9d04761b12d9b6e394d842814ff0312343f58a5143395cf2b9f4169874e4887"
+    },
+    {
+      "path": "shapenet/vase8/summary.json",
+      "sha256": "dcf028b1b9300b5222eace3fce71344e95c485d0aa5fe70c52847fe72e8430db"
+    },
+    {
+      "path": "shapenet/vase8/test_timings.csv",
+      "sha256": "c2856217d53e4ad63a507dd578e70a1bf1164ac6d6cbb8b19b6f31b70f188a49"
+    },
+    {
+      "path": "shapenet/vase8/train_timings.csv",
+      "sha256": "f000e2c04704733f4980764ef0ef938157dbe320c2a3c8ea69d5e9518b9b4366"
+    },
+    {
+      "path": "shapenet/vase9/active_stage.json",
+      "sha256": "9ef2772cda8f0a87df13c235e24b87b1591b0c9ea38cef40a4fe2365ff015957"
+    },
+    {
+      "path": "shapenet/vase9/device_audit.json",
+      "sha256": "1638d0504fcd907b730c96fcfad827726b5e0c97607d0316b62b45230f42a941"
+    },
+    {
+      "path": "shapenet/vase9/environment.json",
+      "sha256": "c52fbf76c59de7c6fa3c7b85a289b1ffe3c162d3289dc4e69f4b35652c70de87"
+    },
+    {
+      "path": "shapenet/vase9/fit_state.json",
+      "sha256": "f6d03743c2b2248887d5eb0751f6a6f378f72b2059eaeb9510ff411151af099f"
+    },
+    {
+      "path": "shapenet/vase9/manifest.json",
+      "sha256": "09bb7e54bdba0c198e8733146e16dbc14bf7919e7a2bcc6989be6142bc6471a5"
+    },
+    {
+      "path": "shapenet/vase9/metrics.csv",
+      "sha256": "b18ee7683b70dd3212590bbd0b7e4707359c1f84817c21fc65dd33f5b2ef8e2f"
+    },
+    {
+      "path": "shapenet/vase9/progress.json",
+      "sha256": "96e0f74227ce9423a74b66acf05d81fdfbddaacc6d2ac8ec70ff485bf84f4887"
+    },
+    {
+      "path": "shapenet/vase9/stage_summary.csv",
+      "sha256": "0c9e9445c8755ca2d369aa593085d1fbe4d09f6218f6f054b55f281401dc093c"
+    },
+    {
+      "path": "shapenet/vase9/stage_timings.csv",
+      "sha256": "09729d4e6ef6f30ea266220ba1947bb41735908f6094f902ef2fc77c81a16c33"
+    },
+    {
+      "path": "shapenet/vase9/summary.json",
+      "sha256": "dd5f481681e880644aa5751516877c39d843b77b7b7c16f4a64170ada9f86486"
+    },
+    {
+      "path": "shapenet/vase9/test_timings.csv",
+      "sha256": "f5b86173102fe8c1599171c5f0108fc578f8f18ee779e8382094ecb3aac33c1f"
+    },
+    {
+      "path": "shapenet/vase9/train_timings.csv",
+      "sha256": "d95fca7902b7eaff8f19ed0abf31620a39bf3f6c2013575b1a543c7720fa0385"
+    },
+    {
+      "path": "minishift/capsule/active_stage.json",
+      "sha256": "7d829536feeb0703ddbe17b60c524ea32ea893ec8c2360597957652430a96958"
+    },
+    {
+      "path": "minishift/capsule/device_audit.json",
+      "sha256": "fd628034a55e801921b2c0e84480066cf4ef0af184e1d33a890f8365ea1d3859"
+    },
+    {
+      "path": "minishift/capsule/environment.json",
+      "sha256": "977250d59ec7042d8fe20df4e513b5ba8bb97641075cc25315e573bb1a022be0"
+    },
+    {
+      "path": "minishift/capsule/fit_state.json",
+      "sha256": "e2a1bda143aeee8d9a82bc585eb93d47d7da6625ec1b9c161da3e4302221bdd6"
+    },
+    {
+      "path": "minishift/capsule/manifest.json",
+      "sha256": "500bb8201979c996af8e34e07ab13521e277c62c3f039131c9f1fd27028eb4ca"
+    },
+    {
+      "path": "minishift/capsule/metrics.csv",
+      "sha256": "5cb30108b4b34eadde044f638996a628fed07587e918a285dc947e75818188de"
+    },
+    {
+      "path": "minishift/capsule/progress.json",
+      "sha256": "ba561ceddf60404fcefce6d99eb31f7c168238e4f3633b0f585be935d1fb246f"
+    },
+    {
+      "path": "minishift/capsule/stage_summary.csv",
+      "sha256": "03a29441d72e1e3e57537027b9282c13dc37720b623a7b7b829ee817b48c86bd"
+    },
+    {
+      "path": "minishift/capsule/stage_timings.csv",
+      "sha256": "43d5228889c026bf6c817c8e3804bb092dc8d40cc0b74dc6e187db7754953f43"
+    },
+    {
+      "path": "minishift/capsule/summary.json",
+      "sha256": "427e7077692b3810deebea80f214358da3af5e2c4d5cc88d35b9f0b1ad4e024d"
+    },
+    {
+      "path": "minishift/capsule/test_timings.csv",
+      "sha256": "5a125bdccf9e48ecd0b9d5075561432394b66cd146126b285565faf3d9a71a2a"
+    },
+    {
+      "path": "minishift/capsule/train_timings.csv",
+      "sha256": "7629cf3e767d46e49c2833057df49f0dc775641766d46e6882b4c5df625b884c"
+    },
+    {
+      "path": "minishift/cube/active_stage.json",
+      "sha256": "bbf28cec3960342de0f81a8e8d84a9c081401fcc86e69d687ce9de2a02f57a8f"
+    },
+    {
+      "path": "minishift/cube/device_audit.json",
+      "sha256": "5c21cd80307b5f93f115bca8038efa55f4cc83d51568dcb17da1beef39c53786"
+    },
+    {
+      "path": "minishift/cube/environment.json",
+      "sha256": "5a238d300afddb857e219cf03fe4087c67d44eeb1451b99a6b230b6b097389d1"
+    },
+    {
+      "path": "minishift/cube/fit_state.json",
+      "sha256": "8eab893530ac745274388e1c40084e43dfd010c7c383cdd5ab2adb4fc5457689"
+    },
+    {
+      "path": "minishift/cube/manifest.json",
+      "sha256": "7c20a90985a532211ae0375ee2538f453c9cb055786c9b0b2591c97106a09ed6"
+    },
+    {
+      "path": "minishift/cube/metrics.csv",
+      "sha256": "735fe612031ab0e4d7f2ee503f70782d79873f8b412d3f443b7b3f782ae12671"
+    },
+    {
+      "path": "minishift/cube/progress.json",
+      "sha256": "ae7b0833d40867ed9367bdd9e92946efe72d800ff0f7bdd589deda3e8c36b08e"
+    },
+    {
+      "path": "minishift/cube/stage_summary.csv",
+      "sha256": "3348b8200c63047d70df15507580f5d3317c4a7df2f0966759a684ccd0e228e6"
+    },
+    {
+      "path": "minishift/cube/stage_timings.csv",
+      "sha256": "0d7d0504fb988b6974a0d6e747fe5488a6925dcdee10c602c68c2cc7233cc21d"
+    },
+    {
+      "path": "minishift/cube/summary.json",
+      "sha256": "12828ce15dbf286412afb5fe7e0e0e810456329950fddf01e82fa5b8c42c4a36"
+    },
+    {
+      "path": "minishift/cube/test_timings.csv",
+      "sha256": "89554a2ffdfa5d05cd20ce724b0c0ba67c51f1373394820166fb1d51b8bd9154"
+    },
+    {
+      "path": "minishift/cube/train_timings.csv",
+      "sha256": "e3416b2930a1ec424df8d4783a71c864540b233617255b7443ac10aedfa0dab8"
+    },
+    {
+      "path": "minishift/spring_pad/active_stage.json",
+      "sha256": "0a8080da7c44b05b04ccd01b2d383567003cf6b85da71569420df9389e7820cc"
+    },
+    {
+      "path": "minishift/spring_pad/device_audit.json",
+      "sha256": "b3936f2b339f3742cd92543c3781e8d76e0c9cd72c7a14a8ec79ff862ab5a9e0"
+    },
+    {
+      "path": "minishift/spring_pad/environment.json",
+      "sha256": "f8cbb76c02e3d9ae561afb6a6a7e03b3d10d3f24f4c2c51a93754c8cfa22c8b9"
+    },
+    {
+      "path": "minishift/spring_pad/fit_state.json",
+      "sha256": "3b4881fdfdebc66f0898114756f9667a17ebd39c09b1cc7198f034bbac1c35ab"
+    },
+    {
+      "path": "minishift/spring_pad/manifest.json",
+      "sha256": "029144b96d86b1577eea04ec8f416cb7f028c0626e354017a55e17ea5a909163"
+    },
+    {
+      "path": "minishift/spring_pad/metrics.csv",
+      "sha256": "89beeefb59d49e201275dcee26ce54146ca36e88018facc4af6930402e7ec6f8"
+    },
+    {
+      "path": "minishift/spring_pad/progress.json",
+      "sha256": "d47a087a3aa7725d5b1736cb29924629ed14dec911b7ade0cf945a13c23dde60"
+    },
+    {
+      "path": "minishift/spring_pad/stage_summary.csv",
+      "sha256": "57a7367f5ca6816b75dec4376d79d02327c8b26e36aee0f549d294512b1c028d"
+    },
+    {
+      "path": "minishift/spring_pad/stage_timings.csv",
+      "sha256": "5b743e4a19a56ad8ff9bc0bc0e51564fd8c442b7d52670dd9de73d57548b848d"
+    },
+    {
+      "path": "minishift/spring_pad/summary.json",
+      "sha256": "49416886a4d913ca6e743b174c4b99b467c01ab0ce9d76af2a91c3f69fcd0578"
+    },
+    {
+      "path": "minishift/spring_pad/test_timings.csv",
+      "sha256": "bd38a99e1a59289d5bb2bf11d26ceb75b31bcdf2a978e9de7a9997fd0699d4ec"
+    },
+    {
+      "path": "minishift/spring_pad/train_timings.csv",
+      "sha256": "9bc9d9eb40db4b6ba74557fcf0f8d14bb23364e3bb71222e9afeac5b9440649a"
+    },
+    {
+      "path": "minishift/screw/active_stage.json",
+      "sha256": "d182166f0a334be88a898ddf438944d91258f5168327db946a9541caa66f9247"
+    },
+    {
+      "path": "minishift/screw/device_audit.json",
+      "sha256": "665b10799d328b74fad47e3259817373d42e4cd78041174514fa465e5a2bf286"
+    },
+    {
+      "path": "minishift/screw/environment.json",
+      "sha256": "459045e7d9ccf4509e06eaf5593b948183f5c3b6d1be317a71b681a274259965"
+    },
+    {
+      "path": "minishift/screw/fit_state.json",
+      "sha256": "64b542e4810377fd85303e3e435650be6787eae0a1df40d5cc6a97306041a91e"
+    },
+    {
+      "path": "minishift/screw/manifest.json",
+      "sha256": "8fa5cc55bf0bdedeae0053f250930858f7384068647b1a42d8ee4a8bb386d60c"
+    },
+    {
+      "path": "minishift/screw/metrics.csv",
+      "sha256": "6bd3e970c1a4595134fd194f203f6cf82247f60823b41dc350a36f1688889ebf"
+    },
+    {
+      "path": "minishift/screw/progress.json",
+      "sha256": "8ecee4157ce8abd237e5a156d3145b2af3baf66d61739c82236c0a4969e73b97"
+    },
+    {
+      "path": "minishift/screw/stage_summary.csv",
+      "sha256": "7fdcd766e68143d48d4386eedc7d2128fb8bad659cd403aa9a9ce09415ea7c85"
+    },
+    {
+      "path": "minishift/screw/stage_timings.csv",
+      "sha256": "363c0b6ca2c497bf6b4fd2ce48ec79d9992792278c0e7b18a6f075e959119d55"
+    },
+    {
+      "path": "minishift/screw/summary.json",
+      "sha256": "6b35b3ba3462a8285206e550bffa644edde6c463a491db6d9971ffd118366dd1"
+    },
+    {
+      "path": "minishift/screw/test_timings.csv",
+      "sha256": "c54cac4a12ad47f6be7b622a25f0c6828924c7dc9bca5242f8c1261217b04938"
+    },
+    {
+      "path": "minishift/screw/train_timings.csv",
+      "sha256": "c1452bc05440d2815b98273d80b902a1d557f0eb9761416409fa893eb0299062"
+    },
+    {
+      "path": "minishift/screen/active_stage.json",
+      "sha256": "642c20cc55f1cbe58fbe3653d7f802a301a299d5efcc607bf41a42ce3e941e54"
+    },
+    {
+      "path": "minishift/screen/device_audit.json",
+      "sha256": "1ef5fd6344553b8b7879eb7fbd5e8f3d1ce98497f7280aff681d658105fe8bcf"
+    },
+    {
+      "path": "minishift/screen/environment.json",
+      "sha256": "945fd6bbb2fda9e984595f5a8a562db0b74a852b1c48971e8a31e64434d5590f"
+    },
+    {
+      "path": "minishift/screen/fit_state.json",
+      "sha256": "6719be71419440eb277e2a55d3b98907d510957d88f6ab8159109ad1bce57d6e"
+    },
+    {
+      "path": "minishift/screen/manifest.json",
+      "sha256": "14eb166e619807e5a32e85078671f0f7eda397177f6210355cd063b5478a0e4e"
+    },
+    {
+      "path": "minishift/screen/metrics.csv",
+      "sha256": "15b00263b810a417ab6b1faeb3561a46e0f09cdcb61642067455ca3549b6e296"
+    },
+    {
+      "path": "minishift/screen/progress.json",
+      "sha256": "33239e523bc26a286e3ffaf5702617b63e93d5670c5b946bb77640fd32431c6f"
+    },
+    {
+      "path": "minishift/screen/stage_summary.csv",
+      "sha256": "3c9c121dc3e57d2f47ed3c2a12a90ef72316a4c19dbbbb5a0a14fd73fdbbec8c"
+    },
+    {
+      "path": "minishift/screen/stage_timings.csv",
+      "sha256": "6814f9458b7e6ddb6fd8c28568117490be088e60a5ef49d84684747d9a33758e"
+    },
+    {
+      "path": "minishift/screen/summary.json",
+      "sha256": "b309ba1f77e3943e5995f3ad7343ea4d3c3a9b2c49ad6d5a2c73d1bfa35901f3"
+    },
+    {
+      "path": "minishift/screen/test_timings.csv",
+      "sha256": "67991d7db0076e908f35b4cd636ecb353dcc260076adea191513df657e1dff17"
+    },
+    {
+      "path": "minishift/screen/train_timings.csv",
+      "sha256": "e2674325b1a390dfe46aadb23702063cdc01ebc90d69b3ef34b5fa3cce7afa34"
+    },
+    {
+      "path": "minishift/piggy/active_stage.json",
+      "sha256": "17ecc26fc637b32fbb705998e335e1a9504f687353bfd86b5082fa7e8f72e75a"
+    },
+    {
+      "path": "minishift/piggy/device_audit.json",
+      "sha256": "5c21cd80307b5f93f115bca8038efa55f4cc83d51568dcb17da1beef39c53786"
+    },
+    {
+      "path": "minishift/piggy/environment.json",
+      "sha256": "5a238d300afddb857e219cf03fe4087c67d44eeb1451b99a6b230b6b097389d1"
+    },
+    {
+      "path": "minishift/piggy/fit_state.json",
+      "sha256": "83d578dfbf706033064fda7c45bade342ea5cad4c1df530a69aba989feffe35f"
+    },
+    {
+      "path": "minishift/piggy/manifest.json",
+      "sha256": "c543255e6e7b36cb345a78b21bbbe7c6c5480e056136127428e579e3bf257485"
+    },
+    {
+      "path": "minishift/piggy/metrics.csv",
+      "sha256": "4c3b007472cf9fad94cbece0b5f4077f2dba897f9846d506e7faa4a94fbb26ec"
+    },
+    {
+      "path": "minishift/piggy/progress.json",
+      "sha256": "e1633ef266db619bf845b5658bf123a28ed5df0a5a0b4b13a52c339ec6501544"
+    },
+    {
+      "path": "minishift/piggy/stage_summary.csv",
+      "sha256": "35b920bd9499b07415a63cff8e8e57d791260131aa8b419bc46308c09f07f331"
+    },
+    {
+      "path": "minishift/piggy/stage_timings.csv",
+      "sha256": "3c8d101862760f9d602e24d672e8b947cc6dd75720035fc044701ed274408f50"
+    },
+    {
+      "path": "minishift/piggy/summary.json",
+      "sha256": "0f84592cec763f2670fc9a7fc4d9e7cb80f4296f8c79256ec3ae004d23d4baf4"
+    },
+    {
+      "path": "minishift/piggy/test_timings.csv",
+      "sha256": "141fed7bed263ccd190eac8c18c260ca50962de634c46e8180b8bbf8547f88e1"
+    },
+    {
+      "path": "minishift/piggy/train_timings.csv",
+      "sha256": "15b1cc463cd12274274d3cf78ec96e129f9f925588f8f89c33056fa3ad1c6aa4"
+    },
+    {
+      "path": "minishift/nut/active_stage.json",
+      "sha256": "866289a70f978250bbd0cf27b1891c58f3333d53602c9496325cf03d10a2095d"
+    },
+    {
+      "path": "minishift/nut/device_audit.json",
+      "sha256": "f0f58bb2b3705c338d955236adee96fd65a2054140a565827313b96c8f86647f"
+    },
+    {
+      "path": "minishift/nut/environment.json",
+      "sha256": "91361ce07ff954b6c256bcea754a886434f24e044bc65e8f8df16c0f5bd0e70c"
+    },
+    {
+      "path": "minishift/nut/fit_state.json",
+      "sha256": "0fb61efa0bdbfbcbc718b7be9e0bc504530b0338fd64a572585d13a0b47544fb"
+    },
+    {
+      "path": "minishift/nut/manifest.json",
+      "sha256": "6ca1a618f476472de5be8ece7060e2fb2e97cdd3514f704bddac698729b4c627"
+    },
+    {
+      "path": "minishift/nut/metrics.csv",
+      "sha256": "d6a756743f044d9df1bddef9bb40ecd47cac99eb4daefd39b9e1ab3d2f03650f"
+    },
+    {
+      "path": "minishift/nut/progress.json",
+      "sha256": "f8cb01ef150adf76791bfaebe0ea568d5be69e9438171bce657cac89ffc52d11"
+    },
+    {
+      "path": "minishift/nut/stage_summary.csv",
+      "sha256": "3ffa08a22b7b5102b347368002094ced347f979ba8528b660719531ea3de82d2"
+    },
+    {
+      "path": "minishift/nut/stage_timings.csv",
+      "sha256": "1abd6424a9e4913f838c91669079acc4299f56ee3ec5e261df139b86f828f53a"
+    },
+    {
+      "path": "minishift/nut/summary.json",
+      "sha256": "b62ffd2d5a4ef351b7cc095660e376c49fe62d78aafa36d20337da8fcbe5eccb"
+    },
+    {
+      "path": "minishift/nut/test_timings.csv",
+      "sha256": "66f4c9b328f6db54c7217ddaa0ba5b869a8661f6810fc3ea0dd22e67126287fe"
+    },
+    {
+      "path": "minishift/nut/train_timings.csv",
+      "sha256": "8dd2670ec02a60a215c43c91eb398708400cb59fa7a8137b837504592ba416d4"
+    },
+    {
+      "path": "minishift/flat_pad/active_stage.json",
+      "sha256": "c48d68a467eb9eab93f5c1691af4de231435e1ff547e5e11abaaa050c001020c"
+    },
+    {
+      "path": "minishift/flat_pad/device_audit.json",
+      "sha256": "665b10799d328b74fad47e3259817373d42e4cd78041174514fa465e5a2bf286"
+    },
+    {
+      "path": "minishift/flat_pad/environment.json",
+      "sha256": "459045e7d9ccf4509e06eaf5593b948183f5c3b6d1be317a71b681a274259965"
+    },
+    {
+      "path": "minishift/flat_pad/fit_state.json",
+      "sha256": "6700d7876742aefcb2fb5e146c71f10854449056303c74a33d9fcb6250a85125"
+    },
+    {
+      "path": "minishift/flat_pad/manifest.json",
+      "sha256": "8e75bcaf24028e99774b119e10d9f8cb23d42d3b52120eed5fb232e706f8b68d"
+    },
+    {
+      "path": "minishift/flat_pad/metrics.csv",
+      "sha256": "35833fc06b101dfabbd9a891511ee5d07d61596bc89d2f0f83fc44d7ce33344a"
+    },
+    {
+      "path": "minishift/flat_pad/progress.json",
+      "sha256": "109c42c5110aad82447df060ebd0ab6e1e00513652262faa418d944fd42d608f"
+    },
+    {
+      "path": "minishift/flat_pad/stage_summary.csv",
+      "sha256": "8c710f53742b7214fbd8845f8f9b7e9f14e7acda678961edeaebc1e4a749e03c"
+    },
+    {
+      "path": "minishift/flat_pad/stage_timings.csv",
+      "sha256": "03cb74b6c2df241abf0933de023c4f39be5f3a27f29de28092822f21de3cf8d7"
+    },
+    {
+      "path": "minishift/flat_pad/summary.json",
+      "sha256": "95e4fa3fd5fc66df81776b9d93cfa19bae7e85c740632e42ee63286a89237f5f"
+    },
+    {
+      "path": "minishift/flat_pad/test_timings.csv",
+      "sha256": "fb239a33da5fb7874734af2e36ddf516e3aa44308ba845387423fb871a2c2e19"
+    },
+    {
+      "path": "minishift/flat_pad/train_timings.csv",
+      "sha256": "19b4dbbf16a62b9901b302e428d0a585560a873ccf3aff86b1eb07f244faef9e"
+    },
+    {
+      "path": "minishift/plastic_cylinder/active_stage.json",
+      "sha256": "fa468b8d40ed21a7841dba4e00bd343c70ecd3694fbc60e232a6871911a3229e"
+    },
+    {
+      "path": "minishift/plastic_cylinder/device_audit.json",
+      "sha256": "665b10799d328b74fad47e3259817373d42e4cd78041174514fa465e5a2bf286"
+    },
+    {
+      "path": "minishift/plastic_cylinder/environment.json",
+      "sha256": "459045e7d9ccf4509e06eaf5593b948183f5c3b6d1be317a71b681a274259965"
+    },
+    {
+      "path": "minishift/plastic_cylinder/fit_state.json",
+      "sha256": "ec6a9ee92bea12354ce903b396650e2499536b054e9adb19683859112dbcf6e9"
+    },
+    {
+      "path": "minishift/plastic_cylinder/manifest.json",
+      "sha256": "6444d81135dd5048a0785f43b755726e4466a6f471a41effeec10d36e38ac8e1"
+    },
+    {
+      "path": "minishift/plastic_cylinder/metrics.csv",
+      "sha256": "38666ca8cc3dc1bf0767fa11fad062f5ae321857f694126d90dcfb9a067637eb"
+    },
+    {
+      "path": "minishift/plastic_cylinder/progress.json",
+      "sha256": "7374ab156273eccf92bc754c2c93b921a124d5f49b0061a158c9329e2bb9386a"
+    },
+    {
+      "path": "minishift/plastic_cylinder/stage_summary.csv",
+      "sha256": "0ec0c73a2ff0ff3fe57d2e5cf76ef58fdd52f6b67b0cf4938cc859ee021e78fc"
+    },
+    {
+      "path": "minishift/plastic_cylinder/stage_timings.csv",
+      "sha256": "0c4f225a289b1cb944d504ed4ee92a7386dd3c094a5fa34972e04728c90aa54f"
+    },
+    {
+      "path": "minishift/plastic_cylinder/summary.json",
+      "sha256": "da25dff3eea30c79167ebf3b8b52a24be1a7e04ec9e31d26075dae1367f944af"
+    },
+    {
+      "path": "minishift/plastic_cylinder/test_timings.csv",
+      "sha256": "fb9baea29f15769ed2d874527d60c36d4590db8eafe04c30fbca01239070ad1e"
+    },
+    {
+      "path": "minishift/plastic_cylinder/train_timings.csv",
+      "sha256": "42c8db2d170b8401755516aab1167f47af38bdaa825ea4e617380159c754b480"
+    },
+    {
+      "path": "minishift/button_cell/active_stage.json",
+      "sha256": "c973c7e17ad8de04a624597551c554d205c8507f0a01333765d8b5b754e86784"
+    },
+    {
+      "path": "minishift/button_cell/device_audit.json",
+      "sha256": "665b10799d328b74fad47e3259817373d42e4cd78041174514fa465e5a2bf286"
+    },
+    {
+      "path": "minishift/button_cell/environment.json",
+      "sha256": "459045e7d9ccf4509e06eaf5593b948183f5c3b6d1be317a71b681a274259965"
+    },
+    {
+      "path": "minishift/button_cell/fit_state.json",
+      "sha256": "a5bc73505f2e20cff6641ede92bdc87612d0711d9b447b767387fdfb8ae4b775"
+    },
+    {
+      "path": "minishift/button_cell/manifest.json",
+      "sha256": "b1e2b9867ee392244ba25c5788936d2e590066e450cf18ac3536d6b042dcc67e"
+    },
+    {
+      "path": "minishift/button_cell/metrics.csv",
+      "sha256": "c5e898231e694a56cd07c8a8605ee6224feef4c4983a6c367263846905ea11bd"
+    },
+    {
+      "path": "minishift/button_cell/progress.json",
+      "sha256": "551b3cf6dc3ce00838c818772147cba45e9079f3c085ca3b63a5f3c8df6c7f47"
+    },
+    {
+      "path": "minishift/button_cell/stage_summary.csv",
+      "sha256": "bc5b9947f2cd64b905bfe3788be238c074536e882c1da15b2f1e3e3f37ea8c54"
+    },
+    {
+      "path": "minishift/button_cell/stage_timings.csv",
+      "sha256": "8b2de3df5ec44813c7cb819f6fe1da5854f42a847203746e314878b2f1e2e0ea"
+    },
+    {
+      "path": "minishift/button_cell/summary.json",
+      "sha256": "f85ccde89471474f00a6b99314f9afbca733f5c82a4dad544a4907ab8c95c09e"
+    },
+    {
+      "path": "minishift/button_cell/test_timings.csv",
+      "sha256": "36c17477eb89a02f87c3713ac0fea3572619ea0e91656e44d7b223a810907500"
+    },
+    {
+      "path": "minishift/button_cell/train_timings.csv",
+      "sha256": "16b4a7cf2ce97a8daf1c848f3c96b89cb29a546278ad2af54fb6aac9e1166558"
+    },
+    {
+      "path": "minishift/toothbrush/active_stage.json",
+      "sha256": "4ed75a49c8e410e90b57591ac17a19a3b5e58f7936b2084ad71be6265e35832b"
+    },
+    {
+      "path": "minishift/toothbrush/device_audit.json",
+      "sha256": "5c21cd80307b5f93f115bca8038efa55f4cc83d51568dcb17da1beef39c53786"
+    },
+    {
+      "path": "minishift/toothbrush/environment.json",
+      "sha256": "5a238d300afddb857e219cf03fe4087c67d44eeb1451b99a6b230b6b097389d1"
+    },
+    {
+      "path": "minishift/toothbrush/fit_state.json",
+      "sha256": "18ed4995416877240949e20ba41b78b8c0e20eda466bfe746ce253638285a612"
+    },
+    {
+      "path": "minishift/toothbrush/manifest.json",
+      "sha256": "a4f235a37a61c9cf033bb3c292f5c8d76cedec20208cd89d71a6b7e680c6250b"
+    },
+    {
+      "path": "minishift/toothbrush/metrics.csv",
+      "sha256": "a773aa3c55e3af8196125516a8289d4cede0eebf27038df1a7a34b9a1b2562eb"
+    },
+    {
+      "path": "minishift/toothbrush/progress.json",
+      "sha256": "1be74f4df5488a0ebd464fa7130eff5bff584b74ad1e592602cb8979179c75d6"
+    },
+    {
+      "path": "minishift/toothbrush/stage_summary.csv",
+      "sha256": "fc662ea770966d9550941d94e472988d6b7dd23f79c4ed870f45ba56eaa2de05"
+    },
+    {
+      "path": "minishift/toothbrush/stage_timings.csv",
+      "sha256": "a63f032e7cd8f303f7eb9277e5bbc2fce03fa1514721b891073814ed9d30fbb6"
+    },
+    {
+      "path": "minishift/toothbrush/summary.json",
+      "sha256": "38094218c15bdb16865505641117adbd12da78f0641d503e2c1ab5a105897cbb"
+    },
+    {
+      "path": "minishift/toothbrush/test_timings.csv",
+      "sha256": "a4940ddf99a85b7dbd48ec96cac8fef0fa23faec1b5a2cff0bdfd0ec39d11dba"
+    },
+    {
+      "path": "minishift/toothbrush/train_timings.csv",
+      "sha256": "8437f06d3a58013c8093ec730056a0fc18bbb690e138ca23283914f3dc1873a0"
+    },
+    {
+      "path": "minishift/light/active_stage.json",
+      "sha256": "013964867b486cf450e88e5d5bb9186bf14be01a3fbd7290cd447a3aaa83bccc"
+    },
+    {
+      "path": "minishift/light/device_audit.json",
+      "sha256": "5c21cd80307b5f93f115bca8038efa55f4cc83d51568dcb17da1beef39c53786"
+    },
+    {
+      "path": "minishift/light/environment.json",
+      "sha256": "5a238d300afddb857e219cf03fe4087c67d44eeb1451b99a6b230b6b097389d1"
+    },
+    {
+      "path": "minishift/light/fit_state.json",
+      "sha256": "f5ea1135aa37e929d660f56b7bfb44b79261f192d34c921782936bffbf525dc6"
+    },
+    {
+      "path": "minishift/light/manifest.json",
+      "sha256": "a3616a90e395b6c77d8ee5c2522996d4665676a56bf4b4d6396eaa2246f9cfcd"
+    },
+    {
+      "path": "minishift/light/metrics.csv",
+      "sha256": "5c5b49598db30499429e7ab7fb04a3741101373bfcd36d23a7927ef0ecc9c631"
+    },
+    {
+      "path": "minishift/light/progress.json",
+      "sha256": "f75c6e02a6a071c6b082c4eee7fdcf79594aaf388385344d5ddb53f14c734a37"
+    },
+    {
+      "path": "minishift/light/stage_summary.csv",
+      "sha256": "2a77544505f114b7497fcbcf13a4a38f786ad86940cd32ae78528297f6677990"
+    },
+    {
+      "path": "minishift/light/stage_timings.csv",
+      "sha256": "07a73ea4f0e0b1cdfe1dd5512187e7aaeb892b66d402d8ac365d7d605cdc6edc"
+    },
+    {
+      "path": "minishift/light/summary.json",
+      "sha256": "1df76fec52e0f6b86897ec97cd9fb7d99464a6db37b5ef9bef003c152b2fe45f"
+    },
+    {
+      "path": "minishift/light/test_timings.csv",
+      "sha256": "06b7a0957b4e4855277b7b22741da1f485c0725883e2a98eb25940faed05cdb1"
+    },
+    {
+      "path": "minishift/light/train_timings.csv",
+      "sha256": "b467c67520f21cbd509d03b54fb4723b9f3da537bb774640ee940d1f08c56c3c"
+    },
+    {
+      "path": "category_summary.csv",
+      "sha256": "967b8d3b5de113d337568860879aa786bee2b522c0fff8d4b0e2031f300efe67"
+    },
+    {
+      "path": "metrics.csv",
+      "sha256": "85545d4528465ff700685d6bd10c1dad45ec309692175f99d26f0b207bfd163a"
+    },
+    {
+      "path": "stage_summary_by_category.csv",
+      "sha256": "94a459fe670a3c8061d75f3155a6c8268b6fe2b01bd16e46e4a744fe9660c462"
+    },
+    {
+      "path": "train_timings_all.csv",
+      "sha256": "818aee566faaa16e81b4b671569d522c88255c09620e745547347d91723a2fa1"
+    },
+    {
+      "path": "test_timings_all.csv",
+      "sha256": "7b200a528bcb512d12bfcd91e897f7fd8c0d34547ef2acf37049e764d6a08e68"
+    },
+    {
+      "path": "dataset_macro.csv",
+      "sha256": "cd687a4ff388594485713d95261290d02bee1028b626afdb9af4a090f974029a"
+    }
+  ],
+  "report": "/mnt/c/Users/test/Desktop/Codex/lab-m5hfg/method12/markdown/Simple3D_GPU_KDTree_all_categories_20261104.md",
+  "report_sha256": "fa038147d70e6592cf153d4786a6bb33dafaf25b2f26f0e160f246da45f15eba",
+  "verified_at": "2026-11-03T18:22:53.788201+00:00",
+  "controller_pid": 427
+}
