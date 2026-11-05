@@ -1,0 +1,4774 @@
+{
+  "status": "verified",
+  "completed_jobs": 104,
+  "files": [
+    {
+      "path": "category_summary.csv",
+      "sha256": "67454f2099cbee489d8c3b45a40f2751c58e0e4bb1066190b0cad0e4c0460f72"
+    },
+    {
+      "path": "launcher.json",
+      "sha256": "1335d67c5a0d6b2cb171a45f8e168e219dafa1b9cdb13002de9a58fe1cfb9c64"
+    },
+    {
+      "path": "metrics.csv",
+      "sha256": "502217f3c9891e9241b9f53a61086978ee369cbd2f7803205fa0d879887231c6"
+    },
+    {
+      "path": "plan.json",
+      "sha256": "7200cd953b5c9a97f6de572e0efe1af8673e442a94490e45011dde3cfb94ef8b"
+    },
+    {
+      "path": "resource_summary_all.csv",
+      "sha256": "97047cfee5f080fcdefff92fc338d4801cfcbe29e27061dcacdb30de0f0e4814"
+    },
+    {
+      "path": "source_lock.json",
+      "sha256": "a1e9d9fa86f066a12ff30535bcae1c6368bb5e96ed35dcc30910cd660a670c20"
+    },
+    {
+      "path": "stage_summary_all.csv",
+      "sha256": "6dd1994e74c1d628939e74c9c5be30f2db3eef5dda4bfaf37a75cf76e0c44fab"
+    },
+    {
+      "path": "windows_awake.json",
+      "sha256": "3de40608e0ff1bc460529a8bac97a868ef6dd6ac525427b414e0678e72798f67"
+    },
+    {
+      "path": "gpu_kdtree/minishift/button_cell/environment.json",
+      "sha256": "8d84aeddf0a2a9585453c155d82e9ca5a2e229522765852942239075a7c0e440"
+    },
+    {
+      "path": "gpu_kdtree/minishift/button_cell/manifest.json",
+      "sha256": "560d2acc671d82e3996f6ad21923bada25e7d18b909765c3504730fe9ce6a9bc"
+    },
+    {
+      "path": "gpu_kdtree/minishift/button_cell/metrics.csv",
+      "sha256": "aa4e3b92c2ae2937d4ba3c77ccf505b5a6d84fc2c3aaab83057a7c3019e65b28"
+    },
+    {
+      "path": "gpu_kdtree/minishift/button_cell/resources.csv",
+      "sha256": "6a5b3a8d6608ff80e5d400ada199528baf7c91eff818f0d209d3b9c0f1aa8cf9"
+    },
+    {
+      "path": "gpu_kdtree/minishift/button_cell/resource_summary.csv",
+      "sha256": "bd8bd8d2c22ebc0f1cea740e3b1c4ba100552c63013072fb308ac08a70a05cb5"
+    },
+    {
+      "path": "gpu_kdtree/minishift/button_cell/resource_summary.json",
+      "sha256": "a87e8e8efd9910731c1cb2c320fae71777bf5e2818158fa287d8e0f750ff4262"
+    },
+    {
+      "path": "gpu_kdtree/minishift/button_cell/stage_summary.csv",
+      "sha256": "42608622f85e3946028aa378dcd19e08f1364990e5ec6638162e4716a2413f38"
+    },
+    {
+      "path": "gpu_kdtree/minishift/button_cell/stage_timings.csv",
+      "sha256": "cf25eb01828c5a377c64de7761f5b3c1114cf6eb04de851477da393ea61b8a1a"
+    },
+    {
+      "path": "gpu_kdtree/minishift/button_cell/summary.json",
+      "sha256": "e7289254e41530855799d20a11288077b5ebbe82c99851769554cc238053d803"
+    },
+    {
+      "path": "gpu_kdtree/minishift/button_cell/test_timings.csv",
+      "sha256": "ca42765abf948adbf4e565596486365800bbf7c92c07c3b52fc60a4f746161a8"
+    },
+    {
+      "path": "gpu_kdtree/minishift/button_cell/train_timings.csv",
+      "sha256": "0aac59547d13284b2bbefa52d6530c661d0337d682d05303dd4cd6739938b324"
+    },
+    {
+      "path": "gpu_kdtree/minishift/capsule/environment.json",
+      "sha256": "8d84aeddf0a2a9585453c155d82e9ca5a2e229522765852942239075a7c0e440"
+    },
+    {
+      "path": "gpu_kdtree/minishift/capsule/manifest.json",
+      "sha256": "363d8099e5fe9859af51e0a9410b0cb92ccae93576f3e60c837548c20db1c24e"
+    },
+    {
+      "path": "gpu_kdtree/minishift/capsule/metrics.csv",
+      "sha256": "1c80ae844737cca1f19f0edddc4492ba0d86120b1427b7f5f5354bc1d8b5b5c7"
+    },
+    {
+      "path": "gpu_kdtree/minishift/capsule/resources.csv",
+      "sha256": "53bc3cb86475a6c538445f99fe4b12abb51d6d9dda0ab76acb41f7ee6082796e"
+    },
+    {
+      "path": "gpu_kdtree/minishift/capsule/resource_summary.csv",
+      "sha256": "7b6d8cd0f911315532b55f1aac0efb96be467c6fbe9574982b17b53d074f85bf"
+    },
+    {
+      "path": "gpu_kdtree/minishift/capsule/resource_summary.json",
+      "sha256": "9edbc0a5fbed0743c0ad644373b982a835ce20dd311f2768dcb0e77458fcb984"
+    },
+    {
+      "path": "gpu_kdtree/minishift/capsule/stage_summary.csv",
+      "sha256": "17dd29d20fe5e48ce7e5492a3136360b07c93981fe6d4692f3ff2092c87e6637"
+    },
+    {
+      "path": "gpu_kdtree/minishift/capsule/stage_timings.csv",
+      "sha256": "132a05ce77818b34c1dc2765e22143530c2e660ad851fd506b5be5e19c1dc5f1"
+    },
+    {
+      "path": "gpu_kdtree/minishift/capsule/summary.json",
+      "sha256": "8502b8139f3bc28aa92c867d56af1e237fbb26b1db21fb5c7a39e285d2d43a60"
+    },
+    {
+      "path": "gpu_kdtree/minishift/capsule/test_timings.csv",
+      "sha256": "c8c2cbc50f3eaa31c6ff0899d4c1fbe22edcb7485f6cc307d4897c36156a76a9"
+    },
+    {
+      "path": "gpu_kdtree/minishift/capsule/train_timings.csv",
+      "sha256": "0ba52080212b88bf6dcd67fece2f5c5974fe946daca55e0c3e62c6468ce363cd"
+    },
+    {
+      "path": "gpu_kdtree/minishift/cube/environment.json",
+      "sha256": "8d84aeddf0a2a9585453c155d82e9ca5a2e229522765852942239075a7c0e440"
+    },
+    {
+      "path": "gpu_kdtree/minishift/cube/manifest.json",
+      "sha256": "096a582157862e30331fee294b7eaa37bfab4bc220299c7e1c726b88c2afcbe2"
+    },
+    {
+      "path": "gpu_kdtree/minishift/cube/metrics.csv",
+      "sha256": "44c9caf821f9f48956e6127afcda63257d0ba37d2bfd7ca0155b7c28b725eb80"
+    },
+    {
+      "path": "gpu_kdtree/minishift/cube/resources.csv",
+      "sha256": "286120936eb285d39261aafdc9ce4d73eae6c688ace3e87f78137e6dc3e80031"
+    },
+    {
+      "path": "gpu_kdtree/minishift/cube/resource_summary.csv",
+      "sha256": "e8f255b9bd37a7480e12e8478e101c444e5c5170834a21d76ea5f81b22cdc3fa"
+    },
+    {
+      "path": "gpu_kdtree/minishift/cube/resource_summary.json",
+      "sha256": "36bd4ec9ad60bfd0be707e6d803b524e4af3607228915b9c636b3ee2e5479522"
+    },
+    {
+      "path": "gpu_kdtree/minishift/cube/stage_summary.csv",
+      "sha256": "b4b107ff1d1dbaf8d2020558f637b59d131735c90cf836e871bfd0d1b47f7c19"
+    },
+    {
+      "path": "gpu_kdtree/minishift/cube/stage_timings.csv",
+      "sha256": "48833ceab60657ddac2097f03a9ec5bda3f30456bbd94fa17e2f70ef87187d70"
+    },
+    {
+      "path": "gpu_kdtree/minishift/cube/summary.json",
+      "sha256": "7abb6965ee236118bd7d2d72ad7ee4823b3f0ebda0036b8513382a73e5dc33b8"
+    },
+    {
+      "path": "gpu_kdtree/minishift/cube/test_timings.csv",
+      "sha256": "d4b9d974506499accc48cb6190b35b5d6e0072306a8e3f9ba44e156343b7824a"
+    },
+    {
+      "path": "gpu_kdtree/minishift/cube/train_timings.csv",
+      "sha256": "631d36d8213b83aa2136086173da78588100a8e82190fc62837a64c5d665bd17"
+    },
+    {
+      "path": "gpu_kdtree/minishift/flat_pad/environment.json",
+      "sha256": "8d84aeddf0a2a9585453c155d82e9ca5a2e229522765852942239075a7c0e440"
+    },
+    {
+      "path": "gpu_kdtree/minishift/flat_pad/manifest.json",
+      "sha256": "c864b3883cb071fc2efdbf8882a35564c10cb3b6d58b32fd7b1056d427e808a8"
+    },
+    {
+      "path": "gpu_kdtree/minishift/flat_pad/metrics.csv",
+      "sha256": "f207e1dac98eccc5be5db646b03b0e967745d9cfdba0f54dba818ee6ffc3227e"
+    },
+    {
+      "path": "gpu_kdtree/minishift/flat_pad/resources.csv",
+      "sha256": "3c6679ad45715aad834cfc9c3766c99065451ce39702a986ffea186b7c4b72c4"
+    },
+    {
+      "path": "gpu_kdtree/minishift/flat_pad/resource_summary.csv",
+      "sha256": "7dba497bcf989c858c96a3fa59f6a9a61e917dd0772fd32f33711e0ec16fb384"
+    },
+    {
+      "path": "gpu_kdtree/minishift/flat_pad/resource_summary.json",
+      "sha256": "6d840ef832a8735c0ca52ad86712f75f08cc59292f5443171b8a4a41aa7e1d5f"
+    },
+    {
+      "path": "gpu_kdtree/minishift/flat_pad/stage_summary.csv",
+      "sha256": "a24ecda3e5fce6db43ba5fdc21c414e570844fce7697df2678c77f36f252afdc"
+    },
+    {
+      "path": "gpu_kdtree/minishift/flat_pad/stage_timings.csv",
+      "sha256": "b68196a35cc2d3a5008e0a242c681aba4ed51fbddea23aff7bd51d921e5e1a15"
+    },
+    {
+      "path": "gpu_kdtree/minishift/flat_pad/summary.json",
+      "sha256": "977c6e6b493be54e8d72da853a3047b3ebfb45270e18c662121f1a43a31644db"
+    },
+    {
+      "path": "gpu_kdtree/minishift/flat_pad/test_timings.csv",
+      "sha256": "d0110b4dbe5b7df3c0b0ce3ea340aeecb1305ec95dcecfef3f603013f5f2accd"
+    },
+    {
+      "path": "gpu_kdtree/minishift/flat_pad/train_timings.csv",
+      "sha256": "cd89c6b46c928ab93e182c1b8c2b0cf21c87fb0bdcd49a3939261040885f58d1"
+    },
+    {
+      "path": "gpu_kdtree/minishift/light/environment.json",
+      "sha256": "8d84aeddf0a2a9585453c155d82e9ca5a2e229522765852942239075a7c0e440"
+    },
+    {
+      "path": "gpu_kdtree/minishift/light/manifest.json",
+      "sha256": "fc960112510cd229591289c4a479a692c9622f0999e9d9eb417630449c37e801"
+    },
+    {
+      "path": "gpu_kdtree/minishift/light/metrics.csv",
+      "sha256": "ef624d4fdd857e72cabc88dea608d5eaee80fdb67192d583a732f0a1bddcb298"
+    },
+    {
+      "path": "gpu_kdtree/minishift/light/resources.csv",
+      "sha256": "dab18051d8e57f113bcbe1647a27760ad98a14c2dd83aace1de68013e6c9a8cf"
+    },
+    {
+      "path": "gpu_kdtree/minishift/light/resource_summary.csv",
+      "sha256": "17dd835af23b28ea8cbaf2364c9fc98b5a59a866c8d77e92b6ffb3d46a664640"
+    },
+    {
+      "path": "gpu_kdtree/minishift/light/resource_summary.json",
+      "sha256": "caefdefafdbb84ee5799337f3cedaf6b8fad7bbeba631a1f674d03999da8da1b"
+    },
+    {
+      "path": "gpu_kdtree/minishift/light/stage_summary.csv",
+      "sha256": "1fac833a05102ff0f088e70e40004f0e320d8a09b21b0a32d8e5a54cd4f26537"
+    },
+    {
+      "path": "gpu_kdtree/minishift/light/stage_timings.csv",
+      "sha256": "b9f4bbf8237b707b4846162b121473a58a05302ad91c7f30d6bf2f593e31e8a8"
+    },
+    {
+      "path": "gpu_kdtree/minishift/light/summary.json",
+      "sha256": "ba846d3b3e069dfbf99a1a27b3643dad4b9d49b4f65a24fba17ef2d38c2e30f8"
+    },
+    {
+      "path": "gpu_kdtree/minishift/light/test_timings.csv",
+      "sha256": "48b70bcf6aaaf52972139447840e839a0d1ed79169b46204223a96e35a8e5f9a"
+    },
+    {
+      "path": "gpu_kdtree/minishift/light/train_timings.csv",
+      "sha256": "45d370ddc2e708638dbcfe0f214ee6b1bcc75b7eef7092b12d61e26151ac4d2a"
+    },
+    {
+      "path": "gpu_kdtree/minishift/nut/environment.json",
+      "sha256": "8d84aeddf0a2a9585453c155d82e9ca5a2e229522765852942239075a7c0e440"
+    },
+    {
+      "path": "gpu_kdtree/minishift/nut/manifest.json",
+      "sha256": "48c22d7ddba7da3020b9a8e2bab6e7cd11885ffd39e946642d315631b3da6141"
+    },
+    {
+      "path": "gpu_kdtree/minishift/nut/metrics.csv",
+      "sha256": "fa642189157a41287410950d9540b30721a9175c9435c8b8230f85c02d8ca7bb"
+    },
+    {
+      "path": "gpu_kdtree/minishift/nut/resources.csv",
+      "sha256": "91dd2c3ede6e30d140545b84af973ec20d7b54560718ac51737a389c7c412adc"
+    },
+    {
+      "path": "gpu_kdtree/minishift/nut/resource_summary.csv",
+      "sha256": "0d3d18bcceb1b3bfc3af03f8c52c9c2bdbe3cc4566db2902335ab7762ae38c21"
+    },
+    {
+      "path": "gpu_kdtree/minishift/nut/resource_summary.json",
+      "sha256": "48f3cff2ac85001adb564464665ac254a09409bd906889ce58194655c72c0b14"
+    },
+    {
+      "path": "gpu_kdtree/minishift/nut/stage_summary.csv",
+      "sha256": "b6a2423ed2e2b87f5dce12ee4842d3139ebb18e40901982f260bbe7a994c1fe5"
+    },
+    {
+      "path": "gpu_kdtree/minishift/nut/stage_timings.csv",
+      "sha256": "18107ccda3caf0f14220c8d69ca3e87f2ff42b4533b9b6ca37dbf96ccf8ed875"
+    },
+    {
+      "path": "gpu_kdtree/minishift/nut/summary.json",
+      "sha256": "593700df25e0b993c1275032ea02a9f5ceb1da3a5770f7e3e5f5e54220ef1615"
+    },
+    {
+      "path": "gpu_kdtree/minishift/nut/test_timings.csv",
+      "sha256": "5759d54b84c18460be5bff7c2f2b5fa58e02195875e2f4ebbca8206deb84bc08"
+    },
+    {
+      "path": "gpu_kdtree/minishift/nut/train_timings.csv",
+      "sha256": "bbc8b2910f9a7ba669926de51bf231d5a73c7d99e7dc159fdec5e3db003feedb"
+    },
+    {
+      "path": "gpu_kdtree/minishift/piggy/environment.json",
+      "sha256": "8d84aeddf0a2a9585453c155d82e9ca5a2e229522765852942239075a7c0e440"
+    },
+    {
+      "path": "gpu_kdtree/minishift/piggy/manifest.json",
+      "sha256": "968cc9e649c6c3b338a7c605346e264c9d6a595f15f348e2537beeb4bafb7481"
+    },
+    {
+      "path": "gpu_kdtree/minishift/piggy/metrics.csv",
+      "sha256": "64770bf5566609338cc3e4d156dc278a900e9ecb992bd58259b0a5d1da5f069c"
+    },
+    {
+      "path": "gpu_kdtree/minishift/piggy/resources.csv",
+      "sha256": "1ee528e5ea99051bdaf2b7c263818819b317841004a80e7996ac0936200b60cc"
+    },
+    {
+      "path": "gpu_kdtree/minishift/piggy/resource_summary.csv",
+      "sha256": "02c932c631f3f694ba61d82f9e2d8464c1c30f9eb1a48b9ad4baab82d6733854"
+    },
+    {
+      "path": "gpu_kdtree/minishift/piggy/resource_summary.json",
+      "sha256": "1f6e0673c5a3050e3cd7a93bd88fd4eba538d2f51d50cf8e17404b753c0dd064"
+    },
+    {
+      "path": "gpu_kdtree/minishift/piggy/stage_summary.csv",
+      "sha256": "a9be0cac78a9ef28258ad54f23ac72716672fddfde97f9777a7b047777f9f37d"
+    },
+    {
+      "path": "gpu_kdtree/minishift/piggy/stage_timings.csv",
+      "sha256": "a7d55937716db3607a9fbe7b9c82a53cc8f4fe9cdf89dd2789fbe3d81899394c"
+    },
+    {
+      "path": "gpu_kdtree/minishift/piggy/summary.json",
+      "sha256": "3224ce598d1af70db54256f9fbfcfeef29b7462c8965dd97d50e65dd1e05dd6b"
+    },
+    {
+      "path": "gpu_kdtree/minishift/piggy/test_timings.csv",
+      "sha256": "b53e883da2452704ba554b284163883a6bcf7129677dfc57adcfacaffaa7af78"
+    },
+    {
+      "path": "gpu_kdtree/minishift/piggy/train_timings.csv",
+      "sha256": "07ecf6a5d3a8bd4efd343cb0b162671ac38459e6d9eb90dcf2b1514ef0155e2d"
+    },
+    {
+      "path": "gpu_kdtree/minishift/plastic_cylinder/environment.json",
+      "sha256": "8d84aeddf0a2a9585453c155d82e9ca5a2e229522765852942239075a7c0e440"
+    },
+    {
+      "path": "gpu_kdtree/minishift/plastic_cylinder/manifest.json",
+      "sha256": "7fc060020546ca7501c82c6088a8b2f5822daf51dc66e0fda030fc6e6d6fd40f"
+    },
+    {
+      "path": "gpu_kdtree/minishift/plastic_cylinder/metrics.csv",
+      "sha256": "b54f7b89f5fe55c241bd1461639e2a99ddeb32a7bf886adc20d49799a37710d8"
+    },
+    {
+      "path": "gpu_kdtree/minishift/plastic_cylinder/resources.csv",
+      "sha256": "a4671854091180d321ad7e42fa7e18864a981267c3c51e01612babad6ca56dc8"
+    },
+    {
+      "path": "gpu_kdtree/minishift/plastic_cylinder/resource_summary.csv",
+      "sha256": "f2fcd11c404d8823e404c63cce5a99986e3c7b2ad0b8ce09b144be5b2cda14cd"
+    },
+    {
+      "path": "gpu_kdtree/minishift/plastic_cylinder/resource_summary.json",
+      "sha256": "6915aeacf18763d12da479799dd7fb1b9316f89e4028ad3143dd9a238db5c5bd"
+    },
+    {
+      "path": "gpu_kdtree/minishift/plastic_cylinder/stage_summary.csv",
+      "sha256": "ca8c3706d7c386c14bf584967c320b0fefc3382e1c9ffc73df2849424cd68a0d"
+    },
+    {
+      "path": "gpu_kdtree/minishift/plastic_cylinder/stage_timings.csv",
+      "sha256": "b663c019ef2048aecdf3fd1fb3d2d00fe70d0c410e29209b8f2a1ee0cd5b4efc"
+    },
+    {
+      "path": "gpu_kdtree/minishift/plastic_cylinder/summary.json",
+      "sha256": "d71f03d8727aca7d44894462cc5e171d8370e6e3e51a7ede757fb1a1172d9f15"
+    },
+    {
+      "path": "gpu_kdtree/minishift/plastic_cylinder/test_timings.csv",
+      "sha256": "e5e42de4b2620ffc6e6042517ca9c4cfde75f17381f572c0d444fa09f43952b8"
+    },
+    {
+      "path": "gpu_kdtree/minishift/plastic_cylinder/train_timings.csv",
+      "sha256": "a52a8ded67aae0b6395227b13bd6aa416c022490f4474fdc3fc835cfacefc2bb"
+    },
+    {
+      "path": "gpu_kdtree/minishift/screen/environment.json",
+      "sha256": "8d84aeddf0a2a9585453c155d82e9ca5a2e229522765852942239075a7c0e440"
+    },
+    {
+      "path": "gpu_kdtree/minishift/screen/manifest.json",
+      "sha256": "2608803f45fddbb486cb19ef3b9808b33cdc7246f2a8fd5536795dc2dec0e4a3"
+    },
+    {
+      "path": "gpu_kdtree/minishift/screen/metrics.csv",
+      "sha256": "a20ea05e01f00c421875fea3964df438409fe2ba24665fdcf36eaae2b450de9b"
+    },
+    {
+      "path": "gpu_kdtree/minishift/screen/resources.csv",
+      "sha256": "3312910f467006981bca5afa9f0551342a77093082d2101762aba0cf8ced8e77"
+    },
+    {
+      "path": "gpu_kdtree/minishift/screen/resource_summary.csv",
+      "sha256": "e0de79662f760f229381d0221073e3b990776cee19aaf071beaeab7e17167341"
+    },
+    {
+      "path": "gpu_kdtree/minishift/screen/resource_summary.json",
+      "sha256": "a3c39de54d3e36914e694a121a4bc5f0c4bc0a9ecefdeb36364b0d7a5c4890ad"
+    },
+    {
+      "path": "gpu_kdtree/minishift/screen/stage_summary.csv",
+      "sha256": "deb8bd17fc51cfdb2a9ff39e0e2c29ac02eeec4af43600a822f61c17a8b8e736"
+    },
+    {
+      "path": "gpu_kdtree/minishift/screen/stage_timings.csv",
+      "sha256": "b8dca0dc67066de2b8c67680437d91bc6b52cfb604f47e6c2b4c856f2743b18d"
+    },
+    {
+      "path": "gpu_kdtree/minishift/screen/summary.json",
+      "sha256": "aadbb7907de0da5c97aea9aadf518b3350efa7db45e29700a13579abc6a2b99b"
+    },
+    {
+      "path": "gpu_kdtree/minishift/screen/test_timings.csv",
+      "sha256": "a1b27fe49da9b3e9a74967e719eb7dcaa6f5ab9c10fda2f5101d415be290275c"
+    },
+    {
+      "path": "gpu_kdtree/minishift/screen/train_timings.csv",
+      "sha256": "e9704e53ff3f13c6a6cbf7782eae628dd2f63af0eb348453be6e6ff37c4220cd"
+    },
+    {
+      "path": "gpu_kdtree/minishift/screw/environment.json",
+      "sha256": "8d84aeddf0a2a9585453c155d82e9ca5a2e229522765852942239075a7c0e440"
+    },
+    {
+      "path": "gpu_kdtree/minishift/screw/manifest.json",
+      "sha256": "d06ea8821efb0098630f8390d18a80d65f03ce8ed794e4f053f17bfc22fe1366"
+    },
+    {
+      "path": "gpu_kdtree/minishift/screw/metrics.csv",
+      "sha256": "996f0d180106215c72f70ce404895e90b475971c80715453b0903e6e66bca204"
+    },
+    {
+      "path": "gpu_kdtree/minishift/screw/resources.csv",
+      "sha256": "80fc064e0c3bf15f6f6f7a1bcba5ea34d18013f6af65a262fd624e68d6d88b40"
+    },
+    {
+      "path": "gpu_kdtree/minishift/screw/resource_summary.csv",
+      "sha256": "5a4046b40b2e7fa3f5db874123981003fb0a0e092a258cbd55cb650ac507e272"
+    },
+    {
+      "path": "gpu_kdtree/minishift/screw/resource_summary.json",
+      "sha256": "b0e09d232a3ed6625faf1290c921cc28345c68f46fec6e9ea3c4b6a809f260dd"
+    },
+    {
+      "path": "gpu_kdtree/minishift/screw/stage_summary.csv",
+      "sha256": "67998981deb14ca616a9d12738aa43d24694bc3164a5092b8263657ab4d97617"
+    },
+    {
+      "path": "gpu_kdtree/minishift/screw/stage_timings.csv",
+      "sha256": "49658254037e57a7c1178a6e8f65ff0d17540246bca63c127c2f6a15a3d6c182"
+    },
+    {
+      "path": "gpu_kdtree/minishift/screw/summary.json",
+      "sha256": "1f7bb601e31407a996a0cd43e8661dce44e394c473f54dc0015fbe45c256b501"
+    },
+    {
+      "path": "gpu_kdtree/minishift/screw/test_timings.csv",
+      "sha256": "f2e8d59b70c10e638f47be5473e16a69947973281c0d5d60c6af8e07eb955a74"
+    },
+    {
+      "path": "gpu_kdtree/minishift/screw/train_timings.csv",
+      "sha256": "828f8ab943449c5ce92806064e2c13bbc287b34931298a6c77909dd5d11bd65f"
+    },
+    {
+      "path": "gpu_kdtree/minishift/spring_pad/environment.json",
+      "sha256": "8d84aeddf0a2a9585453c155d82e9ca5a2e229522765852942239075a7c0e440"
+    },
+    {
+      "path": "gpu_kdtree/minishift/spring_pad/manifest.json",
+      "sha256": "cdc81b20c7e6e84488a17becb256f640951411660cb5fd7f10f0dc4db6080c5a"
+    },
+    {
+      "path": "gpu_kdtree/minishift/spring_pad/metrics.csv",
+      "sha256": "9186015f54b48f55b830ec1f12d88f49452596ed8adb1b0c78b26362b2545de3"
+    },
+    {
+      "path": "gpu_kdtree/minishift/spring_pad/resources.csv",
+      "sha256": "daf77535db3e392b9c43dc0b70b2178537f270cb80c0437eb1e2101762ad4a94"
+    },
+    {
+      "path": "gpu_kdtree/minishift/spring_pad/resource_summary.csv",
+      "sha256": "d292c75ab3939c60e4ed0f00dcbb4e18244ab0b99e6cabc28c400aa93eb465d1"
+    },
+    {
+      "path": "gpu_kdtree/minishift/spring_pad/resource_summary.json",
+      "sha256": "6a66d408445ff0e74bb95b656ccb5fd41b6bca3a85270c424f72768ad881b041"
+    },
+    {
+      "path": "gpu_kdtree/minishift/spring_pad/stage_summary.csv",
+      "sha256": "df52646edcfbf95870b12b92be936d475f94cf8932fa7fd5ad70b4fcec830b0c"
+    },
+    {
+      "path": "gpu_kdtree/minishift/spring_pad/stage_timings.csv",
+      "sha256": "b3d68d17345a4218124bb87d48d1555c580904741298d8bed5523d1faefc1da2"
+    },
+    {
+      "path": "gpu_kdtree/minishift/spring_pad/summary.json",
+      "sha256": "975a373c67154794c92aa5ac3db4a71a3a1f1ce5498e46d9a4be4665ceb30893"
+    },
+    {
+      "path": "gpu_kdtree/minishift/spring_pad/test_timings.csv",
+      "sha256": "32cbd864673607b4e220aea713c633d95b94d563fa5048a2bcbb3dcb5752ec96"
+    },
+    {
+      "path": "gpu_kdtree/minishift/spring_pad/train_timings.csv",
+      "sha256": "b7c26b2c549fc46609635f1c547318739d9b3cc59454f08c75a68e544ae2eefb"
+    },
+    {
+      "path": "gpu_kdtree/minishift/toothbrush/environment.json",
+      "sha256": "8d84aeddf0a2a9585453c155d82e9ca5a2e229522765852942239075a7c0e440"
+    },
+    {
+      "path": "gpu_kdtree/minishift/toothbrush/manifest.json",
+      "sha256": "a06818bf4c378b60f52c894f9147a393433d5284e2068472468a059aa798a168"
+    },
+    {
+      "path": "gpu_kdtree/minishift/toothbrush/metrics.csv",
+      "sha256": "c5e36aa36a36fd34d8062e4765c10fc184a61b2ca3f90c2ddfe350df7e81bf66"
+    },
+    {
+      "path": "gpu_kdtree/minishift/toothbrush/resources.csv",
+      "sha256": "075c42a0c41f1bfc4d1cbeb6643be173ec2ffa992681a8dbc0b9e9e5c2153491"
+    },
+    {
+      "path": "gpu_kdtree/minishift/toothbrush/resource_summary.csv",
+      "sha256": "d92f25b968b5807c58f4b31c87c28efc13d9b74f5d242fd1734fa74d3be7fa8b"
+    },
+    {
+      "path": "gpu_kdtree/minishift/toothbrush/resource_summary.json",
+      "sha256": "2cdd5c3663f7bf1f40c2a73a56865e04bd9c05d9d6d58c4ca77a256541430ede"
+    },
+    {
+      "path": "gpu_kdtree/minishift/toothbrush/stage_summary.csv",
+      "sha256": "d38cc102bf3c025483704163a944d14a7600021788aeeb125b450a22f91a2a66"
+    },
+    {
+      "path": "gpu_kdtree/minishift/toothbrush/stage_timings.csv",
+      "sha256": "66d390d3da8f7d340db6033c76a0de801071627d13d520e891ae57a44c4ebdff"
+    },
+    {
+      "path": "gpu_kdtree/minishift/toothbrush/summary.json",
+      "sha256": "ebac0f675c340e2c6150720de6619a55cf88712c9079abff80533e34d9b58e8a"
+    },
+    {
+      "path": "gpu_kdtree/minishift/toothbrush/test_timings.csv",
+      "sha256": "ada0bc32f6165029f179001b995dc60627e9b038d7fddc2d14d1bffd5ad601f1"
+    },
+    {
+      "path": "gpu_kdtree/minishift/toothbrush/train_timings.csv",
+      "sha256": "125b3190ce1fc0a53d6f922013719a0a04fc74d06b2d6a422a5825061c3bf885"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/ashtray0/environment.json",
+      "sha256": "4ba3d7303cccd2869766ef23cfa2eb08a7421b45f02703464d5b24186b0c6313"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/ashtray0/manifest.json",
+      "sha256": "8c8a491805ae5a3e7e3f220698de5e3f72b66c8083d46230f9868482537f8d00"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/ashtray0/metrics.csv",
+      "sha256": "7310458b47d5ef774cdc14bc28e96f39a12147e19ea30cc8888ad812d159ca7d"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/ashtray0/resources.csv",
+      "sha256": "cf1f18994bb289187601cb06f71cdb324f6cccb13cfa578a6166cba7b014e65f"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/ashtray0/resource_summary.csv",
+      "sha256": "bd7aaa159201f45cd63f6352617dd1e2f577a7c45a41d9cd6d8b906a99ad6b0f"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/ashtray0/resource_summary.json",
+      "sha256": "863b8fedc184286a5cf0f92d7aaa3b96a745ef10fe74121bc0031d15550e98fa"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/ashtray0/stage_summary.csv",
+      "sha256": "a754ae2485d76a5c0700a9d1d1e1fc0638924cd5747d3491f0a4d228dbc6a9c6"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/ashtray0/stage_timings.csv",
+      "sha256": "d51fde1b02f61d98c47c84b8ec550709c2bc201175d5ea7680e1c14973c4b9d3"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/ashtray0/summary.json",
+      "sha256": "288e5a2a0830c309e8782ae765ec34cec9c51b4dd86c9031bb07780eb5fd2a06"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/ashtray0/test_timings.csv",
+      "sha256": "aa40c64fd981854b8adbadf2bd2d398535c48363e5e37f9e051141f4202425a0"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/ashtray0/train_timings.csv",
+      "sha256": "d21a172b1cf32eb45b6813a0758107de4cfb15efaf972c82f395ed12d7ab745f"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/bag0/environment.json",
+      "sha256": "4ba3d7303cccd2869766ef23cfa2eb08a7421b45f02703464d5b24186b0c6313"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/bag0/manifest.json",
+      "sha256": "12c7bebbeaa462d097ab3f9b3eaee2818c402da561194c582253c3dcfe1ed589"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/bag0/metrics.csv",
+      "sha256": "63bcf0bc42bbfdb6d071041a18439bf47bfccabd0d486d54779bd77d434727f0"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/bag0/resources.csv",
+      "sha256": "17bc260efa9a7d1b3f8bb6692132b393675d36d1d621d035eb27264dd63cee29"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/bag0/resource_summary.csv",
+      "sha256": "5f00764c57da02d329589326bbb29d085f9c32909e30bd27381e0727f80f4411"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/bag0/resource_summary.json",
+      "sha256": "cb31af0e057069ba0c0b2cef1c7ac69787645f5f09891d44aef0147bf9e3d682"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/bag0/stage_summary.csv",
+      "sha256": "a6ad0c08bede4899a8b57b524201706b4134acbca65b6ce17e1379376bcf1d44"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/bag0/stage_timings.csv",
+      "sha256": "05842f9b4d27a35eb7a26e53c94c73ac00c9752b6e073c727f2162d602c7abd2"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/bag0/summary.json",
+      "sha256": "f7136c166cf8303514d4fc9aeb8fd102064212f6c4951423f5587242008d653f"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/bag0/test_timings.csv",
+      "sha256": "80394079fe8f998a95be8657926393df915e78def7cc87998d8c0ce41a642a00"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/bag0/train_timings.csv",
+      "sha256": "2c0ba653195c575e1d63dea4ecd245448b6e94b875b47dc91c9a53c79b3bab0e"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/bottle0/environment.json",
+      "sha256": "4ba3d7303cccd2869766ef23cfa2eb08a7421b45f02703464d5b24186b0c6313"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/bottle0/manifest.json",
+      "sha256": "15b3462fd0d8e088a25c56cfd82aef7d08675b9a1f6d9744f8590ee6d7dfb3e8"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/bottle0/metrics.csv",
+      "sha256": "bc043e0115b3970aec98c1ac0229fc36f706344752bc431b694af2058dc46918"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/bottle0/resources.csv",
+      "sha256": "f8f62a723930e9169f1d10bf675c4c91eaa1d988d9b0aed984e0ad2cd697b272"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/bottle0/resource_summary.csv",
+      "sha256": "202d0d3e41c40f3a03196d116d47246bedf08c24e54498b6cf80d11f25b0930f"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/bottle0/resource_summary.json",
+      "sha256": "0caf53f321403481862ef29ffef67d1245c99ff578cf63a02dbb2f2e5a3b9a41"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/bottle0/stage_summary.csv",
+      "sha256": "edf7848f81bf1a010786995141d1fa4db7d5b8bec69250eedf5048d4ed325491"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/bottle0/stage_timings.csv",
+      "sha256": "5ed61c10ae7f4c49e5f34b36807a1f12e87db7caf5e80252511817166b98377b"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/bottle0/summary.json",
+      "sha256": "aaf8161e5a302686afdaeffcd301786c37de19b485888b6efc362db8b54f5280"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/bottle0/test_timings.csv",
+      "sha256": "7f5f90875473f78df2916df5b968dd4167d594dd4b099b5dac5e5850f8579246"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/bottle0/train_timings.csv",
+      "sha256": "1b07e6dfb9ee095a3de06a68627002b1228c5ea3bfba730df7508617ecfa2683"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/bottle1/environment.json",
+      "sha256": "4ba3d7303cccd2869766ef23cfa2eb08a7421b45f02703464d5b24186b0c6313"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/bottle1/manifest.json",
+      "sha256": "856273a6fc97085214df87a869d3dc388748fc6f04003e867224fd4dabc39914"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/bottle1/metrics.csv",
+      "sha256": "a27576ec97a6c85e95d3bcf797752c7fcccb3263aeb2faf8341eb7c989f999bc"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/bottle1/resources.csv",
+      "sha256": "b95f14e54e8e154e3e77bcb791d92597e710179c3fa7ccef1570c8c2b7a95598"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/bottle1/resource_summary.csv",
+      "sha256": "5483c826ee2c9bae531df50b980faa6de2a2017cb4f93fe412123faa967b4eda"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/bottle1/resource_summary.json",
+      "sha256": "4ac77554b72ae91cfe370717317f49ecec21c5dd2b90f7d0c0de259944c830c6"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/bottle1/stage_summary.csv",
+      "sha256": "802d509560ed714c6d88029a4b0ec59931b9e4f5ff8aa83fab88b3bbfe3873dd"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/bottle1/stage_timings.csv",
+      "sha256": "6bed0f856550351e55a88be4496a9e59292d3fb9c85ca7ed63841695b1564bf0"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/bottle1/summary.json",
+      "sha256": "bf89e1ebc214231f59eb459d845e9407f47f0a88447386494839ce028809a924"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/bottle1/test_timings.csv",
+      "sha256": "ac6b4220d27a4b9e06c476a5323235ae4e737014cffb9478f6ad9d49f3a2b932"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/bottle1/train_timings.csv",
+      "sha256": "9c1d8bbc9541d80c4c5293e69ae978a227d0090f15284833b135f4b82a6a5210"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/bottle3/environment.json",
+      "sha256": "4ba3d7303cccd2869766ef23cfa2eb08a7421b45f02703464d5b24186b0c6313"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/bottle3/manifest.json",
+      "sha256": "605247b488bcaefecfc7a8894c75dceb628b78f0c79fa458e5090dd8b7c01bdf"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/bottle3/metrics.csv",
+      "sha256": "e242ef3a310d3cdf404dc191926747de0c48af6433bbf08fd8fe2b6bbc7591a0"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/bottle3/resources.csv",
+      "sha256": "c673512e19b1751c3fe216975abcf1ca7a54386da90f1bf7c2b75d87dec5483f"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/bottle3/resource_summary.csv",
+      "sha256": "236b9dcd0f45f309de6ad64fe9d967facd89f28497a90c83454eaca051d08063"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/bottle3/resource_summary.json",
+      "sha256": "ddd60d25264237caaaa91b36c6602422e32e574be2d9f33053411ca97b098d34"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/bottle3/stage_summary.csv",
+      "sha256": "1356261678a72ad9c2c58eb4a30c6bd7616f76d71625f9e03aa2fcaf61a3e6e1"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/bottle3/stage_timings.csv",
+      "sha256": "c5d3763fc3ab04b69592044771a3c691efb875dc660623767687a75ff457e540"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/bottle3/summary.json",
+      "sha256": "068a68fe8311b603660ae5338348edac9d64886bf052909f2c5c7d026ff290ad"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/bottle3/test_timings.csv",
+      "sha256": "3e722e4e260af8cb81f7e4904e3e2c275e408583727bad5cdaa50e36dd1baee2"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/bottle3/train_timings.csv",
+      "sha256": "f90e3acc7724111fd0d53376e6c9f7204d24c542fbed213959d256260e2fdfc3"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/bowl0/environment.json",
+      "sha256": "4ba3d7303cccd2869766ef23cfa2eb08a7421b45f02703464d5b24186b0c6313"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/bowl0/manifest.json",
+      "sha256": "ed8d793280cdb17170121107435ec7dd5ffe33a783f28554845110905007f1ba"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/bowl0/metrics.csv",
+      "sha256": "1ef5d9d560bf329104238292ce8465adf272e9b4767b04ffe7c0d56f7ca5bd91"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/bowl0/resources.csv",
+      "sha256": "463cd889ec54d5b5c545e3451cfc6c1eb4ba85b739c04b8ea794b016ff75d0db"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/bowl0/resource_summary.csv",
+      "sha256": "501b0511f247545c7f2eca95331469c148711630a40c9e908efd0e4a9405dc65"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/bowl0/resource_summary.json",
+      "sha256": "c7242dab874afbcad50db62660fcb501340a7c8efdb59a3ad01984b482ddb470"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/bowl0/stage_summary.csv",
+      "sha256": "705b91ddabf74b414cbf2da52d5bd0966bc57274557e6e77c9dceb84e333c366"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/bowl0/stage_timings.csv",
+      "sha256": "6e72b061fd32e7af9f2e13c8a1d26127c6c2de9cea961b98d9f7b8f7bbb015f7"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/bowl0/summary.json",
+      "sha256": "c4887a82f3fafc14a300a88bc79b00c371a7fd17a8b18cf1b221bb8be77362c1"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/bowl0/test_timings.csv",
+      "sha256": "1e65cd3be580315bd06ebf0a699e3e31638c04c789b97af7f145ef1ae8bd3318"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/bowl0/train_timings.csv",
+      "sha256": "9b82353ff5ba3bd25274fd260ba3eac720492b7c3d1268fea026bea01c208747"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/bowl1/environment.json",
+      "sha256": "4ba3d7303cccd2869766ef23cfa2eb08a7421b45f02703464d5b24186b0c6313"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/bowl1/manifest.json",
+      "sha256": "43bec5e5fb512d6da4351676615740ed9f28f98f315a69616a096dfa2317ee68"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/bowl1/metrics.csv",
+      "sha256": "595219158f1af48b32d9cbedfe518825ade8ab1f408824e7b4899f7a06656a17"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/bowl1/resources.csv",
+      "sha256": "0209926a4e0042cc3de0fec4facfc923bb496c1a3493cb81b2c61f69d8d6174b"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/bowl1/resource_summary.csv",
+      "sha256": "8c8a049d56f4e84a6caad4bbdbaa413be251592fbd71f10db856f0c754272e61"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/bowl1/resource_summary.json",
+      "sha256": "1fc9c1d4b587ce85977bd80b92bfca5c187d1022e1c09f23cda0a0597fe79dca"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/bowl1/stage_summary.csv",
+      "sha256": "812f6637c50d8337aa5f1b0c154ef907b37922427b2e032f5d0bc3004a967b4a"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/bowl1/stage_timings.csv",
+      "sha256": "3bb37a79bd99c23a744ddf8dd2b81079b70eba1b08818c1d747be74a1c17f4ee"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/bowl1/summary.json",
+      "sha256": "2bade65fdf21eed9e90b963cf4284e439d1e660680e96e26e0abab58538053b2"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/bowl1/test_timings.csv",
+      "sha256": "39bd25d290df857e34fdbf65032a1bead41c8a95021cc228c3e22c8f60213981"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/bowl1/train_timings.csv",
+      "sha256": "0639947cae4800b35b2dcc4a4dbb854205257bb4ac6108f7e3c0a01537c0a62b"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/bowl2/environment.json",
+      "sha256": "4ba3d7303cccd2869766ef23cfa2eb08a7421b45f02703464d5b24186b0c6313"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/bowl2/manifest.json",
+      "sha256": "c5cc49e925dcbff2b6f4f395c4b51e37e17f506ccd4061f8d7e985bdd4d90fda"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/bowl2/metrics.csv",
+      "sha256": "b45145d5cffb2b28cff82a52c2154e48c68c45d3486dab05af3f7cbe504d6de9"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/bowl2/resources.csv",
+      "sha256": "ae7673e9b73fe55f5ae6bdb0573a9275395c183a12aa0840769905912caef7fa"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/bowl2/resource_summary.csv",
+      "sha256": "1a68d2417dbd9f0f25ee0d9dafac41952f1c484e414e4d0e23cb17e81776c7a5"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/bowl2/resource_summary.json",
+      "sha256": "3f7261348f6f1026899cbe22ff30cb7e245aafdddc2078a6f84990b4fab77286"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/bowl2/stage_summary.csv",
+      "sha256": "852a16a467e8886dfeb947b579702e4bb8e09e58f88260f606562c539df2d926"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/bowl2/stage_timings.csv",
+      "sha256": "5252dc0c66a832431af3c187311bb4fda2ae433dedfc46f43e31a69dadc1857e"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/bowl2/summary.json",
+      "sha256": "f82c5a69c010afef9c6038977b479715628c16606124d44623255ec5cbf269d6"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/bowl2/test_timings.csv",
+      "sha256": "4cbab94da069983a67bf3dedaf51a6c883d24c12120c60cb24827ed38b201e90"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/bowl2/train_timings.csv",
+      "sha256": "da009c596da570c66b22f7d9c642f98ce52001b1b60540edb88aad8e93fa2e4d"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/bowl3/environment.json",
+      "sha256": "4ba3d7303cccd2869766ef23cfa2eb08a7421b45f02703464d5b24186b0c6313"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/bowl3/manifest.json",
+      "sha256": "90c3953860af50519a71839608b8b6585b8cd2e8fe4bf58c17c63831a1983d91"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/bowl3/metrics.csv",
+      "sha256": "dbd7ab163b4bdc37b54c7c5bb92d2de6f59584f1663d73ecce8db26264571bb6"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/bowl3/resources.csv",
+      "sha256": "61d8fa62f1e4f09593d513d9c41b3e76e68a6537642c216abafd7743dab635fe"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/bowl3/resource_summary.csv",
+      "sha256": "bdd50848d7a933d44fa20c739835743dbb1d079825b679ba8c548d2f57b83749"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/bowl3/resource_summary.json",
+      "sha256": "3d46210cd1775f089ab8b57d1a501020e52d16f4cae082004ab3a9510dc1081d"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/bowl3/stage_summary.csv",
+      "sha256": "6589109b594ee22da4d5028d4ce660052bc1c8a83915c7c5c0937f720ea45176"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/bowl3/stage_timings.csv",
+      "sha256": "a70e6cada5ef3d91a22255c40281a9e864ae9f9d27056f93954cf49ad10d2c9e"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/bowl3/summary.json",
+      "sha256": "3f73e6d5d47b09cb2953d8f8666420d0eb45c7c7b678c63c1fdebf177bdbf09d"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/bowl3/test_timings.csv",
+      "sha256": "07dbe11f6bf2e080bf08a5261104e9ee0936da7b225d7c8d362f002f223167c9"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/bowl3/train_timings.csv",
+      "sha256": "b9afeb22dc455af253aea6a8cd372420e79d2a71f0355b81ecf3ebc7fc9fbc0c"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/bowl4/environment.json",
+      "sha256": "4ba3d7303cccd2869766ef23cfa2eb08a7421b45f02703464d5b24186b0c6313"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/bowl4/manifest.json",
+      "sha256": "8d50645e5def170409c54571275c680e582d935d2ed794cea3cf5ba3f5bc1c09"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/bowl4/metrics.csv",
+      "sha256": "7b8904f825b05ed58f7467c9c51cf1498f68f7c66fdc5dab6aaf6e124a1d6fdf"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/bowl4/resources.csv",
+      "sha256": "6aa6d3eb8c7482923751ebfbcb506c61b22ae0ce7905ce56e57344fddf2e24ed"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/bowl4/resource_summary.csv",
+      "sha256": "fcf7d16d22b9c5dc7f9496b80b175805ba03d7e90cc23fd25c95cd000dde7ad0"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/bowl4/resource_summary.json",
+      "sha256": "71a3fed992f65c7ed7636eca00336e461be159c7b11a96cdd231dade41604b2b"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/bowl4/stage_summary.csv",
+      "sha256": "03c14905faee5beb0e59cf654e9576a082ca6ea48c5464bedf9159a8d643de8f"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/bowl4/stage_timings.csv",
+      "sha256": "0f825f6158331af905844d47289254d1aaf99771387dc8b7587070f427f5b66c"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/bowl4/summary.json",
+      "sha256": "c4e4e471ae7452a7581a777e63fd772465ef72f1557a435cf2e59164f3746da7"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/bowl4/test_timings.csv",
+      "sha256": "5e0a22c7c8b46fab5d1755c566a3da99b5c69fe4158a6e176d952071352e1f00"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/bowl4/train_timings.csv",
+      "sha256": "43c9d66a944ee9c2c87cf4f5d9079f119b3d7fbcfb6562ad0116cdaa7c2a035e"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/bowl5/environment.json",
+      "sha256": "4ba3d7303cccd2869766ef23cfa2eb08a7421b45f02703464d5b24186b0c6313"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/bowl5/manifest.json",
+      "sha256": "bcbffcd72500ad385eeadda23cbd4ab2752ca194fb586dad68e497b528286824"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/bowl5/metrics.csv",
+      "sha256": "2b07d8da41017040d9c5f76ca723306d350d8099c04e7de666a65328053adffe"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/bowl5/resources.csv",
+      "sha256": "4d9c9e5bd2651899211b25c2069ba75b1ea136e025751602d78d8ad6147b1440"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/bowl5/resource_summary.csv",
+      "sha256": "f89a384ef25b907aa13ecb4aad3d22383e215b51a3d8aea6754d6203fcb3d5a5"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/bowl5/resource_summary.json",
+      "sha256": "e385b6d5a233fdad63ebcd0b1d12d94735600234ff6fd8f558077593cfae9dc5"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/bowl5/stage_summary.csv",
+      "sha256": "e9fc4122bfb76ae21e2eaf4d7fce744f50b79ab188caeb8c75ba44d61036168b"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/bowl5/stage_timings.csv",
+      "sha256": "527d6118259e27c82029c98193bda42658dba49009ffbcc04a3d90ad09a54209"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/bowl5/summary.json",
+      "sha256": "3b33def00f7fd7438dc963d6e688eea19a0537017f7ef5e605b60dd3f17492e0"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/bowl5/test_timings.csv",
+      "sha256": "863d9298e161b5f13eff67c6f81844f0dae3891c5d966f71858351ecf4b30164"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/bowl5/train_timings.csv",
+      "sha256": "f5e79b0951ecba9996f02f82bf3787827465804daacb56be073e9ee849d2fcf4"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/bucket0/environment.json",
+      "sha256": "4ba3d7303cccd2869766ef23cfa2eb08a7421b45f02703464d5b24186b0c6313"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/bucket0/manifest.json",
+      "sha256": "e514d5810358e9e193ec129e990f2d91e09f8b4c7019c125f96142e1b5b66d10"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/bucket0/metrics.csv",
+      "sha256": "771d830b6a4af55db5693a67d61127ad97952b1cd35e18d380345b8da298c785"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/bucket0/resources.csv",
+      "sha256": "39af42595a27e385978d8e13659de34642293bfd3a92831ab146ca4ce3e73b92"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/bucket0/resource_summary.csv",
+      "sha256": "8d901f517fdab60bbc0c5dacc3d6ad7602c4e6a79725a398554cb3baa2d3f48a"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/bucket0/resource_summary.json",
+      "sha256": "d69ac835cd23ac988d42062234f84258d6298967fbd750450c450c6133a0f583"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/bucket0/stage_summary.csv",
+      "sha256": "c414c4720a39632e3ec7d0308589099857e74dba31d21c8a8e7e67d101f4e611"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/bucket0/stage_timings.csv",
+      "sha256": "86fcc528809464d2219e4e3f7891522b5d9af3ce4c64c7f66b6b06f32e1fa83f"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/bucket0/summary.json",
+      "sha256": "3336e0b1fdd4237c1de8d8e59b6ae86fb533d4458f8e247e58fbaf6227085442"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/bucket0/test_timings.csv",
+      "sha256": "7a48b87c49459b468551576dbec52f850c5575c272cdf82031613895d1939287"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/bucket0/train_timings.csv",
+      "sha256": "1af834cdcf32b7f94c14ba15c70d42b8ecec9bb4a8c58daf5bf83dac75e43fda"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/bucket1/environment.json",
+      "sha256": "4ba3d7303cccd2869766ef23cfa2eb08a7421b45f02703464d5b24186b0c6313"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/bucket1/manifest.json",
+      "sha256": "cd3daf438a2c36d6b6a74bc3a45a21df2d025bded355fc542786c527d89c6605"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/bucket1/metrics.csv",
+      "sha256": "57c4a4b54c583821663f032cf56f74846afb6440edc8df7b8e0c8421314c4de4"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/bucket1/resources.csv",
+      "sha256": "634105558e1c8a7002421c666f1bea5c7a9612639232e1b2ba7404dac81882e6"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/bucket1/resource_summary.csv",
+      "sha256": "a4811f9f404c5154aeb3be8e1aaea87e144ed8be15528bbae5ce7f947855406b"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/bucket1/resource_summary.json",
+      "sha256": "ac1355916c976d42ccbb9005d8a5de87de591abdbbef0b81b8163e9385a12546"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/bucket1/stage_summary.csv",
+      "sha256": "b0ac3770f8290e85ebd520ddae089a14e6e81e6a9b17507a5129c52e930204b1"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/bucket1/stage_timings.csv",
+      "sha256": "47091927967dc2b7a60917a5a344fd43b6c69261747f94f20a33b0ad0e45d85e"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/bucket1/summary.json",
+      "sha256": "2b7a1890a9cc04528435904ec39cfbd753f012726e488f1698839064f9a281e9"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/bucket1/test_timings.csv",
+      "sha256": "43dd4ac83d8da9886e63a542f00655b21aaa1da37efd78ef65399c9e181bc781"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/bucket1/train_timings.csv",
+      "sha256": "8283f2431a643272240e3b139387358aece173627aa4f87f924f2998acfab6c6"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/cap0/environment.json",
+      "sha256": "4ba3d7303cccd2869766ef23cfa2eb08a7421b45f02703464d5b24186b0c6313"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/cap0/manifest.json",
+      "sha256": "3f594e0bdf011186bc2f8339953e85d390bddbf64fdd7c7fd554e7635fbac442"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/cap0/metrics.csv",
+      "sha256": "c827f8ca8ac42862e55f464f174236c0ec772108a62943e10e599ae74a62590e"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/cap0/resources.csv",
+      "sha256": "7371bce59f1fa4ee4d0246158a6a86de892b5d73c19ed16c3455a63df1b2151c"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/cap0/resource_summary.csv",
+      "sha256": "746a36a9dcd72996559aeb97eb3633e080501dbc222e0920200c4f10e3653505"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/cap0/resource_summary.json",
+      "sha256": "3c4a6ecbf9bb482f1acf8e9379f28f12a134b4c9fecbc62f00151413b748409a"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/cap0/stage_summary.csv",
+      "sha256": "42b3b2a69cc74645e7780502d842c5c4a8ae24a6a7cbadfc265e8cbb4c9308d6"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/cap0/stage_timings.csv",
+      "sha256": "748ebcd9439a2482d36535f3e3a9d73f272c9fc661baea28ec336af20db9ee19"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/cap0/summary.json",
+      "sha256": "80eb5f8df1d7e94d747db146866e613816f581d45c103066e05d15d3b6fb748f"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/cap0/test_timings.csv",
+      "sha256": "02119b69b567d261ec9b3c5f9885f2fc2131de1aeeae5ba3d665290c619e76e0"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/cap0/train_timings.csv",
+      "sha256": "e0e5916ed0d8dfef9514fbe27b87bd354696b1929d56e59d8fb5932b92e9721b"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/cap3/environment.json",
+      "sha256": "4ba3d7303cccd2869766ef23cfa2eb08a7421b45f02703464d5b24186b0c6313"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/cap3/manifest.json",
+      "sha256": "c05dfc7b84f43f40f8a662199f91c0044c9fbbb7960984217e1a55d4e6a387f9"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/cap3/metrics.csv",
+      "sha256": "4fffde9df16cbde60f6766d48a86a9d550ce0c1f44ca833c473ffd605aace84c"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/cap3/resources.csv",
+      "sha256": "5e07922281b9f5dbe4b03691c906b8319ea0634710b5d8fb3275847dba4f91a2"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/cap3/resource_summary.csv",
+      "sha256": "cf065193e27fffd1479427c3615dbd1472a393cf6eb5c4da22096f9f70a87c22"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/cap3/resource_summary.json",
+      "sha256": "76703764ef8232eddc1332606b5d7d058c9164dcfae17db5e51a41179149402b"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/cap3/stage_summary.csv",
+      "sha256": "d877760dadcf1855ada8fd9d78eeb229db5b0b66e5b53bd5b5509afbeb86295a"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/cap3/stage_timings.csv",
+      "sha256": "3fdb61a617ad754963579dd247098f5bf33632765e3efe39eb20fe66aaabd212"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/cap3/summary.json",
+      "sha256": "c2e3a0f537437f9dac3e30a687486b6beb984abaadd7a4843c2487d75d91d751"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/cap3/test_timings.csv",
+      "sha256": "67606340e0b45fbd7660fcc4bb7cea87af42c826316dbd58bbb75000cd2dc172"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/cap3/train_timings.csv",
+      "sha256": "cbcdf1fd2977e5801e14d070c49888ade1ecc0e7cd1ee3e986b2a3ab80b6a9c4"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/cap4/environment.json",
+      "sha256": "4ba3d7303cccd2869766ef23cfa2eb08a7421b45f02703464d5b24186b0c6313"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/cap4/manifest.json",
+      "sha256": "14eadaa6cbf32c3fdc11d05b1db47e3a3d76bd4064b8010448988f0991e5b52f"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/cap4/metrics.csv",
+      "sha256": "d1c71782b409f948b6b38851b8ba4d765df1d18f66a3025d1b9c5a17071745f9"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/cap4/resources.csv",
+      "sha256": "43f2989ec42808210f681ffcfb930316d8ca826112a1caf737ade57f7b02d13b"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/cap4/resource_summary.csv",
+      "sha256": "288e5771be8bdb29aa815ad9d7ebfce051089c06e67f4653cdfb038ae9067932"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/cap4/resource_summary.json",
+      "sha256": "b70b519705b71fff0229b902ca4b409c6de9d7bd3cdd97337d08a1d5f24cfa54"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/cap4/stage_summary.csv",
+      "sha256": "4271d67f83e7454a42e0e0f61ccc350b243e7305bf23347c3f09ac48c9bd6b24"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/cap4/stage_timings.csv",
+      "sha256": "5d57ca1bad6261b31666b9216df3042476e8f83efad831935fa62e04ab649b0e"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/cap4/summary.json",
+      "sha256": "c11ba71ffde34926d44dd76f7db34b71204da02e1b68409cc8327589fc0555b2"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/cap4/test_timings.csv",
+      "sha256": "2c9cfa0ce1393d66430d4d41aa4edac03e52c7b473008dcbfbe8b69099290c55"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/cap4/train_timings.csv",
+      "sha256": "559c7417430a9a9ed690bbf4d8ac2f3b09f064133952169bc66b9ca6c9e64050"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/cap5/environment.json",
+      "sha256": "4ba3d7303cccd2869766ef23cfa2eb08a7421b45f02703464d5b24186b0c6313"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/cap5/manifest.json",
+      "sha256": "ec49364e1401266ae525e4eaba8bdf41a4242acdfdd1366d127e44d1e891c4f6"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/cap5/metrics.csv",
+      "sha256": "337ce54bd03811c0bc685b894768d71e444d71166cd9f7cdbc817f21e4bb1054"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/cap5/resources.csv",
+      "sha256": "b8f25662faff60211ccf9a7952e775a0f3ba6ac99e0736d66bfd0885de8ae4fa"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/cap5/resource_summary.csv",
+      "sha256": "eb81aefbd8519b4c3132b35fc8574744a227803019e41daa7661b39475b7920b"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/cap5/resource_summary.json",
+      "sha256": "556441896b10e3e5c89e1765ded9ab8f4c31cdc58d4b398588e14b4d47e19adc"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/cap5/stage_summary.csv",
+      "sha256": "9b461c5c25bff306e06e0d6155bfe608a689c85a359622caf8fb8d61a4703670"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/cap5/stage_timings.csv",
+      "sha256": "4edd548a474208fd36a16719a4b00063c32eed6867396e0f641107d1e94efb1b"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/cap5/summary.json",
+      "sha256": "5973cafb9f3df2e053786d2d1bf279f45edf0f1e8c35509301b747e3aa0db09a"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/cap5/test_timings.csv",
+      "sha256": "971b61953897494a9613db4581032ae074ee298e9233b1338bff2f94ab62ce7a"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/cap5/train_timings.csv",
+      "sha256": "ea84e5ba1d14532948ad9408a6cd4bfb691aa98d94637e932182dd7c45136bce"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/cup0/environment.json",
+      "sha256": "4ba3d7303cccd2869766ef23cfa2eb08a7421b45f02703464d5b24186b0c6313"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/cup0/manifest.json",
+      "sha256": "ebc334516154e241f4a60fdb519c275fc999ba91d3f761a1dc0913e897b11ac9"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/cup0/metrics.csv",
+      "sha256": "62a24f0273d2ec74def2a89de493f04236599ea1ab619c1d27d4f533cf1313c5"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/cup0/resources.csv",
+      "sha256": "fa5d8b9849a136d15bfc68134df9afb3c625987fa903424760f5c5b19face839"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/cup0/resource_summary.csv",
+      "sha256": "51a96710e0c087ab7eee38b3671fe9f36ab81be956d045afbfb3c8a2ea0178c9"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/cup0/resource_summary.json",
+      "sha256": "445f88ff6caa35df8ae047133fa8a2aee280c126afc5d77343539af6bb38a858"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/cup0/stage_summary.csv",
+      "sha256": "8a73e9f54540e2027e3e8e9cfdea1ce861ee5ef8a9cddf511e5a0b331fe93cfa"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/cup0/stage_timings.csv",
+      "sha256": "840e22c1f7b92d8dd41f61e8a6b824b8d8b7949b5197f466dc066e297275f0e4"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/cup0/summary.json",
+      "sha256": "2c30bc25865d845f13c7436f28d3f85e2c78fa8851aeb54cabc2b532a2d5cd9b"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/cup0/test_timings.csv",
+      "sha256": "94f134da5c820d7780957ff60ff6784f89d8f4701753a1bd7993761b983d47be"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/cup0/train_timings.csv",
+      "sha256": "52a9523cff850eb270608799066261b1be71cfdd987df6d09cdf1496f34f73e3"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/cup1/environment.json",
+      "sha256": "4ba3d7303cccd2869766ef23cfa2eb08a7421b45f02703464d5b24186b0c6313"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/cup1/manifest.json",
+      "sha256": "fd973221886c9efb1a2ffcc6921d3d285d11072371a54f0cbfe122051fb18c36"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/cup1/metrics.csv",
+      "sha256": "c1663fd004071adf2e3e78bb49fe0d5184c06dd95ba4dac1b4760533be8e6e9f"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/cup1/resources.csv",
+      "sha256": "fe35637970332b2f16f1b9f123a2adc63c28d3af2bdee8a3899fa567aa416ace"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/cup1/resource_summary.csv",
+      "sha256": "6ba5b3b7ce3a54c3e64ae534b450f415d9d1b6524c815970f0288cb3991db7bd"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/cup1/resource_summary.json",
+      "sha256": "7dd3502e617a40212a18804a88cfb664514cf57a3b5843c424649f5441ce33e0"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/cup1/stage_summary.csv",
+      "sha256": "6d40048a058dc88b27075b6ca7208d8fa5e034d2b881c253a6c8750cad574298"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/cup1/stage_timings.csv",
+      "sha256": "bd59b233d3615fc34c294827c00a3300b84216fe9e2f980a4e06b91e0dc085af"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/cup1/summary.json",
+      "sha256": "ac931f7a8f5f88aa7b04ae730e276148f22d3d0f0406ac96fbfdbce981f2b224"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/cup1/test_timings.csv",
+      "sha256": "258160c32354b952ec12a6f1486021eeb73d02d83c655b0f48a580ed558bca02"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/cup1/train_timings.csv",
+      "sha256": "e8db177a962078346b0b22cd10e8567aac06ce19e4f411ad5a6d61700d91547e"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/eraser0/environment.json",
+      "sha256": "4ba3d7303cccd2869766ef23cfa2eb08a7421b45f02703464d5b24186b0c6313"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/eraser0/manifest.json",
+      "sha256": "0dbf10729b6afeb15263fdff109e13c7401e9fe5c837d2271e7947ce8d5c3a18"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/eraser0/metrics.csv",
+      "sha256": "42535002843a6379955674942a5c9d581f7d706531a4d0d9a86d95c0f1e8864d"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/eraser0/resources.csv",
+      "sha256": "8dfda9c0e8951190c6ac6148f722db38c7c2fba6c5aed72ea3bee2413e68ad7f"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/eraser0/resource_summary.csv",
+      "sha256": "14003a6b690bea721cfb89f8307fb09c50220542da5ae4a614592f921c251643"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/eraser0/resource_summary.json",
+      "sha256": "ee025bb47d06e02b2edb496ff275c5192597b9efa8e481ca16ab3d71faf7c9f1"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/eraser0/stage_summary.csv",
+      "sha256": "76869fd0b597f4cbefdeebb6f0cf38c9312f31465a91db5bd40d3e0c8443579a"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/eraser0/stage_timings.csv",
+      "sha256": "66a827707fe91d480acb368d1a46f21c6d77dda02f8e8d5e37d4a24c62b3058b"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/eraser0/summary.json",
+      "sha256": "74e58fac8af3154f77ac0107b6aec01bbd119737e009eeae7636aa7837bcda88"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/eraser0/test_timings.csv",
+      "sha256": "378b777d2342fd166182289162599987deddc801dacff28f80839b1df681302b"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/eraser0/train_timings.csv",
+      "sha256": "3e326668e0827bec4bc4897e613f50efb28d932384f96643c0a08fae154d8390"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/headset0/environment.json",
+      "sha256": "4ba3d7303cccd2869766ef23cfa2eb08a7421b45f02703464d5b24186b0c6313"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/headset0/manifest.json",
+      "sha256": "9a7404cf27e86ec5cb98fae3a44c3b06bbd6f66451285453f32e5fa0bf5ddcc3"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/headset0/metrics.csv",
+      "sha256": "56c79cd81f5c6edf37b0f208d1663beab58dee5c7ca9f4193e9230348516791f"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/headset0/resources.csv",
+      "sha256": "7bc899d8519fb1a3747eb6f8ce42a9e53f4a422cb4212afbb6a9ed14d4f124aa"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/headset0/resource_summary.csv",
+      "sha256": "d2fc505e671177220c723c8072e1c9e077ef3ecec22a348b58474c61d8ec2fc0"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/headset0/resource_summary.json",
+      "sha256": "4891772921bbd6eb5c6de80e377fc995872ac44547c324cd8efd977daf46e11a"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/headset0/stage_summary.csv",
+      "sha256": "42915b1de43ae9ace14b04f5d91a3bbea5a7e1e81637d313df6b2879cf3491f8"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/headset0/stage_timings.csv",
+      "sha256": "a4caa4fc63fc936d43c2f926961c33ef1b6b4efb0082c4e2a497e318f8c82f7b"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/headset0/summary.json",
+      "sha256": "1025c3ccfffc6518e1c37d1b035a7d643ddd35967f7a7733dab5f5880305a3a0"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/headset0/test_timings.csv",
+      "sha256": "0034863feca587edf0a53070d70447e08ad16dca62d62cd96f79758bead8b102"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/headset0/train_timings.csv",
+      "sha256": "a94c47bf4774640a17e4a25eaed69e580ef05e6fe497824b3320e9c71b011089"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/headset1/environment.json",
+      "sha256": "4ba3d7303cccd2869766ef23cfa2eb08a7421b45f02703464d5b24186b0c6313"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/headset1/manifest.json",
+      "sha256": "6f177568e6d1ffa9a86b858c80679414d0af0f53deab2dedbda9b90d554c835c"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/headset1/metrics.csv",
+      "sha256": "c0848b22850ed6b613be75dd599dadb34a8023b5e02149a00506656e81db7097"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/headset1/resources.csv",
+      "sha256": "853877a2dd3b506accda3bd0d145aa3c929afcfd3677414bcf299bb0d59aaabb"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/headset1/resource_summary.csv",
+      "sha256": "8a01207dff6e46940936c50c115d639a84bf3500eeea910466a55b89e84d21d6"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/headset1/resource_summary.json",
+      "sha256": "88640c159473f324dfdc6998fe2c673670906aa4e974502499dc261ac4e87f0f"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/headset1/stage_summary.csv",
+      "sha256": "9cbd65bc6d341af49b496addd2c127f0a0c87b3017dc4d662a93b29d3f91601a"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/headset1/stage_timings.csv",
+      "sha256": "0eeae55e4e1f1b4013b7109645b720eb6b072e401ad80242fe49d8926dd55703"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/headset1/summary.json",
+      "sha256": "f188f9d036c5c4cba976d5f0adc52063c566681143cfd0fc143cf7e9d99819af"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/headset1/test_timings.csv",
+      "sha256": "959bde1ba2cd88235d21b78ea636c90264530985cbea925253e74492ec6f2077"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/headset1/train_timings.csv",
+      "sha256": "f4df090d68bd84b760e5a9a0681f2d6ec14851eb74f6a92769d211febfeb7396"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/helmet0/environment.json",
+      "sha256": "4ba3d7303cccd2869766ef23cfa2eb08a7421b45f02703464d5b24186b0c6313"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/helmet0/manifest.json",
+      "sha256": "9ec8d24f329c0d70f38fd59323732574b51255963ee5b486e223d546b0ec35a6"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/helmet0/metrics.csv",
+      "sha256": "a00b320f96d60486f5c150050828e235051bc1a0c79d595f6791e425cf61623f"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/helmet0/resources.csv",
+      "sha256": "00fd70bd72d4cd3fe2fb346f0e568f95c1975dcc5efdd87b98e6bb4b43a83dab"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/helmet0/resource_summary.csv",
+      "sha256": "01fe9694ef62c8bd913af962e65da1ff720c18124ed19a81b93693bf6aa67a35"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/helmet0/resource_summary.json",
+      "sha256": "39b4738467adfd759d57be95de8530ae36274ebf4e73a44f8e032bffc28b9a37"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/helmet0/stage_summary.csv",
+      "sha256": "87bac850812eb482cea30a947ab4689ce13b1c3d8879e862573af0663d6fede0"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/helmet0/stage_timings.csv",
+      "sha256": "2725319a4c40abd2b822cb4222ce405b761406ca6ccb7715b03c4f0f589fc13c"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/helmet0/summary.json",
+      "sha256": "384fb7cb36b55dca5c88ec4411ab3e0a307890668d413ff8ec1abc35a0463d43"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/helmet0/test_timings.csv",
+      "sha256": "fe06bb06f7b76da33c9fb0e94f0ff8e73940a5a7b3337fd888e3be44f0b31593"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/helmet0/train_timings.csv",
+      "sha256": "0931d16a89f297a28a5db74c92fe7ea9bbb7a5cb9f29533c6f189ba07fb8ebdd"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/helmet1/environment.json",
+      "sha256": "4ba3d7303cccd2869766ef23cfa2eb08a7421b45f02703464d5b24186b0c6313"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/helmet1/manifest.json",
+      "sha256": "ca7090bb0787b38626b16cdbfb1023ea60989fd6fbaee3045cd8c7914887e42c"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/helmet1/metrics.csv",
+      "sha256": "8661a9bf5fb1e98ed76912c7321c1d88c93e8cdfff03ed2c19bdaacae94d7d8f"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/helmet1/resources.csv",
+      "sha256": "9ecde824edefd6fcd06f0b3fa2aeec6607dc8acc3a481be27d5e6c9f012de15d"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/helmet1/resource_summary.csv",
+      "sha256": "6bddaad20a556ec04cd6aacf5ed94dbb2bfd5528e4f80e873e391af0b5929f08"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/helmet1/resource_summary.json",
+      "sha256": "080d73e3fd486cf4dbca601c1049989afdd193d3a26ea11b095801fff985a6ea"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/helmet1/stage_summary.csv",
+      "sha256": "ede8fd441d4a92837a8c3a6cafc07931a27ab76dde1a601103bdeaf91d9d850d"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/helmet1/stage_timings.csv",
+      "sha256": "16de5a4315a144cd8cca256faf546b2a0a3a3ae930b6dfbbda2d3f602491f99c"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/helmet1/summary.json",
+      "sha256": "32b6ccda423cee27da4c930fe6d472cf2642cbc51ea1c28cc2d4974e5ccccfd0"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/helmet1/test_timings.csv",
+      "sha256": "e9c855ecefb750bb2a04983e1373496f2734e795f326d0b5e0b529e0b4f850f4"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/helmet1/train_timings.csv",
+      "sha256": "e75bf6ede1395065ff0ef875159049140c306ac12f0cc4b8d22683b480beeec4"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/helmet2/environment.json",
+      "sha256": "4ba3d7303cccd2869766ef23cfa2eb08a7421b45f02703464d5b24186b0c6313"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/helmet2/manifest.json",
+      "sha256": "b68e4dcd9fb36e666ce0f6ee39560953bb5e4a8ea1905c4e2a80f7be7483480d"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/helmet2/metrics.csv",
+      "sha256": "141f90776be64117c68513825c93976fc02eb77beec1318184a3c986d81d2af2"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/helmet2/resources.csv",
+      "sha256": "b9f45305c4dc3aa8b795ce9c67d89acf2bb2c99339a020fb0d4486073969bc83"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/helmet2/resource_summary.csv",
+      "sha256": "c827999b1960f56cec21fe579ecaf64bc363f9f5c49b8727c455407eeb2ce9e9"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/helmet2/resource_summary.json",
+      "sha256": "0cbceb16d1ab34ecc93f5a67b2e2f249582b9d6805bc8785807bc9d5fc0108d5"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/helmet2/stage_summary.csv",
+      "sha256": "98814a8422f381d5dfcd8abdae0da35a5951a51afa3e2db3b6ccbf574cb05a85"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/helmet2/stage_timings.csv",
+      "sha256": "fd97cb8e04c81feff015d9b94f360d2a4d5b8c4d9d0476e24553361b71863f86"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/helmet2/summary.json",
+      "sha256": "eb5d5a41d41b9c790760d29ff288a20775451370d7fdebdbecda8afcc578a0eb"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/helmet2/test_timings.csv",
+      "sha256": "2b9355d4b46afdb2f585f14375a598de0478e75f517b9f447cbf99d3a55813d7"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/helmet2/train_timings.csv",
+      "sha256": "6f9170c2da3f73776a0700ab9442e2dab8c96972d1d25e05c99257d0b162e4c2"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/helmet3/environment.json",
+      "sha256": "4ba3d7303cccd2869766ef23cfa2eb08a7421b45f02703464d5b24186b0c6313"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/helmet3/manifest.json",
+      "sha256": "597577b0aad6d484096c04ed089b9d12caa2abd184b8c2436e3597469068bcd3"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/helmet3/metrics.csv",
+      "sha256": "3ffce1444441a4c286d51b1201aa7f435aae015cc3116bdedfc0f3cc3eaa41d8"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/helmet3/resources.csv",
+      "sha256": "7e31b3b243f40006573db5b0d60fd37adff511304021b3cd8cb3dda1c42bb087"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/helmet3/resource_summary.csv",
+      "sha256": "5153facf523634a31d30680ec5e4cb841cc6fd1dbd3922f1b7fa6a896bd9670f"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/helmet3/resource_summary.json",
+      "sha256": "3ef675a9532c233a4418fe89b4c1be3be40cfc62b660c85fdf9ecff84efe215a"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/helmet3/stage_summary.csv",
+      "sha256": "ece61a2fc0b33f027621bdfccd9b6e4c4dc98d3a111b3a1c7b3aa63ca5c002c0"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/helmet3/stage_timings.csv",
+      "sha256": "6def2ab169bc95b7154f51985738d9660358ab793916f8b79272e1e0d16a5cef"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/helmet3/summary.json",
+      "sha256": "8e2db894e728c4ccde9420f40fcc62880047d286b9771122eec77197e05bcefb"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/helmet3/test_timings.csv",
+      "sha256": "e481d44d057721227f366adb6aee9bd13d357c7b1b1e8e0373d697dacb7c0ad3"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/helmet3/train_timings.csv",
+      "sha256": "9bef65b1da6ce1f6faa500d522ab48ec97592997fa97aeba38ccbd6f4757e95d"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/jar0/environment.json",
+      "sha256": "4ba3d7303cccd2869766ef23cfa2eb08a7421b45f02703464d5b24186b0c6313"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/jar0/manifest.json",
+      "sha256": "0d14af59ac69a49adfe28a7b4fa200984b397f7cc91b72794117562c83b36987"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/jar0/metrics.csv",
+      "sha256": "04df8e21877305500ce21aa0df3f15e29ca8d4bd93c2512213ac40bc66079342"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/jar0/resources.csv",
+      "sha256": "c3000683eb1253ca9362f8f4956178c6f302701d7ba7df934ec5c9c1a34a497e"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/jar0/resource_summary.csv",
+      "sha256": "c72172df20c4a8f679bd34acc77938fe48afe01ed4716c32140bf7d094b2071f"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/jar0/resource_summary.json",
+      "sha256": "9aa5e6c0e7d64f6fb7a082063df45c24570cc51e2b034afece726d3e5f539922"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/jar0/stage_summary.csv",
+      "sha256": "6dc76a3b7e3a741e8a0f9bfa54754dd4099da0247006e09d0d517ff5632b3d60"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/jar0/stage_timings.csv",
+      "sha256": "1fc94430a04a7907c50bb6155d3e832266798d7064209b39c9caa68af4c80aa3"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/jar0/summary.json",
+      "sha256": "0c7bfe52d50b59eb50178d9ea2ac05ecb2cf2eb1035c80a43bddb745d7c2d96b"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/jar0/test_timings.csv",
+      "sha256": "fde06ecac4ffac600f5e3954c4c1401764aacb2b4503a3f1c22b9c736c9b5696"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/jar0/train_timings.csv",
+      "sha256": "3693010c8c69b2442c88032509a157aee5f4e9f8a0388eb825be205e12dfce12"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/microphone0/environment.json",
+      "sha256": "4ba3d7303cccd2869766ef23cfa2eb08a7421b45f02703464d5b24186b0c6313"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/microphone0/manifest.json",
+      "sha256": "d3c882bcd87bcc17b6a79ff3fb5b8e5404c6bec226ce96100faa32d0bd5e9461"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/microphone0/metrics.csv",
+      "sha256": "d283bbbaec758d0fb817def9c20175f24f337eecb2407227839e6200fb5695d5"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/microphone0/resources.csv",
+      "sha256": "cd555855019f8933c1bb5995eb26eeed66e856ecce6d771757989d87fdabdaa7"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/microphone0/resource_summary.csv",
+      "sha256": "2eba82aa7be9c288c83154daddeba49657d64110d8ede71fb4588848d4306172"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/microphone0/resource_summary.json",
+      "sha256": "6a3ac79550cbe8f73834017f8dd8a777cca7d687431c947af9e4e7f2729afdce"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/microphone0/stage_summary.csv",
+      "sha256": "8cfcc4c611ee26b1edcd5c0031ce4462465a56ae7ec88d3aba1fde517dd76dec"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/microphone0/stage_timings.csv",
+      "sha256": "49719f48dd90923bafa93e9ff98c022beb3f45a72fc1bef802c75e5ce62460e3"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/microphone0/summary.json",
+      "sha256": "33aba125189a8e890146707e3a08582b2634978b043ab9e3a4a28e7e4596b869"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/microphone0/test_timings.csv",
+      "sha256": "08835a0eaa4d465014d1c914896dfc1ec981eccdd812c57cf86e204848624123"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/microphone0/train_timings.csv",
+      "sha256": "6d1c0af5f4cd8abfb89368b0029a781c31d19d6022b425913975e36a2320c6e2"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/shelf0/environment.json",
+      "sha256": "4ba3d7303cccd2869766ef23cfa2eb08a7421b45f02703464d5b24186b0c6313"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/shelf0/manifest.json",
+      "sha256": "02887ebe73fe59e67151933f144f6d748dc51cda66ca311daceababf777e63cb"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/shelf0/metrics.csv",
+      "sha256": "1c18d34bcb2f7dd9e9f3d183eb3f194f521ea0bfd240dfd6cd7838bb30cb19cd"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/shelf0/resources.csv",
+      "sha256": "62e8de55eb1a30242c27ee65ea9d2c594332e8539c63db13acf5a039b9ecb297"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/shelf0/resource_summary.csv",
+      "sha256": "fbfd7443af6111d0094e64099eedd2913ba2eb419be975789677fdc5797aea39"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/shelf0/resource_summary.json",
+      "sha256": "43fea657310c8e7c7c631e1c9aed8d380f1f64c1b59865a983b82af93e6cc172"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/shelf0/stage_summary.csv",
+      "sha256": "7a22312f71f580257ce4355149099f9900a32ec749a9217aa33ff89a6aa50e36"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/shelf0/stage_timings.csv",
+      "sha256": "c759e0fe3b6f43209212edfed27b89ac16eda9cffb156fdba45df52ea72813e0"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/shelf0/summary.json",
+      "sha256": "f728b4d5fb22476fea7e581cf71c2195f31bb78211028c98d5a6c6a44e9ad302"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/shelf0/test_timings.csv",
+      "sha256": "240e4e0b7804efd46eab28c737695c7dd37fca8b71cb7f8197ce98e98419571f"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/shelf0/train_timings.csv",
+      "sha256": "b8ce53fb73f8dad92ad87490cda3e63cad114f3a4d09ed748b15c506aa88083f"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/tap0/environment.json",
+      "sha256": "4ba3d7303cccd2869766ef23cfa2eb08a7421b45f02703464d5b24186b0c6313"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/tap0/manifest.json",
+      "sha256": "ce7ce41fb1758e510c6f3254e1d10dacca8bb4ef056a8441bfa2af2ea8daf4f0"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/tap0/metrics.csv",
+      "sha256": "cf99e50a96f10ba34ccce42c1c53e6ff7d3cc5db904bf5d4857105544c7a92af"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/tap0/resources.csv",
+      "sha256": "9ac99a54ef9c71c7e7d1db391bcb06c31b5908c1611fee6bbb08804c671b01b1"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/tap0/resource_summary.csv",
+      "sha256": "dcccbaf181172222cc4fc93db26b8e44ceec95bfeb0d029c5b2f0f17b00357d6"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/tap0/resource_summary.json",
+      "sha256": "27bd663033b9bb1da1d0d734b72ad3475006f0de3f90f08c5d9f0aa16051a226"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/tap0/stage_summary.csv",
+      "sha256": "bd727fe41de9eb7c28825f61dbd36911e492c5f3685be37f05504a8bc8631e99"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/tap0/stage_timings.csv",
+      "sha256": "1f5f4c9a3012c736d9d447d71df4c9710fc8fc47849cb917a72cae6726a3e4cc"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/tap0/summary.json",
+      "sha256": "8306be868cd71985067a7b1a773aeca91d182fdc029280f9a6bcf36fb4854554"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/tap0/test_timings.csv",
+      "sha256": "25d7f2652ff20edd0e59f2f886e59d37bd56ecd2d003e0dc10670fb918d6109b"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/tap0/train_timings.csv",
+      "sha256": "d780b2325d5ce9037411d9127456bbcf8ad8ab923f420122f0ad65884f849a71"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/tap1/environment.json",
+      "sha256": "4ba3d7303cccd2869766ef23cfa2eb08a7421b45f02703464d5b24186b0c6313"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/tap1/manifest.json",
+      "sha256": "623e960d9b0b0fb8d668a44870b5f316dffb7bd0b9ba484328f7e07e92347fae"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/tap1/metrics.csv",
+      "sha256": "015c87ba8515bec8db59d3ca506026ea94dafa0a7923b4be7dbfa798ef22bf45"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/tap1/resources.csv",
+      "sha256": "feec40953782a0c1d88088e7da225597255a692182f5d9594968a300f5e32ca6"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/tap1/resource_summary.csv",
+      "sha256": "45334c902ad4facb21148d58dc886c77c23092f1c18183bb07c16415f89e7b51"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/tap1/resource_summary.json",
+      "sha256": "11d311610b68e90a0849ed512a5d5ef803a1b169f1a3e9e3e2b57cf0907bf85a"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/tap1/stage_summary.csv",
+      "sha256": "b3786de683fc77a52d3376dc2c70cde224ba8462b4fd5dd47336cc2975708435"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/tap1/stage_timings.csv",
+      "sha256": "f1c4b347c891a751715173bbbba10ca8c6088dde11972046cf35c19bdb46afa3"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/tap1/summary.json",
+      "sha256": "abcbf3fa177ee1a7e5b028fdd22fff3ca54ae0e8b7afe31f0dfb50bd4bb091b7"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/tap1/test_timings.csv",
+      "sha256": "ab470474f3371a58d206901777da94c725a806bd4348e34e3ef417e75a344e16"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/tap1/train_timings.csv",
+      "sha256": "37fcbd398b7c09edd56a039da6192cf5974241e2b406ca8c301f4689caf106ae"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/vase0/environment.json",
+      "sha256": "4ba3d7303cccd2869766ef23cfa2eb08a7421b45f02703464d5b24186b0c6313"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/vase0/manifest.json",
+      "sha256": "81eac3574f84f056cf1a1da8cb84b3c07bc172bb7f2c5c76a5a841435dba3d60"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/vase0/metrics.csv",
+      "sha256": "1bb3b698de3e84a582b616e7a1b9bdc99d18c50433ab1131643aac669ece8d88"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/vase0/resources.csv",
+      "sha256": "f301f50bd5da4f8c0dfe4afe73243b1c46484fb7ab5523aab60802bdce829267"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/vase0/resource_summary.csv",
+      "sha256": "87a42c7115d93ae1a82b2602d76c5720c542af573e76be5f3a5a1cae3c181b2d"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/vase0/resource_summary.json",
+      "sha256": "b5b94381c89ba728440fd94b6eabd16797cc473ecea24c50ee9ca4dea39cc9de"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/vase0/stage_summary.csv",
+      "sha256": "e7adf1701e884dd746538251e506f765a87134f88aba342dafcb9045abf1cefa"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/vase0/stage_timings.csv",
+      "sha256": "711875848e18f62ba44626c484d684e9bc3223978f080db4f309f703bdbd5868"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/vase0/summary.json",
+      "sha256": "64af5aeafcc637f5be90e24423c9f7e2173cbfa99d249aabea50bd4e30b9fbf9"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/vase0/test_timings.csv",
+      "sha256": "38ee4a2cd65517d2fdfd254624f3d382f659520ab3598cab82201f81a9f8c307"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/vase0/train_timings.csv",
+      "sha256": "0a040b2353af5bbad8818dee1a68352409327ecdd05e1704aaf79ed00fee4280"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/vase1/environment.json",
+      "sha256": "4ba3d7303cccd2869766ef23cfa2eb08a7421b45f02703464d5b24186b0c6313"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/vase1/manifest.json",
+      "sha256": "070c0bed9734c4f972cc24f5028b956c14f4e39e401f0b439c39987cf76dc951"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/vase1/metrics.csv",
+      "sha256": "e1a064ae716dbe5fa5790959955dde37338d5753a53840eca1208b12f2228cc0"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/vase1/resources.csv",
+      "sha256": "135b6e3d98416e3ba2a112789a033c035915bdf9c5e473f59ecc454945286793"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/vase1/resource_summary.csv",
+      "sha256": "1532cd5d674706bb421111e394fba01e73ad538a8d176ec179ee7d032a09cec4"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/vase1/resource_summary.json",
+      "sha256": "9adc043636716e75e3594c48fca8d7d9e073fcde9f1a2b8d4975acd492a933a0"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/vase1/stage_summary.csv",
+      "sha256": "b5af54fadef5b4acb36fceb336cff565ced06ab9fcd5f05b8911e7c994f76ae8"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/vase1/stage_timings.csv",
+      "sha256": "c438fd4d9461bb00c030c5de7373938aa1252fd63fa8fd08348de2f54d29c2ab"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/vase1/summary.json",
+      "sha256": "c1b478e3676dae026226263f345a4b3ecbc723ea67c93f84ed11ca3cc53d7eab"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/vase1/test_timings.csv",
+      "sha256": "5cf3db14e4c52e5388071a25d6eb36d5ba556679cb8aa0792d67cdddd5523ca2"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/vase1/train_timings.csv",
+      "sha256": "8cef1592682aed59477b36d85a42e8392614b38abc66cc87d4ec5a31f8707317"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/vase2/environment.json",
+      "sha256": "4ba3d7303cccd2869766ef23cfa2eb08a7421b45f02703464d5b24186b0c6313"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/vase2/manifest.json",
+      "sha256": "ad71f9b093f17f2862ab4fe8d8d4d944553f471f3f92944e2c95b857e5499afa"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/vase2/metrics.csv",
+      "sha256": "b885a70c605c6382672a4a363a1518423b468b197dd0e1f78f26fcfc6e530d4e"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/vase2/resources.csv",
+      "sha256": "7480c30651f8137a6d7611cfc04116d8bb2d0e7bec10806340c368504d714fc8"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/vase2/resource_summary.csv",
+      "sha256": "fca13e88b5b2eb409cba8cc20879a284585a56512cb24c1312011fab92306e3d"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/vase2/resource_summary.json",
+      "sha256": "594e7256d854b4410edc80cb2627c51720496888959c122b4d3a98fa4764b4bd"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/vase2/stage_summary.csv",
+      "sha256": "c2273f4a55453a1f6b1f32a25aa4cc7c3eddaa53f6e64dd7c93c20d50b8b658e"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/vase2/stage_timings.csv",
+      "sha256": "e55c1233e79c5ee68c1d2559c7a157093324bcf23302382445106d5e95bd17e0"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/vase2/summary.json",
+      "sha256": "a15cceb3c3244119f52707af8eb562000c07aff283f0f69adb3abe6d0318a7f0"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/vase2/test_timings.csv",
+      "sha256": "a19fe3c11a398341683f9db926342004bdf4ab59fc3709aaaebe04ee0e01d51c"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/vase2/train_timings.csv",
+      "sha256": "7f6190f912b9da0df100df30b9f0f36dd303e935f879218cca33fc99598e267d"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/vase3/environment.json",
+      "sha256": "4ba3d7303cccd2869766ef23cfa2eb08a7421b45f02703464d5b24186b0c6313"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/vase3/manifest.json",
+      "sha256": "7685d0ebdf7c5e7e81b398fb994a2bdc2f0156cb2e53c7a505b59c33aad0bd84"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/vase3/metrics.csv",
+      "sha256": "d28ed0622bcf11053db94de84ec5457391dc10377c33d400c94666a069c16c72"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/vase3/resources.csv",
+      "sha256": "56aade04897684278f16d703deceb5f27af1afb7b5906f3286f151a14ca3d33e"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/vase3/resource_summary.csv",
+      "sha256": "f50e20a1abcc393a917a90589b36789f34a71cdde3f7293b1c74511c552bb8a4"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/vase3/resource_summary.json",
+      "sha256": "31e86dfd88e1d2296727712a7cd2af0db3b6153cc850ff8f6e21d5a29297cdf2"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/vase3/stage_summary.csv",
+      "sha256": "cec9728f98211e5dfc048cc37d83cb7485a540febaba8df8f7d44e3cff487d9d"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/vase3/stage_timings.csv",
+      "sha256": "afb46b6f6005686ee5ada4348c2e09b6ab7ab4e36d7a43dc2b2594e7c0dda2f8"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/vase3/summary.json",
+      "sha256": "2b71ffe5d655b95285d2f42b23e258329ec005cfeeb598f4fd1bfb1031618805"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/vase3/test_timings.csv",
+      "sha256": "49dd4ea96a30018ef8ae16769b771807454b931306df748bd79d6405a107fdcd"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/vase3/train_timings.csv",
+      "sha256": "c03208e096a0c1d0633afacb236d53156af267ceee488728209ca9ad99151bd7"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/vase4/environment.json",
+      "sha256": "4ba3d7303cccd2869766ef23cfa2eb08a7421b45f02703464d5b24186b0c6313"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/vase4/manifest.json",
+      "sha256": "912e197a08a4d66ec9055f071cc818b3b0a0dd5bb35c00168049f2f5b8d2aa52"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/vase4/metrics.csv",
+      "sha256": "e62fb6a6215fe23520b0fe062f38f4ef320793a4a06fd9eb719366c5d0474519"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/vase4/resources.csv",
+      "sha256": "b724d22c2095146b40c1d13950bb3ddb25d53e08697a60a9f4d5b66aae372a4c"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/vase4/resource_summary.csv",
+      "sha256": "0cf4cf50e566106f51833e34411c1cead6acf7da3b8ffb290e3a3173a325820a"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/vase4/resource_summary.json",
+      "sha256": "e808ff20208a26d4c48b73fa7e0a20e47a851da26cbf39c378554447ff3954e9"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/vase4/stage_summary.csv",
+      "sha256": "227ffac2543d3ba65440fddaadf52f6f8d84f31ad7194f36fe8ad110be6efdfe"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/vase4/stage_timings.csv",
+      "sha256": "927a921999ae2f6d60864b6e838fcc3aebfd7f070645c8761f86c480cb8f5a76"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/vase4/summary.json",
+      "sha256": "d3d1e362edf56335a89edfcf864d95d2efd0bcb78697373b4ae6d2fd37669aaf"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/vase4/test_timings.csv",
+      "sha256": "9fbe9dcf26da1dd2c160176466d0215210e7c84a7512b47bbee154420d09d9cc"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/vase4/train_timings.csv",
+      "sha256": "2171b05f74ea788ff2c6b532012c4bb425018521026537bec65a566cbec3873e"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/vase5/environment.json",
+      "sha256": "4ba3d7303cccd2869766ef23cfa2eb08a7421b45f02703464d5b24186b0c6313"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/vase5/manifest.json",
+      "sha256": "9400f239233f7cd60ba30b09086dd24a00146ef3a3f8e3ee9903e428ce2d44d2"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/vase5/metrics.csv",
+      "sha256": "e5ec7b182092b3135568933f421d015086c78d55aa7c7033d43ee2053bfebdda"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/vase5/resources.csv",
+      "sha256": "3de8cc95091b3ad52b50bb5c0c103a1512fe103e9e22da88a049453d693a5549"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/vase5/resource_summary.csv",
+      "sha256": "57b94f25867265c7cd3d5ce2913e147cdf6cf89a3bb125f2c217c69a517e2616"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/vase5/resource_summary.json",
+      "sha256": "0675e36d7b2c0da33c04e10802ccc86315b17193ba3c2150f555a5348ce61772"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/vase5/stage_summary.csv",
+      "sha256": "6c3b533f03bbf98d6ddc4eb658e02471297440c56c42ed6926ef3a421c5f3fd9"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/vase5/stage_timings.csv",
+      "sha256": "71444f6129d551487998b8f032650f8206f4043ea238aa249888684078fb4834"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/vase5/summary.json",
+      "sha256": "cb21b7087fa71c186f4274de0e355f5db45723f4f8c023ee78ee79bcf5ca6d41"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/vase5/test_timings.csv",
+      "sha256": "36044e499e934b1a95a1659aee3cfa926af02fea4c20d819c7e084eb2672aeea"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/vase5/train_timings.csv",
+      "sha256": "5855aee6ce148253e3fc96cf1b5b3f88b43f3484fe53ee2596f5395f6f59e523"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/vase7/environment.json",
+      "sha256": "4ba3d7303cccd2869766ef23cfa2eb08a7421b45f02703464d5b24186b0c6313"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/vase7/manifest.json",
+      "sha256": "d1d3a9479c9ce3545939d801bb7222c6bf78adba0029051f9ccd116bbd86e225"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/vase7/metrics.csv",
+      "sha256": "5a48d22c4e25ea11e2a9b9a1301ece69803d52503e1527452f516da6071843e4"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/vase7/resources.csv",
+      "sha256": "51c11c9c08ebd0f23cc1c4eb9981695a8fe11f02c4ee8f95d94de5239fce8488"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/vase7/resource_summary.csv",
+      "sha256": "5fe778a1a66ad31f310038c7d401d2cd70e4ac9650484921ef6aa78bf1714b6f"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/vase7/resource_summary.json",
+      "sha256": "161c3915404f020809468a41b844fe4c3b161d1a0b7dfb6755d6f0f19f3bc8ee"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/vase7/stage_summary.csv",
+      "sha256": "8ac975bdad9e39c40579b0ada2eae2b7638c03fa70d3a672642a5036c5651ca8"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/vase7/stage_timings.csv",
+      "sha256": "b1e6f0aa49e00688c3687361f748649b1ef67aab48ab3fee716fa5fa426a9e11"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/vase7/summary.json",
+      "sha256": "3af3594bfc0032a2aa9ac34e29fa577df1c44efb0d89ef0e1d2f8f1180b40dc1"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/vase7/test_timings.csv",
+      "sha256": "41d228a2c0b50689f06d79ce60e8e723d26681a8aa3d62758f7d6f9b04ec7e00"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/vase7/train_timings.csv",
+      "sha256": "9c8f81dfd864f5a26d9d399ccda7bcbe78c021f961d6265cf4d025c2ce6a7452"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/vase8/environment.json",
+      "sha256": "4ba3d7303cccd2869766ef23cfa2eb08a7421b45f02703464d5b24186b0c6313"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/vase8/manifest.json",
+      "sha256": "55c5c2f0b92ee52f974f79112d786345a85d6669cd72c8d378d7351b2f1f4aa6"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/vase8/metrics.csv",
+      "sha256": "cad4ebe3070b57e48cd2cf334611b1dc5475cf42c039db2b6dfcef02f6fefed6"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/vase8/resources.csv",
+      "sha256": "49be8118729f66ab7af03349f2c0fc7a71df406724eaa431783eea40ce92f32f"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/vase8/resource_summary.csv",
+      "sha256": "a6b9e02034483c3665d521032a54b9b779518bd5312b5b4d131b4051cbb24137"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/vase8/resource_summary.json",
+      "sha256": "48e55419efd1c3e4d39600d432ef4fd9c665806a40ec3bbbaa43097389364c65"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/vase8/stage_summary.csv",
+      "sha256": "294f8077f2ed96ee02791ce1e48fca94d0ef9e8a5cd0081d0d516dc9af74e01e"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/vase8/stage_timings.csv",
+      "sha256": "0fb43ee1bf5876be57c0ff85880b89a1efcb84037813fe6cbc06c4e415140c4c"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/vase8/summary.json",
+      "sha256": "c3a3d29230a50d03bf991025a6db5702aede79addd18875160e8c3ed4f2fee8d"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/vase8/test_timings.csv",
+      "sha256": "bbb860fd0aa750269f0c87a660d73f10cad4aa1a07cddcfe5982b75922cbf5a4"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/vase8/train_timings.csv",
+      "sha256": "6b6a9ef5d9577d991ef142105b2ebb6740ea7f1ce8cb59e58aef3cee06632c70"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/vase9/environment.json",
+      "sha256": "4ba3d7303cccd2869766ef23cfa2eb08a7421b45f02703464d5b24186b0c6313"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/vase9/manifest.json",
+      "sha256": "9f24715d18465297028d8260637cfca9778e2f54aee150264cdd1640c65832aa"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/vase9/metrics.csv",
+      "sha256": "976314bc22919abc9f798c85111a5be7fbe0fb7a7d427fb18f81071fbab9b6f0"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/vase9/resources.csv",
+      "sha256": "f3b9cde7b5250e2a98868d59ec0c2a996bb18b1ad967dff68b5b110673461011"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/vase9/resource_summary.csv",
+      "sha256": "87dbd29136981c4be3df4bca418cbbc1cb577d2f10e2353eed13bc4336a9acbd"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/vase9/resource_summary.json",
+      "sha256": "fef608748689a4a36ab85a44100818f85f840665a08c06cbbc487c5dacd07277"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/vase9/stage_summary.csv",
+      "sha256": "5493d6d232c72f2e40714937b1180413ce83d9c6cdcf69a10fc7ba680403124d"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/vase9/stage_timings.csv",
+      "sha256": "9fe259f3c33c604d26c4fa86ee1ab97b7f7f044890096e288a4dea68108ccf27"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/vase9/summary.json",
+      "sha256": "89b8d74535b01e762216cd64ce0d0f3218f3181e89905af861d270dad7fa6412"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/vase9/test_timings.csv",
+      "sha256": "a89a9c2c98cda642490088287d32872808dd06b6b6754834a625c9e68e3a2275"
+    },
+    {
+      "path": "gpu_kdtree/shapenet/vase9/train_timings.csv",
+      "sha256": "5e34afb1995328231c77a83781cfed51b4c18547dae1b78f15a983faea1d08d5"
+    },
+    {
+      "path": "official/minishift/button_cell/environment.json",
+      "sha256": "6d0ced82268d6f5529a05a5fb8b933adce31ae0c59011efa657560975b5be0dd"
+    },
+    {
+      "path": "official/minishift/button_cell/manifest.json",
+      "sha256": "560d2acc671d82e3996f6ad21923bada25e7d18b909765c3504730fe9ce6a9bc"
+    },
+    {
+      "path": "official/minishift/button_cell/metrics.csv",
+      "sha256": "44a4441e3a448f0e8c8cc208dd2d4d329e9e26bc375393adcc6bb6a1d316455c"
+    },
+    {
+      "path": "official/minishift/button_cell/resources.csv",
+      "sha256": "f9b8381e4c7d2d6238623850709e676f13de373678ce3b100ceddc3d3e10d9de"
+    },
+    {
+      "path": "official/minishift/button_cell/resource_summary.csv",
+      "sha256": "aaa0681478ec455574fa4291378429636bd564c23f71d9e7c17af7f61453f0af"
+    },
+    {
+      "path": "official/minishift/button_cell/resource_summary.json",
+      "sha256": "e7dda121e56afe8148ab96267899a8005026888b28a937e5ba0aebaabc5441fd"
+    },
+    {
+      "path": "official/minishift/button_cell/stage_summary.csv",
+      "sha256": "cf53d8d28ae00053cb3e0782c56363e18049e60c64ae51b43ccf558689859a02"
+    },
+    {
+      "path": "official/minishift/button_cell/stage_timings.csv",
+      "sha256": "86d151a560863e198825c29c5fd7ec53c83b6ee1ead37cd97e75f06b75724435"
+    },
+    {
+      "path": "official/minishift/button_cell/summary.json",
+      "sha256": "32dd353fd528aa61bb0b9d3aa0ee744307fa3bccc7579955c3f3f6c91e3871f4"
+    },
+    {
+      "path": "official/minishift/button_cell/test_timings.csv",
+      "sha256": "aca3c942d80d07ce7a32e13ffe4d22168a7c9bb043bcd2262deb114074386e7c"
+    },
+    {
+      "path": "official/minishift/button_cell/train_timings.csv",
+      "sha256": "d50468a4a7a0f1163572cae342d165ef698562f61cbf107ddea45dfe44284e6f"
+    },
+    {
+      "path": "official/minishift/capsule/environment.json",
+      "sha256": "6d0ced82268d6f5529a05a5fb8b933adce31ae0c59011efa657560975b5be0dd"
+    },
+    {
+      "path": "official/minishift/capsule/manifest.json",
+      "sha256": "363d8099e5fe9859af51e0a9410b0cb92ccae93576f3e60c837548c20db1c24e"
+    },
+    {
+      "path": "official/minishift/capsule/metrics.csv",
+      "sha256": "12e79ff4b1c9903893c1204109d4110784a9acaffce473e89499357c32e78945"
+    },
+    {
+      "path": "official/minishift/capsule/resources.csv",
+      "sha256": "c5f7c99f191c782718da64cd93e223511ddfc414fca341cfcf5b6fb567ac5fc9"
+    },
+    {
+      "path": "official/minishift/capsule/resource_summary.csv",
+      "sha256": "8dc40f3d68403c3d35afa70d48ac881f844a5cf66675ef74db30441eba7cb078"
+    },
+    {
+      "path": "official/minishift/capsule/resource_summary.json",
+      "sha256": "dc31750883b90369686685b35373588d854f27e75e1c042f26748a054cab3584"
+    },
+    {
+      "path": "official/minishift/capsule/stage_summary.csv",
+      "sha256": "4e516d64e8b845ae03b3e29aa9b9d20dfa759c20acf90d57f56b3559c8626126"
+    },
+    {
+      "path": "official/minishift/capsule/stage_timings.csv",
+      "sha256": "fc8c80498afabb69fd90c6a730490f904e60ad136d38956196ea2c5192a914c5"
+    },
+    {
+      "path": "official/minishift/capsule/summary.json",
+      "sha256": "efe2c6dc2bd48cc54f240bca2d463dc44e3ff817fb1c0d49a1d6260f14a7786b"
+    },
+    {
+      "path": "official/minishift/capsule/test_timings.csv",
+      "sha256": "874edafee44ea7e4454e9faf12d0451c1400a9811abba59af40ee0d2de0cc93a"
+    },
+    {
+      "path": "official/minishift/capsule/train_timings.csv",
+      "sha256": "d4b6eb1e2b167678774d0378478635f941d0d98b3acc60a968a38b315e767f5f"
+    },
+    {
+      "path": "official/minishift/cube/environment.json",
+      "sha256": "6d0ced82268d6f5529a05a5fb8b933adce31ae0c59011efa657560975b5be0dd"
+    },
+    {
+      "path": "official/minishift/cube/manifest.json",
+      "sha256": "096a582157862e30331fee294b7eaa37bfab4bc220299c7e1c726b88c2afcbe2"
+    },
+    {
+      "path": "official/minishift/cube/metrics.csv",
+      "sha256": "e9d3b3535400f3b262d68d3549c4079573360c03e1c432d908cb7deb622051ad"
+    },
+    {
+      "path": "official/minishift/cube/resources.csv",
+      "sha256": "487339508673906925ebb62a22a55a71d732914f36ea22ece75648ca2e510869"
+    },
+    {
+      "path": "official/minishift/cube/resource_summary.csv",
+      "sha256": "ea4b499bfaab06597cfd93ff1f0a49cbb62771a1e40788461333eb864bd27b10"
+    },
+    {
+      "path": "official/minishift/cube/resource_summary.json",
+      "sha256": "e5f84f939af8e3b6a06208bfc2966d312bdb18e8c43a651ebc90e67eb7d545fd"
+    },
+    {
+      "path": "official/minishift/cube/stage_summary.csv",
+      "sha256": "286c11ea6938dc96a2773b765d1a7d8aa945846228607b6fcfa537ad174d155f"
+    },
+    {
+      "path": "official/minishift/cube/stage_timings.csv",
+      "sha256": "623cc367a801293071ed6c2f18b5f0154644d6e7d52b35215317f4c05bb388e5"
+    },
+    {
+      "path": "official/minishift/cube/summary.json",
+      "sha256": "4ad6c864238a400de1cd6ecc45c787807b7b23034e11017c605c69576a01653b"
+    },
+    {
+      "path": "official/minishift/cube/test_timings.csv",
+      "sha256": "177a8c7f9cfb7c929d9189f33605469cc7797544234f22cad1e88cb92ad43f34"
+    },
+    {
+      "path": "official/minishift/cube/train_timings.csv",
+      "sha256": "a06630541f396fe51281a30392b98fe70c298a12affe10e8215e006e7478678b"
+    },
+    {
+      "path": "official/minishift/flat_pad/environment.json",
+      "sha256": "6d0ced82268d6f5529a05a5fb8b933adce31ae0c59011efa657560975b5be0dd"
+    },
+    {
+      "path": "official/minishift/flat_pad/manifest.json",
+      "sha256": "c864b3883cb071fc2efdbf8882a35564c10cb3b6d58b32fd7b1056d427e808a8"
+    },
+    {
+      "path": "official/minishift/flat_pad/metrics.csv",
+      "sha256": "0d8bc4ae9960c8d153c1b7f42dc0a9897e1c475275992b3d2454e3fa0d1fe32c"
+    },
+    {
+      "path": "official/minishift/flat_pad/resources.csv",
+      "sha256": "963730179f0daf26bda2c43a931e0a144f22d05ca91299282c1c8776b7c7fea1"
+    },
+    {
+      "path": "official/minishift/flat_pad/resource_summary.csv",
+      "sha256": "47e881909a3ca775e102eebc48177395bd2bcec4b5fd4ea003bb39c6cf587ec7"
+    },
+    {
+      "path": "official/minishift/flat_pad/resource_summary.json",
+      "sha256": "82022fb3aee54889b0825da0c39a37ce4e3bea1e1f38305a7b008981e2af5d29"
+    },
+    {
+      "path": "official/minishift/flat_pad/stage_summary.csv",
+      "sha256": "be822af79db1cf29c5d25cc212dcb9e78723f279f01bdbe471692011288b9ba2"
+    },
+    {
+      "path": "official/minishift/flat_pad/stage_timings.csv",
+      "sha256": "c8ae6671ddd5dd1b1411ea073fbb6d8d50849f617de8c9cb2233aa39e9859274"
+    },
+    {
+      "path": "official/minishift/flat_pad/summary.json",
+      "sha256": "9ed06b2261f98c686ef9dbe690068947397d062ab838f94a263bb694fcdedcbb"
+    },
+    {
+      "path": "official/minishift/flat_pad/test_timings.csv",
+      "sha256": "5e0b5d9ee29f4a69f257d81bb315c0b18c1a3f281d2352eb535922a1ba59a7d6"
+    },
+    {
+      "path": "official/minishift/flat_pad/train_timings.csv",
+      "sha256": "791843480d39a38ce46fcaaa68eeaaf8f1c57683dbe69d24513aacb65cb26bd4"
+    },
+    {
+      "path": "official/minishift/light/environment.json",
+      "sha256": "6d0ced82268d6f5529a05a5fb8b933adce31ae0c59011efa657560975b5be0dd"
+    },
+    {
+      "path": "official/minishift/light/manifest.json",
+      "sha256": "fc960112510cd229591289c4a479a692c9622f0999e9d9eb417630449c37e801"
+    },
+    {
+      "path": "official/minishift/light/metrics.csv",
+      "sha256": "581602e4250aa90b5934c01f98abbbb455336aab0a8ca8c2ff80911569f20050"
+    },
+    {
+      "path": "official/minishift/light/resources.csv",
+      "sha256": "d0b9fc675508b0b37105132792365d84f60b5b79e2ee7e324f33cc44a1b44c19"
+    },
+    {
+      "path": "official/minishift/light/resource_summary.csv",
+      "sha256": "2af74214721802aca25a88e77eabdc8a618998ab642172c0b2ecdc243a866567"
+    },
+    {
+      "path": "official/minishift/light/resource_summary.json",
+      "sha256": "9e2eb96e94b14f771a1ed430e36eadf03090a285f1aa63e300b5a8f5b96ccbb9"
+    },
+    {
+      "path": "official/minishift/light/stage_summary.csv",
+      "sha256": "26ba0c637f347095c63a6927994838560b0a5919ee09e324d56e74047ff70c6f"
+    },
+    {
+      "path": "official/minishift/light/stage_timings.csv",
+      "sha256": "1fd22268d710159dc049ec48a3422c1c488699e47ae8b8174310e6e8d03790a6"
+    },
+    {
+      "path": "official/minishift/light/summary.json",
+      "sha256": "e21e2c0b76b623d1f5a0bd5b6dd89757ee4d644f4f9fb38151ba3f00484a58a4"
+    },
+    {
+      "path": "official/minishift/light/test_timings.csv",
+      "sha256": "a0accbb6b15c4369c39360a28deafddc70cc2ed553f4e42d1d5f67c3565bb061"
+    },
+    {
+      "path": "official/minishift/light/train_timings.csv",
+      "sha256": "29060c001215f1741f3db234845dd01f659463a16ab860cd70059601df795cfa"
+    },
+    {
+      "path": "official/minishift/nut/environment.json",
+      "sha256": "6d0ced82268d6f5529a05a5fb8b933adce31ae0c59011efa657560975b5be0dd"
+    },
+    {
+      "path": "official/minishift/nut/manifest.json",
+      "sha256": "48c22d7ddba7da3020b9a8e2bab6e7cd11885ffd39e946642d315631b3da6141"
+    },
+    {
+      "path": "official/minishift/nut/metrics.csv",
+      "sha256": "182739c0c0a7e6431541ceed7f415350a770628504ef869e001e174015391f97"
+    },
+    {
+      "path": "official/minishift/nut/resources.csv",
+      "sha256": "b1d0d2f26250175cba5aaa020256852f475339714ba033d923e1a9dc18fc23ee"
+    },
+    {
+      "path": "official/minishift/nut/resource_summary.csv",
+      "sha256": "83259fb00a45225c3d35f51959d8ed64110da1617ba5e6f3da71fc1a87d55b8d"
+    },
+    {
+      "path": "official/minishift/nut/resource_summary.json",
+      "sha256": "17b33967bb6b7c175a4520e8df6f80799e4437cc857f83cba1a4aed79ca09f5e"
+    },
+    {
+      "path": "official/minishift/nut/stage_summary.csv",
+      "sha256": "e1a69925c6b88ee602d0dee848ee5e1d6c80075f5681203417b1bcc96379fa5e"
+    },
+    {
+      "path": "official/minishift/nut/stage_timings.csv",
+      "sha256": "0d7f96303ce56ea848d5c795fefe0ae8a60a695d96ccb0b90b26a9fd5ba9db0e"
+    },
+    {
+      "path": "official/minishift/nut/summary.json",
+      "sha256": "63ebda5929273d15fad60f77080a2a754657f80e83690d1561de6bd1b1102acc"
+    },
+    {
+      "path": "official/minishift/nut/test_timings.csv",
+      "sha256": "8722b8ec3c7d7a7b7845f81271c3c9cbf070b860f6b45e6b308e9938eff5fd28"
+    },
+    {
+      "path": "official/minishift/nut/train_timings.csv",
+      "sha256": "444e0a5180fd32fbb15c0527bb24115dde3e7b2cb0d8dcb65cfc1368e0c87749"
+    },
+    {
+      "path": "official/minishift/piggy/environment.json",
+      "sha256": "6d0ced82268d6f5529a05a5fb8b933adce31ae0c59011efa657560975b5be0dd"
+    },
+    {
+      "path": "official/minishift/piggy/manifest.json",
+      "sha256": "968cc9e649c6c3b338a7c605346e264c9d6a595f15f348e2537beeb4bafb7481"
+    },
+    {
+      "path": "official/minishift/piggy/metrics.csv",
+      "sha256": "39c65bdc9a1991b4a9a977cbf195b42a7f343e64beb92f7b7f84480012403f84"
+    },
+    {
+      "path": "official/minishift/piggy/resources.csv",
+      "sha256": "8c1f344f98e7235acbcdb6adeeff7be924b67df67784e0a054409a1055e4d2f5"
+    },
+    {
+      "path": "official/minishift/piggy/resource_summary.csv",
+      "sha256": "9d8f92b11bb3cc23bc9ee44b467c6687610bb77ec55ef22c0b6f589e63ed398f"
+    },
+    {
+      "path": "official/minishift/piggy/resource_summary.json",
+      "sha256": "62eab64d16e2760c21172943c974109e2ffc72c6150a7b4b5e626baf158b3e53"
+    },
+    {
+      "path": "official/minishift/piggy/stage_summary.csv",
+      "sha256": "696787d78d91b230cd7b5c381f5ed511f6f96c7b50423e0132969c907ad15b3b"
+    },
+    {
+      "path": "official/minishift/piggy/stage_timings.csv",
+      "sha256": "9a994e94f1302b82150cdff5fb8c734b57cf795b61983c38af5e8c2db096eef7"
+    },
+    {
+      "path": "official/minishift/piggy/summary.json",
+      "sha256": "f7abdafcbbbe4569b6d67d55d6de42fb4e2b62852338302b1b1264302782ca5d"
+    },
+    {
+      "path": "official/minishift/piggy/test_timings.csv",
+      "sha256": "a6e2b44f45c45f23fb242385e5e3f890f717cdd08c6730b3a979ecf503200a4d"
+    },
+    {
+      "path": "official/minishift/piggy/train_timings.csv",
+      "sha256": "166c2d08cd001701f8da3cc9af637e277fcfe236a2b84d9b74ff9dae8ae5cbc5"
+    },
+    {
+      "path": "official/minishift/plastic_cylinder/environment.json",
+      "sha256": "6d0ced82268d6f5529a05a5fb8b933adce31ae0c59011efa657560975b5be0dd"
+    },
+    {
+      "path": "official/minishift/plastic_cylinder/manifest.json",
+      "sha256": "7fc060020546ca7501c82c6088a8b2f5822daf51dc66e0fda030fc6e6d6fd40f"
+    },
+    {
+      "path": "official/minishift/plastic_cylinder/metrics.csv",
+      "sha256": "8296f3f3f267e89c87699dcc54cf94bac88e63e5816a1a32cc19369a582f6f28"
+    },
+    {
+      "path": "official/minishift/plastic_cylinder/resources.csv",
+      "sha256": "e483380003c061698209f4853cf086fb0f9bfe120cb335f716f87faf9fa8ee73"
+    },
+    {
+      "path": "official/minishift/plastic_cylinder/resource_summary.csv",
+      "sha256": "20e5a471f3f19cc2c93ad643a277f941c07f63bc9e523e33979d181fd29efac4"
+    },
+    {
+      "path": "official/minishift/plastic_cylinder/resource_summary.json",
+      "sha256": "8862ef3e65c851c4e4696ed6b901eb85dfe98d92de4c6f9138297669a66220da"
+    },
+    {
+      "path": "official/minishift/plastic_cylinder/stage_summary.csv",
+      "sha256": "3fe047d2c1e0fc2940e7d9a91a7369f9a6876f9f9ffed7839e92162b2be61457"
+    },
+    {
+      "path": "official/minishift/plastic_cylinder/stage_timings.csv",
+      "sha256": "f0ef1f2f76fed2672a6bb31438226fbdfc4fca7c82c92dcdf111db0dea716825"
+    },
+    {
+      "path": "official/minishift/plastic_cylinder/summary.json",
+      "sha256": "cd5e690c6214c4fbf36b7f80b65b00e849d96fba5f99025f60e4b079feaf107c"
+    },
+    {
+      "path": "official/minishift/plastic_cylinder/test_timings.csv",
+      "sha256": "aceb951f09efbc5c5f99e1f7e5ce3d11771ac181c58ba08593b939ccd442f647"
+    },
+    {
+      "path": "official/minishift/plastic_cylinder/train_timings.csv",
+      "sha256": "0a9a4e8d7b36aa98b5880ee4d05943e7b69ff4e31352afcb69f04161e2b47a97"
+    },
+    {
+      "path": "official/minishift/screen/environment.json",
+      "sha256": "6d0ced82268d6f5529a05a5fb8b933adce31ae0c59011efa657560975b5be0dd"
+    },
+    {
+      "path": "official/minishift/screen/manifest.json",
+      "sha256": "2608803f45fddbb486cb19ef3b9808b33cdc7246f2a8fd5536795dc2dec0e4a3"
+    },
+    {
+      "path": "official/minishift/screen/metrics.csv",
+      "sha256": "b3be0e2296efa960e6634ede22d23eb89eeb334b3136127174235d27059bd221"
+    },
+    {
+      "path": "official/minishift/screen/resources.csv",
+      "sha256": "10d96dcac68e6e7955084f38c5342a4b26aed33fd801698faa1847e8717b0976"
+    },
+    {
+      "path": "official/minishift/screen/resource_summary.csv",
+      "sha256": "22655a820dd47a470396a47ec9fdfd72c457b0221736f1fefeaf53978337276f"
+    },
+    {
+      "path": "official/minishift/screen/resource_summary.json",
+      "sha256": "d95580d7419b41c4411b0217785b117517c06421e8682a07625ba22c934ce8da"
+    },
+    {
+      "path": "official/minishift/screen/stage_summary.csv",
+      "sha256": "7a24c7cf43b2d6ab5afc3610accb65a2f840795f6717e6d9b18347080230cb3e"
+    },
+    {
+      "path": "official/minishift/screen/stage_timings.csv",
+      "sha256": "dfc9a802787eaac8f279d2323a5de0a5e7ac6366d1601622e3812dab1508465c"
+    },
+    {
+      "path": "official/minishift/screen/summary.json",
+      "sha256": "e9b2330dae227d2395bf3d044ce53c64d44210b250012e9b145cb44fdae31f58"
+    },
+    {
+      "path": "official/minishift/screen/test_timings.csv",
+      "sha256": "a028807678e6c11742a64c3119a9925861c8929180bf416d4711557c642d0bc8"
+    },
+    {
+      "path": "official/minishift/screen/train_timings.csv",
+      "sha256": "3bf0f3767ddc4c4852736a2b782dc185fada03d93628e20cb1393e846a2189b4"
+    },
+    {
+      "path": "official/minishift/screw/environment.json",
+      "sha256": "6d0ced82268d6f5529a05a5fb8b933adce31ae0c59011efa657560975b5be0dd"
+    },
+    {
+      "path": "official/minishift/screw/manifest.json",
+      "sha256": "d06ea8821efb0098630f8390d18a80d65f03ce8ed794e4f053f17bfc22fe1366"
+    },
+    {
+      "path": "official/minishift/screw/metrics.csv",
+      "sha256": "c9e64fb38be9bf5b8b22f34423fab8d2c8f21436ba0f6f0eb6262815d8772bb9"
+    },
+    {
+      "path": "official/minishift/screw/resources.csv",
+      "sha256": "3379c2becaa61a0de3e2c701e80c4f2ac5305db60f1f5d97d8d4ec71cf0e4a9b"
+    },
+    {
+      "path": "official/minishift/screw/resource_summary.csv",
+      "sha256": "ba98ae01ead808b2f8d250a2d35e735a437a497f5195b19f6ac7cd0703f4af7d"
+    },
+    {
+      "path": "official/minishift/screw/resource_summary.json",
+      "sha256": "9aeccbb9187c79edb7ae512a66d9bec3fac719eee1e69e9d5ba2dee2d7277507"
+    },
+    {
+      "path": "official/minishift/screw/stage_summary.csv",
+      "sha256": "9cef33f2c2e15fdec02eb503798a3c13127a2e3bd5492b4aa085b56c07166a00"
+    },
+    {
+      "path": "official/minishift/screw/stage_timings.csv",
+      "sha256": "ef39827529c7863d68ceee9c3288218ced258c91fbc661b1e7a21836b2c7203b"
+    },
+    {
+      "path": "official/minishift/screw/summary.json",
+      "sha256": "9d97ee9b26090f1623e7c865794f3b916a9d2394da270a2747d368b0c96a9fa4"
+    },
+    {
+      "path": "official/minishift/screw/test_timings.csv",
+      "sha256": "b9153524f6c285bd2de19ee777acd0c06863e2a294b5075e3e1a5272b9977450"
+    },
+    {
+      "path": "official/minishift/screw/train_timings.csv",
+      "sha256": "798035a7c07bd60ad0dcc02ae8b4884f4cefcd255d283cb4e84de77c8a1287dd"
+    },
+    {
+      "path": "official/minishift/spring_pad/environment.json",
+      "sha256": "6d0ced82268d6f5529a05a5fb8b933adce31ae0c59011efa657560975b5be0dd"
+    },
+    {
+      "path": "official/minishift/spring_pad/manifest.json",
+      "sha256": "cdc81b20c7e6e84488a17becb256f640951411660cb5fd7f10f0dc4db6080c5a"
+    },
+    {
+      "path": "official/minishift/spring_pad/metrics.csv",
+      "sha256": "d58e2ad14a55fa8c4c7273dcc07a9f0e76776d93ad8346a5f62613b097066b0c"
+    },
+    {
+      "path": "official/minishift/spring_pad/resources.csv",
+      "sha256": "c3f905e93ed900bc30ac1f5828d2c028d2056bc319f9eaf3649aa711105df96f"
+    },
+    {
+      "path": "official/minishift/spring_pad/resource_summary.csv",
+      "sha256": "4b000b0c61984f571ea8e65e40d7a6b9f6e74d28ed5ba694538eae254e52e7d3"
+    },
+    {
+      "path": "official/minishift/spring_pad/resource_summary.json",
+      "sha256": "566c4db2c7313c378c9ba1e76da41c82c8535841a43d94f44237d7436aedaae3"
+    },
+    {
+      "path": "official/minishift/spring_pad/stage_summary.csv",
+      "sha256": "43155fa350d55379849071ff268c66c8c65c81d445f97c47fde7cf98e259d170"
+    },
+    {
+      "path": "official/minishift/spring_pad/stage_timings.csv",
+      "sha256": "ecef5ef70492f9cdee488efa76a2058642c312ddfd9cef7c7068e59c87ca58e7"
+    },
+    {
+      "path": "official/minishift/spring_pad/summary.json",
+      "sha256": "d6f4cd64ce3cff65e501ff657d825256e1d1bacc2dbe7abb71d3eb66b2c46b40"
+    },
+    {
+      "path": "official/minishift/spring_pad/test_timings.csv",
+      "sha256": "a6530f3f9076315a794fbccc3969353b8787544a323d316d25c07b03c93903d4"
+    },
+    {
+      "path": "official/minishift/spring_pad/train_timings.csv",
+      "sha256": "2db39b4f68a63a8242d700e62ce9045d46933e6303ffe5e220d64d006ae9ec53"
+    },
+    {
+      "path": "official/minishift/toothbrush/environment.json",
+      "sha256": "6d0ced82268d6f5529a05a5fb8b933adce31ae0c59011efa657560975b5be0dd"
+    },
+    {
+      "path": "official/minishift/toothbrush/manifest.json",
+      "sha256": "a06818bf4c378b60f52c894f9147a393433d5284e2068472468a059aa798a168"
+    },
+    {
+      "path": "official/minishift/toothbrush/metrics.csv",
+      "sha256": "6da7c53506a3bdb3aa8b32dd10eb6f8c465c1d69cbe413e8c593bb9d1a3dc783"
+    },
+    {
+      "path": "official/minishift/toothbrush/resources.csv",
+      "sha256": "06c7142cb61edecd94a04d4ac1690546587b694806c2ed99c92a1ced9c96ae3b"
+    },
+    {
+      "path": "official/minishift/toothbrush/resource_summary.csv",
+      "sha256": "abd53f8336f13fa4812874d64179155c04fe40d68fcaff40d349264d5ad94d25"
+    },
+    {
+      "path": "official/minishift/toothbrush/resource_summary.json",
+      "sha256": "c72614ae346ecad006148b702f0fda56345187da749d730b49544be53a5c3d29"
+    },
+    {
+      "path": "official/minishift/toothbrush/stage_summary.csv",
+      "sha256": "b6f517153b4fa982f63278bedf738c7e78af44b307858592221ab9610b3e1d28"
+    },
+    {
+      "path": "official/minishift/toothbrush/stage_timings.csv",
+      "sha256": "b94c3819d1f3379c678512dcb8bbea51b2164bf95122ffed937530e5c6f56b81"
+    },
+    {
+      "path": "official/minishift/toothbrush/summary.json",
+      "sha256": "c7df2541f1214ecb593ac43ed0a61f6d06d71c046e9267e2b3eca7fef3856c3b"
+    },
+    {
+      "path": "official/minishift/toothbrush/test_timings.csv",
+      "sha256": "ee1cac216fc1442e8aeb909f44bb34339637404d86bcf446cbb35477774cb5ad"
+    },
+    {
+      "path": "official/minishift/toothbrush/train_timings.csv",
+      "sha256": "7e9524548cec1e6fbfc0d569fc8eddf33e78d4a440dcbf4151e1832c7fdf9176"
+    },
+    {
+      "path": "official/shapenet/ashtray0/environment.json",
+      "sha256": "a8a9668095ccb3fecab8d3f6e7869c11801bf3ef9d7ebd0e020f0eafda217356"
+    },
+    {
+      "path": "official/shapenet/ashtray0/manifest.json",
+      "sha256": "8c8a491805ae5a3e7e3f220698de5e3f72b66c8083d46230f9868482537f8d00"
+    },
+    {
+      "path": "official/shapenet/ashtray0/metrics.csv",
+      "sha256": "abf5ec13c65bb60adf13fd2e175adc2b64543459cedf13790ad8c9b6f82abfd0"
+    },
+    {
+      "path": "official/shapenet/ashtray0/resources.csv",
+      "sha256": "a0722082fe4c4bac412f05abcac56a0b7877c0835c1677c09db4be0955b2889f"
+    },
+    {
+      "path": "official/shapenet/ashtray0/resource_summary.csv",
+      "sha256": "ac9fe4aa8245ae410b10896bdf03dcc2c1e09fcbbed3d58259e909e713fb75de"
+    },
+    {
+      "path": "official/shapenet/ashtray0/resource_summary.json",
+      "sha256": "b783b81393a554c5be33af4a0adbfd2676e1bf389983e51a4769580dee5b718d"
+    },
+    {
+      "path": "official/shapenet/ashtray0/stage_summary.csv",
+      "sha256": "440f815e41f2382e5833f70c890b203e841c105bde543c3ca8d04a887ebc915c"
+    },
+    {
+      "path": "official/shapenet/ashtray0/stage_timings.csv",
+      "sha256": "355009f488e3351852e05fafb71de56adf5fecb01c1c2595926638ff8135ff6c"
+    },
+    {
+      "path": "official/shapenet/ashtray0/summary.json",
+      "sha256": "ee2b33971d5cc3b6d3a39c4fe199bd8983d5e772599e02eaaa591aa7df7f0db0"
+    },
+    {
+      "path": "official/shapenet/ashtray0/test_timings.csv",
+      "sha256": "66b158bdf73cc5570cb6f90804afae3b9f7427e094609c2caf00e7672b4e0535"
+    },
+    {
+      "path": "official/shapenet/ashtray0/train_timings.csv",
+      "sha256": "51a8de2e6c444b26924991b9f4f76b3bc09b25edf93d84a98417dadbc8769857"
+    },
+    {
+      "path": "official/shapenet/bag0/environment.json",
+      "sha256": "a8a9668095ccb3fecab8d3f6e7869c11801bf3ef9d7ebd0e020f0eafda217356"
+    },
+    {
+      "path": "official/shapenet/bag0/manifest.json",
+      "sha256": "12c7bebbeaa462d097ab3f9b3eaee2818c402da561194c582253c3dcfe1ed589"
+    },
+    {
+      "path": "official/shapenet/bag0/metrics.csv",
+      "sha256": "12edd275e8046ccb54e8a4ad9d874b9442eb6362c01b8739ca1edb35ee30818a"
+    },
+    {
+      "path": "official/shapenet/bag0/resources.csv",
+      "sha256": "efd54b668c20fc6aa9b6eb52230516c7be7b9337b127117afec28c0345584ebf"
+    },
+    {
+      "path": "official/shapenet/bag0/resource_summary.csv",
+      "sha256": "cb8311b6b0b8fbca09af7c2577610ecd337a99a6092a6b964e085adc087e2a58"
+    },
+    {
+      "path": "official/shapenet/bag0/resource_summary.json",
+      "sha256": "c5c2deb9af4e05a02e6a2b9c80d1448917edabd81712cc8cf6b18cce80a60b21"
+    },
+    {
+      "path": "official/shapenet/bag0/stage_summary.csv",
+      "sha256": "1da1ddcc525dddee38e84570700c975660266bd512b1b43d142cb64fa73a9e0a"
+    },
+    {
+      "path": "official/shapenet/bag0/stage_timings.csv",
+      "sha256": "c32eeecbdae0382c0802ad3206d5aace2d38d6b79dac4813570ac4877d6862f0"
+    },
+    {
+      "path": "official/shapenet/bag0/summary.json",
+      "sha256": "9b4e4be48264d5580c1be6ae15ddcefd241eba701aa59191e558229d4252a822"
+    },
+    {
+      "path": "official/shapenet/bag0/test_timings.csv",
+      "sha256": "27fa72709786017f54733c425df185b790e2e62822c30a79fa542c1e9a854181"
+    },
+    {
+      "path": "official/shapenet/bag0/train_timings.csv",
+      "sha256": "10844e3571feb4741b18205135867a2e865cbaa50db0832ee25c84ac3a692c23"
+    },
+    {
+      "path": "official/shapenet/bottle0/environment.json",
+      "sha256": "a8a9668095ccb3fecab8d3f6e7869c11801bf3ef9d7ebd0e020f0eafda217356"
+    },
+    {
+      "path": "official/shapenet/bottle0/manifest.json",
+      "sha256": "15b3462fd0d8e088a25c56cfd82aef7d08675b9a1f6d9744f8590ee6d7dfb3e8"
+    },
+    {
+      "path": "official/shapenet/bottle0/metrics.csv",
+      "sha256": "dedd7962071a24885ea4de177a79b7cc96f4c7ec3c359d78ef71ed3d8d58259a"
+    },
+    {
+      "path": "official/shapenet/bottle0/resources.csv",
+      "sha256": "20f9dc1e92190d89e2bf06f598e83da7bb55f972a1fac1a811284228b83ebd8d"
+    },
+    {
+      "path": "official/shapenet/bottle0/resource_summary.csv",
+      "sha256": "cdbf61372904fb7c5c05323ea99451d6a0a35ca80311673b9f905b2831dcb877"
+    },
+    {
+      "path": "official/shapenet/bottle0/resource_summary.json",
+      "sha256": "8a852ffc85a3c2dfff8562a998518290f184a1a88f98296f4dfee9c4da114b7d"
+    },
+    {
+      "path": "official/shapenet/bottle0/stage_summary.csv",
+      "sha256": "13b0f45c0c13e4f3cd6b8f7d66689ea73a1dc10cdf8a6d51bc2cb642b50f4499"
+    },
+    {
+      "path": "official/shapenet/bottle0/stage_timings.csv",
+      "sha256": "3b236aa34b3e96ed22249dfa71021448b78f44fe0dfc4d392756bdd7744e2f48"
+    },
+    {
+      "path": "official/shapenet/bottle0/summary.json",
+      "sha256": "57623dc71a4be5834ddf811edbeff9bdb458e23f364d7c57e9702109564f3c05"
+    },
+    {
+      "path": "official/shapenet/bottle0/test_timings.csv",
+      "sha256": "2c57e9d9abb79ea6b2929052a68eb240f951d3009a8f7964e886cb36a81823fe"
+    },
+    {
+      "path": "official/shapenet/bottle0/train_timings.csv",
+      "sha256": "d02b06713c64c7d9281b4942f55a1fddbf27d2b9b066b99f7de34d1b136cd2e9"
+    },
+    {
+      "path": "official/shapenet/bottle1/environment.json",
+      "sha256": "a8a9668095ccb3fecab8d3f6e7869c11801bf3ef9d7ebd0e020f0eafda217356"
+    },
+    {
+      "path": "official/shapenet/bottle1/manifest.json",
+      "sha256": "856273a6fc97085214df87a869d3dc388748fc6f04003e867224fd4dabc39914"
+    },
+    {
+      "path": "official/shapenet/bottle1/metrics.csv",
+      "sha256": "a684785140f342e456215959454bfa4fa2802b01f1cd4c75a19d3bca3942144b"
+    },
+    {
+      "path": "official/shapenet/bottle1/resources.csv",
+      "sha256": "62587d0b9746eee9295faf25c82dd440b792b8c898a37b70dffff8097d7f1fce"
+    },
+    {
+      "path": "official/shapenet/bottle1/resource_summary.csv",
+      "sha256": "371c3350f2dfd7da3e12a196a5f7643b5a087f4227e6e6ea534a5bbfb37c1eea"
+    },
+    {
+      "path": "official/shapenet/bottle1/resource_summary.json",
+      "sha256": "3dfe55416c279923e6671409a9060c1b48e2e8b843d3d912600bf4b9c70883f4"
+    },
+    {
+      "path": "official/shapenet/bottle1/stage_summary.csv",
+      "sha256": "537498300dfda5f074753d704b4cf7e8e4156d99e872882dde7bda81b4d75692"
+    },
+    {
+      "path": "official/shapenet/bottle1/stage_timings.csv",
+      "sha256": "3eb5c62a9b141b030367aa193ef209a532932a65bc402400e09229cd3e6eb664"
+    },
+    {
+      "path": "official/shapenet/bottle1/summary.json",
+      "sha256": "4de8958f38e835f7b74df91473683e86ee3460d17416f5f8188736e38f2945be"
+    },
+    {
+      "path": "official/shapenet/bottle1/test_timings.csv",
+      "sha256": "f7c2fb185d9576c9e3b7385803457683dfafed3b744e27ba13d478e51ea7bc70"
+    },
+    {
+      "path": "official/shapenet/bottle1/train_timings.csv",
+      "sha256": "84e5f92a6a0f3ccb073911025b0dc64882474d3c68f858d1782664fb4079b153"
+    },
+    {
+      "path": "official/shapenet/bottle3/environment.json",
+      "sha256": "a8a9668095ccb3fecab8d3f6e7869c11801bf3ef9d7ebd0e020f0eafda217356"
+    },
+    {
+      "path": "official/shapenet/bottle3/manifest.json",
+      "sha256": "605247b488bcaefecfc7a8894c75dceb628b78f0c79fa458e5090dd8b7c01bdf"
+    },
+    {
+      "path": "official/shapenet/bottle3/metrics.csv",
+      "sha256": "1df061807d60091dba6a588fa0b5d8e3862458229f589f65744ad9f87cd4d691"
+    },
+    {
+      "path": "official/shapenet/bottle3/resources.csv",
+      "sha256": "5d7f49f45862efb27c654e24a35f5590a6fb4a9b0818256515dec17585520a1e"
+    },
+    {
+      "path": "official/shapenet/bottle3/resource_summary.csv",
+      "sha256": "44753a748c196f7ade45e14117cdf2c726bf3071baef625a62586c01e89ebe46"
+    },
+    {
+      "path": "official/shapenet/bottle3/resource_summary.json",
+      "sha256": "6508239246dfdc4ccc5f35d467d959f47b95ec1d0dd4b1d0a917b6d5fb75e8a0"
+    },
+    {
+      "path": "official/shapenet/bottle3/stage_summary.csv",
+      "sha256": "bebaa4bc0fcdd74192df048a1f0bcb3e1dff470763da5ae476f2d525063b3a4c"
+    },
+    {
+      "path": "official/shapenet/bottle3/stage_timings.csv",
+      "sha256": "532bedaad1b5060dd918da45ea314154b99c005528b083521dd711f7541f8cc9"
+    },
+    {
+      "path": "official/shapenet/bottle3/summary.json",
+      "sha256": "cd2e0227baeda2caa9ad14ff6777468d3d4c9f930e4f099af554479d8a40b942"
+    },
+    {
+      "path": "official/shapenet/bottle3/test_timings.csv",
+      "sha256": "3e92e3c93c961bab4ff7a21459344b5a41507ae784dbb8fb59f1f58f11f180e7"
+    },
+    {
+      "path": "official/shapenet/bottle3/train_timings.csv",
+      "sha256": "8eb707b1765b3d71062cae6acfa320e84a470b94bc4d45716418c71a00edf74b"
+    },
+    {
+      "path": "official/shapenet/bowl0/environment.json",
+      "sha256": "a8a9668095ccb3fecab8d3f6e7869c11801bf3ef9d7ebd0e020f0eafda217356"
+    },
+    {
+      "path": "official/shapenet/bowl0/manifest.json",
+      "sha256": "ed8d793280cdb17170121107435ec7dd5ffe33a783f28554845110905007f1ba"
+    },
+    {
+      "path": "official/shapenet/bowl0/metrics.csv",
+      "sha256": "3b788bc6e0cfe4672b9823ef6c5a01dfd9889dac94cfa3d9398632e14bab50f2"
+    },
+    {
+      "path": "official/shapenet/bowl0/resources.csv",
+      "sha256": "c5d2c532975b44bdf77502b1a72f105da39a572f4244646ae862725db908bbd0"
+    },
+    {
+      "path": "official/shapenet/bowl0/resource_summary.csv",
+      "sha256": "640d38eb41e24901db88e9c2e69836d0014c524e698b7950aa64fe0fec834e16"
+    },
+    {
+      "path": "official/shapenet/bowl0/resource_summary.json",
+      "sha256": "12bd80d4a58dba6555c1317773a54ddee1ecfa5e4f3c9390fb9aaa331347edb0"
+    },
+    {
+      "path": "official/shapenet/bowl0/stage_summary.csv",
+      "sha256": "f862fb4b08504efef35a426ef8c0ffc38a6e4d079635b36be491495ba2b87bef"
+    },
+    {
+      "path": "official/shapenet/bowl0/stage_timings.csv",
+      "sha256": "6cf2dd4eb172ee61b36818155fe45bbb9846141e1d26929f0ffbe9c32f83e0e9"
+    },
+    {
+      "path": "official/shapenet/bowl0/summary.json",
+      "sha256": "ccff6d61ef09f8ab500a3d2cd0e5fbf1b6ee0d7ae0e6cfe4265033dd308c3b90"
+    },
+    {
+      "path": "official/shapenet/bowl0/test_timings.csv",
+      "sha256": "2fbd77a961456d28658e3b57ead833e0a4cfe9993bc0599d1924c567c389b7c6"
+    },
+    {
+      "path": "official/shapenet/bowl0/train_timings.csv",
+      "sha256": "4ff0b08efddcd57e1fad6b6bb2acc178336f5d767a678d01e868e7d883a83162"
+    },
+    {
+      "path": "official/shapenet/bowl1/environment.json",
+      "sha256": "a8a9668095ccb3fecab8d3f6e7869c11801bf3ef9d7ebd0e020f0eafda217356"
+    },
+    {
+      "path": "official/shapenet/bowl1/manifest.json",
+      "sha256": "43bec5e5fb512d6da4351676615740ed9f28f98f315a69616a096dfa2317ee68"
+    },
+    {
+      "path": "official/shapenet/bowl1/metrics.csv",
+      "sha256": "8abc384d9d2df651634dc680e5a12ef968016296eba0843b896e6b90d9ca6a22"
+    },
+    {
+      "path": "official/shapenet/bowl1/resources.csv",
+      "sha256": "d0eec2f860cc4c1caf9a3e80f0afc076a07e9ad83d633a310c3aaf0f595d9f46"
+    },
+    {
+      "path": "official/shapenet/bowl1/resource_summary.csv",
+      "sha256": "996da844c49aebc485f722581f12121d7515658d540c682bbd1de33a65549ba9"
+    },
+    {
+      "path": "official/shapenet/bowl1/resource_summary.json",
+      "sha256": "7ebcd25d11cb8eb7a90bd83f8191b36e273d2d9f7f1459fe02e8aaefa1b5d99a"
+    },
+    {
+      "path": "official/shapenet/bowl1/stage_summary.csv",
+      "sha256": "23021c38ae3fecc8b7b594cb91e8c884abfef6c9d15feffbbca0de1cadcfa463"
+    },
+    {
+      "path": "official/shapenet/bowl1/stage_timings.csv",
+      "sha256": "aeb9b4336bcb91172cb3e6b1ce259f6ba19fbb6eca222797f6a72a6de896e11d"
+    },
+    {
+      "path": "official/shapenet/bowl1/summary.json",
+      "sha256": "aff5c0424a563b2f395d072df4198faa53d69907a5caa1289537b9d04d4f7c7d"
+    },
+    {
+      "path": "official/shapenet/bowl1/test_timings.csv",
+      "sha256": "7d5325ab66d74cb41669555cbca6a1291f548d9d41836dbb8b8bf148f2dee333"
+    },
+    {
+      "path": "official/shapenet/bowl1/train_timings.csv",
+      "sha256": "d15834b283bb38d3b0d11117239f6338767325aa3e4ebb20dd9c13b7f5a45456"
+    },
+    {
+      "path": "official/shapenet/bowl2/environment.json",
+      "sha256": "a8a9668095ccb3fecab8d3f6e7869c11801bf3ef9d7ebd0e020f0eafda217356"
+    },
+    {
+      "path": "official/shapenet/bowl2/manifest.json",
+      "sha256": "c5cc49e925dcbff2b6f4f395c4b51e37e17f506ccd4061f8d7e985bdd4d90fda"
+    },
+    {
+      "path": "official/shapenet/bowl2/metrics.csv",
+      "sha256": "888dffe4fd1dafdfc4911da0cc36e94686c9e00d084165ec945793b496f76b18"
+    },
+    {
+      "path": "official/shapenet/bowl2/resources.csv",
+      "sha256": "ed358e16ddb7cbc857fc2428b028729cbb1ee3c0cb4b22e8d4a719ca3c3d8081"
+    },
+    {
+      "path": "official/shapenet/bowl2/resource_summary.csv",
+      "sha256": "9c0a5651aae29881caa5b06d7095ffed6ea1ad927b3b9b8e3aa77200a86854c5"
+    },
+    {
+      "path": "official/shapenet/bowl2/resource_summary.json",
+      "sha256": "614b979be3da0ea5bfb040f72f40ceb77e35ac38adb8e4af18d3518b581ee5b4"
+    },
+    {
+      "path": "official/shapenet/bowl2/stage_summary.csv",
+      "sha256": "a00c8cb05bfa606302de82d439e47de319db9add5c3614a2b88060d3d453e6bd"
+    },
+    {
+      "path": "official/shapenet/bowl2/stage_timings.csv",
+      "sha256": "1a2c806a01037f774810ddbd832621f4aeeb8afabcaae7aa1252ddabca2501f7"
+    },
+    {
+      "path": "official/shapenet/bowl2/summary.json",
+      "sha256": "d9d66ded473a5509217f5169895fd1c0d174e37ca32016765838858534ed0266"
+    },
+    {
+      "path": "official/shapenet/bowl2/test_timings.csv",
+      "sha256": "5856c84d9aee9428ed6c15f66012854fac4c24c981ddc7aae700988c11db0103"
+    },
+    {
+      "path": "official/shapenet/bowl2/train_timings.csv",
+      "sha256": "4e799b61fcb835b8fd8c03826df5038ef7eacc9247e6e9ab4fa6a192f1c276c7"
+    },
+    {
+      "path": "official/shapenet/bowl3/environment.json",
+      "sha256": "a8a9668095ccb3fecab8d3f6e7869c11801bf3ef9d7ebd0e020f0eafda217356"
+    },
+    {
+      "path": "official/shapenet/bowl3/manifest.json",
+      "sha256": "90c3953860af50519a71839608b8b6585b8cd2e8fe4bf58c17c63831a1983d91"
+    },
+    {
+      "path": "official/shapenet/bowl3/metrics.csv",
+      "sha256": "efe08213f7d986c6395995cee8fb5384d47d73d7017b3ef4e920973f60868b8d"
+    },
+    {
+      "path": "official/shapenet/bowl3/resources.csv",
+      "sha256": "640f53ebe1570bd0ceeb2f6105df2e163c5905a3be101238ea8aa9d1d1531ac3"
+    },
+    {
+      "path": "official/shapenet/bowl3/resource_summary.csv",
+      "sha256": "83b46faa3bf768d6aa8d662af35e360876e5c16110d797c1c03ab5fec5d6783e"
+    },
+    {
+      "path": "official/shapenet/bowl3/resource_summary.json",
+      "sha256": "89ffc8e5e5e968cc9998fc00935f925ddbd90d2ebd1c8d29863352d1bbf6a282"
+    },
+    {
+      "path": "official/shapenet/bowl3/stage_summary.csv",
+      "sha256": "fd2e3294c4787f58673f2680c33a786ab274673ee4508ca3462310249b8e72d8"
+    },
+    {
+      "path": "official/shapenet/bowl3/stage_timings.csv",
+      "sha256": "9e1011f80fc5ea439f605e391929fd08a599226efd6f6b4d4a1c6c7c3af05d38"
+    },
+    {
+      "path": "official/shapenet/bowl3/summary.json",
+      "sha256": "ad75a5ee21acf350ee20744ee140195e1d6319d54cefa4df679279e580cd8758"
+    },
+    {
+      "path": "official/shapenet/bowl3/test_timings.csv",
+      "sha256": "b2c3ae04835f51d9e53c5d6e53693afef2f706e16237a5931c2e49c9e4046899"
+    },
+    {
+      "path": "official/shapenet/bowl3/train_timings.csv",
+      "sha256": "bce0f179cf79577a2f1a72a33fb45fc87a9eb3f2096ecd65b7af20784416e8d0"
+    },
+    {
+      "path": "official/shapenet/bowl4/environment.json",
+      "sha256": "a8a9668095ccb3fecab8d3f6e7869c11801bf3ef9d7ebd0e020f0eafda217356"
+    },
+    {
+      "path": "official/shapenet/bowl4/manifest.json",
+      "sha256": "8d50645e5def170409c54571275c680e582d935d2ed794cea3cf5ba3f5bc1c09"
+    },
+    {
+      "path": "official/shapenet/bowl4/metrics.csv",
+      "sha256": "450a6521c103add3eeec663c994b90d358b647260fe75f78b3a508df4b558946"
+    },
+    {
+      "path": "official/shapenet/bowl4/resources.csv",
+      "sha256": "96468ca079bab0b7bb615779d250276b713e5d69097e5844da2f3c3b5ac323d7"
+    },
+    {
+      "path": "official/shapenet/bowl4/resource_summary.csv",
+      "sha256": "5e829e680bfea8965902d09e8fd18974de2fc6ec3589fe81f13584106ccea466"
+    },
+    {
+      "path": "official/shapenet/bowl4/resource_summary.json",
+      "sha256": "8dd681c8d36e30439e05f17277803d3e1a5010de86814bb635b1e0e24d1161aa"
+    },
+    {
+      "path": "official/shapenet/bowl4/stage_summary.csv",
+      "sha256": "cba0188b5d4ec9aed025375986730ebd69df358bb65c9088d1047314edb67167"
+    },
+    {
+      "path": "official/shapenet/bowl4/stage_timings.csv",
+      "sha256": "f01d74b532694d755388f622e17f22b69073c1c4bf04e8d67c8a5837c959d6b4"
+    },
+    {
+      "path": "official/shapenet/bowl4/summary.json",
+      "sha256": "40f9ffa52553749074bef311dad33bf21baae9b79f217e95cc4011f6a4428982"
+    },
+    {
+      "path": "official/shapenet/bowl4/test_timings.csv",
+      "sha256": "bd8c2cebb8a86ea7ef05b29b86101204984f7ad2239dbf58f53d9f0a2e7de8ac"
+    },
+    {
+      "path": "official/shapenet/bowl4/train_timings.csv",
+      "sha256": "8ea46dfafd2ee4bf747f167284c2c83fcb29de9428aed8ade35ede7a4a126aee"
+    },
+    {
+      "path": "official/shapenet/bowl5/environment.json",
+      "sha256": "a8a9668095ccb3fecab8d3f6e7869c11801bf3ef9d7ebd0e020f0eafda217356"
+    },
+    {
+      "path": "official/shapenet/bowl5/manifest.json",
+      "sha256": "bcbffcd72500ad385eeadda23cbd4ab2752ca194fb586dad68e497b528286824"
+    },
+    {
+      "path": "official/shapenet/bowl5/metrics.csv",
+      "sha256": "733a2e1e3e86af56bc34df9a8a636a3d6667b9f811172320ae1a9fcae8782427"
+    },
+    {
+      "path": "official/shapenet/bowl5/resources.csv",
+      "sha256": "b2aab937aa54242ede581cf097ac9eee528ce60c434978a2722ea3ddadf16f7c"
+    },
+    {
+      "path": "official/shapenet/bowl5/resource_summary.csv",
+      "sha256": "464dad6726061a12deb5bda44c9d98bc5092e21c9228ea9a620c96e3575fdbef"
+    },
+    {
+      "path": "official/shapenet/bowl5/resource_summary.json",
+      "sha256": "05ecb5383b1692e2f135908e2796ab6da09e19fe97d1375124ef995066e8fc01"
+    },
+    {
+      "path": "official/shapenet/bowl5/stage_summary.csv",
+      "sha256": "7cd255b68272dce57b848c566d4621de1d2941b3da73ab3426613212ec1a5f4c"
+    },
+    {
+      "path": "official/shapenet/bowl5/stage_timings.csv",
+      "sha256": "5c759253c60b915c8e48af339cf27c3b602d9b4ce144fa0c00bb23257e8bf1ce"
+    },
+    {
+      "path": "official/shapenet/bowl5/summary.json",
+      "sha256": "19b5e504ff82a7e5b783d3153dd8104dc8ab1dc1766c5a3de635e3eb1c65e207"
+    },
+    {
+      "path": "official/shapenet/bowl5/test_timings.csv",
+      "sha256": "8f4026a89f5ec097678e15061a448d5f518e78bbd4e68b0c1dd1eca9cdf8bf46"
+    },
+    {
+      "path": "official/shapenet/bowl5/train_timings.csv",
+      "sha256": "8b2dd65fc63a6a72b80906aab58133db5d5f3d7f04dbe74ee8fca581aa245396"
+    },
+    {
+      "path": "official/shapenet/bucket0/environment.json",
+      "sha256": "a8a9668095ccb3fecab8d3f6e7869c11801bf3ef9d7ebd0e020f0eafda217356"
+    },
+    {
+      "path": "official/shapenet/bucket0/manifest.json",
+      "sha256": "e514d5810358e9e193ec129e990f2d91e09f8b4c7019c125f96142e1b5b66d10"
+    },
+    {
+      "path": "official/shapenet/bucket0/metrics.csv",
+      "sha256": "28a03fd205b401eef5d892af61be806206392d6051a325fd113b26c4effb0c89"
+    },
+    {
+      "path": "official/shapenet/bucket0/resources.csv",
+      "sha256": "4af2c34f69e2c6b42a60d0eb8eb491d493c970f4e20d29e76d6d71453bc2b472"
+    },
+    {
+      "path": "official/shapenet/bucket0/resource_summary.csv",
+      "sha256": "f2ba0f110f2bdb1286f4e2171a331f05dee919cf2da708ecab786a13fb92f656"
+    },
+    {
+      "path": "official/shapenet/bucket0/resource_summary.json",
+      "sha256": "47217b5c59dbfeb693a443d6492012a7fc7adec52dbaff9998da526296a22af7"
+    },
+    {
+      "path": "official/shapenet/bucket0/stage_summary.csv",
+      "sha256": "920cf7ef2e80f3c73e84a6eda67d8afafac25e4356de166a0549b5fd0d693835"
+    },
+    {
+      "path": "official/shapenet/bucket0/stage_timings.csv",
+      "sha256": "cdc6f45ebb2a8061d2d7d09277c3b1e7bdabaccb62f13ddac555d759da7f9364"
+    },
+    {
+      "path": "official/shapenet/bucket0/summary.json",
+      "sha256": "b6250939821840c5aee542fa3217dc52a2fbbdc69abe0a42be474fddab286fd3"
+    },
+    {
+      "path": "official/shapenet/bucket0/test_timings.csv",
+      "sha256": "e0557276557a6bbe003d6ab86f4851a9c75dcc9e1ce165b40520a2106c51ff3d"
+    },
+    {
+      "path": "official/shapenet/bucket0/train_timings.csv",
+      "sha256": "d4ef886cae7765b4d93d07143f470f222b2ac0aaf978dc918d690cbe02db3813"
+    },
+    {
+      "path": "official/shapenet/bucket1/environment.json",
+      "sha256": "a8a9668095ccb3fecab8d3f6e7869c11801bf3ef9d7ebd0e020f0eafda217356"
+    },
+    {
+      "path": "official/shapenet/bucket1/manifest.json",
+      "sha256": "cd3daf438a2c36d6b6a74bc3a45a21df2d025bded355fc542786c527d89c6605"
+    },
+    {
+      "path": "official/shapenet/bucket1/metrics.csv",
+      "sha256": "c1f2c228b353583a6c2304d2671feca3e65ed24b1217536601a23726c2708c52"
+    },
+    {
+      "path": "official/shapenet/bucket1/resources.csv",
+      "sha256": "807723e16a3376e3fefbdfa385259450f0a7ea8091e671e0cab6addd64912232"
+    },
+    {
+      "path": "official/shapenet/bucket1/resource_summary.csv",
+      "sha256": "d53779982d39de1a9c7befffdb4fd066102564d03d5c50ec40a93c0ca2f99ca4"
+    },
+    {
+      "path": "official/shapenet/bucket1/resource_summary.json",
+      "sha256": "cd6649067b9e59de8877e6518f73f28d14a2137898c2548a7e168b778331134d"
+    },
+    {
+      "path": "official/shapenet/bucket1/stage_summary.csv",
+      "sha256": "3d8d50a97c9a7c80ce92b1baeb57f8f06f4909e06136327328313be795757206"
+    },
+    {
+      "path": "official/shapenet/bucket1/stage_timings.csv",
+      "sha256": "e854cb1e4d12f49c23b5591278f747383dd90f019e6aa994276a640ab7d88542"
+    },
+    {
+      "path": "official/shapenet/bucket1/summary.json",
+      "sha256": "b636bcfc03bc78121baa25570c02fd2553c69bbb143628235268dfbf7b47fb1e"
+    },
+    {
+      "path": "official/shapenet/bucket1/test_timings.csv",
+      "sha256": "957166c7d0b01e336ee2cc59637661f5896b61ab9d32e2c86c968fef268e24f3"
+    },
+    {
+      "path": "official/shapenet/bucket1/train_timings.csv",
+      "sha256": "735527e626751d89adecf6e3bb4709cab4dd33b362933235496b97e1bfc83ea8"
+    },
+    {
+      "path": "official/shapenet/cap0/environment.json",
+      "sha256": "a8a9668095ccb3fecab8d3f6e7869c11801bf3ef9d7ebd0e020f0eafda217356"
+    },
+    {
+      "path": "official/shapenet/cap0/manifest.json",
+      "sha256": "3f594e0bdf011186bc2f8339953e85d390bddbf64fdd7c7fd554e7635fbac442"
+    },
+    {
+      "path": "official/shapenet/cap0/metrics.csv",
+      "sha256": "1b5a3287d3cf0f1ecab92a82eb3ccf3d90c6476324874095e2f82ff230c6efb8"
+    },
+    {
+      "path": "official/shapenet/cap0/resources.csv",
+      "sha256": "a8df7ad8165e57c956fee24543e19c5a220814c511934138a159cc0b8e6a1a59"
+    },
+    {
+      "path": "official/shapenet/cap0/resource_summary.csv",
+      "sha256": "b41cd02d2757d1b936ed6d697f76da909715d8b9f3d2ebbc474b6b57c6b6430f"
+    },
+    {
+      "path": "official/shapenet/cap0/resource_summary.json",
+      "sha256": "eb2594733d2062eec7948b6bc1a4c0699ff26da6ffe9bd1cca7a98b2d1e628d8"
+    },
+    {
+      "path": "official/shapenet/cap0/stage_summary.csv",
+      "sha256": "e5ed5b5826e3782a4d2198a5cdba4f0ebfaf867f10d81d46c90f1dfcff9f17df"
+    },
+    {
+      "path": "official/shapenet/cap0/stage_timings.csv",
+      "sha256": "c5b4b04376eb719eb864587fabda006f3ff83bfe9c4c4f92310acf1a80e5b13c"
+    },
+    {
+      "path": "official/shapenet/cap0/summary.json",
+      "sha256": "3d964fe6c2ca12e1f4c6def9f747b34380df02f38ae4404db6053a522a900aa4"
+    },
+    {
+      "path": "official/shapenet/cap0/test_timings.csv",
+      "sha256": "bbcee2a90943c7c2d368ddd6a9992582d953064ad771281d62b7c7f6127073b1"
+    },
+    {
+      "path": "official/shapenet/cap0/train_timings.csv",
+      "sha256": "9c20c4ed2425012ec12a1bda8e503a0b23b4fce040eeacb96d384ce5490319f8"
+    },
+    {
+      "path": "official/shapenet/cap3/environment.json",
+      "sha256": "a8a9668095ccb3fecab8d3f6e7869c11801bf3ef9d7ebd0e020f0eafda217356"
+    },
+    {
+      "path": "official/shapenet/cap3/manifest.json",
+      "sha256": "c05dfc7b84f43f40f8a662199f91c0044c9fbbb7960984217e1a55d4e6a387f9"
+    },
+    {
+      "path": "official/shapenet/cap3/metrics.csv",
+      "sha256": "1cd3a14e3a653a0a6740df3b9c052de1b5aec8fd02a3ef54134d339cab168330"
+    },
+    {
+      "path": "official/shapenet/cap3/resources.csv",
+      "sha256": "486d641afe133b7fe47fd154c20c8f68f37ac653b3df8720ef38fc39355f9f5d"
+    },
+    {
+      "path": "official/shapenet/cap3/resource_summary.csv",
+      "sha256": "c66ddfc800622676f9ce87354cc75e1864798e2cfae4c42006a973f89024c32f"
+    },
+    {
+      "path": "official/shapenet/cap3/resource_summary.json",
+      "sha256": "4987d5e1719eb3abd7d7756ab9ab8517c6d37d36594c6956a74f0cec78d44264"
+    },
+    {
+      "path": "official/shapenet/cap3/stage_summary.csv",
+      "sha256": "0cead38415a6b54f0b74f5ebe4ab17d5b4a8e92cd956d67951163b83c3fe53a9"
+    },
+    {
+      "path": "official/shapenet/cap3/stage_timings.csv",
+      "sha256": "cb9ad9b10ec1af139381523fbf2d457d7c7032542e6ca814329710a536c471ba"
+    },
+    {
+      "path": "official/shapenet/cap3/summary.json",
+      "sha256": "74d22474172b9402f97b6c942fbe5638f680a719201d1e81828689f1ac937c49"
+    },
+    {
+      "path": "official/shapenet/cap3/test_timings.csv",
+      "sha256": "e6d257a348bd8b9e163843d1c16c8a2bc24bb209d66f557e1b505c8a19cc6d96"
+    },
+    {
+      "path": "official/shapenet/cap3/train_timings.csv",
+      "sha256": "9b4d49e5620a8b64ef64e4dc24f6c4fd30eba763ecbe1c2ef57c6fa2be70b844"
+    },
+    {
+      "path": "official/shapenet/cap4/environment.json",
+      "sha256": "a8a9668095ccb3fecab8d3f6e7869c11801bf3ef9d7ebd0e020f0eafda217356"
+    },
+    {
+      "path": "official/shapenet/cap4/manifest.json",
+      "sha256": "14eadaa6cbf32c3fdc11d05b1db47e3a3d76bd4064b8010448988f0991e5b52f"
+    },
+    {
+      "path": "official/shapenet/cap4/metrics.csv",
+      "sha256": "f80ae5efd85678c8d21ca8d5d5c019015b2ce6808694eb6933ee473c0cf7cedc"
+    },
+    {
+      "path": "official/shapenet/cap4/resources.csv",
+      "sha256": "46c8cbf2e9a3e474c72a565b7865ac5fdd05bb5a269e6c2e5babdf27b79d6601"
+    },
+    {
+      "path": "official/shapenet/cap4/resource_summary.csv",
+      "sha256": "656251330efa16295485b35720ac978fd25e1d466b757d852cea183bf7c30656"
+    },
+    {
+      "path": "official/shapenet/cap4/resource_summary.json",
+      "sha256": "8fb3e6554842a237f24dfbb4b8180cea45f5b6dcca87d0b7950f606c8df6e62a"
+    },
+    {
+      "path": "official/shapenet/cap4/stage_summary.csv",
+      "sha256": "d0fcac9dfb2a266fe4be06f9a8cb515740c3d67cee771c272a5ad566217b2c19"
+    },
+    {
+      "path": "official/shapenet/cap4/stage_timings.csv",
+      "sha256": "327ca7da4dfa282027fbcc2ef76388a7d23c4ece7eda9a1c7f9f9e5c504d918c"
+    },
+    {
+      "path": "official/shapenet/cap4/summary.json",
+      "sha256": "9a3422e852905e362af1ef3368a0075e1169b43cb79b482679af85d66123e466"
+    },
+    {
+      "path": "official/shapenet/cap4/test_timings.csv",
+      "sha256": "e8bbb214945a37df580991e82753c3ef925abc95041ba1bf203f3d99db4a6e97"
+    },
+    {
+      "path": "official/shapenet/cap4/train_timings.csv",
+      "sha256": "64d7bb2877b70ae44ad635b22d4dce7305697da702cec4a1ef4ccfb7b72bc008"
+    },
+    {
+      "path": "official/shapenet/cap5/environment.json",
+      "sha256": "a8a9668095ccb3fecab8d3f6e7869c11801bf3ef9d7ebd0e020f0eafda217356"
+    },
+    {
+      "path": "official/shapenet/cap5/manifest.json",
+      "sha256": "ec49364e1401266ae525e4eaba8bdf41a4242acdfdd1366d127e44d1e891c4f6"
+    },
+    {
+      "path": "official/shapenet/cap5/metrics.csv",
+      "sha256": "527772c8c1807bb2312eb5ac03355ce320138b0edac66ef141546d3563a711cf"
+    },
+    {
+      "path": "official/shapenet/cap5/resources.csv",
+      "sha256": "cc821bb00504a336a2d577b6ecad4de787f7b507856579894f6f18868daffd72"
+    },
+    {
+      "path": "official/shapenet/cap5/resource_summary.csv",
+      "sha256": "d6ab953547089c1db0bf07ebcc3b159be99edc229ecaf68e636eda789a680811"
+    },
+    {
+      "path": "official/shapenet/cap5/resource_summary.json",
+      "sha256": "85d8d207638281c640bf7548eeb5fc0069fb57239ef352ec6dea0c37d74e7154"
+    },
+    {
+      "path": "official/shapenet/cap5/stage_summary.csv",
+      "sha256": "d05133f02865eb3de5dba3dfe93f898d94e2c3325c18dd91028b673337402887"
+    },
+    {
+      "path": "official/shapenet/cap5/stage_timings.csv",
+      "sha256": "8fd55fd9dbafc1428568d0f3808fac832849ce88d6eb5eec925470f5323a0e58"
+    },
+    {
+      "path": "official/shapenet/cap5/summary.json",
+      "sha256": "d753b372acd9658ee9948797fc6036586f3229284d9cf04a9623dd19ba191b98"
+    },
+    {
+      "path": "official/shapenet/cap5/test_timings.csv",
+      "sha256": "23acbdfbc4d0ed9d299afea0fd28fde84f24bb10053eb58891aea651269ea344"
+    },
+    {
+      "path": "official/shapenet/cap5/train_timings.csv",
+      "sha256": "044d609247b5dbf68c500b7009cf70883dcb179975769f7a89d13129cf53ee2b"
+    },
+    {
+      "path": "official/shapenet/cup0/environment.json",
+      "sha256": "a8a9668095ccb3fecab8d3f6e7869c11801bf3ef9d7ebd0e020f0eafda217356"
+    },
+    {
+      "path": "official/shapenet/cup0/manifest.json",
+      "sha256": "ebc334516154e241f4a60fdb519c275fc999ba91d3f761a1dc0913e897b11ac9"
+    },
+    {
+      "path": "official/shapenet/cup0/metrics.csv",
+      "sha256": "44ac6a45a5950c65f305d54012dfe86dffbceb9881db9ffaa2b2204748027784"
+    },
+    {
+      "path": "official/shapenet/cup0/resources.csv",
+      "sha256": "57ed0824e5e5b26f3def573dd977282415e79164b8bdf06b52179145c58b58eb"
+    },
+    {
+      "path": "official/shapenet/cup0/resource_summary.csv",
+      "sha256": "edaec4c4d06f5e76248feceffd95ccff73f07a1b4d61a00eed39d92cd2b87d98"
+    },
+    {
+      "path": "official/shapenet/cup0/resource_summary.json",
+      "sha256": "2f985de31f055fbbd8d2f2317015fd41fc413d3e141e4604e21f98a52622b5b1"
+    },
+    {
+      "path": "official/shapenet/cup0/stage_summary.csv",
+      "sha256": "33f6569659a8b00582082ac8bfa8f35e762b73d8a2abdeadefca3a75202638da"
+    },
+    {
+      "path": "official/shapenet/cup0/stage_timings.csv",
+      "sha256": "c12dcbe5d4298a531489fa41bf3f0e657ffa2f2b74617646e815150f31ca4589"
+    },
+    {
+      "path": "official/shapenet/cup0/summary.json",
+      "sha256": "c33ed3306bdc4a61da6ded890ef72107757b179e85e2418007d012f8dc4ed639"
+    },
+    {
+      "path": "official/shapenet/cup0/test_timings.csv",
+      "sha256": "8a88ee64d624371fa173575c10e120e06f6a76aa286213c82593e435b0f8cc1f"
+    },
+    {
+      "path": "official/shapenet/cup0/train_timings.csv",
+      "sha256": "1e88acb3dc96a91fb23d594fb289d080d09d59e20b2290cc0ceabbbd3e9305d7"
+    },
+    {
+      "path": "official/shapenet/cup1/environment.json",
+      "sha256": "a8a9668095ccb3fecab8d3f6e7869c11801bf3ef9d7ebd0e020f0eafda217356"
+    },
+    {
+      "path": "official/shapenet/cup1/manifest.json",
+      "sha256": "fd973221886c9efb1a2ffcc6921d3d285d11072371a54f0cbfe122051fb18c36"
+    },
+    {
+      "path": "official/shapenet/cup1/metrics.csv",
+      "sha256": "d3219ecef5f6adbec2a5cea605a0156c5bf68d16c2b528a43512fe8c8cf1674c"
+    },
+    {
+      "path": "official/shapenet/cup1/resources.csv",
+      "sha256": "c6341c4cd2a20ae7fc42f2e3d74329369cb6926f08dff5a18dddb9acb4cb0a4e"
+    },
+    {
+      "path": "official/shapenet/cup1/resource_summary.csv",
+      "sha256": "54b124c6e9fc9ec8469d7d99e8b9742708d6e1f58b204494d6cffe5583f2f3a8"
+    },
+    {
+      "path": "official/shapenet/cup1/resource_summary.json",
+      "sha256": "d78a8458e5a86e7a194c8ae584fea163bd235191cfd0d69273aa35f551607b61"
+    },
+    {
+      "path": "official/shapenet/cup1/stage_summary.csv",
+      "sha256": "c945cbd0fc05b1e62e8137e2eff5def02fef1585e6d79a134f5d0016adad9897"
+    },
+    {
+      "path": "official/shapenet/cup1/stage_timings.csv",
+      "sha256": "52f9007869a5abd583e015782c102974ab760b8dc06eaa4c022de2a3692a342a"
+    },
+    {
+      "path": "official/shapenet/cup1/summary.json",
+      "sha256": "43d787aa339ae2c670d27d58033d9fb368df5564b85f97adf32a56e47e4562b1"
+    },
+    {
+      "path": "official/shapenet/cup1/test_timings.csv",
+      "sha256": "57e11068d1db8049b3c1a06a13d366b069fc0fd9a5411264a582bceaaf062537"
+    },
+    {
+      "path": "official/shapenet/cup1/train_timings.csv",
+      "sha256": "c8a33b9132a76a5738684bcb23f56e9967244254f8595adbd4b4a29b5df28b31"
+    },
+    {
+      "path": "official/shapenet/eraser0/environment.json",
+      "sha256": "a8a9668095ccb3fecab8d3f6e7869c11801bf3ef9d7ebd0e020f0eafda217356"
+    },
+    {
+      "path": "official/shapenet/eraser0/manifest.json",
+      "sha256": "0dbf10729b6afeb15263fdff109e13c7401e9fe5c837d2271e7947ce8d5c3a18"
+    },
+    {
+      "path": "official/shapenet/eraser0/metrics.csv",
+      "sha256": "0612a19a615c641a4b0f89f58264efb0f9c1340d22880b8bfb287eaa4610c214"
+    },
+    {
+      "path": "official/shapenet/eraser0/resources.csv",
+      "sha256": "23b7399ca0fce58fc72cee09410209fe402dcdfbf77393f0a4821125ca5cf7dc"
+    },
+    {
+      "path": "official/shapenet/eraser0/resource_summary.csv",
+      "sha256": "a6339c0602b780aac782cce6a960e3848d8238503585d2c57c041879958873e1"
+    },
+    {
+      "path": "official/shapenet/eraser0/resource_summary.json",
+      "sha256": "2191c436e3be61e1c7cdf5f06b6fc2f5a6eb1b45556bb62ccc114386215467e3"
+    },
+    {
+      "path": "official/shapenet/eraser0/stage_summary.csv",
+      "sha256": "66ea828ba4283ecfd8bbd5f9b33e8d50123d9631cf9e7cf1b2a20b740f619b00"
+    },
+    {
+      "path": "official/shapenet/eraser0/stage_timings.csv",
+      "sha256": "0706e40af922ff474a03e15a1db849e78e29de73a60b0ad8fb4c941524699eeb"
+    },
+    {
+      "path": "official/shapenet/eraser0/summary.json",
+      "sha256": "296f297adfdec8614d718d67654d2bff75fb52125bf6693dcbee854df3742a52"
+    },
+    {
+      "path": "official/shapenet/eraser0/test_timings.csv",
+      "sha256": "4753137e621685027b63f90bb8e22436b8b7cd6fa2f00ad9d9215bb835055c9c"
+    },
+    {
+      "path": "official/shapenet/eraser0/train_timings.csv",
+      "sha256": "f4ec6d67960f62fcfc3e74cebb122ee19210af8206b62306578722daee874844"
+    },
+    {
+      "path": "official/shapenet/headset0/environment.json",
+      "sha256": "a8a9668095ccb3fecab8d3f6e7869c11801bf3ef9d7ebd0e020f0eafda217356"
+    },
+    {
+      "path": "official/shapenet/headset0/manifest.json",
+      "sha256": "9a7404cf27e86ec5cb98fae3a44c3b06bbd6f66451285453f32e5fa0bf5ddcc3"
+    },
+    {
+      "path": "official/shapenet/headset0/metrics.csv",
+      "sha256": "eab34be62bfac0c96d942c1b23a49484f27f289a56d4d092b778554b0abfd098"
+    },
+    {
+      "path": "official/shapenet/headset0/resources.csv",
+      "sha256": "4514eb50bcbc8af30c1f8c720f9243eccb401c0381818bf7111b4bfb08398e0c"
+    },
+    {
+      "path": "official/shapenet/headset0/resource_summary.csv",
+      "sha256": "2fbfbe07dc29b30c926f9e9cd4cb7117ace0b365c61b17317cfb9c262d5c638b"
+    },
+    {
+      "path": "official/shapenet/headset0/resource_summary.json",
+      "sha256": "3a298e0c0363ca3a6daba292cf23267911231ba04cc1bd425fa1553b1e22cadb"
+    },
+    {
+      "path": "official/shapenet/headset0/stage_summary.csv",
+      "sha256": "9b96772ca713c78fdf7629b1f1197c01ecc11532bf441e300fa40f216a33d254"
+    },
+    {
+      "path": "official/shapenet/headset0/stage_timings.csv",
+      "sha256": "af235f9b0ca0e07d42e0e55f0cccd87739eb6c40000542a81fd3a45cf9cc949f"
+    },
+    {
+      "path": "official/shapenet/headset0/summary.json",
+      "sha256": "d073f39533a5ae8c11fa9091ef0d024e30e149a553d63523d9cf44c92e1df28f"
+    },
+    {
+      "path": "official/shapenet/headset0/test_timings.csv",
+      "sha256": "9af51bad705c595b1545fdbedf9a86a80daf01c6ccb4cbcf4af48f20098c4a12"
+    },
+    {
+      "path": "official/shapenet/headset0/train_timings.csv",
+      "sha256": "b9204b3a9ab1d3212be2bb709dff336bb41edbb9ba6e71292fad86ededce959b"
+    },
+    {
+      "path": "official/shapenet/headset1/environment.json",
+      "sha256": "a8a9668095ccb3fecab8d3f6e7869c11801bf3ef9d7ebd0e020f0eafda217356"
+    },
+    {
+      "path": "official/shapenet/headset1/manifest.json",
+      "sha256": "6f177568e6d1ffa9a86b858c80679414d0af0f53deab2dedbda9b90d554c835c"
+    },
+    {
+      "path": "official/shapenet/headset1/metrics.csv",
+      "sha256": "857d0a261b1412d864070c09604eab7d462520819807a70d3a044e897213949b"
+    },
+    {
+      "path": "official/shapenet/headset1/resources.csv",
+      "sha256": "83bf681635a7f27696c3e0b051c4b9dbdc35411545962839095565557fdc8c36"
+    },
+    {
+      "path": "official/shapenet/headset1/resource_summary.csv",
+      "sha256": "f2adec01fd7b6b982aeb826d8df5c024ce22672fbeee7755e0d7f36344226d94"
+    },
+    {
+      "path": "official/shapenet/headset1/resource_summary.json",
+      "sha256": "4ac53f6692102bb83c8245dbfecb667f8ef8069eee88c5a71259b0f27b34981f"
+    },
+    {
+      "path": "official/shapenet/headset1/stage_summary.csv",
+      "sha256": "41eb28f7903a212e74a6fe8bd9da4c31255bf1a63ca52971f548273f8e076933"
+    },
+    {
+      "path": "official/shapenet/headset1/stage_timings.csv",
+      "sha256": "66d0827fac54b3ae57b5779fe8ba2456d6a322e7e70360e2eb474c9502057a61"
+    },
+    {
+      "path": "official/shapenet/headset1/summary.json",
+      "sha256": "d4f8f998fcc99af548fc674f49cfdc441130531030a14f9899df030a53406e5b"
+    },
+    {
+      "path": "official/shapenet/headset1/test_timings.csv",
+      "sha256": "aaa47b0e95ea730e18a848aeda2a4e8e6f985f7d36732a897a885d630c39f434"
+    },
+    {
+      "path": "official/shapenet/headset1/train_timings.csv",
+      "sha256": "3d6850444815dc1a939b76640a0e1feccde99667ee25682aa37a36706cb172b5"
+    },
+    {
+      "path": "official/shapenet/helmet0/environment.json",
+      "sha256": "a8a9668095ccb3fecab8d3f6e7869c11801bf3ef9d7ebd0e020f0eafda217356"
+    },
+    {
+      "path": "official/shapenet/helmet0/manifest.json",
+      "sha256": "9ec8d24f329c0d70f38fd59323732574b51255963ee5b486e223d546b0ec35a6"
+    },
+    {
+      "path": "official/shapenet/helmet0/metrics.csv",
+      "sha256": "94e75faf17d94cd03c9aa5d3964b263043acd27d8b745ce3dc251a2e9ff9e238"
+    },
+    {
+      "path": "official/shapenet/helmet0/resources.csv",
+      "sha256": "090fa0563f691a9b2d9f95c46d260f7df00bee607716f596a5dafaa5decd63c7"
+    },
+    {
+      "path": "official/shapenet/helmet0/resource_summary.csv",
+      "sha256": "5738c2113d64ba2c02524a76f2788d5fc2cfd9c2c2d6c7852536e25750e454c4"
+    },
+    {
+      "path": "official/shapenet/helmet0/resource_summary.json",
+      "sha256": "96ba77505e1ffea5fc4f89a13785dc7af752be8fb01a5ff407791ffbf3eeb485"
+    },
+    {
+      "path": "official/shapenet/helmet0/stage_summary.csv",
+      "sha256": "9f0ca91d0e926ca1f024de91f0cd3e1917869caad7e4b34f444cc286b0e914f3"
+    },
+    {
+      "path": "official/shapenet/helmet0/stage_timings.csv",
+      "sha256": "2bbf7f08809dbe4e5352bc5281c0697fb946a6fde74fe214eec66b96aaa6e597"
+    },
+    {
+      "path": "official/shapenet/helmet0/summary.json",
+      "sha256": "65d3523c69f4827d67237aab0b42e76c2cd8eeaf9ca1a94f502fe2787b16b46a"
+    },
+    {
+      "path": "official/shapenet/helmet0/test_timings.csv",
+      "sha256": "bd274f602312a650ce9b51fec764cd4e53b36428404a98dd69ea3071ddc62b98"
+    },
+    {
+      "path": "official/shapenet/helmet0/train_timings.csv",
+      "sha256": "6ff7bcc8f2deb8b84b95c03b2a6c9e40e28364e45f0cc1944cc20674b8667f21"
+    },
+    {
+      "path": "official/shapenet/helmet1/environment.json",
+      "sha256": "a8a9668095ccb3fecab8d3f6e7869c11801bf3ef9d7ebd0e020f0eafda217356"
+    },
+    {
+      "path": "official/shapenet/helmet1/manifest.json",
+      "sha256": "ca7090bb0787b38626b16cdbfb1023ea60989fd6fbaee3045cd8c7914887e42c"
+    },
+    {
+      "path": "official/shapenet/helmet1/metrics.csv",
+      "sha256": "bcecb6f96a5e12cb9515a31320b54ce2f2003b52cacc8c1d1c6fc943161229a8"
+    },
+    {
+      "path": "official/shapenet/helmet1/resources.csv",
+      "sha256": "68139b3f9d58f54341aaf75d99a955056a9293c5001e44014274cb46a25106e0"
+    },
+    {
+      "path": "official/shapenet/helmet1/resource_summary.csv",
+      "sha256": "2921c6f8b2835086b4b69fa4de528393ab6734c80efb9939b49c264d26a4eacf"
+    },
+    {
+      "path": "official/shapenet/helmet1/resource_summary.json",
+      "sha256": "5bd00b8c315393dfcdd9cb759ddfbda897311badfe13b235a905997d599b2d48"
+    },
+    {
+      "path": "official/shapenet/helmet1/stage_summary.csv",
+      "sha256": "4bec38e47868b57c39d71444ea6847d4a750010fea8dd2a7261b48653316ebf9"
+    },
+    {
+      "path": "official/shapenet/helmet1/stage_timings.csv",
+      "sha256": "ac15c245e357e01717c7b7fc4c5c852b7e6bc057f5a143c42c51172a5bfbc174"
+    },
+    {
+      "path": "official/shapenet/helmet1/summary.json",
+      "sha256": "e4937b8d14a3d56257ad1d55b13f60f1baf7c47a86f7c26097fc593802a57541"
+    },
+    {
+      "path": "official/shapenet/helmet1/test_timings.csv",
+      "sha256": "b8e6d27b71c466681eeca394a566b657dc7bcbc19cd4c6085f45232c478dc717"
+    },
+    {
+      "path": "official/shapenet/helmet1/train_timings.csv",
+      "sha256": "8f0d0eeddaa45b0368f9f0e6af29f6a6a0b6af8deb4df4d1850aa1a6740c5cbb"
+    },
+    {
+      "path": "official/shapenet/helmet2/environment.json",
+      "sha256": "a8a9668095ccb3fecab8d3f6e7869c11801bf3ef9d7ebd0e020f0eafda217356"
+    },
+    {
+      "path": "official/shapenet/helmet2/manifest.json",
+      "sha256": "b68e4dcd9fb36e666ce0f6ee39560953bb5e4a8ea1905c4e2a80f7be7483480d"
+    },
+    {
+      "path": "official/shapenet/helmet2/metrics.csv",
+      "sha256": "cd213299eaaaca7718e1ec01ac7b3d1edcb358ed819981d5d77826e1baf312bf"
+    },
+    {
+      "path": "official/shapenet/helmet2/resources.csv",
+      "sha256": "1436a862079272758436622458c145626b77eac2ada09a30fa3f80eeb883dd45"
+    },
+    {
+      "path": "official/shapenet/helmet2/resource_summary.csv",
+      "sha256": "e574b972e2fe81679b5d3673532f3dc588931c888c06fb92b6ffcafe8034fd68"
+    },
+    {
+      "path": "official/shapenet/helmet2/resource_summary.json",
+      "sha256": "77879bb577ce5d9b191cbc33619efc356e80bc6ee4f5fef03937455ff5c1ab91"
+    },
+    {
+      "path": "official/shapenet/helmet2/stage_summary.csv",
+      "sha256": "ea237cdce6efd0ed4f6f46b824c99b8ee60bc84524dbe031b45300bf9d81f30b"
+    },
+    {
+      "path": "official/shapenet/helmet2/stage_timings.csv",
+      "sha256": "bfd00ef9447f52b69c7497ab9da65dcc9629e6ace4379d381b86b5e382e2dfc9"
+    },
+    {
+      "path": "official/shapenet/helmet2/summary.json",
+      "sha256": "a91f87d0a848c4a46fc57f5c064205eb0fdd887fcbcd07f261bcbe5df5791cce"
+    },
+    {
+      "path": "official/shapenet/helmet2/test_timings.csv",
+      "sha256": "a3c2c637324ca3a4e03fe688751ebdde253f32a7bc60e3fc2b728d33adbfca8e"
+    },
+    {
+      "path": "official/shapenet/helmet2/train_timings.csv",
+      "sha256": "c444387e3f66d7f7377012909e96042a4c9ee19c96b081ad994ca0e5e2573c4b"
+    },
+    {
+      "path": "official/shapenet/helmet3/environment.json",
+      "sha256": "a8a9668095ccb3fecab8d3f6e7869c11801bf3ef9d7ebd0e020f0eafda217356"
+    },
+    {
+      "path": "official/shapenet/helmet3/manifest.json",
+      "sha256": "597577b0aad6d484096c04ed089b9d12caa2abd184b8c2436e3597469068bcd3"
+    },
+    {
+      "path": "official/shapenet/helmet3/metrics.csv",
+      "sha256": "fa5cd75cde85e5650f3958e0223f88cedd0aa73d9f6bf37bb6ed35d45cf2eebe"
+    },
+    {
+      "path": "official/shapenet/helmet3/resources.csv",
+      "sha256": "26aca37cf79282c4b4a6de9ae40d89c72e8c473710c4a0f3a873f70745e9da39"
+    },
+    {
+      "path": "official/shapenet/helmet3/resource_summary.csv",
+      "sha256": "2767c34f38b74df8bef97dbbfa06bfc751c0e92b5d857b92601fe41fffa3e608"
+    },
+    {
+      "path": "official/shapenet/helmet3/resource_summary.json",
+      "sha256": "1c6feb5bede82fc2c1ed87c05852afb091cfc8017b0f57bd3241e3af54889753"
+    },
+    {
+      "path": "official/shapenet/helmet3/stage_summary.csv",
+      "sha256": "07160342b58496dc9e1fb52543c7352e422898b9de99862e9f6f5fb6815f7313"
+    },
+    {
+      "path": "official/shapenet/helmet3/stage_timings.csv",
+      "sha256": "c32ccb018c1f2c1d18c64dde8da9d92fbf1af063a25866828da50855e46da267"
+    },
+    {
+      "path": "official/shapenet/helmet3/summary.json",
+      "sha256": "a9a89dbca58ead9bfba34f69d369f784594caa9d9f73fea5a1d6d08db96b67bd"
+    },
+    {
+      "path": "official/shapenet/helmet3/test_timings.csv",
+      "sha256": "35f3700e60cbb8806060a03c319687e12e123ad35d3f4f27bafc2581b14cc3cc"
+    },
+    {
+      "path": "official/shapenet/helmet3/train_timings.csv",
+      "sha256": "04056b535615ccc7419cc3a61a7351650c11df1dad65d0ba13b1eef1c03789de"
+    },
+    {
+      "path": "official/shapenet/jar0/environment.json",
+      "sha256": "a8a9668095ccb3fecab8d3f6e7869c11801bf3ef9d7ebd0e020f0eafda217356"
+    },
+    {
+      "path": "official/shapenet/jar0/manifest.json",
+      "sha256": "0d14af59ac69a49adfe28a7b4fa200984b397f7cc91b72794117562c83b36987"
+    },
+    {
+      "path": "official/shapenet/jar0/metrics.csv",
+      "sha256": "6ef156c653e72f48dfb9a33ee126099d71da3c9fe7e4d620c0ed687ac9024c01"
+    },
+    {
+      "path": "official/shapenet/jar0/resources.csv",
+      "sha256": "6f75ac360af89dea0186009058dad272b9fe7fccf5cf01f0d8048f2bf958195a"
+    },
+    {
+      "path": "official/shapenet/jar0/resource_summary.csv",
+      "sha256": "c59f8d3ae40b02a5445fb16054a11e7cba6d7b0e2fa65658801cb5ac61a521e9"
+    },
+    {
+      "path": "official/shapenet/jar0/resource_summary.json",
+      "sha256": "b73a2951d422e88a6f85bdeac8e306c2a6579b98e563ae54ec50fcfbba205ebc"
+    },
+    {
+      "path": "official/shapenet/jar0/stage_summary.csv",
+      "sha256": "9465c8d41e00b043d00b706dab75978e0c418cfb9544e28e64fee17449e709dc"
+    },
+    {
+      "path": "official/shapenet/jar0/stage_timings.csv",
+      "sha256": "6a5a1948c3931164ea98e701944aac1a722518b375ed80d2ce7268f78563aeeb"
+    },
+    {
+      "path": "official/shapenet/jar0/summary.json",
+      "sha256": "c5897a770897566da0ca7188fa8ab6bdc8612eaa74f9e21918183adb91e563a2"
+    },
+    {
+      "path": "official/shapenet/jar0/test_timings.csv",
+      "sha256": "fbf5396f24ceb22863d2380bd2549a5ff83195dc69a08b6831624f4ea5894604"
+    },
+    {
+      "path": "official/shapenet/jar0/train_timings.csv",
+      "sha256": "d8479447fc04cd0976a69ceb30f0d9bb6352f6f849513f4748c637a1e3a4df4b"
+    },
+    {
+      "path": "official/shapenet/microphone0/environment.json",
+      "sha256": "a8a9668095ccb3fecab8d3f6e7869c11801bf3ef9d7ebd0e020f0eafda217356"
+    },
+    {
+      "path": "official/shapenet/microphone0/manifest.json",
+      "sha256": "d3c882bcd87bcc17b6a79ff3fb5b8e5404c6bec226ce96100faa32d0bd5e9461"
+    },
+    {
+      "path": "official/shapenet/microphone0/metrics.csv",
+      "sha256": "8f70a2d2ad5557fe21561749a359fb31eb4e37fbaa2a9b40ef87238872b0f4ce"
+    },
+    {
+      "path": "official/shapenet/microphone0/resources.csv",
+      "sha256": "aeca76cda556d57cb9ca7b680087988c285119d8949f35693ec90a1c5ed0c9da"
+    },
+    {
+      "path": "official/shapenet/microphone0/resource_summary.csv",
+      "sha256": "b6024c10f069c2753e6954fbc74e9e9677298b13bf0e1cc9884017153135a32f"
+    },
+    {
+      "path": "official/shapenet/microphone0/resource_summary.json",
+      "sha256": "143fe5fb5e23db62982d26d357a62b3e2019d85dd222a25dc54ad5c218f59efa"
+    },
+    {
+      "path": "official/shapenet/microphone0/stage_summary.csv",
+      "sha256": "194e38877e6e4391f8dc81f649b67a2216d5b5d3805838c22840082fd35a5091"
+    },
+    {
+      "path": "official/shapenet/microphone0/stage_timings.csv",
+      "sha256": "53154f38af148c1bc551af283097c72e40375c709ab8c9103dde5efb5aff3974"
+    },
+    {
+      "path": "official/shapenet/microphone0/summary.json",
+      "sha256": "a58405e5c298b0db6fd4cea07f6b569bf93bf4ef74e504536260f1f352fb4d24"
+    },
+    {
+      "path": "official/shapenet/microphone0/test_timings.csv",
+      "sha256": "9adda4bb8908c346e6875ca1fe0a5b84fb45c71000a1783dea65750d2f12e82f"
+    },
+    {
+      "path": "official/shapenet/microphone0/train_timings.csv",
+      "sha256": "74751e2d2ac01fb5d2acabddeba75afc7ea81f6c1e187bb7de4b1fcb938b716c"
+    },
+    {
+      "path": "official/shapenet/shelf0/environment.json",
+      "sha256": "a8a9668095ccb3fecab8d3f6e7869c11801bf3ef9d7ebd0e020f0eafda217356"
+    },
+    {
+      "path": "official/shapenet/shelf0/manifest.json",
+      "sha256": "02887ebe73fe59e67151933f144f6d748dc51cda66ca311daceababf777e63cb"
+    },
+    {
+      "path": "official/shapenet/shelf0/metrics.csv",
+      "sha256": "f952a20d76cc59cb3adb4caf3fc13bb04308a0bbda072acd2d6b3cb705bc8b7b"
+    },
+    {
+      "path": "official/shapenet/shelf0/resources.csv",
+      "sha256": "8a17d4994b550dffcb7e3ff91aaa4323034a85c1a908cbaccdffa0ae7dc02b10"
+    },
+    {
+      "path": "official/shapenet/shelf0/resource_summary.csv",
+      "sha256": "60611d1a5334dd6e70c0985f8c3af0dfb39f9245fb4cdc40f2ba9da4d832bf74"
+    },
+    {
+      "path": "official/shapenet/shelf0/resource_summary.json",
+      "sha256": "418795342eb596511e459ae4c9e54aa1c92d6be0f76b0e0bfeafc19900cf3551"
+    },
+    {
+      "path": "official/shapenet/shelf0/stage_summary.csv",
+      "sha256": "e93cff47f54d8b4f91df1caf17ef3809a6510985e48a7b0cd1abbfce4b16387d"
+    },
+    {
+      "path": "official/shapenet/shelf0/stage_timings.csv",
+      "sha256": "f5eec054950954f13063301d5ab9109b090502cd11b0ff6beb6b03fe996f4a5c"
+    },
+    {
+      "path": "official/shapenet/shelf0/summary.json",
+      "sha256": "f0b9732076bca5f54783cddc71a2ad05cc1405ddf673686b9f8c8e9287a844e4"
+    },
+    {
+      "path": "official/shapenet/shelf0/test_timings.csv",
+      "sha256": "28be70a447e9a9731fbcd354be358ddbd174d611230195e11ba564f7565dde36"
+    },
+    {
+      "path": "official/shapenet/shelf0/train_timings.csv",
+      "sha256": "342fcba271fd8fce390cfd22761714bb16d0c44622700d7e77ab856855bf6756"
+    },
+    {
+      "path": "official/shapenet/tap0/environment.json",
+      "sha256": "a8a9668095ccb3fecab8d3f6e7869c11801bf3ef9d7ebd0e020f0eafda217356"
+    },
+    {
+      "path": "official/shapenet/tap0/manifest.json",
+      "sha256": "ce7ce41fb1758e510c6f3254e1d10dacca8bb4ef056a8441bfa2af2ea8daf4f0"
+    },
+    {
+      "path": "official/shapenet/tap0/metrics.csv",
+      "sha256": "5b0dd8badc4340a6d485b7a441ff84caf128f50fb71f3a93add61dd8c85fff49"
+    },
+    {
+      "path": "official/shapenet/tap0/resources.csv",
+      "sha256": "2689745396e90dbcd6c41e75e4c396cee2b52d8c9e4d7f06f33da7d4060e6362"
+    },
+    {
+      "path": "official/shapenet/tap0/resource_summary.csv",
+      "sha256": "51843cf9f3767fb467ba21a14c2ab8305c58cd37857c3531dd876764a5c47219"
+    },
+    {
+      "path": "official/shapenet/tap0/resource_summary.json",
+      "sha256": "d277d4f3cd7de3932f27a7d6e136bc1f74aa9d66bdcdd0cfd36a2aa9041b54b3"
+    },
+    {
+      "path": "official/shapenet/tap0/stage_summary.csv",
+      "sha256": "cf2b5b0a7ec6db7af90376cd105a7f12e1e72c40fc4b52cc5d9b5ece5b294750"
+    },
+    {
+      "path": "official/shapenet/tap0/stage_timings.csv",
+      "sha256": "6b1a42f18632d672cd0daa1c37b2e0c7137c27a370c6b4274a8826342fcb6115"
+    },
+    {
+      "path": "official/shapenet/tap0/summary.json",
+      "sha256": "980f3975e9615ee01bccb05fe519cb00f0385d4fceb384d36f0a498322543a4a"
+    },
+    {
+      "path": "official/shapenet/tap0/test_timings.csv",
+      "sha256": "381b8dec995c6dcd9d61e3c27bbc4be6d800e9cb7c2b9667ac68f91d78bb2cda"
+    },
+    {
+      "path": "official/shapenet/tap0/train_timings.csv",
+      "sha256": "6d378fef52125a68c699609173a7e236f9a1073b97aafa3ea34e1c021224a284"
+    },
+    {
+      "path": "official/shapenet/tap1/environment.json",
+      "sha256": "a8a9668095ccb3fecab8d3f6e7869c11801bf3ef9d7ebd0e020f0eafda217356"
+    },
+    {
+      "path": "official/shapenet/tap1/manifest.json",
+      "sha256": "623e960d9b0b0fb8d668a44870b5f316dffb7bd0b9ba484328f7e07e92347fae"
+    },
+    {
+      "path": "official/shapenet/tap1/metrics.csv",
+      "sha256": "0fbbec563d49ea59b29cdec9118c8594ad586749ccb0403f244f2da7bc04c207"
+    },
+    {
+      "path": "official/shapenet/tap1/resources.csv",
+      "sha256": "e7744eb3a63402d38d28eae3e787a2246e0eaa434c2a5ba6f8a5437b79e48fe2"
+    },
+    {
+      "path": "official/shapenet/tap1/resource_summary.csv",
+      "sha256": "198feb19ef56aafff09e2b0405188f29c3da992fb932fcbf67a3082316234eb8"
+    },
+    {
+      "path": "official/shapenet/tap1/resource_summary.json",
+      "sha256": "b7dc4c72b968ec66b76f121c96a7bcf92e47ba09a7ce12b0b5ca499dd52bbb6e"
+    },
+    {
+      "path": "official/shapenet/tap1/stage_summary.csv",
+      "sha256": "c4e9393aa15e136b8bca80f7f93920ef16dd96097a94daeaa3da66b584358dd4"
+    },
+    {
+      "path": "official/shapenet/tap1/stage_timings.csv",
+      "sha256": "9675fb5a1f2c285a42fcfa654adbc3ae110c57dffde22593ff3eef88e1ad3d9c"
+    },
+    {
+      "path": "official/shapenet/tap1/summary.json",
+      "sha256": "1ae27b37db633739ab01850d889fee40e23102b8dd775249d6cd48f857dff2b8"
+    },
+    {
+      "path": "official/shapenet/tap1/test_timings.csv",
+      "sha256": "b960562fb7e33405770ccbd6e04510bd9cb8d45b3448866051ce9e7296ece2c3"
+    },
+    {
+      "path": "official/shapenet/tap1/train_timings.csv",
+      "sha256": "ae800865b2c9762d9480172334f9eb84dd9b3c191d0da3044a302904b6d7b95c"
+    },
+    {
+      "path": "official/shapenet/vase0/environment.json",
+      "sha256": "a8a9668095ccb3fecab8d3f6e7869c11801bf3ef9d7ebd0e020f0eafda217356"
+    },
+    {
+      "path": "official/shapenet/vase0/manifest.json",
+      "sha256": "81eac3574f84f056cf1a1da8cb84b3c07bc172bb7f2c5c76a5a841435dba3d60"
+    },
+    {
+      "path": "official/shapenet/vase0/metrics.csv",
+      "sha256": "da321a5e7b48d7958fdf1af3563607c728c5a59d332a22d2980063d20d6c1de0"
+    },
+    {
+      "path": "official/shapenet/vase0/resources.csv",
+      "sha256": "e1605809790e577b1c427caeaf946375f9797e3242864fa730b1b2288457795e"
+    },
+    {
+      "path": "official/shapenet/vase0/resource_summary.csv",
+      "sha256": "69271ada3f995198bcbb0f084f0934a5b10e363e20c227cc452efd71bd1a6b42"
+    },
+    {
+      "path": "official/shapenet/vase0/resource_summary.json",
+      "sha256": "1c1c0094cdfc8e3f41994eb0c042d56ecec11d56b76ad08c36e7e95968d44041"
+    },
+    {
+      "path": "official/shapenet/vase0/stage_summary.csv",
+      "sha256": "5cae1be225038dde8a2260183fef89c90d3b84aaa3c951f0d77921e38c739c78"
+    },
+    {
+      "path": "official/shapenet/vase0/stage_timings.csv",
+      "sha256": "ab6ba7c405633ab89048b7313bc6cb6f3fad80870f53ed0cbe78e2bb23f10d21"
+    },
+    {
+      "path": "official/shapenet/vase0/summary.json",
+      "sha256": "7fcb8ce22d30b3f14ecfd8a2b12a39b739a3269dd90afd4a966ff74f1a1898ab"
+    },
+    {
+      "path": "official/shapenet/vase0/test_timings.csv",
+      "sha256": "54da6d4b8a01380efaf88b2eaafb973624df99e2a907f2915334fc3dd597b8af"
+    },
+    {
+      "path": "official/shapenet/vase0/train_timings.csv",
+      "sha256": "142ec18233a48b4c3f38312065104723e68e4c999c3dabe0766c85ac6383e3da"
+    },
+    {
+      "path": "official/shapenet/vase1/environment.json",
+      "sha256": "a8a9668095ccb3fecab8d3f6e7869c11801bf3ef9d7ebd0e020f0eafda217356"
+    },
+    {
+      "path": "official/shapenet/vase1/manifest.json",
+      "sha256": "070c0bed9734c4f972cc24f5028b956c14f4e39e401f0b439c39987cf76dc951"
+    },
+    {
+      "path": "official/shapenet/vase1/metrics.csv",
+      "sha256": "87019c3c9e87d87bb51045740b1d99d6d4417a0ab14834c1cba6ef263f2c8ea4"
+    },
+    {
+      "path": "official/shapenet/vase1/resources.csv",
+      "sha256": "283e5320f773510371ab4e9c9a2ac7174c330ba5233f82403ab18844446dcf70"
+    },
+    {
+      "path": "official/shapenet/vase1/resource_summary.csv",
+      "sha256": "cc3184671c261fec703c8d9b63b776f9d558720def0cc1050ef3d662b7080591"
+    },
+    {
+      "path": "official/shapenet/vase1/resource_summary.json",
+      "sha256": "74382518651f57145f5939b604cbfcf2853538ef4aefb360c4357d0fc9762a9b"
+    },
+    {
+      "path": "official/shapenet/vase1/stage_summary.csv",
+      "sha256": "2b7a2e16b0c02719104e84d458d26ae6bfc3c5072debe860131fdc3aa5558110"
+    },
+    {
+      "path": "official/shapenet/vase1/stage_timings.csv",
+      "sha256": "20fa7c941621624362bd1f652e76c0374557552a45d47f703173943eab170858"
+    },
+    {
+      "path": "official/shapenet/vase1/summary.json",
+      "sha256": "830f08abf0a86f990ed65d6168f804c45bb69c99fdaf299f67448360c71da7f9"
+    },
+    {
+      "path": "official/shapenet/vase1/test_timings.csv",
+      "sha256": "a63b41b5fb37096c13b4f94b47ed373a8d8134ba2452d3448f61a263398c0ce9"
+    },
+    {
+      "path": "official/shapenet/vase1/train_timings.csv",
+      "sha256": "8c98e4da1c7defb9280c1d53ef1b56c04656d5122aeb0d698df7301ca86fe906"
+    },
+    {
+      "path": "official/shapenet/vase2/environment.json",
+      "sha256": "a8a9668095ccb3fecab8d3f6e7869c11801bf3ef9d7ebd0e020f0eafda217356"
+    },
+    {
+      "path": "official/shapenet/vase2/manifest.json",
+      "sha256": "ad71f9b093f17f2862ab4fe8d8d4d944553f471f3f92944e2c95b857e5499afa"
+    },
+    {
+      "path": "official/shapenet/vase2/metrics.csv",
+      "sha256": "95b7c9a0fecfd5c814b5f7493de8d40251c49787e441f13e50dd2da5d1163961"
+    },
+    {
+      "path": "official/shapenet/vase2/resources.csv",
+      "sha256": "c92cdc47cc2a2e0c4da9e6b64934ee70d69fb250bc6baebec412544f4a2ac5d9"
+    },
+    {
+      "path": "official/shapenet/vase2/resource_summary.csv",
+      "sha256": "f9222b67cd5112941675fce2f678ddf4542ccdfcd6e386efc7e7b08c361bcd08"
+    },
+    {
+      "path": "official/shapenet/vase2/resource_summary.json",
+      "sha256": "c696716caa131220d669fa67536e6b7240f4c57a6a6bdddc397d9242a5f539b4"
+    },
+    {
+      "path": "official/shapenet/vase2/stage_summary.csv",
+      "sha256": "1e24bdad40eb1c8a0ffb39da298125bd981f19f3e97fe37028f1a1125420c3da"
+    },
+    {
+      "path": "official/shapenet/vase2/stage_timings.csv",
+      "sha256": "b5bc64d4052fbc163e5c833e1d7450040ff7e68a0db951191eff9edf7232491c"
+    },
+    {
+      "path": "official/shapenet/vase2/summary.json",
+      "sha256": "6822651fdd5986f0843e223d47134f18561db019297bc8a7bc2eb72b80ddc75c"
+    },
+    {
+      "path": "official/shapenet/vase2/test_timings.csv",
+      "sha256": "0c3fa7ccbe347827923c9c2e1bac3145789c1ca0ab578336b2d64ae582d2e614"
+    },
+    {
+      "path": "official/shapenet/vase2/train_timings.csv",
+      "sha256": "36f3d0223dcc197d8b6ddcbc0f71fa1ec755e2c6633dd40752414a60498fed80"
+    },
+    {
+      "path": "official/shapenet/vase3/environment.json",
+      "sha256": "a8a9668095ccb3fecab8d3f6e7869c11801bf3ef9d7ebd0e020f0eafda217356"
+    },
+    {
+      "path": "official/shapenet/vase3/manifest.json",
+      "sha256": "7685d0ebdf7c5e7e81b398fb994a2bdc2f0156cb2e53c7a505b59c33aad0bd84"
+    },
+    {
+      "path": "official/shapenet/vase3/metrics.csv",
+      "sha256": "8848ad6c757824581fe1a22281a96ee91d44ec5985cb60f2ff89370d7f3b1621"
+    },
+    {
+      "path": "official/shapenet/vase3/resources.csv",
+      "sha256": "a118769caba51d0e7bf5635095bf3e729e4a3b265a912ba2346861f3bfd8dad0"
+    },
+    {
+      "path": "official/shapenet/vase3/resource_summary.csv",
+      "sha256": "f80ffdb84d26a232260b30b3c4485f40ca1e7a24c79de3d1d24a206a52ccfea3"
+    },
+    {
+      "path": "official/shapenet/vase3/resource_summary.json",
+      "sha256": "8f2180199dc9ac1c0d455c35a4111ea702c28d5d518caf4b9a791dab999d6675"
+    },
+    {
+      "path": "official/shapenet/vase3/stage_summary.csv",
+      "sha256": "648f71d7a7e2025cf4e357bb62e9b678d93e2482120e974e0b28191b9523a864"
+    },
+    {
+      "path": "official/shapenet/vase3/stage_timings.csv",
+      "sha256": "12daa5091583eea281bc2459667fee5925e3d9cd6631ec48ab4e0cd3c3004c89"
+    },
+    {
+      "path": "official/shapenet/vase3/summary.json",
+      "sha256": "fccb31169753de711a4a6c7d71bbf46376ff0da8827e87fd50a9320faeb4126a"
+    },
+    {
+      "path": "official/shapenet/vase3/test_timings.csv",
+      "sha256": "83596b105e101b40a89cb95b3b56a025ed518d3cbc177ef3f15c94032cc8702c"
+    },
+    {
+      "path": "official/shapenet/vase3/train_timings.csv",
+      "sha256": "74360f8500c2c1e9cd8333f4a35eaaecac926dc240366872fd823190aa02e184"
+    },
+    {
+      "path": "official/shapenet/vase4/environment.json",
+      "sha256": "a8a9668095ccb3fecab8d3f6e7869c11801bf3ef9d7ebd0e020f0eafda217356"
+    },
+    {
+      "path": "official/shapenet/vase4/manifest.json",
+      "sha256": "912e197a08a4d66ec9055f071cc818b3b0a0dd5bb35c00168049f2f5b8d2aa52"
+    },
+    {
+      "path": "official/shapenet/vase4/metrics.csv",
+      "sha256": "bcb0bb075acbabd435e71b100cf16da5bce4a9b93ab454929f02496ece320af6"
+    },
+    {
+      "path": "official/shapenet/vase4/resources.csv",
+      "sha256": "a45eb71920ff9211bc88c53206a9dca5257fb4787dfcd8f1f46e034ee6cda41c"
+    },
+    {
+      "path": "official/shapenet/vase4/resource_summary.csv",
+      "sha256": "92a4fd8c429e193013095124967082f40dc85fcad2528399546d3f7ee231b366"
+    },
+    {
+      "path": "official/shapenet/vase4/resource_summary.json",
+      "sha256": "0066e8807e4d3a6d77edf4acb915db04a524a0d225c9bde29a39800b02f6c9b6"
+    },
+    {
+      "path": "official/shapenet/vase4/stage_summary.csv",
+      "sha256": "66fee717dfdc6308e58a5048ecc26216b3d901441afcaee949b87baaf1416bba"
+    },
+    {
+      "path": "official/shapenet/vase4/stage_timings.csv",
+      "sha256": "4a0626a592001d17d6426fdda52094a07d6165a3f35453c5c3ff99200885ef2c"
+    },
+    {
+      "path": "official/shapenet/vase4/summary.json",
+      "sha256": "0b3ca9b3380d90f2c90f07ca573cba90bc78ceeeb2ca8b792037bfc63953d812"
+    },
+    {
+      "path": "official/shapenet/vase4/test_timings.csv",
+      "sha256": "d923d0a1b67541853e91d17e33ca92fe7d36b102dd5792feaa507d9da5463664"
+    },
+    {
+      "path": "official/shapenet/vase4/train_timings.csv",
+      "sha256": "04fec4be54404522414126c89148387402a658afff7feb826f73ae4c7b3ad737"
+    },
+    {
+      "path": "official/shapenet/vase5/environment.json",
+      "sha256": "a8a9668095ccb3fecab8d3f6e7869c11801bf3ef9d7ebd0e020f0eafda217356"
+    },
+    {
+      "path": "official/shapenet/vase5/manifest.json",
+      "sha256": "9400f239233f7cd60ba30b09086dd24a00146ef3a3f8e3ee9903e428ce2d44d2"
+    },
+    {
+      "path": "official/shapenet/vase5/metrics.csv",
+      "sha256": "e052d25574b54c6659ba83c420fa17721183c64aedc24b098c03d59f1806d8aa"
+    },
+    {
+      "path": "official/shapenet/vase5/resources.csv",
+      "sha256": "94851398e6a605995c1035b5c0dc35ec9e52a9d07b8ea76a400a9b11aec07fa0"
+    },
+    {
+      "path": "official/shapenet/vase5/resource_summary.csv",
+      "sha256": "4df94a55fc5c4327c82d7cef8af6209d6ba41238e73e87b002b08ddb59771bb1"
+    },
+    {
+      "path": "official/shapenet/vase5/resource_summary.json",
+      "sha256": "9dff04f87e17e3eabf0387c996b89af69c679a3720ab1b435e276a12305deaab"
+    },
+    {
+      "path": "official/shapenet/vase5/stage_summary.csv",
+      "sha256": "b6d9ec4b5918ce4a2cc9a4f8202a4a4fb5eebba74f4f39bdb7b1132926afecfa"
+    },
+    {
+      "path": "official/shapenet/vase5/stage_timings.csv",
+      "sha256": "b6044580c77665325b30beb988f26a9e408d40591b7797f202bb932c5cdc892d"
+    },
+    {
+      "path": "official/shapenet/vase5/summary.json",
+      "sha256": "eef1ca8c7bf21bfc39c91c90e8cb277a98fe27a2db6bf55de70fbc343fab19eb"
+    },
+    {
+      "path": "official/shapenet/vase5/test_timings.csv",
+      "sha256": "c2d02b454db8d349947adad0749cb796fc223905c72804c45f849b05a646d5e6"
+    },
+    {
+      "path": "official/shapenet/vase5/train_timings.csv",
+      "sha256": "efa1805bd2d2c37bf15fb3cc957546ec3b77b12b5736449bdb43f3ae1119428f"
+    },
+    {
+      "path": "official/shapenet/vase7/environment.json",
+      "sha256": "a8a9668095ccb3fecab8d3f6e7869c11801bf3ef9d7ebd0e020f0eafda217356"
+    },
+    {
+      "path": "official/shapenet/vase7/manifest.json",
+      "sha256": "d1d3a9479c9ce3545939d801bb7222c6bf78adba0029051f9ccd116bbd86e225"
+    },
+    {
+      "path": "official/shapenet/vase7/metrics.csv",
+      "sha256": "d6a415b20b6668ef042f901961dff7c2ef1367215f7cf05777ad6a8c218a1325"
+    },
+    {
+      "path": "official/shapenet/vase7/resources.csv",
+      "sha256": "d13aad5e8ff3c9f7cd7098d1a65959a8275f1ab13383f887a876493eebfc04c3"
+    },
+    {
+      "path": "official/shapenet/vase7/resource_summary.csv",
+      "sha256": "fae937bc80ec6c32f385190c829f35e6740632b49d34a236b99cd300c9f5ef85"
+    },
+    {
+      "path": "official/shapenet/vase7/resource_summary.json",
+      "sha256": "7b63fd7b53fcb6b5602ee6756df907e2c3b08fa9c377c0cd510483733fd1db40"
+    },
+    {
+      "path": "official/shapenet/vase7/stage_summary.csv",
+      "sha256": "71707ca9471f3b09824c59287aaa9885b83ace24e6acbbee153fbe8010642290"
+    },
+    {
+      "path": "official/shapenet/vase7/stage_timings.csv",
+      "sha256": "98971c6dde067787b47fc4c6eb55b723d286b7fcb1520757e0bfee56c1d6095e"
+    },
+    {
+      "path": "official/shapenet/vase7/summary.json",
+      "sha256": "b859cd6160d351919f20c77f2269712b27e51755e22696b8e041ed1f3b80cb13"
+    },
+    {
+      "path": "official/shapenet/vase7/test_timings.csv",
+      "sha256": "2af21d60cbb904f98f38c4e1f6f66440d14ddfea27a7cedb16ab24ff5c4135cf"
+    },
+    {
+      "path": "official/shapenet/vase7/train_timings.csv",
+      "sha256": "1185785b895f7e4251725c103f5235a2d67d1b4473b7ff833b774ff040aedbe3"
+    },
+    {
+      "path": "official/shapenet/vase8/environment.json",
+      "sha256": "a8a9668095ccb3fecab8d3f6e7869c11801bf3ef9d7ebd0e020f0eafda217356"
+    },
+    {
+      "path": "official/shapenet/vase8/manifest.json",
+      "sha256": "55c5c2f0b92ee52f974f79112d786345a85d6669cd72c8d378d7351b2f1f4aa6"
+    },
+    {
+      "path": "official/shapenet/vase8/metrics.csv",
+      "sha256": "21fb5380c92928cb1d874221d45742daf67bee145778b8fa2c1345c1c55d57d2"
+    },
+    {
+      "path": "official/shapenet/vase8/resources.csv",
+      "sha256": "0f40ee293cfee94768abbcf382041d5d4556fae8eb877feec8fab5b7792f635b"
+    },
+    {
+      "path": "official/shapenet/vase8/resource_summary.csv",
+      "sha256": "f0cbb63c9436f68b22b576cac1ad0c1600a349cbecca46f137fb5530ecca177d"
+    },
+    {
+      "path": "official/shapenet/vase8/resource_summary.json",
+      "sha256": "2e50fb2f6254101f2557cff947529f891be820ef17bdc2ffdc785d8a27ecc140"
+    },
+    {
+      "path": "official/shapenet/vase8/stage_summary.csv",
+      "sha256": "2eed6a97023f961f311eb7bd23fdd3f4013b1b45d5ac9e7d2387cfa0dd8731a7"
+    },
+    {
+      "path": "official/shapenet/vase8/stage_timings.csv",
+      "sha256": "fa39ccfe2ed7078a8b6da73b1f8e11f09109b8639d6db0c63c267969e7366636"
+    },
+    {
+      "path": "official/shapenet/vase8/summary.json",
+      "sha256": "46468a737afb7199712b2bb76fa0cfa44d6d04a91eb4b50458d6e8417bfa3bb9"
+    },
+    {
+      "path": "official/shapenet/vase8/test_timings.csv",
+      "sha256": "9d4fd11aa3acf782ea676e23d5a6a731b517a23fd823a540d3808c0f7049b90c"
+    },
+    {
+      "path": "official/shapenet/vase8/train_timings.csv",
+      "sha256": "fb61de947fb32a1153464da1023bd1ff5f62a4d064ef13714e2186d15d47460e"
+    },
+    {
+      "path": "official/shapenet/vase9/environment.json",
+      "sha256": "a8a9668095ccb3fecab8d3f6e7869c11801bf3ef9d7ebd0e020f0eafda217356"
+    },
+    {
+      "path": "official/shapenet/vase9/manifest.json",
+      "sha256": "9f24715d18465297028d8260637cfca9778e2f54aee150264cdd1640c65832aa"
+    },
+    {
+      "path": "official/shapenet/vase9/metrics.csv",
+      "sha256": "6bab881a2771110d1cad340e6b275dc1ac1e0be5f8ddc4f366ce90a3172f8cbf"
+    },
+    {
+      "path": "official/shapenet/vase9/resources.csv",
+      "sha256": "d25b131c47ff2deefa2d352bbd5e1274139f6fd373fc3b41b55cd185fc30965e"
+    },
+    {
+      "path": "official/shapenet/vase9/resource_summary.csv",
+      "sha256": "abb79e687b0e0bb13b869b695ef339b49013976878171d8407650765a2648b84"
+    },
+    {
+      "path": "official/shapenet/vase9/resource_summary.json",
+      "sha256": "2cad46931b905c69349175484594c844824c014d8dd21a0d2251241301d0cce6"
+    },
+    {
+      "path": "official/shapenet/vase9/stage_summary.csv",
+      "sha256": "c37e9e0abec1042ca2768f5b29f920133074800df1c3ffef3e0c057f3b4c3676"
+    },
+    {
+      "path": "official/shapenet/vase9/stage_timings.csv",
+      "sha256": "989117d9ab25877bed3192a27820320377d23bbdcacaab50fddb904fcfbf75e1"
+    },
+    {
+      "path": "official/shapenet/vase9/summary.json",
+      "sha256": "ddc23393765a7342f5a03a84093f439e2e7b92bbcf6e6f7e840b722f32e70913"
+    },
+    {
+      "path": "official/shapenet/vase9/test_timings.csv",
+      "sha256": "bd8ad07f2cf29912ae7381eb65ee3518773f16634f2e77164caf0156a138b76b"
+    },
+    {
+      "path": "official/shapenet/vase9/train_timings.csv",
+      "sha256": "dcdde734033e1d90b528e09b66f29d80debcec3be599399f9841bdd0dfb9feaf"
+    },
+    {
+      "path": "preflight/gpu_kdtree/minishift/capsule/environment.json",
+      "sha256": "6ef46fe2ce457c2f1ab920d5da48fb8f2b72a1045e7abf41d366caaf51f747d7"
+    },
+    {
+      "path": "preflight/gpu_kdtree/minishift/capsule/manifest.json",
+      "sha256": "363d8099e5fe9859af51e0a9410b0cb92ccae93576f3e60c837548c20db1c24e"
+    },
+    {
+      "path": "preflight/gpu_kdtree/minishift/capsule/resources.csv",
+      "sha256": "9a3d251c27ffaa4b9e06484d0c74fdc755ed01e5a4ab38e21dd537d8f6fc0916"
+    },
+    {
+      "path": "preflight/gpu_kdtree/minishift/capsule/resource_summary.csv",
+      "sha256": "24afc65e93f3c60b58e476daa006118d7bb8699c2095ecd6a68846d50b83bada"
+    },
+    {
+      "path": "preflight/gpu_kdtree/minishift/capsule/resource_summary.json",
+      "sha256": "3d63c5723cd7c1087918c467bafc27ba2923e9ee79e986ae65bfc98554607511"
+    },
+    {
+      "path": "preflight/gpu_kdtree/minishift/capsule/stage_summary.csv",
+      "sha256": "e7bb423df221a377c1a83338439b5d537fffa959940aadee3566452d57e4c51f"
+    },
+    {
+      "path": "preflight/gpu_kdtree/minishift/capsule/stage_timings.csv",
+      "sha256": "dd91946a00022b5348a6ea431ae8cb52d1cbe19de96d8302a491c84eae4e9408"
+    },
+    {
+      "path": "preflight/gpu_kdtree/minishift/capsule/summary.json",
+      "sha256": "cbad50ae0ebda6ffcc7f07b62e2447a181cb9bc42149e7180772020e39669930"
+    },
+    {
+      "path": "preflight/gpu_kdtree/minishift/capsule/test_timings.csv",
+      "sha256": "e8f0229beae889f5ad5bf5978c5e1d6e0dc38e9e1f37a2f13607bc7d8b643fb0"
+    },
+    {
+      "path": "preflight/gpu_kdtree/minishift/capsule/train_timings.csv",
+      "sha256": "21fbc0051b460d7142a912d6306dd16e2e499e1dd071f42722aeaab0468cfb2d"
+    },
+    {
+      "path": "preflight/gpu_kdtree/shapenet/ashtray0/environment.json",
+      "sha256": "fed2fd4900880288e61b1d2c2210760f91a8b5c6f773de6dd803a2ec64d0aa70"
+    },
+    {
+      "path": "preflight/gpu_kdtree/shapenet/ashtray0/manifest.json",
+      "sha256": "8c8a491805ae5a3e7e3f220698de5e3f72b66c8083d46230f9868482537f8d00"
+    },
+    {
+      "path": "preflight/gpu_kdtree/shapenet/ashtray0/resources.csv",
+      "sha256": "56da33c82786767ddceeafeea8de07f913c4b895de19a8c41941dcf605e060be"
+    },
+    {
+      "path": "preflight/gpu_kdtree/shapenet/ashtray0/resource_summary.csv",
+      "sha256": "a9e07c5e1bd676277234044d233efea95f512b1e3ca46d22327de2da97dba894"
+    },
+    {
+      "path": "preflight/gpu_kdtree/shapenet/ashtray0/resource_summary.json",
+      "sha256": "85effae5db18d0ab815134b7ef964c4a19467e20a1faeeb7a5a1bc4306d9ea99"
+    },
+    {
+      "path": "preflight/gpu_kdtree/shapenet/ashtray0/stage_summary.csv",
+      "sha256": "be4375abc7f1a47f3edb12d6b60c5a9630a7c0fd1ba7feb3aa3def652addbd56"
+    },
+    {
+      "path": "preflight/gpu_kdtree/shapenet/ashtray0/stage_timings.csv",
+      "sha256": "e0af88dc59f33ee4b5bab9761a6573d9bd7e907818802c238dc725adc0a0b95d"
+    },
+    {
+      "path": "preflight/gpu_kdtree/shapenet/ashtray0/summary.json",
+      "sha256": "c5dddecacad9d1b82085578ea82d7cbbc1670f2ef018b3fb80a1bb82acfb17e0"
+    },
+    {
+      "path": "preflight/gpu_kdtree/shapenet/ashtray0/test_timings.csv",
+      "sha256": "a46ccbd40546cb92ad013269a7c3e0e96dafe82e4e23c201a9c86f58b00f4878"
+    },
+    {
+      "path": "preflight/gpu_kdtree/shapenet/ashtray0/train_timings.csv",
+      "sha256": "849e7392608bed18d3c2ab1b288b78517fb6900f6cdfaa8a5e791b684808a8c7"
+    },
+    {
+      "path": "preflight/official/minishift/capsule/environment.json",
+      "sha256": "9d3af6c835f9b46e56a36bff739830c00414c83091bedf0b3807bc0dae23974f"
+    },
+    {
+      "path": "preflight/official/minishift/capsule/manifest.json",
+      "sha256": "363d8099e5fe9859af51e0a9410b0cb92ccae93576f3e60c837548c20db1c24e"
+    },
+    {
+      "path": "preflight/official/minishift/capsule/resources.csv",
+      "sha256": "a3bda43f8cea15aade2a1fec47a27da12dcd80962caa37d2b83dc8fa9901a80c"
+    },
+    {
+      "path": "preflight/official/minishift/capsule/resource_summary.csv",
+      "sha256": "4cb18635b40db8f32ee0dbc809ec3827150dd28e44c1385fff0d3a7fa75c384a"
+    },
+    {
+      "path": "preflight/official/minishift/capsule/resource_summary.json",
+      "sha256": "31a44444553d8599ac7b86b0d4e7e61517a22991769a3a807a88ef162303432c"
+    },
+    {
+      "path": "preflight/official/minishift/capsule/stage_summary.csv",
+      "sha256": "cffb6ed11aa1fd643e83855eb4a6c9fe2a2d589e918c2c29d37d588983af02ac"
+    },
+    {
+      "path": "preflight/official/minishift/capsule/stage_timings.csv",
+      "sha256": "17ce3df3785eb62bdad68b536d66ce613051edd50e14b6ff6ac6d134a82ef1f0"
+    },
+    {
+      "path": "preflight/official/minishift/capsule/summary.json",
+      "sha256": "09ee283696c1a034ca2dc241e0ed4c67a74439dace4aaa07c3be12b7f8e4292d"
+    },
+    {
+      "path": "preflight/official/minishift/capsule/test_timings.csv",
+      "sha256": "12fcac27e6cfc0d740b8893e69b0791b70ca43ac73b9e3fd0dfbbb589737646c"
+    },
+    {
+      "path": "preflight/official/minishift/capsule/train_timings.csv",
+      "sha256": "9f72d18d90296842b6bb51774803618c84809d1bf4249b68f0b8a0c4a6a45fcd"
+    },
+    {
+      "path": "preflight/official/shapenet/ashtray0/environment.json",
+      "sha256": "ecc32107a3f4b7f70fe9970ef1970229ff23f6b48dd8ee2ad85750bebcfc0350"
+    },
+    {
+      "path": "preflight/official/shapenet/ashtray0/manifest.json",
+      "sha256": "8c8a491805ae5a3e7e3f220698de5e3f72b66c8083d46230f9868482537f8d00"
+    },
+    {
+      "path": "preflight/official/shapenet/ashtray0/resources.csv",
+      "sha256": "f68d03703657b72a9be3097daeea395b52864effff78442d61fb356a7028247a"
+    },
+    {
+      "path": "preflight/official/shapenet/ashtray0/resource_summary.csv",
+      "sha256": "4c121d42ac4ba88f6bedd34bb8004af3df55c8b0a9dc97a5a4689eb7dbe278fa"
+    },
+    {
+      "path": "preflight/official/shapenet/ashtray0/resource_summary.json",
+      "sha256": "970bcf7fa7852e3002a206011d91129bdb876762246203a4fca0851ed511f9a1"
+    },
+    {
+      "path": "preflight/official/shapenet/ashtray0/stage_summary.csv",
+      "sha256": "76d4f1b8e2bbf459971f60f216313671aa5ec7d62775aeaa4ad50b1c2e3438fa"
+    },
+    {
+      "path": "preflight/official/shapenet/ashtray0/stage_timings.csv",
+      "sha256": "d67840443787054104740ffa776911f469b6e96e304fdad0db510b7c251dc498"
+    },
+    {
+      "path": "preflight/official/shapenet/ashtray0/summary.json",
+      "sha256": "97579f5f65055a6949f7ec3b561e5fe60a51c9889175a8c906eaaa820ebf6b8f"
+    },
+    {
+      "path": "preflight/official/shapenet/ashtray0/test_timings.csv",
+      "sha256": "79a4ff9143b6bcd12d35b479d685d03a77b07c9fdaeed7c2597467deae5cd84e"
+    },
+    {
+      "path": "preflight/official/shapenet/ashtray0/train_timings.csv",
+      "sha256": "778251770caed518eec68f9e279bf50ce1886dc745d79c98cc4013a013ca114d"
+    }
+  ]
+}

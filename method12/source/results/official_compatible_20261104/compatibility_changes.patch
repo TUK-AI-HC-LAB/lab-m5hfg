@@ -1,0 +1,107 @@
+diff --git a/data/MiniShiftAD.py b/data/MiniShiftAD.py
+index 9a4e6b2..1a8b891 100644
+--- a/data/MiniShiftAD.py
++++ b/data/MiniShiftAD.py
+@@ -7,7 +7,7 @@ from utils.mvtec3d_util import *
+ from torch.utils.data import DataLoader
+ import numpy as np
+ import open3d as o3d
+-DATASETS_PATH = '/home/ud202380215/FPFH_3D/data/MiniShiftAD'
++DATASETS_PATH = os.environ.get('SIMPLE3D_MINISHIFT_ROOT', '/home/ud202380215/FPFH_3D/data/MiniShiftAD')
+ 
+ def minishiftAD_classes():
+     return [
+@@ -89,7 +89,7 @@ class MiniShiftADTest(MiniShiftAD):
+             else:
+                 if level == 'ALL' or level == 'easy':
+                     pcd_paths = glob.glob(os.path.join(self.data_path, defect_type,'easy') + "/*.txt")
+-                    gt_paths = [x.replace('test','gt') for x in pcd_paths]
++                    gt_paths = [os.path.join(DATASETS_PATH, self.cls, 'gt', os.path.relpath(x, self.data_path)) for x in pcd_paths]
+                     pcd_paths.sort()
+                     gt_paths.sort()
+                     pcd_tot_paths.extend(pcd_paths)
+@@ -98,7 +98,7 @@ class MiniShiftADTest(MiniShiftAD):
+ 
+                 if level == 'ALL' or level == 'medium':
+                     pcd_paths = glob.glob(os.path.join(self.data_path, defect_type,'medium') + "/*.txt")
+-                    gt_paths = [x.replace('test','gt') for x in pcd_paths]
++                    gt_paths = [os.path.join(DATASETS_PATH, self.cls, 'gt', os.path.relpath(x, self.data_path)) for x in pcd_paths]
+                     pcd_paths.sort()
+                     gt_paths.sort()
+                     pcd_tot_paths.extend(pcd_paths)
+@@ -107,7 +107,7 @@ class MiniShiftADTest(MiniShiftAD):
+ 
+                 if level == 'ALL' or level == 'hard':
+                     pcd_paths = glob.glob(os.path.join(self.data_path, defect_type,'hard') + "/*.txt")
+-                    gt_paths = [x.replace('test','gt') for x in pcd_paths]
++                    gt_paths = [os.path.join(DATASETS_PATH, self.cls, 'gt', os.path.relpath(x, self.data_path)) for x in pcd_paths]
+                     pcd_paths.sort()
+                     gt_paths.sort()
+                     pcd_tot_paths.extend(pcd_paths)
+diff --git a/data/anomalyshape.py b/data/anomalyshape.py
+index 4183b77..70477e0 100644
+--- a/data/anomalyshape.py
++++ b/data/anomalyshape.py
+@@ -8,7 +8,7 @@ from torch.utils.data import DataLoader
+ import numpy as np
+ import open3d as o3d
+ 
+-DATASETS_PATH = '/data2/code/Semicore/data/AnomalyShapenet/pcd'
++DATASETS_PATH = os.environ.get('SIMPLE3D_SHAPENET_ROOT', '/data2/code/Semicore/data/AnomalyShapenet/pcd')
+ 
+ def shapenet3d_classes():
+     return [
+@@ -98,7 +98,7 @@ class Shape3DTest(Shape3D):
+         tot_labels = []
+ 
+         pcd_paths = glob.glob(self.pcd_path+ "/*.pcd")
+-        gt_path = glob.glob(self.pcd_path.replace("test",'GT')+ "/*.txt")
++        gt_path = glob.glob(os.path.join(DATASETS_PATH, self.cls, 'GT', '*.txt'))
+ 
+ 
+ 
+diff --git a/feature_extractors/features.py b/feature_extractors/features.py
+index 8b383c7..5226af8 100644
+--- a/feature_extractors/features.py
++++ b/feature_extractors/features.py
+@@ -205,7 +205,8 @@ class Features(torch.nn.Module):
+                 
+                 idx = idx + idx_base
+                 idx = idx.view(-1)
+-                neighborhood = s_map.reshape(batch_size * num_points, -1)[idx, :]
++                # Preserve CPU score-map processing; use CPU indices for CPU data.
++                neighborhood = s_map.reshape(batch_size * num_points, -1)[idx.to(s_map.device), :]
+                 neighborhood = neighborhood.reshape(batch_size, num_group, group_size, -1).contiguous()
+                 agg_s_map = torch.mean(neighborhood,-2).view(1, 1, -1)
+ 
+diff --git a/main.py b/main.py
+index d673b86..7f0ad0c 100644
+--- a/main.py
++++ b/main.py
+@@ -5,12 +5,13 @@ from data.real3d import real3d_classes
+ from data.anomalyshape import shapenet3d_classes
+ from data.MulSen import mulsen_classes
+ from data.MiniShiftAD import minishiftAD_classes
+-from data.quan import quan_classes
+ import pandas as pd
+ import torchvision
+ 
+ 
+ def write_experiment_log(expname, strs):
++    from pathlib import Path
++    Path('./logs').mkdir(exist_ok=True)
+     with open(f"./logs/{expname}.txt", 'a') as f:
+         f.write(strs)
+ 
+diff --git a/patchcore_runner.py b/patchcore_runner.py
+index 512a12d..2e1650c 100644
+--- a/patchcore_runner.py
++++ b/patchcore_runner.py
+@@ -3,7 +3,6 @@ from data.real3d import get_real_loader,real3d_classes
+ from data.anomalyshape import get_shapenet_loader,shapenet3d_classes
+ from data.MulSen import get_mulsen_loader,mulsen_classes
+ from data.MiniShiftAD import get_minishift_loader,minishiftAD_classes
+-from data.quan import get_quan_loader,quan_classes
+ import torch
+ from tqdm import tqdm
+ from feature_extractors.FPFH import FPFHFeatures
