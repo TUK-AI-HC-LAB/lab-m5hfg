@@ -1,0 +1,10 @@
+{
+  "status": "complete_verified",
+  "phase": "metrics",
+  "index": -1,
+  "condition": "random_removed_75",
+  "heartbeat_unix": 1794042040.7427716,
+  "pid": 456,
+  "samples_completed": 130,
+  "target_samples": 130
+}
