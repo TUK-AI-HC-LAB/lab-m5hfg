@@ -1,0 +1,54 @@
+{
+  "status": "complete",
+  "mode": "gpu_kdtree",
+  "dataset": "minishift",
+  "category": "capsule",
+  "train_count": 54,
+  "test_count": 130,
+  "fit_wall_s": 98.88279140200001,
+  "inference_mean_ms": 2308.439761753849,
+  "inference_median_ms": 2300.877543499979,
+  "inference_p95_ms": 2415.5633723499986,
+  "peak_torch_allocated_bytes": 5117818368,
+  "peak_torch_reserved_bytes": 6171918336,
+  "elapsed_wall_s": 457.307984726,
+  "metrics": [
+    {
+      "mode": "gpu_kdtree",
+      "dataset": "minishift",
+      "category": "capsule",
+      "level": "easy",
+      "object_auroc": 0.9875,
+      "point_auroc": 0.9273321875491753,
+      "point_ap": 0.3065520955779415
+    },
+    {
+      "mode": "gpu_kdtree",
+      "dataset": "minishift",
+      "category": "capsule",
+      "level": "medium",
+      "object_auroc": 0.9425,
+      "point_auroc": 0.6589389429909488,
+      "point_ap": 0.12897781401449243
+    },
+    {
+      "mode": "gpu_kdtree",
+      "dataset": "minishift",
+      "category": "capsule",
+      "level": "hard",
+      "object_auroc": 0.9099999999999999,
+      "point_auroc": 0.6063047559306456,
+      "point_ap": 0.05267152804816867
+    },
+    {
+      "mode": "gpu_kdtree",
+      "dataset": "minishift",
+      "category": "capsule",
+      "level": "ALL",
+      "object_auroc": 0.9466666666666667,
+      "point_auroc": 0.7218751531628219,
+      "point_ap": 0.15686186541901675
+    }
+  ],
+  "raw_assets": "/home/test/simple3d-capsule-fpfh60-20261108/gpu_kdtree/minishift/capsule"
+}

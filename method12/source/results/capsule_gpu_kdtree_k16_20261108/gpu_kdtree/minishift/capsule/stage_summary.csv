@@ -1,0 +1,64 @@
+phase,stage,device,detail,clock,calls,mean_ms,total_s
+warmup,normal_estimation_including_neighbor_search,cpu,Official legacy CPU normals max_nn=10 radius=10000,wall,1,112.61371299999823,0.11261371299999823
+warmup,positions_normals_upload,gpu_wall,CPU coordinates and normals to CuPy GPU Float32,wall,1,12.225141999998357,0.012225141999998357
+warmup,gpu_kdtree_build,gpu_wall,CuPy GPU tree construction,wall,1,77.52213900000271,0.07752213900000271
+warmup,gpu_kdtree_all_points_k120,gpu_wall,Exact GPU KDTree full 500000 point query; reuse prefixes 40/80/120,wall,1,1086.849749999999,1.086849749999999
+warmup,fpfh_gpu_kdtree_scale_40,gpu_wall,Open3D-derived Float32 SPFH+FPFH CUDA; k=40,wall,1,6.311923999994917,0.006311923999994917
+warmup,fpfh_gpu_kdtree_scale_80,gpu_wall,Open3D-derived Float32 SPFH+FPFH CUDA; k=80,wall,1,13.766347000000678,0.013766347000000678
+warmup,fpfh_gpu_kdtree_scale_120,gpu_wall,Open3D-derived Float32 SPFH+FPFH CUDA; k=120,wall,1,24.391560000005086,0.024391560000005086
+warmup,feature_concatenation,cuda:0,"shape=[500000, 33]",cuda_event,1,6.905759811401367,0.006905759811401367
+warmup,feature_scale_concatenation,gpu_wall,GPU cat 40/80/80/120,wall,1,7.293764000003478,0.007293764000003478
+warmup,fps,cuda:0,"[[1, 500000, 3]]",cuda_event,1,885.0802612304688,0.8850802612304688
+warmup,fps_gather,cuda:0,"[[1, 3, 500000], [1, 4096]]",cuda_event,1,0.20534400641918182,0.00020534400641918183
+warmup,coordinate_knn_gpu_kdtree,gpu_wall,CuPy exact GPU KDTree k=16; query=4096,wall,1,6.302743999995641,0.006302743999995641
+warmup,neighborhood_feature_gather,gpu_wall,GPU gather center-neighbor features,wall,1,5.6049109999989355,0.0056049109999989355
+warmup,feature_or_score_mean,cuda:0,"shape=[1, 4096, 16, 132]",cuda_event,1,17.50912094116211,0.01750912094116211
+fit,normal_estimation_including_neighbor_search,cpu,Official legacy CPU normals max_nn=10 radius=10000,wall,54,104.21070929629559,5.627378301999961
+fit,positions_normals_upload,gpu_wall,CPU coordinates and normals to CuPy GPU Float32,wall,54,1.3858411481481407,0.0748354219999996
+fit,gpu_kdtree_build,gpu_wall,CuPy GPU tree construction,wall,54,16.803675777779464,0.907398492000091
+fit,gpu_kdtree_all_points_k120,gpu_wall,Exact GPU KDTree full 500000 point query; reuse prefixes 40/80/120,wall,54,1132.4900644629624,61.15446348099998
+fit,fpfh_gpu_kdtree_scale_40,gpu_wall,Open3D-derived Float32 SPFH+FPFH CUDA; k=40,wall,54,6.026895907405922,0.32545237899991974
+fit,fpfh_gpu_kdtree_scale_80,gpu_wall,Open3D-derived Float32 SPFH+FPFH CUDA; k=80,wall,54,13.634741648146646,0.7362760489999189
+fit,fpfh_gpu_kdtree_scale_120,gpu_wall,Open3D-derived Float32 SPFH+FPFH CUDA; k=120,wall,54,22.150777462964747,1.1961419830000963
+fit,feature_concatenation,cuda:0,"shape=[500000, 33]",cuda_event,54,2.375237336865178,0.1282628161907196
+fit,feature_scale_concatenation,gpu_wall,GPU cat 40/80/80/120,wall,54,2.524868185186388,0.13634288200006495
+fit,fps,cuda:0,"[[1, 500000, 3]]",cuda_event,54,872.0385764793114,47.090083129882814
+fit,fps_gather,cuda:0,"[[1, 3, 500000], [1, 4096]]",cuda_event,54,0.008704592594531949,0.0004700480001047251
+fit,coordinate_knn_gpu_kdtree,gpu_wall,CuPy exact GPU KDTree k=16; query=4096,wall,54,6.676854185184654,0.36055012599997127
+fit,neighborhood_feature_gather,gpu_wall,GPU gather center-neighbor features,wall,54,0.16587875925887796,0.00895745299997941
+fit,feature_or_score_mean,cuda:0,"shape=[1, 4096, 16, 132]",cuda_event,54,0.11362785190619802,0.006135904002934694
+coreset,feature_concatenation,cuda:0,"shape=[4096, 132]",cuda_event,1,0.4148159921169281,0.0004148159921169281
+coreset,coreset_projection_fallback,cpu,official fallback,wall,1,128.14908400000036,0.12814908400000036
+coreset,coreset_total,cpu_gpu_wall,official 5% coreset,wall,1,5732.359635999984,5.732359635999984
+coreset,memory_bank_save,cpu_gpu_wall,new bank,wall,1,4.301929000007476,0.004301929000007476
+test,input_loading,cpu_wall,official DataLoader with worker,wall,130,2.131619438464747,0.27711052700041705
+test,normal_estimation_including_neighbor_search,cpu,Official legacy CPU normals max_nn=10 radius=10000,wall,130,105.45657074615326,13.709354196999925
+test,positions_normals_upload,gpu_wall,CPU coordinates and normals to CuPy GPU Float32,wall,130,1.1383892769229165,0.14799060599997915
+test,gpu_kdtree_build,gpu_wall,CuPy GPU tree construction,wall,130,16.473476092307873,2.141551892000024
+test,gpu_kdtree_all_points_k120,gpu_wall,Exact GPU KDTree full 500000 point query; reuse prefixes 40/80/120,wall,130,1145.645578684618,148.93392522900035
+test,fpfh_gpu_kdtree_scale_40,gpu_wall,Open3D-derived Float32 SPFH+FPFH CUDA; k=40,wall,130,5.984943576921882,0.7780426649998446
+test,fpfh_gpu_kdtree_scale_80,gpu_wall,Open3D-derived Float32 SPFH+FPFH CUDA; k=80,wall,130,13.607924107691797,1.7690301339999337
+test,fpfh_gpu_kdtree_scale_120,gpu_wall,Open3D-derived Float32 SPFH+FPFH CUDA; k=120,wall,130,22.129080784613,2.87678050199969
+test,feature_concatenation,cuda:0,"shape=[500000, 33]",cuda_event,130,2.339127382865319,0.30408655977249155
+test,feature_scale_concatenation,gpu_wall,GPU cat 40/80/80/120,wall,130,2.4873438999995083,0.32335470699993607
+test,fps,cuda:0,"[[1, 500000, 3]]",cuda_event,260,543.6683067321778,141.35375975036624
+test,fps_gather,cuda:0,"[[1, 3, 500000], [1, 4096]]",cuda_event,130,0.00901981542746608,0.0011725760055705907
+test,coordinate_knn_gpu_kdtree,gpu_wall,CuPy exact GPU KDTree k=16; query=4096,wall,130,7.041108284613747,0.9153440769997871
+test,neighborhood_feature_gather,gpu_wall,GPU gather center-neighbor features,wall,130,0.1745030307708143,0.02268539400020586
+test,feature_or_score_mean,cuda:0,"shape=[1, 4096, 16, 132]",cuda_event,130,0.05009206142276526,0.006511967984959485
+test,memory_bank_cdist,cuda:0,"shape=[4096, 132]",cuda_event,130,3.4581920477060173,0.4495649662017819
+test,nearest_neighbor_min,cuda:0,"shape=[4096, 11059]",cuda_event,130,0.36101613010351474,0.04693209691345693
+test,feature_concatenation,cuda:0,"shape=[1, 1, 50000]",cuda_event,260,0.03296615394871109,0.00857120002666488
+test,point_score_interpolation,cuda:0,"[[1, 3, 500000], [1, 3, 4096], [1, 1, 4096]]",cuda_event,130,238.3799263587365,30.989390426635737
+test,scoremap_reorganization_cpu_gpu,cpu_gpu_wall,"[[500000, 3]]",wall,260,0.4099552269231857,0.10658835900002828
+test,fps_gather,cuda:0,"[[1, 3, 500000], [1, 1024]]",cuda_event,130,0.006159754058059592,0.0008007680275477449
+test,coordinate_knn_gpu_kdtree,gpu_wall,CuPy exact GPU KDTree k=12; query=1024,wall,130,5.48199282307783,0.7126590670001178
+test,feature_or_score_mean,cpu,"shape=[1, 1024, 12, 1]",wall,130,0.04238737692000646,0.0055103589996008395
+test,point_score_interpolation,cuda:0,"[[1, 3, 500000], [1, 3, 1024], [1, 1, 1024]]",cuda_event,130,58.11082094632662,7.554406723022459
+test,image_top80,cpu,"shape=[1, 1, 500000]",wall,130,0.5818249230748925,0.07563723999973604
+test,feature_or_score_mean,cpu,"shape=[1, 1, 80]",wall,130,0.0248538846147557,0.003231004999918241
+save,point_scores_save,cpu_wall,new raw scores,wall,130,57.47990460769275,7.472387599000058
+metrics_easy,metrics_easy,cpu_wall,includes raw reload and CPU AUROC/AP,wall,1,7791.206488999933,7.791206488999933
+metrics_medium,metrics_medium,cpu_wall,includes raw reload and CPU AUROC/AP,wall,1,7252.079799000057,7.252079799000057
+metrics_hard,metrics_hard,cpu_wall,includes raw reload and CPU AUROC/AP,wall,1,7444.947070000012,7.444947070000012
+metrics_ALL,metrics_ALL,cpu_wall,includes raw reload and CPU AUROC/AP,wall,1,23212.327467000025,23.212327467000023
