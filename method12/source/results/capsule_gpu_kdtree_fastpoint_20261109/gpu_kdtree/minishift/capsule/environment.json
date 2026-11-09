@@ -1,0 +1,76 @@
+{
+  "args": {
+    "dataset": "minishift",
+    "device": "cuda:0",
+    "num_group": 4096,
+    "group_size": 128,
+    "max_nn": 40,
+    "use_LFSA": true,
+    "use_MSND": true,
+    "num_MSND": 2,
+    "feature": "FPFH",
+    "level": "ALL",
+    "vis_save": false
+  },
+  "torch": "2.11.0+cu128",
+  "open3d": "0.20.0",
+  "gpu": "NVIDIA GeForce RTX 5080",
+  "official_source": "/mnt/c/Users/test/Desktop/Codex/Project/Simple3D-official-compatible-20261104",
+  "fresh_fit": true,
+  "smoke": false,
+  "mode": "gpu_kdtree",
+  "source_sha256": {
+    "calculate.py": "87c429e99974847674d2406752772e0f943e391bbf0fe5d0b920c25f24367b2c",
+    "main.py": "87598b3aa1edcb7fa925f32229721e3e8856edcf0af221166e24378d6dbbbd19",
+    "patchcore_runner.py": "1fe80825aec368fcb8c34fc9a38c3c925dcd86d7fd04553f4d008b75f97ed038",
+    "render_video.py": "507d347c924dd8fc04e5bfefb28cc8bf379c3781a4b1a72aa1437fa1688a941d",
+    "data/anomalyshape.py": "42c0c9a71734f69e06dae78bae17bd7588c5b20de79f0680f8fb55fb25342bb7",
+    "data/MiniShiftAD.py": "0a6ad4af2555197c16ea1501adba8357fe85aaad9adb2d24462993d1895a0ade",
+    "data/MulSen.py": "42ad7713dde65a89c665e16818495072b7edc4f56adf7b7bf9f0f0e2eb4a94c0",
+    "data/mvtec3d.py": "cc854eda735b1b6b68995806680035b4f886a469aca090c37de32caa16166bab",
+    "data/real3d.py": "99b93208359722c1305abc0c9a1db52462077d704251b7499755448cf6106c35",
+    "feature_extractors/CVFH.py": "ebc0c7264485c5258547034a62ec33b0cc308a62a3cab15387477161b53a5f63",
+    "feature_extractors/features.py": "3f9ab78fa7acb74f455880be89596fed7c46fde6596f609903bb71d58f734cbb",
+    "feature_extractors/FPFH.py": "b4fe90b13edf317a24c924cd52224c58fd80bfdd910582f9d82312f0b4ddc0b2",
+    "feature_extractors/NARF.py": "8ed2111386aa087d9ff30abd46cc895387baf217b3ab2c8417da6e3781c3bf4a",
+    "feature_extractors/pointnet2_utils.py": "d91815846fc27c56b995760972ed5bed17ac610917fe82651f802165807cde9b",
+    "feature_extractors/shape_context.py": "e47c5dd1bf417ef08f88a87e820d34386c349eb53fef09527e751f46d5a3146f",
+    "feature_extractors/SHOT.py": "d5f829d6dfbade24c3fbd5b783f903dfc8bd2449875e1f1b686553ba0aaccdb2",
+    "feature_extractors/Spin.py": "25b8e1a2b290437c65ae212b4e286d4633112ea42dbc95879f50ac89d05d5764",
+    "feature_extractors/Unique_shape.py": "d3e162e16f74fd09e954433edd5b1797ad55299ffc8d305d21cad79452c9d575",
+    "utils/au_pro_util.py": "60dc763f5200848561a513d50bc171f548a67d8efa22dc45b4355b9f6676837f",
+    "utils/DenseSIFTDescriptor.py": "9e19ff956f12c0808a0a910cbb0ad07257af33fd001bb60a6b4584da6b67c99c",
+    "utils/mvtec3d_util.py": "be4c5c056c01a3fa268bea0444b2b82eb6629d0987e9fcb2a9e610fa75c7f3ff",
+    "utils/preprocessing.py": "c3c32e30aa6c73060bb2c100b90f55ab0f10a8d02219c567bd2c388ffb37acfb",
+    "utils/utils.py": "0469272fe005bf6b7cc9bddaf0fd3c0422ae707c53f49fc17377a1d51e1b76da",
+    "utils/visz_utils.py": "b33dcd60072de4acbad35cb4addccf65897ae6c99c4625aa4df32a0d470c7f33"
+  },
+  "measurement": "instrumented CUDA events plus host wall time; nested stages overlap; not pure uninstrumented latency",
+  "fps": {
+    "method": "FastPoint MDPS + GPU KD-tree",
+    "upstream_commit": "7bebca723d5ba87891a9f221e3f0cf96962fab50",
+    "estimator": "ScanNet pretrained, zero-shot transfer to MiniShift",
+    "exclusion_caps": [
+      16,
+      32,
+      48,
+      64,
+      80,
+      120
+    ],
+    "remainder": "exact initial distances + upstream FPS",
+    "fixed_output_counts": [
+      4096,
+      1024
+    ],
+    "inputs_sha256": {
+      "/mnt/c/Users/test/Desktop/Codex/Project/FastPoint/openpoints/cpp/pointnet2_batch/src/sampling.cpp": "5763125c44a95ba07b89a84694a1d8a9e2e9988efb84a1308a1c408b3e517783",
+      "/mnt/c/Users/test/Desktop/Codex/Project/FastPoint/openpoints/cpp/pointnet2_batch/src/sampling_gpu.cu": "9072e3712aea747a12f6dee60065a0c2773bf17b593ce90f59b4003588b24345",
+      "/mnt/c/Users/test/Desktop/Codex/lab-m5hfg/method12/source/simple3d_fastpoint_bindings.cpp": "15db55dfb0c26fc9988bbf1796050b15631336b3f3e6b63db6415b8b4d0d163a",
+      "/mnt/c/Users/test/Desktop/Codex/Project/FastPoint/openpoints/models/backbone/pointmetabase.py": "42b6209a243de20854b622622abeef6aa000c22f3405ff974a4ff6a4ccb854ea",
+      "/mnt/c/Users/test/Desktop/Codex/Project/FastPoint/mps_params/32x128x128x64/ScanNet/mps_weight_ScanNet_best.pth": "7527d04ca44969fba667bc59ad4ab2e5c785fa74429332822aa2de81265a31c5",
+      "/mnt/c/Users/test/Desktop/Codex/Project/FastPoint/openpoints/cpp/pointnet2_batch/src/sampling_gpu.h": "942c83541b543352fed6c2635d51da29217943a2010e21ae07bb5611f0b8aa68",
+      "/mnt/c/Users/test/Desktop/Codex/Project/FastPoint/openpoints/cpp/pointnet2_batch/src/cuda_utils.h": "fa763ca73680bde8acc3547aaf46ee57202d62a272131e3228a4366ce7f68da6"
+    }
+  }
+}

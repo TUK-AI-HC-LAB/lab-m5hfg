@@ -1,0 +1,46 @@
+{
+  "status": "verified",
+  "counts": {
+    "fps_4096": 130,
+    "fps_1024": 130,
+    "kdtree_128": 130,
+    "kdtree_12": 130
+  },
+  "fps": {
+    "method": "FastPoint MDPS + GPU KD-tree",
+    "upstream_commit": "7bebca723d5ba87891a9f221e3f0cf96962fab50",
+    "estimator": "ScanNet pretrained, zero-shot transfer to MiniShift",
+    "exclusion_caps": [
+      16,
+      32,
+      48,
+      64,
+      80,
+      120
+    ],
+    "remainder": "exact initial distances + upstream FPS",
+    "fixed_output_counts": [
+      4096,
+      1024
+    ],
+    "inputs_sha256": {
+      "/mnt/c/Users/test/Desktop/Codex/Project/FastPoint/openpoints/cpp/pointnet2_batch/src/sampling.cpp": "5763125c44a95ba07b89a84694a1d8a9e2e9988efb84a1308a1c408b3e517783",
+      "/mnt/c/Users/test/Desktop/Codex/Project/FastPoint/openpoints/cpp/pointnet2_batch/src/sampling_gpu.cu": "9072e3712aea747a12f6dee60065a0c2773bf17b593ce90f59b4003588b24345",
+      "/mnt/c/Users/test/Desktop/Codex/lab-m5hfg/method12/source/simple3d_fastpoint_bindings.cpp": "15db55dfb0c26fc9988bbf1796050b15631336b3f3e6b63db6415b8b4d0d163a",
+      "/mnt/c/Users/test/Desktop/Codex/Project/FastPoint/openpoints/models/backbone/pointmetabase.py": "42b6209a243de20854b622622abeef6aa000c22f3405ff974a4ff6a4ccb854ea",
+      "/mnt/c/Users/test/Desktop/Codex/Project/FastPoint/mps_params/32x128x128x64/ScanNet/mps_weight_ScanNet_best.pth": "7527d04ca44969fba667bc59ad4ab2e5c785fa74429332822aa2de81265a31c5",
+      "/mnt/c/Users/test/Desktop/Codex/Project/FastPoint/openpoints/cpp/pointnet2_batch/src/sampling_gpu.h": "942c83541b543352fed6c2635d51da29217943a2010e21ae07bb5611f0b8aa68",
+      "/mnt/c/Users/test/Desktop/Codex/Project/FastPoint/openpoints/cpp/pointnet2_batch/src/cuda_utils.h": "fa763ca73680bde8acc3547aaf46ee57202d62a272131e3228a4366ce7f68da6"
+    }
+  },
+  "source_sha256": {
+    "run_simple3d_capsule_fastpoint.py": "ab8f41b52ca697fbe0f5ee82f577b872fddc01819d4fb9c3b4f2e1b30b4e7f88",
+    "run_simple3d_capsule_fastpoint.sh": "a32b0a71167bf18f3e883014ab7e848f50724e3cbd9db96f40d9e2b96ce957dd",
+    "simple3d_fastpoint.py": "59fd7215c3b4b0df53e4f7c5a7ba544c4af45b137ae456b1893241fb27b322ab",
+    "simple3d_fastpoint_bindings.cpp": "15db55dfb0c26fc9988bbf1796050b15631336b3f3e6b63db6415b8b4d0d163a",
+    "simple3d_gpu_kdtree.py": "7750eea7a74674e8b3c1354b8f0195c07641e10b61b1fef09e391369a2afd382",
+    "simple3d_gpu_kdtree.cu": "1b1bb3e2b9798024bbc818d5b37d617b9fe5430d81bdcebf25d22462452f8b4c",
+    "measure_simple3d_capsule_flashfps.py": "0a82d041cde9445bbb6fc5069425e80d5916088ab0163574b6b0682194c9ebfe",
+    "run_simple3d_capsule_flashfps.py": "c2e292a2874c96bd3ba1eb9b68b73e92a52114427cd1df9606059268216594c8"
+  }
+}
