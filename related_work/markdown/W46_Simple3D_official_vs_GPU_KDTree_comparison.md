@@ -3,7 +3,6 @@
 ## 1. 비교 대상과 집계 기준
 
 - **새 비교 측정 104/104개 완료·검증됨.** Anomaly-ShapeNet 40개, MiniShift 12개를 두 버전으로 각각 실행함.
-- 실행: 사전 검증·저장·지표 계산 포함 전체 약 11시간 51분.
 - 이번 문서는 동일 측정 도구로 새로 얻은 공식 호환판과 GPU KD-tree판 결과를 비교함. [이전 KD-tree 단독 결과](W46_Simple3D_GPU_KDTree_results_only_20261104.md)와 수치를 섞지 않음.
 - **공식 호환판(O)**: 누락 import·데이터/정답 경로·CPU/GPU 인덱스 장치 오류만 보완한 공식 알고리즘. CPU Open3D FPFH, native CUDA FPS/KNN_CUDA, 공식 full-sort 보간, torch.cdist/min 유지함.
 - **GPU KD-tree판(G)**: 같은 공식 호환판을 기준으로 CuPy GPU KD-tree 및 별도 CUDA FPFH 경로 적용함. 두 버전 모두 CPU 점수맵과 CPU 인덱스를 사용함. 이전 단독 실행의 GPU 점수맵 반환 우회와 구분됨.
