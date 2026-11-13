@@ -1,4 +1,4 @@
-# W46 Simple3D — MiniShift·Anomaly-ShapeNet GPU KD-tree vs FlashFPS
+# W47 Simple3D — MiniShift·Anomaly-ShapeNet GPU KD-tree vs FlashFPS
 
 **두 데이터셋의 52개 카테고리 모두 평균 추론이 빨라졌음.** 특징 집계만 FlashFPS로 바꿨을 때 전체 추론은 MiniShift에서 **24.3%**, Anomaly-ShapeNet에서 **21.8%** 단축됨. 두 데이터셋 모두 포인트 AUROC는 올랐지만, 물체 AUROC는 낮아졌음.
 
