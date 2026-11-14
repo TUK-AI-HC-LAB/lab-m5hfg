@@ -51,12 +51,12 @@ def source_hashes():
     return {str(p):sha(p) for p in paths}
 
 
-def run(item,smoke=False):
+def run(item,smoke=False,worker=None):
     folder=(ROOT/'preflight' if smoke else ROOT)/item['mode']/item['dataset']/item['category']
     folder.mkdir(parents=True,exist_ok=True)
     if (folder/'summary.json').exists() or (folder/'train_timings.csv').exists():
         raise RuntimeError('Existing outputs require inspection, not automatic reuse: '+str(folder))
-    cmd=[sys.executable,'-u',str(HERE/'measure_simple3d_capsule_flashfps.py')]
+    cmd=[sys.executable,'-u',str(worker or HERE/'measure_simple3d_capsule_flashfps.py')]
     for key,val in item.items():cmd+=['--'+key,val]
     if smoke:cmd+=['--smoke']
     started=time.perf_counter();readings=[];phase='startup'

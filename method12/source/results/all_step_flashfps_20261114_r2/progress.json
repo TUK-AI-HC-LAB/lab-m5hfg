@@ -1,0 +1,16 @@
+{
+  "status": "complete_verified",
+  "completed_jobs": 52,
+  "total_jobs": 52,
+  "updated_utc": "2026-11-14T07:29:59.706101+00:00",
+  "heartbeat_unix": 1794641399.706114,
+  "mode": "gpu_kdtree",
+  "dataset": "minishift",
+  "category": "light",
+  "worker_pid": 22391,
+  "phase": "complete",
+  "worker_elapsed_s": 416.2295619910001,
+  "sample_index": 130,
+  "sample_total": 130,
+  "failed_jobs": 0
+}

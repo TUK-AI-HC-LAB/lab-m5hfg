@@ -124,7 +124,7 @@ def instrument():
     projection.fit_transform=project
 
 
-def main():
+def main(fps_install=None):
     parser=argparse.ArgumentParser()
     parser.add_argument('--mode',choices=['official','gpu_kdtree'],required=True)
     parser.add_argument('--dataset',required=True);parser.add_argument('--category',required=True)
@@ -152,8 +152,9 @@ def main():
         official_source=str(REPO),fresh_fit=True,smoke=opts.smoke,mode=opts.mode,
         source_sha256={str(p.relative_to(REPO)):hashlib.sha256(p.read_bytes()).hexdigest() for p in REPO.rglob('*.py')},
         measurement='instrumented CUDA events plus host wall time; nested stages overlap; not pure uninstrumented latency')
-    from simple3d_flashfps import install
-    ops.furthest_point_sample,env['fps']=install(ops.furthest_point_sample)
+    if fps_install is None:
+        from simple3d_flashfps import install as fps_install
+    ops.furthest_point_sample,env['fps']=fps_install(ops.furthest_point_sample)
     dump(out/'environment.json',env)
     instrument()
     if opts.mode=='gpu_kdtree':

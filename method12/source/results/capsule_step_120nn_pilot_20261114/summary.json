@@ -1,0 +1,28 @@
+{
+  "gpu": "NVIDIA GeForce RTX 5080",
+  "clusters": 512,
+  "iterations": 50,
+  "samples": [
+    0,
+    8,
+    50,
+    90,
+    129
+  ],
+  "kd_build_ms": 17.016185999998612,
+  "kd_query_ms": 1127.2012157999995,
+  "kd_total_ms": 1144.217401799998,
+  "step_build_ms": 334.09874179999974,
+  "step_query_ms": 302.0546358000004,
+  "step_total_ms": 636.1533776000002,
+  "order_diff": 71,
+  "set_diff": 0,
+  "distance_diff_over_1e_12": 0,
+  "max_squared_distance_delta": 0.0,
+  "fpfh40_diff_rows": 40,
+  "fpfh40_max_delta": 2.5945053100585938,
+  "fpfh80_diff_rows": 84,
+  "fpfh80_max_delta": 1.3268280029296875,
+  "fpfh120_diff_rows": 0,
+  "fpfh120_max_delta": 0.0
+}
