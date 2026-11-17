@@ -1,4 +1,4 @@
-# W47 Simple3D 캡슐 — FlashFPS·STEP·Top-3 기여도 비교
+# W48 Simple3D 캡슐 — FlashFPS·STEP·Top-3 기여도 비교
 
 동일 RTX 5080, MiniShift 정상 54개·테스트 130개. 각 실행 별도 예열·메모리뱅크 재구성. 저장·파일 로딩·지표 집계는 추론 시간에서 제외함.
 STEP은 FPFH용 120-NN만 교체(512군집, Lloyd 50회). 집계 128-NN과 평활화 12-NN은 전부 GPU KD-tree. Top-3는 4,096점 집계 보간에만 적용하고 동점 행은 전체 정렬로 처리함.
