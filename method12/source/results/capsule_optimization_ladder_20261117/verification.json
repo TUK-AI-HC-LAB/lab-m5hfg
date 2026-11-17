@@ -1,0 +1,295 @@
+{
+  "results": {
+    "B": {
+      "status": "complete",
+      "mode": "gpu_kdtree",
+      "dataset": "minishift",
+      "category": "capsule",
+      "train_count": 54,
+      "test_count": 130,
+      "fit_wall_s": 101.658465878,
+      "inference_mean_ms": 2221.0935884153855,
+      "inference_median_ms": 2203.5981139999876,
+      "inference_p95_ms": 2458.417451349996,
+      "peak_torch_allocated_bytes": 5118818816,
+      "peak_torch_reserved_bytes": 6415187968,
+      "elapsed_wall_s": 448.509184479,
+      "metrics": [
+        {
+          "mode": "gpu_kdtree",
+          "dataset": "minishift",
+          "category": "capsule",
+          "level": "easy",
+          "object_auroc": 1.0,
+          "point_auroc": 0.9864676351018821,
+          "point_ap": 0.39736121733173113
+        },
+        {
+          "mode": "gpu_kdtree",
+          "dataset": "minishift",
+          "category": "capsule",
+          "level": "medium",
+          "object_auroc": 0.9500000000000001,
+          "point_auroc": 0.8774838545758469,
+          "point_ap": 0.21973986169578044
+        },
+        {
+          "mode": "gpu_kdtree",
+          "dataset": "minishift",
+          "category": "capsule",
+          "level": "hard",
+          "object_auroc": 0.845,
+          "point_auroc": 0.6153846036290478,
+          "point_ap": 0.06859925078314151
+        },
+        {
+          "mode": "gpu_kdtree",
+          "dataset": "minishift",
+          "category": "capsule",
+          "level": "ALL",
+          "object_auroc": 0.9316666666666666,
+          "point_auroc": 0.8184304717098374,
+          "point_ap": 0.2230245599248694
+        }
+      ],
+      "raw_assets": "/home/test/simple3d-capsule-optimization-ladder-20261117/B/kdtree/gpu_kdtree/minishift/capsule"
+    },
+    "D": {
+      "status": "complete",
+      "mode": "gpu_kdtree",
+      "dataset": "minishift",
+      "category": "capsule",
+      "train_count": 54,
+      "test_count": 130,
+      "fit_wall_s": 64.56488849100003,
+      "inference_mean_ms": 1596.94381999999,
+      "inference_median_ms": 1596.518018999916,
+      "inference_p95_ms": 1697.054991500022,
+      "peak_torch_allocated_bytes": 2663572480,
+      "peak_torch_reserved_bytes": 3135242240,
+      "elapsed_wall_s": 337.717884253,
+      "metrics": [
+        {
+          "mode": "gpu_kdtree",
+          "dataset": "minishift",
+          "category": "capsule",
+          "level": "easy",
+          "object_auroc": 1.0,
+          "point_auroc": 0.9864664979473059,
+          "point_ap": 0.39736048673483376
+        },
+        {
+          "mode": "gpu_kdtree",
+          "dataset": "minishift",
+          "category": "capsule",
+          "level": "medium",
+          "object_auroc": 0.9500000000000001,
+          "point_auroc": 0.8774864171636312,
+          "point_ap": 0.2197499652600105
+        },
+        {
+          "mode": "gpu_kdtree",
+          "dataset": "minishift",
+          "category": "capsule",
+          "level": "hard",
+          "object_auroc": 0.845,
+          "point_auroc": 0.6147012321041505,
+          "point_ap": 0.0685750251382654
+        },
+        {
+          "mode": "gpu_kdtree",
+          "dataset": "minishift",
+          "category": "capsule",
+          "level": "ALL",
+          "object_auroc": 0.9316666666666666,
+          "point_auroc": 0.8181788933364811,
+          "point_ap": 0.22300987778882442
+        }
+      ],
+      "raw_assets": "/home/test/simple3d-capsule-optimization-ladder-20261117/D/step/gpu_kdtree/minishift/capsule"
+    },
+    "A": {
+      "status": "complete",
+      "mode": "gpu_kdtree",
+      "dataset": "minishift",
+      "category": "capsule",
+      "train_count": 54,
+      "test_count": 130,
+      "fit_wall_s": 135.778409249,
+      "inference_mean_ms": 3013.272804815381,
+      "inference_median_ms": 2992.3976664999827,
+      "inference_p95_ms": 3218.988732700018,
+      "peak_torch_allocated_bytes": 5117818368,
+      "peak_torch_reserved_bytes": 6413090816,
+      "elapsed_wall_s": 593.0070740179999,
+      "metrics": [
+        {
+          "mode": "gpu_kdtree",
+          "dataset": "minishift",
+          "category": "capsule",
+          "level": "easy",
+          "object_auroc": 0.995,
+          "point_auroc": 0.9814847246131584,
+          "point_ap": 0.4123489519135999
+        },
+        {
+          "mode": "gpu_kdtree",
+          "dataset": "minishift",
+          "category": "capsule",
+          "level": "medium",
+          "object_auroc": 0.905,
+          "point_auroc": 0.8232344943182284,
+          "point_ap": 0.21693720137122016
+        },
+        {
+          "mode": "gpu_kdtree",
+          "dataset": "minishift",
+          "category": "capsule",
+          "level": "hard",
+          "object_auroc": 0.8375,
+          "point_auroc": 0.6410247861957651,
+          "point_ap": 0.0706048450303643
+        },
+        {
+          "mode": "gpu_kdtree",
+          "dataset": "minishift",
+          "category": "capsule",
+          "level": "ALL",
+          "object_auroc": 0.9124999999999999,
+          "point_auroc": 0.8074655398814286,
+          "point_ap": 0.22771318238032476
+        }
+      ],
+      "raw_assets": "/home/test/simple3d-capsule-optimization-ladder-20261117/A/kdtree/gpu_kdtree/minishift/capsule"
+    },
+    "C": {
+      "status": "complete",
+      "mode": "gpu_kdtree",
+      "dataset": "minishift",
+      "category": "capsule",
+      "train_count": 54,
+      "test_count": 130,
+      "fit_wall_s": 68.28298198900006,
+      "inference_mean_ms": 1782.3571093999726,
+      "inference_median_ms": 1773.4167290001324,
+      "inference_p95_ms": 1847.1155817000863,
+      "peak_torch_allocated_bytes": 5118818816,
+      "peak_torch_reserved_bytes": 6415187968,
+      "elapsed_wall_s": 371.062697716,
+      "metrics": [
+        {
+          "mode": "gpu_kdtree",
+          "dataset": "minishift",
+          "category": "capsule",
+          "level": "easy",
+          "object_auroc": 1.0,
+          "point_auroc": 0.9864664979473059,
+          "point_ap": 0.39736048673483376
+        },
+        {
+          "mode": "gpu_kdtree",
+          "dataset": "minishift",
+          "category": "capsule",
+          "level": "medium",
+          "object_auroc": 0.9500000000000001,
+          "point_auroc": 0.8774864171636312,
+          "point_ap": 0.2197499652600105
+        },
+        {
+          "mode": "gpu_kdtree",
+          "dataset": "minishift",
+          "category": "capsule",
+          "level": "hard",
+          "object_auroc": 0.845,
+          "point_auroc": 0.6147012321041505,
+          "point_ap": 0.0685750251382654
+        },
+        {
+          "mode": "gpu_kdtree",
+          "dataset": "minishift",
+          "category": "capsule",
+          "level": "ALL",
+          "object_auroc": 0.9316666666666666,
+          "point_auroc": 0.8181788933364811,
+          "point_ap": 0.22300987778882442
+        }
+      ],
+      "raw_assets": "/home/test/simple3d-capsule-optimization-ladder-20261117/C/step/gpu_kdtree/minishift/capsule"
+    }
+  },
+  "stages": {
+    "B": {
+      "\uc9d1\uacc4 \ub300\ud45c\uc810 \uc120\ud0dd": 116.40295950082633,
+      "\ud3c9\ud65c\ud654 \ub300\ud45c\uc810 \uc120\ud0dd": 224.7143450223482,
+      "FPFH 120-NN \uc804\uccb4": 1200.7477463230803,
+      "\u21b3 STEP \uad70\uc9d1 \uc0dd\uc131": null,
+      "\u21b3 STEP 120-NN \uc870\ud68c": null,
+      "\uc9d1\uacc4 \uc810\uc218 \ubcf4\uac04": 247.52143578162566,
+      "\ud3c9\ud65c\ud654 \uc810\uc218 \ubcf4\uac04": 60.067304083017206
+    },
+    "D": {
+      "\uc9d1\uacc4 \ub300\ud45c\uc810 \uc120\ud0dd": 117.05249768770658,
+      "\ud3c9\ud65c\ud654 \ub300\ud45c\uc810 \uc120\ud0dd": 226.26174879807687,
+      "FPFH 120-NN \uc804\uccb4": 627.2668381692309,
+      "\u21b3 STEP \uad70\uc9d1 \uc0dd\uc131": 312.4481628692278,
+      "\u21b3 STEP 120-NN \uc870\ud68c": 313.9520737615438,
+      "\uc9d1\uacc4 \uc810\uc218 \ubcf4\uac04": 180.40390636737527,
+      "\ud3c9\ud65c\ud654 \uc810\uc218 \ubcf4\uac04": 61.00293247516336
+    },
+    "A": {
+      "\uc9d1\uacc4 \ub300\ud45c\uc810 \uc120\ud0dd": 903.7372732309192,
+      "\ud3c9\ud65c\ud654 \ub300\ud45c\uc810 \uc120\ud0dd": 225.80382291353655,
+      "FPFH 120-NN \uc804\uccb4": 1196.7873276538442,
+      "\u21b3 STEP \uad70\uc9d1 \uc0dd\uc131": null,
+      "\u21b3 STEP 120-NN \uc870\ud68c": null,
+      "\uc9d1\uacc4 \uc810\uc218 \ubcf4\uac04": 248.77908794696512,
+      "\ud3c9\ud65c\ud654 \uc810\uc218 \ubcf4\uac04": 61.21969651442306
+    },
+    "C": {
+      "\uc9d1\uacc4 \ub300\ud45c\uc810 \uc120\ud0dd": 123.06621915377106,
+      "\ud3c9\ud65c\ud654 \ub300\ud45c\uc810 \uc120\ud0dd": 239.18825002817016,
+      "FPFH 120-NN \uc804\uccb4": 682.8928442461487,
+      "\u21b3 STEP \uad70\uc9d1 \uc0dd\uc131": 348.5346812692237,
+      "\u21b3 STEP 120-NN \uc870\ud68c": 333.3818788153954,
+      "\uc9d1\uacc4 \uc810\uc218 \ubcf4\uac04": 266.8339826143704,
+      "\ud3c9\ud65c\ud654 \uc810\uc218 \ubcf4\uac04": 64.26087276752179
+    }
+  },
+  "pairs": {
+    "A\u2192B": {
+      "points": 65000000,
+      "different": 64999985,
+      "max_abs": 251.86962890625,
+      "object_abs": 150.0265350341797,
+      "bank_same": false,
+      "metrics_same": false
+    },
+    "B\u2192C": {
+      "points": 65000000,
+      "different": 492265,
+      "max_abs": 1.1348472833633423,
+      "object_abs": 0.0,
+      "bank_same": false,
+      "metrics_same": false
+    },
+    "C\u2192D": {
+      "points": 65000000,
+      "different": 0,
+      "max_abs": 0.0,
+      "object_abs": 0.0,
+      "bank_same": true,
+      "metrics_same": true
+    }
+  },
+  "source_sha256": {
+    "run_simple3d_capsule_optimization_ladder.py": "ef17c123d6f6a04d2248550e5ca55bd7aa77d2c049419b33c51dcba8975a69d5",
+    "measure_simple3d_capsule_flashfps.py": "0a82d041cde9445bbb6fc5069425e80d5916088ab0163574b6b0682194c9ebfe",
+    "run_simple3d_capsule_step_flashfps.py": "d053e70bc1717c13e9dc32fdd020da5be173884065821c36ab823b7c480181d1",
+    "run_simple3d_capsule_interp_top3.py": "cb1714786911b36cc128b7567254c330a25c47d58317953d58779f8f3267b7f4",
+    "measure_simple3d_capsule_step.py": "c5bb0dacfcb149fb27f3c669aa3b226775ce82ac716c1e6a8aac48933686e77f",
+    "simple3d_step_index.cu": "a39c7eda13e826802b264aa6df65706e16322c5b35fe8433a98af6cb1372e51f",
+    "simple3d_gpu_kdtree.py": "7750eea7a74674e8b3c1354b8f0195c07641e10b61b1fef09e391369a2afd382",
+    "simple3d_gpu_kdtree.cu": "1b1bb3e2b9798024bbc818d5b37d617b9fe5430d81bdcebf25d22462452f8b4c",
+    "simple3d_shapenet_hybrid_fps.py": "1ef3a0d16fe9c19b938a914b80af339df32ac69ea6b927b4cedd418dcd726a87"
+  }
+}
