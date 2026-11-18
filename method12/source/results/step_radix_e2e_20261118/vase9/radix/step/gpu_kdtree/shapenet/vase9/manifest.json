@@ -1,0 +1,158 @@
+{
+  "train": [
+    "/home/test/data/CASL-AnomalyShapeNet/Anomaly-ShapeNet-v2/dataset/pcd/vase9/train/vase9_template3.pcd",
+    "/home/test/data/CASL-AnomalyShapeNet/Anomaly-ShapeNet-v2/dataset/pcd/vase9/train/vase9_template2.pcd",
+    "/home/test/data/CASL-AnomalyShapeNet/Anomaly-ShapeNet-v2/dataset/pcd/vase9/train/vase9_template1.pcd",
+    "/home/test/data/CASL-AnomalyShapeNet/Anomaly-ShapeNet-v2/dataset/pcd/vase9/train/vase9_template0.pcd"
+  ],
+  "test": [
+    {
+      "path": "/home/test/data/CASL-AnomalyShapeNet/Anomaly-ShapeNet-v2/dataset/pcd/vase9/test/vase9_positive5.pcd",
+      "label": 0
+    },
+    {
+      "path": "/home/test/data/CASL-AnomalyShapeNet/Anomaly-ShapeNet-v2/dataset/pcd/vase9/test/vase9_positive3.pcd",
+      "label": 0
+    },
+    {
+      "path": "/home/test/data/CASL-AnomalyShapeNet/Anomaly-ShapeNet-v2/dataset/pcd/vase9/test/vase9_positive4.pcd",
+      "label": 0
+    },
+    {
+      "path": "/home/test/data/CASL-AnomalyShapeNet/Anomaly-ShapeNet-v2/dataset/pcd/vase9/test/vase9_positive6.pcd",
+      "label": 0
+    },
+    {
+      "path": "/home/test/data/CASL-AnomalyShapeNet/Anomaly-ShapeNet-v2/dataset/pcd/vase9/test/vase9_positive1.pcd",
+      "label": 0
+    },
+    {
+      "path": "/home/test/data/CASL-AnomalyShapeNet/Anomaly-ShapeNet-v2/dataset/pcd/vase9/test/vase9_positive2.pcd",
+      "label": 0
+    },
+    {
+      "path": "/home/test/data/CASL-AnomalyShapeNet/Anomaly-ShapeNet-v2/dataset/pcd/vase9/test/vase9_positive0.pcd",
+      "label": 0
+    },
+    {
+      "path": "/home/test/data/CASL-AnomalyShapeNet/Anomaly-ShapeNet-v2/dataset/pcd/vase9/test/vase9_positive14.pcd",
+      "label": 0
+    },
+    {
+      "path": "/home/test/data/CASL-AnomalyShapeNet/Anomaly-ShapeNet-v2/dataset/pcd/vase9/test/vase9_positive8.pcd",
+      "label": 0
+    },
+    {
+      "path": "/home/test/data/CASL-AnomalyShapeNet/Anomaly-ShapeNet-v2/dataset/pcd/vase9/test/vase9_positive11.pcd",
+      "label": 0
+    },
+    {
+      "path": "/home/test/data/CASL-AnomalyShapeNet/Anomaly-ShapeNet-v2/dataset/pcd/vase9/test/vase9_positive9.pcd",
+      "label": 0
+    },
+    {
+      "path": "/home/test/data/CASL-AnomalyShapeNet/Anomaly-ShapeNet-v2/dataset/pcd/vase9/test/vase9_positive10.pcd",
+      "label": 0
+    },
+    {
+      "path": "/home/test/data/CASL-AnomalyShapeNet/Anomaly-ShapeNet-v2/dataset/pcd/vase9/test/vase9_positive7.pcd",
+      "label": 0
+    },
+    {
+      "path": "/home/test/data/CASL-AnomalyShapeNet/Anomaly-ShapeNet-v2/dataset/pcd/vase9/test/vase9_positive13.pcd",
+      "label": 0
+    },
+    {
+      "path": "/home/test/data/CASL-AnomalyShapeNet/Anomaly-ShapeNet-v2/dataset/pcd/vase9/test/vase9_positive12.pcd",
+      "label": 0
+    },
+    {
+      "path": "/home/test/data/CASL-AnomalyShapeNet/Anomaly-ShapeNet-v2/dataset/pcd/vase9/GT/vase9_bulge4.txt",
+      "label": 1
+    },
+    {
+      "path": "/home/test/data/CASL-AnomalyShapeNet/Anomaly-ShapeNet-v2/dataset/pcd/vase9/GT/vase9_hole1.txt",
+      "label": 1
+    },
+    {
+      "path": "/home/test/data/CASL-AnomalyShapeNet/Anomaly-ShapeNet-v2/dataset/pcd/vase9/GT/vase9_concavity5.txt",
+      "label": 1
+    },
+    {
+      "path": "/home/test/data/CASL-AnomalyShapeNet/Anomaly-ShapeNet-v2/dataset/pcd/vase9/GT/vase9_scratch1.txt",
+      "label": 1
+    },
+    {
+      "path": "/home/test/data/CASL-AnomalyShapeNet/Anomaly-ShapeNet-v2/dataset/pcd/vase9/GT/vase9_bulge3.txt",
+      "label": 1
+    },
+    {
+      "path": "/home/test/data/CASL-AnomalyShapeNet/Anomaly-ShapeNet-v2/dataset/pcd/vase9/GT/vase9_bulge5.txt",
+      "label": 1
+    },
+    {
+      "path": "/home/test/data/CASL-AnomalyShapeNet/Anomaly-ShapeNet-v2/dataset/pcd/vase9/GT/vase9_scratch0.txt",
+      "label": 1
+    },
+    {
+      "path": "/home/test/data/CASL-AnomalyShapeNet/Anomaly-ShapeNet-v2/dataset/pcd/vase9/GT/vase9_concavity0.txt",
+      "label": 1
+    },
+    {
+      "path": "/home/test/data/CASL-AnomalyShapeNet/Anomaly-ShapeNet-v2/dataset/pcd/vase9/GT/vase9_broken2.txt",
+      "label": 1
+    },
+    {
+      "path": "/home/test/data/CASL-AnomalyShapeNet/Anomaly-ShapeNet-v2/dataset/pcd/vase9/GT/vase9_concavity6.txt",
+      "label": 1
+    },
+    {
+      "path": "/home/test/data/CASL-AnomalyShapeNet/Anomaly-ShapeNet-v2/dataset/pcd/vase9/GT/vase9_broken3.txt",
+      "label": 1
+    },
+    {
+      "path": "/home/test/data/CASL-AnomalyShapeNet/Anomaly-ShapeNet-v2/dataset/pcd/vase9/GT/vase9_hole0.txt",
+      "label": 1
+    },
+    {
+      "path": "/home/test/data/CASL-AnomalyShapeNet/Anomaly-ShapeNet-v2/dataset/pcd/vase9/GT/vase9_crak4.txt",
+      "label": 1
+    },
+    {
+      "path": "/home/test/data/CASL-AnomalyShapeNet/Anomaly-ShapeNet-v2/dataset/pcd/vase9/GT/vase9_concavity1.txt",
+      "label": 1
+    },
+    {
+      "path": "/home/test/data/CASL-AnomalyShapeNet/Anomaly-ShapeNet-v2/dataset/pcd/vase9/GT/vase9_crak5.txt",
+      "label": 1
+    },
+    {
+      "path": "/home/test/data/CASL-AnomalyShapeNet/Anomaly-ShapeNet-v2/dataset/pcd/vase9/GT/vase9_bulge2.txt",
+      "label": 1
+    },
+    {
+      "path": "/home/test/data/CASL-AnomalyShapeNet/Anomaly-ShapeNet-v2/dataset/pcd/vase9/GT/vase9_concavity3.txt",
+      "label": 1
+    },
+    {
+      "path": "/home/test/data/CASL-AnomalyShapeNet/Anomaly-ShapeNet-v2/dataset/pcd/vase9/GT/vase9_bulge1.txt",
+      "label": 1
+    },
+    {
+      "path": "/home/test/data/CASL-AnomalyShapeNet/Anomaly-ShapeNet-v2/dataset/pcd/vase9/GT/vase9_bulge6.txt",
+      "label": 1
+    },
+    {
+      "path": "/home/test/data/CASL-AnomalyShapeNet/Anomaly-ShapeNet-v2/dataset/pcd/vase9/GT/vase9_bulge0.txt",
+      "label": 1
+    },
+    {
+      "path": "/home/test/data/CASL-AnomalyShapeNet/Anomaly-ShapeNet-v2/dataset/pcd/vase9/GT/vase9_concavity2.txt",
+      "label": 1
+    },
+    {
+      "path": "/home/test/data/CASL-AnomalyShapeNet/Anomaly-ShapeNet-v2/dataset/pcd/vase9/GT/vase9_concavity4.txt",
+      "label": 1
+    }
+  ]
+}

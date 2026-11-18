@@ -1,0 +1,200 @@
+{
+  "pairs": [
+    {
+      "dataset": "minishift",
+      "category": "capsule",
+      "baseline": {
+        "status": "complete",
+        "mode": "gpu_kdtree",
+        "dataset": "minishift",
+        "category": "capsule",
+        "train_count": 54,
+        "test_count": 130,
+        "fit_wall_s": 64.767327115,
+        "inference_mean_ms": 1516.7458410923084,
+        "inference_median_ms": 1493.622352000017,
+        "inference_p95_ms": 1656.5137010000158,
+        "peak_torch_allocated_bytes": 2663572480,
+        "peak_torch_reserved_bytes": 3135242240,
+        "elapsed_wall_s": 320.929978043,
+        "metrics": [
+          {
+            "mode": "gpu_kdtree",
+            "dataset": "minishift",
+            "category": "capsule",
+            "level": "easy",
+            "object_auroc": 1.0,
+            "point_auroc": 0.9864664979473059,
+            "point_ap": 0.39736048673483376
+          },
+          {
+            "mode": "gpu_kdtree",
+            "dataset": "minishift",
+            "category": "capsule",
+            "level": "medium",
+            "object_auroc": 0.9500000000000001,
+            "point_auroc": 0.8774864171636312,
+            "point_ap": 0.2197499652600105
+          },
+          {
+            "mode": "gpu_kdtree",
+            "dataset": "minishift",
+            "category": "capsule",
+            "level": "hard",
+            "object_auroc": 0.845,
+            "point_auroc": 0.6147012321041505,
+            "point_ap": 0.0685750251382654
+          },
+          {
+            "mode": "gpu_kdtree",
+            "dataset": "minishift",
+            "category": "capsule",
+            "level": "ALL",
+            "object_auroc": 0.9316666666666666,
+            "point_auroc": 0.8181788933364811,
+            "point_ap": 0.22300987778882442
+          }
+        ],
+        "raw_assets": "/home/test/simple3d-step-radix-e2e-20261118/capsule/baseline/step/gpu_kdtree/minishift/capsule"
+      },
+      "radix": {
+        "status": "complete",
+        "mode": "gpu_kdtree",
+        "dataset": "minishift",
+        "category": "capsule",
+        "train_count": 54,
+        "test_count": 130,
+        "fit_wall_s": 58.617515192999974,
+        "inference_mean_ms": 1440.9504202538476,
+        "inference_median_ms": 1432.6965774999678,
+        "inference_p95_ms": 1543.0017571499718,
+        "peak_torch_allocated_bytes": 2663572480,
+        "peak_torch_reserved_bytes": 3135242240,
+        "elapsed_wall_s": 305.05783890899994,
+        "metrics": [
+          {
+            "mode": "gpu_kdtree",
+            "dataset": "minishift",
+            "category": "capsule",
+            "level": "easy",
+            "object_auroc": 1.0,
+            "point_auroc": 0.9864664979473059,
+            "point_ap": 0.39736048673483376
+          },
+          {
+            "mode": "gpu_kdtree",
+            "dataset": "minishift",
+            "category": "capsule",
+            "level": "medium",
+            "object_auroc": 0.9500000000000001,
+            "point_auroc": 0.8774864171636312,
+            "point_ap": 0.2197499652600105
+          },
+          {
+            "mode": "gpu_kdtree",
+            "dataset": "minishift",
+            "category": "capsule",
+            "level": "hard",
+            "object_auroc": 0.845,
+            "point_auroc": 0.6147012321041505,
+            "point_ap": 0.0685750251382654
+          },
+          {
+            "mode": "gpu_kdtree",
+            "dataset": "minishift",
+            "category": "capsule",
+            "level": "ALL",
+            "object_auroc": 0.9316666666666666,
+            "point_auroc": 0.8181788933364811,
+            "point_ap": 0.22300987778882442
+          }
+        ],
+        "raw_assets": "/home/test/simple3d-step-radix-e2e-20261118/capsule/radix/step/gpu_kdtree/minishift/capsule"
+      },
+      "bank_equal": true,
+      "metrics_equal": true,
+      "points": 65000000,
+      "point_changes": 0,
+      "max_point_delta": 0.0,
+      "max_object_delta": 0.0
+    },
+    {
+      "dataset": "shapenet",
+      "category": "vase9",
+      "baseline": {
+        "status": "complete",
+        "mode": "gpu_kdtree",
+        "dataset": "shapenet",
+        "category": "vase9",
+        "train_count": 4,
+        "test_count": 37,
+        "fit_wall_s": 1.5542964229999825,
+        "inference_mean_ms": 410.90665175674434,
+        "inference_median_ms": 433.4322229999543,
+        "inference_p95_ms": 476.4329598000131,
+        "peak_torch_allocated_bytes": 2490068992,
+        "peak_torch_reserved_bytes": 3066036224,
+        "elapsed_wall_s": 20.414432928999986,
+        "metrics": [
+          {
+            "mode": "gpu_kdtree",
+            "dataset": "shapenet",
+            "category": "vase9",
+            "level": "ALL",
+            "object_auroc": 0.7909090909090909,
+            "point_auroc": 0.9292165024291577,
+            "point_ap": 0.3177115500454027
+          }
+        ],
+        "raw_assets": "/home/test/simple3d-step-radix-e2e-20261118/vase9/baseline/step/gpu_kdtree/shapenet/vase9"
+      },
+      "radix": {
+        "status": "complete",
+        "mode": "gpu_kdtree",
+        "dataset": "shapenet",
+        "category": "vase9",
+        "train_count": 4,
+        "test_count": 37,
+        "fit_wall_s": 1.5919697240000232,
+        "inference_mean_ms": 401.59218283784753,
+        "inference_median_ms": 420.4483070001288,
+        "inference_p95_ms": 463.21335759996595,
+        "peak_torch_allocated_bytes": 2490068992,
+        "peak_torch_reserved_bytes": 3066036224,
+        "elapsed_wall_s": 20.2555330780001,
+        "metrics": [
+          {
+            "mode": "gpu_kdtree",
+            "dataset": "shapenet",
+            "category": "vase9",
+            "level": "ALL",
+            "object_auroc": 0.7909090909090909,
+            "point_auroc": 0.9292165024291577,
+            "point_ap": 0.3177115500454027
+          }
+        ],
+        "raw_assets": "/home/test/simple3d-step-radix-e2e-20261118/vase9/radix/step/gpu_kdtree/shapenet/vase9"
+      },
+      "bank_equal": true,
+      "metrics_equal": true,
+      "points": 4564539,
+      "point_changes": 0,
+      "max_point_delta": 0.0,
+      "max_object_delta": 0.0
+    }
+  ],
+  "source_sha256": {
+    "/mnt/c/Users/test/Desktop/Codex/lab-m5hfg/method12/source/run_simple3d_step_radix_e2e.py": "54b4aef32fca983f249fdadd91293f9e3cfd2393d1ac486568904b6174b492ae",
+    "/mnt/c/Users/test/Desktop/Codex/lab-m5hfg/method12/source/pilot_simple3d_step_radix.py": "675a7c2fca25f731ce8ccbf7bdc69da1cc1b27e00d93d3275d00d5dad911fd0c",
+    "/mnt/c/Users/test/Desktop/Codex/lab-m5hfg/method12/source/pilot_simple3d_step_no_boundsort.py": "f9298d1965194e483fd01c70572856a6c65135caac4b4eba415c7c28e86a1279",
+    "/mnt/c/Users/test/Desktop/Codex/lab-m5hfg/method12/source/simple3d_step_index.cu": "a39c7eda13e826802b264aa6df65706e16322c5b35fe8433a98af6cb1372e51f",
+    "/mnt/c/Users/test/Desktop/Codex/lab-m5hfg/method12/source/measure_simple3d_capsule_step.py": "c5bb0dacfcb149fb27f3c669aa3b226775ce82ac716c1e6a8aac48933686e77f",
+    "/mnt/c/Users/test/Desktop/Codex/lab-m5hfg/method12/source/run_simple3d_capsule_step_flashfps.py": "d053e70bc1717c13e9dc32fdd020da5be173884065821c36ab823b7c480181d1",
+    "/mnt/c/Users/test/Desktop/Codex/lab-m5hfg/method12/source/run_simple3d_capsule_interp_top3.py": "cb1714786911b36cc128b7567254c330a25c47d58317953d58779f8f3267b7f4",
+    "/mnt/c/Users/test/Desktop/Codex/lab-m5hfg/method12/source/measure_simple3d_capsule_flashfps.py": "0a82d041cde9445bbb6fc5069425e80d5916088ab0163574b6b0682194c9ebfe",
+    "/mnt/c/Users/test/Desktop/Codex/lab-m5hfg/method12/source/simple3d_gpu_kdtree.py": "7750eea7a74674e8b3c1354b8f0195c07641e10b61b1fef09e391369a2afd382",
+    "/mnt/c/Users/test/Desktop/Codex/lab-m5hfg/method12/source/simple3d_gpu_kdtree.cu": "1b1bb3e2b9798024bbc818d5b37d617b9fe5430d81bdcebf25d22462452f8b4c",
+    "/mnt/c/Users/test/Desktop/Codex/lab-m5hfg/method12/source/simple3d_shapenet_hybrid_fps.py": "1ef3a0d16fe9c19b938a914b80af339df32ac69ea6b927b4cedd418dcd726a87",
+    "/mnt/c/Users/test/Desktop/Codex/lab-m5hfg/method12/source/run_simple3d_step_radix_e2e.sh": "bea1c3ec469956f4fe5eb60595e0f91d64874e48645906b2a6aa01c927f1aa40"
+  }
+}

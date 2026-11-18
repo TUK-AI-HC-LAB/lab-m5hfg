@@ -1,0 +1,2 @@
+mode,dataset,category,level,object_auroc,point_auroc,point_ap
+gpu_kdtree,shapenet,vase9,ALL,0.7909090909090909,0.9292165024291577,0.3177115500454027

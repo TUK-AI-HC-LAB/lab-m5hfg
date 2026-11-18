@@ -1,0 +1,5 @@
+dataset,category,sample,repeat,order,baseline_query_ms,radix_query_ms
+shapenet,vase9,18,0,baseline-first,15.864348000008022,12.593973000008418
+shapenet,vase9,18,1,radix-first,16.250546999998505,11.15532900001881
+shapenet,vase9,18,2,baseline-first,15.92275000001564,12.50088999998411
+shapenet,vase9,18,3,radix-first,15.09815900001854,12.151781999989453

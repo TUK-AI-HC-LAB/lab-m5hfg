@@ -1,0 +1,11 @@
+{
+  "status": "running",
+  "mode": "gpu_kdtree",
+  "dataset": "minishift",
+  "category": "capsule",
+  "phase": "complete",
+  "index": 130,
+  "total": 130,
+  "updated_unix": 1795001827.5257456,
+  "pid": 428
+}

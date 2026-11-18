@@ -1,0 +1,41 @@
+{
+  "targets": [
+    [
+      "minishift",
+      "capsule",
+      54,
+      130,
+      [
+        "baseline",
+        "radix"
+      ]
+    ],
+    [
+      "shapenet",
+      "vase9",
+      4,
+      37,
+      [
+        "radix",
+        "baseline"
+      ]
+    ]
+  ],
+  "source_sha256": {
+    "/mnt/c/Users/test/Desktop/Codex/lab-m5hfg/method12/source/run_simple3d_step_radix_e2e.py": "54b4aef32fca983f249fdadd91293f9e3cfd2393d1ac486568904b6174b492ae",
+    "/mnt/c/Users/test/Desktop/Codex/lab-m5hfg/method12/source/pilot_simple3d_step_radix.py": "675a7c2fca25f731ce8ccbf7bdc69da1cc1b27e00d93d3275d00d5dad911fd0c",
+    "/mnt/c/Users/test/Desktop/Codex/lab-m5hfg/method12/source/pilot_simple3d_step_no_boundsort.py": "f9298d1965194e483fd01c70572856a6c65135caac4b4eba415c7c28e86a1279",
+    "/mnt/c/Users/test/Desktop/Codex/lab-m5hfg/method12/source/simple3d_step_index.cu": "a39c7eda13e826802b264aa6df65706e16322c5b35fe8433a98af6cb1372e51f",
+    "/mnt/c/Users/test/Desktop/Codex/lab-m5hfg/method12/source/measure_simple3d_capsule_step.py": "c5bb0dacfcb149fb27f3c669aa3b226775ce82ac716c1e6a8aac48933686e77f",
+    "/mnt/c/Users/test/Desktop/Codex/lab-m5hfg/method12/source/run_simple3d_capsule_step_flashfps.py": "d053e70bc1717c13e9dc32fdd020da5be173884065821c36ab823b7c480181d1",
+    "/mnt/c/Users/test/Desktop/Codex/lab-m5hfg/method12/source/run_simple3d_capsule_interp_top3.py": "cb1714786911b36cc128b7567254c330a25c47d58317953d58779f8f3267b7f4",
+    "/mnt/c/Users/test/Desktop/Codex/lab-m5hfg/method12/source/measure_simple3d_capsule_flashfps.py": "0a82d041cde9445bbb6fc5069425e80d5916088ab0163574b6b0682194c9ebfe",
+    "/mnt/c/Users/test/Desktop/Codex/lab-m5hfg/method12/source/simple3d_gpu_kdtree.py": "7750eea7a74674e8b3c1354b8f0195c07641e10b61b1fef09e391369a2afd382",
+    "/mnt/c/Users/test/Desktop/Codex/lab-m5hfg/method12/source/simple3d_gpu_kdtree.cu": "1b1bb3e2b9798024bbc818d5b37d617b9fe5430d81bdcebf25d22462452f8b4c",
+    "/mnt/c/Users/test/Desktop/Codex/lab-m5hfg/method12/source/simple3d_shapenet_hybrid_fps.py": "1ef3a0d16fe9c19b938a914b80af339df32ac69ea6b927b4cedd418dcd726a87",
+    "/mnt/c/Users/test/Desktop/Codex/lab-m5hfg/method12/source/run_simple3d_step_radix_e2e.sh": "bea1c3ec469956f4fe5eb60595e0f91d64874e48645906b2a6aa01c927f1aa40"
+  },
+  "only_change": "STEP512 cluster bound sorting bitonic -> stable CUB radix",
+  "fresh_banks": true,
+  "assets": "/home/test/simple3d-step-radix-e2e-20261118"
+}

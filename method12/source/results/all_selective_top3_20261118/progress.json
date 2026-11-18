@@ -1,0 +1,26 @@
+{
+  "completed_jobs": 104,
+  "total_jobs": 104,
+  "completed_pairs": 52,
+  "total_pairs": 52,
+  "pid": 458,
+  "status": "complete_verified",
+  "updated_utc": "2026-11-18T09:18:03.462152+00:00",
+  "heartbeat_unix": 1794993483.4621675,
+  "dataset": "shapenet",
+  "category": "vase9",
+  "variant": "sort",
+  "pair": 1,
+  "order": [
+    "top3",
+    "sort"
+  ],
+  "mode": "gpu_kdtree",
+  "worker_pid": 44848,
+  "phase": "complete",
+  "worker_elapsed_s": 26.074419282000235,
+  "sample_index": 37,
+  "sample_total": 37,
+  "failed_pairs": 0,
+  "all_scores_identical": true
+}

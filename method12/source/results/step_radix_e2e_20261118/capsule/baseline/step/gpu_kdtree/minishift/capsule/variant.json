@@ -1,0 +1,6 @@
+{
+  "variant": "baseline",
+  "only_change": "512 bound sorting: bitonic -> stable CUB radix",
+  "fixed": "FlashFPS hybrid; STEP512/Lloyd50; selective Top3 at4096; full-sort1024; aggregation128; smoothing12",
+  "kernel_attributes": null
+}

@@ -1,0 +1,5 @@
+index,path,points,feature_s
+0,/home/test/data/CASL-AnomalyShapeNet/Anomaly-ShapeNet-v2/dataset/pcd/vase9/train/vase9_template3.pcd,38120,0.19784566700002415
+1,/home/test/data/CASL-AnomalyShapeNet/Anomaly-ShapeNet-v2/dataset/pcd/vase9/train/vase9_template2.pcd,136668,0.3318057740000313
+2,/home/test/data/CASL-AnomalyShapeNet/Anomaly-ShapeNet-v2/dataset/pcd/vase9/train/vase9_template1.pcd,140568,0.3161266010000645
+3,/home/test/data/CASL-AnomalyShapeNet/Anomaly-ShapeNet-v2/dataset/pcd/vase9/train/vase9_template0.pcd,130029,0.3033607669999583

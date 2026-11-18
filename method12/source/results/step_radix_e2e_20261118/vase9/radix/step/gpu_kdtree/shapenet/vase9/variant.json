@@ -1,0 +1,17 @@
+{
+  "variant": "radix",
+  "only_change": "512 bound sorting: bitonic -> stable CUB radix",
+  "fixed": "FlashFPS hybrid; STEP512/Lloyd50; selective Top3 at4096; full-sort1024; aggregation128; smoothing12",
+  "kernel_attributes": {
+    "max_threads_per_block": 1024,
+    "shared_size_bytes": 13872,
+    "const_size_bytes": 0,
+    "local_size_bytes": 0,
+    "num_regs": 47,
+    "ptx_version": 120,
+    "binary_version": 120,
+    "cache_mode_ca": 0,
+    "max_dynamic_shared_size_bytes": 35280,
+    "preferred_shared_memory_carveout": -1
+  }
+}

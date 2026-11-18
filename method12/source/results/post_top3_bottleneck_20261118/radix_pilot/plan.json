@@ -1,0 +1,24 @@
+{
+  "question": "Can stable CUB radix sort reduce bound sorting cost without changing visitation order?",
+  "hypothesis": "Same ordered bounds, 120-NN and FPFH; query time may decrease, but shared-memory/register pressure may refute this",
+  "fixed": "Same input/index, STEP512/Lloyd50, Float64 bounds, existing bitonic candidate merge, all other stages unchanged",
+  "source_sha256": {
+    "/mnt/c/Users/test/Desktop/Codex/lab-m5hfg/method12/source/pilot_simple3d_step_radix.py": "675a7c2fca25f731ce8ccbf7bdc69da1cc1b27e00d93d3275d00d5dad911fd0c",
+    "/mnt/c/Users/test/Desktop/Codex/lab-m5hfg/method12/source/simple3d_step_index.cu": "a39c7eda13e826802b264aa6df65706e16322c5b35fe8433a98af6cb1372e51f"
+  },
+  "library": "installed NVIDIA CUB BlockRadixSort<double,128,4,int>, stable blocked ordering",
+  "library_header_sha256": "61280c72c9e68303c110907e8a85dec81f4b40eb77ea0c9fa70d7ed8e0c7cce1",
+  "targets": {
+    "minishift/capsule": [
+      0,
+      50,
+      129
+    ],
+    "shapenet/vase9": [
+      0,
+      18,
+      36
+    ]
+  },
+  "repeats": 4
+}

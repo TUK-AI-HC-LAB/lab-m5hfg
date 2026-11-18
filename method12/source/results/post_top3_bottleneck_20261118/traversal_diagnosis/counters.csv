@@ -1,0 +1,5 @@
+dataset,category,sample,variant,points,mean_visited_clusters,mean_candidate_distances,mean_candidate_merges
+minishift,capsule,0,sorted,500000,2.267384,2225.868276,7.908014
+minishift,capsule,0,unsorted,500000,2.354756,2312.356484,8.064978
+shapenet,vase9,18,sorted,38484,6.458268371271178,492.4031545577383,5.133198212244049
+shapenet,vase9,18,unsorted,38484,14.289263070366905,1082.9850067560544,12.55264525517098

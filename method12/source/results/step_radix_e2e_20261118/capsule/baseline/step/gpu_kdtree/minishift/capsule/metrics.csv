@@ -1,0 +1,5 @@
+mode,dataset,category,level,object_auroc,point_auroc,point_ap
+gpu_kdtree,minishift,capsule,easy,1.0,0.9864664979473059,0.39736048673483376
+gpu_kdtree,minishift,capsule,medium,0.9500000000000001,0.8774864171636312,0.2197499652600105
+gpu_kdtree,minishift,capsule,hard,0.845,0.6147012321041505,0.0685750251382654
+gpu_kdtree,minishift,capsule,ALL,0.9316666666666666,0.8181788933364811,0.22300987778882442

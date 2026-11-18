@@ -1,0 +1,13 @@
+{
+  "question": "Does unsorted traversal inspect more clusters and points?",
+  "targets": [
+    "minishift/capsule/0",
+    "shapenet/vase9/18"
+  ],
+  "timing": "not measured: instrumentation changes execution",
+  "source_sha256": {
+    "/mnt/c/Users/test/Desktop/Codex/lab-m5hfg/method12/source/diagnose_simple3d_step_traversal.py": "f95e9ec25f1a761f5e4374a688ff215edb5b8166f5cef34f685c260832a11751",
+    "/mnt/c/Users/test/Desktop/Codex/lab-m5hfg/method12/source/pilot_simple3d_step_no_boundsort.py": "f9298d1965194e483fd01c70572856a6c65135caac4b4eba415c7c28e86a1279",
+    "/mnt/c/Users/test/Desktop/Codex/lab-m5hfg/method12/source/simple3d_step_index.cu": "a39c7eda13e826802b264aa6df65706e16322c5b35fe8433a98af6cb1372e51f"
+  }
+}

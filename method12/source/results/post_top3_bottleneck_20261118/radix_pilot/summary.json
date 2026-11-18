@@ -1,0 +1,8 @@
+{
+  "status": "complete",
+  "samples": 6,
+  "all_neighbors_identical": true,
+  "all_fpfh_identical": true,
+  "faster_every_sample": true,
+  "next_decision": "small end-to-end pilot"
+}

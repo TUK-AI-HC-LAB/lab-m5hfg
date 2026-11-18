@@ -1,0 +1,5 @@
+dataset,category,sample,repeat,order,baseline_query_ms,trial_query_ms
+minishift,capsule,50,0,baseline-first,312.0922989999997,399.5556620000009
+minishift,capsule,50,1,trial-first,312.14631099999934,399.32370699999706
+minishift,capsule,50,2,baseline-first,309.36342599999733,400.8355769999987
+minishift,capsule,50,3,trial-first,311.990441999999,399.5156410000007

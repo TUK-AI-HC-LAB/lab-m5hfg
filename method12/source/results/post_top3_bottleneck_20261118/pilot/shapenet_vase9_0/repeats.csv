@@ -1,0 +1,5 @@
+dataset,category,sample,repeat,order,baseline_query_ms,trial_query_ms
+shapenet,vase9,0,0,baseline-first,64.79244500000192,91.99475899999854
+shapenet,vase9,0,1,trial-first,64.55625399999931,90.26925399999897
+shapenet,vase9,0,2,baseline-first,64.6549969999981,92.52490500000121
+shapenet,vase9,0,3,trial-first,64.89454700000152,90.71806999999765

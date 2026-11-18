@@ -1,0 +1,27 @@
+{
+  "status": "complete",
+  "mode": "gpu_kdtree",
+  "dataset": "shapenet",
+  "category": "vase9",
+  "train_count": 4,
+  "test_count": 37,
+  "fit_wall_s": 1.5919697240000232,
+  "inference_mean_ms": 401.59218283784753,
+  "inference_median_ms": 420.4483070001288,
+  "inference_p95_ms": 463.21335759996595,
+  "peak_torch_allocated_bytes": 2490068992,
+  "peak_torch_reserved_bytes": 3066036224,
+  "elapsed_wall_s": 20.2555330780001,
+  "metrics": [
+    {
+      "mode": "gpu_kdtree",
+      "dataset": "shapenet",
+      "category": "vase9",
+      "level": "ALL",
+      "object_auroc": 0.7909090909090909,
+      "point_auroc": 0.9292165024291577,
+      "point_ap": 0.3177115500454027
+    }
+  ],
+  "raw_assets": "/home/test/simple3d-step-radix-e2e-20261118/vase9/radix/step/gpu_kdtree/shapenet/vase9"
+}

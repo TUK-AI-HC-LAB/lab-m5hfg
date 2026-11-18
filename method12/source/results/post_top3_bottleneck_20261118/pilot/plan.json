@@ -1,0 +1,25 @@
+{
+  "question": "Can nearest-bound seeding replace full cluster-bound sorting?",
+  "hypothesis": "Same exact 120-NN and FPFH with less query work; extra visited clusters may refute speed hypothesis",
+  "fixed": "Same input and index, STEP512/Lloyd50, all other distance and tie rules unchanged",
+  "targets": {
+    "minishift/capsule": [
+      0,
+      50,
+      129
+    ],
+    "shapenet/vase9": [
+      0,
+      18,
+      36
+    ]
+  },
+  "repeats": 4,
+  "source_sha256": {
+    "/mnt/c/Users/test/Desktop/Codex/lab-m5hfg/method12/source/pilot_simple3d_step_no_boundsort.py": "f9298d1965194e483fd01c70572856a6c65135caac4b4eba415c7c28e86a1279",
+    "/mnt/c/Users/test/Desktop/Codex/lab-m5hfg/method12/source/simple3d_step_index.cu": "a39c7eda13e826802b264aa6df65706e16322c5b35fe8433a98af6cb1372e51f",
+    "/mnt/c/Users/test/Desktop/Codex/lab-m5hfg/method12/source/measure_simple3d_capsule_step.py": "c5bb0dacfcb149fb27f3c669aa3b226775ce82ac716c1e6a8aac48933686e77f"
+  },
+  "compiled_trial_sha256": "6792b44e40240d4dc36d83019225077522ba9851bf5f231e86c459645ee77f75",
+  "gpu": "NVIDIA GeForce RTX 5080"
+}

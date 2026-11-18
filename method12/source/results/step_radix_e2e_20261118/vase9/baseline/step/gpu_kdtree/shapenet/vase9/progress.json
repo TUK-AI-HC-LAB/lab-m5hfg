@@ -1,0 +1,11 @@
+{
+  "status": "running",
+  "mode": "gpu_kdtree",
+  "dataset": "shapenet",
+  "category": "vase9",
+  "phase": "complete",
+  "index": 37,
+  "total": 37,
+  "updated_unix": 1795002193.6639519,
+  "pid": 3132
+}
