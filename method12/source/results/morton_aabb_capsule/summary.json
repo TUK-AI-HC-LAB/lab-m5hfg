@@ -1,0 +1,9 @@
+{
+  "total_ms": {
+    "lloyd": 546.1757853333319,
+    "sphere": 915.0262781666694,
+    "aabb": 437.9025279999998
+  },
+  "all_neighbors_and_fpfh_exact": true,
+  "pass_gate": true
+}

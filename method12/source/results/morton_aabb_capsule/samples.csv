@@ -1,0 +1,10 @@
+sample,path,label,points,variant,build_ms,query_ms,total_ms,visited_groups,candidate_distances,candidate_merges,order_diff,set_diff,distance_diff_over_1e_12,max_squared_distance_delta,fpfh40_diff_rows,fpfh40_max_delta,fpfh80_diff_rows,fpfh80_max_delta,fpfh120_diff_rows,fpfh120_max_delta
+0,/home/test/data/MiniShift/capsule/test/good/0.txt,0,500000,lloyd,301.5387409999999,253.74367849999936,568.4238619999977,2.267384,2225.868276,7.908014,0,0,0,0.0,0,0.0,0,0.0,0,0.0
+0,/home/test/data/MiniShift/capsule/test/good/0.txt,0,500000,sphere,1.7095715000010614,962.0239510000008,963.7335225000019,14.582604,14241.49346,26.909426,0,0,0,0.0,0,0.0,0,0.0,0,0.0
+0,/home/test/data/MiniShift/capsule/test/good/0.txt,0,500000,aabb,1.7079100000003677,449.3918305000015,451.0997405000019,5.728022,5593.861282,13.533564,0,0,0,0.0,0,0.0,0,0.0,0,0.0
+65,/home/test/data/MiniShift/capsule/test/gradual/hard/61_2_striate.txt,1,500000,lloyd,288.3172665000018,247.6961619999969,535.9362559999994,2.265764,2230.789748,7.884688,0,0,0,0.0,0,0.0,0,0.0,0,0.0
+65,/home/test/data/MiniShift/capsule/test/gradual/hard/61_2_striate.txt,1,500000,sphere,1.6068185000008839,881.4642710000022,883.2950985000032,13.82635,13502.268414,25.723652,0,0,0,0.0,0,0.0,0,0.0,0,0.0
+65,/home/test/data/MiniShift/capsule/test/gradual/hard/61_2_striate.txt,1,500000,aabb,1.6287640000030024,411.3257694999994,413.3436744999983,5.239356,5116.65016,12.708864,0,0,0,0.0,0,0.0,0,0.0,0,0.0
+129,/home/test/data/MiniShift/capsule/test/subtle/hard/63_2_sphere.txt,1,500000,lloyd,287.8086350000011,246.24542099999758,534.1672379999984,2.261886,2215.122926,7.842564,0,0,0,0.0,0,0.0,0,0.0,0,0.0
+129,/home/test/data/MiniShift/capsule/test/subtle/hard/63_2_sphere.txt,1,500000,sphere,1.624089999999967,896.1697825000031,898.0502135000031,13.916906,13590.026124,26.488924,0,0,0,0.0,0,0.0,0,0.0,0,0.0
+129,/home/test/data/MiniShift/capsule/test/subtle/hard/63_2_sphere.txt,1,500000,aabb,1.7178149999956815,447.66628600000047,449.26416899999924,5.738454,5603.800084,13.871694,0,0,0,0.0,0,0.0,0,0.0,0,0.0
