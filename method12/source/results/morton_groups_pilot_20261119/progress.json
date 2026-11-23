@@ -1,0 +1,5 @@
+{
+  "status": "failed",
+  "completed_samples": 0,
+  "error": "Traceback (most recent call last):\n  File \"/mnt/c/Users/test/Desktop/Codex/lab-m5hfg/method12/source/pilot_simple3d_morton_groups.py\", line 73, in main\n    index=indexing(x,64);verify_index(x,index,64)\n          ^^^^^^^^^^^^^^\n  File \"/mnt/c/Users/test/Desktop/Codex/lab-m5hfg/method12/source/simple3d_morton_groups.py\", line 26, in indexing\n    minimum=cp.minimum.reduceat(ordered,offsets[:-1],axis=0)\n            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"cupy/_core/_kernel.pyx\", line 1492, in cupy._core._kernel.ufunc.reduceat\nNotImplementedError: `cupy_minimum.reduceat` is not supported yet\n"
+}

@@ -49,14 +49,14 @@ W48의 목적은 가속 기법을 많이 적용하는 것이 아니라, **어떤
 - **왜 했나:** 최종 특징은 대표점 주변에서 모으므로, 실제로 쓰는 점의 FPFH만 만들면 이웃 탐색도 크게 줄일 수 있다는 가설을 세움.
 - **무엇을 확인했나:** 24개 샘플의 특징 의존 관계를 추적함. MiniShift 표본에서 직접 쓰는 FPFH는 약 54%였지만, 그 FPFH가 주변 점의 중간 특징(SPFH)을 참조하므로 약 99.94%의 점에서 120-NN 조회가 여전히 필요했음. Anomaly-ShapeNet 표본에서는 100%였음.
 
-근거: FPFH 의존성 분석 (로컬 자료: `W48_Simple3D_FPFH_dependency_and_avoidable_work.md`)
+[근거: FPFH 의존성 분석](../../method12/markdown/W48_Simple3D_FPFH_dependency_and_avoidable_work.md)
 
 ## 5. 기존 지역 특징 SHOT로 교체해 속도와 정확도를 비교함 [B~D: 특징 경로]
 
 - **왜 했나:** 원본 전체의 FPFH를 계산한 뒤 모으지 않고, 대표점 주변만 보고 특징을 직접 만들면 전체 점의 120-NN 탐색을 피할 수 있음. 선행연구 조사에서 이 발상 자체는 이미 알려져 있어, SHOT를 새 방법이 아닌 비교 기준으로 선택함.
 - **무엇을 확인했나:** capsule에서 입력·대표점·후처리를 유지하고 정상 뱅크를 새로 구성함. SHOT의 평균 추론 시간은 35.8% 줄었지만, 물체 AUROC는 93.17% → 59.33%, 포인트 AUROC는 81.82% → 57.25%로 하락함. 반경 기반 패치와 특징 차원, CPU/GPU 구현도 달라 SHOT 표현 하나만의 영향으로 단정할 수 없음. 평가 수치는 확보했고, 사례 그림은 생성되지 않았음.
 
-근거: 지역 특징 선행연구 (로컬 자료: `W48_Simple3D_sparse_local_geometry_related_work.md`) · SHOT 비교 (로컬 자료: `W48_Simple3D_capsule_SHOT_vs_FPFH.md`)
+[근거: 지역 특징 선행연구](W48_Simple3D_sparse_local_geometry_related_work.md) · [SHOT 비교](../../method12/markdown/W48_Simple3D_capsule_SHOT_vs_FPFH.md)
 
 ## 6. FPFH를 유지하고 인덱스 구성만 Morton 방식으로 교체함 [B: 구조 생성]
 
@@ -64,7 +64,7 @@ W48의 목적은 가속 기법을 많이 적용하는 것이 아니라, **어떤
 - **무엇을 확인했나:** 6개 표본에서 이웃 순서와 FPFH 값이 모두 같았음. 구조 생성은 빨라졌지만, capsule은 묶음 경계가 넓어져 후보 검사량이 늘었고 **생성+조회 합계**가 57.7% 증가함. vase9에서는 같은 합계가 39.4% 감소함. 일괄 교체 기준을 충족하지 못해 전체 추론 실험으로 확대하지 않음.
 - **무엇을 배웠나:** 인덱스를 싸게 만드는 것만으로는 충분하지 않음. 묶음 경계가 느슨해져 후보가 늘면 준비 비용을 줄인 이득이 사라질 수 있음. 두 물체의 결과만으로 점 수가 원인이라고 단정할 수는 없음.
 
-근거: 탐색 비용 절감 후보 검토 (로컬 자료: `W48_Simple3D_FPFH_preserving_search_review.md`) · Morton 비교·후보 검사량 진단 (로컬 자료: `W48_Simple3D_Morton_groups_vs_STEP_index.md`)
+[근거: 탐색 비용 절감 후보 검토](W48_Simple3D_FPFH_preserving_search_review.md) · [Morton 비교·후보 검사량 진단](../../method12/markdown/W48_Simple3D_Morton_groups_vs_STEP_index.md)
 
 ## 7. Morton 묶음은 유지하고 탐색 경계만 직육면체로 바꿈 [B: 경계와 가지치기]
 

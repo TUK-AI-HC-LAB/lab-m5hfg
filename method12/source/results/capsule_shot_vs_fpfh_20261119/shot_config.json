@@ -1,0 +1,17 @@
+{
+  "radius": 0.20105396075616777,
+  "lrf_radius": 0.20105396075616777,
+  "threads": 4,
+  "feature_dimension": 352,
+  "radius_rule": "median Euclidean distance to128th neighbor at4096 fixed hybrid centers on train0 only",
+  "calibration_path": "/home/test/data/MiniShift/capsule/train/good/0.txt",
+  "calibration_index": 0,
+  "calibration_wall_s": 0.7129516130000013,
+  "min_radius128": 0.18464648365999897,
+  "max_radius128": 0.21546537299566565,
+  "invalid_policy": "fail on any nonfinite/zero descriptor; never silently delete centers or zero-fill",
+  "library": "PCL1.15.1 SHOTEstimationOMP<PointXYZ,Normal,SHOT352> CPU",
+  "changed": "132-dim multiscale FPFH mean ->352-dim directly computed radius-based SHOT",
+  "not_equivalent": "SHOT requires radius support and LRF; cannot use PCL SHOT with fixed128 K-search",
+  "library_sha256": "bf6b4311bd9dbbd75be4a4f1dd803227801fb0c5d104c3de75d31b4296854982"
+}

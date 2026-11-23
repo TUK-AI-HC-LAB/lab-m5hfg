@@ -1,0 +1,21 @@
+{
+  "status": "complete_verified",
+  "samples": 24,
+  "scale_rows": 72,
+  "required_fpfh_value_changes": 0,
+  "aggregated_value_changes": 0,
+  "source_sha256": {
+    "/mnt/c/Users/test/Desktop/Codex/lab-m5hfg/method12/source/measure_simple3d_fpfh_dependencies.py": "783daced199e6c22d9114b977e7cf85a4b86898f3284aa3d23032f577ebc22b1",
+    "/mnt/c/Users/test/Desktop/Codex/lab-m5hfg/method12/source/run_simple3d_fpfh_dependencies.sh": "6ce9cb260d70b5b9dbf0f091b30e627794a26b2c5db2580826d82b31d4997a1d",
+    "/mnt/c/Users/test/Desktop/Codex/lab-m5hfg/method12/source/simple3d_gpu_kdtree.py": "7750eea7a74674e8b3c1354b8f0195c07641e10b61b1fef09e391369a2afd382",
+    "/mnt/c/Users/test/Desktop/Codex/lab-m5hfg/method12/source/simple3d_gpu_kdtree.cu": "1b1bb3e2b9798024bbc818d5b37d617b9fe5430d81bdcebf25d22462452f8b4c",
+    "/mnt/c/Users/test/Desktop/Codex/lab-m5hfg/method12/source/simple3d_shapenet_hybrid_fps.py": "1ef3a0d16fe9c19b938a914b80af339df32ac69ea6b927b4cedd418dcd726a87",
+    "/mnt/c/Users/test/Desktop/Codex/lab-m5hfg/method12/source/measure_simple3d_capsule_step.py": "c5bb0dacfcb149fb27f3c669aa3b226775ce82ac716c1e6a8aac48933686e77f",
+    "/mnt/c/Users/test/Desktop/Codex/lab-m5hfg/method12/source/simple3d_step_index.cu": "a39c7eda13e826802b264aa6df65706e16322c5b35fe8433a98af6cb1372e51f",
+    "/mnt/c/Users/test/Desktop/Codex/lab-m5hfg/method12/source/pilot_simple3d_step_radix.py": "675a7c2fca25f731ce8ccbf7bdc69da1cc1b27e00d93d3275d00d5dad911fd0c",
+    "/mnt/c/Users/test/Desktop/Codex/Project/Simple3D-official-compatible-20261104/feature_extractors/features.py": "3f9ab78fa7acb74f455880be89596fed7c46fde6596f609903bb71d58f734cbb",
+    "/mnt/c/Users/test/Desktop/Codex/Project/Simple3D-official-compatible-20261104/feature_extractors/FPFH.py": "b4fe90b13edf317a24c924cd52224c58fd80bfdd910582f9d82312f0b4ddc0b2",
+    "/mnt/c/Users/test/Desktop/Codex/Project/Simple3D-official-compatible-20261104/feature_extractors/pointnet2_utils.py": "d91815846fc27c56b995760972ed5bed17ac610917fe82651f802165807cde9b"
+  },
+  "limitation": "Conservative dependency counts, not a selective implementation, speed result, or AUROC evaluation"
+}

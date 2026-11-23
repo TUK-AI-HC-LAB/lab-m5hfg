@@ -1,0 +1,20 @@
+{
+  "status": "verified",
+  "same_inputs": true,
+  "same_centers": true,
+  "same_postprocess": true,
+  "fpfh_bank_shape": [
+    11059,
+    132
+  ],
+  "shot_bank_shape": [
+    11059,
+    352
+  ],
+  "bank_bytes": [
+    5839152,
+    15571072
+  ],
+  "expected_score_equality": false,
+  "reason": "different descriptor, neighborhood definition and feature dimensions"
+}

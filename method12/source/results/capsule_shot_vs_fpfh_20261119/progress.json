@@ -1,0 +1,19 @@
+{
+  "completed_jobs": 2,
+  "total_jobs": 2,
+  "pid": 449,
+  "status": "failed",
+  "updated_utc": "2026-11-19T09:13:04.841210+00:00",
+  "heartbeat_unix": 1795079584.841237,
+  "variant": "shot",
+  "smoke": false,
+  "mode": "gpu_kdtree",
+  "dataset": "minishift",
+  "category": "capsule",
+  "worker_pid": 2188,
+  "phase": "visualization",
+  "worker_elapsed_s": 254.180928939,
+  "sample_index": 130,
+  "sample_total": 130,
+  "error": "Traceback (most recent call last):\n  File \"/mnt/c/Users/test/Desktop/Codex/lab-m5hfg/method12/source/run_simple3d_shot_comparison.py\", line 210, in main\n    from visualize_simple3d_shot_cases import main as cases\n  File \"/mnt/c/Users/test/Desktop/Codex/lab-m5hfg/method12/source/visualize_simple3d_shot_cases.py\", line 7, in <module>\n    import matplotlib\nModuleNotFoundError: No module named 'matplotlib'\n"
+}

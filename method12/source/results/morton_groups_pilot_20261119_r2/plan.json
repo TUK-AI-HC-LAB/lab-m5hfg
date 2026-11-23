@@ -1,0 +1,42 @@
+{
+  "question": "Exact FPFH with less index-building work?",
+  "hypotheses": [
+    "Cheaper Morton index build",
+    "Looser bounds may increase query work and refute speed gain"
+  ],
+  "targets": [
+    [
+      "minishift",
+      "capsule",
+      [
+        0,
+        65,
+        129
+      ]
+    ],
+    [
+      "shapenet",
+      "vase9",
+      [
+        0,
+        18,
+        36
+      ]
+    ]
+  ],
+  "repeats": 4,
+  "groups": 512,
+  "baseline_Lloyd_updates": 50,
+  "changed_only": "Lloyd index construction ->Morton balanced groups with conservative spheres",
+  "fixed": "same Radix120-NN kernel, original coordinates, Float64 bounds/distances, stable point-ID ties",
+  "pass_gate": "All six samples exact neighbors/FPFH, median build+query faster on every sample",
+  "source_sha256": {
+    "/mnt/c/Users/test/Desktop/Codex/lab-m5hfg/method12/source/pilot_simple3d_morton_groups.py": "c8e821e4e762d9999744e2184cc2b3965ed9dd1fd3571d6d4a2767bac9bee0c7",
+    "/mnt/c/Users/test/Desktop/Codex/lab-m5hfg/method12/source/simple3d_morton_groups.py": "c3de2f56350dce8045515e9a052f1e1c9bbe8236f1726ef8751628029c764b31",
+    "/mnt/c/Users/test/Desktop/Codex/lab-m5hfg/method12/source/simple3d_step_index.cu": "a39c7eda13e826802b264aa6df65706e16322c5b35fe8433a98af6cb1372e51f",
+    "/mnt/c/Users/test/Desktop/Codex/lab-m5hfg/method12/source/measure_simple3d_capsule_step.py": "c5bb0dacfcb149fb27f3c669aa3b226775ce82ac716c1e6a8aac48933686e77f",
+    "/mnt/c/Users/test/Desktop/Codex/lab-m5hfg/method12/source/pilot_simple3d_step_radix.py": "675a7c2fca25f731ce8ccbf7bdc69da1cc1b27e00d93d3275d00d5dad911fd0c",
+    "/mnt/c/Users/test/Desktop/Codex/lab-m5hfg/method12/source/simple3d_gpu_kdtree.cu": "1b1bb3e2b9798024bbc818d5b37d617b9fe5430d81bdcebf25d22462452f8b4c",
+    "/mnt/c/Users/test/Desktop/Codex/lab-m5hfg/method12/source/run_simple3d_morton_groups_pilot.sh": "b178ab5bfed5cb8e7b8f7950fdea7ebdf4f0f2e56fa7e0093762c42d9881c2ad"
+  }
+}

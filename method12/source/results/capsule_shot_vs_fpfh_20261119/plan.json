@@ -1,0 +1,32 @@
+{
+  "question": "Can direct local SHOT trade accuracy for less dense-feature work?",
+  "hypotheses": [
+    "Dense FPFH work may be avoided",
+    "Small defects may be suppressed",
+    "CPU SHOT cost may dominate"
+  ],
+  "variants": [
+    "fpfh",
+    "shot"
+  ],
+  "same_inputs_and_centers": true,
+  "scope": "capsule54train130test",
+  "source_sha256": {
+    "/mnt/c/Users/test/Desktop/Codex/lab-m5hfg/method12/source/run_simple3d_shot_comparison.py": "bf43352fe4b41ca69889e1a0b1509370a1a3906144c8a2582606c0e206ad9df1",
+    "/mnt/c/Users/test/Desktop/Codex/lab-m5hfg/method12/source/simple3d_shot_adapter.py": "402f1b6cf36d09f086c45c9d088343d7890c535bcff604016bae3abba251f8db",
+    "/mnt/c/Users/test/Desktop/Codex/lab-m5hfg/method12/source/simple3d_shot_pcl.cpp": "49ac0384390f023d0dacce59a4da7dce2a89ec4904d12b40c7eb36ed2063143a",
+    "/mnt/c/Users/test/Desktop/Codex/lab-m5hfg/method12/source/run_simple3d_shot_comparison.sh": "155263dafa27907b2e25a302bd6c0270760db7df75761e709cb82bfde4bad3dc",
+    "/mnt/c/Users/test/Desktop/Codex/lab-m5hfg/method12/source/setup_simple3d_shot_local.sh": "5d97a4a3acb01b23e54a267ed9a5e5f892dc41e55073ee4f06166ee9e5d156bf",
+    "/mnt/c/Users/test/Desktop/Codex/lab-m5hfg/method12/source/run_simple3d_capsule_step_flashfps.py": "d053e70bc1717c13e9dc32fdd020da5be173884065821c36ab823b7c480181d1",
+    "/mnt/c/Users/test/Desktop/Codex/lab-m5hfg/method12/source/simple3d_shapenet_hybrid_fps.py": "1ef3a0d16fe9c19b938a914b80af339df32ac69ea6b927b4cedd418dcd726a87",
+    "/mnt/c/Users/test/Desktop/Codex/lab-m5hfg/method12/source/measure_simple3d_capsule_flashfps.py": "0a82d041cde9445bbb6fc5069425e80d5916088ab0163574b6b0682194c9ebfe",
+    "/mnt/c/Users/test/Desktop/Codex/lab-m5hfg/method12/source/simple3d_gpu_kdtree.py": "7750eea7a74674e8b3c1354b8f0195c07641e10b61b1fef09e391369a2afd382",
+    "/mnt/c/Users/test/Desktop/Codex/lab-m5hfg/method12/source/simple3d_gpu_kdtree.cu": "1b1bb3e2b9798024bbc818d5b37d617b9fe5430d81bdcebf25d22462452f8b4c",
+    "/mnt/c/Users/test/Desktop/Codex/lab-m5hfg/method12/source/pilot_simple3d_step_radix.py": "675a7c2fca25f731ce8ccbf7bdc69da1cc1b27e00d93d3275d00d5dad911fd0c",
+    "/mnt/c/Users/test/Desktop/Codex/lab-m5hfg/method12/source/visualize_simple3d_shot_cases.py": "06ce24d1c60d171b9cf0431ddedf423dd6b5237e9b3812dd4c8963473cf803d6",
+    "/home/test/simple3d-shot-local-20261119/libsimple3d_shot.so": "bf6b4311bd9dbbd75be4a4f1dd803227801fb0c5d104c3de75d31b4296854982"
+  },
+  "score_equality_expected": false,
+  "case_rule": "three smallest positive test masks; evaluation-only",
+  "percentile_rule": "within-image score rank, top1percent recall diagnostic only; not a calibrated deployment threshold"
+}

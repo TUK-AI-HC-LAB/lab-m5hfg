@@ -1,0 +1,9 @@
+variant,mode,dataset,category,level,object_auroc,point_auroc,point_ap
+fpfh,gpu_kdtree,minishift,capsule,easy,1.0,0.9864664979473059,0.39736048673483376
+fpfh,gpu_kdtree,minishift,capsule,medium,0.9500000000000001,0.8774864171636312,0.2197499652600105
+fpfh,gpu_kdtree,minishift,capsule,hard,0.845,0.6147012321041505,0.0685750251382654
+fpfh,gpu_kdtree,minishift,capsule,ALL,0.9316666666666666,0.8181788933364811,0.22300987778882442
+shot,gpu_kdtree,minishift,capsule,easy,0.6724999999999999,0.5998740600826264,0.05531382991757994
+shot,gpu_kdtree,minishift,capsule,medium,0.5775,0.6198762664065275,0.021218481123500603
+shot,gpu_kdtree,minishift,capsule,hard,0.53,0.49494139511963475,0.009047785635564739
+shot,gpu_kdtree,minishift,capsule,ALL,0.5933333333333333,0.5724797725967732,0.028130330649525893
