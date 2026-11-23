@@ -1,0 +1,153 @@
+{
+  "results": {
+    "ordered": {
+      "status": "complete",
+      "mode": "gpu_kdtree",
+      "dataset": "minishift",
+      "category": "capsule",
+      "train_count": 54,
+      "test_count": 130,
+      "fit_wall_s": 89.61932327199999,
+      "inference_mean_ms": 2121.0449282769227,
+      "inference_median_ms": 2110.81785250002,
+      "inference_p95_ms": 2272.3305237500513,
+      "peak_torch_allocated_bytes": 5118818816,
+      "peak_torch_reserved_bytes": 6415187968,
+      "elapsed_wall_s": 422.20057301199995,
+      "metrics": [
+        {
+          "mode": "gpu_kdtree",
+          "dataset": "minishift",
+          "category": "capsule",
+          "level": "easy",
+          "object_auroc": 1.0,
+          "point_auroc": 0.9864676351018821,
+          "point_ap": 0.39736121733173113
+        },
+        {
+          "mode": "gpu_kdtree",
+          "dataset": "minishift",
+          "category": "capsule",
+          "level": "medium",
+          "object_auroc": 0.9500000000000001,
+          "point_auroc": 0.8774838545758469,
+          "point_ap": 0.21973986169578044
+        },
+        {
+          "mode": "gpu_kdtree",
+          "dataset": "minishift",
+          "category": "capsule",
+          "level": "hard",
+          "object_auroc": 0.845,
+          "point_auroc": 0.6153846036290478,
+          "point_ap": 0.06859925078314151
+        },
+        {
+          "mode": "gpu_kdtree",
+          "dataset": "minishift",
+          "category": "capsule",
+          "level": "ALL",
+          "object_auroc": 0.9316666666666666,
+          "point_auroc": 0.8184304717098374,
+          "point_ap": 0.2230245599248694
+        }
+      ],
+      "raw_assets": "/home/test/simple3d-capsule-flashfps-fill-ab-20261123/ordered/gpu_kdtree/minishift/capsule"
+    },
+    "random": {
+      "status": "complete",
+      "mode": "gpu_kdtree",
+      "dataset": "minishift",
+      "category": "capsule",
+      "train_count": 54,
+      "test_count": 130,
+      "fit_wall_s": 90.57655190100002,
+      "inference_mean_ms": 2092.742616784613,
+      "inference_median_ms": 2079.367928999943,
+      "inference_p95_ms": 2246.0024140999394,
+      "peak_torch_allocated_bytes": 5119819264,
+      "peak_torch_reserved_bytes": 6415187968,
+      "elapsed_wall_s": 418.9058356070001,
+      "metrics": [
+        {
+          "mode": "gpu_kdtree",
+          "dataset": "minishift",
+          "category": "capsule",
+          "level": "easy",
+          "object_auroc": 1.0,
+          "point_auroc": 0.9881670337468942,
+          "point_ap": 0.4057722154329553
+        },
+        {
+          "mode": "gpu_kdtree",
+          "dataset": "minishift",
+          "category": "capsule",
+          "level": "medium",
+          "object_auroc": 0.9575,
+          "point_auroc": 0.8358946571247154,
+          "point_ap": 0.22532289019369384
+        },
+        {
+          "mode": "gpu_kdtree",
+          "dataset": "minishift",
+          "category": "capsule",
+          "level": "hard",
+          "object_auroc": 0.8825000000000001,
+          "point_auroc": 0.6716220641699749,
+          "point_ap": 0.06993326929037282
+        },
+        {
+          "mode": "gpu_kdtree",
+          "dataset": "minishift",
+          "category": "capsule",
+          "level": "ALL",
+          "object_auroc": 0.9466666666666668,
+          "point_auroc": 0.8238530027730786,
+          "point_ap": 0.22806567561463167
+        }
+      ],
+      "raw_assets": "/home/test/simple3d-capsule-flashfps-fill-ab-20261123/random/gpu_kdtree/minishift/capsule"
+    }
+  },
+  "stage_ms": {
+    "ordered": {
+      "feature_fps": 112.35020922147308,
+      "smoothing_fps": 217.54473454402043,
+      "fpfh_120nn": 1133.3935363076919
+    },
+    "random": {
+      "feature_fps": 109.0582092285156,
+      "smoothing_fps": 211.85136707012475,
+      "fpfh_120nn": 1128.4636770923025
+    }
+  },
+  "fps": {
+    "ordered": {
+      "variant": "hybrid",
+      "candidate_fraction": 0.25,
+      "candidate_seed": 42,
+      "feature_exact": 2048,
+      "feature_fill": 2048,
+      "fill_order": "original candidate index order",
+      "smoothing_exact": 1024,
+      "smoothing_candidate_fraction": 1.0
+    },
+    "random": {
+      "variant": "hybrid",
+      "candidate_fraction": 0.25,
+      "candidate_seed": 42,
+      "feature_exact": 2048,
+      "feature_fill": 2048,
+      "fill_order": "random without replacement among unused candidates",
+      "smoothing_exact": 1024,
+      "smoothing_candidate_fraction": 1.0,
+      "fill_seed": 43
+    }
+  },
+  "random_prefix_smoke": "passed",
+  "source_sha256": {
+    "run_simple3d_capsule_flashfps_fill_ab.py": "c81602f79e3cd91c915ebd7a59e61468a5967da90b5055bb6b7bd9e85bf9acf4",
+    "run_simple3d_capsule_flashfps_fill_ab.sh": "1e49ad10a3f12d206b9684f9c126914c85fab4e865222ce55ff31946f78b6c2e",
+    "simple3d_shapenet_hybrid_fps.py": "1ef3a0d16fe9c19b938a914b80af339df32ac69ea6b927b4cedd418dcd726a87"
+  }
+}
