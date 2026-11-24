@@ -1,0 +1,247 @@
+{
+  "categories": {
+    "vase9": {
+      "order": [
+        "native",
+        "skip"
+      ],
+      "results": {
+        "native": {
+          "status": "complete",
+          "mode": "gpu_kdtree",
+          "dataset": "shapenet",
+          "category": "vase9",
+          "train_count": 4,
+          "test_count": 37,
+          "fit_wall_s": 1.480986901999998,
+          "inference_mean_ms": 368.5220340000002,
+          "inference_median_ms": 382.5947760000048,
+          "inference_p95_ms": 428.31920320000023,
+          "peak_torch_allocated_bytes": 2490068992,
+          "peak_torch_reserved_bytes": 3066036224,
+          "elapsed_wall_s": 18.861640397,
+          "metrics": [
+            {
+              "mode": "gpu_kdtree",
+              "dataset": "shapenet",
+              "category": "vase9",
+              "level": "ALL",
+              "object_auroc": 0.7909090909090909,
+              "point_auroc": 0.9292165024291577,
+              "point_ap": 0.3177115500454027
+            }
+          ],
+          "raw_assets": "/home/test/simple3d-indexed-interp-generalization-20261124/native/vase9/radix/step/gpu_kdtree/shapenet/vase9"
+        },
+        "skip": {
+          "status": "complete",
+          "mode": "gpu_kdtree",
+          "dataset": "shapenet",
+          "category": "vase9",
+          "train_count": 4,
+          "test_count": 37,
+          "fit_wall_s": 1.4958366079999976,
+          "inference_mean_ms": 358.3842982162163,
+          "inference_median_ms": 366.84623899999735,
+          "inference_p95_ms": 418.06029299999494,
+          "peak_torch_allocated_bytes": 1258153984,
+          "peak_torch_reserved_bytes": 1635778560,
+          "elapsed_wall_s": 18.550169590000003,
+          "metrics": [
+            {
+              "mode": "gpu_kdtree",
+              "dataset": "shapenet",
+              "category": "vase9",
+              "level": "ALL",
+              "object_auroc": 0.7909090909090909,
+              "point_auroc": 0.9292165024291577,
+              "point_ap": 0.3177115500454027
+            }
+          ],
+          "raw_assets": "/home/test/simple3d-indexed-interp-generalization-20261124/skip/vase9/radix/step/gpu_kdtree/shapenet/vase9"
+        }
+      },
+      "stage_ms": {
+        "native": {
+          "first_interp": 51.58414533975963,
+          "second_interp": 15.832742098215467,
+          "fpfh_120nn": 80.4438434324324
+        },
+        "skip": {
+          "first_interp": 39.85863837680299,
+          "second_interp": 16.243404092015442,
+          "fpfh_120nn": 80.637777810811
+        }
+      },
+      "paired": {
+        "points": 4564539,
+        "different": 0,
+        "max_abs": 0.0,
+        "object_abs": 0.0,
+        "bank_same": true,
+        "metrics_same": true
+      }
+    },
+    "capsule": {
+      "order": [
+        "skip",
+        "native"
+      ],
+      "results": {
+        "native": {
+          "status": "complete",
+          "mode": "gpu_kdtree",
+          "dataset": "minishift",
+          "category": "capsule",
+          "train_count": 54,
+          "test_count": 130,
+          "fit_wall_s": 62.842942730999994,
+          "inference_mean_ms": 1444.508957253838,
+          "inference_median_ms": 1439.0037564999432,
+          "inference_p95_ms": 1503.1091916000037,
+          "peak_torch_allocated_bytes": 2663572480,
+          "peak_torch_reserved_bytes": 3135242240,
+          "elapsed_wall_s": 317.633551311,
+          "metrics": [
+            {
+              "mode": "gpu_kdtree",
+              "dataset": "minishift",
+              "category": "capsule",
+              "level": "easy",
+              "object_auroc": 1.0,
+              "point_auroc": 0.9864664979473059,
+              "point_ap": 0.39736048673483376
+            },
+            {
+              "mode": "gpu_kdtree",
+              "dataset": "minishift",
+              "category": "capsule",
+              "level": "medium",
+              "object_auroc": 0.9500000000000001,
+              "point_auroc": 0.8774864171636312,
+              "point_ap": 0.2197499652600105
+            },
+            {
+              "mode": "gpu_kdtree",
+              "dataset": "minishift",
+              "category": "capsule",
+              "level": "hard",
+              "object_auroc": 0.845,
+              "point_auroc": 0.6147012321041505,
+              "point_ap": 0.0685750251382654
+            },
+            {
+              "mode": "gpu_kdtree",
+              "dataset": "minishift",
+              "category": "capsule",
+              "level": "ALL",
+              "object_auroc": 0.9316666666666666,
+              "point_auroc": 0.8181788933364811,
+              "point_ap": 0.22300987778882442
+            }
+          ],
+          "raw_assets": "/home/test/simple3d-indexed-interp-generalization-20261124/native/capsule/radix/step/gpu_kdtree/minishift/capsule"
+        },
+        "skip": {
+          "status": "complete",
+          "mode": "gpu_kdtree",
+          "dataset": "minishift",
+          "category": "capsule",
+          "train_count": 54,
+          "test_count": 130,
+          "fit_wall_s": 58.306760189000016,
+          "inference_mean_ms": 1351.6238226999972,
+          "inference_median_ms": 1351.6041029999712,
+          "inference_p95_ms": 1421.523409800021,
+          "peak_torch_allocated_bytes": 1432378368,
+          "peak_torch_reserved_bytes": 1910505472,
+          "elapsed_wall_s": 297.685321056,
+          "metrics": [
+            {
+              "mode": "gpu_kdtree",
+              "dataset": "minishift",
+              "category": "capsule",
+              "level": "easy",
+              "object_auroc": 1.0,
+              "point_auroc": 0.9864664979473059,
+              "point_ap": 0.39736048673483376
+            },
+            {
+              "mode": "gpu_kdtree",
+              "dataset": "minishift",
+              "category": "capsule",
+              "level": "medium",
+              "object_auroc": 0.9500000000000001,
+              "point_auroc": 0.8774864171636312,
+              "point_ap": 0.2197499652600105
+            },
+            {
+              "mode": "gpu_kdtree",
+              "dataset": "minishift",
+              "category": "capsule",
+              "level": "hard",
+              "object_auroc": 0.845,
+              "point_auroc": 0.6147012321041505,
+              "point_ap": 0.0685750251382654
+            },
+            {
+              "mode": "gpu_kdtree",
+              "dataset": "minishift",
+              "category": "capsule",
+              "level": "ALL",
+              "object_auroc": 0.9316666666666666,
+              "point_auroc": 0.8181788933364811,
+              "point_ap": 0.22300987778882442
+            }
+          ],
+          "raw_assets": "/home/test/simple3d-indexed-interp-generalization-20261124/skip/capsule/radix/step/gpu_kdtree/minishift/capsule"
+        }
+      },
+      "stage_ms": {
+        "native": {
+          "first_interp": 213.0276452871469,
+          "second_interp": 69.41017846327557,
+          "fpfh_120nn": 510.1364924615408
+        },
+        "skip": {
+          "first_interp": 139.07923572246847,
+          "second_interp": 69.21400313744176,
+          "fpfh_120nn": 504.94036463846345
+        }
+      },
+      "paired": {
+        "points": 65000000,
+        "different": 0,
+        "max_abs": 0.0,
+        "object_abs": 0.0,
+        "bank_same": true,
+        "metrics_same": true
+      }
+    }
+  },
+  "source_sha256": {
+    "run_simple3d_indexed_interp_generalization.py": "2d52fd559fd94789337744f541d059e5872677b5707f5af498a093ae271b2c31",
+    "run_simple3d_indexed_interp_generalization.sh": "1f6d7d2ca83964df3dd0a1aa4da0881d87df28297a092558763b8aadcbd83dcd",
+    "run_simple3d_morton_aabb_e2e.py": "c79821ee68258d89cfce2fe951e9c15a7821a88c2d53065e26858d2f806af0ef",
+    "run_simple3d_step_radix_e2e.py": "54b4aef32fca983f249fdadd91293f9e3cfd2393d1ac486568904b6174b492ae",
+    "run_simple3d_capsule_step_flashfps.py": "d053e70bc1717c13e9dc32fdd020da5be173884065821c36ab823b7c480181d1",
+    "pilot_simple3d_interpolation_rerank.py": "4d4731eb1ae57cefc7bf0d6185295cccdbed3ecd83fe1190e5ffc24db1f1425d",
+    "pilot_simple3d_indexed_interpolation.py": "50ffd3a6528bf4749ed9eca227667ef0e4735546821418ada8af06d299dc218a",
+    "run_simple3d_interpolation_rerank_replay.py": "483a54fa88eb84ea3c72ce6276c71952c8b24380fae4d857d45907b14829aad1",
+    "pilot_simple3d_fps_skip_updates.py": "70448332ccae815142736515f262b629c550d7faf43e7dd7c787a0951396136d",
+    "pilot_simple3d_fps_skip_updates.cu": "3c1a28cce3fc423241275e9b9d157b921146549500d151ebdbbd08a0571db8e7",
+    "pilot_simple3d_fps_far_pruning.py": "94ca9acd276a7ab8a5260761c062fec6d59309768968e3c4fcf130be1887fb6b",
+    "pilot_simple3d_fps_far_pruning.cu": "87398e546b40432275b563eaaf94942ea09d3b31fec0f9563eefa262eeca1381",
+    "simple3d_shapenet_hybrid_fps.py": "1ef3a0d16fe9c19b938a914b80af339df32ac69ea6b927b4cedd418dcd726a87",
+    "pilot_simple3d_morton_aabb.py": "50556ff741597c72cbd4b70a3742afeafd58e4501f671c77024cd8a8ca1537eb",
+    "pilot_simple3d_step_radix.py": "675a7c2fca25f731ce8ccbf7bdc69da1cc1b27e00d93d3275d00d5dad911fd0c",
+    "pilot_simple3d_step_no_boundsort.py": "f9298d1965194e483fd01c70572856a6c65135caac4b4eba415c7c28e86a1279",
+    "simple3d_morton_groups.py": "c3de2f56350dce8045515e9a052f1e1c9bbe8236f1726ef8751628029c764b31",
+    "simple3d_step_index.cu": "a39c7eda13e826802b264aa6df65706e16322c5b35fe8433a98af6cb1372e51f",
+    "measure_simple3d_capsule_step.py": "c5bb0dacfcb149fb27f3c669aa3b226775ce82ac716c1e6a8aac48933686e77f",
+    "measure_simple3d_capsule_flashfps.py": "0a82d041cde9445bbb6fc5069425e80d5916088ab0163574b6b0682194c9ebfe",
+    "run_simple3d_capsule_interp_top3.py": "cb1714786911b36cc128b7567254c330a25c47d58317953d58779f8f3267b7f4",
+    "simple3d_gpu_kdtree.py": "7750eea7a74674e8b3c1354b8f0195c07641e10b61b1fef09e391369a2afd382",
+    "simple3d_gpu_kdtree.cu": "1b1bb3e2b9798024bbc818d5b37d617b9fe5430d81bdcebf25d22462452f8b4c"
+  }
+}
