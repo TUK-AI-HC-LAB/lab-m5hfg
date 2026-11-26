@@ -1,0 +1,48 @@
+{
+  "status": "verified",
+  "counts": {
+    "fps_4096": 130,
+    "fps_1024": 130,
+    "kdtree_128": 130,
+    "kdtree_12": 130
+  },
+  "fps": {
+    "upstream_commit": "f32a4b7886501873f2d7d380dc84f07ae77492df",
+    "upstream_sha256": "f445e1effa04c3d8157a676303635a47ace6d1d402dc66c23820aea86240014c",
+    "method": "FPS-Prune",
+    "prune_rate": 0.75,
+    "fps_cache": false,
+    "native_inner_fps": "Simple3D PointNet2 CUDA",
+    "input_order": "original",
+    "fixed_output_counts": [
+      4096,
+      1024
+    ],
+    "candidate_selection": "uniform without replacement over all point indices",
+    "candidate_seed": 42,
+    "candidate_order": "original relative order",
+    "reuse_candidate_indices": "fixed per point count across clouds and both FPS calls",
+    "feature_native_fps_count": 2048,
+    "smoothing_native_fps_count": 1024,
+    "feature_iteration_prune_rate": 0.5,
+    "smoothing_iteration_prune_rate": 0.0,
+    "candidate_prune_rate": 0.75,
+    "smoothing_candidate_fraction": 1.0,
+    "smoothing_sampler": "original PointNet2 CUDA FPS"
+  },
+  "memory_bank": {
+    "path": "/home/test/simple3d-capsule-flashfps-random25-feature50-20261111/gpu_kdtree/minishift/capsule/memory_bank.pt",
+    "sha256": "31572d549f27bda4a85e143e70b6bb220917954f9451f3a019766f8cfc65339b"
+  },
+  "source_sha256": {
+    "run_simple3d_capsule_flashfps_random25_feature50_smooth_original.py": "4800353efa786b010b329fe0810f54af6d405427e41241f3dceaf858b792c63f",
+    "run_simple3d_capsule_flashfps_random25_feature50_smooth_original.sh": "30ca5dbc7fc28c80053c6d55adaf91ee63c55c0d0c4146cb3eba24e0ca67c6ed",
+    "simple3d_flashfps_random25_feature50.py": "b020f236056163fd5f6d7ca0fb4a95f275d944005115a761ade53495580861c7",
+    "simple3d_flashfps_random25.py": "10968a91d9607ad6d97d7dc9e9b13a00524d1ae54db82bb16ad9fbc36c91bf9b",
+    "simple3d_flashfps.py": "ee6e22eeeed1fe56725894cfe3bc9d7e0b85857626ab5691e55e772b5c19af8c",
+    "simple3d_gpu_kdtree.py": "7750eea7a74674e8b3c1354b8f0195c07641e10b61b1fef09e391369a2afd382",
+    "simple3d_gpu_kdtree.cu": "1b1bb3e2b9798024bbc818d5b37d617b9fe5430d81bdcebf25d22462452f8b4c",
+    "measure_simple3d_capsule_flashfps_smooth_original.py": "d4962af58f67cbc061779ced74bd940fee4fa465a49978f41a295874754af817",
+    "run_simple3d_capsule_flashfps.py": "c2e292a2874c96bd3ba1eb9b68b73e92a52114427cd1df9606059268216594c8"
+  }
+}

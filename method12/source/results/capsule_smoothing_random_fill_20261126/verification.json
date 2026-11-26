@@ -1,0 +1,40 @@
+{
+  "status": "verified",
+  "source_sha256": {
+    "run_simple3d_smoothing_random_fill.py": "bb753cdaf7551d9f75bda1dd4036fc07e4fdad022183e5af50ec9d0461d9a48f",
+    "simple3d_flashfps_smoothing_random_fill.py": "3ace01b282c7ebfc0cdc1fa2aa9546af22d614752b1a67a0afaac1fc491ef05e",
+    "measure_simple3d_capsule_flashfps_smooth_original.py": "f6f82db559388ae77ff1091ae6f0029b80f35fbcd25ec127ed710f9b5a1ebf97",
+    "simple3d_flashfps_random25_feature50.py": "b020f236056163fd5f6d7ca0fb4a95f275d944005115a761ade53495580861c7",
+    "simple3d_flashfps_random25.py": "10968a91d9607ad6d97d7dc9e9b13a00524d1ae54db82bb16ad9fbc36c91bf9b",
+    "simple3d_flashfps.py": "ee6e22eeeed1fe56725894cfe3bc9d7e0b85857626ab5691e55e772b5c19af8c"
+  },
+  "memory_bank": {
+    "path": "/home/test/simple3d-capsule-flashfps-random25-feature50-20261111/gpu_kdtree/minishift/capsule/memory_bank.pt",
+    "sha256": "31572d549f27bda4a85e143e70b6bb220917954f9451f3a019766f8cfc65339b"
+  },
+  "fps": {
+    "upstream_commit": "f32a4b7886501873f2d7d380dc84f07ae77492df",
+    "upstream_sha256": "f445e1effa04c3d8157a676303635a47ace6d1d402dc66c23820aea86240014c",
+    "method": "FPS-Prune",
+    "prune_rate": 0.75,
+    "fps_cache": false,
+    "native_inner_fps": "Simple3D PointNet2 CUDA",
+    "input_order": "original",
+    "fixed_output_counts": [
+      4096,
+      1024
+    ],
+    "candidate_selection": "uniform without replacement over all point indices",
+    "candidate_seed": 42,
+    "candidate_order": "original relative order",
+    "reuse_candidate_indices": "fixed per point count across clouds and both FPS calls",
+    "feature_native_fps_count": 2048,
+    "smoothing_native_fps_count": 256,
+    "feature_iteration_prune_rate": 0.5,
+    "smoothing_iteration_prune_rate": 0.75,
+    "candidate_prune_rate": 0.75,
+    "smoothing_fill": "random without replacement from unused candidates",
+    "smoothing_fill_seed": 43,
+    "smoothing_fill_count": 768
+  }
+}

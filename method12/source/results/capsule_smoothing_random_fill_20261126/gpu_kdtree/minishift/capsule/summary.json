@@ -1,0 +1,58 @@
+{
+  "status": "complete",
+  "mode": "gpu_kdtree",
+  "dataset": "minishift",
+  "category": "capsule",
+  "train_count": 54,
+  "test_count": 130,
+  "fit_wall_s": null,
+  "memory_bank": {
+    "path": "/home/test/simple3d-capsule-flashfps-random25-feature50-20261111/gpu_kdtree/minishift/capsule/memory_bank.pt",
+    "sha256": "31572d549f27bda4a85e143e70b6bb220917954f9451f3a019766f8cfc65339b"
+  },
+  "inference_mean_ms": 1971.376673007699,
+  "inference_median_ms": 1946.9029340000077,
+  "inference_p95_ms": 2141.87121550002,
+  "peak_torch_allocated_bytes": 5120819712,
+  "peak_torch_reserved_bytes": 6333399040,
+  "elapsed_wall_s": 313.935822486,
+  "metrics": [
+    {
+      "mode": "gpu_kdtree",
+      "dataset": "minishift",
+      "category": "capsule",
+      "level": "easy",
+      "object_auroc": 0.9725,
+      "point_auroc": 0.9792720084638084,
+      "point_ap": 0.3487731479305152
+    },
+    {
+      "mode": "gpu_kdtree",
+      "dataset": "minishift",
+      "category": "capsule",
+      "level": "medium",
+      "object_auroc": 0.9525000000000001,
+      "point_auroc": 0.8720626544271649,
+      "point_ap": 0.22215295609022515
+    },
+    {
+      "mode": "gpu_kdtree",
+      "dataset": "minishift",
+      "category": "capsule",
+      "level": "hard",
+      "object_auroc": 0.845,
+      "point_auroc": 0.6448460925269397,
+      "point_ap": 0.06449203809649018
+    },
+    {
+      "mode": "gpu_kdtree",
+      "dataset": "minishift",
+      "category": "capsule",
+      "level": "ALL",
+      "object_auroc": 0.9233333333333332,
+      "point_auroc": 0.8244511669971257,
+      "point_ap": 0.20542566698278245
+    }
+  ],
+  "raw_assets": "/home/test/simple3d-capsule-smoothing-random-fill-20261126/gpu_kdtree/minishift/capsule"
+}

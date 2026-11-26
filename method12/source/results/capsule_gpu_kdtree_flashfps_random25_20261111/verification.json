@@ -1,0 +1,36 @@
+{
+  "status": "verified",
+  "counts": {
+    "fps_4096": 130,
+    "fps_1024": 130,
+    "kdtree_128": 130,
+    "kdtree_12": 130
+  },
+  "fps": {
+    "upstream_commit": "f32a4b7886501873f2d7d380dc84f07ae77492df",
+    "upstream_sha256": "f445e1effa04c3d8157a676303635a47ace6d1d402dc66c23820aea86240014c",
+    "method": "FPS-Prune",
+    "prune_rate": 0.75,
+    "fps_cache": false,
+    "native_inner_fps": "Simple3D PointNet2 CUDA",
+    "input_order": "original",
+    "fixed_output_counts": [
+      4096,
+      1024
+    ],
+    "candidate_selection": "uniform without replacement over all point indices",
+    "candidate_seed": 42,
+    "candidate_order": "original relative order",
+    "reuse_candidate_indices": "fixed per point count across clouds and both FPS calls"
+  },
+  "source_sha256": {
+    "run_simple3d_capsule_flashfps_random25.py": "8e522baa90fa2448adf99efada492d5f5f83d0519c046070cd87a3cd5a0e0cab",
+    "run_simple3d_capsule_flashfps_random25.sh": "705d7d38ac546b85869df9d82647603a8b0cb6d15f3133976ab5b0af62bb99f6",
+    "simple3d_flashfps_random25.py": "10968a91d9607ad6d97d7dc9e9b13a00524d1ae54db82bb16ad9fbc36c91bf9b",
+    "simple3d_flashfps.py": "ee6e22eeeed1fe56725894cfe3bc9d7e0b85857626ab5691e55e772b5c19af8c",
+    "simple3d_gpu_kdtree.py": "7750eea7a74674e8b3c1354b8f0195c07641e10b61b1fef09e391369a2afd382",
+    "simple3d_gpu_kdtree.cu": "1b1bb3e2b9798024bbc818d5b37d617b9fe5430d81bdcebf25d22462452f8b4c",
+    "measure_simple3d_capsule_flashfps.py": "0a82d041cde9445bbb6fc5069425e80d5916088ab0163574b6b0682194c9ebfe",
+    "run_simple3d_capsule_flashfps.py": "c2e292a2874c96bd3ba1eb9b68b73e92a52114427cd1df9606059268216594c8"
+  }
+}
